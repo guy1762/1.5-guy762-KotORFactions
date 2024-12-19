@@ -6,6 +6,7 @@
 	<modIconPath IgnoreIfNoMatchingField="True">UI/ModIcon_guy762_KotORFactions</modIconPath>
 	<description>Adds factions, pawns, titles, and ideoligions based on factions in Star Wars: Knights of the Old Republic and Star Wars: Knights of the Old Republic II - The Sith Lords, and elsewhere in the Star Wars setting.</description>
 	<author>guy762, Lee, Kaitorisenkou, Ranger Rick</author>
+	<url>https://github.com/guy1762/1.5-guy762-KotORFactions</url>
 	
 	<!-- Technical Details ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	<supportedVersions>
@@ -31,19 +32,19 @@
 		<packageId>guy762.StarWarsXenotypes</packageId>
 		<displayName>Star Wars Xenotypes</displayName>
 		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2915192253</steamWorkshopUrl>
-		<downloadUrl>https://github.com/guy1762/1.5_StarWarsXenotypes/tree/main</downloadUrl>
+		<downloadUrl>https://github.com/guy1762/1.5-guy762-StarWarsXenotypes</downloadUrl>
 	  </li>
 	  <li>
 		<packageId>guy762.KotORWeapons</packageId>
 		<displayName>Star Wars KotOR Weapons and Armor</displayName>
 		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2938932438</steamWorkshopUrl>
-		<downloadUrl>https://github.com/guy1762/1.5ZIP_StarWarsKotORWeaponsArmor</downloadUrl>
+		<downloadUrl>https://github.com/guy1762/1.5-guy762-KotORWeaponsArmor</downloadUrl>
 	  </li>
 	  <li>
 		<packageId>guy762.KotORDroids</packageId>
 		<displayName>Star Wars KotOR Droids</displayName>
 		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3047371944</steamWorkshopUrl>
-		<downloadUrl>https://github.com/guy1762/1.5_StarWarsKotORDroids</downloadUrl>
+		<downloadUrl>https://github.com/guy1762/1.5-guy762-KotORDroids</downloadUrl>
 	  </li>
 	   <!--li>
 		<packageId>lee.theforce.psycast</packageId>
