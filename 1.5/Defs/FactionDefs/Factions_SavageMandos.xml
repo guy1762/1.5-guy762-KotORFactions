@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="FactionBase">
+    <defName>guy762_KotORFaction_SavageMandos</defName>
+    <label>savage Mandalorian clan</label>
+	<description>An unaffiliated clan of Mandalorian warriors. Though the armies of Mandalore once numbered into the trillions, their crushing defeat at the Battle of Malachor V and further Republic attempts to hunt down the survivors have left the Mandalorians scattered and isolated. Many have since re-organized themselves into nomadic clans, wandering aimlessly around on fringe rim worlds, hiring their services as mercenaries out to others, and raiding civilian settlements to survive.\n\nThese Mandalorians follow the ruthless, savage Neo-Crusader ideology of Cassus Fett and will give no quarter or remorse to anyone outside their clan.</description>
+	<!-- <description>An unaffiliated clan of nomadic Mandalorian warriors. These Mandalorians follow the ruthless, savage Neo-Crusader ideology of Cassus Fett and will give no quarter or remorse to anyone outside their clan.</description> -->
+    <pawnSingular>Mandalorian</pawnSingular>
+    <pawnsPlural>Mandalorians</pawnsPlural>
+    <categoryTag>Pirate</categoryTag>
+    <canMakeRandomly>false</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+	<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+    <hidden>true</hidden>
+    <factionIconPath>World/ScumAndVillainy</factionIconPath>
+    <factionNameMaker>guy762_NamerFaction_MandoClan</factionNameMaker>
+    <settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
+    <colorSpectrum>
+      <!--<li>RGB(210,160,15)</li> field marshal gold -->
+      <li>RGB(160,25,30)</li>
+    </colorSpectrum>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+	<listOrderPriority>771</listOrderPriority>
+	<configurationListOrderPriority>771</configurationListOrderPriority>
+    <mustStartOneEnemy>false</mustStartOneEnemy>
+    <maxCountAtGameStart>2</maxCountAtGameStart>
+    <techLevel>Spacer</techLevel>
+	<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+	
+	<permanentEnemy>true</permanentEnemy>
+	
+	<modExtensions>
+      <li Class="VFECore.FactionDefExtension">
+		<startingGoodwillByFactionDefs>
+			<guy762_KotORFaction_OldRepublic>-100</guy762_KotORFaction_OldRepublic>
+			<guy762_KotORFaction_CorruptRepublic>-100</guy762_KotORFaction_CorruptRepublic>
+			
+			<guy762_KotORFaction_SithRemnant>0~50</guy762_KotORFaction_SithRemnant>
+			<guy762_KotORFaction_KrathRaiders>-25~0</guy762_KotORFaction_KrathRaiders>
+			
+			<guy762_KotORFaction_Militia>-100</guy762_KotORFaction_Militia>
+			<guy762_KotORFaction_Rebellion>-100</guy762_KotORFaction_Rebellion>
+			
+			<guy762_KotORFaction_HuttCartel>0</guy762_KotORFaction_HuttCartel>
+			<guy762_KotORFaction_ViciousHutts>0~100</guy762_KotORFaction_ViciousHutts>
+			
+			<guy762_KotORFaction_MandoClan>-100</guy762_KotORFaction_MandoClan>
+			<guy762_KotORFaction_SavageMandos>-50~50</guy762_KotORFaction_SavageMandos>
+			
+			<guy762_KotORFaction_Czerka>-100</guy762_KotORFaction_Czerka>
+			<guy762_KotORFaction_Exchange>-100~0</guy762_KotORFaction_Exchange>
+			<guy762_KotORFaction_Civilians>-100</guy762_KotORFaction_Civilians>
+			
+			<guy762_KotORFaction_MandoNeoCrusaders>100</guy762_KotORFaction_MandoNeoCrusaders>
+			<guy762_KotORFaction_SithEmpire>50~100</guy762_KotORFaction_SithEmpire>
+			
+			<guy762_KotORPlayerFaction_RepublicStrikeTeam>-100</guy762_KotORPlayerFaction_RepublicStrikeTeam>
+			<guy762_KotORPlayerFaction_SmugglerCrew>-100</guy762_KotORPlayerFaction_SmugglerCrew>
+			<guy762_KotORPlayerFaction_MandalorianTribe>-80</guy762_KotORPlayerFaction_MandalorianTribe>
+			<guy762_KotORPlayerFaction_SithWarlord>-25</guy762_KotORPlayerFaction_SithWarlord>
+			<guy762_KotORPlayerFaction_HuttUpstart>-50</guy762_KotORPlayerFaction_HuttUpstart>
+			
+			<!--guy762_KotORFaction_Trandoshans>-25~0</guy762_KotORFaction_Trandoshans>
+			<guy762_KotORFaction_MercGuild>-75~-50</guy762_KotORFaction_MercGuild-->
+		</startingGoodwillByFactionDefs>
+		<excludeFromCommConsole>true</excludeFromCommConsole>
+		<hasCities>false</hasCities>
+		<neverConnectToRoads>true</neverConnectToRoads>
+		<minDistanceToOtherSettlements>50</minDistanceToOtherSettlements>
+      </li>
+	  <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Core.ModExtension_FixedIdeo">
+		<ideoIconDef>guy762_IdeoIcon_mandoA</ideoIconDef>
+		<ideoColorDef>DarkRed</ideoColorDef>
+		<memberName>Neo-Crusader</memberName>
+		<adjective>Mandalorian</adjective>
+		<roleOverrides>
+			<li>
+				<preceptDef>IdeoRole_Leader</preceptDef>
+				<newName>Field Marshal</newName>
+				<disableApparelRequirements>true</disableApparelRequirements>
+			</li>
+			<li MayRequire="VanillaExpanded.VMemesE">
+				<preceptDef>guy762_KotORIdeoRole_Inquisitor</preceptDef>
+				<newName>Rally Master</newName>
+				<disableApparelRequirements>true</disableApparelRequirements>
+				<!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
+			</li>
+			<li>
+				<preceptDef>IdeoRole_ShootingSpecialist</preceptDef>
+				<newName>Supercommando</newName>
+				<disableApparelRequirements>true</disableApparelRequirements>
+				<!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
+			</li>
+			<li>
+				<preceptDef>IdeoRole_MeleeSpecialist</preceptDef>
+				<newName>Champion</newName>
+				<disableApparelRequirements>true</disableApparelRequirements>
+				<!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
+			</li>
+		</roleOverrides>
+	  </li>
+    </modExtensions>
+	
+    <allowedCultures>
+		<li>guy762_culture_mando</li>
+	</allowedCultures>
+	<styles>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Spikecore</li>
+	</styles>
+	
+	<fixedIdeo>true</fixedIdeo>
+	<ideoName>Mando'ade</ideoName>
+	<ideoDescription>.</ideoDescription>
+	
+	<requiredMemes>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">guy762_MemeDef_mando</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_BloodCourt</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Nomad</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+	</requiredMemes>
+	<allowedMemes>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Bushido</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+	</allowedMemes>
+	<disallowedPrecepts>
+		<li MayRequire="Ludeon.RimWorld.Ideology">IdeoRole_Moralist</li>
+		<li MayRequire="VanillaExpanded.VMemesE">guy762_KotORIdeoRole_MandoArmorer</li> <!-- leaving the mayrequire tag in so it'll use armorer if VME isn't loaded -->
+		
+		<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">NobleDespisedWeapons</li>
+		
+		<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Exalted</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Respected</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Approved</li>
+		
+		<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
+		
+		<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Abhorrent</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Horrible</li>
+		
+		<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_RequiredRavenous</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_RequiredStrong</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Preferred</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Disapproved</li>
+	</disallowedPrecepts>
+	
+	
+	<xenotypeSet>
+		  <xenotypeChances>
+			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.20</Baseliner>
+			<guy762_xenotype_aqualish MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_aqualish>
+			<guy762_xenotype_devaronian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_devaronian>
+			<guy762_xenotype_falleen MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_falleen>
+			<guy762_xenotype_feeorin MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_feeorin>
+			<guy762_xenotype_gamorrean MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_gamorrean>
+			<guy762_xenotype_iridonian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_iridonian>
+			<guy762_xenotype_kaleesh MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_kaleesh>
+			<guy762_xenotype_lasat MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_lasat>
+			<guy762_xenotype_mimbanese MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_mimbanese>
+			<guy762_xenotype_mirialan MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_mirialan>
+			<guy762_xenotype_nelvaanian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_nelvaanian>
+			<guy762_xenotype_nikto MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_nikto>
+			<guy762_xenotype_pantoran MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_pantoran>
+			<guy762_xenotype_quarren MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_quarren>
+			<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_rodian>
+			<!--<guy762_xenotype_taung MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_taung>-->
+			<guy762_xenotype_togruta MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_togruta>
+			<!--<guy762_xenotype_trandoshan MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_trandoshan>-->
+			<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.15</guy762_xenotype_twilek>
+			<guy762_xenotype_weequay MayRequire="guy762.StarWarsXenotypes">0.07</guy762_xenotype_weequay>
+			<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_zabrak>
+			<guy762_xenotype_zabrakDathomiri MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_zabrakDathomiri>
+			<guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_zeltron>
+		  </xenotypeChances>
+	</xenotypeSet>
+	
+	<basicMemberKind>KotORMando_trooper</basicMemberKind>
+	<leaderTitle>field marshal</leaderTitle>
+	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+	<fixedLeaderKinds>
+		<li>KotORMando_fieldmarshal</li>
+	</fixedLeaderKinds>
+	
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Outlander</li>
+        </categories>
+        <commonality>0.25</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+        <commonality>0.33</commonality>
+      </li>
+	  <li>
+        <categories>
+          <li>Pirate</li>
+        </categories>
+		<commonality>0.33</commonality>
+      </li>
+    </backstoryFilters>
+    <settlementTexturePath>World/WorldObjects/Expanding/SettlementTemporary</settlementTexturePath>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(100,80)</li> <!-- cost of mando scout -->
+        <li>(500, 100)</li> <!-- cost of trooper/warrior -->
+        <li>(2000, 250)</li> <!-- cost of rally master & commando/marauder -->
+        <li>(2001, 10000)</li> <!-- enough for champion at 1k -->
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+	
+	
+	<pawnGroupMakers>
+	
+	  <li>
+        <!-- quick raid -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+		<disallowedStrategies>
+			<li>Siege</li>
+			<li>StageThenAttack</li>
+			<li>ImmediateAttackSappers</li>
+			<li>ImmediateAttackBreaching</li>
+			<li>ImmediateAttackBreachingSmart</li>
+		</disallowedStrategies>
+        <options>
+          <KotORMando_trooper>50</KotORMando_trooper>
+          <KotORMando_warrior>100</KotORMando_warrior>
+          <KotORMando_scout>50</KotORMando_scout>
+          <KotORMando_commando>10</KotORMando_commando>
+          <KotORMando_rallymaster>5</KotORMando_rallymaster>
+        </options>
+      </li>
+	  
+	  <li>
+        <!-- skirmish -->
+        <kindDef>Combat</kindDef>
+        <commonality>75</commonality>
+		<disallowedStrategies>
+			<li>Siege</li>
+			<li>ImmediateAttackSmart</li>
+			<li>ImmediateAttackSappers</li>
+			<li>ImmediateAttackBreaching</li>
+			<li>ImmediateAttackBreachingSmart</li>
+		</disallowedStrategies>
+        <options>
+		  <KotORMando_trooper>100</KotORMando_trooper>
+          <KotORMando_warrior>75</KotORMando_warrior>
+          <KotORMando_scout>25</KotORMando_scout>
+          <KotORMando_commando>10</KotORMando_commando>
+          <KotORMando_rallymaster>5</KotORMando_rallymaster>
+        </options>
+      </li>
+	  
+	  <li>
+        <!-- territory intrusion -->
+        <kindDef>Combat</kindDef>
+        <commonality>50</commonality>
+		<disallowedStrategies>
+			<li>ImmediateAttack</li>
+			<li>ImmediateAttackSmart</li>
+			<li>ImmediateAttackSappers</li>
+			<li>ImmediateAttackBreaching</li>
+			<li>ImmediateAttackBreachingSmart</li>
+		</disallowedStrategies>
+        <options>
+		  <KotORMando_trooper>100</KotORMando_trooper>
+          <KotORMando_warrior>25</KotORMando_warrior>
+          <KotORMando_commando>75</KotORMando_commando>
+          <KotORMando_marauder>25</KotORMando_marauder>
+		  <KotORMando_heavy>50</KotORMando_heavy>
+          <KotORMando_rallymaster>100</KotORMando_rallymaster>
+        </options>
+      </li>
+	  
+	  <li>
+        <!-- assault -->
+        <kindDef>Combat</kindDef>
+        <commonality>25</commonality>
+		<disallowedStrategies>
+			<li>Siege</li>
+			<li>StageThenAttack</li>
+			<li>ImmediateAttack</li>
+		</disallowedStrategies>
+        <options>
+		  <KotORMando_trooper>50</KotORMando_trooper>
+          <KotORMando_warrior>25</KotORMando_warrior>
+          <KotORMando_commando>100</KotORMando_commando>
+          <KotORMando_marauder>25</KotORMando_marauder>
+          <KotORMando_heavy>25</KotORMando_heavy>
+          <KotORMando_sapper>75</KotORMando_sapper>
+          <KotORMando_rallymaster>100</KotORMando_rallymaster>
+          <KotORMando_champion>10</KotORMando_champion>
+        </options>
+      </li>
+	  
+	  <li>
+        <!-- elite raid -->
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+		<disallowedStrategies>
+			<li>Siege</li>
+			<li>StageThenAttack</li>
+			<li>ImmediateAttack</li>
+			<li>ImmediateAttackBreaching</li>
+		</disallowedStrategies>
+        <options>
+		  <KotORMando_commando>50</KotORMando_commando>
+		  <KotORMando_marauder>100</KotORMando_marauder>
+		  <KotORMando_jedihunter>100</KotORMando_jedihunter>
+		  <KotORMando_rallymaster>100</KotORMando_rallymaster>
+		  <KotORMando_champion>25</KotORMando_champion>
+        </options>
+      </li>
+	  
+	  
+	  
+	  
+	  <li>
+		<kindDef>Settlement</kindDef> <!-- rural settlement -->
+		<commonality>1</commonality>
+		<options>
+		  <!-- civilians -->
+		  <KotORHutts_slave>25</KotORHutts_slave>
+		  
+		  <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">1</Villager_Child>
+		  
+		  <!-- factional -->
+		  
+		  <KotORMando_scout>5</KotORMando_scout>
+		  <KotORMando_trooper>25</KotORMando_trooper>
+		  <KotORMando_warrior>25</KotORMando_warrior>
+		  <KotORMando_commando>15</KotORMando_commando>
+		  <KotORMando_marauder>15</KotORMando_marauder>
+		  <KotORMando_heavy>15</KotORMando_heavy>
+		  <KotORMando_rallymaster>100</KotORMando_rallymaster>
+		  <KotORMando_jedihunter>5</KotORMando_jedihunter>
+		  <KotORMando_champion>1</KotORMando_champion>
+		  <KotORMando_armorer>5</KotORMando_armorer>
+		  <KotORMando_fieldmarshal>100</KotORMando_fieldmarshal>
+		</options>
+	  </li>
+	  
+	  
+	  
+	</pawnGroupMakers>
+	
+	
+	<raidLootMaker>guy762_RaidLootMaker_KotORMando</raidLootMaker>
+  </FactionDef>
+  
+
+</Defs>

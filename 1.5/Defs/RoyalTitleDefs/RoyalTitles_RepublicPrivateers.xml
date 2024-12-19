@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <RoyalTitleDef Abstract="True" Name="KotORTitleORpriv_base">
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+    <tags>
+      <li>KotORTitleTag_OR_privateer</li>
+    </tags>
+    <awardThought>GainedTitle</awardThought>
+    <lostThought>LostTitle</lostThought>
+    <canBeInherited>false</canBeInherited>
+  </RoyalTitleDef>
+
+  <!-- ============== outsider titles ============================= -->
+
+  <RoyalTitleDef ParentName="KotORTitleORpriv_base">
+    <defName>KotORTitleORpriv_contact</defName>
+    <label>contact</label>
+    <description>The "contact" status within the Republic's information network signifies an outside individual who has been identified as being open to collaborating with Republic military personnel when needed.</description>
+    <seniority>0</seniority>
+    <favorCost>1</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+
+    <permitPointsAwarded>1</permitPointsAwarded>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="KotORTitleORpriv_base">
+    <defName>KotORTitleORpriv_asset</defName>
+    <label>asset</label>
+    <description>The "asset" status within the Republic's information network signifies an outside individual who has been deemed a reliable, trustworthy source of aid to Republic military interests.\n\nThese individuals are typically given clearance to request planet-wide transportation via shuttlecraft, in the interests of further developing them as an agent of the Republic.</description>
+    <seniority>15</seniority>
+    <favorCost>20</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <commonality>1</commonality>
+
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <replaceOnRecruited>KotORTitleORpriv_contact</replaceOnRecruited>
+    <permits>
+      <li>TradeSettlement</li>
+      <li>TradeCaravan</li>
+    </permits>
+  </RoyalTitleDef>
+
+  <!-- ============== official Republic titles ============================= -->
+
+  <RoyalTitleDef ParentName="KotORTitleORpriv_base">
+    <defName>KotORTitleORpriv_operative</defName>
+    <label>operative</label>
+    <description>The "operative" status within the Republic's information network signifies an outside individual who can be fully trusted to act in the interests of the Republic military and can be relied upon to carry out tasks that official personnel cannot be directly involved in.\n\nThese individuals are given clearance to request basic matériels from the local fleet's supply division, and can also request deployment of a limited number of patrol and war droids for combat-use.</description>
+    <seniority>25</seniority>
+    <favorCost>20</favorCost>
+    <changeHeirQuestPoints>1200</changeHeirQuestPoints>
+    <recruitmentResistanceOffset>10</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+
+    <permitPointsAwarded>2</permitPointsAwarded>
+    <replaceOnRecruited>KotORTitleORpriv_contact</replaceOnRecruited>
+
+    <permits>
+      <li>TradeSettlement</li>
+      <li>TradeCaravan</li>
+      <li>TradeOrbital</li>
+    </permits>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="KotORTitleORpriv_base">
+    <defName>KotORTitleORpriv_privateer</defName>
+    <label>privateer</label>
+    <description>Privateers are outside individuals who have been given an official 'letter of marque and reprisal' - standing orders to disrupt the affairs of forces hostile to the Republic starfleet by any means available.\n\nThese individuals are given clearance to request advanced matériels, larger squads of war droids, and even support from Republic soldiers and engineers in order to help eliminate those who hinder the Republic's local efforts.</description>
+    <seniority>75</seniority>
+    <favorCost>40</favorCost>
+    <requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+    <changeHeirQuestPoints>1600</changeHeirQuestPoints>
+    <recruitmentResistanceOffset>25</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+
+    <permitPointsAwarded>2</permitPointsAwarded>
+    <replaceOnRecruited>KotORTitleORpriv_asset</replaceOnRecruited>
+    <!--disabledWorkTags>
+      <li>ManualDumb</li>
+    </disabledWorkTags-->
+    <permits>
+      <li>TradeSettlement</li>
+      <li>TradeCaravan</li>
+      <li>TradeOrbital</li>
+    </permits>
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>guy762PatchedTag_Sash</li>
+          <li>KotORRoyaltyTag_ORprivI</li>
+          <li>KotORRoyaltyTag_ORprivII</li>
+          <li>KotORRoyaltyTag_AnyHighTier</li>
+          <li>KotORRoyaltyTag_AnyMandoArmor</li>
+          <li>KotORRoyaltyTag_AnyJediTunic</li>
+          <li>KotORRoyaltyTag_drip</li>
+          <li>KotORRoyaltyTag_LSCharacterApparel</li>
+        </requiredTags>
+        <allowedTags>
+        </allowedTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>guy762PatchedTag_RoyalHats</li>
+          <li>guy762PatchedTag_AuthorityCap</li>
+          <li>KotORRoyaltyTag_ORprivI</li>
+          <li>KotORRoyaltyTag_ORprivII</li>
+          <li>KotORRoyaltyTag_LSCharacterApparel</li>
+        </requiredTags>
+        <allowedTags>
+        </allowedTags>
+      </li>
+    </requiredApparel>
+    <foodRequirement>
+      <minQuality>MealFine</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+      </allowedDefs>
+    </foodRequirement>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="KotORTitleORpriv_base">
+    <defName>KotORTitleORpriv_privateerII</defName>
+    <label>Privateer Captain</label>
+    <description>Privateer captains are outside individuals who have been given permission to essentially run a pirate gang on behalf of the Republic starfleet in order to sabotage its enemies. These individuals are allocated a yearly budget by the Republic fleet they operate under, and are supervised by an official Republic representative in order to ensure all conduct by the privateer organization is considered acceptable according to Republic military regulations.\n\nThese individuals are given clearance to request an annual cash dividend in the form of Republic credits to support and develop their organization, and can also request combat support from elite Republic commando units and heavy assault droids. On top of that, privateer captains can also request fire support from orbiting Republic cruisers.\n\nOnce this status is obtained, it can then be passed down to another trusted individual should the holder die.</description>
+    <seniority>250</seniority>
+    <favorCost>40</favorCost>
+    <minExpectation>Moderate</minExpectation>
+    <requiredMinimumApparelQuality>Good</requiredMinimumApparelQuality>
+    <changeHeirQuestPoints>2200</changeHeirQuestPoints>
+    <recruitmentResistanceOffset>40</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+    <canBeInherited>True</canBeInherited>
+    <decreeMtbDays>-1</decreeMtbDays>    <!-- disabled -->
+    <!--decreeMentalBreakCommonality>4</decreeMentalBreakCommonality-->
+    <permitPointsAwarded>3</permitPointsAwarded>
+    <replaceOnRecruited>KotORTitleORpriv_asset</replaceOnRecruited>
+    <decreeTags>
+      <li>All</li>
+    </decreeTags>
+    <disabledWorkTags>
+      <li>ManualDumb</li>
+      <li>PlantWork</li>
+      <li>Mining</li>
+    </disabledWorkTags>
+    <permits>
+      <li>TradeSettlement</li>
+      <li>TradeCaravan</li>
+      <li>TradeOrbital</li>
+    </permits>
+
+    <grantedAbilities>
+      <li>Speech</li>
+      <li>guy762_Ability_CommandTierV</li>
+    </grantedAbilities>
+    <speechCooldown>1200000</speechCooldown>
+    <modExtensions>
+      <li Class="TitleRemovesAbility.ModExtension_TitleRemovesAbility">        <!-- removes duplicates -->
+        <abilityDefs>
+          <li>guy762_Ability_CommandTierV</li>
+        </abilityDefs>
+      </li>
+    </modExtensions>
+
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>guy762PatchedTag_Sash</li>
+          <li>guy762PatchedTag_Cape</li>
+          <li>guy762PatchedTag_PrestigeRobe</li>
+          <li>KotORRoyaltyTag_ORprivII</li>
+          <li>KotORRoyaltyTag_AnyHighTier</li>
+          <li>KotORRoyaltyTag_AnyMandoArmor</li>
+          <li>KotORRoyaltyTag_AnyJediTunic</li>
+          <li>KotORRoyaltyTag_LSCharacterApparel</li>
+          <li>KotORRoyaltyTag_drip</li>
+        </requiredTags>
+        <allowedTags>
+        </allowedTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>guy762PatchedTag_RoyalHats</li>
+          <li>guy762PatchedTag_AuthorityCap</li>
+          <li>guy762PatchedTag_Crowns</li>
+          <li>KotORRoyaltyTag_RegalVisor</li>
+          <li>KotORRoyaltyTag_LSCharacterApparel</li>
+        </requiredTags>
+        <allowedTags>
+        </allowedTags>
+      </li>
+    </requiredApparel>
+    <throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things>
+          <li>Throne</li>
+          <li>GrandThrone</li>
+          <li>GS_Palp_Throne</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>24</area>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags>
+          <li>Production</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags>
+          <li>Bed</li>
+        </buildingTags>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+        <labelKey>RoomRequirementNoAltars</labelKey>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags>
+          <li>Biotech</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags>
+          <li>Anomaly</li>
+        </buildingTags>
+      </li>
+    </throneRoomRequirements>
+    <bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>16</area>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>DoubleBed</li>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags>
+          <li>Production</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags>
+          <li>Biotech</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags>
+          <li>Anomaly</li>
+        </buildingTags>
+      </li>
+    </bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealFine</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+      </allowedDefs>
+    </foodRequirement>
+  </RoyalTitleDef>
+
+
+
+</Defs>

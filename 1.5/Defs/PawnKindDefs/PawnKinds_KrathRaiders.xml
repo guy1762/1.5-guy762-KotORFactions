@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<PawnKindDef Name="KotORKrath_Base" Abstract="True">
+		<defaultFactionType>guy762_KotORFaction_KrathRaiders</defaultFactionType>
+		<race>Human</race>
+		
+		<backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>Pirate</li>
+			  <li>Offworld</li>
+			  <li>Outlander</li>
+			  <li>Madman</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		
+		<chemicalAddictionChance>0.1</chemicalAddictionChance>
+		<!--combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount-->
+		<invNutrition>0.75</invNutrition>
+		<invFoodDef>Pemmican</invFoodDef>
+		
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<apparelMoney>4000~5000</apparelMoney>
+		
+		<techHediffsTags>
+		  <li>Spacer</li>
+		  <li>Advanced</li>
+		  <li>AdvancedWeapon</li>
+		</techHediffsTags>
+		
+		
+		<disallowedTraits>
+		  <li>BodyPurist</li>
+		  <li>Wimp</li>
+		</disallowedTraits>
+		<disallowedTraitsWithDegree>
+			<PsychicSensitivity>1</PsychicSensitivity>
+			<PsychicSensitivity>2</PsychicSensitivity>
+		</disallowedTraitsWithDegree>
+		
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Hauling</li>
+		</requiredWorkTags>
+	  </PawnKindDef>
+	    
+          <!--poverty raiders-->
+		  
+		  
+	<PawnKindDef Name="KotORKrath_raider" ParentName="KotORKrath_Base">
+		<defName>KotORKrath_raider</defName>
+		<label>remnant raider</label>
+		<combatPower>65</combatPower>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>65</maxGenerationAge>
+		
+		<gearHealthRange>0.5~1</gearHealthRange>
+		<itemQuality>Poor</itemQuality>
+		<apparelMoney>1500~5500</apparelMoney>
+		<apparelTags>
+		  <li>KotORUtility_weakgrenade</li>
+		  <li>guy762PatchedTag_Broadwrap</li>
+		  <li>SithRem_apparel_undersuit</li>
+		  <li>SithRem_apparel_raider</li>
+		  <li>SaV_apparel_leatherhood</li>
+		  <li>KotORHeadband_gasmask</li>
+		  <li>KotORHeadband_combat</li>
+		  <li>KotORHeadband_bandana</li>
+		  <li>KotORAccessory_trooper</li>
+		  <li>KotORAccessory_backpack</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.65</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<requiredTag>SithRem_apparel_undersuit</requiredTag>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<requiredTag>SithRem_apparel_raider</requiredTag>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<requiredTag>SithRem_raiderhelmet</requiredTag>
+				<alternateTagChoices>
+				  <li>
+					<tag>KotORHeadband_bandana</tag>
+					<chance>0.15</chance>
+				  </li>
+				  <li>
+					<tag>SaV_apparel_leatherhood</tag>
+					<chance>0.1</chance>
+				  </li>
+				  <li>
+					<tag>guy762PatchedTag_Broadwrap</tag>
+					<chance>0.1</chance>
+				  </li>
+				</alternateTagChoices>
+			</li>
+		</specificApparelRequirements>
+		
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		<weaponMoney>100~1800</weaponMoney>
+		<weaponTags>
+		  <li>SE_raider</li>
+		</weaponTags>
+		
+		<techHediffsChance>0</techHediffsChance>
+		
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~8</range>
+			</li>
+		</skills>
+		<inventoryOptions>
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+				  <thingDef>guy762_stim_battle</thingDef>
+				  <countRange>0~1</countRange>
+				</li>
+				<li>
+				  <thingDef>KOTOR_Spice</thingDef>
+				  <countRange>1~2</countRange>
+				</li>
+				<li>
+				  <thingDef>KOTOR_Deathstick</thingDef>
+				  <countRange>1~2</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<disallowedTraits>
+		  <li>Brawler</li>
+		</disallowedTraits>
+		<disallowedTraitsWithDegree>
+			<PsychicSensitivity>1</PsychicSensitivity>
+			<PsychicSensitivity>2</PsychicSensitivity>
+		</disallowedTraitsWithDegree>
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  
+	  <PawnKindDef Name="KotORKrath_raidermelee" ParentName="KotORKrath_Base">
+		<defName>KotORKrath_raidermelee</defName>
+		<label>remnant slasher</label>
+		<combatPower>65</combatPower>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>45</maxGenerationAge>
+		
+		<gearHealthRange>0.5~1</gearHealthRange>
+		<itemQuality>Poor</itemQuality>
+		<apparelMoney>1500~5500</apparelMoney>
+		<apparelTags>
+		  <li>KotORShield_basic</li>
+		  <li>SithRem_apparel_undersuit</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_SithHelmet_remtrooper</li>
+			<li>guy762_SithArmor_remtrooper</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<requiredTag>SithRem_apparel_undersuit</requiredTag>
+			</li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>200~1800</weaponMoney>
+		<weaponTags>
+		  <li>SE_slasher</li>
+		</weaponTags>
+		
+		<techHediffsChance>0</techHediffsChance>
+		
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>4~8</range>
+			</li>
+		</skills>
+		<inventoryOptions>
+		  <skipChance>0.1</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+			  <thingDef>guy762_stim_str</thingDef>
+			  <countRange>0~1</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_stim_con</thingDef>
+			  <countRange>0~1</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_stim_dex</thingDef>
+			  <countRange>0~1</countRange>
+			</li>
+			<li>
+			  <thingDef>KOTOR_Spice</thingDef>
+			  <countRange>1~2</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<disallowedTraitsWithDegree>
+			<ShootingAccuracy>-1</ShootingAccuracy>
+			<ShootingAccuracy>0</ShootingAccuracy>
+			<ShootingAccuracy>1</ShootingAccuracy>
+		    <PsychicSensitivity>1</PsychicSensitivity>
+			<PsychicSensitivity>2</PsychicSensitivity>
+		</disallowedTraitsWithDegree>
+		
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+	  </PawnKindDef>
+  
+  
+	  
+	  
+	  
+	  <PawnKindDef Name="KotORKrath_raiderveteran" ParentName="KotORKrath_Base">
+		<defName>KotORKrath_raiderveteran</defName>
+		<label>remnant veteran</label>
+		<combatPower>100</combatPower>
+		<minGenerationAge>30</minGenerationAge>
+		<maxGenerationAge>65</maxGenerationAge>
+		
+		<gearHealthRange>0.85~1</gearHealthRange>
+		<itemQuality>Good</itemQuality>
+		<apparelMoney>4000~8000</apparelMoney>
+		<apparelTags>
+		  <li>KotORShield_sith</li>
+		  <li>KotOREquipment_sith</li>
+		  <li>KotORUtility_utilitygrenade</li>
+		  <li>SaV_jetpack</li>
+		  <li>KotORAccessory_trooper</li>
+		  <li>KotORAccessory_backpack</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_SithHelmet_remtrooper</li>
+			<li>guy762_SithArmor_remtrooper</li>
+			<li>guy762_Bodysuit_Dyeable</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(200,85,25)</color>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(200,85,25)</color>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(50,50,50)</color>
+			</li>
+		</specificApparelRequirements>
+		
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		<weaponMoney>2000~5000</weaponMoney>
+		<weaponTags>
+		  <li>SE_raiderveteran</li>
+		</weaponTags>
+		
+		<techHediffsChance>0.5</techHediffsChance>
+		<techHediffsMoney>
+			<min>1200</min>
+			<max>2400</max>
+		</techHediffsMoney>
+		
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>8~12</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>8~12</range>
+			</li>
+		</skills>
+		<inventoryOptions>
+		  <skipChance>0.1</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+			  <thingDef>guy762_stim_hyperbattle</thingDef>
+			  <countRange>0~1</countRange>
+			</li>
+			<li>
+			  <thingDef>KOTOR_Spice</thingDef>
+			  <countRange>1~2</countRange>
+			</li>
+			<li>
+			  <thingDef>KOTOR_Deathstick</thingDef>
+			  <countRange>1~2</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<disallowedTraits>
+		  <li>Brawler</li>
+		</disallowedTraits>
+		<disallowedTraitsWithDegree>
+			<PsychicSensitivity>1</PsychicSensitivity>
+			<PsychicSensitivity>2</PsychicSensitivity>
+		</disallowedTraitsWithDegree>
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  
+	  <PawnKindDef Name="KotORKrath_krathmelee" ParentName="KotORKrath_Base">
+		<defName>KotORKrath_krathmelee</defName>
+		<label>Krath marauder</label>
+		<combatPower>150</combatPower>
+		<minGenerationAge>30</minGenerationAge>
+		<maxGenerationAge>70</maxGenerationAge>
+		
+		<gearHealthRange>0.85~1</gearHealthRange>
+		<itemQuality>Good</itemQuality>
+		<apparelMoney>4000~8000</apparelMoney>
+		<apparelTags>
+		  <li>KotORShield_sith</li>
+		  <li>KotOREquipment_sith</li>
+		  <li>KotORAccessory_outlaw</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_Hat_gamorrean</li>
+			<li>guy762_LgtBattleArmor_krath</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		
+		<weaponMoney>2000~5000</weaponMoney>
+		<weaponTags>
+		  <li>SaV_krathmelee</li>
+		</weaponTags>
+		
+		<techHediffsChance>2</techHediffsChance>
+		<techHediffsMoney>
+			<min>5000</min>
+			<max>7500</max>
+		</techHediffsMoney>
+		
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>10~12</range>
+			</li>
+		</skills>
+		<inventoryOptions>
+		  <skipChance>0.1</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+			  <thingDef>guy762_stim_hyperstr</thingDef>
+			  <countRange>1~2</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_stim_hyperdex</thingDef>
+			  <countRange>1~2</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_stim_hypercon</thingDef>
+			  <countRange>1~2</countRange>
+			</li>
+			<li>
+			  <thingDef>KOTOR_Spice</thingDef>
+			  <countRange>1~2</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<disallowedTraitsWithDegree>
+			<PsychicSensitivity>1</PsychicSensitivity>
+			<PsychicSensitivity>2</PsychicSensitivity>
+		</disallowedTraitsWithDegree>
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  
+	  <PawnKindDef Name="KotORKrath_krathslaver" ParentName="KotORKrath_Base">
+		<defName>KotORKrath_krathslaver</defName>
+		<label>Krath slaver</label>
+		<combatPower>150</combatPower>
+		<minGenerationAge>30</minGenerationAge>
+		<maxGenerationAge>70</maxGenerationAge>
+		
+		<canBeSapper>true</canBeSapper>
+		<isGoodBreacher>true</isGoodBreacher>
+		
+		<gearHealthRange>0.85~1</gearHealthRange>
+		<itemQuality>Good</itemQuality>
+		<apparelMoney>4000~8000</apparelMoney>
+		<apparelTags>
+		  <li>KotORShield_sith</li>
+		  <li>KotOREquipment_sith</li>
+		  <li>KotORAccessory_outlaw</li>
+		  <li>KotORHeadband_gasmask</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_Hat_gamorrean</li>
+			<li>guy762_LgtBattleArmor_krath</li>
+			<li>guy762_grenadebelt_sonic</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		
+		<biocodeWeaponChance>0.9</biocodeWeaponChance>
+		<weaponMoney>2000~25000</weaponMoney>
+		<weaponTags>
+		  <li>SaV_sapper</li>
+		  <li>KotORWeapon_StunCarbine</li>
+		</weaponTags>
+		
+		<techHediffsChance>2</techHediffsChance>
+		<techHediffsMoney>
+			<min>5000</min>
+			<max>7500</max>
+		</techHediffsMoney>
+		
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>10~12</range>
+			</li>
+		</skills>
+		<inventoryOptions>
+		  <skipChance>0.1</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+			  <thingDef>guy762_stim_hyperbattle</thingDef>
+			  <countRange>1~2</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_stim_hyperdex</thingDef>
+			  <countRange>1~2</countRange>
+			</li>
+			<li>
+			  <thingDef>KOTOR_Spice</thingDef>
+			  <countRange>1~2</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<disallowedTraitsWithDegree>
+			<PsychicSensitivity>1</PsychicSensitivity>
+			<PsychicSensitivity>2</PsychicSensitivity>
+		</disallowedTraitsWithDegree>
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+	  </PawnKindDef>
+		
+		
+		
+		
+	  
+	  
+	  
+ <PawnKindDef Name="KotORKrath_raidercmdr" ParentName="KotORKrath_Base">
+		<defName>KotORKrath_raidercmdr</defName>
+		<label>remnant commander</label>
+		<combatPower>75</combatPower>
+		<minGenerationAge>28</minGenerationAge>
+		<maxGenerationAge>70</maxGenerationAge>
+		
+		<factionLeader>true</factionLeader>
+		<maxPerGroup>1</maxPerGroup>
+		
+		<itemQuality>Normal</itemQuality>
+		<apparelMoney>2500~7500</apparelMoney>
+		<apparelTags>
+		  <li>KotOREquipment_basic</li>
+		  <li>Cape</li>
+		  <li>guy762PatchedTag_Duster</li>
+		  <li>guy762PatchedTag_Sash</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_UniformCap</li>
+			<li>guy762_SithUniform_officer</li>
+			<li>guy762_energyshield_sith</li>
+		</apparelRequired>
+		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(50,50,50)</color>
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<stuff>KOTOR_FabricArmorweave</stuff>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(180,165,150)</color>
+			</li>
+		</specificApparelRequirements>
+		
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		<weaponMoney>1000~2000</weaponMoney>
+		<weaponTags>
+		  <li>SE_officer</li>
+		</weaponTags>
+		
+		<skills>
+			<li>
+				<skill>Social</skill>
+				<range>5~10</range>
+			</li>
+			<li>
+				<skill>Intellectual</skill>
+				<range>5~10</range>
+			</li>
+		</skills>
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+				  <thingDef>guy762_KotORcredits</thingDef>
+				  <countRange>1000~10000</countRange>
+				</li>
+				<li>
+				  <thingDef>KOTOR_Spice</thingDef>
+				  <countRange>2~4</countRange>
+				</li>
+				<li>
+				  <thingDef>KOTOR_Deathstick</thingDef>
+				  <countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<disallowedTraits Inherit="False">
+		  <li>Kind</li>
+		  <li>Ascetic</li>
+		</disallowedTraits>
+		<disallowedTraitsWithDegree>
+			<PsychicSensitivity>1</PsychicSensitivity>
+			<PsychicSensitivity>2</PsychicSensitivity>
+		</disallowedTraitsWithDegree>
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+		<modExtensions>
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+				  <whitelist>
+					<li>Fat</li>
+				  </whitelist>
+				  <blacklist>
+				  </blacklist>
+				  <priority>
+					<li>Fat</li>
+				  </priority>
+				  <checkGender>False</checkGender>
+				</li>
+		  </modExtensions>
+	  </PawnKindDef> 
+	  
+	  
+		
+		
+		
+	
+</Defs>

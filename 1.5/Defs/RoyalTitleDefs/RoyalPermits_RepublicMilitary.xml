@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================= Permits from royal titles ============================= -->
+	<!--
+  <RoyalTitlePermitDef>
+    <defName>TradeSettlement</defName>
+    <label>trade with settlements</label>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef>
+    <defName>TradeOrbital</defName>
+    <label>trade with orbital traders</label>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef>
+    <defName>TradeCaravan</defName>
+    <label>trade with caravans</label>
+  </RoyalTitlePermitDef>
+	-->
+
+  <!-- ============================= Faction permits ============================= -->
+  
+  
+  <!-- base -->
+
+  <RoyalTitlePermitDef Name="guy762_KotORPermitORenlstd_ResourceDropBase" Abstract="True">
+    <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
+    <faction>guy762_KotORFaction_OldRepublic</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>45</cooldownDays>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <royalAid>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  
+  <RoyalTitlePermitDef Name="guy762_KotORPermitORenlstd_LaborerDropBase" Abstract="True">
+    <workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass>
+    <faction>guy762_KotORFaction_OldRepublic</faction>
+	
+	<permitPointCost>1</permitPointCost>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef Name="guy762_KotORPermitORenlstd_CustomLaborerDropBase" Abstract="True">
+    <workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass>
+    <faction>guy762_KotORFaction_OldRepublic</faction>
+	
+	<permitPointCost>1</permitPointCost>
+	<modExtensions>
+      <li Class="CallLaborerCustom.ModExtension_CallLaborerCustom">
+        <questScriptDef>KotORQuestScript_CallLaborersCustom</questScriptDef>
+      </li>
+    </modExtensions>
+  </RoyalTitlePermitDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- fleet services -->
+  
+  
+  <RoyalTitlePermitDef>
+    <defName>guy762_KotORPermitORenlstd_shuttle</defName>
+    <label>call transport shuttle</label>
+    <description>Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles.</description>
+    <workerClass>RoyalTitlePermitWorker_CallShuttle</workerClass>
+    <faction>guy762_KotORFaction_OldRepublic</faction>
+    
+	<minTitle>KotORTitleORenlstd_sergeant</minTitle>
+	<permitPointCost>1</permitPointCost>
+    <uiPosition>(0,0)</uiPosition>
+    
+	<usableOnWorldMap>true</usableOnWorldMap>
+	<royalAid>
+      <favorCost>8</favorCost>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+    </royalAid>
+	<cooldownDays>1</cooldownDays>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef>
+    <defName>guy762_KotORPermitORenlstd_orbitalstrike</defName>
+    <label>call orbital strike</label>
+    <description>Contact a Republic cruiser in low-orbit to fire a single-impact space-to-ground strike at a target position.</description>
+    <workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
+    <faction>guy762_KotORFaction_OldRepublic</faction>
+	
+	<minTitle>KotORTitleORenlstd_captain</minTitle>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(1,0)</uiPosition>
+	
+    <royalAid>
+      <favorCost>4</favorCost>
+      <targetingRange>44.9</targetingRange>
+      <radius>2.9</radius>
+      <explosionRadiusRange>7.9</explosionRadiusRange>
+      <explosionCount>1</explosionCount>
+      <intervalTicks>60</intervalTicks>
+      <warmupTicks>120</warmupTicks>
+    </royalAid>
+	<cooldownDays>5</cooldownDays>
+  </RoyalTitlePermitDef>
+  
+
+
+  <RoyalTitlePermitDef>
+    <defName>guy762_KotORPermitORenlstd_orbitalsalvo</defName>
+    <label>call orbital salvo</label>
+    <description>Contact a Republic cruiser in low-orbit to fire a salvo of space-to-ground strikes around a target position.</description>
+    <workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
+    <faction>guy762_KotORFaction_OldRepublic</faction>
+	
+	<minTitle>KotORTitleORenlstd_commander</minTitle>
+	<prerequisite>guy762_KotORPermitORenlstd_orbitalstrike</prerequisite>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(2,0)</uiPosition>
+	
+    <royalAid>
+      <favorCost>8</favorCost>
+      <targetingRange>44.9</targetingRange>
+      <radius>7.9</radius>
+      <explosionRadiusRange>5.9</explosionRadiusRange>
+      <explosionCount>6</explosionCount>
+      <intervalTicks>60</intervalTicks>
+      <warmupTicks>120</warmupTicks>
+    </royalAid>
+	<cooldownDays>1</cooldownDays>
+  </RoyalTitlePermitDef>
+  
+  
+  
+  
+  <!-- items -->
+  
+  <RoyalTitlePermitDef MayRequire="Rick.FCP.Core.Tools.Beta" ParentName="guy762_KotORPermitORenlstd_ResourceDropBase">
+    <defName>guy762_KotORPermitORenlstd_resupplydrop</defName>
+    <label>resupply drop</label>
+    <description>Call for a drop of 4 supply crates containing food, medpacs, combat stimulants, and energy shields.</description>
+	
+    <minTitle>KotORTitleORenlstd_sergeant</minTitle>
+    <uiPosition>(0,1)</uiPosition>
+	
+    <royalAid>
+      <favorCost>1</favorCost>
+	  <itemsToDrop>
+        <guy762_KotORLootBox_FoodMeds>2</guy762_KotORLootBox_FoodMeds>
+        <guy762_KotORLootBox_ShieldsStims>2</guy762_KotORLootBox_ShieldsStims>
+      </itemsToDrop>
+    </royalAid>
+	<cooldownDays>5</cooldownDays>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitORenlstd_ResourceDropBase">
+    <defName>guy762_KotORPermitORenlstd_fooddrop</defName>
+    <label>food drop</label>
+    <description>Call for a drop of 40 packaged survival meals.</description>
+	
+    <minTitle>KotORTitleORenlstd_lieutenant</minTitle>
+    <uiPosition>(1,1)</uiPosition>
+	
+    <royalAid>
+      <favorCost>4</favorCost>
+	  <itemsToDrop>
+        <MealSurvivalPack>40</MealSurvivalPack>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+  <!--RoyalTitlePermitDef ParentName="guy762_KotORPermitORenlstd_ResourceDropBase">
+    <defName>guy762_KotORPermitORenlstd_medkitdrop</defName>
+    <label>spacer medkit drop</label>
+    <description>Call for a drop of 20 spacer medkits.</description>
+	
+    <minTitle>KotORTitleORenlstd_lieutenant</minTitle>
+    <uiPosition>(2,1)</uiPosition>
+	
+    <royalAid>
+      <favorCost>2</favorCost>
+	  <itemsToDrop>
+        <KOTOR_SpacerMedKit>20</KOTOR_SpacerMedKit>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef-->
+  
+  <RoyalTitlePermitDef MayRequire="Rick.FCP.Core.Tools.Beta" ParentName="guy762_KotORPermitORenlstd_ResourceDropBase">
+    <defName>guy762_KotORPermitORenlstd_armordrop</defName>
+    <label>weapons and armor drop</label>
+    <description>Call for a drop of 2 Republic equipment crates, containing standard issue Republic soldier armor and weapons.</description>
+	
+    <minTitle>KotORTitleORenlstd_lieutenant</minTitle>
+    <uiPosition>(2,1)</uiPosition>
+	
+    <royalAid>
+      <favorCost>1</favorCost>
+	  <itemsToDrop>
+        <guy762_KotORLootBox_RepublicWeaponsArmor>2</guy762_KotORLootBox_RepublicWeaponsArmor>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  
+  
+  
+  
+  
+  <!-- engineers -->
+
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitORenlstd_LaborerDropBase">
+    <defName>guy762_KotORPermitORenlstd_engi_team</defName>
+    <label>call engineer team</label>
+    <description>Call a group of 4 engineers to assist you for 4 days. These workers can only do general labor tasks. You can control them as though they were your own colonists. You are required to keep them safe.</description>
+	
+	<minTitle>KotORTitleORenlstd_captain</minTitle>
+    <uiPosition>(0,2)</uiPosition>
+	
+    <royalAid>
+      <favorCost>12</favorCost>
+      <pawnKindDef>KotORRepub_engineer</pawnKindDef>
+      <pawnCount>4</pawnCount>
+      <aidDurationDays>4</aidDurationDays>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+    </royalAid>
+    <cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitORenlstd_LaborerDropBase">
+    <defName>guy762_KotORPermitORenlstd_engi_division</defName>
+    <label>call engineer division</label>
+    <description>Call a group of 8 engineers to assist you for 8 days. These workers can only do general labor tasks. You can control them as though they were your own colonists. You are required to keep them safe.</description>
+	
+	<minTitle>KotORTitleORenlstd_commander</minTitle>
+	<prerequisite>guy762_KotORPermitORenlstd_engi_team</prerequisite>
+    <uiPosition>(1,2)</uiPosition>
+	
+    <royalAid>
+      <favorCost>24</favorCost>
+      <pawnKindDef>KotORRepub_engineer</pawnKindDef>
+      <pawnCount>8</pawnCount>
+      <aidDurationDays>8</aidDurationDays>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+    </royalAid>
+    <cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+
+
+  <!-- droids -->
+
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitORenlstd_CustomLaborerDropBase">
+    <defName>guy762_KotORPermitORenlstd_patroldroids</defName>
+    <label>call patrol droid squad</label>
+    <description>Call a group of 4 patrol droids to join your ranks for one year. You can control them as though they were your own colonists.</description>
+	
+	<minTitle>KotORTitleORenlstd_lieutenant</minTitle>
+    <uiPosition>(0,3)</uiPosition>
+    
+	<royalAid>
+      <favorCost>2</favorCost>
+      <pawnKindDef MayRequire="guy762.KotORDroids">KotORRepub_droid_MPDMkI</pawnKindDef>
+      <pawnCount>4</pawnCount>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+	  
+	  <aidDurationDays>60</aidDurationDays>
+    </royalAid>
+    <cooldownDays>5</cooldownDays>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitORenlstd_CustomLaborerDropBase">
+    <defName>guy762_KotORPermitORenlstd_wardroids</defName>
+    <label>call war droid squad</label>
+    <description>Call a group of 4 war droids to join your ranks for one year. You can control them as though they were your own colonists.</description>
+	
+	<minTitle>KotORTitleORenlstd_lieutenant</minTitle>
+    <uiPosition>(1,3)</uiPosition>
+	
+    <royalAid>
+      <favorCost>4</favorCost>
+      <pawnKindDef MayRequire="guy762.KotORDroids">KotORRepub_droid_SentWD</pawnKindDef>
+      <pawnCount>4</pawnCount>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+	  
+	  <aidDurationDays>60</aidDurationDays>
+    </royalAid>
+    <cooldownDays>15</cooldownDays>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitORenlstd_CustomLaborerDropBase">
+    <defName>guy762_KotORPermitORenlstd_wardroidsII</defName>
+    <label>call war droid division</label>
+    <description>Call a group of 8 war droids to join your ranks for one year. You can control them as though they were your own colonists.</description>
+    
+	<minTitle>KotORTitleORenlstd_captain</minTitle>
+	<prerequisite>guy762_KotORPermitORenlstd_wardroids</prerequisite>
+    <uiPosition>(2,3)</uiPosition>
+    
+	<royalAid>
+      <favorCost>6</favorCost>
+      <pawnKindDef MayRequire="guy762.KotORDroids">KotORRepub_droid_SentWD</pawnKindDef>
+      <pawnCount>8</pawnCount>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+	  
+	  <aidDurationDays>60</aidDurationDays>
+    </royalAid>
+    <cooldownDays>30</cooldownDays>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitORenlstd_CustomLaborerDropBase">
+    <defName>guy762_KotORPermitORenlstd_assaultdroids</defName>
+    <label>call assault droids</label>
+    <description>Call a pair of heavy assault droids to join your ranks for one year. You can control them as though they were your own colonists.</description>
+	
+	<minTitle>KotORTitleORenlstd_captain</minTitle>
+    <uiPosition>(3,3)</uiPosition>
+    
+	<royalAid>
+      <favorCost>6</favorCost>
+      <pawnKindDef MayRequire="guy762.KotORDroids">KotORRepub_droid_ADMkIV</pawnKindDef>
+      <pawnCount>2</pawnCount>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+	  
+	  <aidDurationDays>60</aidDurationDays>
+    </royalAid>
+    <cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+
+
+
+
+
+	<!-- soldiers -->
+
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitORenlstd_CustomLaborerDropBase">
+    <defName>guy762_KotORPermitORenlstd_troopers</defName>
+    <label>call trooper squad</label>
+    <description>Call a group of 4 Republic infantry to join your ranks for one year. You can control them as though they were your own colonists.</description>
+    
+	<minTitle>KotORTitleORenlstd_lieutenant</minTitle>
+    <uiPosition>(0,4)</uiPosition>
+	
+    <royalAid>
+      <favorCost>12</favorCost>
+      <pawnKindDef>KotORRepub_soldier</pawnKindDef>
+      <pawnCount>4</pawnCount>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+	  
+	  <aidDurationDays>60</aidDurationDays>
+    </royalAid>
+    <cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitORenlstd_CustomLaborerDropBase">
+    <defName>guy762_KotORPermitORenlstd_moretroopers</defName>
+    <label>call trooper division</label>
+    <description>Call a group of 8 Republic infantry to join your ranks for one year. You can control them as though they were your own colonists.</description>
+    
+	<minTitle>KotORTitleORenlstd_captain</minTitle>
+    <uiPosition>(1,4)</uiPosition>
+	
+    <royalAid>
+      <favorCost>12</favorCost>
+      <pawnKindDef>KotORRepub_soldier</pawnKindDef>
+      <pawnCount>8</pawnCount>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+	  
+	  <aidDurationDays>60</aidDurationDays>
+    </royalAid>
+    <cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+
+
+
+	<!-- commandos -->
+
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitORenlstd_CustomLaborerDropBase">
+    <defName>guy762_KotORPermitORenlstd_commandos</defName>
+    <label>call commando squad</label>
+    <description>Call a group of 4 Republic commandos to join your ranks for one year. You can control them as though they were your own colonists.</description>
+    
+	<minTitle>KotORTitleORenlstd_commander</minTitle>
+    <uiPosition>(2,4)</uiPosition>
+	
+    <royalAid>
+      <favorCost>24</favorCost>
+      <pawnKindDef>KotORRepub_commando</pawnKindDef>
+      <pawnCount>4</pawnCount>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+	  
+	  <aidDurationDays>60</aidDurationDays>
+    </royalAid>
+    <cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+  
+  
+  
+  <!-- ROW 5 RESERVE FOR LOOT BOXES! -->
+  
+  
+  <!-- textiles -->
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitORenlstd_ResourceDropBase">
+    <defName>guy762_KotORPermitORenlstd_clothdrop</defName>
+    <label>cloth drop</label>
+    <description>Call for a drop of 250 cloth.</description>
+	
+    <minTitle>KotORTitleORenlstd_captain</minTitle>
+    <uiPosition>(0,6)</uiPosition>
+	
+    <royalAid>
+      <favorCost>2</favorCost>
+	  <itemsToDrop>
+        <Cloth>250</Cloth>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitORenlstd_ResourceDropBase">
+    <defName>guy762_KotORPermitORenlstd_synthreaddrop</defName>
+    <label>synthread drop</label>
+    <description>Call for a drop of 250 synthread.</description>
+	
+    <minTitle>KotORTitleORenlstd_captain</minTitle>
+    <uiPosition>(1,6)</uiPosition>
+	
+    <royalAid>
+      <favorCost>2</favorCost>
+	  <itemsToDrop>
+        <Synthread>250</Synthread>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitORenlstd_ResourceDropBase">
+    <defName>guy762_KotORPermitORenlstd_armorweavedrop</defName>
+    <label>armorweave drop</label>
+    <description>Call for a drop of 100 armorweave.</description>
+	
+    <minTitle>KotORTitleORenlstd_captain</minTitle>
+    <uiPosition>(2,6)</uiPosition>
+	
+    <royalAid>
+      <favorCost>4</favorCost>
+	  <itemsToDrop>
+        <KOTOR_FabricArmorweave>100</KOTOR_FabricArmorweave>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+
+  <!-- hard materials -->
+
+
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitORenlstd_ResourceDropBase">
+    <defName>guy762_KotORPermitORenlstd_steeldrop</defName>
+    <label>steel drop</label>
+    <description>Call for a drop of 250 steel.</description>
+	
+    <minTitle>KotORTitleORenlstd_captain</minTitle>
+    <uiPosition>(0,7)</uiPosition>
+	
+    <royalAid>
+      <favorCost>4</favorCost>
+	  <itemsToDrop>
+        <Steel>250</Steel>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitORenlstd_ResourceDropBase">
+    <defName>guy762_KotORPermitORenlstd_duracretedrop</defName>
+    <label>duracrete drop</label>
+    <description>Call for a drop of 300 duracrete.</description>
+	
+    <minTitle>KotORTitleORenlstd_captain</minTitle>
+    <uiPosition>(1,7)</uiPosition>
+	
+    <royalAid>
+      <favorCost>2</favorCost>
+	  <itemsToDrop>
+        <KOTOR_Duracrete>300</KOTOR_Duracrete>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitORenlstd_ResourceDropBase">
+    <defName>guy762_KotORPermitORenlstd_plasteeldrop</defName>
+    <label>plasteel drop</label>
+    <description>Call for a drop of 250 plasteel.</description>
+	
+    <minTitle>KotORTitleORenlstd_captain</minTitle>
+    <uiPosition>(2,7)</uiPosition>
+	
+    <royalAid>
+      <favorCost>4</favorCost>
+	  <itemsToDrop>
+        <Plasteel>250</Plasteel>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitORenlstd_ResourceDropBase">
+    <defName>guy762_KotORPermitORenlstd_durasteeldrop</defName>
+    <label>durasteel drop</label>
+    <description>Call for a drop of 100 durasteel.</description>
+	
+    <minTitle>KotORTitleORenlstd_captain</minTitle>
+    <uiPosition>(3,7)</uiPosition>
+	
+    <royalAid>
+      <favorCost>6</favorCost>
+	  <itemsToDrop>
+        <KOTOR_AlloyDurasteel>100</KOTOR_AlloyDurasteel>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  
+  
+  <!-- fuels -->
+  
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitORenlstd_ResourceDropBase">
+    <defName>guy762_KotORPermitORenlstd_tibannadrop</defName>
+    <label>tibanna drop</label>
+    <description>Call for a drop of 50 tibanna.</description>
+	
+    <minTitle>KotORTitleORenlstd_captain</minTitle>
+    <uiPosition>(0,8)</uiPosition>
+	
+    <royalAid>
+      <favorCost>24</favorCost>
+	  <itemsToDrop>
+        <KOTOR_Tibanna>50</KOTOR_Tibanna>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitORenlstd_ResourceDropBase">
+    <defName>guy762_KotORPermitORenlstd_rhyfueldrop</defName>
+    <label>rhydonium fuel drop</label>
+    <description>Call for a drop of 250 rhydonium fuel.</description>
+	
+    <minTitle>KotORTitleORenlstd_captain</minTitle>
+    <uiPosition>(1,8)</uiPosition>
+	
+    <royalAid>
+      <favorCost>24</favorCost>
+	  <itemsToDrop>
+        <KOTOR_Rhydonium>250</KOTOR_Rhydonium>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  
+  
+  <!-- medical components -->
+  
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitORenlstd_ResourceDropBase">
+    <defName>guy762_KotORPermitORenlstd_neutrodrop</defName>
+    <label>neutroamine drop</label>
+    <description>Call for a drop of 250 neutroamine.</description>
+	
+    <minTitle>KotORTitleORenlstd_captain</minTitle>
+    <uiPosition>(0,9)</uiPosition>
+	
+    <royalAid>
+      <favorCost>24</favorCost>
+	  <itemsToDrop>
+        <Neutroamine>250</Neutroamine>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitORenlstd_ResourceDropBase">
+    <defName>guy762_KotORPermitORenlstd_koltodrop</defName>
+    <label>kolto drop</label>
+    <description>Call for a drop of 50 kolto.</description>
+	
+    <minTitle>KotORTitleORenlstd_captain</minTitle>
+    <uiPosition>(1,9)</uiPosition>
+	
+    <royalAid>
+      <favorCost>48</favorCost>
+	  <itemsToDrop>
+        <KOTOR_kolto>50</KOTOR_kolto>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  
+  
+    <!-- component components -->
+  
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitORenlstd_ResourceDropBase">
+    <defName>guy762_KotORPermitORenlstd_componentdrop</defName>
+    <label>component drop</label>
+    <description>Call for a drop of 50 components.</description>
+	
+    <minTitle>KotORTitleORenlstd_captain</minTitle>
+    <uiPosition>(0,10)</uiPosition>
+	
+    <royalAid>
+      <favorCost>12</favorCost>
+	  <itemsToDrop>
+        <ComponentIndustrial>50</ComponentIndustrial>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitORenlstd_ResourceDropBase">
+    <defName>guy762_KotORPermitORenlstd_spacercompdrop</defName>
+    <label>adv. component drop</label>
+    <description>Call for a drop of 25 adv. components.</description>
+	
+    <minTitle>KotORTitleORenlstd_captain</minTitle>
+    <uiPosition>(1,10)</uiPosition>
+	
+    <royalAid>
+      <favorCost>24</favorCost>
+	  <itemsToDrop>
+        <ComponentSpacer>25</ComponentSpacer>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitORenlstd_ResourceDropBase">
+    <defName>guy762_KotORPermitORenlstd_ultracompdrop</defName>
+    <label>ultra component drop</label>
+    <description>Call for a drop of 10 ultra components.</description>
+	
+    <minTitle>KotORTitleORenlstd_captain</minTitle>
+    <uiPosition>(1,10)</uiPosition>
+	
+    <royalAid>
+      <favorCost>48</favorCost>
+	  <itemsToDrop>
+        <KOTOR_UltraComponent>10</KOTOR_UltraComponent>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  
+  
+  
+  
+  
+
+</Defs>

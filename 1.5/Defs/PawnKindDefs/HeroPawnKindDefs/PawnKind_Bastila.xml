@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	<PawnKindDef Name="KotORHeroBase_Bastila"  ParentName="guy762_HeroPawnKindBase" Abstract="True">
+		<defName>KotORHeroBase_Bastila</defName>
+		<nameMaker>guy762_HeroNamer_Bastila</nameMaker>
+		<combatPower>500</combatPower>
+		<minGenerationAge>27</minGenerationAge>
+		<maxGenerationAge>30</maxGenerationAge>
+		<fixedGender>Female</fixedGender>
+		<forcedHair>Senorita</forcedHair> <!--swapped to VHE_Raider in a patch-->
+		<forcedHairColor>(75,60,45)</forcedHairColor>
+		<skinColorOverride>(242, 237, 224)</skinColorOverride>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Baseliner>999</Baseliner>
+			</xenotypeChances>
+			
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<itemQuality>Legendary</itemQuality>
+		<apparelMoney>29999</apparelMoney>
+		<apparelTags>
+		  <li>KotORHeroAccessories_bastila</li>
+		  <li>KotORHeadband_neuralband</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_BastilaTunic</li>
+		</apparelRequired>
+		<weaponMoney>99999999</weaponMoney>
+		<weaponTags>
+		  <li>OR_bastila</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>14~16</range>
+			</li>
+			<li>
+				<skill>Artistic</skill>
+				<range>8~10</range>
+			</li>
+			<li>
+				<skill>Medicine</skill>
+				<range>12~14</range>
+			</li>
+			<li>
+				<skill>Social</skill>
+				<range>18~20</range>
+			</li>
+		</skills>
+		<forcedTraits>
+			<PsychicSensitivity>2</PsychicSensitivity>
+			<Beauty>1</Beauty>
+			<Nerves>1</Nerves>
+			<Brawler>0</Brawler>
+		</forcedTraits>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_bastila</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		<abilities>
+			<li MayRequire="Ludeon.RimWorld.Ideology">LeaderSpeech</li>
+			<li MayRequire="lee.theforce.psycast">guy762_Ability_MstBatlMed</li>
+		</abilities>
+		<modExtensions>
+		 <li Class="AddGeneForPK.PKAdditionalGenes"> <!-- NOTE: this mod extension cannot be split between two different PKDefs, all genes have to go in the same block!!! -->
+          <geneSets>
+			<li>
+              <isXenogene>true</isXenogene>
+              <chance>1</chance>
+              <geneDefs>
+                <li MayRequire="guy762.Lee.KotORPotF">SWPotF_Gene_LSEnlightenmentII</li>
+              </geneDefs>
+            </li>
+			<li>
+              <isXenogene>false</isXenogene>
+              <chance>1</chance>
+              <geneDefs>
+                <li>Skin_Melanin1</li>
+              </geneDefs>
+            </li>
+          </geneSets>
+		</li>
+		<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
+		  <whitelist>
+			<li>Female_NarrowNormal</li>
+		  </whitelist>
+		  <blacklist>
+			<!--leave blank to disable-->
+		  </blacklist>
+		  <priority>
+			<li>Female_NarrowNormal</li>
+		  </priority>
+		  <checkGender>False</checkGender>
+		</li>
+      </modExtensions>
+	  </PawnKindDef>
+	  
+	  <RulePackDef>
+        <defName>guy762_HeroNamer_Bastila</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[bastila] '[bastila]' [shan]</li>
+				<li>bastila->Bastila</li>
+				<li>shan->Shan</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	
+	<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun]-->
+	
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryC_Bastila</defName>
+		<title>Gifted Padawan</title>
+		<titleShort>Padawan</titleShort>
+		<description>Born to a poor family of treasure hunters, [PAWN_nameDef] was found to have tremendous strength in the Force and was taken to the Jedi enclave on Dantooine to become a Jedi. There [PAWN_pronoun] trained under the legendary Nomi Sunrider and was found to have a rare talent for Battle Meditation, becoming the youngest Jedi ever to attain full mastery over it. When the Mandalorian Wars escalated and Revan's followers entered the war, [PAWN_nameDef] upheld the wisdom of the Jedi Council and refused General Malak's offer to join them.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>8</Melee>
+			<Medicine>8</Medicine>
+		</skillGains>
+		<forcedTraits>
+		  <PsychicSensitivity>2</PsychicSensitivity>
+		  <Brawler>0</Brawler>
+		</forcedTraits>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_Bastila</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_bastila</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryA_Bastila</defName>
+		<title>Grandmaster of the Order</title>
+		<titleShort>Jedi Grandmaster</titleShort>
+		<description>Though [PAWN_pronoun] sat out the Mandalorian Wars, [PAWN_nameDef] was put in charge of leading Republic fleets against Revan's traitorous forces in the Jedi Civil War. [PAWN_pronoun] was eventually tasked with leading a strike force to capture Revan in a desperate gambit to halt the Sith onslaught, and at great cost the strike team was successful. Revan's memories were wiped, and [PAWN_nameDef] was sent with the amnesiac Revan on a journey to re-discover the Star Forge, the source of the Sith war machine. Over the course of their journey, Revan and [PAWN_nameDef] fell in love, and after briefly being corrupted to the dark side by Darth Malak, the two located and destroyed the Star Forge and brought an end to the war.\n\nNot long after the war, Revan remembered a terrible secret in the Unknown Regions, and left [PAWN_nameDef] behind to face it alone. Though Darth Malak was defeated, the remaining Sith warlords soon ordered an assassination campaign that nearly wiped out the Jedi order, and [PAWN_nameDef] spent the next five years dodging Sith assassins and protecting [PAWN_possessive] new child. When the assassins were defeated, [PAWN_nameDef] was one of the few remaining Jedi knights left in the galaxy, and the task fell to [PAWN_possessive] to rebuild the Jedi Order with the help of the Exile's Padawans.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Social>10</Social>
+		</skillGains>
+		<forcedTraits>
+		  <Nerves>1</Nerves>
+		</forcedTraits>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_Bastila</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_bastila</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	
+
+
+
+
+</Defs>

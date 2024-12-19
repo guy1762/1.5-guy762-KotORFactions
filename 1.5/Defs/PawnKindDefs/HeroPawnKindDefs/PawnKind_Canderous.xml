@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	
+	<PawnKindDef Name="KotORPlayableHero_Canderous"  ParentName="guy762_HeroPawnKindBase">
+		<defName>KotORPlayableHero_Canderous</defName>
+		<nameMaker>guy762_HeroNamer_Canderous</nameMaker>
+		<label>Mandalore</label>
+		<combatPower>500</combatPower>
+		<minGenerationAge>65</minGenerationAge>
+		<maxGenerationAge>66</maxGenerationAge>
+		<fixedGender>Male</fixedGender>
+		<forcedHair>Topdog</forcedHair>
+		<forcedHairColor>(111,110,110)</forcedHairColor>
+		<skinColorOverride>(255,254,211)</skinColorOverride>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Baseliner>999</Baseliner>
+			</xenotypeChances>
+			
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<itemQuality>Legendary</itemQuality>
+		<apparelMoney>49999</apparelMoney>
+		<apparelTags>
+		  <li>MNC_outfit_mandalore</li>
+		  <li>KotORHeroAccessories_canderous</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_MandoHelmet_supercom</li>
+		   <li>guy762_MandoArmor_supercom</li>
+		   <li>guy762_Jetpack_missile</li>
+		   <li>guy762_Bodysuit</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<apparelDef>guy762_Bodysuit</apparelDef>
+				<color>(100,100,100)</color>
+				<quality>Legendary</quality>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<apparelDef>guy762_MandoArmor_supercom</apparelDef>
+				<quality>Legendary</quality>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<apparelDef>guy762_MandoHelmet_supercom</apparelDef>
+				<quality>Legendary</quality>
+			</li>
+		</specificApparelRequirements>
+		<weaponMoney>99999999</weaponMoney>
+		<weaponTags>
+		  <li>MNC_canderous</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>16~18</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>18~20</range>
+			</li>
+			<li>
+				<skill>Construction</skill>
+				<range>12~14</range>
+			</li>
+			<li>
+				<skill>Social</skill>
+				<range>14~16</range>
+			</li>
+		</skills>
+		<forcedTraits>
+			<ShootingAccuracy>-1</ShootingAccuracy>
+			<Psychopath>0</Psychopath>
+			<Tough>0</Tough>
+			<Abrasive>0</Abrasive>
+		</forcedTraits>
+		<disallowedTraits>
+		  <li>BodyPurist</li>
+		</disallowedTraits>
+		<techHediffsMoney>7500~12500</techHediffsMoney>
+		<techHediffsChance>6</techHediffsChance>
+		<techHediffsTags>
+			<li>Spacer</li>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+		  <li>guy762_ImplantDock_II</li>
+		</techHediffsRequired>
+		
+		<inventoryOptions>
+		  <skipChance>0</skipChance>
+		  <subOptionsTakeAll>
+			<li>
+			  <thingDef>guy762_vsword_baragwin</thingDef>
+			  <countRange>1</countRange>
+			</li>
+		  </subOptionsTakeAll>
+		  <subOptionsChooseOne>
+			<li>
+			  <thingDef>guy762_ImplantItemSys_numbness</thingDef>
+			  <countRange>1</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_ImplantItemSys_bavakar</thingDef>
+			  <countRange>1</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_ImplantItemSys_navardan</thingDef>
+			  <countRange>1</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_canderous</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		<abilities>
+			<li MayRequire="Ludeon.RimWorld.Ideology">LeaderSpeech</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MarksmanCommand</li>
+		</abilities>
+		<modExtensions>
+			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
+			  <whitelist>
+				<li>Male_AverageWide</li>
+			  </whitelist>
+			  <blacklist>
+				<!--leave blank to disable-->
+			  </blacklist>
+			  <priority>
+				<li>Male_AverageWide</li>
+			  </priority>
+			  <checkGender>False</checkGender>
+			</li>
+			<li Class="BodyTypeForPawnKind.ModExtension_ForcedStyleItem">
+			  <forcedBeard>Stubble</forcedBeard>
+			</li>
+			<li Class="AddGeneForPK.PKAdditionalGenes">
+			  <geneSets>
+				<li>
+				  <isXenogene>false</isXenogene>
+				  <chance>1</chance>
+				  <geneDefs>
+					<li>Skin_Melanin1</li>
+				  </geneDefs>
+				</li>
+			  </geneSets>
+			</li>
+		</modExtensions>
+	  </PawnKindDef>
+	  
+	  <RulePackDef>
+        <defName>guy762_HeroNamer_Canderous</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[cand] '[mandalore]' [ordo]</li>
+				<li>cand->Canderous</li>
+				<li>ordo->Ordo</li>
+				<li>mandalore->Mandalore</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+		<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun]-->
+	
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryC_Canderous</defName>
+		<title>Mandalorian Crusader</title>
+		<titleShort>Crusader</titleShort>
+		<description>[PAWN_nameDef] was born to a powerful Mandalorian clan, and upon reaching adolescence was sent to fight in the early Mandalorian crusades in the Outer Rim. There [PAWN_pronoun] would fight ferociously, earning a name for [PAWN_possessive]self all throughout the Mandalorian Wars until their defeat at the Battle of Malachor V.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>5</Melee>
+		</skillGains>
+		<forcedTraits>
+		  <ShootingAccuracy>-1</ShootingAccuracy>
+		  <Psychopath>0</Psychopath>
+		</forcedTraits>
+		<disallowedTraits>
+			<Wimp>0</Wimp>
+		</disallowedTraits>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_Canderous</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_canderous</li>
+			<li>guy762BSC_canderousMerc</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryA_Canderous</defName>
+		<title>Mandalore the Preserver</title>
+		<titleShort>the Preserver</titleShort>
+		<description>[PAWN_nameDef] served as a mercenary for many years following the end of the Mandalorian Wars, working under the Tarisian Exchange boss Davik Kang. [PAWN_nameDef] eventually met Revan, the Jedi leader who defeated [PAWN_possessive] people at the Battle of Malachor V, and fought alongside them against the Sith.\n\nFollowing Revan's final order, [PAWN_nameDef] set off on a quest to unite the scattered Mandalorian clans and restore [PAWN_possessive] people to their former glory, taking up the mantle of Mandalore the Preserver.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Social>10</Social>
+		</skillGains>
+		<forcedTraits>
+		  <Tough>0</Tough>
+		</forcedTraits>
+		<disallowedTraits>
+			<BodyPurist>0</BodyPurist>
+			<NaturalMood>-1</NaturalMood>
+			<NaturalMood>-2</NaturalMood>
+			<Nerves>-1</Nerves>
+			<Nerves>-2</Nerves>
+		</disallowedTraits>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_Canderous</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_canderous</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	
+
+</Defs>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+	  <xpath>Defs/ThingDef[defName="VPE_Bolt"]/projectile/extraDamages/li[1]/def</xpath>
+		<value>
+		  <def>guy762_RangedDamage_electrical</def>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+	  <xpath>Defs/ThingDef[defName="VPE_ChainBolt"]/modExtensions/li[1]/damageDef</xpath>
+		<value>
+		  <damageDef>guy762_BeamDamage_electrical</damageDef>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+	  <xpath>Defs/ThingDef[defName="VPE_ChainBolt"]/modExtensions/li[1]/addFire</xpath>
+		<value>
+		  <addFire>false</addFire>
+		</value>
+	</Operation>
+	
+	
+</Patch>

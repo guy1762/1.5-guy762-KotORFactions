@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+  <TraderKindDef>
+    <defName>guy762_TraderKind_MandoArmorer</defName>
+    <label>Mandalorian armorsmith</label>
+    <orbital>false</orbital>
+	<!-- <requestable>false</requestable> -->
+	<faction>guy762_KotORFaction_MandoClan</faction>
+    <!--<permitRequiredForTrading>TradeOrbital</permitRequiredForTrading-->
+    <commonality>1</commonality>
+    <stockGenerators>
+
+      <!-- CURRENCY -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>5000~10000</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Gold</thingDef>
+        <countRange>500~2500</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_SingleDef">
+		<thingDef>guy762_KotORcredits</thingDef>
+		<countRange>5000~10000</countRange>
+	  </li>
+	  <li Class="StockGenerator_BuyTradeTag">
+		<tag>guy762TT_credits</tag>
+	  </li>
+		
+
+		
+	   
+	   
+	   
+	  <!-- Resources -->
+		
+	  
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentIndustrial</thingDef>
+        <countRange>25~50</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentSpacer</thingDef>
+        <countRange>5~10</countRange>
+      </li>
+	  
+	  
+	  
+	  
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Steel</thingDef>
+        <countRange>500~800</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Plasteel</thingDef>
+        <countRange>100~400</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Uranium</thingDef>
+        <countRange>50~200</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>KOTOR_AlloyDurasteel</thingDef>
+        <countRange>200~600</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>KOTOR_AlloyBronzium</thingDef>
+        <countRange>80~120</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>KOTOR_IngotCortosis</thingDef>
+        <countRange>10~25</countRange>
+      </li>
+	  
+	  
+	  <li Class="StockGenerator_SingleDef">
+		<thingDef>Synthread</thingDef>
+		<countRange>100~250</countRange>
+	  </li>
+	  <li Class="StockGenerator_SingleDef">
+		<thingDef>KOTOR_FabricArmorweave</thingDef>
+		<countRange>75~150</countRange>
+	  </li>
+	  <li Class="StockGenerator_SingleDef">
+		<thingDef>DevilstrandCloth</thingDef>
+		<countRange>50~75</countRange>
+	  </li>
+	  <li Class="StockGenerator_SingleDef">
+		<thingDef>Hyperweave</thingDef>
+		<countRange>50~75</countRange>
+	  </li>
+
+	  
+	  
+	  
+	  
+	  <!-- Equipment -->
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotOREquipment_hitech</tradeTag>
+        <thingDefCountRange>2~4</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotOREquipment_apparel</tradeTag>
+        <thingDefCountRange>3~6</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotOREquipment_consumables</tradeTag>
+        <thingDefCountRange>3~6</thingDefCountRange>
+        <countRange>2~8</countRange>
+      </li>
+
+	  
+	  <!-- factional -->
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_MNCArmor</tradeTag>
+        <thingDefCountRange>8~12</thingDefCountRange>
+        <countRange>4~6</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_MNCWeapons</tradeTag>
+        <thingDefCountRange>6~10</thingDefCountRange>
+        <countRange>4~6</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>KOTOR_RawBeskar</thingDef>
+        <countRange>100~200</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>KOTOR_IngotBeskar</thingDef>
+        <countRange>60~120</countRange>
+      </li>
+	  
+	  
+	  
+	  <!-- weapons -->
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotORWeapon_CivLegal</tradeTag>
+        <thingDefCountRange>0~1</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotORWeapon_illegal</tradeTag>
+        <thingDefCountRange>0~1</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotORWeapon_exotic</tradeTag>
+        <thingDefCountRange>0~1</thingDefCountRange>
+        <countRange>0~1</countRange>
+      </li>
+	  
+	  
+	  
+	  
+	  <!-- armor -->
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotORArmor_civ</tradeTag>
+        <thingDefCountRange>0~1</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotORArmor_mid</tradeTag>
+        <thingDefCountRange>0~1</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotORArmor_hvy</tradeTag>
+        <thingDefCountRange>0~1</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotORArmor_powered</tradeTag>
+        <thingDefCountRange>0~1</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotORArmor_exotic</tradeTag>
+        <thingDefCountRange>0~1</thingDefCountRange>
+        <countRange>0~1</countRange>
+      </li>
+	  
+	  
+	  
+	  
+	  <!-- Upgrades -->
+	  
+      <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_weaponmod_basic</tradeTag>
+        <thingDefCountRange>3~6</thingDefCountRange>
+        <countRange>1~3</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_weaponmod_adv</tradeTag>
+        <thingDefCountRange>2~4</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_weaponmod_rare</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>0~1</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_armormod_basic</tradeTag>
+        <thingDefCountRange>3~6</thingDefCountRange>
+        <countRange>1~3</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_armormod_adv</tradeTag>
+        <thingDefCountRange>2~4</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_sabermod_basic</tradeTag>
+        <thingDefCountRange>0~1</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_sabermod_adv</tradeTag>
+        <thingDefCountRange>0~1</thingDefCountRange>
+        <countRange>0~1</countRange>
+      </li>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <!-- Buildings -->
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotORWorkbench</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  
+	  
+
+      
+      
+      <!-- Buying -->
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireCommon</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireRoyal</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>ExoticBuilding</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>UtilitySpecial</tag></li>
+
+    </stockGenerators>
+  </TraderKindDef>
+  
+  
+</Defs>

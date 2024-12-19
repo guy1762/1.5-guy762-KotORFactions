@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<PawnKindDef MayRequire="guy762.StarWarsXenotypes" Name="KotORPlayableHero_Visas_PotF"  ParentName="KotORHeroBase_Visas">
+		<defName>KotORPlayableHero_Visas_PotF</defName>
+		<modExtensions>
+         <li Class="ItsSorceryFramework.ModExtension_PawnGenSchemaSet">
+				<schemaSets>
+				  <li>
+					<schemaMappings> <!-- all required nodes must be listed, not just the ones that give abilities -->
+					  <li>
+						<schema>SWPotF_ForceSchema</schema>
+						<weight>1</weight>
+						
+						<forceLevel>True</forceLevel>
+						<level>25</level>
+						
+						<!--forcePoints>True</forcePoints>
+						<points>5</points-->
+						
+						<requiredNodes>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_pull</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpI</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_cloakI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_cloakII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_cloakIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_EResI</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_suppression</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_breach</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_confusion</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_mindtrick</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_droidstun</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_cure</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_heal</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_battleprecogI</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_shock</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_choke</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_fear</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_horror</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_drainlife</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_drainforceI</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_rendI</nodeDef><forceLevel>True</forceLevel></li> <!-- 25 -->
+						  
+						</requiredNodes>
+					  </li>
+					</schemaMappings>
+				  </li>
+				</schemaSets>
+		  </li>
+      </modExtensions>
+	</PawnKindDef>
+	  
+	  
+	  
+	  
+	  
+	  
+	
+	<PawnKindDef MayRequire="guy762.StarWarsXenotypes" Name="KotORPlayableHero_Handmaiden_PotF"  ParentName="KotORHeroBase_Handmaiden">
+		<defName>KotORPlayableHero_Handmaiden_PotF</defName>
+		<modExtensions>
+         <li Class="ItsSorceryFramework.ModExtension_PawnGenSchemaSet">
+				<schemaSets>
+				  <li>
+					<schemaMappings> <!-- all required nodes must be listed, not just the ones that give abilities -->
+					  <li>
+						<schema>SWPotF_ForceSchema</schema>
+						<weight>1</weight>
+						
+						<forceLevel>True</forceLevel>
+						<level>20</level>
+						
+						<!--forcePoints>True</forcePoints>
+						<points>5</points-->
+						
+						<requiredNodes>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_pull</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_saberthrow</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_CritStrikeWeapon</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_CritStrikeHand</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_cure</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_heal</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_armorI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_armorII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_valorI</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_battleprecogI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_battleprecogII</nodeDef><forceLevel>True</forceLevel></li> <!-- 17 -->
+						  <!-- 3 unarmed boost abilities -->
+						  
+						</requiredNodes>
+					  </li>
+					</schemaMappings>
+				  </li>
+				</schemaSets>
+		  </li>
+      </modExtensions>
+	</PawnKindDef>
+	
+	
+	  
+	  <PawnKindDef MayRequire="guy762.StarWarsXenotypes" Name="KotORPlayableHero_Juhani_PotF"  ParentName="KotORHeroBase_Juhani">
+		<defName>KotORPlayableHero_Juhani_PotF</defName>
+		<modExtensions>
+         <li Class="ItsSorceryFramework.ModExtension_PawnGenSchemaSet">
+				<schemaSets>
+				  <li>
+					<schemaMappings> <!-- all required nodes must be listed, not just the ones that give abilities -->
+					  <li>
+						<schema>SWPotF_ForceSchema</schema>
+						<weight>1</weight>
+						
+						<forceLevel>True</forceLevel>
+						<level>30</level>
+						
+						<!--forcePoints>True</forcePoints>
+						<points>5</points-->
+						
+						<requiredNodes>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_pull</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_saberthrow</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_slow</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_stasis</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_whirlwind</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_cloakI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_cloakII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_cloakIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_EResI</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_suppression</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_breach</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_CritStrikeWeapon</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_CritStrikeHand</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_CritStrikeLimb</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_CritStrikeBisect</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_CritStrikeHead</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_cure</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_heal</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_barrierI</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_disarm</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_stun</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_stunfield</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_rendI</nodeDef><forceLevel>True</forceLevel></li> <!-- 30 -->
+						  
+						</requiredNodes>
+					  </li>
+					</schemaMappings>
+				  </li>
+				</schemaSets>
+		  </li>
+      </modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="KotORPlayableHero_Bastila_PotF"  ParentName="KotORHeroBase_Bastila">
+		<defName>KotORPlayableHero_Bastila_PotF</defName>
+		<modExtensions>
+		 <li Class="ItsSorceryFramework.ModExtension_PawnGenSchemaSet">
+				<schemaSets>
+				  <li>
+					<schemaMappings> <!-- all required nodes must be listed, not just the ones that give abilities -->
+					  <li>
+						<schema>SWPotF_ForceSchema</schema>
+						<weight>1</weight>
+						
+						<forceLevel>True</forceLevel>
+						<level>35</level>
+						
+						<!--forcePoints>True</forcePoints>
+						<points>5</points-->
+						
+						<requiredNodes>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_pull</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_repulse</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_wave</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_saberthrow</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_slow</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_stasis</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_whirlwind</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_EResI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_EResII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_ForceBodyI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_ForceBodyII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_ForceBodyIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_forceresist</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_suppression</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_BattleMeditationI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_BattleMeditationII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_BattleMeditationIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_cure</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_heal</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_revitalizeI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_revitalizeII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_armorI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_armorII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_barrierI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_barrierII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_valorI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_valorII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_disarm</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_stun</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_shock</nodeDef><forceLevel>True</forceLevel></li> <!-- 35 -->
+						  
+						</requiredNodes>
+					  </li>
+					</schemaMappings>
+				  </li>
+				</schemaSets>
+		  </li>
+	  </modExtensions>
+	</PawnKindDef>
+	
+	
+	  
+	  <PawnKindDef Name="KotORPlayableHero_ExileSurik_PotF"  ParentName="KotORHeroBase_ExileSurik">
+		<defName>KotORPlayableHero_ExileSurik_PotF</defName>
+		<modExtensions>
+         <li Class="ItsSorceryFramework.ModExtension_PawnGenSchemaSet">
+				<schemaSets>
+				  <li>
+					<schemaMappings> <!-- all required nodes must be listed, not just the ones that give abilities -->
+					  <li>
+						<schema>SWPotF_ForceSchema</schema>
+						<weight>1</weight>
+						
+						<forceLevel>True</forceLevel>
+						<level>40</level>
+						
+						<!--forcePoints>True</forcePoints>
+						<points>5</points-->
+						
+						<requiredNodes>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_pull</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_repulse</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_saberthrow</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_advsaberthrow</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_EResI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_EResII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_forceresist</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_forceimmunity</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_confusion</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_mindtrick</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_affectmind</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_dominatemind</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_droidstun</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_droiddisable</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_BattleMeditationI</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_breathcontrol</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_cure</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_heal</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_advheal</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_revitalizeI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_revitalizeII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_armorI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_armorII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_barrierI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_barrierII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_valorI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_valorII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_valorIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_focusI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_focusII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_battleprecogI</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_stun</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_stunfield</nodeDef><forceLevel>True</forceLevel></li>
+						  <!-- beast trick --> <!-- 40 -->
+						  
+						</requiredNodes>
+					  </li>
+					</schemaMappings>
+				  </li>
+				</schemaSets>
+		  </li>
+      </modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORPlayableHero_Jolee_PotF"  ParentName="KotORHeroBase_Jolee">
+		<defName>KotORPlayableHero_Jolee_PotF</defName>
+		<modExtensions>
+         <li Class="ItsSorceryFramework.ModExtension_PawnGenSchemaSet">
+				<schemaSets>
+				  <li>
+					<schemaMappings> <!-- all required nodes must be listed, not just the ones that give abilities -->
+					  <li>
+						<schema>SWPotF_ForceSchema</schema>
+						<weight>1</weight>
+						
+						<forceLevel>True</forceLevel>
+						<level>30</level>
+						
+						<!--forcePoints>True</forcePoints>
+						<points>5</points-->
+						
+						<requiredNodes>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_pull</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_cloakI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_cloakII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_cloakIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_EResI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_EResII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_EResIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_confusion</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_forceresist</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_forceimmunity</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_suppression</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_breach</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_ForceBodyI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_ForceBodyII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_ForceBodyIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_cure</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_heal</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_advheal</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_revitalizeI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_revitalizeII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_revitalizeIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_armorI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_armorII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_armorIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_barrierI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_barrierII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeLS_barrierIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_fear</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_horror</nodeDef><forceLevel>True</forceLevel></li> <!-- 30 -->
+						  
+						</requiredNodes>
+					  </li>
+					</schemaMappings>
+				  </li>
+				</schemaSets>
+		  </li>
+      </modExtensions>
+	</PawnKindDef>
+	
+	
+	<!--
+	  
+	  guardians: 2(4*) 
+	  sentinels: 4
+	  consulars: 2(3*)(4**)
+	  
+	  red mage = equally balanced between tank/support/dps roles
+	  true red mage = equally balanced between force roles, blaster-use, and feat/skill investment
+	  pure tank - not possible because all of the "tank" abilities also double as "support" buffs
+	  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	  
+	  visas (lvl 25): versatile dps
+	  handmaiden (lvl 20): tank/dps hybrid
+	  juhani (lvl 30): pure dps
+	  bastila (lvl 35): force-only red mage
+	  exile (lvl 40): idk, probably vers support* or guardian (?)
+	  jolee (lvl 30): pure support
+	  
+	  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	  OTHER JEDI I HAVEN'T MADE YET:
+	  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	  
+	  atton (lvl 15): true red mage - has all 3 tiers of droid attacks
+	  mira (lvl 10): DPS/blaster-heavy red mage
+	  disciple (lvl 20): tank/support
+	  jedi yuthura (lvl 30): idk, probably tank/dps*
+	  
+	  bao dur (lvl 5): 5 levels in some basic stuff
+	  zayne (lvl 35): idk, might not even work without the bad luck gimmick
+	  redeemed revan (lvl 40): idk, probably vers DPS (to contrast the exile)*
+	  
+	  kreia (lvl 30): buff/debuff support**
+	  atris: buff/debuff support, will have Electric Judgement
+	  lucien draay: tank/dps hybrid, will have Electric Judgement
+	  jedi malak: idk
+	  
+	  
+	  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	  DARK SIDERS
+	  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	  
+	  yuthura (lvl 20): tank/dps
+	  bandon (lvl 15): pure dps
+	  malak (lvl 30): force-only red mage
+	  sion (lvl 40): tank/dps
+	  nihilus (lvl 40): pure debuff support
+	  shadow hand visas (lvl 10): DPS/buff-breaker
+	  revan (lvl 30): vers DPS
+	  
+	  traya: pure debuff support
+	  uthar wynn: idk
+	  
+	-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="KotORPlayableVillain_Malak_PotF"  ParentName="KotORHeroBase_Malak">
+		<defName>KotORPlayableVillain_Malak_PotF</defName>
+		<modExtensions>
+			 <li Class="ItsSorceryFramework.ModExtension_PawnGenSchemaSet">
+				<schemaSets>
+				  <li>
+					<schemaMappings> <!-- all required nodes must be listed, not just the ones that give abilities -->
+					  <li>
+						<schema>SWPotF_ForceSchema</schema>
+						<weight>1</weight>
+						
+						<forceLevel>True</forceLevel>
+						<level>40</level>
+						
+						<!--forcePoints>True</forcePoints>
+						<points>5</points-->
+						
+						<requiredNodes>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_pull</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_repulse</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_wave</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_saberthrow</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_advsaberthrow</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_EResI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_EResII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_EResIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_forceresist</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_forceimmunity</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_suppression</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_breach</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_affectmind</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_dominatemind</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_CritStrikeWeapon</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_CritStrikeHand</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_CritStrikeLimb</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_CritStrikeBisect</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_CritStrikeHead</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_breathcontrol</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_shock</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_lightning</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_storm</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_choke</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_crush</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_wound</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_kill</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_drainlife</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_drainforceI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_drainforceII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_rendI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_rendII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_rendIII</nodeDef><forceLevel>True</forceLevel></li> <!-- 40 -->
+						  
+						</requiredNodes>
+					  </li>
+					</schemaMappings>
+				  </li>
+				</schemaSets>
+		  </li>
+		</modExtensions>
+	  </PawnKindDef>
+	  
+	  <PawnKindDef MayRequire="guy762.StarWarsXenotypes" Name="KotORPlayableVillain_Sion_PotF"  ParentName="KotORHeroBase_Sion">
+		<defName>KotORPlayableVillain_Sion_PotF</defName>
+		<modExtensions>
+			 <li Class="ItsSorceryFramework.ModExtension_PawnGenSchemaSet">
+				<schemaSets>
+				  <li>
+					<schemaMappings> <!-- all required nodes must be listed, not just the ones that give abilities -->
+					  <li>
+						<schema>SWPotF_ForceSchema</schema>
+						<weight>1</weight>
+						
+						<forceLevel>True</forceLevel>
+						<level>40</level>
+						
+						<!--forcePoints>True</forcePoints>
+						<points>5</points-->
+						
+						<requiredNodes>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_pull</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_repulse</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_saberthrow</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_advsaberthrow</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_slow</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_stasis</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_EResI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_EResII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_EResIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_suppression</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_ForceBodyI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_ForceBodyII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_ForceBodyIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_CritStrikeWeapon</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_CritStrikeHand</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_CritStrikeLimb</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_CritStrikeBisect</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_CritStrikeHead</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_choke</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_crush</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_wound</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_kill</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_screamI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_screamII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_screamIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_drainlife</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_rendI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_rendII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_rendIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_furyI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_furyII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_furyIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <!--<li><nodeDef>SWPotF_ForceTreeNodeDS_carnage</nodeDef><forceLevel>True</forceLevel></li>-->  <!-- 40 -->
+						</requiredNodes>
+					  </li>
+					</schemaMappings>
+				  </li>
+				</schemaSets>
+		  </li>
+		</modExtensions>
+	  </PawnKindDef>
+	  
+	  
+	  <PawnKindDef MayRequire="guy762.StarWarsXenotypes" Name="KotORPlayableVillain_Yuthura_PotF"  ParentName="KotORHeroBase_Yuthura">
+		<defName>KotORPlayableVillain_Yuthura_PotF</defName>
+		<modExtensions>
+         <li Class="ItsSorceryFramework.ModExtension_PawnGenSchemaSet">
+				<schemaSets>
+				  <li>
+					<schemaMappings> <!-- all required nodes must be listed, not just the ones that give abilities -->
+					  <li>
+						<schema>SWPotF_ForceSchema</schema>
+						<weight>1</weight>
+						
+						<forceLevel>True</forceLevel>
+						<level>20</level>
+						
+						<!--forcePoints>True</forcePoints>
+						<points>5</points-->
+						
+						<requiredNodes>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_pull</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_saberthrow</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_advsaberthrow</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpII</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpIII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_slow</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_EResI</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_forceresist</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_CritStrikeWeapon</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_CritStrikeHand</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_choke</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_fear</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_drainlife</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_rendI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_rendII</nodeDef><forceLevel>True</forceLevel></li> <!-- 20 -->
+						</requiredNodes>
+					  </li>
+					</schemaMappings>
+				  </li>
+				</schemaSets>
+		  </li>
+      </modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	<PawnKindDef MayRequire="guy762.StarWarsXenotypes" Name="KotORPlayableVillain_Bandon_PotF"  ParentName="KotORHeroBase_Bandon">
+		<defName>KotORPlayableVillain_Bandon_PotF</defName>
+		<modExtensions>
+         <li Class="ItsSorceryFramework.ModExtension_PawnGenSchemaSet">
+				<schemaSets>
+				  <li>
+					<schemaMappings> <!-- all required nodes must be listed, not just the ones that give abilities -->
+					  <li>
+						<schema>SWPotF_ForceSchema</schema>
+						<weight>1</weight>
+						
+						<forceLevel>True</forceLevel>
+						<level>15</level>
+						
+						<!--forcePoints>True</forcePoints>
+						<points>5</points-->
+						
+						<requiredNodes>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_pull</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_repulse</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_saberthrow</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_advsaberthrow</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_speedII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpI</nodeDef><forceLevel>True</forceLevel></li>
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_jumpII</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_slow</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_forceresist</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_droidstun</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_choke</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_drainlife</nodeDef><forceLevel>True</forceLevel></li>
+						  
+						  <li><nodeDef>SWPotF_ForceTreeNodeDS_rendI</nodeDef><forceLevel>True</forceLevel></li>
+						</requiredNodes>
+					  </li>
+					</schemaMappings>
+				  </li>
+				</schemaSets>
+		  </li>
+      </modExtensions>
+	</PawnKindDef>
+
+</Defs>

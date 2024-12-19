@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <PawnKindDef Name="guy762_HeroPawnKindBase" ParentName="BasePlayerPawnKind" Abstract="True">
+        <label>hero</label>
+        <defaultFactionType>PlayerColony</defaultFactionType>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<chemicalAddictionChance>0.00</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<initialResistanceRange>13~21</initialResistanceRange>
+		<humanPregnancyChance>0</humanPregnancyChance>
+		<biocodeWeaponChance>1</biocodeWeaponChance>
+		<isFighter>true</isFighter>
+		<generateInitialNonFamilyRelations>False</generateInitialNonFamilyRelations>
+		<allowOldAgeInjuries>False</allowOldAgeInjuries>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		</requiredWorkTags>
+		<inventoryOptions>
+		  <skipChance>0</skipChance>
+		  <subOptionsTakeAll>
+			<li>
+			  <thingDef>guy762_medpac_life</thingDef>
+			  <countRange>3~4</countRange>
+			</li>
+		  </subOptionsTakeAll>
+		</inventoryOptions>
+		<maxPerGroup>1</maxPerGroup>
+		<!--skipResistant>true</skipResistant-->
+    </PawnKindDef>
+	
+
+</Defs>

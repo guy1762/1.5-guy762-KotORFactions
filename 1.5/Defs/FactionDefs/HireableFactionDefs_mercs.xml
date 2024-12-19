@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    
+	<VFECore.Misc.HireableFactionDef>
+        <defName>guy762_KotORHireableFaction_Exchange</defName>
+        <label>the Exchange</label>
+        <description>A vast underworld network of criminals, bounty hunters, slavers, mercenaries, spice-dealers, and other scum that stretches across the known galaxy. While Exchange bosses typically keep their own personnel to hire out as they see fit, they also broker contracts for the galaxy's top mercenary and bounty hunter talents.</description>
+        <texPath>World/Exchange</texPath>
+        <color>(255,255,255)</color>
+        <pawnKinds>
+            <li>KotORBntyHntr_light</li>
+            <li>KotORBntyHntr_mid</li>
+			<li>KotORBntyHntr_heavy</li>
+			<li>KotORBntyHntr_star</li>
+			
+			<li>KotORBntyHntr_mandoweak</li>
+			<li>KotORBntyHntr_mandomid</li>
+			<li>KotORBntyHntr_mandostar</li>
+			
+			<li>KotORMerc_echanilight</li>
+			<li>KotORMerc_echanimid</li>
+			<li>KotORMerc_echaniheavy</li>
+			
+			<li>KotORMerc_wookieeranged</li>
+			<li>KotORMerc_wookieemelee</li>
+			
+			<li>KotORMerc_gandmelee</li>
+			<li>KotORMerc_gandranged</li>
+			
+			<li>KotORMerc_chiss</li>
+			<li MayRequire="guy762.KotORDroids">KotORDroidBad_hk50</li>
+        </pawnKinds>
+        <commTag>Exchange mercenaries</commTag>
+        <referencedFaction>guy762_KotORFaction_Exchange</referencedFaction>
+    </VFECore.Misc.HireableFactionDef>
+	
+	
+	
+	<VFECore.Misc.HireableFactionDef>
+        <defName>guy762_KotORHireableFaction_Hutts</defName>
+        <label>the Hutts</label>
+        <description>The underworld connections of the Hutt Kajidics run deep. Those who earn the favor of the Hutt Kajidii are granted permission to reap the benefits of these connections and are granted permission to hire the finest mercenaries, slavers, and bounty hunters money can buy.</description>
+        <texPath>World/HuttClans</texPath>
+        <color>(120,120,50)</color>
+        <pawnKinds>
+            <li>KotORBntyHntr_light</li>
+            <li>KotORBntyHntr_mid</li>
+			<li>KotORBntyHntr_heavy</li>
+			<li>KotORBntyHntr_star</li>
+			
+			<li>KotORMerc_trandoslaver</li>
+			<li>KotORMerc_trando</li>
+			<li>KotORMerc_trandoham</li>
+			<li>KotORMerc_trandoveteran</li>
+			
+			<li>KotORMerc_bothan</li>
+			
+			<li>KotORMerc_kaleeshmelee</li>
+			<li>KotORMerc_kaleeshranged</li>
+			
+			<li>KotORMerc_mando</li>
+			<li>KotORMerc_mandoboss</li>
+			
+			<li>KotORMerc_gandmelee</li>
+			<li>KotORMerc_gandranged</li>
+			
+			<li>KotORMerc_nagaimelee</li>
+			<li>KotORMerc_nagairanged</li>
+        </pawnKinds>
+        <commTag>Hutt cartel mercenaries</commTag>
+        <referencedFaction>guy762_KotORFaction_HuttCartel</referencedFaction>
+    </VFECore.Misc.HireableFactionDef>
+	
+	
+	
+	
+	<!--VFECore.Misc.HireableFactionDef>
+        <defName>guy762_KotORHireableFaction_MercGuild</defName>
+        <label>mercenary gang</label>
+        <description>An independent mercenary company composed of locals, offworlders, and outlaws.</description>
+        <texPath>World/ScumAndVillainy</texPath>
+        <color>(255,255,255)</color>
+        <pawnKinds>
+            <li>KotORMerc_merc</li>
+            <li>KotORMerc_sniper</li>
+            <li>KotORMerc_demo</li>
+            <li>KotORMerc_warrior</li>
+			<li>KotORMerc_commando</li>
+        </pawnKinds>
+        <commTag>mercenaries</commTag>
+        <referencedFaction>guy762_KotORFaction_MercGuild</referencedFaction>
+    </VFECore.Misc.HireableFactionDef>
+	
+	<VFECore.Misc.HireableFactionDef>
+        <defName>guy762_KotORHireableFaction_Trandoshans</defName>
+        <label>Trandoshan slaver guild</label>
+        <description>A guild of vicious slavers, hunters, and pirates from the planet Trandosha. They scour the unprotected colonies of the Rim looking for sentient prey to sell, or trophy game to hunt. Though each guild is an independent organization, many guild members will offer their expertise for a price.</description>
+        <texPath>World/Trandoshan</texPath>
+        <color>(245,220,20)</color>
+        <pawnKinds>
+            <li>MercTrando_grunt</li>
+            <li>MercTrando_slaver</li>
+            <li>MercTrando_merc</li>
+			<li>MercTrando_ham</li>
+			<li>MercTrando_veteran</li>
+        </pawnKinds>
+        <commTag>mercenaries</commTag>
+        <referencedFaction>guy762_KotORFaction_Trandoshans</referencedFaction>
+    </VFECore.Misc.HireableFactionDef>
+	
+	
+	
+	
+	
+	<VFECore.Misc.HireableFactionDef>
+        <defName>guy762_KotORHireableFaction_Mando</defName>
+        <label>Mandalorian clan</label>
+        <description>An unaffiliated clan of Mandalorian warriors who generally keep to themselves, but are willing to offer their services as mercenaries... for a high price.</description>
+        <texPath>World/MandoNeoCrusaders</texPath>
+        <color>(160,25,30)</color>
+        <pawnKinds>
+            <li>MandoClan_scout</li>
+			<li>MandoClan_trooper</li>
+			<li>MandoClan_warrior</li>
+			<li>MandoClan_commando</li>
+			<li>MandoClan_marauder</li>
+			<li>MandoClan_heavy</li>
+			<li>MandoClan_rallymaster</li>
+			<li>MandoClan_champion</li>
+        </pawnKinds>
+        <commTag>Mandalorians</commTag>
+        <referencedFaction>guy762_KotORFaction_MandoClan</referencedFaction>
+    </VFECore.Misc.HireableFactionDef>
+	
+	
+	
+	
+	
+	
+	<VFECore.Misc.HireableFactionDef>
+        <defName>guy762_KotORHireableFaction_Exchange</defName>
+        <label>Exchange</label>
+        <description>A vast underworld network of criminals, bounty hunters, slavers, mercenaries, spice-dealers, and other scum that stretches across the known galaxy. While Exchange bosses typically keep their own personnel to hire out as they see fit, they also broker contracts for the galaxy's top mercenary and bounty hunter talents.</description>
+        <texPath>World/Exchange</texPath>
+        <color>(255,255,255)</color>
+        <pawnKinds>
+            <li>Exchange_agent</li>
+            <li>Exchange_hitman</li>
+            <li>Exchange_assassin</li>
+			
+            <li>Exchange_bountyhunter_light</li>
+            <li>Exchange_bountyhunter_mid</li>
+			<li>Exchange_bountyhunter_heavy</li>
+			<li>Exchange_bountyhunter_star</li>
+			
+			<li>Exchange_echani_light</li>
+			<li>Exchange_echani_mid</li>
+			<li>Exchange_echani_heavy</li>
+			
+			<li>Exchange_wookiee_scoundrel</li>
+			<li>Exchange_wookiee_marauder</li>
+			
+			<li>Exchange_mando_merc</li>
+			<li>Exchange_mando_boss</li>
+			
+			<li>Exchange_trando_thug</li>
+			<li>Exchange_trando_vet</li>
+			
+			<li>Exchange_chiss</li>
+			<li>Exchange_nagai_melee</li>
+			<li>Exchange_nagai_ranged</li>
+			
+			<li MayRequire="guy762.KotORDroids">Exchange_asndroid_hk</li>
+        </pawnKinds>
+        <commTag>Exchange mercenaries</commTag>
+        <referencedFaction>guy762_KotORFaction_Exchange</referencedFaction>
+    </VFECore.Misc.HireableFactionDef-->
+	
+	
+	
+</Defs>

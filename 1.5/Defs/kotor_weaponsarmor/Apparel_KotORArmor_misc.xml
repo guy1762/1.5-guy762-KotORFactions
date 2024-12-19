@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+	
+	<ThingDef ParentName="KotORArmorModdable_soft">
+    <defName>guy762_CombatSuit_trando</defName>
+    <label>Trandoshan Slaver Mesh Suit</label>
+    <description>When king Trossk of Trandosha ordered a series of brutal galaxy-wide slave raids over a century ago, these flexible suits became a common - and feared - sight among the unprotected Outer Rim colonies.</description>
+    <graphicData>
+      <texPath>Apparel/CombatSuit/echani/Apparel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <colorTwo>(130,60,60)</colorTwo>
+    </graphicData>
+    <statBases>
+		<Mass>5</Mass>
+		<MarketValue>500</MarketValue>
+		<MaxHitPoints>225</MaxHitPoints>
+		<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.5</ArmorRating_Heat>
+		<EquipDelay>3</EquipDelay>
+	</statBases>
+	<equippedStatOffsets>
+		<IncomingDamageFactor>-0.05</IncomingDamageFactor>
+		<HuntingStealth>0.3</HuntingStealth>              <!---->
+	</equippedStatOffsets>
+    <apparel>
+		<layers>
+			<li>Middle</li>
+		</layers>
+		<bodyPartGroups>
+			<li>Torso</li>
+			<li>Neck</li>
+			<li>Shoulders</li>
+		</bodyPartGroups>
+		<tags Inherit="False">
+			<li>KotORArmor_light</li>
+			<li>SaV_apparel_trandoslaver</li>
+		</tags>
+		<wornGraphicPath>Apparel/CombatSuit/echani/Apparel</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+    </apparel>
+	<tradeTags>
+		<li>guy762TT_KotORArmor</li>
+		<li>guy762TT_KotORAntique</li>
+	</tradeTags>
+	<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+		<options>
+			<li>
+				<weight>10</weight>
+				<only>(205,205,100)</only>
+			</li>
+		</options>
+	</colorGenerator>
+	<comps>
+	  <li Class="ModularWeapons.CompProperties_ModularParts">
+		<compClass>ModularWeapons.CompModularParts</compClass>
+		<partKinds>
+		  <li>guy762_slot_underlay</li>
+		</partKinds>
+		<randomizeParts>true</randomizeParts>
+	  </li>
+	</comps>
+  </ThingDef>
+	
+	
+	<ThingDef ParentName="KotORArmorModdable_hard">
+		<defName>guy762_MidBattleArmor_trando</defName>
+		<label>Trandoshan battle armor</label>
+		<techLevel>Spacer</techLevel>
+		<description>While most Trandoshan hunters prefer to travel light, heavier armor such as this is used by mercenary commando units who engage in more direct combat.</description>
+		<graphicData>
+			<texPath>Apparel/MidBattleArmor/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<colorTwo>(175,90,50)</colorTwo>
+		</graphicData>
+		<statBases>
+			<Mass>12</Mass>
+			<MarketValue>6400</MarketValue>
+			<MaxHitPoints>475</MaxHitPoints>
+      		<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.95</ArmorRating_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.4</MoveSpeed>
+			<MeleeDodgeChance>-0.4</MeleeDodgeChance>
+			<IncomingDamageFactor>-0.15</IncomingDamageFactor>
+			<HuntingStealth>0.1</HuntingStealth>              <!---->
+		</equippedStatOffsets>
+		<apparel Inherit="False">
+			<tags>
+				<li>KotORArmor_heavy</li>
+				<li>SaV_apparel_trandomerc</li>
+			</tags>
+			<wornGraphicPath>Apparel/MidBattleArmor/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Middle</li>
+				<li>OnSkin</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<useDeflectMetalEffect>false</useDeflectMetalEffect>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORArmor</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(175,170,165)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		
+		<comps>
+		  <li Class="ModularWeapons.CompProperties_ModularParts">
+			<compClass>ModularWeapons.CompModularParts</compClass>
+			<partKinds>
+			  <li>guy762_slot_underlay</li>
+			  <li>guy762_slot_overlay_hvy</li>
+			</partKinds>
+			<randomizeParts>true</randomizeParts>
+		  </li>
+		</comps>
+	</ThingDef>
+
+
+
+
+
+
+
+	<ThingDef ParentName="KotORArmorModdable_soft">
+		<defName>guy762_LgtBattleArmor_moncal</defName>
+		<label>Mon Calamari ShieldSuit</label>
+		<techLevel>Spacer</techLevel>
+		<description>While underpowered for its class, this rare powered armor compensates by integrating a personal energy shield unit directly into the suit itself. While the shield output is comparable to common models, the power cell used is of advanced Mon Calamari design and does not need to be replaced after repeated use.</description>
+		<graphicData>
+			<texPath>Apparel/LightBattleArmor/TSL/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<colorTwo>(130,140,170)</colorTwo>
+		</graphicData>
+		<statBases>
+			<Mass>10</Mass>
+			<MarketValue>9337</MarketValue>
+			<MaxHitPoints>350</MaxHitPoints>
+      		<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.7</ArmorRating_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+			<MeleeDodgeChance>-0.3</MeleeDodgeChance>
+			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+			
+			<MeleeDamageFactor>0.1</MeleeDamageFactor>
+			<VEF_MassCarryCapacity>10</VEF_MassCarryCapacity>
+			<DecompressionResistance MayRequire="kentington.saveourship2">0.75</DecompressionResistance>
+		</equippedStatOffsets>
+		<apparel Inherit="False">
+			<tags>
+				<li>SaV_outfit_moncal</li>
+				<li>KotORRoyaltyTag_AnyHighTier</li>
+			</tags>
+			<wornGraphicPath>Apparel/LightBattleArmor/TSL/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Middle</li>
+				<li>OnSkin</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<useDeflectMetalEffect>false</useDeflectMetalEffect>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORArmor_exotic</li>
+			<li>guy762TT_KotORAntique</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(100,100,110)</only>         <!--dark slate blue-->
+				</li>
+			</options>
+		</colorGenerator>
+		
+		<verbs>
+		  <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+			<label>activate shield</label>
+			
+			<verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+			<hediffDef>guy762_EShield</hediffDef>
+			<inDanger>true</inDanger>
+			<hasStandardCommand>true</hasStandardCommand>
+			<targetable>false</targetable>
+			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+			<onlyManualCast>True</onlyManualCast>
+			<soundCast>kotorsound_shieldpowerup</soundCast>
+			<violent>false</violent>
+		  </li>
+		</verbs>
+		<comps>
+		  <li Class="CompProperties_ApparelReloadable">
+			<maxCharges>1</maxCharges>
+			<hotKey>Misc4</hotKey>
+			<chargeNoun>usage</chargeNoun>
+			<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+			<replenishAfterCooldown>true</replenishAfterCooldown>
+			<baseReloadTicks>12000</baseReloadTicks> <!-- 60ticks = 1sec -->
+		  </li>
+		  <li Class="ModularWeapons.CompProperties_ModularParts">
+			<compClass>ModularWeapons.CompModularParts</compClass>
+			<partKinds>
+			  <li>guy762_slot_underlay</li>
+			  <li>guy762_slot_overlay</li>
+			</partKinds>
+			<randomizeParts>true</randomizeParts>
+		  </li>
+		</comps>
+	</ThingDef>
+
+
+
+
+
+
+
+
+	<ThingDef ParentName="guy762_nocraftclothingbase">
+		<defName>guy762_Clothing_gravetusken</defName>
+		<label>clothing, rustic</label>
+		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
+		<graphicData>
+		  <texPath>Apparel/Undersuits/scum/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <colorTwo>(105,105,125)</colorTwo> <!-- slate blue -->
+		</graphicData>
+		<statBases>
+			<Mass>3</Mass>
+			<MarketValue>10</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.01</ArmorRating_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<apparel>
+		  <tags Inherit="False">
+			<li>SaV_gravetusken</li>
+		  </tags>
+		  <wornGraphicPath>Apparel/Undersuits/scum/Apparel</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		  <defaultOutfitTags Inherit="False">
+			<li>Worker</li>
+		  </defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>4</weight>
+					<only>(250,250,250)</only> <!-- white -->
+				</li>
+			</options>
+		</colorGenerator>
+	  </ThingDef>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <ThingDef ParentName="KotORArmorModdable_soft">
+		<defName>guy762_RepArmor_medic</defName>
+		<label>Republic Medic Armor</label>
+		<techLevel>Spacer</techLevel>
+		<description>The Republic has prospered militarily by keeping its troops well supplied with modular armor, ensuring they are always prepared for a variety of battle conditions.</description>
+		<graphicData>
+			<texPath>Apparel/Republic/trooper/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<colorTwo>(190,60,40)</colorTwo>
+		</graphicData>
+		<statBases>
+			<Mass>7.5</Mass>
+			<MarketValue>750</MarketValue>
+			<MaxHitPoints>225</MaxHitPoints>
+			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<Insulation_Cold>15</Insulation_Cold>
+			<Insulation_Heat>15</Insulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.1</MoveSpeed>
+			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+			<IncomingDamageFactor>-0.05</IncomingDamageFactor>
+			<MedicalTendSpeed>0.2</MedicalTendSpeed>
+		</equippedStatOffsets>
+		<apparel Inherit="False">
+			<tags>
+				<li>OR_apparel_medic</li>
+			</tags>
+			<wornGraphicPath>Apparel/Republic/trooper/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Middle</li>
+				<li>OnSkin</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<useDeflectMetalEffect>false</useDeflectMetalEffect>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_ORArmor</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(250,250,250)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<comps>
+		  <li Class="ModularWeapons.CompProperties_ModularParts">
+			<compClass>ModularWeapons.CompModularParts</compClass>
+			<partKinds>
+			  <li>guy762_slot_underlay</li>
+			  <li>guy762_slot_overlay</li>
+			</partKinds>
+			<randomizeParts>true</randomizeParts>
+		  </li>
+		</comps>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="KotORArmorModdable_hard">
+		<defName>guy762_RepHelmet_medic</defName>
+		<label>Republic Medic Helmet</label>
+		<techLevel>Spacer</techLevel>
+		<description>The Republic has prospered militarily by keeping its troops well supplied with modular armor, ensuring they are always prepared for a variety of battle conditions.</description>
+		<graphicData>
+			<texPath>Apparel/Republic/trooper/Helmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<colorTwo>(190,60,40)</colorTwo>
+		</graphicData>
+		<thingCategories>
+		  <li>ArmorHeadgear</li>
+		</thingCategories>
+		<statBases>
+			<Mass>5.5</Mass>
+			<MarketValue>250</MarketValue>
+			<MaxHitPoints>175</MaxHitPoints>
+      		<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+			<EquipDelay>4</EquipDelay>
+		</statBases>
+		
+		<apparel Inherit="False">
+			<tags>
+				<li>OR_apparel_medic</li>
+			</tags>
+			<wornGraphicPath>Apparel/Republic/trooper/Helmet</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_ORArmor</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(250,250,250)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<comps>
+		  <li Class="ModularWeapons.CompProperties_ModularParts">
+			<compClass>ModularWeapons.CompModularParts</compClass>
+			<partKinds>
+			  <li>guy762_slot_overlay</li>
+			  <li>guy762_slot_underlay_hat</li>
+			</partKinds>
+			<randomizeParts>true</randomizeParts>
+		  </li>
+		</comps>
+	</ThingDef>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  <ThingDef ParentName="KotORArmorModdable_hard">
+		<defName>guy762_SithArmor_remtrooper</defName>
+		<label>Worn Sith Trooper Armor</label>
+		<techLevel>Spacer</techLevel>
+		<description>This full body armor was once standard issue for Sith infantry forces, though years of use has dulled its distinctive shine.</description>
+		<graphicData>
+			<texPath>Apparel/Sith/trooper/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>10</Mass>
+			<MarketValue>500</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints> <!--minus 200-->
+			<ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.75</ArmorRating_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+			<MeleeDodgeChance>-0.2</MeleeDodgeChance>
+			<!--IncomingDamageFactor>-0.1</IncomingDamageFactor-->
+		</equippedStatOffsets>
+		<apparel Inherit="False">
+			<tags>
+				<li>SithRem_apparel_raider</li>
+			</tags>
+			<wornGraphicPath>Apparel/Sith/trooper/Apparel</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Neck</li>
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_SEArmor</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(180,185,170)</only>  <!--off-white--> <!--200,85,25 rust-->
+				</li>
+			</options>
+		</colorGenerator>
+		<!--comps>
+		  <li Class="ModularWeapons.CompProperties_ModularParts">
+			<compClass>ModularWeapons.CompModularParts</compClass>
+			<partKinds>
+			  <li>guy762_slot_underlay</li>
+			  <li>guy762_slot_overlay</li>
+			</partKinds>
+			<randomizeParts>true</randomizeParts>
+		  </li>
+		</comps-->
+	</ThingDef>	
+	
+	<ThingDef ParentName="KotORArmorModdable_hard">
+		<defName>guy762_SithHelmet_remtrooper</defName>
+		<label>Worn Sith Trooper Helmet</label>
+		<techLevel>Spacer</techLevel>
+		<description>This helmet was once standard issue for Sith infantry forces, though years of use has dulled its distinctive shine.</description>
+		<graphicData>
+			<texPath>Apparel/Sith/trooper/Helmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingCategories>
+		  <li>ArmorHeadgear</li>
+		</thingCategories>
+		<statBases>
+			<Mass>5.5</Mass>
+			<MarketValue>100</MarketValue>
+			<MaxHitPoints>175</MaxHitPoints>
+      		<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.65</ArmorRating_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		
+		<apparel Inherit="False">
+			<tags>
+				<li>SithRem_apparel_raider</li>
+				<li>SithRem_raiderhelmet</li>
+				<li>PReb_apparel_heavyhelmet</li>
+			</tags>
+			<wornGraphicPath>Apparel/Sith/trooper/Helmet</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+				<li>EyeCover</li>
+			</layers>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_SEArmor</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(180,185,170)</only>  <!--off-white--> <!--200,85,25 rust-->
+				</li>
+			</options>
+		</colorGenerator>
+		<!--comps>
+		  <li Class="ModularWeapons.CompProperties_ModularParts">
+			<compClass>ModularWeapons.CompModularParts</compClass>
+			<partKinds>
+			  <li>guy762_slot_overlay</li>
+			  <li>guy762_slot_underlay_hat</li>
+			</partKinds>
+			<randomizeParts>true</randomizeParts>
+		  </li>
+		</comps-->
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="guy762_nocraftclothingbase">
+		<defName>guy762_SithUniform_inquisitor</defName>
+		<label>Sith Inquisitor uniform</label>
+		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
+		<graphicData>
+		  <texPath>Apparel/Sith/uniform/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <colorTwo>(190,0,0)</colorTwo>
+		</graphicData>
+		<statBases>
+			<Mass>3</Mass>
+			<MarketValue>5000</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.01</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		  <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.4</ConversionPower>
+		  <SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.4</SuppressionPower>
+		</equippedStatOffsets>
+		<apparel>
+		  <tags Inherit="False">
+			<li>SE_apparel_inquisitor</li>
+		  </tags>
+		  <wornGraphicPath>Apparel/Sith/uniform/Apparel</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		  <defaultOutfitTags Inherit="False">
+			<li>Worker</li>
+		  </defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_SEArmor</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(65,60,60)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	  </ThingDef>
+	  
+	  
+
+	  
+	  
+	  
+	  
+	  
+	  
+  
+
+</Defs>

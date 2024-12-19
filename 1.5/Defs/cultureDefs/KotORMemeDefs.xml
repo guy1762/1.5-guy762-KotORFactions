@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<MemeDef>
+		<defName>guy762_MemeDef_mando</defName>
+		<label>Mandalorian Resol'nare</label>
+		<description>War is the Mandalorian way of life, nothing is more important than honor and glory on the field of battle.</description>
+		<iconPath>UI/coloredmemeicons/Mandalorians</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>3</impact>
+		<renderOrder>762</renderOrder>
+		<consumableBuildings>
+		  <li>Effigy</li>
+		</consumableBuildings>
+		<requireOne>
+		  <li>
+			<li>Raiding_Respected</li>
+			<li>Raiding_Required</li>
+		  </li>
+		  <li>
+			<li>IdeoRole_ShootingSpecialist</li>
+			<li>IdeoRole_MeleeSpecialist</li>
+		  </li>
+		  <li>
+			<li>Comfort_Ignored</li>
+		  </li>
+		  <li>
+			<li>RoughLiving_Welcomed</li>
+		  </li>
+		  <li>
+			<li>guy762_KotORIdeoRole_MandoArmorer</li>
+			<li MayRequire="VanillaExpanded.VMemesE">guy762_KotORIdeoRole_Inquisitor</li>
+		  </li>
+		  <li MayRequire="VanillaExpanded.VMemesE">
+			<li>VME_Leader_BestFighter</li>
+		  </li>
+		</requireOne>
+		<generalRules>
+		  <rulesStrings>
+			<li>memeAdjective->mandalorian</li>
+			<li>memeHyphenPrefix->mando</li>
+			<li>memeConcept->raiding</li>
+			<li>memeConcept->war</li>
+			<li>memeConcept->piracy</li>
+			<li>memeConcept->assault</li>
+			<li>memeLeaderNoun->field marshal</li>
+			<li>memeMoralist->rally master</li>
+		  </rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+		  <rules>
+			<rulesStrings>
+			  <!-- theist myth -->
+			  <li>creation(tag=meme_Supremacist)        ->The people of the [place_summary] [place_name] squabbled endlessly, and [deity0_name] became tired of discord and anointed the [memberNamePlural] as the rightful rulers of all.</li>
+			  <li>episode(uses=1,tag=meme_Supremacist)  ->The faithful fought the unbelievers, and [deity0_name] said, "Fight them, everywhere, in my name, until I am worshipped throughout the universe and the true peace may finally reign."</li>
+			  <!-- theist founder -->
+			  <li>intro(tag=meme_Supremacist)           ->The people of the [place_summary] [place_name] worshipped [deity0_name]. [deity0_pronoun] saw that they were suited for [memeConcept], and ordained that these worshippers would rule above all others.</li>
+			  <li>conflict(tag=meme_Supremacist)        ->A [foeLeader] passed a law forbidding [memberNamePlural] from rising to the ruling classes of [place_name].</li>
+			  <li>founderJoin(tag=meme_Supremacist)     ->A warrior named [founderName] used [place_massWeapon] to destroy a [place_community]. [deity0_name] saw [founderName]'s ruthlessness and anointed [founder_objective] the rightful ruler of all humanity.</li>
+			  <li>victory(tag=meme_Supremacist)         ->[founderName] destroyed the capital of [place_name] with [place_massWeapon], killing the [foeLeader]. [founder_pronoun] took [founder_possessive] place as ruler of [place_name] - and the universe beyond.</li>
+			  <!-- ideological founder -->
+			  <li>setup(tag=meme_Supremacist)           ->[founderName] built an army that spread [founder_possessive] power and glory across the land, placing those who refused to follow rightly under [founder_possessive] rule.</li>
+			  <li>story(uses=1,tag=meme_Supremacist)    ->[founderName] instructed all outsiders to submit. When the first city refused, [founder_pronoun] used [place_massWeapon] to kill everyone inside.</li>
+			  <!-- ideological lesson -->
+			  <li>lessonIntro(tag=meme_Supremacist)         ->I looked at this [foeLeader], with [foeLeader_possessive] pitiful [foeSoldiers], all that power left fallow. I tried to convince [foeLeader_objective] that</li>
+			  <li>lesson(tag=meme_Supremacist)              ->we've long since proven that we have the strength to rightfully rule this universe</li>
+			  <li>lessonReinforcement(tag=meme_Supremacist) ->That's why we're proud to express the strength of our hearts using the heels of our boots.</li>
+			  <!-- archist -->
+			  <li>archistBasis(tag=meme_Supremacist)    ->It took the most superior humans to create the archotechs, so that the archotechs could become superior to all.</li>
+			  <li>archistFact(tag=meme_Supremacist)     ->The archotechs rightfully look down on us, as we look down on our inferiors.</li>
+			  <li>archistProphecy(tag=meme_Supremacist) ->The archotechs will only take us to join them when we finally rule over all others.</li>
+			  <!-- animist -->
+			  <li>animistFact(tag=meme_Supremacist)     ->Powerful spirits decide who is fit to rule, and lend power to those who subjugate others.</li>
+			  <li>animistProphecy(tag=meme_Supremacist) ->[itIsSaid] that a new order will be created when one supreme ruler commands all of humanity.</li>
+			</rulesStrings>
+		  </rules>
+		</descriptionMaker>
+		<symbolPacks>
+		  <li>
+			<ideoName>Raidism</ideoName>
+			<theme>raiding</theme>
+			<adjective>raidist</adjective>
+			<member>raidist</member>
+		  </li>
+		  <li>
+			<ideoName>Warism</ideoName>
+			<theme>warring</theme>
+			<adjective>war-like</adjective>
+			<member>warrior</member>
+		  </li>
+		</symbolPacks>
+		<agreeableTraits>
+		  <li>Abrasive</li>
+		  <li>Bloodlust</li>
+		</agreeableTraits>
+	</MemeDef>
+	
+
+
+
+
+
+
+
+
+    <MemeDef>
+		<defName>guy762_MemeDef_sith</defName>
+		<label>Sith</label>
+		<description>Peace is a lie, there is only passion. Through passion, I gain strength. Through strength, I gain power. Through power, I gain victory. Through victory, my chains are broken. The Force shall free me.</description>
+		<iconPath>UI/coloredmemeicons/ExarSith</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>3</impact>
+		<renderOrder>763</renderOrder>
+		<consumableBuildings>
+		  <li>Effigy</li>
+		</consumableBuildings>
+		<requireOne>
+		  <li>
+			<li>Slavery_Acceptable</li>
+			<li>Slavery_Honorable</li>
+		  </li>
+		  <li>
+			<li>Comfort_Ignored</li>
+		  </li>
+		  <li>
+			<li>RoughLiving_Welcomed</li>
+		  </li>
+		  <li MayRequire="VanillaExpanded.VMemesE">
+			<li>guy762_KotORIdeoRole_Inquisitor</li>
+		  </li>
+		  <li>
+			<li>IdeoRole_MeleeSpecialist</li>
+		  </li>
+		  <li>
+			<li>Execution_DontCare</li>
+			<li>Execution_RespectedIfGuilty</li>
+			<li>Execution_Required</li>
+		  </li>
+		  <li MayRequire="VanillaExpanded.VMemesE">
+			<li>VME_Leader_BestPsycaster</li>
+			<li>VME_Leader_BestFighter</li>
+		  </li>
+		</requireOne>
+		<generalRules>
+		  <rulesStrings>
+			<li>memeAdjective->sith</li>
+			<li>memeHyphenPrefix->dark</li>
+			<li>memeConcept->raiding</li>
+			<li>memeConcept->war</li>
+			<li>memeConcept->piracy</li>
+			<li>memeConcept->assault</li>
+			<li>memeLeaderNoun->dark lord</li>
+			<li>memeMoralist->dark oracle</li>
+		  </rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+		  <rules>
+			<rulesStrings>
+			  <!-- theist myth -->
+			  <li>creation(tag=meme_Supremacist)        ->The people of the [place_summary] [place_name] squabbled endlessly, and [deity0_name] became tired of discord and anointed the [memberNamePlural] as the rightful rulers of all.</li>
+			  <li>episode(uses=1,tag=meme_Supremacist)  ->The faithful fought the unbelievers, and [deity0_name] said, "Fight them, everywhere, in my name, until I am worshipped throughout the universe and the true peace may finally reign."</li>
+			  <!-- theist founder -->
+			  <li>intro(tag=meme_Supremacist)           ->The people of the [place_summary] [place_name] worshipped [deity0_name]. [deity0_pronoun] saw that they were suited for [memeConcept], and ordained that these worshippers would rule above all others.</li>
+			  <li>conflict(tag=meme_Supremacist)        ->A [foeLeader] passed a law forbidding [memberNamePlural] from rising to the ruling classes of [place_name].</li>
+			  <li>founderJoin(tag=meme_Supremacist)     ->A warrior named [founderName] used [place_massWeapon] to destroy a [place_community]. [deity0_name] saw [founderName]'s ruthlessness and anointed [founder_objective] the rightful ruler of all humanity.</li>
+			  <li>victory(tag=meme_Supremacist)         ->[founderName] destroyed the capital of [place_name] with [place_massWeapon], killing the [foeLeader]. [founder_pronoun] took [founder_possessive] place as ruler of [place_name] - and the universe beyond.</li>
+			  <!-- ideological founder -->
+			  <li>setup(tag=meme_Supremacist)           ->[founderName] built an army that spread [founder_possessive] power and glory across the land, placing those who refused to follow rightly under [founder_possessive] rule.</li>
+			  <li>story(uses=1,tag=meme_Supremacist)    ->[founderName] instructed all outsiders to submit. When the first city refused, [founder_pronoun] used [place_massWeapon] to kill everyone inside.</li>
+			  <!-- ideological lesson -->
+			  <li>lessonIntro(tag=meme_Supremacist)         ->I looked at this [foeLeader], with [foeLeader_possessive] pitiful [foeSoldiers], all that power left fallow. I tried to convince [foeLeader_objective] that</li>
+			  <li>lesson(tag=meme_Supremacist)              ->we've long since proven that we have the strength to rightfully rule this universe</li>
+			  <li>lessonReinforcement(tag=meme_Supremacist) ->That's why we're proud to express the strength of our hearts using the heels of our boots.</li>
+			  <!-- archist -->
+			  <li>archistBasis(tag=meme_Supremacist)    ->It took the most superior humans to create the archotechs, so that the archotechs could become superior to all.</li>
+			  <li>archistFact(tag=meme_Supremacist)     ->The archotechs rightfully look down on us, as we look down on our inferiors.</li>
+			  <li>archistProphecy(tag=meme_Supremacist) ->The archotechs will only take us to join them when we finally rule over all others.</li>
+			  <!-- animist -->
+			  <li>animistFact(tag=meme_Supremacist)     ->Powerful spirits decide who is fit to rule, and lend power to those who subjugate others.</li>
+			  <li>animistProphecy(tag=meme_Supremacist) ->[itIsSaid] that a new order will be created when one supreme ruler commands all of humanity.</li>
+			</rulesStrings>
+		  </rules>
+		</descriptionMaker>
+		<ritualsToMake>1</ritualsToMake>
+		<replaceRitualsWithTags><li>CelebratedDate</li></replaceRitualsWithTags>
+		<replacementPatterns><li>SacrificePrisoner</li></replacementPatterns>
+		<symbolPacks>
+		  <li>
+			<ideoName>Raidism</ideoName>
+			<theme>raiding</theme>
+			<adjective>raidist</adjective>
+			<member>raidist</member>
+		  </li>
+		  <li>
+			<ideoName>Warism</ideoName>
+			<theme>warring</theme>
+			<adjective>war-like</adjective>
+			<member>warrior</member>
+		  </li>
+		  <li>
+			<theme>dominance</theme>
+			<adjective>dominant</adjective>
+			<member>dominator</member>
+		  </li>
+		  <li>
+			<theme>victory</theme>
+			<adjective>victoryist</adjective>
+			<member>victorist</member>
+		  </li>
+		  <li>
+			<theme>power</theme>
+			<adjective>powerist</adjective>
+			<member>poweror</member>
+		  </li>
+		</symbolPacks>
+		<agreeableTraits>
+		  <li>Abrasive</li>
+		  <li>Bloodlust</li>
+		  <li>Psychopath</li>
+		  <li>Greedy</li>
+		  <li>Jealous</li>
+		</agreeableTraits>
+		<disagreeableTraits>
+		  <li>Kind</li>
+		</disagreeableTraits>
+	</MemeDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<MemeDef>
+		<defName>guy762_MemeDef_corruptrepublic</defName>
+		<label>Republic colonialism</label>
+		<description>Our glorious civilization should be spread across the galaxy, by force if necessary. The Republic must grow.</description>
+		<iconPath>UI/coloredmemeicons/CorruptRepublic</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>3</impact>
+		<renderOrder>764</renderOrder>
+		<requireOne>
+		  <li>
+			<li>Raiding_Respected</li>
+			<li>Raiding_Required</li>
+		  </li>
+		  <li MayRequire="VanillaExpanded.VMemesE">
+			<li>VME_PermanentBases_Desired</li>
+		  </li>
+		  <li>
+			<li>IdeoDiversity_Disapproved</li>
+		  </li>
+		  <!--li>
+			<li>RoughLiving_Welcomed</li>
+		  </li-->
+		</requireOne>
+		<generalRules>
+		  <rulesStrings>
+			<li>memeAdjective->republican</li>
+			<li>memeAdjective->colonialist</li>
+			<li>memeHyphenPrefix->colonial</li>
+			<li>memeConcept->republic</li>
+			<li>memeConcept->colonialism</li>
+			<li>memeConcept->democracy</li>
+			<li>memeLeaderNoun->senator</li>
+			<li>memeMoralist->political pundit</li>
+		  </rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+		  <rules>
+			<rulesStrings>
+			  <!-- theist myth -->
+			  <li>creation(tag=meme_Supremacist)        ->The people of the [place_summary] [place_name] squabbled endlessly, and [deity0_name] became tired of discord and anointed the [memberNamePlural] as the rightful rulers of all.</li>
+			  <li>episode(uses=1,tag=meme_Supremacist)  ->The faithful fought the unbelievers, and [deity0_name] said, "Fight them, everywhere, in my name, until I am worshipped throughout the universe and the true peace may finally reign."</li>
+			  <!-- theist founder -->
+			  <li>intro(tag=meme_Supremacist)           ->The people of the [place_summary] [place_name] worshipped [deity0_name]. [deity0_pronoun] saw that they were suited for [memeConcept], and ordained that these worshippers would rule above all others.</li>
+			  <li>conflict(tag=meme_Supremacist)        ->A [foeLeader] passed a law forbidding [memberNamePlural] from rising to the ruling classes of [place_name].</li>
+			  <li>founderJoin(tag=meme_Supremacist)     ->A warrior named [founderName] used [place_massWeapon] to destroy a [place_community]. [deity0_name] saw [founderName]'s ruthlessness and anointed [founder_objective] the rightful ruler of all humanity.</li>
+			  <li>victory(tag=meme_Supremacist)         ->[founderName] destroyed the capital of [place_name] with [place_massWeapon], killing the [foeLeader]. [founder_pronoun] took [founder_possessive] place as ruler of [place_name] - and the universe beyond.</li>
+			  <!-- ideological founder -->
+			  <li>setup(tag=meme_Supremacist)           ->[founderName] built an army that spread [founder_possessive] power and glory across the land, placing those who refused to follow rightly under [founder_possessive] rule.</li>
+			  <li>story(uses=1,tag=meme_Supremacist)    ->[founderName] instructed all outsiders to submit. When the first city refused, [founder_pronoun] used [place_massWeapon] to kill everyone inside.</li>
+			  <!-- ideological lesson -->
+			  <li>lessonIntro(tag=meme_Supremacist)         ->I looked at this [foeLeader], with [foeLeader_possessive] pitiful [foeSoldiers], all that power left fallow. I tried to convince [foeLeader_objective] that</li>
+			  <li>lesson(tag=meme_Supremacist)              ->we've long since proven that we have the strength to rightfully rule this universe</li>
+			  <li>lessonReinforcement(tag=meme_Supremacist) ->That's why we're proud to express the strength of our hearts using the heels of our boots.</li>
+			  <!-- archist -->
+			  <li>archistBasis(tag=meme_Supremacist)    ->It took the most superior humans to create the archotechs, so that the archotechs could become superior to all.</li>
+			  <li>archistFact(tag=meme_Supremacist)     ->The archotechs rightfully look down on us, as we look down on our inferiors.</li>
+			  <li>archistProphecy(tag=meme_Supremacist) ->The archotechs will only take us to join them when we finally rule over all others.</li>
+			  <!-- animist -->
+			  <li>animistFact(tag=meme_Supremacist)     ->Powerful spirits decide who is fit to rule, and lend power to those who subjugate others.</li>
+			  <li>animistProphecy(tag=meme_Supremacist) ->[itIsSaid] that a new order will be created when one supreme ruler commands all of humanity.</li>
+			</rulesStrings>
+		  </rules>
+		</descriptionMaker>
+		<symbolPacks>
+		  <li>
+			<ideoName>Republic</ideoName>
+			<theme>republic</theme>
+			<adjective>republican</adjective>
+			<member>citizen</member>
+		  </li>
+		</symbolPacks>
+		<agreeableTraits>
+		  <li>Greedy</li>
+		  <li>Bloodlust</li>
+		</agreeableTraits>
+	</MemeDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<MemeDef>
+		<defName>guy762_MemeDef_czerka</defName>
+		<label>Hypercapitalism</label>
+		<description>The pursuit of profit and personal gain supersedes all else, only those whose hearts burn with ambition and avarice will truly prosper in life.</description>
+		<iconPath>UI/coloredmemeicons/CzerkaCorp</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>3</impact>
+		<renderOrder>765</renderOrder>
+		<requireOne>
+		  <li>
+			<li>IdeoDiversity_Disapproved</li>
+		  </li>
+		  <li>
+			<li>Slavery_Honorable</li>
+		  </li>
+		  <li MayRequire="VanillaExpanded.VMemesE">
+			<li>VME_TradingPrice_Improved</li>
+		  </li>
+		  <li MayRequire="VanillaExpanded.VMemesE" name="tradingrequired">
+			<li>VME_Trading_Required</li>
+		  </li>
+		  <li MayRequire="VanillaExpanded.VMemesE">
+			<li>VME_Expectations_High</li>
+		  </li>
+		  <li MayRequire="VanillaExpanded.VMemesE">
+			<li>VME_Power_Desired</li>
+			<li>VME_Power_Preferred</li>
+		  </li>
+		  <li MayRequire="VanillaExpanded.VMemesE">
+			<li>VME_DumbLabor_Horrible</li>
+		  </li>
+		</requireOne>
+		<generalRules>
+		  <rulesStrings>
+			<li>memeAdjective->bourgeois</li>
+			<li>memeAdjective->colonialist</li>
+			<li>memeAdjective->capitalist</li>
+			<li>memeHyphenPrefix->corpo</li>
+			<li>memeConcept->capitalism</li>
+			<li>memeConcept->profit</li>
+			<li>memeConcept->colonialism</li>
+			<li>memeConcept->corporate hierarchy</li>
+			<li>memeLeaderNoun->mogul</li>
+			<li>memeLeaderNoun->magistrate</li>
+			<li>memeLeaderNoun->tycoon</li>
+			<li>memeMoralist->director</li>
+			<li>memeMoralist->compliance officer</li>
+		  </rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+		  <rules>
+			<rulesStrings>
+			  <!-- theist myth -->
+			  <li>creation(tag=meme_Supremacist)        ->The people of the [place_summary] [place_name] squabbled endlessly, and [deity0_name] became tired of discord and anointed the [memberNamePlural] as the rightful rulers of all.</li>
+			  <li>episode(uses=1,tag=meme_Supremacist)  ->The faithful fought the unbelievers, and [deity0_name] said, "Fight them, everywhere, in my name, until I am worshipped throughout the universe and the true peace may finally reign."</li>
+			  <!-- theist founder -->
+			  <li>intro(tag=meme_Supremacist)           ->The people of the [place_summary] [place_name] worshipped [deity0_name]. [deity0_pronoun] saw that they were suited for [memeConcept], and ordained that these worshippers would rule above all others.</li>
+			  <li>conflict(tag=meme_Supremacist)        ->A [foeLeader] passed a law forbidding [memberNamePlural] from rising to the ruling classes of [place_name].</li>
+			  <li>founderJoin(tag=meme_Supremacist)     ->A warrior named [founderName] used [place_massWeapon] to destroy a [place_community]. [deity0_name] saw [founderName]'s ruthlessness and anointed [founder_objective] the rightful ruler of all humanity.</li>
+			  <li>victory(tag=meme_Supremacist)         ->[founderName] destroyed the capital of [place_name] with [place_massWeapon], killing the [foeLeader]. [founder_pronoun] took [founder_possessive] place as ruler of [place_name] - and the universe beyond.</li>
+			  <!-- ideological founder -->
+			  <li>setup(tag=meme_Supremacist)           ->[founderName] built an army that spread [founder_possessive] power and glory across the land, placing those who refused to follow rightly under [founder_possessive] rule.</li>
+			  <li>story(uses=1,tag=meme_Supremacist)    ->[founderName] instructed all outsiders to submit. When the first city refused, [founder_pronoun] used [place_massWeapon] to kill everyone inside.</li>
+			  <!-- ideological lesson -->
+			  <li>lessonIntro(tag=meme_Supremacist)         ->I looked at this [foeLeader], with [foeLeader_possessive] pitiful [foeSoldiers], all that power left fallow. I tried to convince [foeLeader_objective] that</li>
+			  <li>lesson(tag=meme_Supremacist)              ->we've long since proven that we have the strength to rightfully rule this universe</li>
+			  <li>lessonReinforcement(tag=meme_Supremacist) ->That's why we're proud to express the strength of our hearts using the heels of our boots.</li>
+			  <!-- archist -->
+			  <li>archistBasis(tag=meme_Supremacist)    ->It took the most superior humans to create the archotechs, so that the archotechs could become superior to all.</li>
+			  <li>archistFact(tag=meme_Supremacist)     ->The archotechs rightfully look down on us, as we look down on our inferiors.</li>
+			  <li>archistProphecy(tag=meme_Supremacist) ->The archotechs will only take us to join them when we finally rule over all others.</li>
+			  <!-- animist -->
+			  <li>animistFact(tag=meme_Supremacist)     ->Powerful spirits decide who is fit to rule, and lend power to those who subjugate others.</li>
+			  <li>animistProphecy(tag=meme_Supremacist) ->[itIsSaid] that a new order will be created when one supreme ruler commands all of humanity.</li>
+			</rulesStrings>
+		  </rules>
+		</descriptionMaker>
+		<symbolPacks>
+		  <li>
+			<ideoName>Corporate</ideoName>
+			<theme>capitalism</theme>
+			<adjective>capitalist</adjective>
+			<member>consumer</member>
+		  </li>
+		</symbolPacks>
+		<agreeableTraits>
+		  <li>Greedy</li>
+		  <li>Abrasive</li>
+		  <li>Psychopath</li>
+		</agreeableTraits>
+	</MemeDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<MemeDef>
+		<defName>guy762_MemeDef_exchange</defName>
+		<label>the Exchange</label>
+		<description>.</description>
+		<iconPath>World/Exchange</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>3</impact>
+		<renderOrder>766</renderOrder>
+		<requireOne>
+		  <li MayRequire="VanillaExpanded.VMemesE">
+			<li>guy762_PreceptDef_ExchangeTitles</li>
+		  </li>
+		  <li MayRequire="VanillaExpanded.VMemesE">
+			<li>VME_Leader_HighestTitle</li>
+		  </li>
+		  <li>
+			<li>Execution_RespectedIfGuilty</li>
+		  </li>
+		  <li>
+			<li>Slavery_Acceptable</li>
+		  </li>
+		  <li>
+			<li>Raiding_Respected</li>
+		  </li>
+		  <li MayRequire="VanillaExpanded.VMemesE">
+			<li>VME_TradingPrice_Improved</li>
+		  </li>
+		  <li MayRequire="VanillaExpanded.VMemesE">
+			<li>VME_Expectations_High</li>
+		  </li>
+		</requireOne>
+		<generalRules>
+		  <rulesStrings>
+			<li>memeAdjective->mobster</li>
+			<li>memeAdjective->criminal</li>
+			<li>memeHyphenPrefix->mob</li>
+			<li>memeHyphenPrefix->goon</li>
+			<li>memeHyphenPrefix->thug</li>
+			<li>memeConcept->racketeering</li>
+			<li>memeConcept->spicerunning</li>
+			<li>memeConcept->gunrunning</li>
+			<li>memeLeaderNoun->boss</li>
+			<li>memeLeaderNoun->don</li>
+			<li>memeMoralist->consigliere</li>
+			<li>memeMoralist->underboss</li>
+			<li>memeShooter->assassin</li>
+			<li>memeBrawler->enforcer</li>
+			<li>memeTrader->black marketeer</li>
+		  </rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+		  <rules>
+			<rulesStrings>
+			  <!-- theist myth -->
+			  <li>creation(tag=meme_Supremacist)        ->The people of the [place_summary] [place_name] squabbled endlessly, and [deity0_name] became tired of discord and anointed the [memberNamePlural] as the rightful rulers of all.</li>
+			  <li>episode(uses=1,tag=meme_Supremacist)  ->The faithful fought the unbelievers, and [deity0_name] said, "Fight them, everywhere, in my name, until I am worshipped throughout the universe and the true peace may finally reign."</li>
+			  <!-- theist founder -->
+			  <li>intro(tag=meme_Supremacist)           ->The people of the [place_summary] [place_name] worshipped [deity0_name]. [deity0_pronoun] saw that they were suited for [memeConcept], and ordained that these worshippers would rule above all others.</li>
+			  <li>conflict(tag=meme_Supremacist)        ->A [foeLeader] passed a law forbidding [memberNamePlural] from rising to the ruling classes of [place_name].</li>
+			  <li>founderJoin(tag=meme_Supremacist)     ->A warrior named [founderName] used [place_massWeapon] to destroy a [place_community]. [deity0_name] saw [founderName]'s ruthlessness and anointed [founder_objective] the rightful ruler of all humanity.</li>
+			  <li>victory(tag=meme_Supremacist)         ->[founderName] destroyed the capital of [place_name] with [place_massWeapon], killing the [foeLeader]. [founder_pronoun] took [founder_possessive] place as ruler of [place_name] - and the universe beyond.</li>
+			  <!-- ideological founder -->
+			  <li>setup(tag=meme_Supremacist)           ->[founderName] built an army that spread [founder_possessive] power and glory across the land, placing those who refused to follow rightly under [founder_possessive] rule.</li>
+			  <li>story(uses=1,tag=meme_Supremacist)    ->[founderName] instructed all outsiders to submit. When the first city refused, [founder_pronoun] used [place_massWeapon] to kill everyone inside.</li>
+			  <!-- ideological lesson -->
+			  <li>lessonIntro(tag=meme_Supremacist)         ->I looked at this [foeLeader], with [foeLeader_possessive] pitiful [foeSoldiers], all that power left fallow. I tried to convince [foeLeader_objective] that</li>
+			  <li>lesson(tag=meme_Supremacist)              ->we've long since proven that we have the strength to rightfully rule this universe</li>
+			  <li>lessonReinforcement(tag=meme_Supremacist) ->That's why we're proud to express the strength of our hearts using the heels of our boots.</li>
+			  <!-- archist -->
+			  <li>archistBasis(tag=meme_Supremacist)    ->It took the most superior humans to create the archotechs, so that the archotechs could become superior to all.</li>
+			  <li>archistFact(tag=meme_Supremacist)     ->The archotechs rightfully look down on us, as we look down on our inferiors.</li>
+			  <li>archistProphecy(tag=meme_Supremacist) ->The archotechs will only take us to join them when we finally rule over all others.</li>
+			  <!-- animist -->
+			  <li>animistFact(tag=meme_Supremacist)     ->Powerful spirits decide who is fit to rule, and lend power to those who subjugate others.</li>
+			  <li>animistProphecy(tag=meme_Supremacist) ->[itIsSaid] that a new order will be created when one supreme ruler commands all of humanity.</li>
+			</rulesStrings>
+		  </rules>
+		</descriptionMaker>
+		<symbolPacks>
+		  <li>
+			<ideoName>mob</ideoName>
+			<theme>mobster</theme>
+			<adjective>mobster</adjective>
+			<member>mobster</member>
+		  </li>
+		</symbolPacks>
+		<agreeableTraits>
+		  <li>Greedy</li>
+		  <li>Abrasive</li>
+		</agreeableTraits>
+	</MemeDef>
+	<PreceptDef MayRequire="VanillaExpanded.VMemesE">
+		<defName>guy762_PreceptDef_ExchangeTitles</defName>
+		<issue>VME_Royalty</issue>
+		<label>exalted (Exchange titles)</label>
+		<description>The station one holds in the Exchange is a thing to be revered. Respect for the boss, more often than not, is the only thing that holds this thing of ours together.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>guy762_MemeDef_exchange</li>
+		</associatedMemes>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>guy762_ThoughtDef_ExchangeTitles</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef MayRequire="VanillaExpanded.VMemesE">
+		<defName>guy762_ThoughtDef_ExchangeTitles</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Royalty</workerClass>
+		<stages>
+			<li>
+				<label>Exchange: made member</label>
+				<baseOpinionOffset>15</baseOpinionOffset>
+			</li>
+			<li>
+				<label>Exchange: capo</label>
+				<baseOpinionOffset>30</baseOpinionOffset>
+			</li>
+			<li>
+				<label>Exchange: vigo</label>
+				<baseOpinionOffset>60</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<MemeDef>
+		<defName>guy762_MemeDef_hutt</defName>
+		<label>Hutt Kajidicism</label>
+		<description>The Hutts hold the divine right to rule the galaxy, and in their cunning and wisdom they rule through the invisible hand of economic might.\n\nDEV'S NOTE: I was going to have this meme force a 'preferred xenotype' precept targeting the Hutts, but I'm not able to target a specific xenotype on my end. I encourage you to add it in manually.</description>
+		<iconPath>World/HuttClans</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>3</impact>
+		<renderOrder>767</renderOrder>
+		<requireOne>
+		  <li MayRequire="VanillaExpanded.VMemesE">
+			<li>guy762_PreceptDef_HuttTitles</li>
+		  </li>
+		  <li MayRequire="VanillaExpanded.VMemesE">
+			<li>VME_IdeoRole_Majordomo</li>
+		  </li>
+		  <li MayRequire="VanillaExpanded.VMemesE">
+			<li>VME_Leader_HighestTitle</li>
+		  </li>
+		  <li>
+			<li>Execution_RespectedIfGuilty</li>
+		  </li>
+		  <li>
+			<li>Slavery_Honorable</li>
+		  </li>
+		  <li MayRequire="VanillaExpanded.VMemesE">
+			<li>VME_TradingPrice_Improved</li>
+		  </li>
+		  <li MayRequire="VanillaExpanded.VMemesE">
+			<li>VME_Expectations_High</li>
+		  </li>
+		  <li MayRequire="VanillaExpanded.VMemesE" name="tradingrequired">
+			<li>VME_Trading_Required</li>
+		  </li>
+		</requireOne>
+		<generalRules>
+		  <rulesStrings>
+			<li>memeAdjective->scum</li>
+			<li>memeHyphenPrefix->scum</li>
+			<li>memeConcept->racketeering</li>
+			<li>memeConcept->spicerunning</li>
+			<li>memeConcept->gunrunning</li>
+			<li>memeLeaderNoun->kajidii</li>
+			<li>memeLeaderNoun->lorda</li>
+			<li>memeMoralist->vizier</li>
+			<li>memeShooter->assassin</li>
+			<li>memeBrawler->enforcer</li>
+			<li>memeTrader->black marketeer</li>
+		  </rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+		  <rules>
+			<rulesStrings>
+			  <!-- theist myth -->
+			  <li>creation(tag=meme_Supremacist)        ->The people of the [place_summary] [place_name] squabbled endlessly, and [deity0_name] became tired of discord and anointed the [memberNamePlural] as the rightful rulers of all.</li>
+			  <li>episode(uses=1,tag=meme_Supremacist)  ->The faithful fought the unbelievers, and [deity0_name] said, "Fight them, everywhere, in my name, until I am worshipped throughout the universe and the true peace may finally reign."</li>
+			  <!-- theist founder -->
+			  <li>intro(tag=meme_Supremacist)           ->The people of the [place_summary] [place_name] worshipped [deity0_name]. [deity0_pronoun] saw that they were suited for [memeConcept], and ordained that these worshippers would rule above all others.</li>
+			  <li>conflict(tag=meme_Supremacist)        ->A [foeLeader] passed a law forbidding [memberNamePlural] from rising to the ruling classes of [place_name].</li>
+			  <li>founderJoin(tag=meme_Supremacist)     ->A warrior named [founderName] used [place_massWeapon] to destroy a [place_community]. [deity0_name] saw [founderName]'s ruthlessness and anointed [founder_objective] the rightful ruler of all humanity.</li>
+			  <li>victory(tag=meme_Supremacist)         ->[founderName] destroyed the capital of [place_name] with [place_massWeapon], killing the [foeLeader]. [founder_pronoun] took [founder_possessive] place as ruler of [place_name] - and the universe beyond.</li>
+			  <!-- ideological founder -->
+			  <li>setup(tag=meme_Supremacist)           ->[founderName] built an army that spread [founder_possessive] power and glory across the land, placing those who refused to follow rightly under [founder_possessive] rule.</li>
+			  <li>story(uses=1,tag=meme_Supremacist)    ->[founderName] instructed all outsiders to submit. When the first city refused, [founder_pronoun] used [place_massWeapon] to kill everyone inside.</li>
+			  <!-- ideological lesson -->
+			  <li>lessonIntro(tag=meme_Supremacist)         ->I looked at this [foeLeader], with [foeLeader_possessive] pitiful [foeSoldiers], all that power left fallow. I tried to convince [foeLeader_objective] that</li>
+			  <li>lesson(tag=meme_Supremacist)              ->we've long since proven that we have the strength to rightfully rule this universe</li>
+			  <li>lessonReinforcement(tag=meme_Supremacist) ->That's why we're proud to express the strength of our hearts using the heels of our boots.</li>
+			  <!-- archist -->
+			  <li>archistBasis(tag=meme_Supremacist)    ->It took the most superior humans to create the archotechs, so that the archotechs could become superior to all.</li>
+			  <li>archistFact(tag=meme_Supremacist)     ->The archotechs rightfully look down on us, as we look down on our inferiors.</li>
+			  <li>archistProphecy(tag=meme_Supremacist) ->The archotechs will only take us to join them when we finally rule over all others.</li>
+			  <!-- animist -->
+			  <li>animistFact(tag=meme_Supremacist)     ->Powerful spirits decide who is fit to rule, and lend power to those who subjugate others.</li>
+			  <li>animistProphecy(tag=meme_Supremacist) ->[itIsSaid] that a new order will be created when one supreme ruler commands all of humanity.</li>
+			</rulesStrings>
+		  </rules>
+		</descriptionMaker>
+		<symbolPacks>
+		  <li>
+			<ideoName>scum</ideoName>
+			<theme>scum</theme>
+			<adjective>scum</adjective>
+			<member>scum</member>
+		  </li>
+		</symbolPacks>
+		<agreeableTraits>
+		  <li>Greedy</li>
+		  <li>Abrasive</li>
+		</agreeableTraits>
+	</MemeDef>
+	<PreceptDef MayRequire="VanillaExpanded.VMemesE">
+		<defName>guy762_PreceptDef_HuttTitles</defName>
+		<issue>VME_Royalty</issue>
+		<label>exalted (Hutt Kajidic titles)</label>
+		<description>.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>guy762_MemeDef_hutt</li>
+		</associatedMemes>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>guy762_ThoughtDef_HuttTitles</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef MayRequire="VanillaExpanded.VMemesE">
+		<defName>guy762_ThoughtDef_HuttTitles</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Royalty</workerClass>
+		<stages>
+			<li>
+				<label>Hutt Kajidic: Lowtrader</label>
+				<baseOpinionOffset>15</baseOpinionOffset>
+			</li>
+			<li>
+				<label>Hutt Kajidic: Hightrader</label>
+				<baseOpinionOffset>30</baseOpinionOffset>
+			</li>
+			<li>
+				<label>Hutt Kajidic: H'uun</label>
+				<baseOpinionOffset>60</baseOpinionOffset>
+			</li>
+			<li>
+				<label>Hutt Kajidic: Hutt</label>
+				<baseOpinionOffset>80</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+
+  
+  
+
+
+</Defs>

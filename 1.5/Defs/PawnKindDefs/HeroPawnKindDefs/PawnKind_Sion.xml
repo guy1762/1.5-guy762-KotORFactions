@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<PawnKindDef MayRequire="guy762.StarWarsXenotypes" Name="KotORHeroBase_Sion"  ParentName="guy762_HeroPawnKindBase" Abstract="True">
+		<defName>KotORHeroBase_Sion</defName>
+		<nameMaker>guy762_HeroNamer_Sion</nameMaker>
+		<combatPower>500</combatPower>
+		
+		<!--
+		<isBoss>true</isBoss>
+		<skipResistant>true</skipResistant>
+		-->
+		
+		<minGenerationAge>68</minGenerationAge>
+		<maxGenerationAge>69</maxGenerationAge>
+		<fixedGender>Male</fixedGender>
+		<forcedHair>Bald</forcedHair>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Baseliner>999</Baseliner>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<itemQuality>Legendary</itemQuality>
+		<apparelMoney>999999</apparelMoney>
+		<apparelTags>
+		  <li>SE_apparel_sion</li>
+		  <li>KotORHeroAccessories_sion</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_SionTunic</li>
+		</apparelRequired>
+		<weaponMoney>99999999</weaponMoney>
+		<weaponTags>
+		  <li>SE_sion</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>16~18</range>
+			</li>
+		</skills>
+		<forcedTraits>
+			<PsychicSensitivity>2</PsychicSensitivity>
+			<Psychopath>0</Psychopath>
+			<Tough>0</Tough>
+			<Abrasive>0</Abrasive>
+			<Brawler>0</Brawler>
+		</forcedTraits>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_sion</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		<abilities>
+			<li MayRequire="Ludeon.RimWorld.Ideology">BerserkTrance</li>
+		</abilities>
+		<modExtensions>
+			 <li Class="AddGeneForPK.PKAdditionalGenes">
+			  <geneSets>
+				<li>
+				  <isXenogene>true</isXenogene>
+				  <chance>1</chance>
+				  <geneDefs>
+					<li>guy762_gene_sion</li>
+				  </geneDefs>
+				</li>
+			  </geneSets>
+			</li>
+			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
+			  <whitelist>
+				<li>Male_AverageWide</li>
+			  </whitelist>
+			  <blacklist>
+				<!--leave blank to disable-->
+			  </blacklist>
+			  <priority>
+				<li>Male_AverageWide</li>
+			  </priority>
+			  <checkGender>False</checkGender>
+			</li>
+		</modExtensions>
+	  </PawnKindDef>
+	  
+	  <RulePackDef MayRequire="guy762.StarWarsXenotypes">
+        <defName>guy762_HeroNamer_Sion</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[darth] '[darth] [sion]' [sion]</li>
+				<li>sion->Sion</li>
+				<li>darth->Darth</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun]-->
+	
+	
+	<BackstoryDef MayRequire="guy762.StarWarsXenotypes">
+		<defName>guy762_BackstoryC_Sion</defName>
+		<title>Sith Marauder</title>
+		<titleShort>Marauder</titleShort>
+		<description>Almost nothing is known about [PAWN_nameDef]'s origins, other than the fact that [PAWN_pronoun] joined the ranks of Exar Kun at a young age and became a distinguished Sith Marauder during the Great Sith War.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>10</Melee>
+		</skillGains>
+		<forcedTraits>
+		  <Psychopath>0</Psychopath>
+		  <Abrasive>0</Abrasive>
+		  <Brawler>0</Brawler>
+		</forcedTraits>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		</requiredWorkTags>
+		<workDisables>Caring, PlantWork</workDisables>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_Sion</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_sion</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	<BackstoryDef MayRequire="guy762.StarWarsXenotypes">
+		<defName>guy762_BackstoryA_Sion</defName>
+		<title>The Lord of Pain</title>
+		<titleShort>Lord of Pain</titleShort>
+		<description>During [PAWN_possessive] time as a Sith Marauder in the Exar Kun war, [PAWN_nameDef] was struck down by a Jedi. However, rather than giving in to [PAWN_possessive] wounds, [PAWN_nameDef] found [PAWN_pronoun] had a rare Force ability to draw upon the power of [PAWN_possessive] own pain and anger to avoid imminent death and hold [PAWN_possessive] damaged body together. In this way, [PAWN_nameDef] survived the Exar Kun war and continue to fight against the Jedi for decades after, rising to prominence in Revan's Sith Empire and being bestowed the title "The Lord of Pain" by Darth Traya.</description>
+		<slot>Adulthood</slot>
+		<forcedTraits>
+		  <PsychicSensitivity>2</PsychicSensitivity>
+		  <Tough>0</Tough>
+		</forcedTraits>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		</requiredWorkTags>
+		<workDisables>ManualDumb, Artistic, Cooking, Mining, Constructing</workDisables>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_Sion</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_sion</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<GeneDef MayRequire="guy762.StarWarsXenotypes">
+		<defName>guy762_gene_sion</defName>
+		<label>Sion's Curse</label>
+		<description>The lord of pain.</description>
+		<iconPath>Immortalus_SionSkin/Gene_Sion</iconPath>
+		<displayCategory>guy762_SWparts_Category</displayCategory>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>701</displayOrderInCategory>
+		<biostatCpx>10</biostatCpx>
+		<biostatArc>3</biostatArc>
+		<skinColorOverride>(162, 162, 162)</skinColorOverride>
+		<fur>guy762_FurDef_sion</fur>
+		
+		<exclusionTags>
+		  <li>HairStyle</li>
+		  <li>BeardStyle</li>
+		  <li>SkinColorOverride</li>
+		  <li>EyeColor_ReplacedByPotFSithEyes</li>
+		  <li>Force</li>
+		</exclusionTags>
+		<hairTagFilter>
+		  <whitelist>true</whitelist>
+		  <tags>
+			<li>Bald</li>
+		  </tags>
+		</hairTagFilter>
+		<beardTagFilter>
+		  <whitelist>true</whitelist>
+		  <tags>
+			<li>NoBeard</li>
+		  </tags>
+		</beardTagFilter>
+		<renderNodeProperties>
+		  <li>
+			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+			<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+			<parentTagDef>Head</parentTagDef>
+			<colorType>Skin</colorType>
+			<useRottenColor>true</useRottenColor>
+			<useSkinShader>true</useSkinShader>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<texPath>Immortalus_SionSkin/head</texPath>
+			<shaderTypeDef>CutoutSkinOverlay</shaderTypeDef>
+			<narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+			<drawData>
+			  <defaultData>
+				<layer>51</layer>
+			  </defaultData>
+			</drawData>
+		  </li>
+		  <li Class="PawnRenderNodeProperties_Eye">
+			<texPath>Immortalus_SionSkin/Eye_Dull</texPath>
+			<anchorTag>RightEye</anchorTag>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<parentTagDef>Head</parentTagDef>
+			<drawSize>0.2</drawSize>
+			<side>Right</side>
+			<drawData>
+			  <defaultData>
+				<layer>54</layer>
+				<offset>(0, 0, -0.25)</offset>
+			  </defaultData>
+			</drawData>
+		  </li>
+		  <li Class="PawnRenderNodeProperties_Eye">
+			<texPath>Pawn/SithEyes/T3SithEyes_male</texPath>
+			<texPathFemale>Pawn/SithEyes/T3SithEyes_female</texPathFemale>
+			<anchorTag>LeftEye</anchorTag>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<parentTagDef>Head</parentTagDef>
+			<drawSize>0.2</drawSize>
+			<side>Left</side>
+			<drawData>
+			  <defaultData>
+				<layer>54</layer>
+				<offset>(0, 0, -0.25)</offset>
+				<flip>true</flip>
+			  </defaultData>
+			  <dataWest>
+				<flip>false</flip>
+			  </dataWest>
+			</drawData>
+		  </li>
+		  <li>
+			  <parentTagDef>Body</parentTagDef>
+			  <useSkinShader>true</useSkinShader>
+			  <debugLabel>Fur</debugLabel>
+			  <nodeClass>BigAndSmall.PawnRenderNode_FurSkinClr</nodeClass>
+			  <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+			  <baseLayer>5</baseLayer>
+			  <rotDrawMode>Fresh, Rotting</rotDrawMode>
+			  <colorType>Skin</colorType>
+			</li>
+		</renderNodeProperties>
+		<statOffsets>
+			<Force_Darkside_Attunement MayRequire="lee.theforce.psycast">1</Force_Darkside_Attunement>
+			<PsychicSensitivity>1</PsychicSensitivity>
+			<PsychicEntropyRecoveryRate>0.5</PsychicEntropyRecoveryRate>
+			<SWPotF_ForcePoints_Recovery MayRequire="guy762.Lee.KotORPotF">1</SWPotF_ForcePoints_Recovery>
+			
+			<PawnBeauty>-10</PawnBeauty>
+			
+			<PainShockThreshold>10</PainShockThreshold>
+			
+			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+	        <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+		</statOffsets>
+		<geneClass>BetterPrerequisites.PGene</geneClass>
+		<selectionWeight>0</selectionWeight>
+		 <modExtensions>
+			<li Class="BetterPrerequisites.GeneExtension">
+				<applyBodyHediff>
+					<li>
+						<hediff>guy762_Hediff_sion</hediff>
+					</li>
+				</applyBodyHediff>
+				<!--applyPartHediff>
+					<li>
+						<hediff>VPE_PsycastAbilityImplant</hediff>
+						<bodyparts>
+						  <li>Brain</li>
+						</bodyparts>
+					</li>
+					<li>
+						<hediff>PsychicAmplifier</hediff>
+						<bodyparts>
+						  <li>Brain</li>
+						</bodyparts>
+					</li>
+				</applyPartHediff-->
+			</li>
+		</modExtensions>
+	  </GeneDef>
+	  
+	  <FurDef>
+		  <defName>guy762_FurDef_sion</defName>
+		  <noGraphic>true</noGraphic>
+		  <bodyTypeGraphicPaths>
+			<Thin>Immortalus_SionSkin/Body_Thin</Thin>
+			<Female>Immortalus_SionSkin/Body_Female</Female>
+			<Male>Immortalus_SionSkin/Body_Male</Male>
+			<Hulk>Immortalus_SionSkin/Body_Hulk</Hulk>
+			<Fat>Immortalus_SionSkin/Body_Fat</Fat>
+			
+			<Child>Things/Pawn/Humanlike/Bodies/Naked_Child</Child>
+			<Baby>Things/Pawn/Humanlike/Bodies/Naked_Child</Baby>
+		  </bodyTypeGraphicPaths>
+		</FurDef>
+	  
+	  <HediffDef MayRequire="guy762.StarWarsXenotypes">
+		<defName>guy762_Hediff_sion</defName>
+		<label>Sion's Curse</label>
+		<description>The lord of pain.</description>
+		<descriptionHyperlinks><GeneDef>guy762_gene_sion</GeneDef></descriptionHyperlinks>
+		<defaultLabelColor>(0.5, 0, 0)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<!--hediffClass>VanillaPsycastsExpanded.Hediff_Deathshield</hediffClass-->
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>true</isBad>
+		<preventsDeath>true</preventsDeath>
+		<comps>
+		  <!--li Class="CosmeticHediff_v15.HediffCompProperties_Cosmetic">
+			<graphicPath>Immortalus_SionSkin/Body</graphicPath>
+			<useBodytype>true</useBodytype>
+			<parentTagDef>Body</parentTagDef>
+			<workerClass>CosmeticHediff_v15.PawnRenderNodeWorker_CHBody</workerClass>
+			<frontRow>false</frontRow>
+			<color>(162, 162, 162)</color>
+		  </li-->
+		  <li Class="SithRage.HediffCompProperties_SithRage">
+			<livesLeft>1000000</livesLeft>
+		  </li>
+		</comps>
+		<modExtensions>
+		  <li Class="MentalBreakBlocker.ModExtension_MentalBreakBlocker">
+			<cause>all</cause> <!--choose one: mood, damage, psycast, moodAndDamage, moodAndPsycast, damageAndPsycast, all-->
+		  </li>
+		</modExtensions>
+		<stages>
+		  <li>
+			<painFactor>0</painFactor>
+			<naturalHealingFactor>100</naturalHealingFactor>
+			<totalBleedFactor>-10</totalBleedFactor>
+			
+			<painOffset>-0.9</painOffset>
+		  </li>
+		</stages>
+	  </HediffDef>
+	  
+	  <ThoughtDef MayRequire="guy762.StarWarsXenotypes">
+		<defName>guy762_ThoughtDef_sion</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>guy762_Hediff_sion</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+		  <li>
+			<label>the Lord of Pain</label>
+			<description>The Force is pain. The Force is focus. The Force is that which drives the strong and kills the weak.</description>
+			<baseMoodEffect>-100</baseMoodEffect>
+		  </li>
+		</stages>
+	  </ThoughtDef>
+	  
+	  
+
+
+
+
+
+</Defs>

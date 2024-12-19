@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+			
+		
+	<AbilityDef>
+
+		<abilityClass>Psycast</abilityClass>
+		<category>Psychic</category>
+		<warmupSound>PsycastCastLoop</warmupSound>
+		<level>6</level>
+		<aiCanUse>true</aiCanUse>
+
+		
+		<defName>guy762_Ability_MstBatlMed</defName>
+		<label>master battle meditation</label>
+		<description>"Every fighter brings their own fears, their own hopes into combat; with sufficient concentration, a Jedi can strengthen the hopes of their allies and heighten the fears of their enemies. Thus, what armies know in their hearts must become true, because they believe it so strongly." - Odan-Urr\n\nBy visualizing the desired outcome of a battle, a Jedi can shape the field of Force that surrounds events. This person can greatly enhance the willpower and combat abilities of nearby friendlies. Proper use can turn the tide of even the largest battles.\n\nAfter activating this ability, the caster will go into a state of deep meditation for 7 hours. This ability will slowly drain the caster's psyfocus bar over the course of the meditative state. All player-controllable pawns within a 500-tile radius will benefit from this ability.</description>
+		<iconPath>UI/KotORII_Power_Master_Battle_Meditation</iconPath>
+		<!--warmupMoteSocialSymbol>UI/KotORII_Power_Master_Battle_Meditation</warmupMoteSocialSymbol-->
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>True</showPsycastEffects>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<showCastingProgressBar>true</showCastingProgressBar>
+		
+		<hotKey>Misc12</hotKey>
+		<uiOrder>3</uiOrder>
+		<warmupStartSound MayRequire="Ludeon.RimWorld.Ideology">CombatCommand_Warmup</warmupStartSound>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+		  <Ability_Duration>292</Ability_Duration> <!-- 7 hours-->
+		  <Ability_EffectRadius>500</Ability_EffectRadius>
+		</statBases>
+		<cooldownTicksRange>180000</cooldownTicksRange>
+		<verbProperties>
+		  <verbClass>Verb_CastAbility</verbClass>
+		  <warmupTime>0.5</warmupTime>
+		  <range>500</range>
+		  <drawAimPie>False</drawAimPie>
+		  <requireLineOfSight>False</requireLineOfSight>
+		  <targetParams>
+			<canTargetSelf>true</canTargetSelf>
+			<canTargetPawns>false</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetAnimals>false</canTargetAnimals>
+			<canTargetHumans>false</canTargetHumans>
+			<canTargetMechs>false</canTargetMechs>
+		  </targetParams>
+		</verbProperties>
+		<comps>
+		  <li Class="CompProperties_AbilityGiveHediff">
+			<compClass>CompAbilityEffect_GiveHediff</compClass>
+			<hediffDef>guy762_Hediff_MstBatlMed</hediffDef>
+			<onlyBrain>True</onlyBrain>
+			<onlyApplyToSelf>True</onlyApplyToSelf>
+			<replaceExisting>true</replaceExisting>
+		  </li>
+		  <li Class="CompProperties_AbilityFleckOnTarget">
+			<fleckDef>PsycastPsychicEffect</fleckDef>
+		  </li>
+		  <li Class="SithRage.CompProperties_AbilityForceJob_CasterOnly">
+			<compClass>SithRage.CompAbilityEffect_ForceJob_CasterOnly</compClass>
+			<jobDef>ReverseMeditate</jobDef>
+			<durationMultiplier>PsychicSensitivity</durationMultiplier>
+			<applyToCasterOnly>true</applyToCasterOnly>
+		  </li>
+		</comps>
+	  </AbilityDef>
+	  
+	  <HediffDef>
+		<defName>guy762_Hediff_MstBatlMed</defName>
+		<label>master battle meditation (caster)</label>
+		<description>Through channeling the Force, this person can greatly enhance the willpower and combat abilities of nearby friendlies.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(255,255,7)</defaultLabelColor>
+		<isBad>false</isBad>
+		<comps>
+		  <li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>14000</disappearsAfterTicks> <!-- 7 hours -->
+			<showRemainingTime>True</showRemainingTime>
+		  </li>
+		  <li Class="HediffCompProperties_DisappearsOnDeath"/>
+		  <li Class="HediffCompProperties_GiveHediffsInRange">
+			<range>500</range>
+			<!--mote>Mote_CombatCommand</mote-->
+			<!--hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted-->
+			<targetingParameters>
+			  <canTargetBuildings>false</canTargetBuildings>
+			  <canTargetAnimals>false</canTargetAnimals>
+			  <canTargetMechs>false</canTargetMechs>
+			  <!--onlyTargetColonists>true</onlyTargetColonists-->
+			  <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+			</targetingParameters>
+			<hediff>guy762_Hediff_MstBatlMed_Buff</hediff>
+		  </li>
+		  
+		  <li MayRequire="EBSG.Framework" Class="EBSGFramework.HediffCompProperties_GiveHediffsToNonAlliesInRange">
+			<targetingParameters> <!--All your desired targets can be set here, these are just the ones usually used-->
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetMechs>False</canTargetMechs>
+			</targetingParameters>
+			<hediff>guy762_Hediff_MstBatlMed_Debuff</hediff>
+			<range>500</range>
+		  </li>
+		  
+		  <li Class="VanillaPsycastsExpanded.HediffCompProperties_DisappearsOnDowned"/>
+		  <li Class="VanillaPsycastsExpanded.HediffCompProperties_DisappearsOnDespawn"/>
+		</comps>
+	  </HediffDef>
+	  
+	  <HediffDef>
+		<defName>guy762_Hediff_MstBatlMed_Buff</defName>
+		<label>master battle meditation</label>
+		<description>Combat abilities and willpower are boosted thanks to being near someone who is using battle meditation.</description>
+		<debugLabelExtra>other</debugLabelExtra>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(255,255,7)</defaultLabelColor>
+		<comps>
+		  <li Class="HediffCompProperties_Disappears">
+			<showRemainingTime>false</showRemainingTime>
+		  </li>
+		  <li Class="HediffCompProperties_DisappearsOnDeath"/>
+		  <li Class="HediffCompProperties_Link">
+			<requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+			<maxDistance>500</maxDistance>
+			<customMote MayRequire="Ludeon.RimWorld.Ideology">Mote_CombatCommandLinkLine</customMote>
+		  </li>
+		</comps>
+		<isBad>false</isBad>
+		<stages>
+		  <li>
+			<makeImmuneTo>
+				<li>guy762_Hediff_MstBatlMed_Debuff</li>
+			</makeImmuneTo>
+			<statOffsets>
+			  <ShootingAccuracyPawn>4</ShootingAccuracyPawn>
+			  <MeleeHitChance>4</MeleeHitChance>
+			  <MeleeCooldownFactor>-0.4</MeleeCooldownFactor>
+			  <RangedCooldownFactor>-0.4</RangedCooldownFactor>
+			  
+			  <PainShockThreshold>0.4</PainShockThreshold>
+			  <IncomingDamageFactor>-0.20</IncomingDamageFactor>
+			  
+			  <MentalBreakThreshold>-1</MentalBreakThreshold>
+			</statOffsets>
+		  </li>
+		</stages>
+		<modExtensions>
+		  <li Class="MentalBreakBlocker.ModExtension_MentalBreakBlocker">
+			<!--choose one: mood, damage, psycast, moodAndDamage, moodAndPsycast, damageAndPsycast, all-->
+			<!--  allow only mood or damage cause  -->
+			<cause>moodAndDamage</cause>
+			<isWhitelist>true</isWhitelist>
+		  </li>
+		</modExtensions>
+	  </HediffDef>
+	  
+	  <ThoughtDef>
+		<defName>guy762_ThoughtDef_MstBatlMed_Buff</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>guy762_Hediff_MstBatlMed_Buff</hediff>
+		<validWhileDespawned>false</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+		  <li>
+			<label>friendly battle meditation</label>
+			<description>Yeah! We can win this!</description>
+			<baseMoodEffect>50</baseMoodEffect>
+		  </li>
+		</stages>
+	  </ThoughtDef>
+	  
+	  
+	  <HediffDef>
+		<defName>guy762_Hediff_MstBatlMed_Debuff</defName>
+		<label>enemy battle meditation</label>
+		<description>Combat abilities and willpower are weakened due to being near an enemy who is using battle meditation.</description>
+		<debugLabelExtra>other</debugLabelExtra>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(255,255,7)</defaultLabelColor>
+		<comps>
+		  <li Class="HediffCompProperties_Disappears">
+			<showRemainingTime>false</showRemainingTime>
+		  </li>
+		  <li Class="HediffCompProperties_DisappearsOnDeath"/>
+		  <li Class="HediffCompProperties_Link">
+			<requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+			<maxDistance>500</maxDistance>
+		  </li>
+		</comps>
+		<isBad>true</isBad>
+		<stages>
+		  <li>
+			<statOffsets>
+			  <ShootingAccuracyPawn>-4</ShootingAccuracyPawn>
+			  <MeleeHitChance>-4</MeleeHitChance>
+			  <MeleeCooldownFactor>0.4</MeleeCooldownFactor>
+			  <RangedCooldownFactor>0.4</RangedCooldownFactor>
+			  
+			  <MentalBreakThreshold>1</MentalBreakThreshold>
+			</statOffsets>
+		  </li>
+		</stages>
+	  </HediffDef>
+	  
+	  <ThoughtDef>
+		<defName>guy762_ThoughtDef_MstBatlMed_Debuff</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>guy762_Hediff_MstBatlMed_Debuff</hediff>
+		<validWhileDespawned>false</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+		  <li>
+			<label>enemy battle meditation</label>
+			<description>It's over, we're doomed!</description>
+			<baseMoodEffect>-50</baseMoodEffect>
+		  </li>
+		</stages>
+	  </ThoughtDef>
+	  
+	  
+	  
+	  
+	  
+	  <JobDef>
+		<defName>ReverseMeditate</defName>
+		<driverClass>ReverseMeditation.JobDriver_ReverseMeditate</driverClass>
+		<reportString>casting battle meditation.</reportString>
+		<taleOnCompletion>Meditated</taleOnCompletion>
+		<isCrawlingIfDowned>false</isCrawlingIfDowned>
+		<casualInterruptible>false</casualInterruptible>
+		<playerInterruptible>false</playerInterruptible>
+		
+		<neverShowWeapon>true</neverShowWeapon>
+		<abilityCasting>true</abilityCasting>
+	  </JobDef>
+	  <!--JobDef>
+		<defName>GotoMindControlled</defName>
+		<driverClass>JobDriver_GotoMindControlled</driverClass>
+		<reportString>moving.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+		<waitAfterArriving>2000</waitAfterArriving>
+		<casualInterruptible>false</casualInterruptible>
+		<playerInterruptible>false</playerInterruptible>
+		<suspendable>false</suspendable>
+	  </JobDef-->
+
+
+
+
+</Defs>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+
+	<PawnKindDef Name="KotORPlayablePawn_HuttTrader" ParentName="KotORHutts_HuttTrader">
+		<defName>KotORPlayablePawn_HuttTrader</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_HuttUpstart</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORPlayablePawn_MandoMidBountyHunter" ParentName="KotORBntyHntr_mandomid">
+		<defName>KotORPlayablePawn_MandoMidBountyHunter</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_HuttUpstart</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORPlayablePawn_KajidicExecutioner" ParentName="KotORHutts_executioner">
+		<defName>KotORPlayablePawn_KajidicExecutioner</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_HuttUpstart</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORPlayablePawn_EchaniFem" ParentName="KotORHutts_echaniguard">
+		<defName>KotORPlayablePawn_EchaniFem</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_HuttUpstart</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORPlayablePawn_KajidicSoldier" ParentName="KotORHutts_soldier">
+		<defName>KotORPlayablePawn_KajidicSoldier</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_HuttUpstart</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORPlayablePawn_Gamorrean" ParentName="KotORHutts_gamorreanlgt">
+		<defName>KotORPlayablePawn_Gamorrean</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_HuttUpstart</defaultFactionType>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+  <ScenarioDef>
+    <defName>guy762_KotORScenario_HuttUpstart</defName>
+    <label>The Hutt Upstart</label>
+    <description>With a new wave of Republic aggression, the Hutt cartels are at risk. The Hutt Council has sent you, an up-and-coming Hutt of low title but high profits, to a troubled frontier world of particular value to ensure the Republic does not gain a foothold.</description>
+    <scenario>
+      <summary>An up-and-coming Hutt and their entourage seek to expand their business.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>guy762_KotORPlayerFaction_HuttUpstart</factionDef>
+      </playerFaction>
+      <parts>
+
+        <!-- Game start dialog -->
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>With a new wave of Republic aggression, the Hutt cartels are at risk. The Hutt Council has sent you, an up-and-coming Hutt of low title but high profits, to a troubled frontier world of particular value to ensure the Republic does not gain a foothold.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+		
+		<!-- Player starting stuff spawn method-->
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+        </li>
+	
+
+        <!-- Config pages -->
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+          <def>ConfigurePawnsKindDefs</def>
+          <pawnChoiceCount>12</pawnChoiceCount>
+          <!--leftBehindPawnKind>KotORPlayableHero_T3M4</leftBehindPawnKind-->
+          <kindCounts>
+			<li>
+              <kindDef>KotORPlayablePawn_HuttTrader</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			
+			<li>
+              <kindDef>KotORPlayablePawn_EchaniFem</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			
+			<li>
+              <kindDef>KotORPlayablePawn_MandoMidBountyHunter</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			
+			<li>
+              <kindDef>KotORPlayablePawn_KajidicExecutioner</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			
+			<li>
+              <kindDef>KotORPlayablePawn_Gamorrean</kindDef>
+              <count>2</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			
+			<li>
+              <kindDef>KotORPlayablePawn_KajidicSoldier</kindDef>
+              <count>4</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			
+          </kindCounts>
+        </li>
+
+        <!-- Starting research -->
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>MicroelectronicsBasics</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Fabrication</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>AdvancedFabrication</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_workbench</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Batteries</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Pemmican</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>WatermillGenerator</project>
+        </li>
+		
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_hutts</project>
+        </li>
+		
+		
+		
+		
+        <!-- Player starting things -->
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>25000</count>
+        </li>
+		<li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Gold</thingDef>
+          <count>5000</count>
+        </li>
+        <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>guy762_KotORLootBox_FoodMeds</thingDef>
+          <count>8</count>
+        </li>
+		<li MayRequire="Rick.FCP.Core.Tools.Beta" Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>guy762_KotORLootBox_DrugsAlcohol</thingDef>
+          <count>2</count>
+        </li>
+        <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>guy762_KotORLootBox_ShieldsStims</thingDef>
+          <count>2</count>
+        </li>
+
+
+		<!-- Scatter some things near player start -->
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+			<def>ScatterThingsNearPlayerStart</def>
+			<thingDef>KOTOR_AlloyBronzium</thingDef>
+			<count>500</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+			<def>ScatterThingsNearPlayerStart</def>
+			<thingDef>Steel</thingDef>
+			<count>100</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>100</count>
+        </li>  
+		
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>7</count>
+        </li>
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>guy762_medpac_life</thingDef>
+          <count>10</count>
+        </li>
+		
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+			<def>StartingThing_Defined</def>
+			<thingDef>ComponentIndustrial</thingDef>
+			<count>20</count>
+		</li>
+		
+		
+		
+		<!-- Scatter some things anywhere -->
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>ShipChunk</thingDef>
+			<count>25</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>ShipChunk_durasteel</thingDef>
+			<count>10</count>
+		</li>
+		
+		
+		
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>KotORChunk_plasteel</thingDef>
+			<count>25</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>KotORChunk_durasteel</thingDef>
+			<count>25</count>
+		</li>
+
+
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+
+
+
+
+
+
+
+
+<FactionDef ParentName="PlayerFactionBase">
+    <defName>guy762_KotORPlayerFaction_HuttUpstart</defName>
+    <label>Kajidic upstart</label>
+    <description>A small Hutt cartel.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>KotORPlayablePawn_Smuggler</basicMemberKind>
+    <pawnSingular>scum</pawnSingular>
+    <pawnsPlural>scum</pawnsPlural>
+    <techLevel>Spacer</techLevel>
+	
+    <factionNameMaker>guy762_NamerFaction_HuttCartel</factionNameMaker>
+    <settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
+    <allowedCultures>
+      <li>guy762_culture_outerrim</li>
+    </allowedCultures>
+	<requiredMemes>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Royal</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Trader</li>
+	</requiredMemes>
+	<allowedMemes>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Bacchanalianism</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_PartyLife</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistEmbodied</li>
+	</allowedMemes>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+    </disallowedPrecepts>
+	
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Offworld</li>
+          <li>Pirate</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <factionIconPath>World/HuttClans</factionIconPath>
+	
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>ClassicStart</li>
+      <li>ClassicStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
+  </FactionDef>
+
+
+
+
+
+
+
+
+
+
+</Defs>

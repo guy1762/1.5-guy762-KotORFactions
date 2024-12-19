@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	<PawnKindDef MayRequire="guy762.StarWarsXenotypes" Name="KotORHeroBase_Juhani"  ParentName="guy762_HeroPawnKindBase" Abstract="True">
+		<defName>KotORHeroBase_Juhani</defName>
+		<nameMaker>guy762_HeroNamer_Juhani</nameMaker>
+		<combatPower>500</combatPower>
+		<minGenerationAge>30</minGenerationAge>
+		<maxGenerationAge>32</maxGenerationAge>
+		<fixedGender>Female</fixedGender>
+		<forcedHair>guy762_Hair_Juhani</forcedHair>
+		<forcedHairColor>(237,202,156)</forcedHairColor>
+		<xenotypeSet>
+			<xenotypeChances>
+				<guy762_xenotype_cathar>999</guy762_xenotype_cathar>
+			</xenotypeChances>
+			
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<itemQuality>Legendary</itemQuality>
+		<apparelMoney>29999</apparelMoney>
+		<apparelTags>
+		  <li>KotORHeroAccessories_juhani</li>
+		  <li>KotORHeadband_neuralband</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_JuhaniTunic</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<apparelDef>guy762_JediTunic_formal</apparelDef>
+			</li>
+		</specificApparelRequirements>
+		<weaponMoney>99999999</weaponMoney>
+		<weaponTags>
+		  <li>OR_juhani</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>18~20</range>
+			</li>
+			<li>
+				<skill>Animals</skill>
+				<range>10~12</range>
+			</li>
+			<li>
+				<skill>Medicine</skill>
+				<range>6~8</range>
+			</li>
+		</skills>
+		<forcedTraits>
+			<PsychicSensitivity>1</PsychicSensitivity>
+			<Gay>0</Gay>
+			<Nimble>0</Nimble>
+		</forcedTraits>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_juhani</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		<modExtensions>
+		 <li Class="AddGeneForPK.PKAdditionalGenes"> <!-- NOTE: this mod extension cannot be split between two different PKDefs, all genes have to go in the same block!!! -->
+          <geneSets>
+			<li>
+              <isXenogene>true</isXenogene>
+              <chance>1</chance>
+              <geneDefs>
+                <li MayRequire="guy762.Lee.KotORPotF">SWPotF_Gene_LSEnlightenmentII</li>
+              </geneDefs>
+            </li>
+			<li>
+              <isXenogene>false</isXenogene>
+              <chance>1</chance>
+              <geneDefs>
+                <li>Hair_Blonde</li>
+              </geneDefs>
+            </li>
+          </geneSets>
+		</li>
+		<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
+          <whitelist>
+            <li>Furskin_Narrow3</li>
+          </whitelist>
+          <blacklist>
+            <!--leave blank to disable-->
+          </blacklist>
+          <priority>
+            <li>Furskin_Narrow3</li>
+          </priority>
+          <checkGender>False</checkGender>
+        </li>
+      </modExtensions>
+	  </PawnKindDef>
+	  
+	  <RulePackDef>
+        <defName>guy762_HeroNamer_Juhani</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[juhani] '[juhani]' [sareth]</li>
+				<li>juhani->Juhani</li>
+				<li>sareth->Sareth</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	
+	<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun]-->
+	
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryC_Juhani</defName>
+		<title>Tarisian Refugee</title>
+		<titleShort>Refugee</titleShort>
+		<description>Born to refugee parents, [PAWN_nameDef] grew up among the impoverished non-humans in the Tarisian Lower City. [PAWN_pronoun] endured discrimination and bigotry from the Upper Tarisians while living off of their scraps and refuse. When [PAWN_possessive] parents eventually perished from being systemically worked to death, [PAWN_possessive] family's debts were passed on to her, and since [PAWN_pronoun] had no way to pay them off, [PAWN_pronoun] was enslaved by the Exchange as part of an "asset seizure".\n\nAs fate would have it, [PAWN_nameDef] was on the auction block to be sold when the Jedi Revan arrived to liberate Taris from the Mandalorians, and was soon freed from [PAWN_possessive] shackles by one of the Jedi crusaders. Inspired by the majesty and grace of the Jedi, [PAWN_nameDef] set to work to earn enough credits to book passage on a transport to the Jedi enclave on Dantooine to become a Jedi.</description>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_Juhani</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_juhani</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryA_Juhani</defName>
+		<title>Jedi Guardian</title>
+		<titleShort>Jedi Guardian</titleShort>
+		<description>[PAWN_nameDef] was trained at the Jedi enclave on Dantooine. During [PAWN_possessive] lessons, [PAWN_pronoun] often struggled to stay in control of [PAWN_possessive] emotions and found it difficult to follow the rigorous teachings of the Jedi. During one training session, [PAWN_nameDef] lost control and struck down [PAWN_possessive] master. Believing [PAWN_pronoun] had fallen to the dark side, [PAWN_pronoun] fled into the Dantooine outback, but was eventually found and bested in combat by redeemed Jedi Revan, and was brought back to the enclave to face the Jedi council's judgment. To [PAWN_possessive] surprise, the council revealed [PAWN_possessive] master still lived, and had arranged the entire incident as a test for [PAWN_nameDef] to confront [PAWN_possessive] own innner darkness. [PAWN_nameDef] was then knighted as a Jedi guardian, and joined Revan on their quest to find the Star Forge.\n\nWhen the Sith assassination campaign against the Jedi began after the war ended, [PAWN_nameDef] was one of the lucky few to survive the initial onslaught of Sith assailants. Of the two remaining Jedi companions of Revan, Bastila and [PAWN_nameDef] agreed to go into hiding separately to avoid further attempts on their lives. [PAWN_nameDef] returned to [PAWN_possessive] ruined homeworld Taris to meditate in solitude and come to terms with the loss of [PAWN_possessive] former home. When the remaining Sith lords were defeated at the Battle of Telos, [PAWN_nameDef] was the first to respond to Bastila's call for a new convocation of Jedi to restore the Jedi Order.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>15</Melee>
+			<Animals>6</Animals>
+			<Medicine>6</Medicine>
+		</skillGains>
+		<forcedTraits>
+		  <PsychicSensitivity>1</PsychicSensitivity>
+		</forcedTraits>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_Juhani</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_juhani</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+
+
+
+</Defs>

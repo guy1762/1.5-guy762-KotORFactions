@@ -1,0 +1,1106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="KotORHutts_Base" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>guy762_KotORFaction_HuttCartel</defaultFactionType>
+		<chemicalAddictionChance>0.35</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+		<invNutrition>0.75</invNutrition>
+		<invFoodDef>Pemmican</invFoodDef>
+		<biocodeWeaponChance>0.75</biocodeWeaponChance>
+		<!--apparelTags>
+		  <li>KotORHeadband_gasmask</li>
+		</apparelTags-->
+		<allowOldAgeInjuries>False</allowOldAgeInjuries>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		  <li>Hauling</li>
+		</requiredWorkTags>
+		
+		<inventoryOptions>
+		  <subOptionsChooseOne>
+			<li>
+				<thingDef>Silver</thingDef>
+				<countRange>0~300</countRange>
+			</li>
+			<li>
+			  <thingDef>KOTOR_Spice</thingDef>
+			  <countRange>1~3</countRange>
+			</li>
+			<li>
+			  <thingDef>KOTOR_Deathstick</thingDef>
+			  <countRange>2~3</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<!--xenotypeSet>
+		  <xenotypeChances>
+			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.05</Baseliner>
+			<guy762_xenotype_aqualish MayRequire="guy762.StarWarsXenotypes">0.06</guy762_xenotype_aqualish> 1.00 total
+			<guy762_xenotype_bith MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_bith>
+			<guy762_xenotype_bothan MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_bothan>
+			<guy762_xenotype_cathar MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_cathar>
+			<guy762_xenotype_devaronian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_devaronian>
+			<guy762_xenotype_duros MayRequire="guy762.StarWarsXenotypes">0.04</guy762_xenotype_duros>
+			<guy762_xenotype_falleen MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_falleen>
+			<guy762_xenotype_iridonian MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_iridonian>
+			<guy762_xenotype_klatoonian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_klatoonian>
+			<guy762_xenotype_nautolan MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_nautolan>
+			<guy762_xenotype_nikto MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_nikto>
+			<guy762_xenotype_quarren MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_quarren>
+			<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_rodian>
+			<guy762_xenotype_snivvian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_snivvian>
+			<guy762_xenotype_sullustan MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_sullustan>
+			<guy762_xenotype_togruta MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_togruta>
+			<guy762_xenotype_trandoshan MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_trandoshan>
+			<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.08</guy762_xenotype_twilek>
+			<guy762_xenotype_weequay MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_weequay>
+			<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_zabrak>
+		  </xenotypeChances>
+		</xenotypeSet-->
+	  </PawnKindDef>
+	  
+	  
+	  
+	  
+	  
+	  
+	  <PawnKindDef Name="KotORHutts_SlaveBase_AlienList" ParentName="KotORCzrka_SlaveBase" Abstract="True">
+		<defaultFactionType>guy762_KotORFaction_HuttCartel</defaultFactionType>
+		<xenotypeSet>
+		  <xenotypeChances>
+			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.05</Baseliner>
+			<guy762_xenotype_aqualish MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_aqualish>
+			<guy762_xenotype_bith MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_bith>
+			<guy762_xenotype_cathar MayRequire="guy762.StarWarsXenotypes">0.08</guy762_xenotype_cathar>
+			<guy762_xenotype_chadrafan MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_chadrafan>
+			<guy762_xenotype_devaronian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_devaronian>
+			<guy762_xenotype_duros MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_duros>
+			<guy762_xenotype_klatoonian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_klatoonian> <!--1.00-->
+			<guy762_xenotype_kubaz MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_kubaz>
+			<guy762_xenotype_mimbanese MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_mimbanese>
+			<guy762_xenotype_nautolan MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_nautolan>
+			<guy762_xenotype_nikto MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_nikto>
+			<guy762_xenotype_quarren MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_quarren>
+			<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_rodian>
+			<guy762_xenotype_snivvian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_snivvian>
+			<guy762_xenotype_sullustan MayRequire="guy762.StarWarsXenotypes">0.08</guy762_xenotype_sullustan>
+			<guy762_xenotype_togruta MayRequire="guy762.StarWarsXenotypes">0.12</guy762_xenotype_togruta>
+			<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.15</guy762_xenotype_twilek>
+			<guy762_xenotype_weequay MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_weequay>
+			<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_zabrak>
+			<guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_zeltron>
+		  </xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+	  </PawnKindDef>
+	
+	
+	
+  
+		<!--gamorreans-->
+
+
+	<PawnKindDef Name="KotORHutts_gamorreanlgt" ParentName="KotORHutts_Base">
+		<defName>KotORHutts_gamorreanlgt</defName>
+		<label>Gamorrean warrior</label>
+		<combatPower>150</combatPower>
+		<fixedGender>Male</fixedGender>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>55</maxGenerationAge>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<guy762_xenotype_gamorrean>999</guy762_xenotype_gamorrean>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<gearHealthRange>0.75~1</gearHealthRange>
+		<itemQuality>Poor</itemQuality>
+		<apparelMoney>1000</apparelMoney>
+		<apparelTags Inherit="False">
+		  <li>KotORGloves_gamorrean</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_Clothing_gamorrean</li>
+			<li>guy762_Hat_gamorrean</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<stuff>Leather_Plain</stuff>
+				<color>(130,75,50)</color> <!-- copper -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<stuff>Leather_Plain</stuff>
+				<color>(130,75,50)</color> <!-- copper -->
+			</li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>750~3000</weaponMoney>
+		<weaponTags>
+		  <li>HC_gamorrean_melee</li>
+		  <li>HC_gamorreanaxe</li>
+		</weaponTags>
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<isFighter>true</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORHutts_gamorreanhvy" ParentName="KotORHutts_Base">
+		<defName>KotORHutts_gamorreanhvy</defName>
+		<label>Gamorrean gunner</label>
+		<combatPower>200</combatPower>
+		<fixedGender>Male</fixedGender>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>55</maxGenerationAge>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<guy762_xenotype_gamorrean>999</guy762_xenotype_gamorrean>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<itemQuality>Good</itemQuality>
+		<apparelMoney>7500</apparelMoney>
+		<apparelTags Inherit="False">
+		  <li>KotORShield_mid</li>
+		  <li>KotORAccessory_lightdiagonalonly</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_HvyArmor_gamorrean</li>
+			<li>guy762_glove_gamorrean</li>
+			<li>guy762_Clothing_gamorrean</li>
+			<li>guy762_Hat_gamorrean</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<stuff>Leather_Plain</stuff>
+				<color>(130,75,50)</color> <!-- copper -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<stuff>Leather_Plain</stuff>
+				<color>(130,75,50)</color> <!-- copper -->
+			</li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>300~1750</weaponMoney>
+		<biocodeWeaponChance>0.2</biocodeWeaponChance>
+		<weaponTags>
+		  <li>KotORRanged_blasterrifle</li>
+		  <li>KotORRanged_hvyrepeater</li>
+		</weaponTags>
+		
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>5~20</range>
+			</li>
+		</skills>
+		
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<isFighter>true</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	</PawnKindDef>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	<!--
+	
+	  <PawnKindDef Name="KotORHutts_bntyhntr_light" ParentName="KotORBntyHntr_light">
+		<defName>KotORHutts_bntyhntr_light</defName>
+		<defaultFactionType>guy762_KotORFaction_HuttCartel</defaultFactionType>
+		<combatPower>80</combatPower>
+	  </PawnKindDef>
+	  
+	  <PawnKindDef Name="KotORHutts_bntyhntr_mid" ParentName="KotORBntyHntr_mid">
+		<defName>KotORHutts_bntyhntr_mid</defName>
+		<defaultFactionType>guy762_KotORFaction_HuttCartel</defaultFactionType>
+		<combatPower>110</combatPower>
+	  </PawnKindDef>
+	
+	  <PawnKindDef Name="KotORHutts_bntyhntr_heavy" ParentName="KotORBntyHntr_heavy">
+		<defName>KotORHutts_bntyhntr_heavy</defName>
+		<defaultFactionType>guy762_KotORFaction_HuttCartel</defaultFactionType>
+		<combatPower>140</combatPower>
+	  </PawnKindDef>
+	  
+	  <PawnKindDef Name="KotORHutts_bntyhntr_star" ParentName="KotORBntyHntr_star">
+		<defName>KotORHutts_bntyhntr_star</defName>
+		<defaultFactionType>guy762_KotORFaction_HuttCartel</defaultFactionType>
+		<combatPower>500</combatPower>
+	  </PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="KotORHutts_droid_DevWDweak" ParentName="KotORDroidBad_DevWD_weak" MayRequire="guy762.KotORDroids">
+		<defName>KotORHutts_droid_DevWDweak</defName>
+		<defaultFactionType>guy762_KotORFaction_HuttCartel</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORHutts_droid_DevWDstrong" ParentName="KotORDroidBad_DevWD_strong" MayRequire="guy762.KotORDroids">
+		<defName>KotORHutts_droid_DevWDstrong</defName>
+		<defaultFactionType>guy762_KotORFaction_HuttCartel</defaultFactionType>
+	</PawnKindDef>
+	
+	-->
+	
+	
+	<PawnKindDef Name="KotORHutts_gladiatordroid" ParentName="KotORDroidBase_bad" MayRequire="guy762.KotORDroids">
+		<defName>KotORHutts_gladiatordroid</defName>
+		<defaultFactionType>guy762_KotORFaction_HuttCartel</defaultFactionType>
+		<label>gladiator droid</label>
+		<race>guy762_DroidRace_DevWD</race>
+		<skinColorOverride>(130,120,110)</skinColorOverride>
+		<combatPower>150</combatPower>
+		<itemQuality>Normal</itemQuality>
+		<apparelMoney>2500~7500</apparelMoney>
+		<apparelTags>
+		  <li>KotORDroidArmorT1_gladiator</li>
+		  <li>KotORDroidUpgrade_combat</li>
+		  <li>SaV_DroidShield_gladiator</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_DroidArmorLte_impact</li>
+		</apparelRequired>
+		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<alternateTagChoices>
+				  <li>
+					<tag>KotORDroidArmorT1_gladiator</tag>
+					<chance>0.45</chance>
+				  </li>
+				</alternateTagChoices>
+			</li>
+		</specificApparelRequirements>
+		<weaponMoney>2500~7500</weaponMoney>
+		<weaponTags>
+		  <li>SaV_gladiator</li>
+		</weaponTags>
+	  </PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	<!--enforcers-->
+	
+	
+	<PawnKindDef Name="KotORHutts_thug" ParentName="KotORHutts_Base">
+		<defName>KotORHutts_thug</defName>
+		<label>kajidic thug</label>
+		<combatPower>50</combatPower>
+		<fixedGender>Male</fixedGender>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>55</maxGenerationAge>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<guy762_xenotype_nikto>0.40</guy762_xenotype_nikto>
+				<guy762_xenotype_rodian>0.05</guy762_xenotype_rodian>
+				<guy762_xenotype_klatoonian>0.40</guy762_xenotype_klatoonian>
+				<guy762_xenotype_weequay>0.15</guy762_xenotype_weequay>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<gearHealthRange>0.5~0.75</gearHealthRange>
+		<itemQuality>Awful</itemQuality>
+		<apparelMoney>250~750</apparelMoney>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+		<apparelTags>
+		  <li>KotORUtility_weakgrenade</li>
+		  <li>SaV_apparel_thug</li>
+		  <li>KotORAccessory_trooper</li>
+		  <li>KotORHeadband_bandana</li>
+		  <li>SaV_apparel_leatherhood</li>
+		</apparelTags>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<requiredTag>SaV_apparel_thug</requiredTag>
+			</li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>750~1250</weaponMoney>
+		<weaponTags>
+		  <li>HC_soldier</li>
+		</weaponTags>
+		
+		<skills>
+		  <li>
+			<skill>Shooting</skill>
+			<range>6~14</range>
+		  </li>
+		</skills>
+		
+		<initialWillRange>0.2~1.6</initialWillRange>
+		<initialResistanceRange>3~7</initialResistanceRange>
+		<isFighter>true</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	  </PawnKindDef>
+
+
+	<PawnKindDef Name="KotORHutts_soldier" ParentName="KotORHutts_Base">
+		<defName>KotORHutts_soldier</defName>
+		<label>kajidic soldier</label>
+		<combatPower>65</combatPower>
+		<fixedGender>Male</fixedGender>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>55</maxGenerationAge>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<guy762_xenotype_nikto>0.40</guy762_xenotype_nikto>
+				<guy762_xenotype_rodian>0.05</guy762_xenotype_rodian>
+				<guy762_xenotype_klatoonian>0.40</guy762_xenotype_klatoonian>
+				<guy762_xenotype_weequay>0.15</guy762_xenotype_weequay>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<gearHealthRange>0.7~1</gearHealthRange>
+		<itemQuality>Poor</itemQuality>
+		<apparelMoney>9999</apparelMoney>
+		<apparelTags Inherit="False">
+		  <li>KotORShield_basic</li>
+		  <li>SaV_apparel_huttgoon</li>
+		  <li>KotORAccessory_trooper_strapsonly</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<apparelRequired>
+		   <li>guy762_HvySuit_hutt</li>
+		   <li>guy762_Clothing_scum</li>
+		</apparelRequired>
+		
+		<weaponMoney>1000~2500</weaponMoney>
+		<weaponTags>
+		  <li>HC_enforcer</li>
+		</weaponTags>
+		
+		<skills>
+		  <li>
+			<skill>Melee</skill>
+			<range>6~14</range>
+		  </li>
+		</skills>
+		
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<isFighter>true</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	</PawnKindDef>
+	
+	
+	
+	<!--PawnKindDef Name="KotORHutts_enforcer" ParentName="KotORHutts_Base">
+		<defName>KotORHutts_enforcer</defName>
+		<label>kajidic enforcer</label>
+		<combatPower>80</combatPower>
+		<fixedGender>Male</fixedGender>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>45</maxGenerationAge>
+		<xenotypeSet Inherit ="False">
+			<xenotypeChances>
+				<guy762_xenotype_nikto>0.40</guy762_xenotype_nikto>
+				<guy762_xenotype_rodian>0.05</guy762_xenotype_rodian>
+				<guy762_xenotype_klatoonian>0.40</guy762_xenotype_klatoonian>
+				<guy762_xenotype_weequay>0.15</guy762_xenotype_weequay>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<gearHealthRange>0.7~1</gearHealthRange>
+		<itemQuality>Normal</itemQuality>
+		<apparelMoney>9999</apparelMoney>
+		<apparelTags Inherit="False">
+		  <li>KotORUtility_weakgrenade</li>
+		  <li>KotORShield_basic</li>
+		  <li>KotOREquipment_basic</li>
+		  <li>SaV_apparel_huttgoon_adv</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_MilSuit_cinnagar</li>
+		   <li>guy762_Clothing_scumII</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(45,85,95)</color>
+			</li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>1000~2500</weaponMoney>
+		<weaponTags>
+		  <li>HC_enforcer</li>
+		</weaponTags>
+		
+		<skills>
+		  <li>
+			<skill>Melee</skill>
+			<range>8~16</range>
+		  </li>
+		</skills>
+		
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<isFighter>true</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	</PawnKindDef-->
+	
+	<PawnKindDef Name="KotORHutts_executioner" ParentName="KotORHutts_Base">
+		<defName>KotORHutts_executioner</defName>
+		<label>kajidic executioner</label>
+		<combatPower>150</combatPower>
+		<fixedGender>Male</fixedGender>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>45</maxGenerationAge>
+		
+		<maxPerGroup>4</maxPerGroup>
+		<titleRequired>KotORTitleHutts_associate</titleRequired>
+		
+		<xenotypeSet Inherit ="False">
+			<xenotypeChances>
+				<guy762_xenotype_nikto>0.40</guy762_xenotype_nikto>
+				<guy762_xenotype_rodian>0.05</guy762_xenotype_rodian>
+				<guy762_xenotype_klatoonian>0.40</guy762_xenotype_klatoonian>
+				<guy762_xenotype_weequay>0.15</guy762_xenotype_weequay>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<itemQuality>Excellent</itemQuality>
+		<apparelMoney>10000~25000</apparelMoney>
+		<apparelTags Inherit="False">
+		  <li>KotORUtility_stronggrenade</li>
+		  <li>KotORShield_strong</li>
+		  <li>KotOREquipment_adv</li>
+		  <li>KotORAccessory_backpack</li>
+		  <li>KotORAccessory_trooper_strapsonly</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelRequired>
+		   <li>Apparel_Broadwrap</li>
+		   <li>guy762_MidBattleArmor_cinnagar</li>
+		</apparelRequired>
+		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<stuff>KOTOR_FabricArmorweave</stuff>
+				<color>(210,200,200)</color> <!-- red-tinted white -->
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(125,100,75)</color> <!-- k2 padawan -->
+			</li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>5000~10000</weaponMoney>
+		<weaponTags>
+		  <li>HC_elite</li>
+		</weaponTags>
+		
+		<skills>
+		  <li>
+			<skill>Shooting</skill>
+			<range>14~18</range>
+		  </li>
+		  <li>
+			<skill>Melee</skill>
+			<range>8~14</range>
+		  </li>
+		</skills>
+		
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<isFighter>true</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<abilities>
+			<li>MarksmanCommand</li>
+		</abilities>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="KotORHutts_slave" ParentName="KotORHutts_SlaveBase_AlienList">
+		<defName>KotORHutts_slave</defName>
+		<label>slave</label>
+		<combatPower>20</combatPower>
+		<itemQuality>Awful</itemQuality>
+		<gearHealthRange>0.2~0.8</gearHealthRange>
+		<apparelMoney>0~0</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>czkera_slave</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>Apparel_BodyStrap</li>	
+		   <li>Apparel_Collar</li>
+		   <li>guy762_Clothing_scumII</li>
+		</apparelRequired>
+		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<stuff>Leather_Plain</stuff>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+		<requiredWorkTags>
+		   <li>Firefighting</li>
+		   <li>ManualDumb</li>
+		   <li>Mining</li>
+		   <li>Hauling</li>
+		   <li>PlantWork</li>
+		</requiredWorkTags>
+	  </PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="KotORHutts_echaniguard" ParentName="KotORMerc_echaniheavy">
+		<defName>KotORHutts_echaniguard</defName>
+		<defaultFactionType>guy762_KotORFaction_HuttCartel</defaultFactionType>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>26</maxGenerationAge>
+		<fixedGender>Female</fixedGender>
+		<apparelRequired Inherit="False">
+		   <li>guy762_HvyArmor_echani</li>	
+		</apparelRequired>
+		<specificApparelRequirements Inherit="False" />
+		<modExtensions>
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+			  <whitelist>
+				<li>Female</li>
+			  </whitelist>
+			  <blacklist>
+			  </blacklist>
+			  <priority>
+				<!--When violates the black/whitelist, selected from these-->
+				<li>Female</li>
+			  </priority>
+			  <!--Align body gender to pawn's gender (default: True)-->
+			  <checkGender>False</checkGender>
+			</li>
+		</modExtensions>
+	  </PawnKindDef>
+	  
+	  <PawnKindDef Name="KotORHutts_SlaveEntertainer" ParentName="KotORCiv_SlaveEntertainer">
+		<defName>KotORHutts_SlaveEntertainer</defName>
+		<defaultFactionType>guy762_KotORFaction_HuttCartel</defaultFactionType>
+		<!--fixedGender>Female</fixedGender-->
+	  </PawnKindDef>
+	
+	
+	<PawnKindDef Name="KotORHutts_droid_protocol" ParentName="KotORDroidGood_GE3PD" MayRequire="guy762.KotORDroids">
+		<defName>KotORHutts_droid_protocol</defName>
+		<label>interpreter droid</label>
+		<defaultFactionType>guy762_KotORFaction_HuttCartel</defaultFactionType>
+		<skinColorOverride>(220,175,80)</skinColorOverride>
+	  </PawnKindDef>
+	  
+	  <PawnKindDef Name="KotORHutts_smuggler" ParentName="KotORCiv_smuggler">
+		<defName>KotORHutts_smuggler</defName>
+		<defaultFactionType>guy762_KotORFaction_HuttCartel</defaultFactionType>
+		<trader>true</trader>
+		<titleRequired>KotORTitleHutts_associate</titleRequired>
+	  </PawnKindDef>
+	  
+	  <PawnKindDef Name="KotORHutts_roguetrader" ParentName="KotORHutts_Base">
+		<defName>KotORHutts_roguetrader</defName>
+		<label>merchant-lord</label>
+		<nameMaker>guy762_PawnNamer_GlupShitto</nameMaker>
+		<combatPower>50</combatPower>
+		<minGenerationAge>30</minGenerationAge>
+		<maxGenerationAge>75</maxGenerationAge>
+		
+		<trader>true</trader>
+		<maxPerGroup>3</maxPerGroup>
+		<invFoodDef>MealFine</invFoodDef>
+		<minTitleRequired>KotORTitleHutts_lowtrader</minTitleRequired>
+		<royalTitleChance>1</royalTitleChance>
+		<titleSelectOne>
+			<li>KotORTitleHutts_hightrader</li>
+			<li>KotORTitleHutts_lowtrader</li>
+	    </titleSelectOne>
+		
+		<xenotypeSet Inherit ="False">
+		  <xenotypeChances>
+			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.01</Baseliner>
+			<guy762_xenotype_aqualish MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_aqualish>
+			<guy762_xenotype_bothan MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_bothan>
+			<guy762_xenotype_devaronian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_devaronian>
+			<guy762_xenotype_duros MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_duros>
+			<guy762_xenotype_falleen MayRequire="Ludeon.RimWorld.Biotech">0.03</guy762_xenotype_falleen>
+			<guy762_xenotype_kubaz MayRequire="Ludeon.RimWorld.Biotech">0.05</guy762_xenotype_kubaz>
+			<guy762_xenotype_mirialan MayRequire="Ludeon.RimWorld.Biotech">0.05</guy762_xenotype_mirialan>
+			<guy762_xenotype_nemoidian MayRequire="Ludeon.RimWorld.Biotech">0.10</guy762_xenotype_nemoidian>
+			<guy762_xenotype_quarren MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_quarren>
+			<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_rodian>
+			<guy762_xenotype_snivvian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_snivvian>
+			<guy762_xenotype_sullustan MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_sullustan>
+			<guy762_xenotype_togruta MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_togruta>
+			<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_twilek>
+			<guy762_xenotype_umbaran MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_umbaran>
+			<guy762_xenotype_weequay MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_weequay>
+			<guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_zeltron>
+			<guy762_xenotype_zygerrian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_zygerrian> <!--1.00-->
+		  </xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<itemQuality>Excellent</itemQuality>
+		<apparelMoney>5000~15000</apparelMoney>
+		<apparelTags>
+		  <li>KotOREquipment_adv</li>
+		  <li>SaV_apparel_roguetrader</li>
+		  <li>KotORClothing_smuggler</li>
+		  <li>KotORShield_mid</li>
+		  <li>guy762PatchedTag_PrestigeRobe</li>
+		  <li>guy762PatchedTag_Sash</li>
+          <li>guy762PatchedTag_Cape</li>
+		  <li>KotORClothing_simplecloak</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.35</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+		  <li>
+			<apparelLayer>OnSkin</apparelLayer>
+			<requiredTag>KotORClothing_smuggler</requiredTag>
+		  </li>
+		  <li>
+			<bodyPartGroup>UpperHead</bodyPartGroup>
+			<requiredTag>guy762PatchedTag_RoyalHats</requiredTag>
+		  </li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>5000~14999</weaponMoney>
+		<weaponTags>
+		  <li>SaV_roguetrader</li>
+		</weaponTags>
+		
+		<techHediffsChance>4</techHediffsChance>
+		<techHediffsMoney>2000~4000</techHediffsMoney>
+		<techHediffsTags>
+		  <li>Spacer</li>
+		  <li>Advanced</li>
+		  <li>ImplantEmpireRoyal</li>
+		  <li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsDisallowTags>
+		  <li>PainCauser</li>
+		</techHediffsDisallowTags>
+		
+		<inventoryOptions  Inherit ="False">
+		  <skipChance>0.05</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+			  <thingDef>KOTOR_Spice</thingDef>
+			  <countRange>3~5</countRange>
+			</li>
+			<li>
+			  <thingDef>KOTOR_Deathstick</thingDef>
+			  <countRange>2~3</countRange>
+			</li>
+			<li>
+				<thingDef>guy762_medpac_life</thingDef>
+				<countRange>2~4</countRange>
+			</li>
+			<li>
+				<thingDef>guy762_KotORcredits</thingDef>
+				<countRange>3600~8200</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		<skills>
+			<li>
+				<skill>Social</skill>
+				<range>12~16</range>
+			</li>
+		</skills>
+		
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<allowOldAgeInjuries>True</allowOldAgeInjuries>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	  </PawnKindDef>
+	  
+	  
+	  <PawnKindDef Name="KotORHutts_HuttTrader" ParentName="KotORHutts_Base">
+		<defName>KotORHutts_HuttTrader</defName>
+		<label>kajidic associate</label>
+		<!-- <nameMaker>KoTOR_NamerHutt_lowcaste</nameMaker> -->
+		<combatPower>80</combatPower>
+		<!--minGenerationAge>300</minGenerationAge>
+		<maxGenerationAge>750</maxGenerationAge-->
+		<minGenerationAge>40</minGenerationAge>
+		<maxGenerationAge>75</maxGenerationAge> <!-- should probably be higher but things start to break when these are set over 100 -->
+		<chronologicalAgeRange>300~750</chronologicalAgeRange>
+		
+		<trader>true</trader>
+		<maxPerGroup>3</maxPerGroup>
+		<invFoodDef>MealFine</invFoodDef>
+		<minTitleRequired>KotORTitleHutts_lowtrader</minTitleRequired>
+		<royalTitleChance>1</royalTitleChance>
+		<titleSelectOne>
+			<li>KotORTitleHutts_huun</li>
+			<li>KotORTitleHutts_hightrader</li>
+			<li>KotORTitleHutts_lowtrader</li>
+	    </titleSelectOne>
+		
+		<xenotypeSet>
+			<xenotypeChances>
+				<guy762_xenotype_hutt>999</guy762_xenotype_hutt>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<itemQuality>Excellent</itemQuality>
+		<apparelMoney>5000~15000</apparelMoney>
+		<apparelTags Inherit="False">
+		  <li>KotORShield_strong</li>
+		  <li>KotOREquipment_rare</li>
+		  <li>guy762PatchedTag_Sash</li>
+		  <li>KotORAccessory_richcivilian</li>
+		  <li>KotORAccessory_trader</li>
+		  <li>KotOREquipment_HuttLegs</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+		
+		<weaponMoney>12000~99999</weaponMoney>
+		<weaponTags>
+		  <li>SaV_gangboss</li>
+		</weaponTags>
+		
+		<techHediffsChance>4</techHediffsChance>
+		<techHediffsMoney>2000~4000</techHediffsMoney>
+		<techHediffsTags>
+		  <li>Spacer</li>
+		  <li>Advanced</li>
+		  <li>ImplantEmpireRoyal</li>
+		  <li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsDisallowTags>
+		  <li>PainCauser</li>
+		</techHediffsDisallowTags>
+		
+		<inventoryOptions>
+		  <skipChance>0.05</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+				<thingDef>guy762_medpac_life</thingDef>
+				<countRange>1~3</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		<skills>
+			<li>
+				<skill>Social</skill>
+				<range>12~18</range>
+			</li>
+		</skills>
+		
+		<disallowedTraits>
+		  <li>Brawler</li>
+		</disallowedTraits>
+		<requiredWorkTags Inherit="False">
+		  <li>Violent</li>
+		</requiredWorkTags>
+		
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<allowOldAgeInjuries>True</allowOldAgeInjuries>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="KotORHutts_majordomo" ParentName="KotORHutts_Base">
+		<defName>KotORHutts_majordomo</defName>
+		<label>majordomo</label>
+		<combatPower>50</combatPower>
+		<fixedGender>Male</fixedGender>
+		<minGenerationAge>40</minGenerationAge>
+		<maxGenerationAge>75</maxGenerationAge>
+		
+		<maxPerGroup>1</maxPerGroup>
+		<trader>true</trader>
+		<invFoodDef>MealLavish</invFoodDef>
+		<titleRequired>KotORTitleHutts_lowtrader</titleRequired>
+		
+		<xenotypeSet>
+		  <xenotypeChances>
+			<guy762_xenotype_bith MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_bith>
+			<guy762_xenotype_bothan MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_bothan>
+			<guy762_xenotype_devaronian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_devaronian>
+			<guy762_xenotype_ithorian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_ithorian>
+			<guy762_xenotype_kubaz MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_kubaz>
+			<guy762_xenotype_lasat MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_lasat>
+			<guy762_xenotype_quarren MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_quarren>
+			<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_rodian>
+			<guy762_xenotype_togruta MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_togruta>
+			<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_twilek>
+			<guy762_xenotype_weequay MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_weequay>
+		  </xenotypeChances>
+		</xenotypeSet>
+		
+		<itemQuality>Excellent</itemQuality>
+		<apparelMoney>5000~15000</apparelMoney>
+		<apparelTags>
+		  <li>KotOREquipment_rare</li>
+		  <li>SaV_apparel_crimelord</li>
+		  <li>KotORShield_strong</li>
+		  <li>guy762PatchedTag_PrestigeRobe</li>
+		  <li>KotORClothing_simplecloak</li>
+		  <li>KotORHeadband_regalvisor</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_Robes_onderon</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<colorGenerator Class="ColorGenerator_Options">
+					<options>
+						<li>
+							<weight>10</weight>
+							<only>(200,210,210)</only> <!-- snow white -->
+						</li>
+						<li>
+							<weight>10</weight>
+							<only>(230,185,45)</only> <!-- republic yellow -->
+						</li>
+						<li>
+							<weight>10</weight>
+							<only>(180,60,60)</only> <!-- devilstrand red -->
+						</li>
+					</options>
+				</colorGenerator>
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<colorGenerator Class="ColorGenerator_Options">
+					<options>
+						<li>
+							<weight>10</weight>
+							<only>(57,87,93)</only> <!-- eltex blue -->
+						</li>
+						<li>
+							<weight>10</weight>
+							<only>(51,27,49)</only> <!-- eltex purple -->
+						</li>
+					</options>
+				</colorGenerator>
+			</li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>5000~99999</weaponMoney>
+		<weaponTags>
+		  <li>SaV_gangboss</li>
+		</weaponTags>
+		
+		<techHediffsChance>4</techHediffsChance>
+		<techHediffsMoney>2000~4000</techHediffsMoney>
+		<techHediffsTags>
+		  <li>Spacer</li>
+		  <li>Advanced</li>
+		  <li>ImplantEmpireRoyal</li>
+		  <li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsDisallowTags>
+		  <li>PainCauser</li>
+		</techHediffsDisallowTags>
+		
+		<inventoryOptions>
+		  <skipChance>0.05</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+			  <thingDef>KOTOR_Spice</thingDef>
+			  <countRange>3~4</countRange>
+			</li>
+			<li>
+			  <thingDef>KOTOR_Deathstick</thingDef>
+			  <countRange>2~3</countRange>
+			</li>
+			<li>
+				<thingDef>guy762_medpac_life</thingDef>
+				<countRange>1~2</countRange>
+			</li>
+			<li>
+				<thingDef>guy762_KotORcredits</thingDef>
+				<countRange>5000~10000</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		<skills>
+			<li>
+				<skill>Social</skill>
+				<range>10~16</range>
+			</li>
+		</skills>
+		
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<allowOldAgeInjuries>True</allowOldAgeInjuries>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	  </PawnKindDef>
+	
+	<PawnKindDef Name="KotORHutts_HuttLord" ParentName="KotORHutts_Base">
+		<defName>KotORHutts_HuttLord</defName>
+		<label>kajidic lord</label>
+		<!-- <nameMaker>KoTOR_NamerHutt_highcaste</nameMaker> -->
+		<combatPower>500</combatPower>
+		<!--minGenerationAge>300</minGenerationAge>
+		<maxGenerationAge>750</maxGenerationAge-->
+		<minGenerationAge>40</minGenerationAge>
+		<maxGenerationAge>75</maxGenerationAge> <!-- should probably be higher but things start to break when these are set over 100 -->
+		<chronologicalAgeRange>300~750</chronologicalAgeRange>
+		
+		<factionLeader>true</factionLeader>
+		<maxPerGroup>1</maxPerGroup>
+		<invFoodDef>MealLavish</invFoodDef>
+		
+		<!-- <titleRequired>KotORTitleHutts_hutt</titleRequired> -->
+		
+		<xenotypeSet>
+			<xenotypeChances>
+				<guy762_xenotype_hutt>999</guy762_xenotype_hutt>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<gearHealthRange>10</gearHealthRange>
+		<itemQuality>Masterwork</itemQuality>
+		<apparelMoney>999999</apparelMoney>
+		<apparelTags Inherit="False">
+		  <li>KotORShield_strong</li>
+		  <li>KotORShield_hapan</li>
+		  <li>KotOREquipment_rare</li>
+		  <li>KotOREquipment_HuttLegs</li>
+		  <li>guy762PatchedTag_RobesCapeSash</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		
+		<weaponMoney>12000~99999</weaponMoney>
+		<weaponTags>
+		  <li>SaV_crimelord</li>
+		</weaponTags>
+		
+		<!-- <techHediffsChance>4</techHediffsChance> -->
+		<!-- <techHediffsMoney>2000~4000</techHediffsMoney> -->
+		<!-- <techHediffsTags> -->
+		  <!-- <li>Spacer</li> -->
+		  <!-- <li>Advanced</li> -->
+		  <!-- <li>ImplantEmpireRoyal</li> -->
+		  <!-- <li>ImplantEmpireCommon</li> -->
+		<!-- </techHediffsTags> -->
+		<!-- <techHediffsDisallowTags> -->
+		  <!-- <li>PainCauser</li> -->
+		<!-- </techHediffsDisallowTags> -->
+		
+		<inventoryOptions>
+		  <skipChance>0.05</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+			  <thingDef>KOTOR_Spice</thingDef>
+			  <countRange>4~8</countRange>
+			</li>
+			<li>
+			  <thingDef>KOTOR_Deathstick</thingDef>
+			  <countRange>4~8</countRange>
+			</li>
+			<li>
+				<thingDef>guy762_medpac_life</thingDef>
+				<countRange>3~4</countRange>
+			</li>
+			<li>
+				<thingDef>guy762_KotORcredits</thingDef>
+				<countRange>10000~25000</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		<skills>
+			<li>
+				<skill>Social</skill>
+				<range>14~20</range>
+			</li>
+			<li>
+				<skill>Intellectual</skill>
+				<range>12~18</range>
+			</li>
+		</skills>
+		
+		<disallowedTraits>
+		  <li>Brawler</li>
+		</disallowedTraits>
+		<requiredWorkTags Inherit="False">
+		  <li>Violent</li>
+		</requiredWorkTags>
+		
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<allowOldAgeInjuries>True</allowOldAgeInjuries>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="KotORViciousHutts_HuttLord" ParentName="KotORHutts_HuttLord">
+		<defName>KotORViciousHutts_HuttLord</defName>
+		<defaultFactionType>guy762_KotORFaction_ViciousHutts</defaultFactionType>
+	  </PawnKindDef>
+
+
+ </Defs>

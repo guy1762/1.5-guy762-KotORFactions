@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ScenarioDef MayRequire="guy762.StarWarsXenotypes">
+    <defName>KotORScenario_KotOR_LS</defName>
+    <label>Knights of the Old Republic</label>
+    <description>Light-side KotOR characters.</description>
+    <scenario>
+      <summary>Light-side KotOR characters.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>PlayerColony</factionDef>
+      </playerFaction>
+      <parts>
+
+        <!-- Game start dialog -->
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+
+        <!-- Config pages -->
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+          <def>ConfigurePawnsKindDefs</def>
+          <pawnChoiceCount>8</pawnChoiceCount>
+          <!--leftBehindPawnKind>KotORPlayableHero_T3M4</leftBehindPawnKind-->
+          <kindCounts>
+			<li>
+              <kindDef>KotORPlayableHero_ExileSurik_VPE</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			<li>
+              <kindDef>KotORPlayableHero_Bastila_VPE</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			<li>
+              <kindDef>KotORPlayableHero_Juhani_VPE</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			<li>
+              <kindDef>KotORPlayableHero_Jolee_VPE</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			<li>
+              <kindDef>KotORPlayableHero_Visas_VPE</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			<li>
+              <kindDef>KotORPlayableHero_Handmaiden_VPE</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			
+			
+			<li>
+              <kindDef>KotORPlayableHero_Canderous</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			<li>
+              <kindDef>KotORPlayableHero_Mission</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			<li>
+              <kindDef>KotORPlayableHero_Zaalbar</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			
+			
+			<li MayRequire="guy762.KotORDroids">
+              <kindDef>KotORPlayableHero_T3M4</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			<li MayRequire="guy762.KotORDroids">
+              <kindDef>KotORPlayableHero_HK47</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+          </kindCounts>
+        </li>
+		
+		
+		
+		
+
+        <!-- Player starting stuff spawn method-->
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+        </li>
+
+        <!-- Starting research -->
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>MicroelectronicsBasics</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_lightsabers</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_workbench</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Batteries</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Pemmican</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>WatermillGenerator</project>
+        </li>
+		
+		
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_jedi</project>
+        </li>
+		
+		
+		
+		
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_exile</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_visas</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_handmaiden</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_canderous</project>
+        </li>
+		
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_bastila</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_juhani</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_jolee</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_vao</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_bigZ</project>
+        </li>
+		
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_hkequipment</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_teethree</project>
+        </li>
+
+
+        <!-- Player starting things -->
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>guy762_KotORcredits</thingDef>
+          <count>10000</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>50</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>KOTOR_SpacerMedKit</thingDef>
+          <count>20</count>
+        </li>
+		<!--li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>guy762_medpac</thingDef>
+          <count>25</count>
+        </li-->
+		
+		
+		
+		
+		<!-- droid mod stuff -->
+        <li Class="ScenPart_StartingThing_Defined" MayRequire="guy762.KotORDroids">
+			<def>StartingThing_Defined</def>
+			<thingDef>ABF_Thing_Synstruct_ChargingStation</thingDef>
+			<count>2</count>
+		</li>
+		<li Class="ScenPart_StartingThing_Defined" MayRequire="guy762.KotORDroids">
+			<def>StartingThing_Defined</def>
+			<thingDef>ABF_Thing_Synstruct_CoolantPack</thingDef>
+			<count>15</count>
+		</li>
+		<li Class="ScenPart_StartingThing_Defined" MayRequire="guy762.KotORDroids">
+			<def>StartingThing_Defined</def>
+			<thingDef>ABF_Thing_Synstruct_LubricantPack</thingDef>
+			<count>15</count>
+		</li>
+		<li Class="ScenPart_StartingThing_Defined" MayRequire="guy762.KotORDroids">
+			<def>StartingThing_Defined</def>
+			<thingDef>ABF_Thing_Synstruct_RepairStim</thingDef>
+			<count>6</count>
+		</li>
+		
+		<li Class="ScenPart_StartingThing_Defined" MayRequire="guy762.KotORDroids">
+			<def>StartingThing_Defined</def>
+			<thingDef>guy762_DroidBattery_adv</thingDef>
+			<count>20</count>
+		</li>
+		
+		
+
+
+		<!-- Scatter some things near player start -->
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+			<def>ScatterThingsNearPlayerStart</def>
+			<thingDef>Steel</thingDef>
+			<count>450</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>300</count>
+        </li>  
+		
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>7</count>
+        </li>
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>guy762_medpac_life</thingDef>
+          <count>10</count>
+        </li>
+		
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+			<def>StartingThing_Defined</def>
+			<thingDef>ComponentIndustrial</thingDef>
+			<count>20</count>
+		</li>
+		
+		
+		<!-- ebon hawk wreckage -->
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+			<def>ScatterThingsNearPlayerStart</def>
+			<thingDef>guy762_ShipChunk_EbonHawkaft</thingDef>
+			<count>1</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+			<def>ScatterThingsNearPlayerStart</def>
+			<thingDef>guy762_ShipChunk_EbonHawkfore</thingDef>
+			<count>1</count>
+		</li>
+		
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsNearPlayerStart</def>
+			<thingDef>guy762_ShipChunk_EbonHawkport</thingDef>
+			<count>1</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsNearPlayerStart</def>
+			<thingDef>guy762_ShipChunk_EbonHawkstarboard</thingDef>
+			<count>1</count>
+		</li>
+		
+		
+		
+		<!-- Scatter some things anywhere -->
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>ShipChunk</thingDef>
+			<count>25</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>ShipChunk_durasteel</thingDef>
+			<count>10</count>
+		</li>
+		
+		
+		
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>ChunkSlagSteel</thingDef>
+			<count>100</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>KotORChunk_plasteel</thingDef>
+			<count>50</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>KotORChunk_durasteel</thingDef>
+			<count>50</count>
+		</li>
+		
+		
+		
+		
+
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Defs>

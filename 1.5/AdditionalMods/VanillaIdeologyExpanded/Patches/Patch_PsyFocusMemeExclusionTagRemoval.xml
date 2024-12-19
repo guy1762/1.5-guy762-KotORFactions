@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation MayRequire="VanillaExpanded.VMemesE" Class="PatchOperationRemove">
+	  <xpath>Defs/MemeDef[defName="VME_PsychicFocus"]/exclusionTags/li[1]</xpath>
+	</Operation>
+	
+	
+</Patch>

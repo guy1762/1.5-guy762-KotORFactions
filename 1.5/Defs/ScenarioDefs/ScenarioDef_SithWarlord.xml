@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!--
+	<PawnKindDef Name="KotORPlayablePawn_SithWarlord_VPE" ParentName="KotORSith_warlord_VPE">
+		<defName>KotORPlayablePawn_SithWarlord_VPE</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SithWarlord</defaultFactionType>
+		<isBoss>false</isBoss>
+		<skipResistant>false</skipResistant>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORPlayablePawn_SithAcolyte_VPE" ParentName="KotORSith_acolyte_VPE">
+		<defName>KotORPlayablePawn_SithAcolyte_VPE</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SithWarlord</defaultFactionType>
+	</PawnKindDef>
+	
+	
+
+	
+	
+	<PawnKindDef Name="KotORPlayablePawn_SithWarlord_PotF" ParentName="KotORSith_warlord_PotF">
+		<defName>KotORPlayablePawn_SithWarlord_PotF</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SithWarlord</defaultFactionType>
+		<isBoss>false</isBoss>
+		<skipResistant>false</skipResistant>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORPlayablePawn_SithAcolyte_PotF" ParentName="KotORSith_acolyte_PotF">
+		<defName>KotORPlayablePawn_SithAcolyte_PotF</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SithWarlord</defaultFactionType>
+	</PawnKindDef>
+
+	MOVED TO VPE AND POTF FOLDERS
+	
+	-->
+	
+	
+	
+	
+	<PawnKindDef Name="KotORPlayablePawn_SithCommando" ParentName="KotORSith_commando">
+		<defName>KotORPlayablePawn_SithCommando</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SithWarlord</defaultFactionType>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef Name="KotORPlayablePawn_SithElite" ParentName="KotORSith_elite">
+		<defName>KotORPlayablePawn_SithElite</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SithWarlord</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORPlayablePawn_SithTrooperMelee" ParentName="KotORSith_troopermelee">
+		<defName>KotORPlayablePawn_SithTrooperMelee</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SithWarlord</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORPlayablePawn_SithTrooper" ParentName="KotORSith_trooper">
+		<defName>KotORPlayablePawn_SithTrooper</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SithWarlord</defaultFactionType>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+  <ScenarioDef>
+    <defName>guy762_KotORScenario_SithWarlord</defName>
+    <label>The Sith Warlord</label>
+    <description>Though it wasn't easy surviving the fall of the Korriban and Malachor V academies, you've successfully managed to outmaneuver your rivals and live through the fall of Revan's empire. Now it is time to rebuild the Sith once more, and this time it shall be you who reigns as dark lord. Suffer no rivals, and destroy any who stand in your way.</description>
+    <scenario>
+      <summary>A Sith warlord and their accomplices strive to rebuild the Sith.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>guy762_KotORPlayerFaction_SithWarlord</factionDef>
+      </playerFaction>
+      <parts>
+
+        <!-- Game start dialog -->
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>Though it wasn't easy surviving the fall of the Korriban and Malachor V academies, you've successfully managed to outmaneuver your rivals and live through the fall of Revan's empire. Now it is time to rebuild the Sith once more, and this time it shall be you who reigns as dark lord. Suffer no rivals, and destroy any who stand in your way.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+		
+		<!-- Player starting stuff spawn method-->
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+        </li>
+	
+
+        <!-- Config pages -->
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+          <def>ConfigurePawnsKindDefs</def>
+          <pawnChoiceCount>12</pawnChoiceCount>
+          <!--leftBehindPawnKind>KotORPlayableHero_T3M4</leftBehindPawnKind-->
+          <kindCounts>
+			<li MayRequire="lee.theforce.psycast">
+              <kindDef>KotORPlayablePawn_SithWarlord_VPE</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			<li MayRequire="guy762.Lee.KotORPotF">
+              <kindDef>KotORPlayablePawn_SithWarlord_PotF</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			
+			
+			
+			<li MayRequire="lee.theforce.psycast">
+              <kindDef>KotORPlayablePawn_SithAcolyte_VPE</kindDef>
+              <count>3</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			<li MayRequire="guy762.Lee.KotORPotF">
+              <kindDef>KotORPlayablePawn_SithAcolyte_PotF</kindDef>
+              <count>3</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			
+			
+			
+			<li>
+              <kindDef>KotORPlayablePawn_SithElite</kindDef>
+              <count>2</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			
+			<li>
+              <kindDef>KotORPlayablePawn_SithTrooper</kindDef>
+              <count>3</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			
+			<li>
+              <kindDef>KotORPlayablePawn_SithTrooperMelee</kindDef>
+              <count>3</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			
+          </kindCounts>
+        </li>
+
+        <!-- Starting research -->
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>MicroelectronicsBasics</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Fabrication</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>AdvancedFabrication</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_workbench</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Batteries</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Pemmican</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>WatermillGenerator</project>
+        </li>
+		
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_lightsabers</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_advsabers</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_sith</project>
+        </li>
+		
+		
+		
+		
+        <!-- Player starting things -->
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>guy762_KotORcredits</thingDef>
+          <count>5000</count>
+        </li>
+        <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>guy762_KotORLootBox_FoodMeds</thingDef>
+          <count>6</count>
+        </li>
+        <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>guy762_KotORLootBox_ShieldsStims</thingDef>
+          <count>2</count>
+        </li>
+
+
+		<!-- Scatter some things near player start -->
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+			<def>ScatterThingsNearPlayerStart</def>
+			<thingDef>Steel</thingDef>
+			<count>250</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>150</count>
+        </li>  
+		
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>7</count>
+        </li>
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>guy762_medpac_life</thingDef>
+          <count>10</count>
+        </li>
+		
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+			<def>StartingThing_Defined</def>
+			<thingDef>ComponentIndustrial</thingDef>
+			<count>20</count>
+		</li>
+		
+		
+		
+		<!-- Scatter some things anywhere -->
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>ShipChunk</thingDef>
+			<count>25</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>ShipChunk_durasteel</thingDef>
+			<count>10</count>
+		</li>
+		
+		
+		
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>ChunkSlagSteel</thingDef>
+			<count>50</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>KotORChunk_plasteel</thingDef>
+			<count>25</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>KotORChunk_durasteel</thingDef>
+			<count>25</count>
+		</li>
+
+
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+
+
+
+
+
+
+
+
+<FactionDef ParentName="PlayerFactionBase">
+    <defName>guy762_KotORPlayerFaction_SithWarlord</defName>
+    <label>Sith warlord faction</label>
+    <description>A small army belonging to a Sith warlord.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>KotORPlayablePawn_SithCommando</basicMemberKind>
+    <pawnSingular>Sith</pawnSingular>
+    <pawnsPlural>Sith</pawnsPlural>
+    <techLevel>Spacer</techLevel>
+	
+    <factionNameMaker>NamerFactionPirate</factionNameMaker>
+    <settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
+    <allowedCultures>
+		<li>guy762_culture_sith</li>
+	</allowedCultures>
+	<requiredMemes>
+		<li MayRequire="Ludeon.RimWorld.Ideology">guy762_MemeDef_sith</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_BloodCourt</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_PsychicFocus</li>
+		
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Authoritarianism</li>
+	</requiredMemes>
+	<allowedMemes>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_ViolentConversion</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Nationalist</li>
+	</allowedMemes>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+    </disallowedPrecepts>
+	
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Offworld</li>
+          <li>Pirate</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <factionIconPath>World/SithEmpire</factionIconPath>
+	
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>ClassicStart</li>
+      <li>ClassicStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
+  </FactionDef>
+
+
+
+
+
+
+
+
+
+
+</Defs>

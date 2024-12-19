@@ -1,0 +1,802 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	
+	<PawnKindDef Name="KotORRebelBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
+		<nameMaker>guy762_PawnNamer_Bf2</nameMaker>
+		<chemicalAddictionChance>0.25</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+		<invNutrition>0.75</invNutrition>
+		<invFoodDef>Pemmican</invFoodDef>
+		<biocodeWeaponChance>0.05</biocodeWeaponChance>
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>Offworld</li>
+			  <li>Outlander</li>
+			</categories>
+		  </li>
+		</backstoryFilters>
+		<!--apparelTags>
+		  <li>KotORHeadband_gasmask</li>
+		</apparelTags-->
+		<!--combatEnhancingDrugsChance>0.75</combatEnhancingDrugsChance>        DO NOT USE THIS - will generate droid repair kits!!!
+		<combatEnhancingDrugsCount>
+		  <min>1</min>
+		  <max>4</max>
+		</combatEnhancingDrugsCount-->
+		<allowOldAgeInjuries>False</allowOldAgeInjuries>
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		  <li>Hauling</li>
+		</requiredWorkTags>
+		
+		<inventoryOptions>
+		  <subOptionsChooseOne>
+			<li>
+				<thingDef>Silver</thingDef>
+				<countRange>0~25</countRange>
+			</li>
+			<li>
+			  <thingDef>KOTOR_Spice</thingDef>
+			  <countRange>0~2</countRange>
+			</li>
+			<li>
+			  <thingDef>KOTOR_Deathstick</thingDef>
+			  <countRange>0~2</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+	  </PawnKindDef>
+	
+	<PawnKindDef Name="KotORRebel_berserker" ParentName="KotORRebelBase">
+		<defName>KotORRebel_berserker</defName>
+		<label>rebel berserker</label>
+		<combatPower>50</combatPower>
+		<maxGenerationAge>25</maxGenerationAge>
+		
+		<gearHealthRange>0.5~0.8</gearHealthRange>
+		<itemQuality>Poor</itemQuality>
+		<apparelMoney>400~1000</apparelMoney>
+		<apparelTags>
+		  <li>KotORAccessory_light</li>
+		  <li>KotORArmor_combatsuit</li>
+		  <li>KotORHeadband_bandana</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_Clothing_scumII</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(125,50,50)</color>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<stuff>KOTOR_FabricArmorweave</stuff>
+				<color>(185,130,75)</color>
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(130,125,105)</color>
+			</li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>400~1000</weaponMoney>
+		<weaponTags>
+		  <li>KotORRebel_berserker</li>
+		</weaponTags>
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		
+		<skills>
+		  <li>
+			<skill>Shooting</skill>
+			<range>4~6</range>
+		  </li>
+		  <li>
+			<skill>Melee</skill>
+			<range>6~10</range>
+		  </li>
+		</skills>
+		<invNutrition>0</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.1</skipChance>
+			<subOptionsChooseOne>
+				<li>
+				  <thingDef>guy762_stim_hyperstr</thingDef>
+				  <countRange>0~1</countRange>
+				</li>
+				<li>
+				  <thingDef>guy762_stim_hypercon</thingDef>
+				  <countRange>0~1</countRange>
+				</li>
+				<li>
+				  <thingDef>guy762_stim_hyperdex</thingDef>
+				  <countRange>0~1</countRange>
+				</li>
+				<li>
+				  <thingDef>KOTOR_Spice</thingDef>
+				  <countRange>2~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  <PawnKindDef Name="KotORRebel_sniper" ParentName="KotORRebelBase">
+		<defName>KotORRebel_sniper</defName>
+		<label>rebel sharpshooter</label>
+		<combatPower>50</combatPower>
+		<maxGenerationAge>25</maxGenerationAge>
+		
+		<gearHealthRange>0.5~0.8</gearHealthRange>
+		<itemQuality>Poor</itemQuality>
+		<apparelMoney>1000~2000</apparelMoney>
+		<apparelTags>
+		  <li>KotORAccessory_backpack</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_Clothing_scumII</li>
+		   <li>guy762_Accessory_ponchoCamo</li>
+		   <li>Apparel_Shadecone</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(125,50,50)</color>
+			</li>
+			<li>
+				<bodyPartGroup>UpperHead</bodyPartGroup>
+				<stuff>Leather_Patch</stuff>
+			</li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>500</weaponMoney>
+		<weaponTags>
+		  <li>KotORWeapon_slugrifle</li>
+		</weaponTags>
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		
+		<skills>
+		  <li>
+			<skill>Shooting</skill>
+			<range>8~10</range>
+		  </li>
+		</skills>
+		<invNutrition>2</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.1</skipChance>
+			<subOptionsChooseOne>
+				<li>
+				  <thingDef>guy762_stim_hyperbattle</thingDef>
+				  <countRange>0~1</countRange>
+				</li>
+				<li>
+				  <thingDef>KOTOR_Spice</thingDef>
+				  <countRange>2~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  <PawnKindDef Name="KotORRebel_trooper" ParentName="KotORRebelBase">
+		<defName>KotORRebel_trooper</defName>
+		<label>rebel trooper</label>
+		<combatPower>75</combatPower>
+		<maxGenerationAge>50</maxGenerationAge>
+		
+		<gearHealthRange>0.7~2.3</gearHealthRange>
+		<itemQuality>Poor</itemQuality>
+		<apparelMoney>800~1200</apparelMoney>
+		<apparelTags>
+		  <li>KotORAccessory_trooper</li>
+		  <li>KotORUtility_weakgrenade</li>
+		  <li>PReb_apparel_trooper</li>
+		  <li>PReb_apparel_trooperhelmet</li>
+		  <li>KotORAccessory_backpack</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_Clothing_scumII</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(125,50,50)</color>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<stuff>Steel</stuff>
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(130,125,105)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>100~600</weaponMoney>
+		<weaponTags>
+		  <li>KotORRebel_trooper</li>
+		</weaponTags>
+		<biocodeWeaponChance>0.1</biocodeWeaponChance>
+		
+		<skills>
+		  <li>
+			<skill>Shooting</skill>
+			<range>6~10</range>
+		  </li>
+		  <li>
+			<skill>Melee</skill>
+			<range>2~8</range>
+		  </li>
+		</skills>
+		<inventoryOptions>
+		  <skipChance>0.6</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+			  <thingDef>guy762_stim_battle</thingDef>
+			  <countRange>1~2</countRange>
+			</li>
+			<li>
+				<thingDef>guy762_medpac</thingDef>
+				<countRange>0~2</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+	  </PawnKindDef>
+	  
+	  
+	  
+	   <PawnKindDef Name="KotORRebel_heavy" ParentName="KotORRebelBase">
+		<defName>KotORRebel_heavy</defName>
+		<label>rebel heavy</label>
+		<combatPower>150</combatPower>
+		<maxGenerationAge>50</maxGenerationAge>
+		
+		<gearHealthRange>0.7~2.3</gearHealthRange>
+		<itemQuality>Good</itemQuality>
+		<apparelMoney>1200~2400</apparelMoney>
+		<apparelTags>
+		  <li>KotORUtility_utilitygrenade</li>
+		  <li>KotORHeadband_sapper</li>
+		  <li>KotOREquipment_basic</li>
+		  <li>KotORAccessory_trooper</li>
+		  <li>PReb_apparel_heavyhelmet</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_SithArmor_remtrooper</li>
+		   <li>guy762_Clothing_scumII</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(125,50,50)</color>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(90,90,90)</color>
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(130,125,105)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<!--stuff>Steel</stuff-->
+				<color>(105,105,105)</color>
+			</li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>1000~2500</weaponMoney>
+		<weaponTags>
+		  <li>KotORRebel_heavy</li>
+		  <li>GunSingleUse</li>
+		</weaponTags>
+		<biocodeWeaponChance>0.4</biocodeWeaponChance>
+		
+		<skills>
+		  <li>
+			<skill>Shooting</skill>
+			<range>10~14</range>
+		  </li>
+		  <li>
+			<skill>Melee</skill>
+			<range>6~8</range>
+		  </li>
+		</skills>
+		<inventoryOptions>
+		  <skipChance>0.25</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+			  <thingDef>guy762_stim_hyperbattle</thingDef>
+			  <countRange>0~1</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_stim_hyperstr</thingDef>
+			  <countRange>0~1</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_stim_hypercon</thingDef>
+			  <countRange>0~1</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_stim_hyperdex</thingDef>
+			  <countRange>0~1</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+		<modExtensions>
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+			  <whitelist>
+				<li>Hulk</li>
+			  </whitelist>
+			  <blacklist>
+			  </blacklist>
+			  <priority>
+				<!--When violates the black/whitelist, selected from these-->
+				<li>Hulk</li>
+			  </priority>
+			  <!--Align body gender to pawn's gender (default: True)-->
+			  <checkGender>False</checkGender>
+			</li>
+		</modExtensions>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  <PawnKindDef Name="KotORRebel_sapper" ParentName="KotORRebelBase">
+		<defName>KotORRebel_sapper</defName>
+		<label>rebel commando</label>
+		<combatPower>100</combatPower>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>35</maxGenerationAge>
+		
+		<canBeSapper>true</canBeSapper>
+		<isGoodBreacher>true</isGoodBreacher>
+		
+		<itemQuality>Good</itemQuality>
+		<apparelMoney>1200~2400</apparelMoney>
+		<apparelTags>
+		  <li>KotOREquipment_basic</li>
+		  <li>KotORAccessory_trooper</li>
+		  <li>PReb_apparel_heavyhelmet</li>
+		  <li>KotORAccessory_backpack</li>
+		  <li>KotORShield_basic</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_SithArmor_remtrooper</li>
+		   <li>guy762_Clothing_scumII</li>
+		   <li>guy762_grenadebelt_sonic</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(125,50,50)</color>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(90,90,90)</color>
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(130,125,105)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<!--stuff>Steel</stuff-->
+				<color>(105,105,105)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Belt</apparelLayer>
+				<color>(105,105,105)</color>
+			</li>
+		</specificApparelRequirements>
+		<weaponMoney>1500~3000</weaponMoney>
+		<weaponTags>
+		  <li>KotORRebel_commando</li>
+		</weaponTags>
+		<biocodeWeaponChance>0.75</biocodeWeaponChance>
+		
+		<skills>
+		  <li>
+			<skill>Shooting</skill>
+			<range>10~14</range>
+		  </li>
+		  <li>
+			<skill>Melee</skill>
+			<range>6~8</range>
+		  </li>
+		</skills>
+		<inventoryOptions>
+		  <skipChance>0.125</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+			  <thingDef>guy762_stim_hyperbattle</thingDef>
+			  <countRange>1~2</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_stim_hyperdex</thingDef>
+			  <countRange>1~2</countRange>
+			</li>
+			<li>
+			  <thingDef>KOTOR_Spice</thingDef>
+			  <countRange>1~2</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <PawnKindDef Name="KotORRebel_cop" ParentName="KotORRebelBase">
+		<defName>KotORRebel_cop</defName>
+		<label>civil security officer</label>
+		<combatPower>50</combatPower>
+		<maxGenerationAge>50</maxGenerationAge>
+		
+		<itemQuality>Normal</itemQuality>
+		<apparelMoney>9999</apparelMoney>
+		<apparelTags>
+		  <li>KotOREquipment_basic</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_Hat_onderon</li>
+		   <li>guy762_Bodysuit_striped</li>
+		   <li>guy762_Accessory_suspendersA</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90,90,90)</color>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(125,50,50)</color>
+			</li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>100~600</weaponMoney>
+		<weaponTags>
+		  <li>KotORRebel_cop</li>
+		  <!--li>KotORRebel_copmelee</li-->
+		</weaponTags>
+		<biocodeWeaponChance>0.5</biocodeWeaponChance>
+		
+		<skills>
+		  <li>
+			<skill>Shooting</skill>
+			<range>5~10</range>
+		  </li>
+		  <li>
+			<skill>Melee</skill>
+			<range>5~10</range>
+		  </li>
+		</skills>
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  <PawnKindDef Name="KotORRebel_elite" ParentName="KotORRebelBase">
+		<defName>KotORRebel_elite</defName>
+		<label>rebel special forces</label>
+		<combatPower>150</combatPower>
+		<minGenerationAge>22</minGenerationAge>
+		<maxGenerationAge>35</maxGenerationAge>
+		
+		<itemQuality>Good</itemQuality>
+		<apparelMoney>10000~25000</apparelMoney>
+		<apparelTags>
+		  <li>KotOREquipment_adv</li>
+		  <li>KotORShield_basic</li>
+		  <li>KotORUtility_stronggrenade</li>
+		  <li>PReb_apparel_maskedhats</li>
+		  <li>KotORAccessory_smallbackpack</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_RepArmor_TSF</li>	
+		   <li>guy762_Accessory_suspendersA</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90,90,90)</color>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(125,50,50)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Belt</apparelLayer>
+				<color>(105,105,105)</color>
+			</li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>7500~25000</weaponMoney>
+		<weaponTags>
+		  <li>KotORRebel_elite</li>
+		  <!--li>KotORRebel_elitemelee</li-->
+		</weaponTags>
+		<biocodeWeaponChance>0.75</biocodeWeaponChance>
+		
+		<skills>
+		  <li>
+			<skill>Shooting</skill>
+			<range>8~14</range>
+		  </li>
+		  <li>
+			<skill>Melee</skill>
+			<range>8~14</range>
+		  </li>
+		</skills>
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <PawnKindDef Name="KotORRebel_leader" ParentName="KotORRebelBase">
+		<defName>KotORRebel_leader</defName>
+		<label>rebel leader</label>
+		<combatPower>20</combatPower>
+		<minGenerationAge>25</minGenerationAge>
+		<maxGenerationAge>80</maxGenerationAge>
+		
+		<allowOldAgeInjuries>true</allowOldAgeInjuries>
+		<isFighter>false</isFighter>
+		<factionLeader>true</factionLeader>
+		<requiredWorkTags Inherit="False"/>
+		
+		<itemQuality>Good</itemQuality>
+		<apparelMoney>10000~25000</apparelMoney>
+		<apparelTags>
+		  <li>KotOREquipment_officer</li>
+		  <li>KotORShield_strong</li>
+		  <li>KotORHeadband_regalvisor</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_Robes_onderon</li>
+		   <li>Apparel_Sash</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<stuff>Synthread</stuff>
+				<color>(125,50,50)</color>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(200,210,210)</color> <!-- snow white -->
+			</li>
+		</specificApparelRequirements>
+		
+		<skills>
+		  <li>
+				<skill>Social</skill>
+				<range>14~18</range>
+			</li>
+			<li>
+				<skill>Intellectual</skill>
+				<range>10~14</range>
+			</li>
+		</skills>
+		
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  
+	  
+
+	  
+	  
+	  <!--droids-->
+	  
+	  <!--
+	  <PawnKindDef Name="KotORRebel_protocoldroid_GE3PD" ParentName="KotORDroidGood_GE3PD" MayRequire="guy762.KotORDroids">
+		<defName>KotORRebel_protocoldroid_GE3PD</defName>
+		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
+		<trader>true</trader>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  <PawnKindDef Name="KotORRebel_utilitydroid_R8009" ParentName="KotORDroidGood_R8009" MayRequire="guy762.KotORDroids">
+		<defName>KotORRebel_utilitydroid_R8009</defName>
+		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
+	  </PawnKindDef>
+	  
+	  <PawnKindDef Name="KotORRebel_wardroid_weak_Dev" ParentName="KotORDroidBad_DevWD_weak" MayRequire="guy762.KotORDroids">
+		<defName>KotORRebel_wardroid_weak_Dev</defName>
+		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
+	  </PawnKindDef>
+	  -->
+	  
+	  
+	  
+	  
+			<!-- mercs -->
+		
+		
+	<PawnKindDef Name="KotORRebel_wookieeranged" ParentName="KotORMerc_wookieeranged">
+		<defName>KotORRebel_wookieeranged</defName>
+		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
+		<maxPerGroup>4</maxPerGroup>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORRebel_wookieemelee" ParentName="KotORMerc_wookieemelee">
+		<defName>KotORRebel_wookieemelee</defName>
+		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
+		<maxPerGroup>4</maxPerGroup>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef Name="KotORRebel_mando" ParentName="KotORMerc_mando">
+		<defName>KotORRebel_mando</defName>
+		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
+		<maxPerGroup>6</maxPerGroup>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORRebel_mandoboss" ParentName="KotORMerc_mandoboss">
+		<defName>KotORRebel_mandoboss</defName>
+		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
+		<maxPerGroup>1</maxPerGroup>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef Name="KotORRebel_kaleeshranged" ParentName="KotORMerc_kaleeshranged">
+		<defName>KotORRebel_kaleeshranged</defName>
+		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
+		<maxPerGroup>4</maxPerGroup>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORRebel_kaleeshmelee" ParentName="KotORMerc_kaleeshmelee">
+		<defName>KotORRebel_kaleeshmelee</defName>
+		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
+		<maxPerGroup>4</maxPerGroup>
+	</PawnKindDef>
+		
+		
+		
+		
+			<!-- civilians -->
+	  
+	  <PawnKindDef Name="KotORRebel_civrural" ParentName="KotORCiv_villager">
+		<defName>KotORRebel_civrural</defName>
+		<label>civilian</label>
+		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
+		<useFactionXenotypes>true</useFactionXenotypes>
+		<combatPower>45</combatPower>
+		<weaponTags>
+		  <li>KotORWeapon_civilian</li>
+		</weaponTags>
+		<weaponMoney>60~120</weaponMoney>
+	  </PawnKindDef>
+	  
+	  <PawnKindDef Name="KotORRebel_civprole" ParentName="KotORCiv_prole">
+		<defName>KotORRebel_civprole</defName>
+		<label>civilian</label>
+		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
+		<useFactionXenotypes>true</useFactionXenotypes>
+		<combatPower>45</combatPower>
+		<weaponTags>
+		  <li>KotORWeapon_civilian</li>
+		</weaponTags>
+		<weaponMoney>60~120</weaponMoney>
+	  </PawnKindDef>
+	  
+	  <!--<PawnKindDef Name="KotORRebel_shadydealer" ParentName="KotORCiv_shadydealer">
+		<defName>KotORRebel_shadydealer</defName>
+		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
+	  </PawnKindDef>
+	  
+	  <PawnKindDef Name="KotORRebel_smuggler" ParentName="KotORCiv_smuggler">
+		<defName>KotORRebel_smuggler</defName>
+		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
+	  </PawnKindDef>
+	  
+	  <PawnKindDef Name="KotORRebel_spacer" ParentName="KotORCiv_spacer">
+		<defName>KotORRebel_spacer</defName>
+		<label>contracted spacer</label>
+		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
+	  </PawnKindDef-->
+	  
+	  
+	  
+	  <!--     NOT NECESSARY, use civ versions
+	  
+		work camp types
+	
+	<PawnKindDef Name="KotORRebel_civhunter" ParentName="KotORCiv_hunter">
+		<defName>KotORRebel_civhunter</defName>
+		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORRebel_civlogger" ParentName="KotORCiv_logger">
+		<defName>KotORRebel_civlogger</defName>
+		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORRebel_civfarmer" ParentName="KotORCiv_farmer">
+		<defName>KotORRebel_civfarmer</defName>
+		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORRebel_civminer" ParentName="KotORCiv_miner">
+		<defName>KotORRebel_civminer</defName>
+		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
+	</PawnKindDef>
+	
+	
+	 --> 
+	  
+
+	
+
+
+ </Defs>

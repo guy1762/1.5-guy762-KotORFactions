@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<PawnKindDef MayRequire="guy762.StarWarsXenotypes" Name="KotORPlayableHero_Visas_VPE"  ParentName="KotORHeroBase_Visas">
+		<defName>KotORPlayableHero_Visas_VPE</defName>
+		<modExtensions>
+         <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+            <implantDef>VPE_PsycastAbilityImplant</implantDef>
+            <initialLevel>5</initialLevel>
+            <statUpgradePoints>2~3</statUpgradePoints>
+            <unlockedPaths>
+				<Force_Neutral>1~3|4~6</Force_Neutral>
+				<Force_Telekinesis>1~3|3~4</Force_Telekinesis>
+				<Force_LightsaberCombat>1~3|3~4</Force_LightsaberCombat>
+				
+				<Force_Darkside>1~3|4~6</Force_Darkside>
+            </unlockedPaths>
+         </li>
+      </modExtensions>
+	</PawnKindDef>
+	  
+	<PawnKindDef MayRequire="guy762.StarWarsXenotypes" Name="KotORPlayableVillain_Yuthura_VPE"  ParentName="KotORHeroBase_Yuthura">
+		<defName>KotORPlayableVillain_Yuthura_VPE</defName>
+		<modExtensions>
+         <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+            <implantDef>VPE_PsycastAbilityImplant</implantDef>
+            <initialLevel>10</initialLevel>
+            <statUpgradePoints>2~3</statUpgradePoints>
+            <unlockedPaths>
+				<Force_Neutral>1~2|2~4</Force_Neutral>		
+				<Force_Telekinesis>1~2|3~4</Force_Telekinesis>
+				<Force_LightsaberCombat>1~4|4~6</Force_LightsaberCombat>
+				
+				<Force_Darkside>1~2|3~4</Force_Darkside>
+				<Force_JediTraining>1~5|6~8</Force_JediTraining>
+            </unlockedPaths>
+         </li>
+      </modExtensions>
+	</PawnKindDef>  
+	
+	<PawnKindDef MayRequire="guy762.StarWarsXenotypes" Name="KotORPlayableHero_Handmaiden_VPE"  ParentName="KotORHeroBase_Handmaiden">
+		<defName>KotORPlayableHero_Handmaiden_VPE</defName>
+		<modExtensions>
+         <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+            <implantDef>VPE_PsycastAbilityImplant</implantDef>
+            <initialLevel>5</initialLevel>
+            <statUpgradePoints>1~2</statUpgradePoints>
+            <unlockedPaths>
+				<Force_Neutral>1~2|3~4</Force_Neutral>	
+				<Force_Telekinesis>1~2|3~4</Force_Telekinesis>
+				<Force_LightsaberCombat>1~5|6~8</Force_LightsaberCombat>
+				
+				<Force_LightSide>1~2|2~4</Force_LightSide>
+            </unlockedPaths>
+         </li>
+      </modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef MayRequire="guy762.StarWarsXenotypes" Name="KotORPlayableVillain_Sion_VPE"  ParentName="KotORHeroBase_Sion">
+		<defName>KotORPlayableVillain_Sion_VPE</defName>
+		<modExtensions>
+			 <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+				<implantDef>VPE_PsycastAbilityImplant</implantDef>
+				<initialLevel>20</initialLevel>
+				<statUpgradePoints>6~8</statUpgradePoints>
+				<unlockedPaths>
+				   <Force_Neutral>1~5|3~4</Force_Neutral>
+				   <Force_Telekinesis>1~5|3~4</Force_Telekinesis>
+				   <Force_LightsaberCombat>1~5|10~12</Force_LightsaberCombat>
+				   
+				   <Force_Darkside>1~5|6~8</Force_Darkside>
+				</unlockedPaths>
+			 </li>
+		</modExtensions>
+	  </PawnKindDef>
+	  
+	  <PawnKindDef MayRequire="guy762.StarWarsXenotypes" Name="KotORPlayableHero_Juhani_VPE"  ParentName="KotORHeroBase_Juhani">
+		<defName>KotORPlayableHero_Juhani_VPE</defName>
+		<modExtensions>
+         <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+            <implantDef>VPE_PsycastAbilityImplant</implantDef>
+            <initialLevel>8</initialLevel>
+            <statUpgradePoints>2~3</statUpgradePoints>
+            <unlockedPaths>
+				<Force_Neutral>1~3|3~4</Force_Neutral>	
+				<Force_Telekinesis>1~5|6~8</Force_Telekinesis>
+				<Force_LightsaberCombat>1~5|6~8</Force_LightsaberCombat>
+				
+				<Force_LightSide>1~3|3~4</Force_LightSide>
+            </unlockedPaths>
+         </li>
+      </modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="KotORPlayableHero_Bastila_VPE"  ParentName="KotORHeroBase_Bastila">
+		<defName>KotORPlayableHero_Bastila_VPE</defName>
+		<modExtensions>
+		 <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+			<implantDef>VPE_PsycastAbilityImplant</implantDef>
+			<initialLevel>10</initialLevel>
+			<statUpgradePoints>2~3</statUpgradePoints>
+			<unlockedPaths>
+				<Force_Neutral>1~5|8~10</Force_Neutral>	
+				<Force_Telekinesis>1~5|4~6</Force_Telekinesis>
+				<Force_LightsaberCombat>1~4|4~6</Force_LightsaberCombat>
+				
+				<Force_LightSide>1~4|4~6</Force_LightSide>
+			</unlockedPaths>
+		 </li>
+	  </modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORPlayableVillain_Malak_VPE"  ParentName="KotORHeroBase_Malak">
+		<defName>KotORPlayableVillain_Malak_VPE</defName>
+		<modExtensions>
+			 <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+				<implantDef>VPE_PsycastAbilityImplant</implantDef>
+				<initialLevel>20</initialLevel>
+				<statUpgradePoints>6~8</statUpgradePoints>
+				<unlockedPaths>
+				   <Force_Neutral>1~5|3~4</Force_Neutral>
+				   <Force_Telekinesis>1~5|4~6</Force_Telekinesis>
+				   <Force_LightsaberCombat>1~5|3~4</Force_LightsaberCombat>
+				   
+				   <Force_Darkside>1~5|10~12</Force_Darkside>
+				</unlockedPaths>
+			 </li>
+		</modExtensions>
+	  </PawnKindDef>
+	  
+	  <PawnKindDef Name="KotORPlayableHero_ExileSurik_VPE"  ParentName="KotORHeroBase_ExileSurik">
+		<defName>KotORPlayableHero_ExileSurik_VPE</defName>
+		<modExtensions>
+         <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+            <implantDef>VPE_PsycastAbilityImplant</implantDef>
+            <initialLevel>15</initialLevel>
+            <statUpgradePoints>1~2</statUpgradePoints>
+            <unlockedPaths>
+				<Force_Neutral>1~5|4~6</Force_Neutral>	
+				<Force_Telekinesis>1~5|6~8</Force_Telekinesis>
+				<Force_LightsaberCombat>1~3|2~4</Force_LightsaberCombat>
+				
+				<Force_LightSide>1~4|4~6</Force_LightSide>
+				<Force_JediTraining>1~5|6~8</Force_JediTraining>
+            </unlockedPaths>
+         </li>
+      </modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORPlayableHero_Jolee_VPE"  ParentName="KotORHeroBase_Jolee">
+		<defName>KotORPlayableHero_Jolee_VPE</defName>
+		<modExtensions>
+         <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+            <implantDef>VPE_PsycastAbilityImplant</implantDef>
+            <initialLevel>10</initialLevel>
+            <statUpgradePoints>3~4</statUpgradePoints>
+            <unlockedPaths>
+				<Force_Neutral>1~5|10~12</Force_Neutral>	
+				<Force_Telekinesis>1~5|6~8</Force_Telekinesis>
+				<Force_LightsaberCombat>1~2|1~2</Force_LightsaberCombat>
+				
+				<Force_LightSide>1~2|2~4</Force_LightSide>
+            </unlockedPaths>
+         </li>
+      </modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	<PawnKindDef MayRequire="guy762.StarWarsXenotypes" Name="KotORPlayableVillain_Bandon_VPE"  ParentName="KotORHeroBase_Bandon">
+		<defName>KotORPlayableVillain_Bandon_VPE</defName>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+				<implantDef>VPE_PsycastAbilityImplant</implantDef>
+				<initialLevel>8</initialLevel>
+				<statUpgradePoints>1~2</statUpgradePoints>
+				<unlockedPaths>
+					<Force_Neutral>1~4|3~4</Force_Neutral>
+				   <Force_Telekinesis>1~5|3~4</Force_Telekinesis>
+				   <Force_LightsaberCombat>1~4|6~18</Force_LightsaberCombat>
+				   
+				   <Force_Darkside>1~3|4~6</Force_Darkside>
+				</unlockedPaths>
+			 </li>
+			 <!--<li Class="AddGeneForPK.PKAdditionalGenes">
+			  <geneSets>
+				<li>
+				  <isXenogene>true</isXenogene>
+				  <chance>1</chance>
+				  <geneDefs>
+					<li>VPE_ForceN_Corruption</li>
+				  </geneDefs>
+				</li>
+			  </geneSets>
+			</li>-->
+		</modExtensions>
+	  </PawnKindDef>
+
+</Defs>

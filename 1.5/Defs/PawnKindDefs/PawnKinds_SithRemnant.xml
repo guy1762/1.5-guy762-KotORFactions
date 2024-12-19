@@ -1,0 +1,1312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<PawnKindDef Name="KotORSith_Base" Abstract="True">
+		<defaultFactionType>guy762_KotORFaction_SithRemnant</defaultFactionType>
+		<race>Human</race>
+
+		<backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Pirate</li>
+					<li>Offworld</li>
+					<li>Outlander</li>
+					<li>ImperialFighter</li>
+					<li>Madman</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+
+		<chemicalAddictionChance>0.1</chemicalAddictionChance>
+		<!--combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount-->
+		<invNutrition>1</invNutrition>
+		<invFoodDef>MealNutrientPaste</invFoodDef>
+
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<apparelMoney>4000~5000</apparelMoney>
+
+		<techHediffsTags>
+			<li>Spacer</li>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+
+
+		<disallowedTraits>
+			<li>BodyPurist</li>
+			<li>Wimp</li>
+		</disallowedTraits>
+		<disallowedTraitsWithDegree>
+			<PsychicSensitivity>1</PsychicSensitivity>
+			<PsychicSensitivity>2</PsychicSensitivity>
+		</disallowedTraitsWithDegree>
+
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Hauling</li>
+		</requiredWorkTags>
+	</PawnKindDef>
+
+	<PawnKindDef Name="KotORSith_TrooperBase" ParentName="KotORSith_Base" Abstract="True">
+		<modExtensions>
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+				<whitelist>
+				</whitelist>
+				<blacklist>
+					<li>Fat</li>
+					<li>Baby</li>
+					<li>Child</li>
+				</blacklist>
+				<priority>
+					<!--When violates the black/whitelist, selected from these-->
+				</priority>
+				<!--Align body gender to pawn's gender (default: True)-->
+				<checkGender>True</checkGender>
+			</li>
+		</modExtensions>
+
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	</PawnKindDef>
+
+
+
+
+
+
+	<!--droids-->
+
+
+
+	<PawnKindDef Name="KotORSith_droid_MPDMkI" ParentName="KotORDroidBad_MPDMkI" MayRequire="guy762.KotORDroids">
+		<defName>KotORSith_droid_MPDMkI</defName>
+		<defaultFactionType>guy762_KotORFaction_SithRemnant</defaultFactionType>
+		<specificApparelRequirements Inherit="False" />
+		<gearHealthRange>0.5~1</gearHealthRange>
+		<itemQuality>Poor</itemQuality>
+	</PawnKindDef>
+
+	<PawnKindDef Name="KotORSith_droid_SentWD" ParentName="KotORDroidBad_SentWD" MayRequire="guy762.KotORDroids">
+		<defName>KotORSith_droid_SentWD</defName>
+		<defaultFactionType>guy762_KotORFaction_SithRemnant</defaultFactionType>
+		<specificApparelRequirements Inherit="False" />
+		<gearHealthRange>0.5~1</gearHealthRange>
+		<itemQuality>Poor</itemQuality>
+	</PawnKindDef>
+
+	<PawnKindDef Name="KotORSith_droid_ADMkI" ParentName="KotORDroidBad_ADMkI" MayRequire="guy762.KotORDroids">
+		<defName>KotORSith_droid_ADMkI</defName>
+		<defaultFactionType>guy762_KotORFaction_SithRemnant</defaultFactionType>
+		<maxPerGroup>4</maxPerGroup>
+		<specificApparelRequirements Inherit="False" />
+		<gearHealthRange>0.5~1</gearHealthRange>
+		<itemQuality>Poor</itemQuality>
+	</PawnKindDef>
+
+	<PawnKindDef Name="KotORSith_droid_ADMkIV" ParentName="KotORDroidBad_ADMkIV" MayRequire="guy762.KotORDroids">
+		<defName>KotORSith_droid_ADMkIV</defName>
+		<defaultFactionType>guy762_KotORFaction_SithRemnant</defaultFactionType>
+		<maxPerGroup>2</maxPerGroup>
+		<label>heavy assault droid</label>
+		<race>guy762_DroidRace_ADMkIV_sith</race>
+		<specificApparelRequirements Inherit="False" />
+		<gearHealthRange>0.5~1</gearHealthRange>
+		<itemQuality>Poor</itemQuality>
+		<apparelTags>
+			<li>KotORDroidWeapon_wardroid</li>
+			<li>KotORLgtCannon_flame</li>
+		</apparelTags>
+	</PawnKindDef>
+
+
+
+	<!--officers-->
+
+
+	<PawnKindDef Name="KotORSith_ensign" ParentName="KotORSith_Base">
+		<defName>KotORSith_ensign</defName>
+		<label>Sith ensign</label>
+		<combatPower>40</combatPower>
+		<minGenerationAge>16</minGenerationAge>
+		<maxGenerationAge>30</maxGenerationAge>
+		<itemQuality>Normal</itemQuality>
+
+		<apparelMoney>1500~5500</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotOREquipment_basic</li>
+			<li>SE_apparel_ensign</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_SithUniform_ensign</li>
+		</apparelRequired>
+
+		<biocodeWeaponChance>0.5</biocodeWeaponChance>
+		<weaponMoney>100~140</weaponMoney>
+		<weaponTags>
+			<li>SE_ensign</li>
+		</weaponTags>
+
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~8</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>4~8</range>
+			</li>
+			<!--li>
+				<skill>Social</skill>
+				<range>5~10</range>
+			</li-->
+			<li>
+				<skill>Intellectual</skill>
+				<range>5~10</range>
+			</li>
+		</skills>
+
+		<inventoryOptions>
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+	</PawnKindDef>
+
+
+
+	<PawnKindDef Name="KotORSith_engineer" ParentName="KotORSith_Base">
+		<defName>KotORSith_engineer</defName>
+		<label>Sith engineer</label>
+		<combatPower>40</combatPower>
+		<minGenerationAge>16</minGenerationAge>
+		<maxGenerationAge>55</maxGenerationAge>
+		<itemQuality>Normal</itemQuality>
+
+		<apparelMoney>2500~7500</apparelMoney>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotORUtility_engi</li>
+			<li>KotORAccessory_engi</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_UniformCap</li>
+			<li>guy762_Bodysuit_Dyeable</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(50,50,50)</color>
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90,90,90)</color>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(170,170,190)</color>
+			</li>
+		</specificApparelRequirements>
+
+		<biocodeWeaponChance>0.75</biocodeWeaponChance>
+		<weaponMoney>110~2000</weaponMoney>
+		<weaponTags>
+			<li>SE_engineer</li>
+			<li>PM_closerange</li>
+		</weaponTags>
+
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~8</range>
+			</li>
+			<li>
+				<skill>Construction</skill>
+				<range>8~14</range>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<range>6~12</range>
+			</li>
+			<li>
+				<skill>Intellectual</skill>
+				<range>4~8</range>
+			</li>
+		</skills>
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_repairkit</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+				<li>
+					<thingDef>ComponentIndustrial</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+	</PawnKindDef>
+
+
+
+	<PawnKindDef Name="KotORSith_lieutenant" ParentName="KotORSith_Base">
+		<defName>KotORSith_lieutenant</defName>
+		<label>Sith lieutenant</label>
+		<combatPower>60</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+		<minGenerationAge>24</minGenerationAge>
+		<maxGenerationAge>40</maxGenerationAge>
+		<itemQuality>Good</itemQuality>
+
+		<apparelMoney>5000~10000</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotOREquipment_officer</li>
+			<li>KotORHeadband_fieldofficer</li>
+			<!--li>KotORArmor_combatsuit</li-->
+			<li>KotORAccessory_smallbackpack</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_SithHat_officer</li>
+			<li>guy762_SithUniform_officer</li>
+			<li>guy762_energyshield_sith</li>
+			<li>guy762_Accessory_suspendersA</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90,90,90)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Belt</apparelLayer>
+				<color>(90,90,90)</color>
+			</li>
+		</specificApparelRequirements>
+		<biocodeWeaponChance>0.85</biocodeWeaponChance>
+		<weaponMoney>300~2000</weaponMoney>
+		<weaponTags>
+			<li>SE_officer</li>
+			<li>SE_lieutenant</li>
+		</weaponTags>
+
+		<techHediffsChance>2</techHediffsChance>
+		<techHediffsMoney>
+			<min>2400</min>
+			<max>4800</max>
+		</techHediffsMoney>
+		<techHediffsRequired>
+			<li>guy762_ImplantDock_I</li>
+		</techHediffsRequired>
+
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>6~12</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>4~8</range>
+			</li>
+			<li>
+				<skill>Social</skill>
+				<range>8~14</range>
+			</li>
+			<li>
+				<skill>Intellectual</skill>
+				<range>6~12</range>
+			</li>
+		</skills>
+		<inventoryOptions>
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<abilities>
+			<li>MarksmanCommand</li>
+		</abilities>
+	</PawnKindDef>
+
+
+
+	<PawnKindDef Name="KotORSith_tactician" ParentName="KotORSith_Base">
+		<defName>KotORSith_tactician</defName>
+		<label>Sith tactician</label>
+		<combatPower>40</combatPower>
+		<minGenerationAge>22</minGenerationAge>
+		<maxGenerationAge>50</maxGenerationAge>
+		<itemQuality>Normal</itemQuality>
+
+		<maxPerGroup>1</maxPerGroup>
+		<isFighter>false</isFighter>
+
+		<apparelMoney>1500~5500</apparelMoney>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotOREquipment_basic</li>
+			<li>SE_apparel_ensign</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_SithUniform_ensign</li>
+		</apparelRequired>
+
+		<biocodeWeaponChance>0.5</biocodeWeaponChance>
+		<weaponMoney>100~140</weaponMoney>
+		<weaponTags>
+			<li>SE_ensign</li>
+		</weaponTags>
+
+		<techHediffsRequired>
+			<li>guy762_ImplantDock_III</li>
+		</techHediffsRequired>
+		<forcedHair>Bald</forcedHair>
+
+		<skills>
+			<li>
+				<skill>Intellectual</skill>
+				<range>14~16</range>
+			</li>
+		</skills>
+		<inventoryOptions>
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac_life</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+	</PawnKindDef>
+
+
+
+	<PawnKindDef Name="KotORSith_captain" ParentName="KotORSith_Base">
+		<defName>KotORSith_captain</defName>
+		<label>Sith captain</label>
+		<combatPower>60</combatPower>
+		<maxPerGroup>1</maxPerGroup>
+		<minGenerationAge>30</minGenerationAge>
+		<maxGenerationAge>60</maxGenerationAge>
+		<itemQuality>Excellent</itemQuality>
+
+		<apparelMoney>12500~17500</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotOREquipment_officer</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_SithHat_officer</li>
+			<li>guy762_SithUniform_officer</li>
+			<li>guy762_energyshield_sith</li>
+		</apparelRequired>
+
+		<biocodeWeaponChance>0.85</biocodeWeaponChance>
+		<weaponMoney>400~24000</weaponMoney>
+		<weaponTags>
+			<li>SE_officer</li>
+		</weaponTags>
+
+		<techHediffsChance>4</techHediffsChance>
+		<techHediffsMoney>
+			<min>2400</min>
+			<max>4800</max>
+		</techHediffsMoney>
+		<techHediffsRequired>
+			<li>guy762_ImplantDock_II</li>
+		</techHediffsRequired>
+
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~8</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>4~8</range>
+			</li>
+			<li>
+				<skill>Social</skill>
+				<range>10~16</range>
+			</li>
+			<li>
+				<skill>Intellectual</skill>
+				<range>10~16</range>
+			</li>
+		</skills>
+		<inventoryOptions>
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac_life</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<abilities>
+			<li>WorkDrive</li>
+			<!--li>ProductionCommand</li>
+			<li>CombatCommand</li-->
+		</abilities>
+	</PawnKindDef>
+
+
+
+
+	<!--troopers-->
+
+
+	<PawnKindDef Name="KotORSith_trooper" ParentName="KotORSith_TrooperBase">
+		<defName>KotORSith_trooper</defName>
+		<label>Sith trooper</label>
+		<combatPower>85</combatPower>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>40</maxGenerationAge>
+		<itemQuality>Normal</itemQuality>
+
+		<apparelMoney>1500~5500</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotORUtility_weakgrenade</li>
+			<li>KotORShield_sith</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_SithHelmet_trooper</li>
+			<li>guy762_SithArmor_trooper</li>
+			<li>guy762_Bodysuit_Dyeable</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(50,50,50)</color>
+			</li>
+		</specificApparelRequirements>
+
+		<biocodeWeaponChance>0.75</biocodeWeaponChance>
+		<weaponMoney>1000~2500</weaponMoney>
+		<weaponTags>
+			<li>SE_trooper</li>
+		</weaponTags>
+
+		<techHediffsChance>0.25</techHediffsChance>
+		<techHediffsMoney>
+			<min>1200</min>
+			<max>2400</max>
+		</techHediffsMoney>
+
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>6~13</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>4~7</range>
+			</li>
+		</skills>
+		<inventoryOptions>
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_stim_battle</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+	</PawnKindDef>
+
+
+
+
+	<PawnKindDef Name="KotORSith_troopermelee" ParentName="KotORSith_TrooperBase">
+		<defName>KotORSith_troopermelee</defName>
+		<label>Sith trooper</label>
+		<combatPower>85</combatPower>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>40</maxGenerationAge>
+		<itemQuality>Normal</itemQuality>
+
+		<apparelMoney>1500~5500</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotOREquipment_sith</li>
+			<li>KotORShield_sith</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_SithHelmet_trooper</li>
+			<li>guy762_SithArmor_trooper</li>
+			<li>guy762_Bodysuit_Dyeable</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(50,50,50)</color>
+			</li>
+		</specificApparelRequirements>
+
+		<biocodeWeaponChance>0.75</biocodeWeaponChance>
+		<weaponMoney>1750~2500</weaponMoney>
+		<weaponTags>
+			<li>SE_melee</li>
+		</weaponTags>
+
+		<techHediffsChance>0.25</techHediffsChance>
+		<techHediffsMoney>
+			<min>1200</min>
+			<max>2400</max>
+		</techHediffsMoney>
+
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~7</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>6~13</range>
+			</li>
+		</skills>
+
+		<inventoryOptions>
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_stim_str</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_stim_con</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_stim_dex</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+
+		<disallowedTraitsWithDegree>
+			<ShootingAccuracy>-1</ShootingAccuracy>
+			<ShootingAccuracy>0</ShootingAccuracy>
+			<ShootingAccuracy>1</ShootingAccuracy>
+		</disallowedTraitsWithDegree>
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+	</PawnKindDef>
+
+
+
+
+	<PawnKindDef Name="KotORSith_hvytrooper" ParentName="KotORSith_TrooperBase">
+		<defName>KotORSith_hvytrooper</defName>
+		<label>heavy Sith trooper</label>
+		<combatPower>125</combatPower>
+		<maxPerGroup>10</maxPerGroup>
+		<minGenerationAge>23</minGenerationAge>
+		<maxGenerationAge>45</maxGenerationAge>
+		<itemQuality>Normal</itemQuality>
+
+		<apparelMoney>1500~5500</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotORUtility_utilitygrenade</li>
+			<li>KotORUtility_stronggrenade</li>
+			<li>KotORShield_sith</li>
+			<li>KotORAccessory_trooper</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_SithHelmet_colortrooper</li>
+			<li>guy762_SithArmor_colortrooper</li>
+			<li>guy762_Bodysuit_Dyeable</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(120,0,0)</color>
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90,90,90)</color>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(120,0,0)</color>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(50,50,50)</color>
+			</li>
+		</specificApparelRequirements>
+
+		<biocodeWeaponChance>0.75</biocodeWeaponChance>
+		<weaponMoney>1600~7000</weaponMoney>
+		<weaponTags>
+			<li>SE_heavy</li>
+			<li>GunSingleUse</li>
+		</weaponTags>
+
+		<techHediffsChance>2</techHediffsChance>
+		<techHediffsMoney>
+			<min>2400</min>
+			<max>4800</max>
+		</techHediffsMoney>
+
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>6~13</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>4~7</range>
+			</li>
+		</skills>
+
+		<inventoryOptions>
+			<skipChance>0.1</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_stim_battle</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_medpac</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<modExtensions Inherit="False">
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+				<whitelist>
+					<li>Hulk</li>
+				</whitelist>
+				<blacklist>
+				</blacklist>
+				<priority>
+					<!--When violates the black/whitelist, selected from these-->
+					<li>Hulk</li>
+				</priority>
+				<!--Align body gender to pawn's gender (default: True)-->
+				<checkGender>False</checkGender>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+
+
+
+
+	<!--elite trooper-->
+
+
+
+
+	<PawnKindDef Name="KotORSith_elite" ParentName="KotORSith_TrooperBase">
+		<defName>KotORSith_elite</defName>
+		<label>elite Sith trooper</label>
+		<combatPower>125</combatPower>
+		<minGenerationAge>23</minGenerationAge>
+		<maxGenerationAge>45</maxGenerationAge>
+		<itemQuality>Good</itemQuality>
+
+		<apparelMoney>1500~5500</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotORUtility_stronggrenade</li>
+			<li>KotORShield_sith</li>
+			<li>KotOREquipment_sith</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_SithHelmet_colortrooper</li>
+			<li>guy762_SithArmor_colortrooper</li>
+			<li>guy762_Bodysuit_Dyeable</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(120,0,0)</color>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(120,0,0)</color>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(50,50,50)</color>
+			</li>
+		</specificApparelRequirements>
+
+		<biocodeWeaponChance>0.75</biocodeWeaponChance>
+		<weaponMoney>1600~7000</weaponMoney>
+		<weaponTags>
+			<li>SE_elitetrooper</li>
+		</weaponTags>
+
+		<techHediffsChance>0.5</techHediffsChance>
+		<techHediffsMoney>
+			<min>2400</min>
+			<max>4800</max>
+		</techHediffsMoney>
+		<techHediffsRequired>
+			<li>guy762_ImplantDock_I</li>
+		</techHediffsRequired>
+
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>10~16</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>6~13</range>
+			</li>
+		</skills>
+		<inventoryOptions>
+			<skipChance>0.1</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_stim_hyperbattle</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+	</PawnKindDef>
+
+
+
+	<PawnKindDef Name="KotORSith_elitemelee" ParentName="KotORSith_TrooperBase">
+		<defName>KotORSith_elitemelee</defName>
+		<label>elite Sith trooper</label>
+		<combatPower>125</combatPower>
+		<minGenerationAge>23</minGenerationAge>
+		<maxGenerationAge>45</maxGenerationAge>
+		<itemQuality>Good</itemQuality>
+
+		<apparelMoney>1500~5500</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotORShield_sith</li>
+			<li>KotOREquipment_sith</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_SithHelmet_colortrooper</li>
+			<li>guy762_SithArmor_colortrooper</li>
+			<li>guy762_Bodysuit_Dyeable</li>
+			<li>guy762_glove_sith</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(120,0,0)</color>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(120,0,0)</color>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(50,50,50)</color>
+			</li>
+		</specificApparelRequirements>
+
+		<biocodeWeaponChance>0.75</biocodeWeaponChance>
+		<weaponMoney>5000~10000</weaponMoney>
+		<weaponTags>
+			<li>SE_elitemelee</li>
+		</weaponTags>
+
+		<techHediffsChance>0.5</techHediffsChance>
+		<techHediffsMoney>
+			<min>2400</min>
+			<max>4800</max>
+		</techHediffsMoney>
+		<techHediffsRequired>
+			<li>guy762_ImplantDock_I</li>
+		</techHediffsRequired>
+
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>6~13</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>10~16</range>
+			</li>
+		</skills>
+		<inventoryOptions>
+			<skipChance>0.1</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_stim_hyperstr</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_stim_hypercon</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_stim_hyperdex</thingDef>
+					<countRange>0~1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+
+		<disallowedTraitsWithDegree>
+			<ShootingAccuracy>-1</ShootingAccuracy>
+			<ShootingAccuracy>0</ShootingAccuracy>
+			<ShootingAccuracy>1</ShootingAccuracy>
+		</disallowedTraitsWithDegree>
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+	</PawnKindDef>
+
+
+
+	<PawnKindDef Name="KotORSith_operative" ParentName="KotORSith_TrooperBase">
+		<defName>KotORSith_operative</defName>
+		<label>Sith operative</label>
+		<combatPower>100</combatPower>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>40</maxGenerationAge>
+		<itemQuality>Good</itemQuality>
+
+		<canBeSapper>true</canBeSapper>
+		<isGoodBreacher>true</isGoodBreacher>
+
+		<apparelMoney>1500~5500</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotORShield_sith</li>
+			<li>KotORGloves_tech</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_SithHelmet_colortrooper</li>
+			<li>guy762_SithArmor_colortrooper</li>
+			<li>guy762_Bodysuit</li>
+			<li>guy762_stealthbelt_eriadu</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(100,100,100)</color>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(100,100,100)</color>
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(100,100,100)</color>
+			</li>
+		</specificApparelRequirements>
+		<biocodeWeaponChance>0.75</biocodeWeaponChance>
+		<weaponMoney>300~2000</weaponMoney>
+		<weaponTags>
+			<li>SE_operative</li>
+		</weaponTags>
+
+		<techHediffsChance>0.5</techHediffsChance>
+		<techHediffsMoney>
+			<min>2400</min>
+			<max>4800</max>
+		</techHediffsMoney>
+		<techHediffsRequired>
+			<li>guy762_ImplantDock_II</li>
+		</techHediffsRequired>
+
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>10~16</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>4~8</range>
+			</li>
+			<li>
+				<skill>Intellectual</skill>
+				<range>8~14</range>
+			</li>
+		</skills>
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_stim_hyperdex</thingDef>
+					<countRange>1~2</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_stim_hyperbattle</thingDef>
+					<countRange>1~2</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<disallowedTraitsWithDegree>
+			<ShootingAccuracy>-1</ShootingAccuracy>
+		</disallowedTraitsWithDegree>
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<modExtensions Inherit="False">
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+				<whitelist>
+				</whitelist>
+				<blacklist>
+					<li>Hulk</li>
+					<li>Fat</li>
+					<li>Baby</li>
+					<li>Child</li>
+				</blacklist>
+				<priority>
+					<!--When violates the black/whitelist, selected from these-->
+				</priority>
+				<!--Align body gender to pawn's gender (default: True)-->
+				<checkGender>True</checkGender>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+
+
+
+	<PawnKindDef Name="KotORSith_shocktrooper" ParentName="KotORSith_TrooperBase">
+		<defName>KotORSith_shocktrooper</defName>
+		<label>Sith shock trooper</label>
+		<combatPower>200</combatPower>
+		<minGenerationAge>23</minGenerationAge>
+		<maxGenerationAge>45</maxGenerationAge>
+		<itemQuality>Good</itemQuality>
+
+		<apparelMoney>10500~12500</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotORUtility_stronggrenade</li>
+			<li>KotOREquipment_sith</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_Backpack_light</li>
+			<li>guy762_SithHelmet_commando</li>
+			<li>guy762_SithArmor_commando</li>
+			<li>guy762_Bodysuit</li>
+			<li>guy762_energyshield_sith</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(100,100,100)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Belt</apparelLayer>
+				<color>(90,90,90)</color>
+			</li>
+		</specificApparelRequirements>
+		<biocodeWeaponChance>0.95</biocodeWeaponChance>
+		<weaponMoney>2500~37000</weaponMoney>
+		<weaponTags>
+			<li>SE_shocktrooper</li>
+			<li>KotORRocketRifle</li>
+		</weaponTags>
+
+		<techHediffsMoney>5000~7500</techHediffsMoney>
+		<techHediffsChance>4</techHediffsChance>
+		<techHediffsRequired>
+			<li>guy762_ImplantDock_II</li>
+		</techHediffsRequired>
+
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>12~16</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>10~14</range>
+			</li>
+		</skills>
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_stim_hyperbattle</thingDef>
+					<countRange>1~2</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_stim_hyperdex</thingDef>
+					<countRange>1~2</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_medpac_adv</thingDef>
+					<countRange>2~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<modExtensions Inherit="False">
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+				<whitelist>
+				</whitelist>
+				<blacklist>
+					<li>Thin</li>
+					<li>Fat</li>
+					<li>Baby</li>
+					<li>Child</li>
+				</blacklist>
+				<priority>
+					<!--When violates the black/whitelist, selected from these-->
+				</priority>
+				<!--Align body gender to pawn's gender (default: True)-->
+				<checkGender>True</checkGender>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+
+
+
+
+
+	<PawnKindDef Name="KotORSith_commando" ParentName="KotORSith_TrooperBase">
+		<defName>KotORSith_commando</defName>
+		<label>Sith commando</label>
+		<combatPower>300</combatPower>
+		<maxPerGroup>5</maxPerGroup>
+		<minGenerationAge>27</minGenerationAge>
+		<maxGenerationAge>45</maxGenerationAge>
+		<itemQuality>Excellent</itemQuality>
+
+		<apparelMoney>10500~12500</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotORUtility_stronggrenade</li>
+			<li>KotORStealthBelt_adv</li>
+			<li>KotOREquipment_sith</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_Backpack_light</li>
+			<li>guy762_SithHelmet_colorcommando</li>
+			<li>guy762_SithArmor_colorcommando</li>
+			<li>guy762_Bodysuit</li>
+			<li>guy762_energyshield_echaniHvy</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(100,100,100)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Belt</apparelLayer>
+				<color>(90,90,90)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(62,62,62)</color>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(62,62,62)</color>
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<requiredTag>KotORAccessory_specops</requiredTag>
+				<color>(155,30,25)</color>
+			</li>
+		</specificApparelRequirements>
+
+		<biocodeWeaponChance>0.95</biocodeWeaponChance>
+		<weaponMoney>15000~100000</weaponMoney>
+		<weaponTags>
+			<li>SE_redguard</li>
+			<li>SE_anyexclusiveranged</li>
+			<li>KotORRocketRifle</li>
+		</weaponTags>
+
+		<techHediffsMoney>999999</techHediffsMoney>
+		<techHediffsChance>100</techHediffsChance>
+		<techHediffsRequired>
+			<li>guy762_ImplantDock_III</li>
+		</techHediffsRequired>
+		<forcedHair>Bald</forcedHair>
+
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>14~18</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>12~16</range>
+			</li>
+		</skills>
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_stim_echani</thingDef>
+					<countRange>1~2</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_stim_hyperdex</thingDef>
+					<countRange>1~2</countRange>
+				</li>
+				<li>
+					<thingDef>guy762_medpac_life</thingDef>
+					<countRange>2~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<modExtensions Inherit="False">
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+				<whitelist>
+				</whitelist>
+				<blacklist>
+					<li>Thin</li>
+					<li>Fat</li>
+					<li>Baby</li>
+					<li>Child</li>
+				</blacklist>
+				<priority>
+					<!--When violates the black/whitelist, selected from these-->
+				</priority>
+				<!--Align body gender to pawn's gender (default: True)-->
+				<checkGender>True</checkGender>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+
+
+	<PawnKindDef Name="KotORSith_governor" ParentName="KotORSith_ForceUserBase">
+		<defName>KotORSith_governor</defName>
+		<label>Sith Governor</label>
+		<combatPower>300</combatPower>
+		<minGenerationAge>25</minGenerationAge>
+		<maxGenerationAge>55</maxGenerationAge>
+		<itemQuality>Excellent</itemQuality>
+
+		<isBoss>true</isBoss>
+		<skipResistant>true</skipResistant>
+		<factionLeader>true</factionLeader>
+		<maxPerGroup>1</maxPerGroup>
+
+		<apparelMoney>14000~16000</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotORShield_sith</li>
+			<li>KotOREquipment_sith</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_SithMask_marauder</li>
+			<li>guy762_SithArmor_marauder</li>
+		</apparelRequired>
+		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(180,180,190)</color>				<!--lighter silver-->
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<bodyPartGroup>Neck</bodyPartGroup>
+				<color>(180,180,190)</color>				<!--lighter silver-->
+			</li>
+		</specificApparelRequirements>
+
+		<weaponMoney>1600~10000</weaponMoney>
+		<weaponTags>
+			<li>SE_redguardmelee</li>
+		</weaponTags>
+
+		<!-- <techHediffsMoney>999999</techHediffsMoney> -->
+		<!-- <techHediffsChance>10</techHediffsChance> -->
+		<!-- <techHediffsRequired> -->
+		<!-- <li>guy762_ImplantDock_II</li> -->
+		<!-- </techHediffsRequired> -->
+
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>14~16</range>
+			</li>
+		</skills>
+
+		<initialWillRange>10~12</initialWillRange>
+		<initialResistanceRange>50~72</initialResistanceRange>
+
+	</PawnKindDef>
+
+
+
+
+</Defs>

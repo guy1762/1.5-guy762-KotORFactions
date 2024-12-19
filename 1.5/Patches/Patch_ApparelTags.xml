@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/ThingDef[defName="Apparel_Bandolier"]/apparel/tags</xpath>
+	  <value>
+		<li>guy762PatchedTag_Bandolier</li>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/ThingDef[defName="Apparel_CowboyHat"]/apparel/tags</xpath>
+	  <value>
+		<li>guy762PatchedTag_CowboyHat</li>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/ThingDef[defName="Apparel_Duster"]/apparel/tags</xpath>
+	  <value>
+		<li>guy762PatchedTag_Duster</li>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/ThingDef[defName="Apparel_Sash"]/apparel/tags</xpath>
+	  <value>
+		<li>guy762PatchedTag_Sash</li>
+		<li>guy762PatchedTag_RobesCapeSash</li>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/ThingDef[defName="Apparel_Cape"]/apparel/tags</xpath>
+	  <value>
+		<li>guy762PatchedTag_Cape</li>
+		<li>guy762PatchedTag_RobesCapeSash</li>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/ThingDef[defName="Apparel_RobeRoyal"]/apparel/tags</xpath>
+	  <value>
+		<li>guy762PatchedTag_PrestigeRobe</li>
+		<li>guy762PatchedTag_RobesCapeSash</li>
+	  </value>
+	</Operation>
+	
+	
+	
+	
+	
+	
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/ThingDef[defName="Apparel_Beret" or defName="Apparel_HatTop" or defName="Apparel_HatLadies"]/apparel</xpath>
+	  <value>
+		<tags>
+			<li>guy762PatchedTag_RoyalHats</li>
+		</tags>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/ThingDef[defName="Apparel_Coronet" or defName="Apparel_Crown" or defName="Apparel_CrownStellic"]/apparel/tags</xpath>
+	  <value>
+		<li>guy762PatchedTag_Crowns</li>
+	  </value>
+	</Operation>
+	
+	
+	
+	<!-- ideology (NOTE: DOES NOT HAVE A "tags" NODE BY DEFAULT!!! -->
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/ThingDef[defName="Apparel_Flophat"]/apparel</xpath>
+	  <value>
+		<tags>
+			<li>guy762PatchedTag_Flophat</li>
+		</tags>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/ThingDef[defName="Apparel_Shadecone"]/apparel</xpath>
+	  <value>
+		<tags>
+			<li>guy762PatchedTag_Shadecone</li>
+		</tags>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/ThingDef[defName="Apparel_AuthorityCap"]/apparel</xpath>
+	  <value>
+		<tags>
+			<li>guy762PatchedTag_AuthorityCap</li>
+		</tags>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/ThingDef[defName="Apparel_Slicecap"]/apparel</xpath>
+	  <value>
+		<tags>
+			<li>guy762PatchedTag_SliceCap</li>
+		</tags>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/ThingDef[defName="Apparel_Broadwrap"]/apparel</xpath>
+	  <value>
+		<tags>
+			<li>guy762PatchedTag_Broadwrap</li>
+		</tags>
+	  </value>
+	</Operation>
+	
+	
+	
+	
+</Patch>

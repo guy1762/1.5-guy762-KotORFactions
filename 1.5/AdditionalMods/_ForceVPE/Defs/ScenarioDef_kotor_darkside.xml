@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ScenarioDef MayRequire="guy762.StarWarsXenotypes">
+    <defName>KotORScenario_KotOR_DS</defName>
+    <label>The Sith Lords</label>
+    <description>Dark-side KotOR characters.</description>
+    <scenario>
+      <summary>Dark-side KotOR characters.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>PlayerColony</factionDef>
+      </playerFaction>
+      <parts>
+
+        <!-- Game start dialog -->
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+
+        <!-- Config pages -->
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+          <def>ConfigurePawnsKindDefs</def>
+          <pawnChoiceCount>5</pawnChoiceCount>
+          <!--leftBehindPawnKind>KotORPlayableHero_T3M4</leftBehindPawnKind-->
+          <kindCounts>
+			<li>
+              <kindDef>KotORPlayableVillain_Malak_VPE</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			<li>
+              <kindDef>KotORPlayableVillain_Sion_VPE</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			<li>
+              <kindDef>KotORPlayableHero_Visas_VPE</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			<li>
+              <kindDef>KotORPlayableVillain_Yuthura_VPE</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			<li>
+              <kindDef>KotORPlayableHero_MercCanderous</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			<li>
+              <kindDef>KotORPlayableVillain_Hanharr</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			<li>
+              <kindDef>KotORPlayableVillain_Bandon_VPE</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+          </kindCounts>
+        </li>
+		
+		
+		
+		
+
+        <!-- Player starting stuff spawn method-->
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+        </li>
+
+        <!-- Starting research -->
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>MicroelectronicsBasics</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_lightsabers</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_advsabers</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_workbench</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_advupgrade</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Batteries</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>WatermillGenerator</project>
+        </li>
+		
+		
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_sith</project>
+        </li>
+		
+		
+		
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_malak</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_visas</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_sion</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_canderous</project>
+        </li>
+		
+
+		<!--li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_hkequipment</project>
+        </li-->
+
+
+        <!-- Player starting things -->
+
+		<li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>guy762_KotORcredits</thingDef>
+          <count>10000</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>50</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>KOTOR_SpacerMedKit</thingDef>
+          <count>20</count>
+        </li>
+		<!--li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>guy762_medpac</thingDef>
+          <count>25</count>
+        </li-->
+		
+		
+		
+		
+		
+		
+		
+
+
+		<!-- Scatter some things near player start -->
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+			<def>ScatterThingsNearPlayerStart</def>
+			<thingDef>Steel</thingDef>
+			<count>450</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+			<def>ScatterThingsNearPlayerStart</def>
+			<thingDef>Plasteel</thingDef>
+			<count>180</count>
+		</li>
+		
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>7</count>
+        </li>
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>guy762_medpac_life</thingDef>
+          <count>10</count>
+        </li>
+		
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+			<def>StartingThing_Defined</def>
+			<thingDef>ComponentIndustrial</thingDef>
+			<count>20</count>
+		</li>
+		
+		
+		
+		<!-- Scatter some things anywhere -->
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>ShipChunk</thingDef>
+			<count>25</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>ShipChunk_durasteel</thingDef>
+			<count>10</count>
+		</li>
+		
+		
+		
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>ChunkSlagSteel</thingDef>
+			<count>100</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>KotORChunk_plasteel</thingDef>
+			<count>50</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>KotORChunk_durasteel</thingDef>
+			<count>50</count>
+		</li>
+		
+		
+		
+
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Defs>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+	<v1.5>
+		<li>/</li>
+		<li>1.5</li>
+		<li IfModActive="lee.theforce.psycast">1.5/AdditionalMods/_ForceVPE</li>
+		<li IfModActive="guy762.Lee.KotORPotF">1.5/AdditionalMods/_SWPotF</li>
+		<li IfModActive="VanillaExpanded.VMemesE">1.5/AdditionalMods/VanillaIdeologyExpanded</li>
+	</v1.5>
+</loadFolders>

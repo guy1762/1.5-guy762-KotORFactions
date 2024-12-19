@@ -1,0 +1,672 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <RoyalTitleDef Abstract="True" Name="KotORTitleHutts_base">
+    <tags>
+      <li>KotORTitleTag_Hutts</li>
+    </tags>
+    <awardThought>GainedTitle</awardThought>
+    <lostThought>LostTitle</lostThought>
+    <canBeInherited>false</canBeInherited>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+  </RoyalTitleDef>
+
+  <!-- ============== outsider titles ============================= -->
+
+  <RoyalTitleDef ParentName="KotORTitleHutts_base">
+    <defName>KotORTitleHutts_contact</defName>
+    <label>contact</label>
+    <description>The "contact" role denotes an individual who is known to a Hutt Kajidic to have skills and services they can call upon to aid in their illicit affairs.</description>
+    <seniority>0</seniority>
+    <favorCost>1</favorCost>
+    <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="KotORTitleHutts_base">
+    <defName>KotORTitleHutts_associate</defName>
+    <label>associate</label>
+    <description>The "associate" role denotes a street-level operative serving a Hutt Kajidic. This role may be given to smugglers, slaver captains, gang leaders, corrupt government personnel, and more. Associates are considered trustworthy, reliable individuals to a Hutt Kajidic, and have permission to request planetary transport to aid in their operations.</description>
+    <seniority>15</seniority>
+    <favorCost>20</favorCost>
+    <commonality>1</commonality>
+
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <replaceOnRecruited>KotORTitleHutts_contact</replaceOnRecruited>
+    <permits>
+      <li>TradeSettlement</li>
+      <li>TradeCaravan</li>
+      <li>TradeOrbital</li>
+      <li>guy762_KotORPermit_BlackMarketOrbital</li>
+    </permits>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <!-- ============== insider titles ============================= -->
+
+  <!--<RoyalTitleDef ParentName="KotORTitleHutts_base">
+    <defName>KotORTitleHutts_made</defName>
+    <label>made member</label>
+    <description>The "made member" role...</description>
+    <seniority>25</seniority>
+    <favorCost>6</favorCost>
+	<minExpectation>Moderate</minExpectation>
+	<requiredMinimumApparelQuality>Good</requiredMinimumApparelQuality>
+    <recruitmentResistanceOffset>10</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+	
+    <permitPointsAwarded>2</permitPointsAwarded>
+	
+	<awardWorkerClass Inherit="False" />
+	
+    <permits>
+      <li>TradeSettlement</li>
+      <li>TradeCaravan</li>
+      <li>TradeOrbital</li>
+    </permits>
+	
+	<foodRequirement>
+      <minQuality>MealFine</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+      </allowedDefs>
+    </foodRequirement>
+  </RoyalTitleDef>-->
+
+  <RoyalTitleDef ParentName="KotORTitleHutts_base">
+    <defName>KotORTitleHutts_lowtrader</defName>
+    <label>the Lowtrader</label>
+    <description>The "Lowtrader" title denotes a particularly wealthy, successful merchant who has been granted a place in the court of a Hutt's Kajidic. The Lowtrader title officially christens an individual as a "merchant-lord" under the feudal Hutt Kajidic system, granting them special permissions in exchange for a yearly tithe to their Kajidic's overlord. Lowtraders typically own one or two planetary or street-level businesses and directly many street-level criminal operations under a Kajidic's banner.\n\nTo aid in their affairs, Lowtraders are granted permission to summon small groups of slave laborers to serve them, as well as shipments of basic supplies and materials for manufacturing or resale to outsiders.</description>
+    <seniority>100</seniority>
+    <favorCost>25</favorCost>
+    <minExpectation>High</minExpectation>
+    <requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+    <recruitmentResistanceOffset>25</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+
+    <canBeInherited>true</canBeInherited>
+    <changeHeirQuestPoints>1600</changeHeirQuestPoints>
+
+    <permitPointsAwarded>4</permitPointsAwarded>
+    <!--disabledWorkTags>
+      <li>ManualDumb</li>
+    </disabledWorkTags-->
+    <permits>
+      <li>TradeSettlement</li>
+      <li>TradeCaravan</li>
+      <li>TradeOrbital</li>
+    </permits>
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Legs</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>KotORRoyaltyTag_HuttLegs</li>
+        </requiredTags>
+        <allowedTags>
+        </allowedTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>KotORRoyaltyTag_ExchangeJacket</li>
+          <li>KotORRoyaltyTag_drip</li>
+
+          <li>KotORRoyaltyTag_AnyHighTier</li>
+          <li>KotORRoyaltyTag_AnyMandoArmor</li>
+          <li>KotORRoyaltyTag_LSCharacterApparel</li>
+          <li>KotORRoyaltyTag_DSCharacterApparel</li>
+        </requiredTags>
+        <allowedTags>
+        </allowedTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>guy762PatchedTag_RoyalHats</li>
+          <li>guy762PatchedTag_AuthorityCap</li>
+          <li>KotORRoyaltyTag_ExchangeShades</li>
+          <li>KotORRoyaltyTag_LSCharacterApparel</li>
+          <li>KotORRoyaltyTag_DSCharacterApparel</li>
+        </requiredTags>
+        <allowedTags>
+        </allowedTags>
+      </li>
+    </requiredApparel>
+    <foodRequirement>
+      <minQuality>MealFine</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+        <li>InsectJelly</li>
+      </allowedDefs>
+    </foodRequirement>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+
+  <RoyalTitleDef ParentName="KotORTitleHutts_base">
+    <defName>KotORTitleHutts_hightrader</defName>
+    <label>the Hightrader</label>
+    <description>The "Hightrader" title denotes a particularly prestigious merchant-lord serving in a Hutt's Kajidic. The title of Hightrader is the highest honor a non-Hutt can be bestowed, but is held by Hutts and non-Hutts alike. Hightraders typically own several planetary business operations, and oversee the majority of a Kajidic's day-to-day illicit operations like smuggling, slaving, racketeering, and more.\n\nHightraders have the authority to summon small groups of Ubrikkian battle droids, gangs of thugs, Ugnaught tech specialists, and large groups of slave laborers to do their bidding. Hightraders also have permission to request shipments of rarer materials for use in manufacture or resale, including shipments of Spice and Tibanna gas.</description>
+    <seniority>250</seniority>
+    <favorCost>25</favorCost>
+    <minExpectation>SkyHigh</minExpectation>
+    <requiredMinimumApparelQuality>Good</requiredMinimumApparelQuality>
+    <recruitmentResistanceOffset>25</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+
+    <canBeInherited>true</canBeInherited>
+    <changeHeirQuestPoints>2200</changeHeirQuestPoints>
+
+    <permitPointsAwarded>4</permitPointsAwarded>
+
+    <disabledWorkTags>
+      <li>ManualDumb</li>
+      <li>PlantWork</li>
+      <li>Mining</li>
+    </disabledWorkTags>
+    <permits>
+      <li>TradeSettlement</li>
+      <li>TradeCaravan</li>
+      <li>TradeOrbital</li>
+    </permits>
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Legs</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>KotORRoyaltyTag_HuttLegs</li>
+        </requiredTags>
+        <allowedTags>
+        </allowedTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>KotORRoyaltyTag_ExchangeJacket</li>
+          <li>KotORRoyaltyTag_drip</li>
+
+          <li>KotORRoyaltyTag_AnyHighTier</li>
+          <li>KotORRoyaltyTag_AnyMandoArmor</li>
+          <li>KotORRoyaltyTag_LSCharacterApparel</li>
+          <li>KotORRoyaltyTag_DSCharacterApparel</li>
+        </requiredTags>
+        <allowedTags>
+        </allowedTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>guy762PatchedTag_RoyalHats</li>
+          <li>guy762PatchedTag_AuthorityCap</li>
+          <li>KotORRoyaltyTag_ExchangeShades</li>
+          <li>KotORRoyaltyTag_LSCharacterApparel</li>
+          <li>KotORRoyaltyTag_DSCharacterApparel</li>
+        </requiredTags>
+        <allowedTags>
+        </allowedTags>
+      </li>
+    </requiredApparel>
+    <foodRequirement>
+      <minQuality>MealFine</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+        <li>InsectJelly</li>
+      </allowedDefs>
+    </foodRequirement>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="KotORTitleHutts_base">
+    <defName>KotORTitleHutts_huun</defName>
+    <label>the H'uun</label>
+    <description>The "H'uun" title denotes a powerful Hutt of lower-caste. H'uun Kajidics are typically smaller and less influential than those ran by higher-caste clans, and manage many business operations on a single planet or star system. Though H'uuns are looked down upon by higher-caste Hutts, they still command significant respect from non-Hutts and are revered no differently. H'uuns may operate their own minor Kajidic, or serve as a high-ranking member of a high-caste Hutt's Kajidic.\n\nThose with the H'uun title hold the authority to create and manage their own Kajidic, or cartel, and as such have the authority to summon fervently loyal soldiers and guards to serve under them. They can also request large shipments of premium materials like Spice and Tibanna gas for manufacturing or resale to outsiders.</description>
+    <seniority>500</seniority>
+    <favorCost>50</favorCost>
+    <minExpectation>Noble</minExpectation>
+    <requiredMinimumApparelQuality>Excellent</requiredMinimumApparelQuality>
+    <recruitmentResistanceOffset>25</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+
+    <canBeInherited>true</canBeInherited>
+    <changeHeirQuestPoints>2800</changeHeirQuestPoints>
+
+    <permitPointsAwarded>4</permitPointsAwarded>
+
+    <modExtensions>
+      <li Class="XenoTitle.ModExtension_XenoTitle">
+        <xenotypeDefs>
+          <li>guy762_xenotype_hutt</li>
+        </xenotypeDefs>
+        <isDenylist>false</isDenylist>
+        <noFurtherTitles>true</noFurtherTitles>
+      </li>
+    </modExtensions>
+
+    <disabledWorkTags>
+      <li>Commoner</li>
+    </disabledWorkTags>
+    <permits>
+      <li>TradeSettlement</li>
+      <li>TradeCaravan</li>
+      <li>TradeOrbital</li>
+    </permits>
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Legs</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>KotORRoyaltyTag_HuttLegs</li>
+        </requiredTags>
+        <allowedTags>
+        </allowedTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>guy762PatchedTag_Sash</li>
+          <li>guy762PatchedTag_Cape</li>
+          <li>guy762PatchedTag_PrestigeRobe</li>
+        </requiredTags>
+        <allowedTags>
+        </allowedTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>guy762PatchedTag_RoyalHats</li>
+          <li>guy762PatchedTag_Crowns</li>
+        </requiredTags>
+        <allowedTags>
+        </allowedTags>
+      </li>
+    </requiredApparel>
+
+    <throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things>
+          <li>GrandThrone</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>60</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>120</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+        <count>2</count>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Column</thingDef>
+        <count>4</count>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Drape</thingDef>
+        <count>2</count>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <things>
+          <li>Harpsichord</li>
+          <li>Piano</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_AllThingsAnyOfAreGlowing">
+        <labelKey>RoomRequirementAllBraziersMustBeLit</labelKey>
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags>
+          <li>Production</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags>
+          <li>Bed</li>
+        </buildingTags>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+        <labelKey>RoomRequirementNoAltars</labelKey>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags>
+          <li>Biotech</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags>
+          <li>Anomaly</li>
+        </buildingTags>
+      </li>
+    </throneRoomRequirements>
+    <bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>30</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>70</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>EndTable</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>Dresser</thingDef>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Drape</thingDef>
+        <count>1</count>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags>
+          <li>Production</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags>
+          <li>Biotech</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags>
+          <li>Anomaly</li>
+        </buildingTags>
+      </li>
+    </bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealLavish</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+        <li>InsectJelly</li>
+      </allowedDefs>
+    </foodRequirement>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="KotORTitleHutts_base">
+    <defName>KotORTitleHutts_hutt</defName>
+    <label>the Hutt</label>
+    <description>The formal "Hutt" title is exclusive to Hutt Kajidii belonging to the 'upper castes' of Hutt society -  families and clans descended from the legendary Hutt lords who defeated Xim the Despot eons ago. Lower-caste Hutts cannot earn this title themselves in their own lifetimes, they must marry into an upper-caste family and produce offspring who may then inherit the title. Those with the formal Hutt title are the leaders of Hutt society, and are among the wealthiest beings in the galaxy. It is said that the title alone adds ten billion credits to one's net worth.\n\nThose with the title have supreme authority to do business with whoever, whatever, and wherever they please, so long as it does not challenge other holders of the title. Title holders also hold authority to command the Kajidic enforcer armies (as outlined by the Treaty of Vontor), and can summon legions of Klatoonian, Nikto, and Gamorrean soldiers as well as elite assassin droids to enforce their will.</description>
+    <seniority>1000</seniority>
+    <!-- <favorCost>10</favorCost> -->
+    <minExpectation>Royal</minExpectation>
+    <requiredMinimumApparelQuality>Excellent</requiredMinimumApparelQuality>
+    <recruitmentResistanceOffset>40</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+    <decreeMtbDays>-1</decreeMtbDays>    <!-- disabled -->
+    <!--decreeMentalBreakCommonality>4</decreeMentalBreakCommonality-->
+
+    <canBeInherited>true</canBeInherited>
+    <changeHeirQuestPoints>3600</changeHeirQuestPoints>
+
+    <permitPointsAwarded>4</permitPointsAwarded>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+    <modExtensions>
+      <li Class="XenoTitle.ModExtension_XenoTitle">
+        <xenotypeDefs>
+          <li>guy762_xenotype_hutt</li>
+        </xenotypeDefs>
+        <isDenylist>false</isDenylist>
+        <noFurtherTitles>true</noFurtherTitles>
+      </li>
+    </modExtensions>
+
+    <decreeTags>
+      <li>All</li>
+    </decreeTags>
+    <disabledWorkTags>
+      <li>Commoner</li>
+    </disabledWorkTags>
+    <permits>
+      <li>TradeSettlement</li>
+      <li>TradeCaravan</li>
+      <li>TradeOrbital</li>
+    </permits>
+
+    <grantedAbilities>
+      <li>Speech</li>
+      <!--li>guy762_Ability_CommandTierV</li-->
+    </grantedAbilities>
+    <speechCooldown>600000</speechCooldown>
+    <!--modExtensions>
+	  <li Class="TitleRemovesAbility.ModExtension_TitleRemovesAbility"> removes duplicates
+		<abilityDefs>
+          <li>guy762_Ability_CommandTierV</li>
+        </abilityDefs>
+      </li>
+	</modExtensions-->
+
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Legs</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>KotORRoyaltyTag_HuttLegs</li>
+        </requiredTags>
+        <allowedTags>
+        </allowedTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>guy762PatchedTag_Sash</li>
+          <li>guy762PatchedTag_Cape</li>
+          <li>guy762PatchedTag_PrestigeRobe</li>
+        </requiredTags>
+        <allowedTags>
+        </allowedTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>guy762PatchedTag_Crowns</li>
+        </requiredTags>
+        <allowedTags>
+        </allowedTags>
+      </li>
+    </requiredApparel>
+
+    <throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things>
+          <li>GrandThrone</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>80</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>160</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+        <count>2</count>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Column</thingDef>
+        <count>6</count>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>Piano</thingDef>
+      </li>
+      <li Class="RoomRequirement_AllThingsAnyOfAreGlowing">
+        <labelKey>RoomRequirementAllBraziersMustBeLit</labelKey>
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags>
+          <li>Production</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags>
+          <li>Bed</li>
+        </buildingTags>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+        <labelKey>RoomRequirementNoAltars</labelKey>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags>
+          <li>Biotech</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags>
+          <li>Anomaly</li>
+        </buildingTags>
+      </li>
+    </throneRoomRequirements>
+    <bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>30</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>80</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>EndTable</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>Dresser</thingDef>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Drape</thingDef>
+        <count>1</count>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags>
+          <li>Production</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags>
+          <li>Biotech</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags>
+          <li>Anomaly</li>
+        </buildingTags>
+      </li>
+    </bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealLavish</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+        <li>InsectJelly</li>
+      </allowedDefs>
+    </foodRequirement>
+  </RoyalTitleDef>
+
+
+
+</Defs>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+
+	<!-- General Details ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<name>Star Wars KotOR Factions</name>
+	<modIconPath IgnoreIfNoMatchingField="True">UI/ModIcon_guy762_KotORFactions</modIconPath>
+	<description>Adds factions, pawns, titles, and ideoligions based on factions in Star Wars: Knights of the Old Republic and Star Wars: Knights of the Old Republic II - The Sith Lords, and elsewhere in the Star Wars setting.</description>
+	<author>guy762, Lee, Kaitorisenkou, Ranger Rick</author>
+	
+	<!-- Technical Details ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<supportedVersions>
+		<!--li>1.4</li-->
+		<li>1.5</li>
+	</supportedVersions>
+	<packageId>guy762.KotORFactions</packageId>
+	
+	<!-- Requirements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<modDependencies>
+    <li>
+        <packageId>ludeon.rimworld.ideology</packageId>
+        <displayName>Rimworld: Ideology</displayName>
+        <steamWorkshopUrl>https://store.steampowered.com/app/1392840/RimWorld__Ideology/</steamWorkshopUrl>
+    </li>
+	  <!--li>
+		<packageId>VanillaExpanded.VMemesE</packageId>
+		<displayName>Vanilla Ideology Expanded - Memes and Structures</displayName>
+		<steamWorkshopUrl>steam://url/CommunityFilePage/2636329500</steamWorkshopUrl>
+	  </li-->
+	  
+	  <li>
+		<packageId>guy762.StarWarsXenotypes</packageId>
+		<displayName>Star Wars Xenotypes</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2915192253</steamWorkshopUrl>
+		<downloadUrl>https://github.com/guy1762/1.5_StarWarsXenotypes/tree/main</downloadUrl>
+	  </li>
+	  <li>
+		<packageId>guy762.KotORWeapons</packageId>
+		<displayName>Star Wars KotOR Weapons and Armor</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2938932438</steamWorkshopUrl>
+		<downloadUrl>https://github.com/guy1762/1.5ZIP_StarWarsKotORWeaponsArmor</downloadUrl>
+	  </li>
+	  <li>
+		<packageId>guy762.KotORDroids</packageId>
+		<displayName>Star Wars KotOR Droids</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3047371944</steamWorkshopUrl>
+		<downloadUrl>https://github.com/guy1762/1.5_StarWarsKotORDroids</downloadUrl>
+	  </li>
+	   <!--li>
+		<packageId>lee.theforce.psycast</packageId>
+		<displayName>Star Wars : The Force-Psycast</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3100942433</steamWorkshopUrl>
+	  </li-->
+  </modDependencies>
+  
+  <loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>smartkar.athenaframework</li>
+		<li>VanillaExpanded.VMemesE</li>
+		<li>Rick.FCP.Core.Tools.Beta</li>
+		<li>Rick.FCP.Core.Tools</li>
+		
+		<li>guy762.StarWarsXenotypes</li>
+		<li>guy762.MM.KotORCore</li>
+		<li>guy762.KotORWeapons</li>
+		<li>guy762.KotORDroids</li>
+		<li>guy762.MM.KotORVehicles</li>
+	</loadAfter>
+	<loadBefore>
+		<li>lee.theforce.psycast</li>
+		<li>guy762.Lee.KotORPotF</li>
+	</loadBefore>
+  
+</ModMetaData>

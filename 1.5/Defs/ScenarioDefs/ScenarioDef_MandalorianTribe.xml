@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+
+	<PawnKindDef Name="KotORPlayablePawn_MandoChamp" ParentName="KotORMando_champion">
+		<defName>KotORPlayablePawn_MandoChamp</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_MandalorianTribe</defaultFactionType>
+		<isBoss>false</isBoss>
+		<skipResistant>false</skipResistant>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORPlayablePawn_MandoRallyMaster" ParentName="KotORMando_rallymaster">
+		<defName>KotORPlayablePawn_MandoRallyMaster</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_MandalorianTribe</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORPlayablePawn_MandoCommando" ParentName="KotORMando_commando">
+		<defName>KotORPlayablePawn_MandoCommando</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_MandalorianTribe</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORPlayablePawn_MandoMarauder" ParentName="KotORMando_marauder">
+		<defName>KotORPlayablePawn_MandoMarauder</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_MandalorianTribe</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORPlayablePawn_MandoTrooper" ParentName="KotORMando_trooper">
+		<defName>KotORPlayablePawn_MandoTrooper</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_MandalorianTribe</defaultFactionType>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+  <ScenarioDef>
+    <defName>guy762_KotORScenario_MandalorianTribe</defName>
+    <label>The Mandalorian Tribe</label>
+    <description>Mandalore's call has been heard; the scattered clans must be reunited. Your tribe has been tasked with establishing contact with the two rival clans rumored to be hiding on this rim world and convincing them to follow Clan Ordo's quest to retake the Mandalore sector.</description>
+    <scenario>
+      <summary>A small tribe of warriors seek to unify the scattered Mandalorian clans.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>guy762_KotORPlayerFaction_MandalorianTribe</factionDef>
+      </playerFaction>
+      <parts>
+
+        <!-- Game start dialog -->
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>Mandalore's call has been heard; the scattered clans must be reunited. Your tribe has been tasked with establishing contact with the two rival clans rumored to be hiding on this rim world and convincing them to follow Clan Ordo's quest to retake the Mandalore sector. Though you are provided little, other Mandalorian warriors on this world may hear of your cause and join your tribe.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+		
+		<!-- Player starting stuff spawn method-->
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+        </li>
+	
+
+        <!-- Config pages -->
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+          <def>ConfigurePawnsKindDefs</def>
+          <pawnChoiceCount>12</pawnChoiceCount>
+          <!--leftBehindPawnKind>KotORPlayableHero_T3M4</leftBehindPawnKind-->
+          <kindCounts>
+			<li>
+              <kindDef>KotORPlayablePawn_MandoChamp</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			
+			<li>
+              <kindDef>KotORPlayablePawn_MandoRallyMaster</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			
+			<li>
+              <kindDef>KotORPlayablePawn_MandoMarauder</kindDef>
+              <count>3</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			
+			<li>
+              <kindDef>KotORPlayablePawn_MandoTrooper</kindDef>
+              <count>2</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			
+          </kindCounts>
+        </li>
+
+        <!-- Starting research -->
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>MicroelectronicsBasics</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Fabrication</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>AdvancedFabrication</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_workbench</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Batteries</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Pemmican</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>WatermillGenerator</project>
+        </li>
+		
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_mando</project>
+        </li>
+		
+		
+		
+		
+        <!-- Player starting things -->
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>5000</count>
+        </li>
+        <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>guy762_KotORLootBox_FoodMeds</thingDef>
+          <count>4</count>
+        </li>
+        <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>guy762_KotORLootBox_ShieldsStims</thingDef>
+          <count>2</count>
+        </li>
+
+
+		<!-- Scatter some things near player start -->
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+			<def>ScatterThingsNearPlayerStart</def>
+			<thingDef>Steel</thingDef>
+			<count>250</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>150</count>
+        </li>  
+		
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>7</count>
+        </li>
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>guy762_medpac_life</thingDef>
+          <count>10</count>
+        </li>
+		
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+			<def>StartingThing_Defined</def>
+			<thingDef>ComponentIndustrial</thingDef>
+			<count>20</count>
+		</li>
+		
+		
+		
+		<!-- Scatter some things anywhere -->
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>ShipChunk</thingDef>
+			<count>25</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>ShipChunk_durasteel</thingDef>
+			<count>10</count>
+		</li>
+		
+		
+		
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>ChunkSlagSteel</thingDef>
+			<count>50</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>KotORChunk_plasteel</thingDef>
+			<count>25</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>KotORChunk_durasteel</thingDef>
+			<count>25</count>
+		</li>
+
+
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+
+
+
+
+
+
+
+
+<FactionDef ParentName="PlayerFactionBase">
+    <defName>guy762_KotORPlayerFaction_MandalorianTribe</defName>
+    <label>Mandalorian tribe</label>
+    <description>A small Mandalorian tribe.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>KotORPlayablePawn_MandoCommando</basicMemberKind>
+    <pawnSingular>Mandalorian</pawnSingular>
+    <pawnsPlural>Mandalorians</pawnsPlural>
+    <techLevel>Spacer</techLevel>
+	
+    <factionNameMaker>guy762_NamerFaction_MandoClan</factionNameMaker>
+    <settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
+    <allowedCultures>
+      <li>guy762_culture_mando</li>
+    </allowedCultures>
+	<requiredMemes>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">guy762_MemeDef_mando</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_BloodCourt</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Nomad</li>
+	</requiredMemes>
+	<allowedMemes>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Bushido</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+	</allowedMemes>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+    </disallowedPrecepts>
+	
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Offworld</li>
+          <li>Pirate</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <factionIconPath>World/Mandalorians</factionIconPath>
+	<forageabilityFactor>1.4</forageabilityFactor>
+	
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>ClassicStart</li>
+      <li>ClassicStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
+  </FactionDef>
+
+
+
+
+
+
+
+
+
+
+</Defs>

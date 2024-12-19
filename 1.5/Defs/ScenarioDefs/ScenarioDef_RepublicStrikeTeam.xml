@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<PawnKindDef Name="KotORPlayablePawn_RepCom" ParentName="KotORRepub_commando">
+		<defName>KotORPlayablePawn_RepCom</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_RepublicStrikeTeam</defaultFactionType>
+	</PawnKindDef>
+	
+	
+	
+	
+	<!--
+	<PawnKindDef MayRequire="lee.theforce.psycast" Name="KotORPlayablePawn_JediConsular_VPE" ParentName="KotORRepub_jediconsular_VPE">
+		<defName>KotORPlayablePawn_JediConsular_VPE</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_RepublicStrikeTeam</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef MayRequire="lee.theforce.psycast" Name="KotORPlayablePawn_JediGuardian_VPE" ParentName="KotORRepub_jediguardian_VPE">
+		<defName>KotORPlayablePawn_JediGuardian_VPE</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_RepublicStrikeTeam</defaultFactionType>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef MayRequire="guy762.Lee.KotORPotF" Name="KotORPlayablePawn_JediConsular_PotF" ParentName="KotORRepub_jediconsular_PotF">
+		<defName>KotORPlayablePawn_JediConsular_PotF</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_RepublicStrikeTeam</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef MayRequire="guy762.Lee.KotORPotF" Name="KotORPlayablePawn_JediGuardian_PotF" ParentName="KotORRepub_jediguardian_PotF">
+		<defName>KotORPlayablePawn_JediGuardian_PotF</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_RepublicStrikeTeam</defaultFactionType>
+	</PawnKindDef>
+	
+	MOVED TO VPE AND POTF FOLDERS
+	
+	-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+  <ScenarioDef>
+    <defName>guy762_KotORScenario_RepublicStrikeTeam</defName>
+    <label>The Republic Strike Team</label>
+    <description>The briefing was short, and Admiral Onasi's orders were clear. This planet is vital to the Republic's stability, and a prolonged conflict here could lead to a full-blown Republic Civil War. Find a peaceful resolution as quickly as possible without escalating tensions with the rival starfleet.</description>
+    <scenario>
+      <summary>Two Jedi and four Republic Commandos set out to bring peace to this troubled world.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>guy762_KotORPlayerFaction_RepublicStrikeTeam</factionDef>
+      </playerFaction>
+      <parts>
+
+        <!-- Game start dialog -->
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>The briefing was short, and Admiral Onasi's orders were clear. This planet is vital to the Republic's stability, and a prolonged conflict here could lead to a full-blown Republic Civil War. Find a peaceful resolution as quickly as possible without escalating tensions with the rival starfleet.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+		
+		<!-- Player starting stuff spawn method-->
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>DropPods</method>
+          <visible>false</visible>
+        </li>
+	
+
+        <!-- Config pages -->
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+          <def>ConfigurePawnsKindDefs</def>
+          <pawnChoiceCount>10</pawnChoiceCount>
+          <!--leftBehindPawnKind>KotORPlayableHero_T3M4</leftBehindPawnKind-->
+          <kindCounts>
+			<li>
+              <kindDef>KotORPlayablePawn_RepCom</kindDef>
+              <count>4</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			
+			
+			<li MayRequire="lee.theforce.psycast">
+              <kindDef>KotORPlayablePawn_JediConsular_VPE</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			<li MayRequire="lee.theforce.psycast">
+              <kindDef>KotORPlayablePawn_JediGuardian_VPE</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			
+			
+			<li MayRequire="guy762.Lee.KotORPotF">
+              <kindDef>KotORPlayablePawn_JediConsular_PotF</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			<li MayRequire="guy762.Lee.KotORPotF">
+              <kindDef>KotORPlayablePawn_JediGuardian_PotF</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+          </kindCounts>
+        </li>
+
+        <!-- Starting research -->
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>MicroelectronicsBasics</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Fabrication</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>AdvancedFabrication</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_lightsabers</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_workbench</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Batteries</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Pemmican</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>WatermillGenerator</project>
+        </li>
+		
+		
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_jedi</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_republic</project>
+        </li>
+		
+		
+        <!-- Player starting things -->
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>guy762_KotORcredits</thingDef>
+          <count>5000</count>
+        </li>
+        <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>guy762_KotORLootBox_FoodMeds</thingDef>
+          <count>4</count>
+        </li>
+        <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>guy762_KotORLootBox_ShieldsStims</thingDef>
+          <count>2</count>
+        </li>
+		
+		
+
+
+		<!-- Scatter some things near player start -->
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+			<def>ScatterThingsNearPlayerStart</def>
+			<thingDef>Steel</thingDef>
+			<count>250</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>150</count>
+        </li>  
+		
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>7</count>
+        </li>
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>guy762_medpac_life</thingDef>
+          <count>10</count>
+        </li>
+		
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+			<def>StartingThing_Defined</def>
+			<thingDef>ComponentIndustrial</thingDef>
+			<count>20</count>
+		</li>
+		
+		
+		
+		<!-- Scatter some things anywhere -->
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>ShipChunk</thingDef>
+			<count>25</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>ShipChunk_durasteel</thingDef>
+			<count>10</count>
+		</li>
+		
+		
+		
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>ChunkSlagSteel</thingDef>
+			<count>50</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>KotORChunk_plasteel</thingDef>
+			<count>25</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>KotORChunk_durasteel</thingDef>
+			<count>25</count>
+		</li>
+
+
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+
+
+
+
+
+
+
+
+<FactionDef ParentName="PlayerFactionBase">
+    <defName>guy762_KotORPlayerFaction_RepublicStrikeTeam</defName>
+    <label>Republic strike team</label>
+    <description>A strike team of Jedi and elite Republic commandos.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>KotORPlayablePawn_RepCom</basicMemberKind>
+    <pawnSingular>commando</pawnSingular>
+    <pawnsPlural>commandos</pawnsPlural>
+    <techLevel>Spacer</techLevel>
+	
+    <factionNameMaker>guy762_NamerFaction_PlayerRepublic</factionNameMaker>
+    <settlementNameMaker>guy762_NamerSettlement_ORStarfleet</settlementNameMaker>
+    <allowedCultures>
+		<li>guy762_culture_coreworlds</li>
+	</allowedCultures>
+	<disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+    </disallowedPrecepts>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <factionIconPath>World/OldRepublic</factionIconPath>
+	<forageabilityFactor>1.2</forageabilityFactor>
+	
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>ClassicStart</li>
+      <li>ClassicStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
+  </FactionDef>
+  
+  <RulePackDef>
+    <defName>guy762_NamerFaction_PlayerRepublic</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[greek] [squad]</li>
+
+
+        <li>squad->Squad</li>
+
+        <li>greek->Alpha</li>
+        <li>greek->Beta</li>
+        <li>greek->Gamma</li>
+        <li>greek->Delta</li>
+        <li>greek->Epsilon</li>
+        <li>greek->Zeta</li>
+        <li>greek->Eta</li>
+        <li>greek->Theta</li>
+        <li>greek->Lambda</li>
+        <li>greek->Xi</li>
+        <li>greek->Omicron</li>
+        <li>greek->Rho</li>
+        <li>greek->Sigma</li>
+        <li>greek->Tau</li>
+        <li>greek->Upsilon</li>
+        <li>greek->Psi</li>
+        <li>greek->Omega</li>
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+
+
+
+
+
+
+
+
+</Defs>

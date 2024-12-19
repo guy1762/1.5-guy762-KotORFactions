@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<FactionDef ParentName="FactionBase">
+    <defName>guy762_KotORFaction_SithEmpire</defName>
+    <label>Sith empire</label>
+    <description>Revan and Malak's Sith empire, powered by the Star Forge and devoted to toppling the Republic and the Jedi.\n\nDEV'S NOTE: This bonus faction is largely identical to the "Sith remnant" faction, but has different world map parameters that present it as a massive occupational force meant to represent the Sith at their height during the Jedi Civil War.</description>
+    <pawnSingular>sith</pawnSingular>
+    <pawnsPlural>sith</pawnsPlural>
+    <categoryTag>Empire</categoryTag>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>2</maxConfigurableAtWorldCreation>
+	<listOrderPriority>777</listOrderPriority>
+	<configurationListOrderPriority>777</configurationListOrderPriority>
+    <maxCountAtGameStart>2</maxCountAtGameStart>
+	<techLevel>Spacer</techLevel>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+	<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+    <factionIconPath>World/RevanSith</factionIconPath>
+	<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+	<allowedArrivalTemperatureRange>-40~65</allowedArrivalTemperatureRange>
+    <colorSpectrum>
+      <li>RGB(7,172,255)</li>
+    </colorSpectrum>
+    <!--permanentEnemy>true</permanentEnemy>
+	<permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer-->
+	
+    <!-- <factionNameMaker>guy762_NamerFaction_SithRemnant</factionNameMaker> -->
+	<fixedName>Sith Empire</fixedName>
+    <settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
+	
+	<leaderTitle>Sith lord</leaderTitle>
+	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+	<fixedLeaderKinds>
+      <li MayRequire="guy762.Lee.KotORPotF">KotORSith_warlord_PotF</li>
+      <li MayRequire="lee.theforce.psycast">KotORSith_warlord_VPE</li>
+	  <li>KotORSith_governor</li>
+    </fixedLeaderKinds>
+	
+	
+	<naturalEnemy>true</naturalEnemy>
+	<settlementGenerationWeight>10</settlementGenerationWeight>
+	<modExtensions>
+      <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Currencies.CurrencyReplacement">
+		<currency>guy762_KotORcredits</currency>
+	  </li>
+	  <li Class="VFECore.FactionDefExtension">
+		<startingGoodwillByFactionDefs>
+			<guy762_KotORFaction_OldRepublic>-100</guy762_KotORFaction_OldRepublic>
+			<guy762_KotORFaction_CorruptRepublic>-50</guy762_KotORFaction_CorruptRepublic>
+			
+			<guy762_KotORFaction_SithRemnant>100</guy762_KotORFaction_SithRemnant>
+			<guy762_KotORFaction_KrathRaiders>100</guy762_KotORFaction_KrathRaiders>
+			
+			<guy762_KotORFaction_Militia>-100</guy762_KotORFaction_Militia>
+			<guy762_KotORFaction_Rebellion>-100</guy762_KotORFaction_Rebellion>
+			
+			<guy762_KotORFaction_HuttCartel>0~50</guy762_KotORFaction_HuttCartel>
+			<guy762_KotORFaction_ViciousHutts>0</guy762_KotORFaction_ViciousHutts>
+			
+			<guy762_KotORFaction_MandoClan>0~50</guy762_KotORFaction_MandoClan>
+			<guy762_KotORFaction_SavageMandos>50~100</guy762_KotORFaction_SavageMandos>
+			
+			<guy762_KotORFaction_Czerka>100</guy762_KotORFaction_Czerka>
+			<guy762_KotORFaction_Exchange>0</guy762_KotORFaction_Exchange>
+			<guy762_KotORFaction_Civilians>-100</guy762_KotORFaction_Civilians>
+			
+			<guy762_KotORFaction_MandoNeoCrusaders>-50</guy762_KotORFaction_MandoNeoCrusaders>
+			<guy762_KotORFaction_SithEmpire>-100</guy762_KotORFaction_SithEmpire>
+			
+			<guy762_KotORPlayerFaction_RepublicStrikeTeam>-100</guy762_KotORPlayerFaction_RepublicStrikeTeam>
+			<guy762_KotORPlayerFaction_SmugglerCrew>-25</guy762_KotORPlayerFaction_SmugglerCrew>
+			<guy762_KotORPlayerFaction_MandalorianTribe>-25</guy762_KotORPlayerFaction_MandalorianTribe>
+			<guy762_KotORPlayerFaction_SithWarlord>100</guy762_KotORPlayerFaction_SithWarlord>
+			<guy762_KotORPlayerFaction_HuttUpstart>-25</guy762_KotORPlayerFaction_HuttUpstart>
+			
+			<!--guy762_KotORFaction_Trandoshans>25~50</guy762_KotORFaction_Trandoshans>
+			<guy762_KotORFaction_MercGuild>25~50</guy762_KotORFaction_MercGuild-->
+		</startingGoodwillByFactionDefs>
+		<excludeFromCommConsole>false</excludeFromCommConsole>
+		<hasCities>true</hasCities>
+      </li>
+	  <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Core.ModExtension_FixedIdeo">
+		<ideoIconDef>guy762_IdeoIcon_sithC</ideoIconDef>
+		<ideoColorDef>DarkGrey</ideoColorDef>
+		<memberName>Sith</memberName>
+		<adjective>Sith</adjective>
+		<roleOverrides>
+			<li>
+				<preceptDef>IdeoRole_Leader</preceptDef>
+				<newName>Dark Lord</newName>
+				<disableApparelRequirements>true</disableApparelRequirements>
+			</li>
+			<li MayRequire="VanillaExpanded.VMemesE">
+				<preceptDef>guy762_KotORIdeoRole_Inquisitor</preceptDef>
+				<newName>Inquisitor</newName>
+				<disableApparelRequirements>true</disableApparelRequirements>
+				<!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
+			</li>
+			<li>
+				<preceptDef>IdeoRole_MeleeSpecialist</preceptDef>
+				<newName>Marauder</newName>
+				<disableApparelRequirements>true</disableApparelRequirements>
+				<!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
+			</li>
+		</roleOverrides>
+	  </li>
+    </modExtensions>
+	<!--permanentEnemyToEveryoneExcept>
+      <li>OutlanderCivil</li>
+      <li>TribeCivil</li>
+      <li>PlayerTribe</li>
+      <li>PlayerColony</li>
+      <li>Ancients</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Beggars</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">ResearchExpedition</li>
+    </permanentEnemyToEveryoneExcept-->
+	
+	
+    <allowedCultures>
+		<li>guy762_culture_coreworlds</li>
+		<li>guy762_culture_sith</li>
+	</allowedCultures>
+	
+	<requiredMemes>
+		<li MayRequire="Ludeon.RimWorld.Ideology">guy762_MemeDef_sith</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_BloodCourt</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_PsychicFocus</li>
+		
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Authoritarianism</li>
+	</requiredMemes>
+	<allowedMemes>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_ViolentConversion</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Nationalist</li>
+	</allowedMemes>
+	<disallowedPrecepts>
+		<li MayRequire="VanillaExpanded.VMemesE">IdeoRole_Moralist</li> <!-- disabled if VME isn't loaded -->
+		
+		<!--li MayRequire="VanillaExpanded.VMemesE">VME_Leader_BestFighter</li-->		
+		
+		<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">NobleDespisedWeapons</li>
+		
+		<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Exalted</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Respected</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Approved</li>
+		
+		<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Essential</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Important</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Worthwhile</li>
+		
+		<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Abhorrent</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Horrible</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Execution_HorribleIfInnocent</li>
+		
+		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+		
+		<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Abhorrent</li>
+		<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Horrible</li>
+		<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Disapproved</li>
+	</disallowedPrecepts>
+	
+	<!--structureMemeWeights>
+	  <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">0</Structure_TheistEmbodied>
+	  <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">0.75</Structure_TheistAbstract>
+	  <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">0.5</Structure_Ideological>
+	  <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_Archist>
+	  <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginChristian>
+	  <Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginIslamic>
+	  <Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginHindu>
+	  <Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginBuddhist>
+	</structureMemeWeights-->
+	
+	<xenotypeSet>
+	  <xenotypeChances>
+		<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.66</Baseliner>
+		<guy762_xenotype_arkanian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_arkanian>
+		<guy762_xenotype_devaronian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_devaronian>
+		<guy762_xenotype_echani MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_echani>
+		<guy762_xenotype_iridonian MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_iridonian>
+		<guy762_xenotype_mirialan MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_mirialan>
+		<guy762_xenotype_pantoran MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_pantoran>
+		<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_twilek>
+		<guy762_xenotype_umbaran MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_umbaran>
+		<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_zabrak>
+		<guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_zeltron>
+		<guy762_xenotype_zygerrian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_zygerrian> <!-- total 1.00 -->
+	  </xenotypeChances>
+	</xenotypeSet>
+		
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Pirate</li>
+        </categories>
+		<commonality>0.5</commonality>
+      </li>
+	  <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+        <commonality>0.5</commonality>
+      </li>
+    </backstoryFilters>
+	
+	
+	<!--caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+      <li>Caravan_Outlander_PirateMerchant</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds-->
+	
+	
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,50)</li> <!-- cost of patrol droids -->
+        <li>(200, 95)</li> <!-- includes troopers/lieutenants -->
+        <li>(750, 150)</li> <!-- includes heavies/elites/sentinels/operatives/acolytes -->
+        <li>(2500, 250)</li> <!-- includes shocktroops/assaultdroid mk1/assassins/warriors -->
+        <li>(1501, 10000)</li> <!-- includes marauders/redguards and unused commandos -->
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+	
+	<apparelStuffFilter>
+      <thingDefs>
+        <li>Leather_Patch</li>
+        <li>KOTOR_FabricArmorweave</li>
+		<li>Plasteel</li>
+		<li>KOTOR_AlloyDurasteel</li>
+      </thingDefs>
+    </apparelStuffFilter>
+	
+	
+	
+    <pawnGroupMakers>
+	
+      <li>
+        <!-- quick raid -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+		<disallowedStrategies>
+			<li>Siege</li>
+			<li>EmergeFromWater</li>
+			<li>StageThenAttack</li>
+			<li>ImmediateAttackSappers</li>
+			<li>ImmediateAttackBreaching</li>
+			<li>ImmediateAttackBreachingSmart</li>
+		</disallowedStrategies>
+        <options>
+          <KotORSith_trooper>50</KotORSith_trooper>
+          <KotORSith_troopermelee>100</KotORSith_troopermelee>
+		  <KotORSith_droid_MPDMkI MayRequire="guy762.KotORDroids">75</KotORSith_droid_MPDMkI>
+		  <KotORSith_droid_SentWD MayRequire="guy762.KotORDroids">25</KotORSith_droid_SentWD>
+          <KotORSith_elitemelee>25</KotORSith_elitemelee>
+		  <KotORSith_lieutenant>25</KotORSith_lieutenant>
+		  
+		  <KotORSith_acolyte_PotF MayRequire="guy762.Lee.KotORPotF">10</KotORSith_acolyte_PotF>
+          <KotORSith_warrior_PotF MayRequire="guy762.Lee.KotORPotF">5</KotORSith_warrior_PotF>
+		  
+		  <KotORSith_acolyte_VPE MayRequire="lee.theforce.psycast">10</KotORSith_acolyte_VPE>
+          <KotORSith_warrior_VPE MayRequire="lee.theforce.psycast">5</KotORSith_warrior_VPE>
+        </options>
+      </li>
+	  
+	  <li>
+        <!-- skirmish -->
+        <kindDef>Combat</kindDef>
+        <commonality>75</commonality>
+		<disallowedStrategies>
+			<li>Siege</li>
+			<li>EmergeFromWater</li>
+			<li>ImmediateAttackSmart</li>
+			<li>ImmediateAttackSappers</li>
+			<li>ImmediateAttackBreaching</li>
+			<li>ImmediateAttackBreachingSmart</li>
+		</disallowedStrategies>
+        <options>
+          <KotORSith_trooper>100</KotORSith_trooper>
+          <KotORSith_troopermelee>75</KotORSith_troopermelee>
+          <KotORSith_hvytrooper>25</KotORSith_hvytrooper>
+		  <KotORSith_droid_MPDMkI MayRequire="guy762.KotORDroids">50</KotORSith_droid_MPDMkI>
+          <KotORSith_droid_SentWD MayRequire="guy762.KotORDroids">25</KotORSith_droid_SentWD>
+		  <KotORSith_droid_ADMkI MayRequire="guy762.KotORDroids">5</KotORSith_droid_ADMkI>
+          <KotORSith_elite>10</KotORSith_elite>
+          <KotORSith_elitemelee>5</KotORSith_elitemelee>
+		  <KotORSith_lieutenant>50</KotORSith_lieutenant>
+		  
+		  <KotORSith_warrior_PotF MayRequire="guy762.Lee.KotORPotF">5</KotORSith_warrior_PotF>
+		  
+		  <KotORSith_warrior_VPE MayRequire="lee.theforce.psycast">5</KotORSith_warrior_VPE>
+        </options>
+      </li>
+	  
+	  <li>
+        <!-- territory intrusion -->
+        <kindDef>Combat</kindDef>
+        <commonality>50</commonality>
+		<disallowedStrategies>
+			<li>EmergeFromWater</li>
+			<li>ImmediateAttack</li>
+			<li>ImmediateAttackSmart</li>
+			<li>ImmediateAttackSappers</li>
+			<li>ImmediateAttackBreaching</li>
+			<li>ImmediateAttackBreachingSmart</li>
+		</disallowedStrategies>
+        <options>
+          <KotORSith_trooper>100</KotORSith_trooper>
+          <KotORSith_troopermelee>25</KotORSith_troopermelee>
+		  <KotORSith_hvytrooper>25</KotORSith_hvytrooper>
+          <KotORSith_droid_SentWD MayRequire="guy762.KotORDroids">75</KotORSith_droid_SentWD>
+		  <KotORSith_droid_ADMkI MayRequire="guy762.KotORDroids">50</KotORSith_droid_ADMkI>
+          <KotORSith_droid_ADMkIV MayRequire="guy762.KotORDroids">25</KotORSith_droid_ADMkIV>
+          <KotORSith_elite>10</KotORSith_elite>
+          <KotORSith_elitemelee>5</KotORSith_elitemelee>
+          <KotORSith_lieutenant>100</KotORSith_lieutenant>
+		  
+		  <KotORSith_acolyte_PotF MayRequire="guy762.Lee.KotORPotF">10</KotORSith_acolyte_PotF>
+          <KotORSith_warrior_PotF MayRequire="guy762.Lee.KotORPotF">5</KotORSith_warrior_PotF>
+		  
+		  <KotORSith_acolyte_VPE MayRequire="lee.theforce.psycast">10</KotORSith_acolyte_VPE>
+          <KotORSith_warrior_VPE MayRequire="lee.theforce.psycast">5</KotORSith_warrior_VPE>
+        </options>
+      </li>
+	  
+	  <li>
+        <!-- assault -->
+        <kindDef>Combat</kindDef>
+        <commonality>25</commonality>
+		<disallowedStrategies>
+			<li>Siege</li>
+			<li>StageThenAttack</li>
+			<li>ImmediateAttack</li>
+		</disallowedStrategies>
+        <options>
+          <KotORSith_droid_SentWD MayRequire="guy762.KotORDroids">100</KotORSith_droid_SentWD>
+		  <KotORSith_droid_ADMkI MayRequire="guy762.KotORDroids">75</KotORSith_droid_ADMkI>
+          <KotORSith_droid_ADMkIV MayRequire="guy762.KotORDroids">50</KotORSith_droid_ADMkIV>
+		  <KotORSith_trooper>75</KotORSith_trooper>
+          <KotORSith_troopermelee>25</KotORSith_troopermelee>
+		  <KotORSith_hvytrooper>50</KotORSith_hvytrooper>
+		  <KotORSith_elite>25</KotORSith_elite>
+          <KotORSith_elitemelee>10</KotORSith_elitemelee>
+		  <KotORSith_lieutenant>100</KotORSith_lieutenant>
+          <KotORSith_operative>50</KotORSith_operative>
+		  
+		  <KotORSith_acolyte_PotF MayRequire="guy762.Lee.KotORPotF">25</KotORSith_acolyte_PotF>
+          <KotORSith_warrior_PotF MayRequire="guy762.Lee.KotORPotF">10</KotORSith_warrior_PotF>
+		  
+		  <KotORSith_acolyte_VPE MayRequire="lee.theforce.psycast">25</KotORSith_acolyte_VPE>
+          <KotORSith_warrior_VPE MayRequire="lee.theforce.psycast">10</KotORSith_warrior_VPE>
+        </options>
+      </li>
+	  
+	  <li>
+        <!-- mega assault -->
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+		<disallowedStrategies>
+			<li>Siege</li>
+			<li>StageThenAttack</li>
+			<li>ImmediateAttack</li>
+		</disallowedStrategies>
+        <options>
+		  <KotORSith_droid_ADMkI MayRequire="guy762.KotORDroids">75</KotORSith_droid_ADMkI>
+          <KotORSith_droid_ADMkIV MayRequire="guy762.KotORDroids">50</KotORSith_droid_ADMkIV>
+		  <KotORSith_hvytrooper>25</KotORSith_hvytrooper>
+		  <KotORSith_elite>50</KotORSith_elite>
+          <KotORSith_elitemelee>25</KotORSith_elitemelee>
+          <KotORSith_shocktrooper>50</KotORSith_shocktrooper>
+		  <KotORSith_lieutenant>100</KotORSith_lieutenant>
+		  
+          <KotORSith_warrior_PotF MayRequire="guy762.Lee.KotORPotF">25</KotORSith_warrior_PotF>
+          <KotORSith_marauder_PotF MayRequire="guy762.Lee.KotORPotF">10</KotORSith_marauder_PotF>
+		  
+		  <KotORSith_warrior_VPE MayRequire="lee.theforce.psycast">25</KotORSith_warrior_VPE>
+          <KotORSith_marauder_VPE MayRequire="lee.theforce.psycast">10</KotORSith_marauder_VPE>
+        </options>
+      </li>
+	  
+	  
+	  <li>
+        <!-- assassination team -->
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+		<disallowedStrategies>
+			<li>Siege</li>
+			<li>StageThenAttack</li>
+			<li>ImmediateAttack</li>
+			<li>ImmediateAttackBreaching</li>
+		</disallowedStrategies>
+        <options>
+		  <KotORSith_operative>50</KotORSith_operative>
+		  
+		  <KotORSith_assassin_PotF MayRequire="guy762.Lee.KotORPotF">100</KotORSith_assassin_PotF>
+		  
+		  <KotORSith_assassin_VPE MayRequire="lee.theforce.psycast">100</KotORSith_assassin_VPE>
+        </options>
+      </li>
+	  
+	  
+	  
+	  
+	  
+	  <li>
+		<kindDef>Settlement</kindDef> <!-- occupied settlement -->
+		<commonality>1</commonality>
+		<options>
+		  <KotORCiv_prole>15</KotORCiv_prole>
+		  <KotORCiv_mid>5</KotORCiv_mid>
+		  <KotORCiv_bougie>1</KotORCiv_bougie>
+		  
+		  <KotORCiv_spacer>1</KotORCiv_spacer>
+		  <KotORCiv_doctormid>1</KotORCiv_doctormid>
+		  
+		  <KotORSith_ensign>10</KotORSith_ensign>
+		  <KotORSith_engineer>5</KotORSith_engineer>
+		  
+		  <KotORCzrka_droid_GE3PD MayRequire="guy762.KotORDroids">1</KotORCzrka_droid_GE3PD>
+		  <KotORDroidGood_R8009 MayRequire="guy762.KotORDroids">2.5</KotORDroidGood_R8009>
+		  <KotORDroidGood_3C MayRequire="guy762.KotORDroids">0.5</KotORDroidGood_3C>
+		  
+		  <KotORSith_trooper>10</KotORSith_trooper>
+		  <KotORSith_elite>5</KotORSith_elite>
+		  <KotORCzrka_droid_SentWD MayRequire="guy762.KotORDroids">5</KotORCzrka_droid_SentWD>
+		  <KotORSith_droid_MPDMkI MayRequire="guy762.KotORDroids">10</KotORSith_droid_MPDMkI>
+		  
+		  <KotORSith_lieutenant>100</KotORSith_lieutenant>
+		</options>
+	  </li>
+	  
+	  
+	  <li>
+		<kindDef>Settlement</kindDef> <!-- base -->
+		<commonality>0.5</commonality>
+		<options>
+		  <KotORCzrka_slave>5</KotORCzrka_slave>
+		  
+		  <KotORSith_ensign>10</KotORSith_ensign>
+		  <KotORSith_engineer>5</KotORSith_engineer>
+		  
+		  <KotORCzrka_droid_GE3PD MayRequire="guy762.KotORDroids">1</KotORCzrka_droid_GE3PD>
+		  <KotORDroidGood_R8009 MayRequire="guy762.KotORDroids">2.5</KotORDroidGood_R8009>
+		  <KotORDroidGood_3C MayRequire="guy762.KotORDroids">0.5</KotORDroidGood_3C>
+		  
+		  <KotORSith_trooper>10</KotORSith_trooper>
+		  <KotORSith_troopermelee>10</KotORSith_troopermelee>
+		  <KotORSith_elite>5</KotORSith_elite>
+		  <KotORSith_elitemelee>5</KotORSith_elitemelee>
+		  <KotORCzrka_droid_SentWD MayRequire="guy762.KotORDroids">10</KotORCzrka_droid_SentWD>
+		  <KotORCzrka_droid_ADMkI MayRequire="guy762.KotORDroids">5</KotORCzrka_droid_ADMkI>
+		  <KotORCzrka_droid_ADMkIV MayRequire="guy762.KotORDroids">5</KotORCzrka_droid_ADMkIV>
+		  
+		  <KotORSith_operative>5</KotORSith_operative>
+		  <KotORSith_lieutenant>100</KotORSith_lieutenant>
+		  <KotORSith_tactician>100</KotORSith_tactician>
+		  <KotORSith_captain>100</KotORSith_captain>
+		  
+		  <KotORSith_darkjedi_PotF MayRequire="guy762.Lee.KotORPotF">5</KotORSith_darkjedi_PotF>
+		  
+		  <KotORSith_darkjedi_VPE MayRequire="lee.theforce.psycast">10</KotORSith_darkjedi_VPE>
+		</options>
+	  </li>
+	  <li>
+		<kindDef>Settlement</kindDef> <!-- sith temple -->
+		<commonality>0.01</commonality>
+		<options>
+		  <KotORCzrka_slave>10</KotORCzrka_slave>
+		  
+		  <KotORSith_ensign>5</KotORSith_ensign>
+		  <KotORSith_engineer>5</KotORSith_engineer>
+		  
+		  <KotORSith_elite>10</KotORSith_elite>
+		  <KotORSith_elitemelee>10</KotORSith_elitemelee>
+		  <KotORCzrka_droid_ADMkIV MayRequire="guy762.KotORDroids">5</KotORCzrka_droid_ADMkIV>
+		  
+		  <KotORSith_darkjedi_PotF MayRequire="guy762.Lee.KotORPotF">10</KotORSith_darkjedi_PotF>
+		  <KotORSith_acolyte_PotF MayRequire="guy762.Lee.KotORPotF">25</KotORSith_acolyte_PotF>
+		  <KotORSith_warrior_PotF MayRequire="guy762.Lee.KotORPotF">25</KotORSith_warrior_PotF>
+		  <KotORSith_assassin_PotF MayRequire="guy762.Lee.KotORPotF">10</KotORSith_assassin_PotF>
+          <KotORSith_marauder_PotF MayRequire="guy762.Lee.KotORPotF">10</KotORSith_marauder_PotF>
+		  
+		  <KotORSith_darkjedi_VPE MayRequire="lee.theforce.psycast">10</KotORSith_darkjedi_VPE>
+		  <KotORSith_acolyte_VPE MayRequire="lee.theforce.psycast">25</KotORSith_acolyte_VPE>
+		  <KotORSith_warrior_VPE MayRequire="lee.theforce.psycast">25</KotORSith_warrior_VPE>
+		  <KotORSith_assassin_VPE MayRequire="lee.theforce.psycast">10</KotORSith_assassin_VPE>
+          <KotORSith_marauder_VPE MayRequire="lee.theforce.psycast">10</KotORSith_marauder_VPE>
+		  
+		  <KotORSith_operative>10</KotORSith_operative>
+		  <KotORSith_lieutenant>100</KotORSith_lieutenant>
+		  <KotORSith_captain>100</KotORSith_captain>
+		  
+		  <KotORSith_redguardmelee_PotF MayRequire="guy762.Lee.KotORPotF">100</KotORSith_redguardmelee_PotF>
+		  <KotORSith_warlord_PotF MayRequire="guy762.Lee.KotORPotF">100</KotORSith_warlord_PotF>
+		  
+		  <KotORSith_redguardmelee_VPE MayRequire="lee.theforce.psycast">100</KotORSith_redguardmelee_VPE>
+		  <KotORSith_warlord_VPE MayRequire="lee.theforce.psycast">100</KotORSith_warlord_VPE>
+		</options>
+	  </li>
+	  
+	  
+    </pawnGroupMakers>
+	
+	<raidLootMaker>guy762_RaidLootMaker_KotORSith</raidLootMaker>
+  </FactionDef>
+  
+
+  
+
+  
+  
+</Defs>

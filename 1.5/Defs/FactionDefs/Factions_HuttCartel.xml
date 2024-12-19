@@ -1,0 +1,780 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<FactionDef ParentName="FactionBase">
+    <defName>guy762_KotORFaction_HuttCartel</defName>
+    <label>cunning Hutt cartel</label>
+    <description>An influential Hutt Kajidic (cartel) controlling many planetary business enterprises, both legal and illegal (at least according to the planetary militia's law). Hutt Kajidics have been a mainstay on outer rim worlds like these for eons, typically acting as a protectorate for non-human settlers who feel marginalized by Republic-backed governments. Each Kajidic has a huge economic influence on the world(s) on which they reside, often being the sole source of many vital resources like Tibanna gas and Spice.\n\nWhile Hutt Kajidics often find themselves in fierce economic conflict with the Republic and many Republic-backed organizations like Czerka, many cunning Hutts are open to doing business with outsiders and strive to maintain cordial relations with their planet's populace.</description>
+    <!-- <description>The Hutt Kajidics, or cartels, have controlled essentially all commerce in the Outer Rim for eons, dating back earlier than the formation of the Galactic Republic. While never directly involving themselves in planetary governance, and rarely having to deploy any standing army, the Hutts exert their influence purely through economic control; ensuring the efficient trade of vital resources like Spice, starship fuel, and Tibanna gas on a scale that has taken Republic-based corporations many millennia to match. These services are essential for the well–being of colony worlds in the Rim, and most planetary governments know to turn a blind eye to the Hutts’ more salacious dealings in the criminal underworld.\n\nThis Hutt cartel is particularly cunning, and is notably more open to cooperating with outsiders in order to achieve their goals.</description> -->
+    <pawnSingular>scum</pawnSingular>
+    <pawnsPlural>scum</pawnsPlural>
+    <categoryTag>Pirate</categoryTag>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <maxCountAtGameStart>8</maxCountAtGameStart>
+	<listOrderPriority>768</listOrderPriority>
+	<configurationListOrderPriority>768</configurationListOrderPriority>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+	<hostileToFactionlessHumanlikes>false</hostileToFactionlessHumanlikes>
+    <factionIconPath>World/HuttClans</factionIconPath>
+    <colorSpectrum>
+      <li>RGB(120,120,50)</li>
+    </colorSpectrum>
+    <permanentEnemy>false</permanentEnemy>
+    <factionNameMaker>guy762_NamerFaction_HuttCartel</factionNameMaker>
+    <settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
+	<techLevel>Spacer</techLevel>
+	<allowedArrivalTemperatureRange>0~45</allowedArrivalTemperatureRange>
+	
+	<leaderTitle>kajidii</leaderTitle>
+	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+	<fixedLeaderKinds>
+		<li>KotORHutts_HuttLord</li>
+	</fixedLeaderKinds>
+	
+	
+	<settlementGenerationWeight>4</settlementGenerationWeight>
+	<modExtensions>
+      <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Currencies.CurrencyReplacement">
+		<currency>Silver</currency>
+	  </li>
+	  <li Class="VFECore.FactionDefExtension">
+		<startingGoodwillByFactionDefs>
+			<guy762_KotORFaction_OldRepublic>-100~-25</guy762_KotORFaction_OldRepublic>
+			<guy762_KotORFaction_CorruptRepublic>-100</guy762_KotORFaction_CorruptRepublic>
+			
+			<guy762_KotORFaction_SithRemnant>0</guy762_KotORFaction_SithRemnant>
+			<guy762_KotORFaction_KrathRaiders>-100</guy762_KotORFaction_KrathRaiders>
+			
+			<guy762_KotORFaction_Militia>-100~-25</guy762_KotORFaction_Militia>
+			<guy762_KotORFaction_Rebellion>-25~50</guy762_KotORFaction_Rebellion>
+			
+			<guy762_KotORFaction_HuttCartel>-100</guy762_KotORFaction_HuttCartel>
+			<guy762_KotORFaction_ViciousHutts>-100</guy762_KotORFaction_ViciousHutts>
+			
+			<guy762_KotORFaction_MandoClan>0~100</guy762_KotORFaction_MandoClan>
+			<guy762_KotORFaction_SavageMandos>0</guy762_KotORFaction_SavageMandos>
+			
+			<guy762_KotORFaction_Czerka>-100</guy762_KotORFaction_Czerka>
+			<guy762_KotORFaction_Exchange>-100~0</guy762_KotORFaction_Exchange>
+			<guy762_KotORFaction_Civilians>0</guy762_KotORFaction_Civilians>
+			
+			<guy762_KotORFaction_MandoNeoCrusaders>0~50</guy762_KotORFaction_MandoNeoCrusaders>
+			<guy762_KotORFaction_SithEmpire>0~50</guy762_KotORFaction_SithEmpire>
+			
+			<guy762_KotORPlayerFaction_RepublicStrikeTeam>0</guy762_KotORPlayerFaction_RepublicStrikeTeam>
+			<guy762_KotORPlayerFaction_SmugglerCrew>25</guy762_KotORPlayerFaction_SmugglerCrew>
+			<guy762_KotORPlayerFaction_MandalorianTribe>25</guy762_KotORPlayerFaction_MandalorianTribe>
+			<guy762_KotORPlayerFaction_SithWarlord>0</guy762_KotORPlayerFaction_SithWarlord>
+			<guy762_KotORPlayerFaction_HuttUpstart>25</guy762_KotORPlayerFaction_HuttUpstart>
+			
+			<!--guy762_KotORFaction_Trandoshans>50~100</guy762_KotORFaction_Trandoshans>
+			<guy762_KotORFaction_MercGuild>0~50</guy762_KotORFaction_MercGuild-->
+		</startingGoodwillByFactionDefs>
+		<excludeFromCommConsole>false</excludeFromCommConsole>
+		<hasCities>true</hasCities>
+      </li>
+	  <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Core.ModExtension_FixedIdeo">
+		<ideoIconDef>guy762_IdeoIcon_huttsA</ideoIconDef>
+		<ideoColorDef>DarkOlive</ideoColorDef>
+		<!--memberName>Citizen</memberName>
+		<adjective>NCR Republican</adjective-->
+		<roleOverrides>
+			<li>
+				<preceptDef>IdeoRole_Leader</preceptDef>
+				<newName>Kajidii</newName>
+				<disableApparelRequirements>true</disableApparelRequirements>
+			</li>
+			<li>
+				<preceptDef>IdeoRole_Moralist</preceptDef>
+				<newName>Vizier</newName>
+				<disableApparelRequirements>true</disableApparelRequirements>
+				<!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
+			</li>
+			<li>
+				<preceptDef>IdeoRole_ShootingSpecialist</preceptDef>
+				<newName>Enforcer</newName>
+				<disableApparelRequirements>true</disableApparelRequirements>
+				<!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
+			</li>
+			<li>
+				<preceptDef>IdeoRole_MeleeSpecialist</preceptDef>
+				<newName>Executioner</newName>
+				<disableApparelRequirements>true</disableApparelRequirements>
+				<!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
+			</li>
+		</roleOverrides>
+	  </li>
+    </modExtensions>
+	
+	<royalTitleTags>
+      <li>KotORTitleTag_Hutts</li>
+    </royalTitleTags>
+	<royalFavorLabel>prestige</royalFavorLabel>
+    <royalFavorIconPath>UI/Icons/RoyalFavor</royalFavorIconPath>
+	
+	<royalTitleInheritanceWorkerClass>RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+    <royalTitleInheritanceRelations>
+      <li>Spouse</li>
+	  <li>Child</li>
+	  <li>NephewOrNiece</li>
+	  <li>Grandchild</li>
+      <li>GreatGrandchild</li>
+      <li>Sibling</li>
+      <li>HalfSibling</li>
+      <li>Cousin</li>
+      <li>Parent</li>
+      <li>UncleOrAunt</li>
+    </royalTitleInheritanceRelations>
+	
+	
+	
+	
+	
+	
+    <allowedCultures>
+		<li>guy762_culture_outerrim</li>
+	</allowedCultures>
+	<!--styles>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Spikecore</li>
+	</styles-->
+	
+	<fixedIdeo>true</fixedIdeo>
+	<ideoName>Kajidic Feudalism</ideoName>
+	<ideoDescription>.</ideoDescription>
+	
+	<requiredMemes>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">guy762_MemeDef_hutt</li>
+	</requiredMemes>
+	<allowedMemes>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Bacchanalianism</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_PartyLife</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Trader</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistEmbodied</li>
+	</allowedMemes>
+	<disallowedPrecepts>
+		<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">NobleDespisedWeapons</li>
+		
+		<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Essential</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Important</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Worthwhile</li>
+		
+		<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Abhorrent</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Horrible</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Execution_HorribleIfInnocent</li>
+		
+		<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOrSocial</li>
+		
+		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+		
+		<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Abhorrent</li>
+		<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Horrible</li>
+		<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Disapproved</li>
+	</disallowedPrecepts>
+	
+	<xenotypeSet>
+	  <xenotypeChances> <!-- these are basically just for civilians -->
+		<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.05</Baseliner>
+		<guy762_xenotype_aqualish MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_aqualish>
+		<guy762_xenotype_bith MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_bith>
+		<guy762_xenotype_bothan MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_bothan>
+		<guy762_xenotype_cathar MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_cathar>
+		<guy762_xenotype_chadrafan MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_chadrafan>
+		<guy762_xenotype_defel MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_defel>
+		<guy762_xenotype_devaronian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_devaronian>
+		<guy762_xenotype_duros MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_duros>
+		<guy762_xenotype_falleen MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_falleen>
+		<guy762_xenotype_gand MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_gand>
+		<guy762_xenotype_ithorian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_ithorian>
+		<guy762_xenotype_iridonian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_iridonian>
+		<guy762_xenotype_klatoonian MayRequire="guy762.StarWarsXenotypes">0.07</guy762_xenotype_klatoonian>
+		<guy762_xenotype_kubaz MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_kubaz>
+		<guy762_xenotype_lasat MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_lasat>
+		<guy762_xenotype_mimbanese MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_mimbanese>
+		<guy762_xenotype_mirialan MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_mirialan>
+		<guy762_xenotype_nautolan MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_nautolan>
+		<guy762_xenotype_nikto MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_nikto>
+		<guy762_xenotype_pantoran MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_pantoran>
+		<guy762_xenotype_quarren MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_quarren>
+		<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_rodian>
+		<guy762_xenotype_selkath MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_selkath>
+		<guy762_xenotype_snivvian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_snivvian>
+		<guy762_xenotype_sullustan MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_sullustan>
+		<guy762_xenotype_togruta MayRequire="guy762.StarWarsXenotypes">0.04</guy762_xenotype_togruta>
+		<guy762_xenotype_trandoshan MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_trandoshan>
+		<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_twilek>
+		<guy762_xenotype_umbaran MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_umbaran>
+		<guy762_xenotype_weequay MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_weequay>
+		<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_zabrak>
+		<guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_zeltron>
+		<guy762_xenotype_zygerrian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_zygerrian> <!-- 1.00 total -->
+	  </xenotypeChances>
+	</xenotypeSet>
+	
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Outlander</li>
+        </categories>
+        <commonality>0.2</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+        <commonality>0.4</commonality>
+      </li>
+	  <li>
+        <categories>
+          <li>Pirate</li>
+        </categories>
+		<commonality>0.4</commonality>
+      </li>
+    </backstoryFilters>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+	
+	<apparelStuffFilter>
+	  <thingDefs> <!-- disabling all of the poor materials so it'll only generate nice ones on nobility pawns -->
+		<li>Synthread</li>
+		<!-- <li>KOTOR_FabricArmorweave</li> -->
+		<li>DevilstrandCloth</li>
+		<li>Leather_Thrumbo</li>
+		<!-- <li>Steel</li> -->
+		<!-- <li>Plasteel</li> -->
+		<!-- <li>KOTOR_AlloyDurasteel</li> -->
+		<li>KOTOR_AlloyBronzium</li>
+		<li>Silver</li>
+		<li>Gold</li>
+		<!-- <li>Leather_Patch</li> -->
+		<!-- <li>Leather_Plain</li> -->
+	  </thingDefs>
+	</apparelStuffFilter>
+	
+	<caravanTraderKinds>
+	  <li>Caravan_Outlander_BulkGoods</li>
+	  <li>Caravan_Outlander_CombatSupplier</li>
+	  <li>Caravan_Outlander_Exotic</li>
+	  <li>Caravan_Outlander_PirateMerchant</li>
+	  <li>guy762_TraderKind_JawaScavs</li>
+	</caravanTraderKinds>
+	<visitorTraderKinds>
+	  <li>Visitor_Outlander_Standard</li>
+	</visitorTraderKinds>
+	<baseTraderKinds>
+	  <li>Base_Outlander_Standard</li>
+	</baseTraderKinds>
+	
+	
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,65)</li> <!-- cost of a kajidic soldier -->
+        <li>(250, 200)</li> <!-- cost of a heavy gamorrean -->
+        <li>(1000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+	
+	<pawnGroupMakers Inherit="False">
+	  <li>
+		<!-- gamorrean blitz -->
+		<kindDef>Combat</kindDef>
+		<commonality>100</commonality>
+		<disallowedStrategies>
+			<li>Siege</li>
+			<li>EmergeFromWater</li>
+			<li>StageThenAttack</li>
+			<li>ImmediateAttackSappers</li>
+			<li>ImmediateAttackBreaching</li>
+			<li>ImmediateAttackBreachingSmart</li>
+		</disallowedStrategies>
+		<options>
+		  <KotORHutts_thug>50</KotORHutts_thug>
+		  <KotORHutts_gamorreanlgt>100</KotORHutts_gamorreanlgt>
+		</options>
+	  </li>
+	  
+	  
+	  <li>
+		<!-- skirmish -->
+		<kindDef>Combat</kindDef>
+		<commonality>75</commonality>
+		<disallowedStrategies>
+			<li>Siege</li>
+			<li>EmergeFromWater</li>
+			<li>ImmediateAttackSmart</li>
+			<li>ImmediateAttackSappers</li>
+			<li>ImmediateAttackBreaching</li>
+			<li>ImmediateAttackBreachingSmart</li>
+		</disallowedStrategies>
+		<options>
+		  <KotORHutts_soldier>100</KotORHutts_soldier>
+		  <KotORHutts_thug>50</KotORHutts_thug>
+		  
+		  <KotORHutts_gamorreanlgt>25</KotORHutts_gamorreanlgt>
+		  
+		  <KotORHutts_executioner>10</KotORHutts_executioner>
+		</options>
+	  </li>
+	  <li>
+		<!-- jedi outcast-style skirmish -->
+		<kindDef>Combat</kindDef>
+		<commonality>10</commonality>
+		<disallowedStrategies>
+			<li>Siege</li>
+			<li>EmergeFromWater</li>
+			<li>ImmediateAttackSmart</li>
+			<li>ImmediateAttackSappers</li>
+			<li>ImmediateAttackBreaching</li>
+			<li>ImmediateAttackBreachingSmart</li>
+		</disallowedStrategies>
+		<options>
+		  <KotORMerc_JKRodian>100</KotORMerc_JKRodian>
+		  <KotORMerc_JKHumanMerc>75</KotORMerc_JKHumanMerc>
+		  <KotORMerc_JKWeequay>50</KotORMerc_JKWeequay>
+		  <KotORMerc_JKTrando>25</KotORMerc_JKTrando>
+		  <KotORMerc_JKSniperRodian>10</KotORMerc_JKSniperRodian>
+		  
+		  <KotORMerc_JKRocketTrando>100</KotORMerc_JKRocketTrando>
+		</options>
+	  </li>
+	  
+	  
+	  <li>
+		<kindDef>Combat</kindDef> <!-- assault -->
+		<commonality>50</commonality>
+		<disallowedStrategies>
+			<li>Siege</li>
+			<li>EmergeFromWater</li>
+			<li>StageThenAttack</li>
+			<li>ImmediateAttackSappers</li>
+			<li>ImmediateAttackBreaching</li>
+			<li>ImmediateAttackBreachingSmart</li>
+		</disallowedStrategies>
+		<options>
+		  <KotORHutts_soldier>75</KotORHutts_soldier>
+		  <KotORHutts_thug>50</KotORHutts_thug>
+		  
+		  <KotORHutts_gamorreanlgt>50</KotORHutts_gamorreanlgt>
+		  <KotORHutts_gamorreanhvy>25</KotORHutts_gamorreanhvy>
+		  
+		  <KotORDroidBad_DevWD_weak MayRequire="guy762.KotORDroids">75</KotORDroidBad_DevWD_weak>
+		  
+		  <KotORHutts_executioner>25</KotORHutts_executioner>
+		</options>
+	  </li>
+	  
+	  
+	  
+	  
+	  <li>
+        <!-- trandoshan slaver raid -->
+        <kindDef>Combat</kindDef>
+        <commonality>50</commonality>
+		<disallowedStrategies>
+			<li>Siege</li>
+			<li>EmergeFromWater</li>
+			<li>StageThenAttack</li>
+		</disallowedStrategies>
+        <options>
+          <KotORMerc_trandoslaver>100</KotORMerc_trandoslaver>
+          <KotORMerc_trando>25</KotORMerc_trando>
+          <KotORMerc_trandoham>10</KotORMerc_trandoham>
+        </options>
+      </li>
+	  <li>
+        <!-- elite trandoshan raid -->
+        <kindDef>Combat</kindDef>
+        <commonality>25</commonality>
+		<disallowedStrategies>
+			<li>Siege</li>
+			<li>EmergeFromWater</li>
+			<li>StageThenAttack</li>
+			<li>ImmediateAttack</li>
+		</disallowedStrategies>
+        <options>
+          <KotORMerc_trandoslaver>50</KotORMerc_trandoslaver>
+          <KotORMerc_trando>75</KotORMerc_trando>
+          <KotORMerc_trandoham>25</KotORMerc_trandoham>
+          <KotORMerc_trandoveteran>100</KotORMerc_trandoveteran>
+        </options>
+      </li>
+	  
+	  <li>
+		<!-- mandalorian territory intrusion-->
+		<kindDef>Combat</kindDef>
+		<commonality>25</commonality>
+		<disallowedStrategies>
+			<li>EmergeFromWater</li>
+			<li>ImmediateAttack</li>
+			<li>ImmediateAttackSmart</li>
+			<li>ImmediateAttackSappers</li>
+			<li>ImmediateAttackBreaching</li>
+			<li>ImmediateAttackBreachingSmart</li>
+		</disallowedStrategies>
+		<options>
+		  <KotORMerc_mando>100</KotORMerc_mando>
+		  <KotORMerc_mandoboss>100</KotORMerc_mandoboss>
+		  
+		  <KotORHutts_thug>50</KotORHutts_thug>
+		  <KotORHutts_gamorreanlgt>25</KotORHutts_gamorreanlgt>
+		</options>
+	  </li>
+	  
+	  <li>
+		<kindDef>Combat</kindDef> <!-- merc assault -->
+		<commonality>25</commonality>
+		<disallowedStrategies>
+			<li>Siege</li>
+			<li>EmergeFromWater</li>
+			<li>StageThenAttack</li>
+			<li>ImmediateAttack</li>
+			<li>ImmediateAttackSappers</li>
+			<li>ImmediateAttackBreaching</li>
+			<li>ImmediateAttackBreachingSmart</li>
+		</disallowedStrategies>
+		<options>
+		  <KotORMerc_gandmelee>50</KotORMerc_gandmelee>
+		  <KotORMerc_gandranged>50</KotORMerc_gandranged>
+		  
+		  <KotORMerc_kaleeshmelee>25</KotORMerc_kaleeshmelee>
+		  <KotORMerc_kaleeshranged>25</KotORMerc_kaleeshranged>
+		  
+		  <KotORMerc_nagaimelee>10</KotORMerc_nagaimelee>
+		  <KotORMerc_nagairanged>10</KotORMerc_nagairanged>
+		  
+		  <KotORBntyHntr_mandoweak>50</KotORBntyHntr_mandoweak>
+		  <KotORBntyHntr_mandomid>25</KotORBntyHntr_mandomid>
+		  <KotORBntyHntr_mandostar>10</KotORBntyHntr_mandostar>
+		</options>
+	  </li>
+	  
+	  
+	  
+	  <li>
+		<kindDef>Peaceful</kindDef>
+		<options>
+		  <KotORHutts_HuttTrader>10</KotORHutts_HuttTrader>
+		  <KotORHutts_slave>10</KotORHutts_slave>
+		  <KotORCiv_hooded>5</KotORCiv_hooded>
+		  
+		  <KotORHutts_thug>15</KotORHutts_thug>
+		  <KotORHutts_soldier>10</KotORHutts_soldier>
+		  <KotORHutts_executioner>5</KotORHutts_executioner>
+		  <KotORDroidBad_DevWD_weak MayRequire="guy762.KotORDroids">7</KotORDroidBad_DevWD_weak>
+		</options>
+	  </li>
+	  
+	  
+	  
+	  
+	  
+	  <li>
+		<kindDef>Trader</kindDef>
+		<commonality>1</commonality>
+		<traders>
+		  <KotORHutts_HuttTrader>10</KotORHutts_HuttTrader>
+		  <KotORCiv_shadydealer>5</KotORCiv_shadydealer>
+		</traders>
+		<carriers>
+		  <Bantha MayRequire="Mlie.StarWarsAnimalCollection">5</Bantha>
+		  <Dewback MayRequire="Mlie.StarWarsAnimalCollection">5</Dewback>
+		  <Ronto MayRequire="Mlie.StarWarsAnimalCollection">5</Ronto>
+		  <Eopie MayRequire="Mlie.StarWarsAnimalCollection">2.5</Eopie>
+		  <Blurrg MayRequire="Mlie.StarWarsAnimalCollection">2.5</Blurrg>
+		  <Kybuck MayRequire="Mlie.StarWarsAnimalCollection">1</Kybuck>
+		  <Orray MayRequire="Mlie.StarWarsAnimalCollection">1</Orray>
+		  <Bordok MayRequire="Mlie.StarWarsAnimalCollection">1</Bordok>
+		  <Skalder MayRequire="Mlie.StarWarsAnimalCollection">0.1</Skalder>
+		  <Muffalo>0.01</Muffalo> <!-- required because trader caravan won't generate without at least one carrier type -->
+		</carriers>
+		<guards>
+		  <KotORHutts_slave>10</KotORHutts_slave>
+		  <KotORCiv_hooded>5</KotORCiv_hooded>
+		  
+		  <KotORHutts_thug>15</KotORHutts_thug>
+		  <KotORHutts_soldier>10</KotORHutts_soldier>
+		  <KotORHutts_executioner>5</KotORHutts_executioner>
+		  <KotORDroidBad_DevWD_weak MayRequire="guy762.KotORDroids">7</KotORDroidBad_DevWD_weak>
+		</guards>
+	  </li>
+	  <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Core.GroupMakerWithTraderKind">
+		<kindDef>Trader</kindDef> <!-- jawa caravan -->
+		<commonality>0.5</commonality>
+		<traderKinds><li>guy762_TraderKind_JawaScavs</li></traderKinds>
+		<traders>
+		  <KotORCiv_jawatrader_offworld>100</KotORCiv_jawatrader_offworld>
+		</traders>
+		<carriers>
+		  <Bantha MayRequire="Mlie.StarWarsAnimalCollection">5</Bantha>
+		  <Dewback MayRequire="Mlie.StarWarsAnimalCollection">5</Dewback>
+		  <Ronto MayRequire="Mlie.StarWarsAnimalCollection">5</Ronto>
+		  <Eopie MayRequire="Mlie.StarWarsAnimalCollection">2.5</Eopie>
+		  <Blurrg MayRequire="Mlie.StarWarsAnimalCollection">2.5</Blurrg>
+		  <Kybuck MayRequire="Mlie.StarWarsAnimalCollection">1</Kybuck>
+		  <Orray MayRequire="Mlie.StarWarsAnimalCollection">1</Orray>
+		  <Bordok MayRequire="Mlie.StarWarsAnimalCollection">1</Bordok>
+		  <Skalder MayRequire="Mlie.StarWarsAnimalCollection">0.1</Skalder>
+		  <Muffalo>0.01</Muffalo> <!-- required because trader caravan won't generate without at least one carrier type -->
+		</carriers>
+		<guards>
+		  <KotORCiv_jawa_offworld>15</KotORCiv_jawa_offworld>
+		  <KotORMlita_droid_GE3PD MayRequire="guy762.KotORDroids">3</KotORMlita_droid_GE3PD>
+		  <KotORDroidGood_GE3LD MayRequire="guy762.KotORDroids">7</KotORDroidGood_GE3LD>
+		  <KotORDroidGood_R8009 MayRequire="guy762.KotORDroids">5</KotORDroidGood_R8009>
+		  <KotORDroidGood_3C MayRequire="guy762.KotORDroids">2</KotORDroidGood_3C>
+		  <KotORDroidBad_KX12UPD MayRequire="guy762.KotORDroids">3</KotORDroidBad_KX12UPD>
+		  <KotORDroidBad_SentWD MayRequire="guy762.KotORDroids">4</KotORDroidBad_SentWD>
+		  <KotORDroidBad_DevWD_weak MayRequire="guy762.KotORDroids">6</KotORDroidBad_DevWD_weak>
+		</guards>
+	  </li>
+	  
+	  
+	  <li>
+		<kindDef>Settlement</kindDef> <!-- rural settlement -->
+		<commonality>1</commonality>
+		<options>
+		  <!-- civilians -->
+		  <KotORHutts_slave>15</KotORHutts_slave>
+		  <KotORCiv_villager>25</KotORCiv_villager>
+		  
+		  <KotORCiv_hooded>10</KotORCiv_hooded>
+		  <KotORCiv_poortraveler>5</KotORCiv_poortraveler>
+		  
+		  <KotORMlita_ugnaught>1</KotORMlita_ugnaught>
+		  
+		  <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Villager_Child>
+		  
+		  <!-- factional -->
+		  
+		  <KotORMlita_droid_GE3PD MayRequire="guy762.KotORDroids">1</KotORMlita_droid_GE3PD>
+		  <KotORDroidGood_R8009 MayRequire="guy762.KotORDroids">2.5</KotORDroidGood_R8009>
+		  
+		  <KotORHutts_thug>15</KotORHutts_thug>
+		  <KotORHutts_soldier>10</KotORHutts_soldier>
+		  <KotORHutts_executioner>5</KotORHutts_executioner>
+		  <KotORDroidBad_DevWD_weak MayRequire="guy762.KotORDroids">7</KotORDroidBad_DevWD_weak>
+		  
+		  <KotORHutts_gamorreanlgt>10</KotORHutts_gamorreanlgt>
+		  <KotORHutts_gamorreanhvy>5</KotORHutts_gamorreanhvy>
+		  <KotORHutts_HuttTrader>10</KotORHutts_HuttTrader>
+		</options>
+	  </li>
+	  <!--<li>
+		<kindDef>Settlement</kindDef> this is where the list for kajidic palaces will go once we can get some good map designs for them, until then y'all are stuck with villages
+		<commonality>0.5</commonality>
+		<options>
+		  
+		</options>
+	  </li>-->
+	  
+	  
+	  <li MayRequire="Ludeon.RimWorld.Ideology">
+		<kindDef>Loggers</kindDef>
+		<commonality>1</commonality>
+		<options>
+		  <KotORHutts_slave>10</KotORHutts_slave>
+		  <KotORCiv_SlaveFurry>10</KotORCiv_SlaveFurry>
+		  
+		  <KotORDroidBad_DevWD_weak MayRequire="guy762.KotORDroids">4</KotORDroidBad_DevWD_weak>
+		  <KotORHutts_thug>2</KotORHutts_thug>
+		  <KotORHutts_gamorreanlgt>2</KotORHutts_gamorreanlgt>
+		</options>
+	  </li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">
+		<kindDef>Farmers</kindDef>
+		<commonality>1</commonality>
+		<options>
+		  <KotORHutts_slave>10</KotORHutts_slave>
+		  <KotORCiv_SlaveFurry>10</KotORCiv_SlaveFurry>
+		  
+		  <KotORDroidBad_DevWD_weak MayRequire="guy762.KotORDroids">4</KotORDroidBad_DevWD_weak>
+		  <KotORHutts_thug>2</KotORHutts_thug>
+		  <KotORHutts_gamorreanlgt>2</KotORHutts_gamorreanlgt>
+		</options>
+	  </li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">
+		<kindDef>Miners</kindDef>
+		<commonality>1</commonality>
+		<options>
+		  <KotORHutts_slave>10</KotORHutts_slave>
+		  <KotORCiv_SlaveFurry>10</KotORCiv_SlaveFurry>
+		  <KotORDroidBad_KM1MD MayRequire="guy762.KotORDroids">1</KotORDroidBad_KM1MD>
+		  
+		  <KotORDroidBad_DevWD_weak MayRequire="guy762.KotORDroids">4</KotORDroidBad_DevWD_weak>
+		  <KotORHutts_thug>2</KotORHutts_thug>
+		  <KotORHutts_gamorreanlgt>2</KotORHutts_gamorreanlgt>
+		</options>
+	  </li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">
+		<kindDef>Hunters</kindDef>
+		<commonality>1</commonality>
+		<options>
+		  <KotORHutts_thug>10</KotORHutts_thug>
+		</options>
+	  </li>
+	</pawnGroupMakers>
+
+	<raidLootMaker>guy762_RaidLootMaker_KotORHutts</raidLootMaker>
+  </FactionDef>
+  
+  
+  
+  <ThingSetMakerDef>
+    <defName>guy762_RaidLootMaker_KotORHutts</defName>
+	<root Class="ThingSetMaker_Sum">
+      <options>
+        <li>
+          <thingSetMaker Class="ThingSetMaker_MarketValue">
+            <fixedParams>
+				<filter>
+				  <thingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+					
+					<li>KOTOR_Spice</li>
+					<li>Pemmican</li>
+					
+					<li>KOTOR_SpacerMedKit</li>
+					<li>KOTOR_PlasmaCartridge</li>
+				  </thingDefs>
+				</filter>
+			</fixedParams>
+          </thingSetMaker>
+        </li>
+		<li>
+          <thingSetMaker  Class="ThingSetMaker_RandomOption">
+            <options>
+              <li>
+                <weight>5</weight>
+                <thingSetMaker Class="ThingSetMaker_MarketValue">
+                  <fixedParams>
+                    <filter>
+                      <tradeTagsToAllow>
+						<li>guy762TT_weaponmod_basic</li>
+						<li>guy762TT_armormod_basic</li>
+						<li>guy762TT_KotORHyperStims</li>
+					  </tradeTagsToAllow>
+                    </filter>
+                  </fixedParams>
+                </thingSetMaker>
+              </li>
+              <li>
+                <weight>1</weight>
+                <thingSetMaker Class="ThingSetMaker_MarketValue">
+                  <fixedParams>
+                    <filter>
+                      <tradeTagsToAllow>
+						<li>guy762TT_weaponmod_adv</li>
+						<li>guy762TT_armormod_adv</li>
+						<li>guy762TT_implants_basic</li>
+					  </tradeTagsToAllow>
+                    </filter>
+                  </fixedParams>
+                </thingSetMaker>
+              </li>
+              <li>
+                <weight>0.5</weight>
+                <thingSetMaker Class="ThingSetMaker_MarketValue">
+                  <fixedParams>
+                    <filter>
+                      <tradeTagsToAllow>
+						<li>guy762TT_weaponmod_rare</li>
+						<li>guy762TT_sabermod_basic</li>
+						<li>guy762TT_implants_adv</li>
+						
+						<!-- THE TRADETAG PALETTE:
+						<li>guy762TT_weaponmod_basic</li>
+						<li>guy762TT_weaponmod_adv</li>
+						<li>guy762TT_weaponmod_rare</li>
+						
+						<li>guy762TT_sabermod_basic</li>
+						<li>guy762TT_sabermod_adv</li>
+						<li>guy762TT_sabermod_rare</li>
+						
+						<li>guy762TT_armormod_basic</li>
+						<li>guy762TT_armormod_adv</li>
+						
+						<li>guy762TT_DroidWeapons_light</li>
+						<li>guy762TT_DroidWeapons_heavy</li>
+						
+						<li>guy762TT_DroidShields</li>
+						
+						<li>guy762TT_DroidUpgrades</li>
+						<li>guy762TT_DroidUpgrades_rare</li>
+						
+						<li>guy762TT_implants_basic</li>
+						<li>guy762TT_implants_adv</li>
+						<li>guy762TT_implants_rare</li>
+						<li>guy762TT_implants_DPkg</li>
+						
+						<li>guy762TT_KotORStims</li>
+						<li>guy762TT_KotORHyperStims</li>
+						-->
+					  </tradeTagsToAllow>
+                    </filter>
+                  </fixedParams>
+                </thingSetMaker>
+              </li>
+            </options>
+          </thingSetMaker>
+        </li>
+      </options>
+    </root>
+  </ThingSetMakerDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <RulePackDef>
+    <defName>guy762_NamerFaction_HuttCartel</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[hsyl1][hsyl2] [kajidic]</li>
+
+
+        <li>kajidic->Kajidic</li>
+
+        <li>hsyl1->bor</li>
+        <li>hsyl1->ar</li>
+        <li>hsyl1->tir</li>
+        <li>hsyl1->zel</li>
+        <li>hsyl1->an</li>
+        <li>hsyl1->des</li>
+        <li>hsyl1->ner</li>
+        <li>hsyl1->bes</li>
+        <li>hsyl1->gar</li>
+        <li>hsyl1->ven</li>
+		
+        <li>hsyl2->dojii</li>
+        <li>hsyl2->galii</li>
+        <li>hsyl2->tilic</li>
+        <li>hsyl2->iliac</li>
+        <li>hsyl2->jania</li>
+        <li>hsyl2->adii</li>
+        <li>hsyl2->dulla</li>
+        <li>hsyl2->ilijic</li>
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>

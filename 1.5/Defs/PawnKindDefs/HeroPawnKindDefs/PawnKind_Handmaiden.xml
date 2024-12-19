@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	<PawnKindDef MayRequire="guy762.StarWarsXenotypes" Name="KotORHeroBase_Handmaiden"  ParentName="guy762_HeroPawnKindBase" Abstract="True">
+		<defName>KotORHeroBase_Handmaiden</defName>
+		<nameMaker>guy762_HeroNamer_Handmaiden</nameMaker>
+		<combatPower>500</combatPower>
+		<minGenerationAge>26</minGenerationAge>
+		<maxGenerationAge>27</maxGenerationAge>
+		<fixedGender>Female</fixedGender>
+		<forcedHair>Recruit</forcedHair>
+		<xenotypeSet>
+			<xenotypeChances>
+				<guy762_xenotype_echani>999</guy762_xenotype_echani>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<!-- <titleRequired>KotORTitleORenlstd_viceadmiral</titleRequired> -->
+		
+		<itemQuality>Legendary</itemQuality>
+		<apparelMoney>29999</apparelMoney>
+		<apparelTags>
+		  <li>KotORHeroAccessories_handmaiden</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_JediHood_light</li>
+		   <li>guy762_JediCloak_light</li>
+		   <li>guy762_JediTunic_formal</li>
+		   <li>guy762_energyshield_echaniHvy</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<apparelDef>guy762_JediTunic_formal</apparelDef>
+				<color>(200,200,205)</color>
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<apparelDef>guy762_JediCloak_light</apparelDef>
+				<quality>Legendary</quality>
+				<color>(230,230,235)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<apparelDef>guy762_JediHood_light</apparelDef>
+				<quality>Legendary</quality>
+				<color>(230,230,235)</color>
+			</li>
+		</specificApparelRequirements>
+		<weaponMoney>99999999</weaponMoney>
+		<weaponTags>
+		  <li>OR_handmaiden</li>
+		</weaponTags>
+		<techHediffsRequired>
+		  <li>guy762_ImplantDock_I</li>
+		</techHediffsRequired>
+		
+		<inventoryOptions>
+		  <skipChance>0</skipChance>
+		  <subOptionsTakeAll>
+			<li>
+			  <thingDef>guy762_vdubblade_yusanis</thingDef>
+			  <countRange>1</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_ImplantItemImp_durability</thingDef>
+			  <countRange>1</countRange>
+			</li>
+		  </subOptionsTakeAll>
+		</inventoryOptions>
+		
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>18~20</range>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<range>10~12</range>
+			</li>
+			<li>
+				<skill>Artistic</skill>
+				<range>6~8</range>
+			</li>
+			<li>
+				<skill>Medicine</skill>
+				<range>6~8</range>
+			</li>
+			<li>
+				<skill>Intellectual</skill>
+				<range>10~12</range>
+			</li>
+		</skills>
+		<forcedTraits>
+			<PsychicSensitivity>1</PsychicSensitivity>
+			<!--Nimble>0</Nimble>   swapped for tough, Juhani will have nimble to better differentiate between the two Guardians-->
+			<Tough>0</Tough>
+			<Ascetic>0</Ascetic>
+			<Jealous>0</Jealous>
+		</forcedTraits>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_handmaiden</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		<abilities>
+			<li>guy762_Ability_CommandTierIII</li>
+		</abilities>
+		<modExtensions>
+			<li Class="AddGeneForPK.PKAdditionalGenes"> <!-- NOTE: this mod extension cannot be split between two different PKDefs, all genes have to go in the same block!!! -->
+			  <geneSets>
+				<li>
+				  <isXenogene>true</isXenogene>
+				  <chance>1</chance>
+				  <geneDefs>
+					<li MayRequire="guy762.Lee.KotORPotF">SWPotF_Gene_LSEnlightenmentI</li>
+					<li>Body_Standard</li>
+				  </geneDefs>
+				</li>
+			  </geneSets>
+			</li>
+			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
+			  <whitelist>
+				<li>Female_AverageWide</li>
+			  </whitelist>
+			  <blacklist>
+				<!--leave blank to disable-->
+			  </blacklist>
+			  <priority>
+				<li>Female_AverageWide</li>
+			  </priority>
+			  <checkGender>False</checkGender>
+			</li>
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+			  <whitelist>
+				<li>Female</li>
+			  </whitelist>
+			  <blacklist>
+			  </blacklist>
+			  <priority>
+				<!--When violates the black/whitelist, selected from these-->
+				<li>Female</li>
+			  </priority>
+			  <!--Align body gender to pawn's gender (default: True)-->
+			  <checkGender>False</checkGender>
+			</li>
+      </modExtensions>
+	</PawnKindDef>
+	  
+	  <RulePackDef>
+        <defName>guy762_HeroNamer_Handmaiden</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[brianna] '[handmaiden]' [yusanis]</li>
+				<li>brianna->Brianna</li>
+				<li>yusanis->Yusanis</li>
+				<li>handmaiden->Handmaiden</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	
+	<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun]-->
+	
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryC_Handmaiden</defName>
+		<title>Echani Handmaiden</title>
+		<titleShort>Handmaiden</titleShort>
+		<description>[PAWN_nameDef] was one of the Echani Handmaidens, a group of elite Echani warriors sired by the famed Echani general Yusanis and thought to be totally deaf to the Force. [PAWN_pronoun] trained for many years in the Echani arts of personal combat, but harbored a secret connection to the Force due to [PAWN_possessive] mother's Jedi lineage.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>15</Melee>
+		</skillGains>
+		<forcedTraits>
+		  <Ascetic>0</Ascetic>
+		  <Tough>0</Tough>
+		</forcedTraits>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_Handmaiden</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_handmaiden</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryA_Handmaiden</defName>
+		<title>Jedi Guardian</title>
+		<titleShort>Jedi Guardian</titleShort>
+		<description>Serving under the corrupt Jedi Master Atris, [PAWN_nameDef] was tasked with spying on a notorious Jedi exile whom Atris loathed. Through [PAWN_possessive] journeys with the exile, [PAWN_nameDef] realized Atris had misjudged them and had fallen to the dark side. After revealing [PAWN_possessive] Jedi lineage to the exile, [PAWN_nameDef] decided to forsake [PAWN_possessive] oath to Atris and sought to be trained in the ways of the Force. [PAWN_pronoun] became a Jedi Guardian, and after helping defeat the remnant Sith Lords on Malachor V, [PAWN_nameDef] served in the Republic Navy as a Jedi liaison to Admiral Onasi.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Artistic>6</Artistic>
+			<Medicine>8</Medicine>
+		</skillGains>
+		<forcedTraits>
+		  <PsychicSensitivity>1</PsychicSensitivity>
+		</forcedTraits>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_Handmaiden</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_handmaiden</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+
+
+
+</Defs>

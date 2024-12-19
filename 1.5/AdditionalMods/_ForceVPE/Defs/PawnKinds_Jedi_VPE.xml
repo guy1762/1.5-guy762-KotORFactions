@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	
+	 
+			<!--jedi-->
+	  
+	  
+	<PawnKindDef Name="KotORRepub_jediguardian_VPE" ParentName="KotORRepub_BASEjediguardian">
+      <defName>KotORRepub_jediguardian_VPE</defName>
+	  <modExtensions>
+         <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+            <implantDef>VPE_PsycastAbilityImplant</implantDef>
+            <initialLevel>5</initialLevel>
+            <statUpgradePoints>1</statUpgradePoints>
+            <unlockedPaths>
+				<Force_Neutral>1~2|1~2</Force_Neutral>
+				<Force_Telekinesis>1~3|4~5</Force_Telekinesis>
+				<Force_LightsaberCombat>1~3|4~5</Force_LightsaberCombat>
+				
+				<Force_LightSide>1~2|1~2</Force_LightSide>
+            </unlockedPaths>
+         </li>
+		 <!--li Class="AddGeneForPK.PKAdditionalGenes">
+          <geneSets>
+            <li>
+              <isXenogene>true</isXenogene>
+              <chance>1</chance>
+              <geneDefs>
+                <li>Force_Sensitive</li>
+              </geneDefs>
+            </li>
+          </geneSets>
+		</li-->
+      </modExtensions>
+   </PawnKindDef>
+   
+   
+   
+   
+   
+   
+   <PawnKindDef Name="KotORRepub_jedisentinel_VPE" ParentName="KotORRepub_BASEjedisentinel">
+      <defName>KotORRepub_jedisentinel_VPE</defName>
+	  <modExtensions>
+         <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+            <implantDef>VPE_PsycastAbilityImplant</implantDef>
+            <initialLevel>5</initialLevel>
+            <statUpgradePoints>1</statUpgradePoints>
+            <unlockedPaths>
+				<Force_Neutral>1~3|3~4</Force_Neutral>
+				<Force_Telekinesis>1~3|3~4</Force_Telekinesis>
+				<Force_LightsaberCombat>1~2|2~3</Force_LightsaberCombat>
+				
+				<Force_LightSide>1~2|2~3</Force_LightSide>
+            </unlockedPaths>
+         </li>
+		 <!--li Class="AddGeneForPK.PKAdditionalGenes">
+          <geneSets>
+            <li>
+              <isXenogene>true</isXenogene>
+              <chance>1</chance>
+              <geneDefs>
+                <li>Force_Sensitive</li>
+              </geneDefs>
+            </li>
+          </geneSets>
+		</li-->
+      </modExtensions>
+   </PawnKindDef>
+   
+   
+   
+   
+   
+   
+   
+   <PawnKindDef Name="KotORRepub_jediconsular_VPE" ParentName="KotORRepub_BASEjediconsular">
+      <defName>KotORRepub_jediconsular_VPE</defName>
+	  <modExtensions>
+         <li Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+            <implantDef>VPE_PsycastAbilityImplant</implantDef>
+            <initialLevel>5</initialLevel>
+            <statUpgradePoints>1</statUpgradePoints>
+            <unlockedPaths>
+				<Force_Neutral>1~3|4~5</Force_Neutral>
+				<Force_Telekinesis>1~2|1~2</Force_Telekinesis>
+				<Force_LightsaberCombat>1~2|1~2</Force_LightsaberCombat>
+				
+				<Force_LightSide>1~3|4~5</Force_LightSide>
+            </unlockedPaths>
+         </li>
+		 <!--li Class="AddGeneForPK.PKAdditionalGenes">
+          <geneSets>
+            <li>
+              <isXenogene>true</isXenogene>
+              <chance>1</chance>
+              <geneDefs>
+                <li>Force_Sensitive</li>
+              </geneDefs>
+            </li>
+          </geneSets>
+		</li-->
+      </modExtensions>
+   </PawnKindDef>
+
+   
+</Defs>

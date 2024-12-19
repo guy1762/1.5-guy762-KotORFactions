@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+  <AbilityDef Name="guy762_Ability_CommandTierBASE" Abstract="True">
+	<jobDef>CastAbilityOnThing</jobDef>
+    <targetRequired>False</targetRequired>
+    <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+    <stunTargetWhileCasting>True</stunTargetWhileCasting>
+    <showPsycastEffects>False</showPsycastEffects>
+    <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+    <groupDef>Leader</groupDef>
+    <hotKey>Misc12</hotKey>
+    <aiCanUse>true</aiCanUse>
+	<uiOrder>761</uiOrder>
+    <warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <statBases>
+      <Ability_Duration>1000</Ability_Duration>
+      <Ability_EffectRadius>500</Ability_EffectRadius>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>0.5</warmupTime>
+      <range>-1</range>
+      <drawAimPie>False</drawAimPie>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetHumans>false</canTargetHumans>
+        <canTargetMechs>false</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+  </AbilityDef>
+  
+  
+  
+  
+  
+  
+  <AbilityDef ParentName="guy762_Ability_CommandTierBASE">
+    <defName>guy762_Ability_CommandTierV</defName>
+    <label>Command Tier V</label>
+    <description>Take command of a battle by giving orders and coordinating the attacks of all colonists on the map. The effect lasts 24 hours and remains attached to the leader for the duration.</description>
+    <iconPath>UI/CommandTier_V</iconPath>
+    <warmupMoteSocialSymbol>UI/CommandTier_V</warmupMoteSocialSymbol>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_hediff_CommandTierV_caster</HediffDef>
+		<HediffDef>guy762_hediff_CommandTierV_buff</HediffDef>
+	</descriptionHyperlinks>
+	<comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>guy762_hediff_CommandTierV_caster</hediffDef>
+        <onlyBrain>True</onlyBrain>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+      </li>
+	  <li MayRequire="EBSG.Framework" Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+		<casterHasNoneOfHediffs>
+			<li>guy762_hediff_CommandTierV_buff</li>
+			
+			<li>guy762_hediff_CommandTierV_caster</li>
+			<li>guy762_hediff_CommandTierIV_caster</li>
+			<li>guy762_hediff_CommandTierIII_caster</li>
+			<li>guy762_hediff_CommandTierII_caster</li>
+			<li>guy762_hediff_CommandTierI_caster</li>
+		</casterHasNoneOfHediffs>
+		<casterCapLimiters>
+			<li>
+				<capacity>Consciousness</capacity>
+				<minCapValue>0.75</minCapValue>
+			</li>
+			<li>
+				<capacity>Talking</capacity>
+				<minCapValue>0.5</minCapValue>
+			</li>
+		</casterCapLimiters>
+	  </li>
+    </comps>
+  </AbilityDef>
+  
+  <HediffDef>
+    <defName>guy762_hediff_CommandTierV_caster</defName>
+	<label>Command Tier V</label>
+    <description>By encouraging and commanding nearby allies, this person can enhance their focus in combat and thus their battle performance.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(255,255,7)</defaultLabelColor> <!-- star wars yellow -->
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="HediffCompProperties_GiveHediffsInRange">
+        <range>500</range>
+        <!--mote>Mote_CombatCommand</mote>
+        <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted-->
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetColonists>true</onlyTargetColonists>
+        </targetingParameters>
+        <hediff>guy762_hediff_CommandTierV_buff</hediff>
+      </li>
+    </comps>
+    <isBad>false</isBad>
+  </HediffDef>
+
+
+  <HediffDef>
+    <defName>guy762_hediff_CommandTierV_buff</defName>
+    <label>Command Tier V buff</label>
+    <description>Combat abilities are boosted thanks to being near someone who is using the combat command ability.</description>
+    <debugLabelExtra>other</debugLabelExtra>
+    <hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(255,255,7)</defaultLabelColor> <!-- star wars yellow -->
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>false</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="HediffCompProperties_Link">
+        <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+        <maxDistance>500</maxDistance>
+        <customMote>Mote_CombatCommandLinkLine</customMote>
+      </li>
+    </comps>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <statOffsets>
+          <PainShockThreshold>0.05</PainShockThreshold>
+		  
+		  <ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
+		  <AimingDelayFactor>-0.05</AimingDelayFactor>
+		  <MortarMissRadiusFactor>-0.05</MortarMissRadiusFactor>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <AbilityDef ParentName="guy762_Ability_CommandTierBASE">
+    <defName>guy762_Ability_CommandTierIV</defName>
+    <label>Command Tier IV</label>
+    <description>Take command of a battle by giving orders and coordinating the attacks of all colonists on the map. The effect lasts 24 hours and remains attached to the leader for the duration.</description>
+    <iconPath>UI/CommandTier_IV</iconPath>
+    <warmupMoteSocialSymbol>UI/CommandTier_IV</warmupMoteSocialSymbol>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_hediff_CommandTierIV_caster</HediffDef>
+		<HediffDef>guy762_hediff_CommandTierIV_buff</HediffDef>
+	</descriptionHyperlinks>
+	<comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>guy762_hediff_CommandTierIV_caster</hediffDef>
+        <onlyBrain>True</onlyBrain>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+      </li>
+	  <li MayRequire="EBSG.Framework" Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+		<casterHasNoneOfHediffs>
+			<li>guy762_hediff_CommandTierIV_buff</li>
+			
+			<li>guy762_hediff_CommandTierV_caster</li>
+			<li>guy762_hediff_CommandTierIV_caster</li>
+			<li>guy762_hediff_CommandTierIII_caster</li>
+			<li>guy762_hediff_CommandTierII_caster</li>
+			<li>guy762_hediff_CommandTierI_caster</li>
+		</casterHasNoneOfHediffs>
+		<casterCapLimiters>
+			<li>
+				<capacity>Consciousness</capacity>
+				<minCapValue>0.75</minCapValue>
+			</li>
+			<li>
+				<capacity>Talking</capacity>
+				<minCapValue>0.5</minCapValue>
+			</li>
+		</casterCapLimiters>
+	  </li>
+    </comps>
+  </AbilityDef>
+  
+  <HediffDef>
+    <defName>guy762_hediff_CommandTierIV_caster</defName>
+    <label>Command Tier IV</label>
+    <description>By encouraging and commanding nearby allies, this person can enhance their focus in combat and thus their battle performance.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(255,255,7)</defaultLabelColor> <!-- star wars yellow -->
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="HediffCompProperties_GiveHediffsInRange">
+        <range>500</range>
+        <!--mote>Mote_CombatCommand</mote>
+        <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted-->
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetColonists>true</onlyTargetColonists>
+        </targetingParameters>
+        <hediff>guy762_hediff_CommandTierIV_buff</hediff>
+      </li>
+    </comps>
+    <isBad>false</isBad>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>guy762_hediff_CommandTierIV_buff</defName>
+    <label>Command Tier IV buff</label>
+    <description>Combat abilities are boosted thanks to being near someone who is using the combat command ability.</description>
+    <debugLabelExtra>other</debugLabelExtra>
+    <hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(255,255,7)</defaultLabelColor> <!-- star wars yellow -->
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>false</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="HediffCompProperties_Link">
+        <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+        <maxDistance>500</maxDistance>
+        <customMote>Mote_CombatCommandLinkLine</customMote>
+      </li>
+    </comps>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <statOffsets>
+          <MeleeDamageFactor>0.05</MeleeDamageFactor>
+		  
+		  <PainShockThreshold>0.05</PainShockThreshold>
+		  
+		  <ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
+		  <AimingDelayFactor>-0.05</AimingDelayFactor>
+		  <MortarMissRadiusFactor>-0.05</MortarMissRadiusFactor>
+		  
+		  <IncomingDamageFactor>-0.05</IncomingDamageFactor>
+		  
+		  <ConstructionSpeed>0.05</ConstructionSpeed>
+          <FixBrokenDownBuildingSuccessChance>0.05</FixBrokenDownBuildingSuccessChance>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <AbilityDef ParentName="guy762_Ability_CommandTierBASE">
+    <defName>guy762_Ability_CommandTierIII</defName>
+    <label>Command Tier III</label>
+    <description>Take command of a battle by giving orders and coordinating the attacks of all colonists on the map. The effect lasts 24 hours and remains attached to the leader for the duration.</description>
+    <iconPath>UI/CommandTier_III</iconPath>
+    <warmupMoteSocialSymbol>UI/CommandTier_III</warmupMoteSocialSymbol>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_hediff_CommandTierIII_caster</HediffDef>
+		<HediffDef>guy762_hediff_CommandTierIII_buff</HediffDef>
+	</descriptionHyperlinks>
+	<comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>guy762_hediff_CommandTierIII_caster</hediffDef>
+        <onlyBrain>True</onlyBrain>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+      </li>
+	  <li MayRequire="EBSG.Framework" Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+		<casterHasNoneOfHediffs>
+			<li>guy762_hediff_CommandTierIII_buff</li>
+			
+			<li>guy762_hediff_CommandTierV_caster</li>
+			<li>guy762_hediff_CommandTierIV_caster</li>
+			<li>guy762_hediff_CommandTierIII_caster</li>
+			<li>guy762_hediff_CommandTierII_caster</li>
+			<li>guy762_hediff_CommandTierI_caster</li>
+		</casterHasNoneOfHediffs>
+		<casterCapLimiters>
+			<li>
+				<capacity>Consciousness</capacity>
+				<minCapValue>0.75</minCapValue>
+			</li>
+			<li>
+				<capacity>Talking</capacity>
+				<minCapValue>0.5</minCapValue>
+			</li>
+		</casterCapLimiters>
+	  </li>
+    </comps>
+  </AbilityDef>
+  
+  <HediffDef>
+    <defName>guy762_hediff_CommandTierIII_caster</defName>
+    <label>Command Tier III</label>
+    <description>By encouraging and commanding nearby allies, this person can enhance their focus in combat and thus their battle performance.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(255,255,7)</defaultLabelColor> <!-- star wars yellow -->
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="HediffCompProperties_GiveHediffsInRange">
+        <range>500</range>
+        <!--mote>Mote_CombatCommand</mote>
+        <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted-->
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetColonists>true</onlyTargetColonists>
+        </targetingParameters>
+        <hediff>guy762_hediff_CommandTierIII_buff</hediff>
+      </li>
+    </comps>
+    <isBad>false</isBad>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>guy762_hediff_CommandTierIII_buff</defName>
+    <label>Command Tier III buff</label>
+    <description>Combat abilities are boosted thanks to being near someone who is using the combat command ability.</description>
+    <debugLabelExtra>other</debugLabelExtra>
+    <hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(255,255,7)</defaultLabelColor> <!-- star wars yellow -->
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>false</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="HediffCompProperties_Link">
+        <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+        <maxDistance>500</maxDistance>
+        <customMote>Mote_CombatCommandLinkLine</customMote>
+      </li>
+    </comps>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+		<statOffsets>
+          <MeleeDamageFactor>0.1</MeleeDamageFactor>
+		  
+		  <PainShockThreshold>0.1</PainShockThreshold>
+		  
+		  <ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+		  <AimingDelayFactor>-0.1</AimingDelayFactor>
+		  <MortarMissRadiusFactor>-0.1</MortarMissRadiusFactor>
+		  
+		  <IncomingDamageFactor>-0.1</IncomingDamageFactor>
+		  
+		  <ConstructionSpeed>0.1</ConstructionSpeed>
+		  <FixBrokenDownBuildingSuccessChance>0.1</FixBrokenDownBuildingSuccessChance>
+		  
+		  <MoveSpeed>0.05</MoveSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <AbilityDef ParentName="guy762_Ability_CommandTierBASE">
+    <defName>guy762_Ability_CommandTierII</defName>
+    <label>Command Tier II</label>
+    <description>Take command of a battle by giving orders and coordinating the attacks of all colonists on the map. The effect lasts 24 hours and remains attached to the leader for the duration.</description>
+    <iconPath>UI/CommandTier_II</iconPath>
+    <warmupMoteSocialSymbol>UI/CommandTier_II</warmupMoteSocialSymbol>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_hediff_CommandTierII_caster</HediffDef>
+		<HediffDef>guy762_hediff_CommandTierII_buff</HediffDef>
+	</descriptionHyperlinks>
+	<comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>guy762_hediff_CommandTierII_caster</hediffDef>
+        <onlyBrain>True</onlyBrain>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+      </li>
+	  <li MayRequire="EBSG.Framework" Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+		<casterHasNoneOfHediffs>
+			<li>guy762_hediff_CommandTierII_buff</li>
+			
+			<li>guy762_hediff_CommandTierV_caster</li>
+			<li>guy762_hediff_CommandTierIV_caster</li>
+			<li>guy762_hediff_CommandTierIII_caster</li>
+			<li>guy762_hediff_CommandTierII_caster</li>
+			<li>guy762_hediff_CommandTierI_caster</li>
+		</casterHasNoneOfHediffs>
+		<casterCapLimiters>
+			<li>
+				<capacity>Consciousness</capacity>
+				<minCapValue>0.75</minCapValue>
+			</li>
+			<li>
+				<capacity>Talking</capacity>
+				<minCapValue>0.5</minCapValue>
+			</li>
+		</casterCapLimiters>
+	  </li>
+    </comps>
+  </AbilityDef>
+  
+  <HediffDef>
+    <defName>guy762_hediff_CommandTierII_caster</defName>
+    <label>Command Tier II</label>
+    <description>By encouraging and commanding nearby allies, this person can enhance their focus in combat and thus their battle performance.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(255,255,7)</defaultLabelColor> <!-- star wars yellow -->
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="HediffCompProperties_GiveHediffsInRange">
+        <range>500</range>
+        <!--mote>Mote_CombatCommand</mote>
+        <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted-->
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetColonists>true</onlyTargetColonists>
+        </targetingParameters>
+        <hediff>guy762_hediff_CommandTierII_buff</hediff>
+      </li>
+    </comps>
+    <isBad>false</isBad>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>guy762_hediff_CommandTierII_buff</defName>
+    <label>Command Tier II buff</label>
+    <description>Combat abilities are boosted thanks to being near someone who is using the combat command ability.</description>
+    <debugLabelExtra>other</debugLabelExtra>
+    <hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(255,255,7)</defaultLabelColor> <!-- star wars yellow -->
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>false</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="HediffCompProperties_Link">
+        <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+        <maxDistance>500</maxDistance>
+        <customMote>Mote_CombatCommandLinkLine</customMote>
+      </li>
+    </comps>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+		<statOffsets>
+          <MeleeDamageFactor>0.15</MeleeDamageFactor>
+		  
+		  <PainShockThreshold>0.15</PainShockThreshold>
+		  
+		  <ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
+		  <AimingDelayFactor>-0.15</AimingDelayFactor>
+		  <MortarMissRadiusFactor>-0.15</MortarMissRadiusFactor>
+		  
+		  <IncomingDamageFactor>-0.15</IncomingDamageFactor>
+		  
+		  <ConstructionSpeed>0.15</ConstructionSpeed>
+		  <FixBrokenDownBuildingSuccessChance>0.15</FixBrokenDownBuildingSuccessChance>
+		  
+		  <MoveSpeed>0.1</MoveSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <AbilityDef ParentName="guy762_Ability_CommandTierBASE">
+    <defName>guy762_Ability_CommandTierI</defName>
+    <label>Command Tier I</label>
+    <description>Take command of a battle by giving orders and coordinating the attacks of all colonists on the map. The effect lasts 24 hours and remains attached to the leader for the duration.</description>
+    <iconPath>UI/CommandTier_I</iconPath>
+    <warmupMoteSocialSymbol>UI/CommandTier_I</warmupMoteSocialSymbol>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_hediff_CommandTierI_caster</HediffDef>
+		<HediffDef>guy762_hediff_CommandTierI_buff</HediffDef>
+	</descriptionHyperlinks>
+	<comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>guy762_hediff_CommandTierI_caster</hediffDef>
+        <onlyBrain>True</onlyBrain>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+      </li>
+	  <li MayRequire="EBSG.Framework" Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+		<casterHasNoneOfHediffs>
+			<li>guy762_hediff_CommandTierI_buff</li>
+			
+			<li>guy762_hediff_CommandTierV_caster</li>
+			<li>guy762_hediff_CommandTierIV_caster</li>
+			<li>guy762_hediff_CommandTierIII_caster</li>
+			<li>guy762_hediff_CommandTierII_caster</li>
+			<li>guy762_hediff_CommandTierI_caster</li>
+		</casterHasNoneOfHediffs>
+		<casterCapLimiters>
+			<li>
+				<capacity>Consciousness</capacity>
+				<minCapValue>0.75</minCapValue>
+			</li>
+			<li>
+				<capacity>Talking</capacity>
+				<minCapValue>0.5</minCapValue>
+			</li>
+		</casterCapLimiters>
+	  </li>
+    </comps>
+  </AbilityDef>
+  
+  <HediffDef>
+    <defName>guy762_hediff_CommandTierI_caster</defName>
+    <label>Command Tier I</label>
+    <description>By encouraging and commanding nearby allies, this person can enhance their focus in combat and thus their battle performance.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(255,255,7)</defaultLabelColor> <!-- star wars yellow -->
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="HediffCompProperties_GiveHediffsInRange">
+        <range>500</range>
+        <!--mote>Mote_CombatCommand</mote>
+        <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted-->
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetColonists>true</onlyTargetColonists>
+        </targetingParameters>
+        <hediff>guy762_hediff_CommandTierI_buff</hediff>
+      </li>
+    </comps>
+    <isBad>false</isBad>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>guy762_hediff_CommandTierI_buff</defName>
+    <label>Command Tier I buff</label>
+    <description>Combat abilities are boosted thanks to being near someone who is using the combat command ability.</description>
+    <debugLabelExtra>other</debugLabelExtra>
+    <hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(255,255,7)</defaultLabelColor> <!-- star wars yellow -->
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>false</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="HediffCompProperties_Link">
+        <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+        <maxDistance>500</maxDistance>
+        <customMote>Mote_CombatCommandLinkLine</customMote>
+      </li>
+    </comps>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+		<statOffsets>
+          <MeleeDamageFactor>0.2</MeleeDamageFactor>
+		  
+		  <PainShockThreshold>0.2</PainShockThreshold>
+		  
+		  <ShootingAccuracyPawn>0.2</ShootingAccuracyPawn>
+		  <AimingDelayFactor>-0.2</AimingDelayFactor>
+		  <MortarMissRadiusFactor>-0.2</MortarMissRadiusFactor>
+		  
+		  <IncomingDamageFactor>-0.2</IncomingDamageFactor>
+		  
+		  <ConstructionSpeed>0.2</ConstructionSpeed>
+		  <FixBrokenDownBuildingSuccessChance>0.2</FixBrokenDownBuildingSuccessChance>
+		  
+		  <MoveSpeed>0.15</MoveSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+ 
+
+</Defs>

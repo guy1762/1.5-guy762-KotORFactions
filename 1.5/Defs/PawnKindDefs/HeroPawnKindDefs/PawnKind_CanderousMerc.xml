@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	
+	<PawnKindDef Name="KotORPlayableHero_MercCanderous"  ParentName="guy762_HeroPawnKindBase">
+		<defName>KotORPlayableHero_MercCanderous</defName>
+		<nameMaker>guy762_HeroNamer_CanderousMerc</nameMaker>
+		<combatPower>500</combatPower>
+		<minGenerationAge>55</minGenerationAge>
+		<maxGenerationAge>56</maxGenerationAge>
+		<fixedGender>Male</fixedGender>
+		<forcedHair>Topdog</forcedHair>
+		<forcedHairColor>(111,110,110)</forcedHairColor>
+		<skinColorOverride>(255,254,211)</skinColorOverride>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Baseliner>999</Baseliner>
+			</xenotypeChances>
+			
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<itemQuality>Legendary</itemQuality>
+		<apparelMoney>49999</apparelMoney>
+		<apparelTags>
+		  <li>KotORHeroAccessories_canderousMerc</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_Accessory_suspendersA</li>
+		   <li>guy762_Jacket_scout</li>
+		   <li>guy762_Backpack_heavy</li>
+		   <li>guy762_Clothing_light</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<apparelDef>guy762_Clothing_light</apparelDef>
+				<color>(210,190,140)</color>
+				<quality>Legendary</quality>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<apparelDef>guy762_Jacket_scout</apparelDef>
+				<color>(125,75,70)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Belt</apparelLayer>
+				<apparelDef>guy762_Backpack_heavy</apparelDef>
+				<quality>Legendary</quality>
+				<color>(120,125,110)</color>
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(90,55,40)</color>
+				<apparelDef>guy762_Accessory_suspendersA</apparelDef>
+				<quality>Legendary</quality>
+			</li>
+		</specificApparelRequirements>
+		<weaponMoney>99999999</weaponMoney>
+		<weaponTags>
+		  <li>MNC_canderous</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>18~20</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>14~16</range>
+			</li>
+			<li>
+				<skill>Construction</skill>
+				<range>12~14</range>
+			</li>
+		</skills>
+		<forcedTraits>
+			<ShootingAccuracy>-1</ShootingAccuracy>
+			<Psychopath>0</Psychopath>
+			<Tough>0</Tough>
+			<Abrasive>0</Abrasive>
+		</forcedTraits>
+		<disallowedTraits>
+		  <li>BodyPurist</li>
+		</disallowedTraits>
+		<techHediffsMoney>7500~12500</techHediffsMoney>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsTags>
+			<li>Spacer</li>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+		  <li>guy762_ImplantDock_II</li>
+		</techHediffsRequired>
+		
+		<inventoryOptions>
+		  <skipChance>0</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+			  <thingDef>guy762_ImplantItemSys_numbness</thingDef>
+			  <countRange>1</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_ImplantItemSys_advcombat</thingDef>
+			  <countRange>1</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_ImplantItemSys_nerve</thingDef>
+			  <countRange>1</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_canderousMerc</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		<abilities>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MarksmanCommand</li>
+		</abilities>
+		<modExtensions>
+			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
+			  <whitelist>
+				<li>Male_AverageWide</li>
+			  </whitelist>
+			  <blacklist>
+				<!--leave blank to disable-->
+			  </blacklist>
+			  <priority>
+				<li>Male_AverageWide</li>
+			  </priority>
+			  <checkGender>False</checkGender>
+			</li>
+			<li Class="BodyTypeForPawnKind.ModExtension_ForcedStyleItem">
+			  <forcedBeard>NoBeard</forcedBeard>
+			</li>
+			<li Class="AddGeneForPK.PKAdditionalGenes">
+			  <geneSets>
+				<li>
+				  <isXenogene>false</isXenogene>
+				  <chance>1</chance>
+				  <geneDefs>
+					<li>Skin_Melanin1</li>
+				  </geneDefs>
+				</li>
+			  </geneSets>
+			</li>
+		</modExtensions>
+	  </PawnKindDef>
+	  
+	  <RulePackDef>
+        <defName>guy762_HeroNamer_CanderousMerc</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[cand] '[cand]' [ordo]</li>
+				<li>cand->Canderous</li>
+				<li>ordo->Ordo</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+		<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun]-->
+	
+	
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryA_CanderousMerc</defName>
+		<title>Mandalorian mercenary</title>
+		<titleShort>Mercenary</titleShort>
+		<description>[PAWN_nameDef] served as a mercenary for many years following the end of the Mandalorian Wars, working under the Tarisian Exchange boss Davik Kang. [PAWN_nameDef] eventually met Revan, the Jedi leader who defeated [PAWN_possessive] people at the Battle of Malachor V, and fought alongside them against the Sith.</description>
+		<slot>Adulthood</slot>
+		<forcedTraits>
+		  <Tough>0</Tough>
+		</forcedTraits>
+		<disallowedTraits>
+			<BodyPurist>0</BodyPurist>
+			<NaturalMood>-1</NaturalMood>
+			<NaturalMood>-2</NaturalMood>
+			<Nerves>-1</Nerves>
+			<Nerves>-2</Nerves>
+		</disallowedTraits>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_CanderousMerc</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_canderousMerc</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	
+
+</Defs>

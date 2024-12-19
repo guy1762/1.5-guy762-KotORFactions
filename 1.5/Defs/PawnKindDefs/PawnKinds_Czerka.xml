@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	
+	<PawnKindDef Name="KotORCzrka_Base" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>guy762_KotORFaction_Czerka</defaultFactionType>
+		<chemicalAddictionChance>0.125</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+		<invFoodDef>MealSurvivalPack</invFoodDef>
+		<invNutrition>2</invNutrition>
+		<biocodeWeaponChance>0.75</biocodeWeaponChance>
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>Offworld</li>
+			</categories>
+		  </li>
+		</backstoryFilters>
+		<!--apparelTags>
+		  <li>KotORHeadband_gasmask</li>
+		</apparelTags-->
+		<combatEnhancingDrugsChance>0.05</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>
+		  <min>0</min>
+		  <max>1</max>
+		</combatEnhancingDrugsCount>
+		<allowOldAgeInjuries>true</allowOldAgeInjuries>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		  <li>Hauling</li>
+		</requiredWorkTags>
+		
+		<techHediffsTags>
+		  <li>Spacer</li>
+		  <li>Advanced</li>
+		  <li>AdvancedWeapon</li>
+		</techHediffsTags>
+		
+		<inventoryOptions>
+		  <subOptionsChooseOne>
+			<li>
+				<thingDef>guy762_KotORcredits</thingDef>
+				<countRange>0~100</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+	  </PawnKindDef>
+	  
+	  
+	  <PawnKindDef Name="KotORCzrka_SlaveBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>guy762_KotORFaction_Czerka</defaultFactionType>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>Offworld</li>
+			  <li>Outlander</li>
+			  <li>Outsider</li>
+			</categories>
+		  </li>
+		</backstoryFilters>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+		<allowOldAgeInjuries>true</allowOldAgeInjuries>
+		<techHediffsTags>
+		  <li>Poor</li>
+		</techHediffsTags>
+		<requiredWorkTags>
+		  <li>Hauling</li>
+		</requiredWorkTags>
+		<invNutrition>1</invNutrition>
+		<invFoodDef>MealNutrientPaste</invFoodDef>
+		<initialWillRange>0~0</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  <PawnKindDef Name="KotORCzrka_SlaveBase_AlienList" ParentName="KotORCzrka_SlaveBase" Abstract="True">
+		<xenotypeSet>
+		  <xenotypeChances>
+			<guy762_xenotype_aqualish MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_aqualish>
+			<guy762_xenotype_bith MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_bith>
+			<guy762_xenotype_cathar MayRequire="guy762.StarWarsXenotypes">0.08</guy762_xenotype_cathar>
+			<guy762_xenotype_chadrafan MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_chadrafan>
+			<guy762_xenotype_devaronian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_devaronian>
+			<guy762_xenotype_duros MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_duros>
+			<guy762_xenotype_klatoonian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_klatoonian> <!--1.00-->
+			<guy762_xenotype_kubaz MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_kubaz>
+			<guy762_xenotype_mimbanese MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_mimbanese>
+			<guy762_xenotype_nautolan MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_nautolan>
+			<guy762_xenotype_nikto MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_nikto>
+			<guy762_xenotype_quarren MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_quarren>
+			<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.15</guy762_xenotype_rodian>
+			<guy762_xenotype_snivvian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_snivvian>
+			<guy762_xenotype_sullustan MayRequire="guy762.StarWarsXenotypes">0.08</guy762_xenotype_sullustan>
+			<guy762_xenotype_togruta MayRequire="guy762.StarWarsXenotypes">0.12</guy762_xenotype_togruta>
+			<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.15</guy762_xenotype_twilek>
+			<guy762_xenotype_weequay MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_weequay>
+			<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_zabrak>
+			<guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_zeltron>
+		  </xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+	  </PawnKindDef>
+
+
+
+
+
+
+
+
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <PawnKindDef Name="KotORCzrka_employee" ParentName="KotORCivilian_Base">
+		<defName>KotORCzrka_employee</defName>
+		<label>employee</label>
+		<defaultFactionType>guy762_KotORFaction_Czerka</defaultFactionType>
+		<combatPower>25</combatPower>
+		<itemQuality>Normal</itemQuality>
+		<isFighter>false</isFighter>
+		<apparelMoney>1000~2000</apparelMoney>
+		<apparelTags Inherit="False">
+		  <li>KotOREquipment_czerkatech</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_Clothing_czerka</li>
+		</apparelRequired>
+		
+		<!--weaponMoney>60~120</weaponMoney>
+		<weaponTags>
+		  <li>KotORWeapon_civilian</li>
+		</weaponTags-->
+		
+		<techHediffsChance>0.25</techHediffsChance>
+		<techHediffsMoney>50~600</techHediffsMoney>
+		<techHediffsTags>
+		  <li>Spacer</li>
+		  <li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+	  </PawnKindDef>
+	  
+	  <PawnKindDef Name="KotORCzrka_lobot" ParentName="KotORCivilian_Base">
+		<defName>KotORCzrka_lobot</defName>
+		<label>computer systems manager</label>
+		<defaultFactionType>guy762_KotORFaction_Czerka</defaultFactionType>
+		<combatPower>25</combatPower>
+		
+		<maxPerGroup>4</maxPerGroup>
+		<isFighter>false</isFighter>
+		
+		<itemQuality>Normal</itemQuality>
+		<apparelMoney>1000~2000</apparelMoney>
+		<apparelTags Inherit="False">
+		  <li>KotOREquipment_czerkatech</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_Clothing_czerka</li>
+		</apparelRequired>
+		
+		<!--weaponMoney>60~120</weaponMoney>
+		<weaponTags>
+		  <li>KotORWeapon_civilian</li>
+		</weaponTags-->
+		
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>100~750</techHediffsMoney>
+		<techHediffsTags>
+		  <li>Spacer</li>
+		  <li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+		  <li>guy762_ImplantDock_III</li>
+		</techHediffsRequired>
+		<forcedHair>Bald</forcedHair>
+		
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+	  </PawnKindDef>
+	  
+	  <PawnKindDef Name="KotORCzrka_officer" ParentName="KotORCivilian_Base">
+		<defName>KotORCzrka_officer</defName>
+		<label>executive officer</label>
+		<defaultFactionType>guy762_KotORFaction_Czerka</defaultFactionType>
+		<combatPower>50</combatPower>
+		
+		<maxPerGroup>3</maxPerGroup>
+		<trader>true</trader>
+		<factionLeader>true</factionLeader>
+		<invFoodDef>MealLavish</invFoodDef>
+		
+		<minGenerationAge>25</minGenerationAge>
+		<maxGenerationAge>70</maxGenerationAge>
+		<itemQuality>Excellent</itemQuality>
+		<isFighter>false</isFighter>
+		<apparelMoney>10000~25000</apparelMoney>
+		<apparelTags Inherit="False">
+		  <li>KotOREquipment_czerkatech</li>
+		  <li>KotOREquipment_officer</li>
+		  <li>KotORShield_strong</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_Clothing_czerkaofficer</li>
+		   <li>Apparel_AuthorityCap</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<stuff>Synthread</stuff>
+				<color>(75,115,90)</color>
+			</li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>250~1000</weaponMoney>
+		<weaponTags>
+		  <li>CZ_officer</li>
+		</weaponTags>
+		
+		<!-- <techHediffsChance>0.06</techHediffsChance> -->
+		<!-- <techHediffsMoney>5000~10000</techHediffsMoney> -->
+		<!-- <techHediffsTags> -->
+		  <!-- <li>Spacer</li> -->
+		  <!-- <li>ImplantEmpireCommon</li> -->
+		<!-- </techHediffsTags> -->
+		
+		<skills>
+			<li>
+				<skill>Social</skill>
+				<range>9~14</range>
+			</li>
+			<li>
+				<skill>Intellectual</skill>
+				<range>7~12</range>
+			</li>
+		</skills>
+		<disallowedTraits>
+		  <li>Kind</li>
+		</disallowedTraits>
+		<abilities>
+			<li>WorkDrive</li>
+			<!--li>MiningCommand</li>
+			<li>FarmingCommand</li-->
+		</abilities>
+		
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  
+	  <PawnKindDef Name="KotORCzrka_scout" ParentName="KotORCivilian_Base">
+		<defName>KotORCzrka_scout</defName>
+		<label>expeditionary agent</label>
+		<defaultFactionType>guy762_KotORFaction_Czerka</defaultFactionType>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>85</maxGenerationAge>
+		<combatPower>35</combatPower>
+		<itemQuality>Normal</itemQuality>
+		<isFighter>false</isFighter>
+		<apparelMoney>1000~2000</apparelMoney>
+		<apparelTags Inherit="False">
+		  <li>KotOREquipment_czerkatech</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_Clothing_czerka</li>
+		   <li>guy762_UniformCap</li>
+		   <li>guy762_Accessory_suspendersA</li>
+		   <li>guy762_Backpack_heavy</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(75,115,90)</color>
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(130,125,105)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Belt</apparelLayer>
+				<color>(120,125,110)</color>
+			</li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>100~500</weaponMoney>
+		<weaponTags>
+		  <li>CZ_scout</li>
+		</weaponTags>
+		
+		<invNutrition>3</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.05</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<techHediffsChance>0.06</techHediffsChance>
+		<techHediffsMoney>50~600</techHediffsMoney>
+		<techHediffsTags>
+		  <li>Spacer</li>
+		  <li>Simple</li>
+		  <li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		
+		<allowOldAgeInjuries>false</allowOldAgeInjuries>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+	  </PawnKindDef>
+	  
+	  
+	
+	  
+	  <PawnKindDef Name="KotORCzrka_trooper" ParentName="KotORCzrka_Base">
+		<defName>KotORCzrka_trooper</defName>
+		<label>asset protection agent</label>
+		<combatPower>100</combatPower>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>45</maxGenerationAge>
+		
+		<maxPerGroup>14</maxPerGroup>
+		
+		<itemQuality>Good</itemQuality>
+		<apparelMoney>5000~7500</apparelMoney>
+		<apparelTags>
+		  <li>BeltDefensePop</li>
+		  <li>KotORShield_basic</li>
+		  <li>KotORUtility_weakgrenade</li>
+		  <li>KotOREquipment_basic</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_glove_defense</li>
+		   <li>guy762_LgtBattleArmor_TSL</li>
+		   <li>guy762_HelmetLgtBattle_TSL</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<weaponMoney>800~2800</weaponMoney>
+		<weaponTags>
+		  <li>CZ_trooper</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>6~14</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>4~8</range>
+			</li>
+		</skills>
+		<inventoryOptions>
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+				<li>
+				  <thingDef>guy762_stim_battle</thingDef>
+				  <countRange>0~1</countRange>
+				</li>
+				<!--li>
+					<thingDef>credits</thingDef>
+					<countRange>10~300</countRange>
+				</li-->
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<techHediffsChance>0.25</techHediffsChance>
+		<techHediffsMoney>
+			<min>1200</min>
+			<max>2400</max>
+		</techHediffsMoney>
+		<techHediffsRequired>
+		  <li>guy762_ImplantDock_I</li>
+		</techHediffsRequired>
+		
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<disallowedTraits>
+		  <li>Brawler</li>
+		</disallowedTraits>
+		<isFighter>true</isFighter>
+		<allowOldAgeInjuries>false</allowOldAgeInjuries>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  
+	  
+	  <PawnKindDef Name="KotORCzrka_enforcer" ParentName="KotORCzrka_Base">
+		<defName>KotORCzrka_enforcer</defName>
+		<label>compliance agent</label>
+		<combatPower>100</combatPower>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>45</maxGenerationAge>
+		
+		<maxPerGroup>8</maxPerGroup>
+		
+		<itemQuality>Good</itemQuality>
+		<apparelMoney>5000~7500</apparelMoney>
+		<apparelTags>
+		  <li>KotORShield_basic</li>
+		  <li>KotOREquipment_basic</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_glove_defense</li>
+		   <li>guy762_LgtBattleArmor_TSL</li>
+		   <li>guy762_HelmetLgtBattle_TSL</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<weaponMoney>120~2000</weaponMoney>
+		<weaponTags>
+		  <li>CZ_enforcer</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~8</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>6~14</range>
+			</li>
+		</skills>
+		<inventoryOptions>
+			<skipChance>0.1</skipChance>
+			<subOptionsChooseOne>
+				<li>
+				  <thingDef>guy762_stim_str</thingDef>
+				  <countRange>0~1</countRange>
+				</li>
+				<li>
+				  <thingDef>guy762_stim_con</thingDef>
+				  <countRange>0~1</countRange>
+				</li>
+				<li>
+				  <thingDef>guy762_stim_dex</thingDef>
+				  <countRange>0~1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<techHediffsChance>0.25</techHediffsChance>
+		<techHediffsMoney>
+			<min>1200</min>
+			<max>2400</max>
+		</techHediffsMoney>
+		<techHediffsRequired>
+		  <li>guy762_ImplantDock_I</li>
+		</techHediffsRequired>
+		
+		<disallowedTraits>
+		  <li>ShootingAccuracy</li>
+		</disallowedTraits>
+		
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<isFighter>true</isFighter>
+		<allowOldAgeInjuries>false</allowOldAgeInjuries>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	  </PawnKindDef>
+	  
+	  
+	  <PawnKindDef Name="KotORCzrka_elitemerc" ParentName="KotORMerc_elite">
+		<defName>KotORCzrka_elitemerc</defName>
+		<label>personnel security contractor</label>
+		<defaultFactionType>guy762_KotORFaction_Czerka</defaultFactionType>
+		<maxPerGroup>4</maxPerGroup>
+		
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  <!--war droids-->  
+	  
+	  
+	  
+	  <PawnKindDef Name="KotORCzrka_droid_SentWD" ParentName="KotORDroidBad_SentWD" MayRequire="guy762.KotORDroids">
+		<defName>KotORCzrka_droid_SentWD</defName>
+		<defaultFactionType>guy762_KotORFaction_Czerka</defaultFactionType>
+		<specificApparelRequirements Inherit="False" />
+		<itemQuality>Good</itemQuality>
+	  </PawnKindDef>
+	  
+	  <PawnKindDef Name="KotORCzrka_droid_ADMkI" ParentName="KotORDroidBad_ADMkI" MayRequire="guy762.KotORDroids">
+		<defName>KotORCzrka_droid_ADMkI</defName>
+		<defaultFactionType>guy762_KotORFaction_Czerka</defaultFactionType>
+		<specificApparelRequirements Inherit="False" />
+		<itemQuality>Good</itemQuality>
+	  </PawnKindDef>
+	  
+	  <PawnKindDef Name="KotORCzrka_droid_ADMkIV" ParentName="KotORDroidBad_ADMkIV" MayRequire="guy762.KotORDroids">
+		<defName>KotORCzrka_droid_ADMkIV</defName>
+		<defaultFactionType>guy762_KotORFaction_Czerka</defaultFactionType>
+		<label>heavy assault droid</label>
+		<race>guy762_DroidRace_ADMkIV_sith</race>
+		<specificApparelRequirements Inherit="False" />
+		<itemQuality>Good</itemQuality>
+		<apparelTags>
+		  <li>KotORDroidWeapon_wardroid</li>
+		  <li>KotORLgtCannon_flame</li>
+		</apparelTags>
+	  </PawnKindDef>
+	  
+	  
+	  <!--civilian droids-->
+	  
+	  
+	  <PawnKindDef Name="KotORCzrka_droid_GE3PD" ParentName="KotORDroidGood_GE3PD" MayRequire="guy762.KotORDroids">
+		<defName>KotORCzrka_droid_GE3PD</defName>
+		<defaultFactionType>guy762_KotORFaction_Czerka</defaultFactionType>
+		<trader>true</trader>
+		<skinColorOverride>(220,175,80)</skinColorOverride>
+	  </PawnKindDef>
+	  
+	  
+	  <!-- NOT NECESSARY, use civ versions
+	  
+	  <PawnKindDef Name="KotORCzrka_droid_3C" ParentName="KotORDroidGood_3C" MayRequire="guy762.KotORDroids">
+		<defName>KotORCzrka_droid_3C</defName>
+		<defaultFactionType>guy762_KotORFaction_Czerka</defaultFactionType>
+	  </PawnKindDef>
+	  
+	  <PawnKindDef Name="KotORCzrka_droid_R8009" ParentName="KotORDroidGood_R8009" MayRequire="guy762.KotORDroids">
+		<defName>KotORCzrka_droid_R8009</defName>
+		<defaultFactionType>guy762_KotORFaction_Czerka</defaultFactionType>
+	  </PawnKindDef>
+	  
+	  <PawnKindDef Name="KotORCzrka_droid_KM1MD" ParentName="KotORDroidBad_KM1MD" MayRequire="guy762.KotORDroids">
+		<defName>KotORCzrka_droid_KM1MD</defName>
+		<defaultFactionType>guy762_KotORFaction_Czerka</defaultFactionType>
+	  </PawnKindDef>
+	  
+	  <PawnKindDef Name="KotORCzrka_droid_KM1HMD" ParentName="KotORDroidBad_KM1HMD" MayRequire="guy762.KotORDroids">
+		<defName>KotORCzrka_droid_KM1HMD</defName>
+		<defaultFactionType>guy762_KotORFaction_Czerka</defaultFactionType>
+	  </PawnKindDef>
+	  
+	  <PawnKindDef Name="KotORCzrka_droid_GE3LD" ParentName="KotORDroidGood_GE3LD" MayRequire="guy762.KotORDroids">
+		<defName>KotORCzrka_droid_GE3LD</defName>
+		<defaultFactionType>guy762_KotORFaction_Czerka</defaultFactionType>
+	  </PawnKindDef>
+	  
+	  <PawnKindDef Name="KotORCzrka_droid_HK50AD" ParentName="KotORRepub_droid_HK50AD" MayRequire="guy762.KotORDroids">
+		<defName>KotORCzrka_droid_HK50AD</defName>
+		<defaultFactionType>guy762_KotORFaction_Czerka</defaultFactionType>
+	  </PawnKindDef>
+	  
+	  -->
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <!--slaves-->	  
+	  
+	  
+	  
+	  <PawnKindDef Name="KotORCzrka_slave" ParentName="KotORCzrka_SlaveBase_AlienList">
+		<defName>KotORCzrka_slave</defName>
+		<label>indentured laborer</label>
+		<combatPower>20</combatPower>
+		<itemQuality>Awful</itemQuality>
+		<gearHealthRange>0.2~0.8</gearHealthRange>
+		<apparelMoney>0~0</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>czkera_slave</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>Apparel_BodyStrap</li>	
+		   <li>Apparel_Collar</li>
+		   <li>guy762_Bodysuit_czerka</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<stuff>Synthread</stuff>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+		<requiredWorkTags>
+		   <li>Firefighting</li>
+		   <li>ManualDumb</li>
+		   <li>Mining</li>
+		   <li>Hauling</li>
+		   <li>PlantWork</li>
+		</requiredWorkTags>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  
+	  
+	  
+
+ </Defs>

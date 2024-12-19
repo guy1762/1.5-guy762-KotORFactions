@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="KotORMando_Base" Abstract="True">
+		<defaultFactionType>guy762_KotORFaction_MandoClan</defaultFactionType>
+		<race>Human</race>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<minGenerationAge>16</minGenerationAge>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+		
+		<invNutrition>1.5</invNutrition>
+		<invFoodDef>Pemmican</invFoodDef>
+		<inventoryOptions>
+			<skipChance>0.9</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<biocodeWeaponChance>0.95</biocodeWeaponChance>
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		  <li>Hauling</li>
+		</requiredWorkTags>
+		<disallowedTraits>
+			<li>Wimp</li>
+			<li>Nudist</li>
+        </disallowedTraits>
+		<apparelMoney>
+			<min>12000</min>
+			<max>12000</max>
+		</apparelMoney>
+		<apparelRequired Inherit="False">
+			<li>guy762_Bodysuit</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>MNCFactionArmor</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>6000</min>
+			<max>12000</max>
+		</weaponMoney>
+		<techHediffsChance>0.3</techHediffsChance>
+		<techHediffsMoney>
+			<min>12000</min>
+			<max>20000</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+		  <li>Spacer</li>
+		  <li>Advanced</li>
+		  <li>AdvancedWeapon</li>
+		</techHediffsTags>
+		
+		<initialWillRange>5~10</initialWillRange>
+		<initialResistanceRange>10~20</initialResistanceRange>
+		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+		
+		<!--<xenotypeSet>         THIS BLOCK HAS BEEN MOVED BACK TO THE FACTIONDEF FILE
+		  <xenotypeChances>
+			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.24</Baseliner>
+			<guy762_xenotype_aqualish MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_aqualish>
+			<guy762_xenotype_devaronian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_devaronian>
+			<guy762_xenotype_duros MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_duros>
+			<guy762_xenotype_falleen MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_falleen>
+			<guy762_xenotype_feeorin MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_feeorin>
+			<guy762_xenotype_iridonian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_iridonian>
+			<guy762_xenotype_nautolan MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_nautolan>
+			<guy762_xenotype_pantoran MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_pantoran>
+			<guy762_xenotype_quarren MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_quarren>
+			<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_rodian>
+			<guy762_xenotype_snivvian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_snivvian>
+			<guy762_xenotype_sullustan MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_sullustan>
+			<guy762_xenotype_togruta MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_togruta>
+			<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.15</guy762_xenotype_twilek>
+			<guy762_xenotype_weequay MayRequire="guy762.StarWarsXenotypes">0.07</guy762_xenotype_weequay>
+			<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_zabrak>
+			<guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_zeltron>
+		  </xenotypeChances>
+		</xenotypeSet>-->
+		
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORMando_Base_blue" Abstract="True" ParentName="KotORMando_Base">
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(120,110,180)</color>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(125,155,195)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(125,155,195)</color>
+			</li>
+		</specificApparelRequirements>
+		<inventoryOptions>
+			<skipChance>0.25</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>guy762_medpac</thingDef>
+					<countRange>1~3</countRange>
+				</li>
+				<li>
+				  <thingDef>guy762_stim_battle</thingDef>
+				  <countRange>0~1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORMando_Base_red" Abstract="True" ParentName="KotORMando_Base">
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(165,80,80)</color>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(180,85,85)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(180,85,85)</color>
+			</li>
+		</specificApparelRequirements>
+		<inventoryOptions>
+		  <skipChance>0.25</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+			  <thingDef>guy762_stim_hyperbattle</thingDef>
+			  <countRange>0~1</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_stim_con</thingDef>
+			  <countRange>0~1</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_stim_dex</thingDef>
+			  <countRange>0~1</countRange>
+			</li>
+			<li>
+				<thingDef>guy762_medpac_adv</thingDef>
+				<countRange>1~3</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		<modExtensions Inherit="False">
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+			  <whitelist>
+			  </whitelist>
+			  <blacklist>
+				<li>Thin</li>
+				<li>Fat</li>
+				<li>Baby</li>
+				<li>Child</li>
+			  </blacklist>
+			  <priority>
+				<!--When violates the black/whitelist, selected from these-->
+			  </priority>
+			  <!--Align body gender to pawn's gender (default: True)-->
+			  <checkGender>True</checkGender>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORMando_Base_gold" Abstract="True" ParentName="KotORMando_Base">
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(210,200,15)</color>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(210,160,15)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(210,160,15)</color>
+			</li>
+		</specificApparelRequirements>
+		<inventoryOptions>
+		  <skipChance>0.25</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+			  <thingDef>guy762_stim_echani</thingDef>
+			  <countRange>0~1</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_stim_hypercon</thingDef>
+			  <countRange>0~1</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_stim_hyperdex</thingDef>
+			  <countRange>0~1</countRange>
+			</li>
+			<li>
+				<thingDef>guy762_medpac_life</thingDef>
+				<countRange>1~3</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		<modExtensions Inherit="False">
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+			  <whitelist>
+			  </whitelist>
+			  <blacklist>
+				<li>Thin</li>
+				<li>Fat</li>
+				<li>Baby</li>
+				<li>Child</li>
+			  </blacklist>
+			  <priority>
+				<!--When violates the black/whitelist, selected from these-->
+			  </priority>
+			  <!--Align body gender to pawn's gender (default: True)-->
+			  <checkGender>True</checkGender>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+
+			<!--troopers-->
+	   
+	<PawnKindDef Name="KotORMando_trooper" ParentName="KotORMando_Base_blue">
+		<defName>KotORMando_trooper</defName>
+		<label>Mandalorian trooper</label>
+		<combatPower>100</combatPower>
+		<maxGenerationAge>30</maxGenerationAge>
+		<gearHealthRange>0.7~2.3</gearHealthRange>
+		<itemQuality>Poor</itemQuality>
+		<weaponTags>
+			<li>MNC_trooper</li>
+		</weaponTags>
+		<apparelTags>
+			<li>KotOREquipment_basic</li>
+			<li>KotORUtility_weakgrenade</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>guy762_MandoArmor_battle</li>
+			<li>guy762_Bodysuit_Dyeable</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(145,150,195)</color>
+			</li>
+		</specificApparelRequirements>
+		<skills>
+		<li>
+			<skill>Shooting</skill>
+			<range>7~11</range>
+		</li>
+		<li>
+			<skill>Melee</skill>
+			<range>0~7</range>
+		</li>
+		</skills>
+		<disallowedTraits>
+		  <li>Brawler</li>
+		</disallowedTraits>
+	</PawnKindDef>
+	
+	
+			<!--scouts-->
+	   	
+	<PawnKindDef Name="KotORMando_scout" ParentName="KotORMando_Base">
+		<defName>KotORMando_scout</defName>
+		<label>Mandalorian scout</label>
+		<combatPower>80</combatPower>
+		<maxGenerationAge>35</maxGenerationAge>
+		<gearHealthRange>0.8~2.3</gearHealthRange>
+		<itemQuality>Normal</itemQuality>
+		<weaponTags>
+			<li>MNC_scout</li>
+		</weaponTags>
+		<apparelRequired Inherit="False">
+			<li>guy762_MidBattleArmor_mando</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(125,155,195)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(125,155,195)</color>
+			</li>
+		</specificApparelRequirements>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotORStealthBelt_basic</li>
+			<li>KotOREquipment_basic</li>
+			<li>KotORHeadband_bandana</li>
+		</apparelTags>
+		<skills>
+		<li>
+			<skill>Shooting</skill>
+			<range>8~13</range>
+		</li>
+		<li>
+			<skill>Melee</skill>
+			<range>0~8</range>
+		</li>
+		</skills>
+		<disallowedTraits>
+		  <li>Brawler</li>
+		</disallowedTraits>
+	</PawnKindDef>	
+	
+	
+			<!--warrior-->
+	   	
+	<PawnKindDef Name="KotORMando_warrior" ParentName="KotORMando_Base_blue">
+		<defName>KotORMando_warrior</defName>
+		<label>Mandalorian warrior</label>
+		<combatPower>100</combatPower>
+		<maxGenerationAge>35</maxGenerationAge>
+		<gearHealthRange>0.9~2.3</gearHealthRange>
+		<itemQuality>Good</itemQuality>
+		<weaponTags>
+			<li>KotORMelee_weak</li>
+		</weaponTags>
+		<apparelTags>
+			<li>KotOREquipment_basic</li>
+			<li>KotORShield_basic</li>
+			<li>KotORShield_mando</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>guy762_MandoArmor_battle</li>
+			<li>guy762_Bodysuit_Dyeable</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(145,150,195)</color>
+			</li>
+		</specificApparelRequirements>
+		<skills>
+		<li>
+			<skill>Shooting</skill>
+			<range>0~8</range>
+		</li>
+		<li>
+			<skill>Melee</skill>
+			<range>8~13</range>
+		</li>
+		</skills>
+		<disallowedTraits>
+		  <li>ShootingAccuracy</li>
+		</disallowedTraits>
+	</PawnKindDef>	
+	
+		
+			<!--commando-->
+			
+	 <PawnKindDef Name="KotORMando_commando" ParentName="KotORMando_Base_blue">
+		<defName>KotORMando_commando</defName>
+		<label>Mandalorian commando</label>
+		<combatPower>175</combatPower>
+		<maxGenerationAge>35</maxGenerationAge>
+		<gearHealthRange>0.9~2.3</gearHealthRange>
+		<itemQuality>Normal</itemQuality>
+		<weaponTags>
+			<li>MNC_commando</li>
+		</weaponTags>
+		<apparelTags>
+			<li>BeltDefensePop</li>
+			<li>KotOREquipment_adv</li>
+			<li>MNC_jetpack_light</li>
+			<li>KotORShield_basic</li>
+			<li>KotORShield_mando</li>
+			<li>KotORUtility_weakgrenade</li>
+			<li>KotORUtility_utilitygrenade</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_MNCHelmet</li>
+			<li>guy762_MandoArmor_assault</li>
+		</apparelRequired>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>11~14</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>11~14</range>
+			</li>
+		</skills>
+		<disallowedTraits>
+		  <li>Brawler</li>
+		</disallowedTraits>
+		<techHediffsMoney>400~1200</techHediffsMoney>
+		<techHediffsChance>2</techHediffsChance>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+	</PawnKindDef>
+	
+			
+			<!--marauder-->
+				
+	<PawnKindDef Name="KotORMando_marauder" ParentName="KotORMando_Base_blue">
+		<defName>KotORMando_marauder</defName>
+		<label>Mandalorian marauder</label>
+		<combatPower>175</combatPower>
+		<maxGenerationAge>35</maxGenerationAge>
+		<gearHealthRange>1~2.3</gearHealthRange>
+		<itemQuality>Good</itemQuality>
+		<weaponTags>
+			<li>MNC_marauder</li>
+		</weaponTags>
+		<apparelTags>
+			<li>KotOREquipment_adv</li>
+			<li>KotORShield_mid</li>
+			<li>KotORShield_mando</li>
+			<li>MNC_jetpack_light</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_MNCHelmet</li>
+			<li>guy762_MandoArmor_assault</li>
+			<!-- <li>guy762_Jetpack_light</li> BUGGED WITH MELEE WEAPONS -->
+		</apparelRequired>
+		<skills>
+		<li>
+			<skill>Shooting</skill>
+			<range>0~13</range>
+		</li>
+		<li>
+			<skill>Melee</skill>
+			<range>13~17</range>
+		</li>
+		</skills>
+		<disallowedTraits>
+		  <li>ShootingAccuracy</li>
+		</disallowedTraits>
+		<techHediffsMoney>400~1200</techHediffsMoney>
+		<techHediffsChance>2</techHediffsChance>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+	</PawnKindDef>
+	
+		
+			<!--heavy-->
+				
+	<PawnKindDef Name="KotORMando_heavy" ParentName="KotORMando_Base_blue">
+		<defName>KotORMando_heavy</defName>
+		<label>Mandalorian heavy</label>
+		<combatPower>200</combatPower>
+		<maxGenerationAge>35</maxGenerationAge>
+		<gearHealthRange>0.9~2.3</gearHealthRange>
+		<itemQuality>Normal</itemQuality>
+		<weaponTags>
+			<li>MNC_heavy</li>
+			<li>GunSingleUse</li>
+		</weaponTags>
+		<apparelTags>
+			<li>KotOREquipment_adv</li>
+			<li>KotORShield_mid</li>
+			<li>MNC_jetpack_light</li>
+			<li>KotORUtility_stronggrenade</li>
+			<li>KotORUtility_utilitygrenade</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_MNCHelmet</li>
+			<li>guy762_MandoArmor_assault</li>
+		</apparelRequired>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>12~15</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>0~12</range>
+			</li>
+		</skills>
+		<disallowedTraits>
+		  <li>Brawler</li>
+		</disallowedTraits>
+		<techHediffsMoney>400~1200</techHediffsMoney>
+		<techHediffsChance>2</techHediffsChance>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+		<modExtensions>
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+			  <whitelist>
+				<li>Hulk</li>
+			  </whitelist>
+			  <blacklist>
+			  </blacklist>
+			  <priority>
+				<!--When violates the black/whitelist, selected from these-->
+				<li>Hulk</li>
+			  </priority>
+			  <!--Align body gender to pawn's gender (default: True)-->
+			  <checkGender>False</checkGender>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+		<!--sapper-->
+	   	
+	<PawnKindDef Name="KotORMando_sapper" ParentName="KotORMando_Base">
+		<defName>KotORMando_sapper</defName>
+		<label>Mandalorian saboteur</label>
+		<combatPower>125</combatPower>
+		<maxGenerationAge>35</maxGenerationAge>
+		<gearHealthRange>1</gearHealthRange>
+		<itemQuality>Good</itemQuality>
+		
+		<canBeSapper>true</canBeSapper>
+		<isGoodBreacher>true</isGoodBreacher>
+		
+		<weaponTags>
+			<li>MNC_sapper</li>
+		</weaponTags>
+		<apparelRequired Inherit="False">
+			<li>guy762_MidBattleArmor_mando</li>
+			<li>guy762_grenadebelt_sonic</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(180,85,85)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(180,85,85)</color>
+			</li>
+		</specificApparelRequirements>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>KotORStealthBelt_adv</li>
+			<li>KotOREquipment_adv</li>
+			<li>MNC_jetpack_light</li>
+		</apparelTags>
+		<inventoryOptions>
+		  <skipChance>0</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+			  <thingDef>guy762_stim_hyperdex</thingDef>
+			  <countRange>1~2</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>12~15</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>12~15</range>
+			</li>
+		</skills>
+		<disallowedTraits>
+		  <li>Brawler</li>
+		</disallowedTraits>
+	</PawnKindDef>	
+	
+		
+			<!--rally master-->
+			
+	<PawnKindDef Name="KotORMando_rallymaster" ParentName="KotORMando_Base_red">
+		<defName>KotORMando_rallymaster</defName>
+		<label>Mandalorian rally master</label>
+		<combatPower>250</combatPower>
+		<maxPerGroup>2</maxPerGroup>
+		<minGenerationAge>22</minGenerationAge>
+		<maxGenerationAge>35</maxGenerationAge>
+		<gearHealthRange>1~2.3</gearHealthRange>
+		<itemQuality>Good</itemQuality>
+		<weaponTags>
+			<li>MNC_commando</li>
+			<li>MNC_heavy</li>
+			<li>KotORSniper</li>
+			<li>MNC_sniper</li>
+		</weaponTags>
+		<apparelTags>
+			<li>KotOREquipment_adv</li>
+			<li>KotORShield_mid</li>
+			<li>KotORShield_mando</li>
+			<li>KotORWristgun</li>
+			<li>KotORUtility_utilitygrenade</li>
+			<li>KotORUtility_stronggrenade</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_MNCHelmet</li>
+			<li>guy762_MandoArmor_assault</li>
+			<li>Apparel_PackBroadshield</li>
+		</apparelRequired>
+		<skills>
+		<li>
+			<skill>Shooting</skill>
+			<range>12~16</range>
+		</li>
+		<li>
+			<skill>Melee</skill>
+			<range>12~16</range>
+		</li>
+		<li>
+			<skill>Social</skill>
+			<range>9~14</range>
+		</li>
+		<li>
+			<skill>Intellectual</skill>
+			<range>7~12</range>
+		</li>
+		</skills>
+		<disallowedTraits>
+		  <li>Brawler</li>
+		  <li>CreepyBreathing</li>
+		  <li>AnnoyingVoice</li>
+		</disallowedTraits>
+		<disallowedTraitsWithDegree>
+		  <Industriousness>-2</Industriousness>
+		  <Nerves>-2</Nerves>
+		</disallowedTraitsWithDegree>
+		<techHediffsMoney>400~1200</techHediffsMoney>
+		<techHediffsChance>4</techHediffsChance>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+		  <li>guy762_ImplantDock_I</li>
+		</techHediffsRequired>
+		<abilities>
+			<li>MarksmanCommand</li>
+		</abilities>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="KotORMando_jedihunter" ParentName="KotORMando_Base_red">
+		<defName>KotORMando_jedihunter</defName>
+		<label>Mandalorian Jedi hunter</label>
+		<combatPower>500</combatPower>
+		<minGenerationAge>22</minGenerationAge>
+		<maxGenerationAge>40</maxGenerationAge>
+		<xenotypeSet>
+			<xenotypeChances>
+				<guy762_xenotype_taung MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_taung>
+			</xenotypeChances>
+		</xenotypeSet>
+		
+		<defaultFactionType>guy762_KotORFaction_SavageMandos</defaultFactionType>
+		<isBoss>true</isBoss>
+		<skipResistant>true</skipResistant>
+		<maxPerGroup>4</maxPerGroup>
+		
+		<itemQuality>Excellent</itemQuality>
+		<apparelTags>
+			<li>KotOREquipment_rare</li>
+			<li>KotORUtility_stronggrenade</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_MandoHelmet_supercom</li>
+			<li>guy762_MandoArmor_supercom</li>
+			<li>guy762_energyshield_mandoHvy</li>
+			<!-- <li>guy762_Jetpack_light</li> BUGGED WITH MELEE WEAPONS -->
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(100,100,100)</color>
+			</li>
+		</specificApparelRequirements>
+		
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>10~12</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>14~18</range>
+			</li>
+		</skills>
+		
+		<weaponMoney>8200~9200</weaponMoney>
+		<weaponTags>
+			<li>MNC_jedihunter</li>
+			<li>KotORLightsaber_anysingle</li>
+		</weaponTags>
+
+		<techHediffsMoney>999999</techHediffsMoney>
+		<techHediffsChance>100</techHediffsChance>
+		<techHediffsTags>
+			<li>Spacer</li>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+		  <li>guy762_ImplantDock_II</li>
+		</techHediffsRequired>
+		
+		<forcedTraits>
+			<PsychicSensitivity>-2</PsychicSensitivity>
+			<Brawler>0</Brawler>
+		</forcedTraits>
+		<disallowedTraits>
+		  <li>ShootingAccuracy</li>
+		</disallowedTraits>
+	</PawnKindDef>
+	
+		
+			<!--champion-->
+			
+	<PawnKindDef Name="KotORMando_champion" ParentName="KotORMando_Base_gold">
+		<defName>KotORMando_champion</defName>
+		<label>Mandalorian champion</label>
+		<combatPower>1000</combatPower>
+		<minGenerationAge>35</minGenerationAge>
+		<maxGenerationAge>70</maxGenerationAge>
+		<xenotypeSet>
+			<xenotypeChances>
+				<guy762_xenotype_taung MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_taung>
+			</xenotypeChances>
+		</xenotypeSet>
+		
+		<isBoss>true</isBoss>
+		<skipResistant>true</skipResistant>
+		
+		<itemQuality>Excellent</itemQuality>
+		<weaponMoney>99999</weaponMoney>
+		<weaponTags>
+			<li>MNC_champion</li>
+			<li>MNC_commando</li>
+			<li>MNC_heavy</li>
+			<li>KotORMelee_strong</li>
+			<li>KotORRocketRifle</li>
+		</weaponTags>
+		<biocodeWeaponChance>1</biocodeWeaponChance>
+		<apparelTags>
+			<li>KotOREquipment_rare</li>
+			<li>KotORWristgun</li>
+			<li>KotORShield_strong</li>
+			<li>KotORUtility_stronggrenade</li>
+			<li>MNC_jetpack_mid</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_MNCHelmet</li>
+			<li>guy762_MandoArmor_assault</li>
+		</apparelRequired>
+		<skills>
+		<li>
+			<skill>Shooting</skill>
+			<range>16~20</range>
+		</li>
+		<li>
+			<skill>Melee</skill>
+			<range>16~20</range>
+		</li>
+		<li>
+			<skill>Social</skill>
+			<range>0~14</range>
+		</li>
+		<li>
+			<skill>Intellectual</skill>
+			<range>0~14</range>
+		</li>
+		</skills>
+		<disallowedTraits>
+		  <li>Brawler</li>
+		</disallowedTraits>
+		<techHediffsMoney>2000~4000</techHediffsMoney>
+		<techHediffsChance>6</techHediffsChance>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+		  <li>guy762_ImplantDock_II</li>
+		</techHediffsRequired>
+	</PawnKindDef>
+	
+									
+		
+			<!--field marshal-->
+						
+	<PawnKindDef Name="KotORMando_fieldmarshal" ParentName="KotORMando_Base_gold">
+		<defName>KotORMando_fieldmarshal</defName>
+		<label>Mandalorian field marshal</label>
+		<combatPower>500</combatPower>
+		<minGenerationAge>40</minGenerationAge>
+		<maxGenerationAge>70</maxGenerationAge>
+		<xenotypeSet>
+			<xenotypeChances>
+				<guy762_xenotype_taung MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_taung>
+			</xenotypeChances>
+		</xenotypeSet>
+		
+		<factionLeader>true</factionLeader>
+		<maxPerGroup>1</maxPerGroup>
+		
+		<itemQuality>Excellent</itemQuality>
+		<weaponMoney>999999</weaponMoney>
+		<weaponTags>
+			<li>MNC_commando</li>
+			<li>MNC_heavy</li>
+			<li>MNC_champion</li>
+			<li>MNC_sniper</li>
+		</weaponTags>
+		<apparelTags>
+			<li>KotOREquipment_rare</li>
+			<li>KotORShield_strong</li>
+			<li>KotORWristgun</li>
+			<li>MNC_jetpack_mid</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_MNCHelmet</li>
+			<li>guy762_MandoArmor_assault</li>
+		</apparelRequired>
+		<skills>
+		<li>
+			<skill>Shooting</skill>
+			<range>16~20</range>
+		</li>
+		<li>
+			<skill>Melee</skill>
+			<range>16~20</range>
+		</li>
+		<li>
+			<skill>Social</skill>
+			<range>14~17</range>
+		</li>
+		<li>
+			<skill>Intellectual</skill>
+			<range>14~17</range>
+		</li>
+		</skills>
+		<disallowedTraits>
+		  <li>Brawler</li>
+		  <li>CreepyBreathing</li>
+		  <li>AnnoyingVoice</li>
+		</disallowedTraits>
+		<disallowedTraitsWithDegree>
+		  <Industriousness>-2</Industriousness>
+		  <Industriousness>-1</Industriousness>
+		  <Nerves>-1</Nerves>
+		  <Nerves>-2</Nerves>
+		</disallowedTraitsWithDegree>
+		<!-- <techHediffsMoney>2000~4000</techHediffsMoney> -->
+		<!-- <techHediffsChance>6</techHediffsChance> -->
+		<!-- <techHediffsTags> -->
+			<!-- <li>Advanced</li> -->
+			<!-- <li>AdvancedWeapon</li> -->
+		<!-- </techHediffsTags> -->
+		<!-- <techHediffsRequired> -->
+		  <!-- <li>guy762_ImplantDock_II</li> -->
+		<!-- </techHediffsRequired> -->
+		<abilities>
+			<li>CombatCommand</li>
+		</abilities>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="KotORMando_armorer" ParentName="KotORMando_Base_red">
+		<defName>KotORMando_armorer</defName>
+		<label>Mandalorian armorsmith</label>
+		<combatPower>100</combatPower>
+		<minGenerationAge>25</minGenerationAge>
+		<maxGenerationAge>75</maxGenerationAge>
+		
+		<trader>true</trader>
+		
+		<itemQuality>Excellent</itemQuality>
+		<!-- <weaponStuffOverride>KOTOR_IngotBeskar</weaponStuffOverride>  once again, shit does not work when I want it to
+		<weaponMoney>999999</weaponMoney> -->
+		<weaponTags>
+			<!--<li>MedievalMeleeDecent</li>
+			<li>MedievalMeleeAdvanced</li>
+			<li>LongSword</li>-->
+			<li>MNC_marauder</li>
+		</weaponTags>
+		<apparelTags>
+			<li>KotOREquipment_rare</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_MandoHelmet_supercom</li>
+			<li>guy762_MandoArmor_supercom</li>
+			<li>guy762_energyshield_mandoHvy</li>
+			<li>Apparel_Cape</li>
+		</apparelRequired>
+		
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(100,100,100)</color>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(190,200,210)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(190,200,210)</color>
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<stuff>DevilstrandCloth</stuff>
+			</li>
+		</specificApparelRequirements>
+		
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>6~10</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>10~14</range>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<range>14~16</range>
+			</li>
+		</skills>
+		<requiredWorkTags>
+		  <li>Social</li>
+		</requiredWorkTags>
+		<disallowedTraitsWithDegree>
+		  <Industriousness>-2</Industriousness>
+		  <Industriousness>-1</Industriousness>
+		</disallowedTraitsWithDegree>
+		<techHediffsMoney>400~1200</techHediffsMoney>
+		<techHediffsChance>4</techHediffsChance>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+		  <li>guy762_ImplantDock_II</li>
+		</techHediffsRequired>
+	</PawnKindDef>
+	
+</Defs>

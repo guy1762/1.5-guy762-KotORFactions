@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<FactionDef ParentName="FactionBase">
+    <defName>guy762_KotORFaction_KrathRaiders</defName>
+    <label>dark side raiders</label>
+    <description>A loose coalition of Sith and Krath military remnants, united in shared hatred of the Republic and the Jedi. While better-organized cells of Sith remnants do exist, gangs like these are typically propped up as proxies for the Sith to operate through. The membership is typically comprised of poorly skilled combatants, as recruits with serious potential (especially when it comes to Force sensitivity) are quickly pulled into the ranks of the Sith remnant.</description>
+    <pawnSingular>krath</pawnSingular>
+    <pawnsPlural>krath</pawnsPlural>
+    <categoryTag>Pirate</categoryTag>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+	<listOrderPriority>772</listOrderPriority>
+	<configurationListOrderPriority>772</configurationListOrderPriority>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+	<techLevel>Spacer</techLevel>
+    <canMakeRandomly>false</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+	<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+    <factionIconPath>World/ExarSith</factionIconPath>
+	<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+	<allowedArrivalTemperatureRange>-40~65</allowedArrivalTemperatureRange>
+    <colorSpectrum>
+      <li>RGB(240,0,0)</li>
+    </colorSpectrum>
+    <!--permanentEnemy>true</permanentEnemy>
+	<permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer-->
+	
+    <factionNameMaker>guy762_NamerFaction_KrathRaiders</factionNameMaker>
+    <settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
+	
+	<leaderTitle>warlord</leaderTitle>
+	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+	<fixedLeaderKinds>
+      <li>KotORKrath_raidercmdr</li>
+    </fixedLeaderKinds>
+	
+	<permanentEnemy>true</permanentEnemy>
+	
+	<settlementGenerationWeight>1</settlementGenerationWeight>
+	<modExtensions>
+      <li Class="VFECore.FactionDefExtension">
+		<startingGoodwillByFactionDefs>
+			<guy762_KotORFaction_OldRepublic>-100</guy762_KotORFaction_OldRepublic>
+			<guy762_KotORFaction_CorruptRepublic>-100</guy762_KotORFaction_CorruptRepublic>
+			
+			<guy762_KotORFaction_SithRemnant>100</guy762_KotORFaction_SithRemnant>
+			<guy762_KotORFaction_KrathRaiders>-25~0</guy762_KotORFaction_KrathRaiders>
+			
+			<guy762_KotORFaction_Militia>-100</guy762_KotORFaction_Militia>
+			<guy762_KotORFaction_Rebellion>-50</guy762_KotORFaction_Rebellion>
+			
+			<guy762_KotORFaction_HuttCartel>-100</guy762_KotORFaction_HuttCartel>
+			<guy762_KotORFaction_ViciousHutts>-100</guy762_KotORFaction_ViciousHutts>
+			
+			<guy762_KotORFaction_MandoClan>-100</guy762_KotORFaction_MandoClan>
+			<guy762_KotORFaction_SavageMandos>-25~0</guy762_KotORFaction_SavageMandos>
+			
+			<guy762_KotORFaction_Czerka>0~25</guy762_KotORFaction_Czerka>
+			<guy762_KotORFaction_Exchange>0~25</guy762_KotORFaction_Exchange>
+			<guy762_KotORFaction_Civilians>-100</guy762_KotORFaction_Civilians>
+			
+			<guy762_KotORFaction_MandoNeoCrusaders>100</guy762_KotORFaction_MandoNeoCrusaders>
+			<guy762_KotORFaction_SithEmpire>100</guy762_KotORFaction_SithEmpire>
+			
+			<guy762_KotORPlayerFaction_RepublicStrikeTeam>-100</guy762_KotORPlayerFaction_RepublicStrikeTeam>
+			<guy762_KotORPlayerFaction_SmugglerCrew>-100</guy762_KotORPlayerFaction_SmugglerCrew>
+			<guy762_KotORPlayerFaction_MandalorianTribe>-80</guy762_KotORPlayerFaction_MandalorianTribe>
+			<guy762_KotORPlayerFaction_SithWarlord>100</guy762_KotORPlayerFaction_SithWarlord>
+			<guy762_KotORPlayerFaction_HuttUpstart>-100</guy762_KotORPlayerFaction_HuttUpstart>
+			
+			<!--guy762_KotORFaction_Trandoshans>25~50</guy762_KotORFaction_Trandoshans>
+			<guy762_KotORFaction_MercGuild>25~50</guy762_KotORFaction_MercGuild-->
+		</startingGoodwillByFactionDefs>
+		<excludeFromCommConsole>true</excludeFromCommConsole>
+		<hasCities>false</hasCities>
+		<neverConnectToRoads>true</neverConnectToRoads>
+		<minDistanceToOtherSettlements>20</minDistanceToOtherSettlements>
+      </li>
+    </modExtensions>
+	<!--permanentEnemyToEveryoneExcept>
+      <li>OutlanderCivil</li>
+      <li>TribeCivil</li>
+      <li>PlayerTribe</li>
+      <li>PlayerColony</li>
+      <li>Ancients</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Beggars</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">ResearchExpedition</li>
+    </permanentEnemyToEveryoneExcept-->
+	
+	
+    <allowedCultures>
+		<li>guy762_culture_sith</li>
+	</allowedCultures>
+	
+	<requiredMemes>
+		<li MayRequire="Ludeon.RimWorld.Ideology">guy762_MemeDef_sith</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_BloodCourt</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_PsychicFocus</li>
+		
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Esotericism</li>
+	</requiredMemes>
+	<allowedMemes>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_ViolentConversion</li>
+	</allowedMemes>
+	<disallowedPrecepts>
+		<!--li MayRequire="VanillaExpanded.VMemesE">VME_Leader_BestFighter</li-->		
+		
+		<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">NobleDespisedWeapons</li>
+		
+		<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Exalted</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Respected</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Approved</li>
+		
+		<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Essential</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Important</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Worthwhile</li>
+		
+		<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Abhorrent</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Horrible</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Execution_HorribleIfInnocent</li>
+		
+		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+		
+		<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Abhorrent</li>
+		<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Horrible</li>
+		<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Disapproved</li>
+	</disallowedPrecepts>
+	
+	<!--structureMemeWeights>
+	  <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">0</Structure_TheistEmbodied>
+	  <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">0.75</Structure_TheistAbstract>
+	  <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">0.5</Structure_Ideological>
+	  <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_Archist>
+	  <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginChristian>
+	  <Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginIslamic>
+	  <Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginHindu>
+	  <Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginBuddhist>
+	</structureMemeWeights-->
+	
+	<xenotypeSet>
+	  <xenotypeChances>
+		<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.66</Baseliner>
+		<guy762_xenotype_arkanian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_arkanian>
+		<guy762_xenotype_devaronian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_devaronian>
+		<guy762_xenotype_echani MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_echani>
+		<guy762_xenotype_iridonian MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_iridonian>
+		<guy762_xenotype_mirialan MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_mirialan>
+		<guy762_xenotype_pantoran MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_pantoran>
+		<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_twilek>
+		<guy762_xenotype_umbaran MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_umbaran>
+		<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_zabrak>
+		<guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_zeltron>
+		<guy762_xenotype_zygerrian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_zygerrian> <!-- total 1.00 -->
+	  </xenotypeChances>
+	</xenotypeSet>
+		
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Pirate</li>
+        </categories>
+		<commonality>0.5</commonality>
+      </li>
+	  <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+        <commonality>0.5</commonality>
+      </li>
+    </backstoryFilters>
+	
+	
+	<!--caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+      <li>Caravan_Outlander_PirateMerchant</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds-->
+	
+	
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,50)</li> <!-- cost of patrol droids -->
+        <li>(100, 75)</li> <!-- includes raiders and slashers -->
+        <li>(500, 100)</li> <!-- includes veterans -->
+        <li>(1000, 150)</li> <!-- includes krath/sentinels -->
+        <li>(1001, 10000)</li> <!-- includes dark jedi -->
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+	
+	<apparelStuffFilter>
+      <thingDefs>
+        <li>Leather_Patch</li>
+        <li>KOTOR_FabricArmorweave</li>
+		<li>Steel</li>
+		<li>KOTOR_AlloyDurasteel</li>
+      </thingDefs>
+    </apparelStuffFilter>
+	
+	
+	
+    <pawnGroupMakers>
+	
+      <li>
+        <!-- quick raid -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+		<disallowedStrategies>
+			<li>Siege</li>
+			<li>EmergeFromWater</li>
+			<li>StageThenAttack</li>
+			<li>ImmediateAttackSappers</li>
+			<li>ImmediateAttackBreaching</li>
+			<li>ImmediateAttackBreachingSmart</li>
+		</disallowedStrategies>
+        <options>
+          <KotORKrath_raider>50</KotORKrath_raider>
+          <KotORKrath_raidermelee>100</KotORKrath_raidermelee>
+		  <KotORKrath_krathmelee>25</KotORKrath_krathmelee>
+		  <KotORSith_droid_MPDMkI MayRequire="guy762.KotORDroids">75</KotORSith_droid_MPDMkI>
+        </options>
+      </li>
+	  
+	  <li>
+        <!-- skirmish -->
+        <kindDef>Combat</kindDef>
+        <commonality>75</commonality>
+		<disallowedStrategies>
+			<li>Siege</li>
+			<li>EmergeFromWater</li>
+			<li>ImmediateAttackSmart</li>
+			<li>ImmediateAttackSappers</li>
+			<li>ImmediateAttackBreaching</li>
+			<li>ImmediateAttackBreachingSmart</li>
+		</disallowedStrategies>
+        <options>
+          <KotORKrath_raider>100</KotORKrath_raider>
+          <KotORKrath_raidermelee>75</KotORKrath_raidermelee>
+		  <KotORSith_droid_MPDMkI MayRequire="guy762.KotORDroids">50</KotORSith_droid_MPDMkI>
+          <KotORSith_droid_SentWD MayRequire="guy762.KotORDroids">25</KotORSith_droid_SentWD>
+          <KotORKrath_raiderveteran>10</KotORKrath_raiderveteran>
+		  <KotORKrath_krathmelee>25</KotORKrath_krathmelee>
+		  
+		  <KotORSith_darkjedi_PotF MayRequire="guy762.Lee.KotORPotF">5</KotORSith_darkjedi_PotF>
+		  
+		  <KotORSith_darkjedi_VPE MayRequire="lee.theforce.psycast">5</KotORSith_darkjedi_VPE>
+        </options>
+      </li>
+	  
+	  <li>
+        <!-- territory intrusion -->
+        <kindDef>Combat</kindDef>
+        <commonality>50</commonality>
+		<disallowedStrategies>
+			<li>EmergeFromWater</li>
+			<li>ImmediateAttack</li>
+			<li>ImmediateAttackSmart</li>
+			<li>ImmediateAttackSappers</li>
+			<li>ImmediateAttackBreaching</li>
+			<li>ImmediateAttackBreachingSmart</li>
+		</disallowedStrategies>
+        <options>
+          <KotORKrath_raider>100</KotORKrath_raider>
+		  <KotORKrath_raidermelee>25</KotORKrath_raidermelee>
+          <KotORSith_droid_SentWD MayRequire="guy762.KotORDroids">50</KotORSith_droid_SentWD>
+          <KotORKrath_raiderveteran>50</KotORKrath_raiderveteran>
+          <KotORSith_lieutenant>100</KotORSith_lieutenant>
+		  
+		  <KotORSith_darkjedi_PotF MayRequire="guy762.Lee.KotORPotF">10</KotORSith_darkjedi_PotF>
+		  
+		  <KotORSith_darkjedi_VPE MayRequire="lee.theforce.psycast">10</KotORSith_darkjedi_VPE>
+        </options>
+      </li>
+	  
+	  
+	  <li>
+        <!-- breaching raid -->
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+		<disallowedStrategies>
+			<li>Siege</li>
+			<li>EmergeFromWater</li>
+			<li>StageThenAttack</li>
+			<li>ImmediateAttack</li>
+			<li>ImmediateAttackBreaching</li>
+		</disallowedStrategies>
+        <options>
+		  <KotORKrath_krathslaver>75</KotORKrath_krathslaver>
+		  <KotORKrath_krathmelee>25</KotORKrath_krathmelee>
+		  <KotORKrath_raiderveteran>25</KotORKrath_raiderveteran>
+		  <KotORSith_droid_SentWD MayRequire="guy762.KotORDroids">50</KotORSith_droid_SentWD>
+		  
+		  <KotORSith_darkjedi_PotF MayRequire="guy762.Lee.KotORPotF">10</KotORSith_darkjedi_PotF>
+		  
+		  <KotORSith_darkjedi_VPE MayRequire="lee.theforce.psycast">10</KotORSith_darkjedi_VPE>
+        </options>
+      </li>
+	  
+	  
+	  
+	  
+	  
+
+	  <li>
+		<kindDef>Settlement</kindDef> <!-- base -->
+		<commonality>1</commonality>
+		<options>
+		  <KotORHutts_slave>15</KotORHutts_slave>
+		  
+		  <KotORKrath_raider>10</KotORKrath_raider>
+		  <KotORKrath_raidermelee>10</KotORKrath_raidermelee>
+		  <KotORKrath_raiderveteran>5</KotORKrath_raiderveteran>
+		  <KotORKrath_krathslaver>5</KotORKrath_krathslaver>
+		  <KotORKrath_krathmelee>5</KotORKrath_krathmelee>
+		  
+		  <KotORSith_lieutenant>100</KotORSith_lieutenant>
+		  <KotORKrath_raidercmdr>100</KotORKrath_raidercmdr>
+		  
+		  <KotORSith_darkjedi_PotF MayRequire="guy762.Lee.KotORPotF">5</KotORSith_darkjedi_PotF>
+		  
+		  <KotORSith_darkjedi_VPE MayRequire="lee.theforce.psycast">5</KotORSith_darkjedi_VPE>
+		</options>
+	  </li>
+	  
+	  
+    </pawnGroupMakers>
+	
+	<raidLootMaker>guy762_RaidLootMaker_KotORRebels</raidLootMaker>
+  </FactionDef>
+  
+
+  <RulePackDef>
+    <defName>guy762_NamerFaction_KrathRaiders</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->The Legions of Lettow</li>
+		<li>name->The Brotherhood of Darkness</li>
+		<li>name->The Order of Bandon</li>
+		<li>name->The Neo-Krath Sovereignty</li>
+		<li>name->The Disciples of Nadd</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  
+  
+</Defs>

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<PawnKindDef Name="KotORPlayablePawn_Smuggler" ParentName="KotORCiv_smuggler">
+		<defName>KotORPlayablePawn_Smuggler</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SmugglerCrew</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORPlayablePawn_MandoBountyHunter" ParentName="KotORBntyHntr_mandoweak">
+		<defName>KotORPlayablePawn_MandoBountyHunter</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SmugglerCrew</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORPlayablePawn_Jawa" ParentName="KotORCiv_jawatrader_offworld">
+		<defName>KotORPlayablePawn_Jawa</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SmugglerCrew</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORPlayablePawn_Doctor" ParentName="KotORCiv_doctormid">
+		<defName>KotORPlayablePawn_Doctor</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SmugglerCrew</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORPlayablePawn_Echani" ParentName="KotORMerc_echaniheavy">
+		<defName>KotORPlayablePawn_Echani</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SmugglerCrew</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORPlayablePawn_RepublicVeteran" ParentName="KotORMlita_veteran">
+		<defName>KotORPlayablePawn_RepublicVeteran</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SmugglerCrew</defaultFactionType>
+	</PawnKindDef>
+	
+	
+	
+	
+	<PawnKindDef Name="KotORPlayablePawn_HK51AD" ParentName="KotORMIBColonist_HK51AD">
+		<defName>KotORPlayablePawn_HK51AD</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SmugglerCrew</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORPlayablePawn_3CUD" ParentName="KotORDroidGood_3C">
+		<defName>KotORPlayablePawn_3CUD</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SmugglerCrew</defaultFactionType>
+	</PawnKindDef>
+	
+	
+	
+	<!--
+	
+	<PawnKindDef MayRequire="lee.theforce.psycast" Name="KotORPlayablePawn_JediSentinel_VPE" ParentName="KotORRepub_jedisentinel_VPE">
+		<defName>KotORPlayablePawn_JediSentinel_VPE</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SmugglerCrew</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef MayRequire="guy762.Lee.KotORPotF" Name="KotORPlayablePawn_JediSentinel_PotF" ParentName="KotORRepub_jedisentinel_PotF">
+		<defName>KotORPlayablePawn_JediSentinel_PotF</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SmugglerCrew</defaultFactionType>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef MayRequire="lee.theforce.psycast" Name="KotORPlayablePawn_DarkJedi_VPE" ParentName="KotORSith_darkjedi_VPE">
+		<defName>KotORPlayablePawn_DarkJedi_VPE</defName>
+		<defaultFactionType>gguy762_KotORPlayerFaction_SmugglerCrew</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef MayRequire="guy762.Lee.KotORPotF" Name="KotORPlayablePawn_DarkJedi_PotF" ParentName="KotORSith_darkjedi_PotF">
+		<defName>KotORPlayablePawn_DarkJedi_PotF</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SmugglerCrew</defaultFactionType>
+	</PawnKindDef>
+	
+	MOVED TO VPE AND POTF FOLDERS
+	
+	-->
+	
+	
+	
+	
+	
+	
+	
+  <ScenarioDef>
+    <defName>guy762_KotORScenario_SmugglerCrew</defName>
+    <label>The Smuggler Crew</label>
+    <description>In massive debt to one of the major Hutt Kajidics, your crew thought they could hide amidst the turmoil occurring on this rim world. Upon exiting hyperspace, however, your ship was immediately hounded and shot down by bounty hunters, sending you careening to the planet below.</description>
+    <scenario>
+      <summary>A classic Star Wars experience with a wide variety of characters.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>guy762_KotORPlayerFaction_SmugglerCrew</factionDef>
+      </playerFaction>
+      <parts>
+
+        <!-- Game start dialog -->
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>In massive debt to one of the major Hutt Kajidics, your crew thought they could hide amidst the turmoil occurring on this rim world. Upon exiting hyperspace, however, your ship was immediately hounded and shot down by bounty hunters, sending you careening to the planet below. After a particularly rough landing, you gather your crew and remaining supplies and plan your next moves.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+		
+		<!-- Player starting stuff spawn method-->
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+        </li>
+	
+
+        <!-- Config pages -->
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+          <def>ConfigurePawnsKindDefs</def>
+          <pawnChoiceCount>10</pawnChoiceCount>
+          <!--leftBehindPawnKind>KotORPlayableHero_T3M4</leftBehindPawnKind-->
+          <kindCounts>
+			<li>
+              <kindDef>KotORPlayablePawn_Smuggler</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			<li>
+              <kindDef>KotORPlayablePawn_MandoBountyHunter</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			<li>
+              <kindDef>KotORPlayablePawn_3CUD</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			
+			
+			<li MayRequire="lee.theforce.psycast">
+              <kindDef>KotORPlayablePawn_JediSentinel_VPE</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			<li MayRequire="guy762.Lee.KotORPotF">
+              <kindDef>KotORPlayablePawn_JediSentinel_PotF</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			
+			
+			
+			<li>
+              <kindDef>KotORPlayablePawn_HK51AD</kindDef>
+              <count>1</count>
+              <requiredAtStart>false</requiredAtStart>
+            </li>
+			<li>
+              <kindDef>KotORPlayablePawn_Jawa</kindDef>
+              <count>1</count>
+              <requiredAtStart>false</requiredAtStart>
+            </li>
+			<li>
+              <kindDef>KotORPlayablePawn_Doctor</kindDef>
+              <count>1</count>
+              <requiredAtStart>false</requiredAtStart>
+            </li>
+			<li>
+              <kindDef>KotORPlayablePawn_Echani</kindDef>
+              <count>1</count>
+              <requiredAtStart>false</requiredAtStart>
+            </li>
+			<li>
+              <kindDef>KotORPlayablePawn_RepublicVeteran</kindDef>
+              <count>1</count>
+              <requiredAtStart>false</requiredAtStart>
+            </li>
+			
+			<li MayRequire="lee.theforce.psycast">
+              <kindDef>KotORPlayablePawn_DarkJedi_VPE</kindDef>
+              <count>1</count>
+              <requiredAtStart>false</requiredAtStart>
+            </li>
+			<li MayRequire="guy762.Lee.KotORPotF">
+              <kindDef>KotORPlayablePawn_DarkJedi_PotF</kindDef>
+              <count>1</count>
+              <requiredAtStart>false</requiredAtStart>
+            </li>
+          </kindCounts>
+        </li>
+
+        <!-- Starting research -->
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>MicroelectronicsBasics</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Fabrication</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>AdvancedFabrication</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>guy762_ResearchKotOR_workbench</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Batteries</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Pemmican</project>
+        </li>
+		<li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>WatermillGenerator</project>
+        </li>
+		
+		
+		
+		
+        <!-- Player starting things -->
+        <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>guy762_KotORLootBox_FoodMeds</thingDef>
+          <count>6</count>
+        </li>
+        <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>guy762_KotORLootBox_ShieldsStims</thingDef>
+          <count>2</count>
+        </li>
+		
+		
+		<!-- droid mod stuff -->
+        <li Class="ScenPart_StartingThing_Defined" MayRequire="guy762.KotORDroids">
+			<def>StartingThing_Defined</def>
+			<thingDef>ABF_Thing_Synstruct_ChargingStation</thingDef>
+			<count>2</count>
+		</li>
+		<li Class="ScenPart_StartingThing_Defined" MayRequire="guy762.KotORDroids">
+			<def>StartingThing_Defined</def>
+			<thingDef>ABF_Thing_Synstruct_CoolantPack</thingDef>
+			<count>15</count>
+		</li>
+		<li Class="ScenPart_StartingThing_Defined" MayRequire="guy762.KotORDroids">
+			<def>StartingThing_Defined</def>
+			<thingDef>ABF_Thing_Synstruct_LubricantPack</thingDef>
+			<count>15</count>
+		</li>
+		<li Class="ScenPart_StartingThing_Defined" MayRequire="guy762.KotORDroids">
+			<def>StartingThing_Defined</def>
+			<thingDef>ABF_Thing_Synstruct_RepairStim</thingDef>
+			<count>6</count>
+		</li>
+		
+		<li Class="ScenPart_StartingThing_Defined" MayRequire="guy762.KotORDroids">
+			<def>StartingThing_Defined</def>
+			<thingDef>guy762_DroidBattery_adv</thingDef>
+			<count>20</count>
+		</li>
+		
+		
+		
+	   <!-- ebon hawk wreckage -->
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+			<def>ScatterThingsNearPlayerStart</def>
+			<thingDef>guy762_ShipChunk_EbonHawkaft</thingDef>
+			<count>1</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+			<def>ScatterThingsNearPlayerStart</def>
+			<thingDef>guy762_ShipChunk_EbonHawkfore</thingDef>
+			<count>1</count>
+		</li>
+		
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsNearPlayerStart</def>
+			<thingDef>guy762_ShipChunk_EbonHawkport</thingDef>
+			<count>1</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsNearPlayerStart</def>
+			<thingDef>guy762_ShipChunk_EbonHawkstarboard</thingDef>
+			<count>1</count>
+		</li>
+
+
+		<!-- Scatter some things near player start -->
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+			<def>ScatterThingsNearPlayerStart</def>
+			<thingDef>Steel</thingDef>
+			<count>250</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>150</count>
+        </li>  
+		
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>7</count>
+        </li>
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>guy762_medpac_life</thingDef>
+          <count>10</count>
+        </li>
+		
+		<li Class="ScenPart_ScatterThingsNearPlayerStart">
+			<def>StartingThing_Defined</def>
+			<thingDef>ComponentIndustrial</thingDef>
+			<count>20</count>
+		</li>
+		
+		
+		
+		<!-- Scatter some things anywhere -->
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>ShipChunk</thingDef>
+			<count>25</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>ShipChunk_durasteel</thingDef>
+			<count>10</count>
+		</li>
+		
+		
+		
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>ChunkSlagSteel</thingDef>
+			<count>50</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>KotORChunk_plasteel</thingDef>
+			<count>25</count>
+		</li>
+		<li Class="ScenPart_ScatterThingsAnywhere">
+			<def>ScatterThingsAnywhere</def>
+			<thingDef>KotORChunk_durasteel</thingDef>
+			<count>25</count>
+		</li>
+
+
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+
+
+
+
+
+
+
+
+<FactionDef ParentName="PlayerFactionBase">
+    <defName>guy762_KotORPlayerFaction_SmugglerCrew</defName>
+    <label>smuggler crew</label>
+    <description>A ragtag crew of scoundrels, outlaws, and mercenaries.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>KotORPlayablePawn_Smuggler</basicMemberKind>
+    <pawnSingular>scoundrel</pawnSingular>
+    <pawnsPlural>scoundrels</pawnsPlural>
+    <techLevel>Spacer</techLevel>
+	
+    <factionNameMaker>NamerFactionPirate</factionNameMaker>
+    <settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
+    <allowedCultures>
+		<li>guy762_culture_outerrim</li>
+	</allowedCultures>
+	<disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+    </disallowedPrecepts>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Offworld</li>
+          <li>Pirate</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <factionIconPath>World/ScumAndVillainy</factionIconPath>
+	
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>ClassicStart</li>
+      <li>ClassicStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
+  </FactionDef>
+
+
+
+
+
+
+
+
+
+
+</Defs>
