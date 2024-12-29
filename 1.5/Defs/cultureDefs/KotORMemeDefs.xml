@@ -441,9 +441,9 @@
 		<impact>3</impact>
 		<renderOrder>766</renderOrder>
 		<requireOne>
-		  <li MayRequire="VanillaExpanded.VMemesE">
+		  <!--li MayRequire="VanillaExpanded.VMemesE">
 			<li>guy762_PreceptDef_ExchangeTitles</li>
-		  </li>
+		  </li-->
 		  <li MayRequire="VanillaExpanded.VMemesE">
 			<li>VME_Leader_HighestTitle</li>
 		  </li>
@@ -527,7 +527,7 @@
 		<defName>guy762_PreceptDef_ExchangeTitles</defName>
 		<issue>VME_Royalty</issue>
 		<label>exalted (Exchange titles)</label>
-		<description>The station one holds in the Exchange is a thing to be revered. Respect for the boss, more often than not, is the only thing that holds this thing of ours together.</description>
+		<description>The station one holds in the Exchange is a thing to be revered. Respect for the boss, more often than not, is the only thing that holds this thing of ours together.\n\nDEV'S NOTE: MAY NOT WORK</description>
 		<impact>Medium</impact>
 		<associatedMemes>
 			<li>guy762_MemeDef_exchange</li>
@@ -584,9 +584,9 @@
 		<impact>3</impact>
 		<renderOrder>767</renderOrder>
 		<requireOne>
-		  <li MayRequire="VanillaExpanded.VMemesE">
+		  <!--li MayRequire="VanillaExpanded.VMemesE">
 			<li>guy762_PreceptDef_HuttTitles</li>
-		  </li>
+		  </li-->
 		  <li MayRequire="VanillaExpanded.VMemesE">
 			<li>VME_IdeoRole_Majordomo</li>
 		  </li>
@@ -669,7 +669,7 @@
 		<defName>guy762_PreceptDef_HuttTitles</defName>
 		<issue>VME_Royalty</issue>
 		<label>exalted (Hutt Kajidic titles)</label>
-		<description>.</description>
+		<description>DEV'S NOTE: MAY NOT WORK</description>
 		<impact>Medium</impact>
 		<associatedMemes>
 			<li>guy762_MemeDef_hutt</li>
