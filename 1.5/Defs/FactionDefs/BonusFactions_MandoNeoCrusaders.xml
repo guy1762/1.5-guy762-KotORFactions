@@ -224,7 +224,18 @@
 	
 	
 	<pawnGroupMakers>
-	
+	  <li>
+		<kindDef>Peaceful</kindDef>
+		<options>
+		  <KotORMando_trooper>100</KotORMando_trooper>
+          <KotORMando_warrior>75</KotORMando_warrior>
+          <KotORMando_scout>25</KotORMando_scout>
+          <KotORMando_commando>10</KotORMando_commando>
+          <KotORMando_rallymaster>5</KotORMando_rallymaster>
+		</options>
+	  </li>
+		  
+		  
 	  <li>
         <!-- quick raid -->
         <kindDef>Combat</kindDef>

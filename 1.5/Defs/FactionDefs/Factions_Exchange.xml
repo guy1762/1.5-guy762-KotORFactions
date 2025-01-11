@@ -207,7 +207,15 @@
 	
 	
 	<pawnGroupMakers>
-      
+      <li>
+		<kindDef>Peaceful</kindDef>
+		<options>
+		  <KotORExchg_hitman>100</KotORExchg_hitman>
+          <KotORMerc_shooter>50</KotORMerc_shooter>
+          <KotORMerc_brawler>50</KotORMerc_brawler>
+		</options>
+	  </li>
+		  
 	  <li>
         <!-- thug raid -->
         <kindDef>Combat</kindDef>

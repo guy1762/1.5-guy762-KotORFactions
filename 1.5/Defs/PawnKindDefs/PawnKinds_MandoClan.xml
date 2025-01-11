@@ -462,6 +462,11 @@
 		<maxGenerationAge>35</maxGenerationAge>
 		<gearHealthRange>0.9~2.3</gearHealthRange>
 		<itemQuality>Normal</itemQuality>
+		
+		<weaponMoney>
+			<min>8100</min>
+			<max>25000</max>
+		</weaponMoney>
 		<weaponTags>
 			<li>MNC_heavy</li>
 			<li>GunSingleUse</li>

@@ -248,7 +248,16 @@
 	
 	
     <pawnGroupMakers>
-	
+	  <li>
+		<kindDef>Peaceful</kindDef>
+		<options>
+		  <KotORSith_trooper>100</KotORSith_trooper>
+          <KotORSith_droid_SentWD MayRequire="guy762.KotORDroids">25</KotORSith_droid_SentWD>
+          <KotORSith_elite>10</KotORSith_elite>
+		  <KotORSith_lieutenant>50</KotORSith_lieutenant>
+		</options>
+	  </li>
+	  
       <li>
         <!-- quick raid -->
         <kindDef>Combat</kindDef>

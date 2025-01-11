@@ -181,6 +181,15 @@
 	
 	<pawnGroupMakers Inherit="False">
 	  <li>
+		<kindDef>Peaceful</kindDef>
+		<options>
+		  <KotORCzrka_trooper>5</KotORCzrka_trooper>
+		  <KotORCzrka_droid_SentWD MayRequire="guy762.KotORDroids">15</KotORCzrka_droid_SentWD>
+		  <KotORCzrka_employee>7.5</KotORCzrka_employee>
+		</options>
+	  </li>
+	  
+	  <li>
 		<kindDef>Combat</kindDef> <!-- patrol -->
 		<commonality>50</commonality>
 		<disallowedStrategies>

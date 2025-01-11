@@ -217,7 +217,16 @@
 	
 	
     <pawnGroupMakers>
-	  
+	  <li>
+		<kindDef>Peaceful</kindDef>
+		<options>
+		  <KotORRepub_soldier>50</KotORRepub_soldier>
+          <KotORRepub_droid_SentWD MayRequire="guy762.KotORDroids">25</KotORRepub_droid_SentWD>
+		  <KotORRepub_lieutenant>50</KotORRepub_lieutenant>
+		</options>
+	  </li>
+		  
+		  
 	  <li>
         <!-- skirmish -->
         <kindDef>Combat</kindDef>
