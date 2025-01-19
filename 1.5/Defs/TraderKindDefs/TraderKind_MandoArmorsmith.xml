@@ -10,6 +10,12 @@
 	<faction>guy762_KotORFaction_MandoClan</faction>
     <!--<permitRequiredForTrading>TradeOrbital</permitRequiredForTrading-->
     <commonality>1</commonality>
+	
+	<modExtensions>
+		<li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FalloutCurrencies_NonReplacement.CurrencyReplacement">
+			<currency>Silver</currency>
+		</li>
+	</modExtensions>
     <stockGenerators>
 
       <!-- CURRENCY -->
