@@ -59,7 +59,6 @@
 		<li>Ludeon.RimWorld.Ideology</li>
 		<li>Ludeon.RimWorld.Biotech</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
-		<li>smartkar.athenaframework</li>
 		<li>VanillaExpanded.VMemesE</li>
 		<li>Rick.FCP.Core.Tools.Beta</li>
 		<li>Rick.FCP.Core.Tools</li>
@@ -74,5 +73,8 @@
 		<li>lee.theforce.psycast</li>
 		<li>guy762.Lee.KotORPotF</li>
 	</loadBefore>
+	<incompatibleWith>
+	  <li>smartkar.athenaframework</li>
+	</incompatibleWith>
   
 </ModMetaData>
