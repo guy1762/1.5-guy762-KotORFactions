@@ -30,7 +30,7 @@
 	
 	<naturalEnemy>true</naturalEnemy>
 	<settlementGenerationWeight>10</settlementGenerationWeight>
-	<modExtensions>
+	<modExtensions Inherit="False">
       <li Class="VFECore.FactionDefExtension">
 		<startingGoodwillByFactionDefs>
 			<guy762_KotORFaction_OldRepublic>-100</guy762_KotORFaction_OldRepublic>

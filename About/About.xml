@@ -73,8 +73,8 @@
 		<li>lee.theforce.psycast</li>
 		<li>guy762.Lee.KotORPotF</li>
 	</loadBefore>
-	<incompatibleWith>
-	  <li>smartkar.athenaframework</li>
-	</incompatibleWith>
+	<!-- <incompatibleWith> -->
+	  <!-- <li>smartkar.athenaframework</li> -->
+	<!-- </incompatibleWith> -->
   
 </ModMetaData>

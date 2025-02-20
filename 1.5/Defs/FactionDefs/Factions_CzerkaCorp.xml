@@ -37,7 +37,7 @@
 	
 	
 	<settlementGenerationWeight>5</settlementGenerationWeight>
-	<modExtensions>
+	<modExtensions Inherit="False">
       <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Currencies.CurrencyReplacement">
 		<currency>guy762_KotORcredits</currency>
 	  </li>

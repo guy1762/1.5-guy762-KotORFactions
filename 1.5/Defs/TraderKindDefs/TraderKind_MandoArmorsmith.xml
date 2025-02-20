@@ -12,7 +12,10 @@
     <commonality>1</commonality>
 	
 	<modExtensions>
-		<li MayRequire="Rick.FCP.Core.Tools" Class="FalloutCurrencies_NonReplacement.CurrencyReplacement">
+		<!-- <li MayRequire="Rick.FCP.Core.Tools" Class="FalloutCurrencies_NonReplacement.CurrencyReplacement"> -->
+			<!-- <currency>Silver</currency> -->
+		<!-- </li> -->
+		<li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Currencies.CurrencyReplacement">
 			<currency>Silver</currency>
 		</li>
 	</modExtensions>

@@ -30,7 +30,7 @@
 	<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
 	
 	<settlementGenerationWeight>1</settlementGenerationWeight>
-	<modExtensions>
+	<modExtensions Inherit="False">
       <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Currencies.CurrencyReplacement">
 		<currency>Silver</currency>
 	  </li>
