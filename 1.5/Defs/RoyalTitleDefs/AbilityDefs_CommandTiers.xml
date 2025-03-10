@@ -103,7 +103,8 @@
           <canTargetBuildings>false</canTargetBuildings>
           <canTargetAnimals>false</canTargetAnimals>
           <canTargetMechs>false</canTargetMechs>
-          <onlyTargetColonists>true</onlyTargetColonists>
+          <!-- <onlyTargetColonists>true</onlyTargetColonists> -->
+		  <!-- <neverTargetHostileFaction>true</neverTargetHostileFaction> -->
         </targetingParameters>
         <hediff>guy762_hediff_CommandTierV_buff</hediff>
       </li>
@@ -229,7 +230,8 @@
           <canTargetBuildings>false</canTargetBuildings>
           <canTargetAnimals>false</canTargetAnimals>
           <canTargetMechs>false</canTargetMechs>
-          <onlyTargetColonists>true</onlyTargetColonists>
+          <!-- <onlyTargetColonists>true</onlyTargetColonists> -->
+		  <!-- <neverTargetHostileFaction>true</neverTargetHostileFaction> -->
         </targetingParameters>
         <hediff>guy762_hediff_CommandTierIV_buff</hediff>
       </li>
@@ -361,7 +363,8 @@
           <canTargetBuildings>false</canTargetBuildings>
           <canTargetAnimals>false</canTargetAnimals>
           <canTargetMechs>false</canTargetMechs>
-          <onlyTargetColonists>true</onlyTargetColonists>
+          <!-- <onlyTargetColonists>true</onlyTargetColonists> -->
+		  <!-- <neverTargetHostileFaction>true</neverTargetHostileFaction> -->
         </targetingParameters>
         <hediff>guy762_hediff_CommandTierIII_buff</hediff>
       </li>
@@ -494,7 +497,8 @@
           <canTargetBuildings>false</canTargetBuildings>
           <canTargetAnimals>false</canTargetAnimals>
           <canTargetMechs>false</canTargetMechs>
-          <onlyTargetColonists>true</onlyTargetColonists>
+          <!-- <onlyTargetColonists>true</onlyTargetColonists> -->
+		  <!-- <neverTargetHostileFaction>true</neverTargetHostileFaction> -->
         </targetingParameters>
         <hediff>guy762_hediff_CommandTierII_buff</hediff>
       </li>
@@ -620,7 +624,8 @@
           <canTargetBuildings>false</canTargetBuildings>
           <canTargetAnimals>false</canTargetAnimals>
           <canTargetMechs>false</canTargetMechs>
-          <onlyTargetColonists>true</onlyTargetColonists>
+          <!-- <onlyTargetColonists>true</onlyTargetColonists> -->
+		  <!-- <neverTargetHostileFaction>true</neverTargetHostileFaction> -->
         </targetingParameters>
         <hediff>guy762_hediff_CommandTierI_buff</hediff>
       </li>

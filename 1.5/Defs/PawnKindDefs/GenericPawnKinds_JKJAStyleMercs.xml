@@ -287,12 +287,12 @@
     <combatPower>100</combatPower>
     <maxGenerationAge>40</maxGenerationAge>
 	
+	<xenotypeSet Inherit="False">
+	  <xenotypeChances>
+		<Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
+	  </xenotypeChances>
+	</xenotypeSet>
 	<useFactionXenotypes>false</useFactionXenotypes>
-	<xenotypeSet>
-      <xenotypeChances>
-		<Baseliner>999</Baseliner>
-      </xenotypeChances>
-    </xenotypeSet>
 	
     <gearHealthRange>0.9~2.7</gearHealthRange>
     <itemQuality>Good</itemQuality>
