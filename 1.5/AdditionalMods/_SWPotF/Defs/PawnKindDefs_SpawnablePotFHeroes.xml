@@ -14,6 +14,21 @@
 						
 						<forceLevel>True</forceLevel>
 						<level>25</level>
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
+						<classChanges>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_10thru20_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_20thru30_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+						</classChanges>
 						
 						<!--forcePoints>True</forcePoints>
 						<points>5</points-->
@@ -88,6 +103,15 @@
 						
 						<forceLevel>True</forceLevel>
 						<level>20</level>
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
+						<classChanges>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_10thru20_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+						</classChanges>
 						
 						<!--forcePoints>True</forcePoints>
 						<points>5</points-->
@@ -144,6 +168,21 @@
 						
 						<forceLevel>True</forceLevel>
 						<level>30</level>
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
+						<classChanges>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_10thru20_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_20thru30_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+						</classChanges>
 						
 						<!--forcePoints>True</forcePoints>
 						<points>5</points-->
@@ -223,6 +262,27 @@
 						
 						<forceLevel>True</forceLevel>
 						<level>35</level>
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
+						<classChanges>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_10thru20_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_20thru30_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_30thru40_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+						</classChanges>
 						
 						<!--forcePoints>True</forcePoints>
 						<points>5</points-->
@@ -305,6 +365,27 @@
 						
 						<forceLevel>True</forceLevel>
 						<level>40</level>
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
+						<classChanges>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_10thru20_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_20thru30_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_30thru40_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+						</classChanges>
 						
 						<!--forcePoints>True</forcePoints>
 						<points>5</points-->
@@ -391,6 +472,21 @@
 						
 						<forceLevel>True</forceLevel>
 						<level>30</level>
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
+						<classChanges>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_10thru20_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_20thru30_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+						</classChanges>
 						
 						<!--forcePoints>True</forcePoints>
 						<points>5</points-->
@@ -536,6 +632,27 @@
 						
 						<forceLevel>True</forceLevel>
 						<level>40</level>
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
+						<classChanges>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_10thru20_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_20thru30_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_30thru40_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+						</classChanges>
 						
 						<!--forcePoints>True</forcePoints>
 						<points>5</points-->
@@ -619,6 +736,27 @@
 						
 						<forceLevel>True</forceLevel>
 						<level>40</level>
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
+						<classChanges>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_10thru20_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_20thru30_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_30thru40_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+						</classChanges>
 						
 						<!--forcePoints>True</forcePoints>
 						<points>5</points-->
@@ -702,6 +840,15 @@
 						
 						<forceLevel>True</forceLevel>
 						<level>20</level>
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
+						<classChanges>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_10thru20_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+						</classChanges>
 						
 						<!--forcePoints>True</forcePoints>
 						<points>5</points-->
@@ -764,6 +911,15 @@
 						
 						<forceLevel>True</forceLevel>
 						<level>15</level>
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
+						<classChanges>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_10thru20_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+						</classChanges>
 						
 						<!--forcePoints>True</forcePoints>
 						<points>5</points-->

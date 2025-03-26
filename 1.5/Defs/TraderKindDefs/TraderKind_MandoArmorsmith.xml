@@ -80,6 +80,10 @@
         <countRange>80~120</countRange>
       </li>
 	  <li Class="StockGenerator_SingleDef">
+        <thingDef>KOTOR_IngotBeskar</thingDef>
+        <countRange>40~80</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
         <thingDef>KOTOR_IngotCortosis</thingDef>
         <countRange>10~25</countRange>
       </li>

@@ -28,6 +28,15 @@
 						
 						<forceLevel>True</forceLevel>
 						<level>15</level>
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
+						<classChanges>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_10thru20_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+						</classChanges>
 						
 						<requiredNodes>
 						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
@@ -67,6 +76,15 @@
 						
 						<forceLevel>True</forceLevel>
 						<level>15</level>
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
+						<classChanges>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_10thru20_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+						</classChanges>
 						
 						<requiredNodes>
 						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
@@ -134,6 +152,7 @@
 					  <li>
 						<schema>SWPotF_ForceSchema</schema> <!--  -->
 						<level>6</level>
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
 						
 						<requiredNodes>
 						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
@@ -154,6 +173,7 @@
 					  <li>
 						<schema>SWPotF_ForceSchema</schema> <!--  -->
 						<level>6</level>
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
 						
 						<requiredNodes>
 						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
@@ -174,6 +194,7 @@
 					  <li>
 						<schema>SWPotF_ForceSchema</schema> <!--  -->
 						<level>6</level>
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
 						
 						<requiredNodes>
 						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
@@ -260,7 +281,8 @@
 						
 						<forceLevel>True</forceLevel>
 						<level>6</level>
-						
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
+
 						<requiredNodes>
 						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
 						  
@@ -283,6 +305,7 @@
 						
 						<forceLevel>True</forceLevel>
 						<level>6</level>
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
 						
 						<requiredNodes>
 						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_saberthrow</nodeDef><forceLevel>True</forceLevel></li>
@@ -305,6 +328,7 @@
 						
 						<forceLevel>True</forceLevel>
 						<level>6</level>
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
 						
 						<requiredNodes>
 						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_saberthrow</nodeDef><forceLevel>True</forceLevel></li>
@@ -358,6 +382,15 @@
 						
 						<forceLevel>True</forceLevel>
 						<level>12</level>
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
+						<classChanges>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_10thru20_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+						</classChanges>
 						
 						<requiredNodes>
 						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
@@ -391,6 +424,15 @@
 						
 						<forceLevel>True</forceLevel>
 						<level>15</level>
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
+						<classChanges>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_10thru20_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+						</classChanges>
 						
 						<requiredNodes>
 						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_saberthrow</nodeDef><forceLevel>True</forceLevel></li>
@@ -458,6 +500,15 @@
 						
 						<forceLevel>True</forceLevel>
 						<level>12</level>
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
+						<classChanges>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_10thru20_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+						</classChanges>
 						
 						<requiredNodes>
 						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
@@ -490,6 +541,15 @@
 						
 						<forceLevel>True</forceLevel>
 						<level>12</level>
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
+						<classChanges>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_10thru20_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+						</classChanges>
 						
 						<requiredNodes>
 						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
@@ -560,6 +620,15 @@
 						
 						<forceLevel>True</forceLevel>
 						<level>20</level>
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
+						<classChanges>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_10thru20_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+						</classChanges>
 						
 						<requiredNodes>
 						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
@@ -602,6 +671,15 @@
 						
 						<forceLevel>True</forceLevel>
 						<level>20</level>
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
+						<classChanges>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_10thru20_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+						</classChanges>
 						
 						<requiredNodes>
 						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
@@ -687,6 +765,15 @@
 						
 						<forceLevel>True</forceLevel>
 						<level>20</level>
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
+						<classChanges>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_10thru20_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+						</classChanges>
 						
 						<requiredNodes>
 						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
@@ -729,6 +816,15 @@
 						
 						<forceLevel>True</forceLevel>
 						<level>20</level>
+						<baseClassDef>SWPotF_ProgressTrackerClass_1thru10_ForceLvl</baseClassDef>
+						<classChanges>
+							<li>
+								<classDef>SWPotF_ProgressTrackerClass_10thru20_ForceLvl</classDef>
+								<levelReset>False</levelReset>
+								<benefitReset>False</benefitReset>
+								<removePostClassChange>True</removePostClassChange>
+							</li>
+						</classChanges>
 						
 						<requiredNodes>
 						  <li><nodeDef>SWPotF_ForceTreeNodeUniv_push</nodeDef><forceLevel>True</forceLevel></li>
