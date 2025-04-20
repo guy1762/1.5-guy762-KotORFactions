@@ -16,7 +16,7 @@
             <unlockedPaths>
 				<Force_Neutral>1~2|1~2</Force_Neutral>
 				<Force_Telekinesis>1~3|4~5</Force_Telekinesis>
-				<Force_LightsaberCombat>1~3|4~5</Force_LightsaberCombat>
+				<!-- <Force_LightsaberCombat>1~3|4~5</Force_LightsaberCombat> -->
 				
 				<Force_LightSide>1~2|1~2</Force_LightSide>
             </unlockedPaths>
@@ -50,7 +50,7 @@
             <unlockedPaths>
 				<Force_Neutral>1~3|3~4</Force_Neutral>
 				<Force_Telekinesis>1~3|3~4</Force_Telekinesis>
-				<Force_LightsaberCombat>1~2|2~3</Force_LightsaberCombat>
+				<!-- <Force_LightsaberCombat>1~2|2~3</Force_LightsaberCombat> -->
 				
 				<Force_LightSide>1~2|2~3</Force_LightSide>
             </unlockedPaths>
@@ -85,7 +85,7 @@
             <unlockedPaths>
 				<Force_Neutral>1~3|4~5</Force_Neutral>
 				<Force_Telekinesis>1~2|1~2</Force_Telekinesis>
-				<Force_LightsaberCombat>1~2|1~2</Force_LightsaberCombat>
+				<!-- <Force_LightsaberCombat>1~2|1~2</Force_LightsaberCombat> -->
 				
 				<Force_LightSide>1~3|4~5</Force_LightSide>
             </unlockedPaths>
