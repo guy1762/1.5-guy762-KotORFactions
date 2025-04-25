@@ -22,10 +22,10 @@
     </statBases>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
-      <warmupTime>0.5</warmupTime>
       <range>-1</range>
       <drawAimPie>False</drawAimPie>
       <requireLineOfSight>False</requireLineOfSight>
+	  <soundCast>kotorsound_static_on</soundCast>
       <targetParams>
         <canTargetSelf>true</canTargetSelf>
         <canTargetPawns>false</canTargetPawns>
@@ -45,9 +45,12 @@
   <AbilityDef ParentName="guy762_Ability_CommandTierBASE">
     <defName>guy762_Ability_CommandTierV</defName>
     <label>Command Tier V</label>
-    <description>Take command of a battle by giving orders and coordinating the attacks of all colonists on the map. The effect lasts 24 hours and remains attached to the leader for the duration.</description>
+    <description>Take command of a battle by giving orders and coordinating the attacks of all colonists on the map. The effect lasts 24 hours and remains attached to the leader for the duration.\n\nThis level of tactical command skill is the first level of noteworthy ability an aspiring officer may find themselves with. Their skills, capabilities, and identity as a battlefield commander have been firmly established by participation in a few noteworthy battles, and officers at this level are generally able to take command of any common fighting force. While skill of this level is promising for young officers, it may be seen as evidence of arrested development in older commanders with longer careers. This level of skill is considered the minimum requirement for those who graduate from a formal officer's academy, but is also easily obtainable for any experienced soldier capable of leading troops into battle.</description>
     <iconPath>UI/CommandTier_V</iconPath>
     <warmupMoteSocialSymbol>UI/CommandTier_V</warmupMoteSocialSymbol>
+	<verbProperties>
+      <warmupTime>1</warmupTime> <!-- lowest-tier NPC commanders will always fire their ability last -->
+    </verbProperties>
     <descriptionHyperlinks>
 		<HediffDef>guy762_hediff_CommandTierV_caster</HediffDef>
 		<HediffDef>guy762_hediff_CommandTierV_buff</HediffDef>
@@ -63,6 +66,11 @@
 	  <li MayRequire="EBSG.Framework" Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
 		<casterHasNoneOfHediffs>
 			<li>guy762_hediff_CommandTierV_buff</li>
+			
+			<li>guy762_hediff_CommandTierIV_buff</li>
+			<li>guy762_hediff_CommandTierIII_buff</li>
+			<li>guy762_hediff_CommandTierII_buff</li>
+			<li>guy762_hediff_CommandTierI_buff</li>
 			
 			<li>guy762_hediff_CommandTierV_caster</li>
 			<li>guy762_hediff_CommandTierIV_caster</li>
@@ -108,6 +116,9 @@
         </targetingParameters>
         <hediff>guy762_hediff_CommandTierV_buff</hediff>
       </li>
+	  <li Class="HediffCompProperties_GiveAbility">
+		<abilityDef>guy762_StopCommandTier</abilityDef>
+	  </li>
     </comps>
     <isBad>false</isBad>
   </HediffDef>
@@ -128,7 +139,7 @@
       <li Class="HediffCompProperties_Link">
         <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
         <maxDistance>500</maxDistance>
-        <customMote>Mote_CombatCommandLinkLine</customMote>
+        <!-- <customMote>Mote_CombatCommandLinkLine</customMote> -->
       </li>
     </comps>
     <isBad>false</isBad>
@@ -172,9 +183,12 @@
   <AbilityDef ParentName="guy762_Ability_CommandTierBASE">
     <defName>guy762_Ability_CommandTierIV</defName>
     <label>Command Tier IV</label>
-    <description>Take command of a battle by giving orders and coordinating the attacks of all colonists on the map. The effect lasts 24 hours and remains attached to the leader for the duration.</description>
+    <description>Take command of a battle by giving orders and coordinating the attacks of all colonists on the map. The effect lasts 24 hours and remains attached to the leader for the duration.\n\nThis is a respectable level of tactical command skill for career officers to have obtained. Officers of this skill level have seen their way through a fair number of battles, some ending in victory and others with wise decisions to cut their losses and retreat. These are capable, reilable commanders whose expertise is valued in any engagement they find themselves in and are unquestionably a boon to any force they fight with. Those who dedicate themselves to the career of a military officer will surely find themselves holding this level of skill before long, and most experienced commanders one may face will have a similar skillset.</description>
     <iconPath>UI/CommandTier_IV</iconPath>
     <warmupMoteSocialSymbol>UI/CommandTier_IV</warmupMoteSocialSymbol>
+	<verbProperties>
+      <warmupTime>0.8</warmupTime>
+    </verbProperties>
     <descriptionHyperlinks>
 		<HediffDef>guy762_hediff_CommandTierIV_caster</HediffDef>
 		<HediffDef>guy762_hediff_CommandTierIV_buff</HediffDef>
@@ -190,6 +204,11 @@
 	  <li MayRequire="EBSG.Framework" Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
 		<casterHasNoneOfHediffs>
 			<li>guy762_hediff_CommandTierIV_buff</li>
+			
+			<li>guy762_hediff_CommandTierV_buff</li>
+			<li>guy762_hediff_CommandTierIII_buff</li>
+			<li>guy762_hediff_CommandTierII_buff</li>
+			<li>guy762_hediff_CommandTierI_buff</li>
 			
 			<li>guy762_hediff_CommandTierV_caster</li>
 			<li>guy762_hediff_CommandTierIV_caster</li>
@@ -235,6 +254,9 @@
         </targetingParameters>
         <hediff>guy762_hediff_CommandTierIV_buff</hediff>
       </li>
+	  <li Class="HediffCompProperties_GiveAbility">
+		<abilityDef>guy762_StopCommandTier</abilityDef>
+	  </li>
     </comps>
     <isBad>false</isBad>
   </HediffDef>
@@ -254,7 +276,7 @@
       <li Class="HediffCompProperties_Link">
         <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
         <maxDistance>500</maxDistance>
-        <customMote>Mote_CombatCommandLinkLine</customMote>
+        <!-- <customMote>Mote_CombatCommandLinkLine</customMote> -->
       </li>
     </comps>
     <isBad>false</isBad>
@@ -305,9 +327,12 @@
   <AbilityDef ParentName="guy762_Ability_CommandTierBASE">
     <defName>guy762_Ability_CommandTierIII</defName>
     <label>Command Tier III</label>
-    <description>Take command of a battle by giving orders and coordinating the attacks of all colonists on the map. The effect lasts 24 hours and remains attached to the leader for the duration.</description>
+    <description>Take command of a battle by giving orders and coordinating the attacks of all colonists on the map. The effect lasts 24 hours and remains attached to the leader for the duration.\n\nThis level of tactical skill is considered the prime that all junior officers aspire to reach. Their expertise has been proven through the use of daring, bold strategies to bring them to victory in engagements that lesser commanders would consider hopeless. Officers of this calibre are well-respected by their factions and are tasked with leading only the most important battles. This level of skill is readily obtainable to most career officers, provided they have the tenacity, creativity, and thirst for challenge to achieve it.</description>
     <iconPath>UI/CommandTier_III</iconPath>
     <warmupMoteSocialSymbol>UI/CommandTier_III</warmupMoteSocialSymbol>
+	<verbProperties>
+      <warmupTime>0.6</warmupTime>
+    </verbProperties>
     <descriptionHyperlinks>
 		<HediffDef>guy762_hediff_CommandTierIII_caster</HediffDef>
 		<HediffDef>guy762_hediff_CommandTierIII_buff</HediffDef>
@@ -323,6 +348,11 @@
 	  <li MayRequire="EBSG.Framework" Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
 		<casterHasNoneOfHediffs>
 			<li>guy762_hediff_CommandTierIII_buff</li>
+			
+			<li>guy762_hediff_CommandTierV_buff</li>
+			<li>guy762_hediff_CommandTierIV_buff</li>
+			<li>guy762_hediff_CommandTierII_buff</li>
+			<li>guy762_hediff_CommandTierI_buff</li>
 			
 			<li>guy762_hediff_CommandTierV_caster</li>
 			<li>guy762_hediff_CommandTierIV_caster</li>
@@ -368,6 +398,9 @@
         </targetingParameters>
         <hediff>guy762_hediff_CommandTierIII_buff</hediff>
       </li>
+	  <li Class="HediffCompProperties_GiveAbility">
+		<abilityDef>guy762_StopCommandTier</abilityDef>
+	  </li>
     </comps>
     <isBad>false</isBad>
   </HediffDef>
@@ -387,7 +420,7 @@
       <li Class="HediffCompProperties_Link">
         <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
         <maxDistance>500</maxDistance>
-        <customMote>Mote_CombatCommandLinkLine</customMote>
+        <!-- <customMote>Mote_CombatCommandLinkLine</customMote> -->
       </li>
     </comps>
     <isBad>false</isBad>
@@ -439,9 +472,12 @@
   <AbilityDef ParentName="guy762_Ability_CommandTierBASE">
     <defName>guy762_Ability_CommandTierII</defName>
     <label>Command Tier II</label>
-    <description>Take command of a battle by giving orders and coordinating the attacks of all colonists on the map. The effect lasts 24 hours and remains attached to the leader for the duration.</description>
+    <description>Take command of a battle by giving orders and coordinating the attacks of all colonists on the map. The effect lasts 24 hours and remains attached to the leader for the duration.\n\nThis is considered the peak of attainable strategic command prowess. Individuals with this level of tactical skill are considered the best of the best, and are usually the de facto leaders of their faction's armed forces. They are considered extremely dangerous by their enemies and an invaluable asset to their allies, and their deployment to the front lines is not a decision made lightly. Very few commanders are capable of achieving this level of strategic talent, but those that do will surely shape the outcome of the wars they are tasked with directing.</description>
     <iconPath>UI/CommandTier_II</iconPath>
     <warmupMoteSocialSymbol>UI/CommandTier_II</warmupMoteSocialSymbol>
+	<verbProperties>
+      <warmupTime>0.4</warmupTime>
+    </verbProperties>
     <descriptionHyperlinks>
 		<HediffDef>guy762_hediff_CommandTierII_caster</HediffDef>
 		<HediffDef>guy762_hediff_CommandTierII_buff</HediffDef>
@@ -457,6 +493,11 @@
 	  <li MayRequire="EBSG.Framework" Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
 		<casterHasNoneOfHediffs>
 			<li>guy762_hediff_CommandTierII_buff</li>
+			
+			<li>guy762_hediff_CommandTierV_buff</li>
+			<li>guy762_hediff_CommandTierIV_buff</li>
+			<li>guy762_hediff_CommandTierIII_buff</li>
+			<li>guy762_hediff_CommandTierI_buff</li>
 			
 			<li>guy762_hediff_CommandTierV_caster</li>
 			<li>guy762_hediff_CommandTierIV_caster</li>
@@ -502,6 +543,9 @@
         </targetingParameters>
         <hediff>guy762_hediff_CommandTierII_buff</hediff>
       </li>
+	  <li Class="HediffCompProperties_GiveAbility">
+		<abilityDef>guy762_StopCommandTier</abilityDef>
+	  </li>
     </comps>
     <isBad>false</isBad>
   </HediffDef>
@@ -521,7 +565,7 @@
       <li Class="HediffCompProperties_Link">
         <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
         <maxDistance>500</maxDistance>
-        <customMote>Mote_CombatCommandLinkLine</customMote>
+        <!-- <customMote>Mote_CombatCommandLinkLine</customMote> -->
       </li>
     </comps>
     <isBad>false</isBad>
@@ -566,9 +610,12 @@
   <AbilityDef ParentName="guy762_Ability_CommandTierBASE">
     <defName>guy762_Ability_CommandTierI</defName>
     <label>Command Tier I</label>
-    <description>Take command of a battle by giving orders and coordinating the attacks of all colonists on the map. The effect lasts 24 hours and remains attached to the leader for the duration.</description>
+    <description>Take command of a battle by giving orders and coordinating the attacks of all colonists on the map. The effect lasts 24 hours and remains attached to the leader for the duration.\n\nThis is the highest possible level of strategic command abilitity. Individuals who posess this level of tactical skill are considered galactic history-defining legends whose mere mention can cause opposing armies to lay down their arms and surrender without a single shot fired. Talent of this calibre is extraordinarily rare and is generally thought to emerge in only one or two individuals per era of major galactic conflict, if at all.</description>
     <iconPath>UI/CommandTier_I</iconPath>
     <warmupMoteSocialSymbol>UI/CommandTier_I</warmupMoteSocialSymbol>
+	<verbProperties>
+      <warmupTime>0.2</warmupTime> <!-- highest-tier NPC commanders will always fire their ability first -->
+    </verbProperties>
     <descriptionHyperlinks>
 		<HediffDef>guy762_hediff_CommandTierI_caster</HediffDef>
 		<HediffDef>guy762_hediff_CommandTierI_buff</HediffDef>
@@ -584,6 +631,11 @@
 	  <li MayRequire="EBSG.Framework" Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
 		<casterHasNoneOfHediffs>
 			<li>guy762_hediff_CommandTierI_buff</li>
+			
+			<li>guy762_hediff_CommandTierV_buff</li>
+			<li>guy762_hediff_CommandTierIV_buff</li>
+			<li>guy762_hediff_CommandTierIII_buff</li>
+			<li>guy762_hediff_CommandTierII_buff</li>
 			
 			<li>guy762_hediff_CommandTierV_caster</li>
 			<li>guy762_hediff_CommandTierIV_caster</li>
@@ -629,6 +681,9 @@
         </targetingParameters>
         <hediff>guy762_hediff_CommandTierI_buff</hediff>
       </li>
+	  <li Class="HediffCompProperties_GiveAbility">
+		<abilityDef>guy762_StopCommandTier</abilityDef>
+	  </li>
     </comps>
     <isBad>false</isBad>
   </HediffDef>
@@ -648,7 +703,7 @@
       <li Class="HediffCompProperties_Link">
         <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
         <maxDistance>500</maxDistance>
-        <customMote>Mote_CombatCommandLinkLine</customMote>
+        <!-- <customMote>Mote_CombatCommandLinkLine</customMote> -->
       </li>
     </comps>
     <isBad>false</isBad>
@@ -673,6 +728,52 @@
       </li>
     </stages>
   </HediffDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <AbilityDef>
+		<defName>guy762_StopCommandTier</defName>
+		<label>relinquish command</label>
+		<description>Deactivate an active command tier ability.</description>
+		<iconPath>UI/CommandTierOff</iconPath>
+		<!--hotKey>Misc12</hotKey-->
+		<writeCombatLog>True</writeCombatLog>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<aiCanUse>true</aiCanUse>
+		<targetRequired>false</targetRequired>
+		<verbProperties>
+		  <verbClass>Verb_CastAbility</verbClass>
+		  <soundCast>kotorsound_static_off</soundCast>
+		  <range>-1</range>
+		  <drawAimPie>false</drawAimPie>
+		</verbProperties>
+		<comps>
+		  <li Class="EBSGFramework.CompProperties_AbilityRemoveMultipleHediffs">
+				<compClass>EBSGFramework.CompAbilityEffect_RemoveMultipleHediffs</compClass>
+				<hediffs>
+					<li>guy762_hediff_CommandTierV_caster</li>
+					<li>guy762_hediff_CommandTierIV_caster</li>
+					<li>guy762_hediff_CommandTierIII_caster</li>
+					<li>guy762_hediff_CommandTierII_caster</li>
+					<li>guy762_hediff_CommandTierI_caster</li>
+				</hediffs>
+				<recursiveChecks>3</recursiveChecks> <!--No reason to have this, but maybe I'm paranoid-->
+			</li>
+		  <!-- <li Class="CompProperties_AbilityFleckOnTarget"> -->
+			<!-- <sound>kotorsound_cloak</sound> -->
+		  <!-- </li> -->
+		</comps>
+	</AbilityDef>
 
  
 

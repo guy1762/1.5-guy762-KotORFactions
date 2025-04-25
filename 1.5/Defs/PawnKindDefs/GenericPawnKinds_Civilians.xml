@@ -676,10 +676,10 @@
 		<inventoryOptions>
 		  <skipChance>0</skipChance>
 		  <subOptionsChooseOne>
-			<li>
-				<thingDef>guy762_repairkit_adv</thingDef>
-				<countRange>1~3</countRange>
-			</li>
+			<!-- <li> -->
+				<!-- <thingDef>guy762_repairkit_adv</thingDef> -->
+				<!-- <countRange>1~3</countRange> -->
+			<!-- </li> -->
 			<li>
 				<thingDef>ComponentIndustrial</thingDef>
 				<countRange>1~3</countRange>
@@ -764,10 +764,10 @@
 		<inventoryOptions>
 		  <skipChance>0</skipChance>
 		  <subOptionsChooseOne>
-			<li>
-				<thingDef>guy762_repairkit_adv</thingDef>
-				<countRange>1~3</countRange>
-			</li>
+			<!-- <li> -->
+				<!-- <thingDef>guy762_repairkit_adv</thingDef> -->
+				<!-- <countRange>1~3</countRange> -->
+			<!-- </li> -->
 			<li>
 				<thingDef>ComponentIndustrial</thingDef>
 				<countRange>1~3</countRange>
