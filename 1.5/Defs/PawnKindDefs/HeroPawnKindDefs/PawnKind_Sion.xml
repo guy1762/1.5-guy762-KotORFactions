@@ -256,7 +256,7 @@
 			<Force_Darkside_Attunement MayRequire="lee.theforce.psycast">1</Force_Darkside_Attunement>
 			<PsychicSensitivity>1</PsychicSensitivity>
 			<PsychicEntropyRecoveryRate>0.5</PsychicEntropyRecoveryRate>
-			<SWPotF_ForcePoints_Recovery MayRequire="guy762.Lee.KotORPotF">1</SWPotF_ForcePoints_Recovery>
+			<SWPotF_ForcePoints_Recovery MayRequire="guy762.Lee.KotORPotF">0.5</SWPotF_ForcePoints_Recovery>
 			
 			<PawnBeauty>-10</PawnBeauty>
 			
