@@ -520,6 +520,7 @@
 		  <li>KotORShield_basic</li>
 		  <li>KotORUtility_medic</li>
 		  <li>OR_apparel_medic</li>
+		  <li>KotORBelt_medicbelt</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_RepArmor_medic</li>

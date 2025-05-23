@@ -198,9 +198,10 @@
 		
 		<itemQuality>Good</itemQuality>
 		<isFighter>false</isFighter>
-		<apparelMoney>500~1000</apparelMoney>
+		<apparelMoney>2500~5000</apparelMoney>
 		<apparelTags Inherit="False">
 		  <li>KotORUtility_medic</li>
+		  <li>KotORBelt_medicbelt</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_Clothing_civilian</li>

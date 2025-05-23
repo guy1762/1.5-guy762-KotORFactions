@@ -50,7 +50,7 @@
 			</li>
 		  </subOptionsChooseOne>
 		</inventoryOptions>
-	  </PawnKindDef>
+	</PawnKindDef>
 	
 	<PawnKindDef Name="KotORRebel_berserker" ParentName="KotORRebelBase">
 		<defName>KotORRebel_berserker</defName>
