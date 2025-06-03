@@ -1817,7 +1817,7 @@
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		
-		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<disallowedTraits>
 		  <li>Wimp</li>
 		</disallowedTraits>
@@ -1893,7 +1893,7 @@
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		
-		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<disallowedTraits>
 		  <li>Wimp</li>
 		</disallowedTraits>
