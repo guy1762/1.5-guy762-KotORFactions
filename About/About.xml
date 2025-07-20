@@ -12,6 +12,7 @@
 	<supportedVersions>
 		<!--li>1.4</li-->
 		<li>1.5</li>
+		<li>1.6</li>
 	</supportedVersions>
 	<packageId>guy762.KotORFactions</packageId>
 	
@@ -52,25 +53,48 @@
 		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3100942433</steamWorkshopUrl>
 	  </li-->
   </modDependencies>
-  
-  <loadAfter>
-		<li>Ludeon.RimWorld</li>
-		<li>Ludeon.RimWorld.Royalty</li>
-		<li>Ludeon.RimWorld.Ideology</li>
-		<li>Ludeon.RimWorld.Biotech</li>
-		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
-		<li>VanillaExpanded.VMemesE</li>
-		<li>Rick.FCP.Core.Tools.Beta</li>
-		<li>Rick.FCP.Core.Tools</li>
-		
-		<li>lee.theforce.lightsaber</li>
-		
-		<li>guy762.StarWarsXenotypes</li>
-		<li>guy762.MM.KotORCore</li>
-		<li>guy762.KotORWeapons</li>
-		<li>guy762.KotORDroids</li>
-		<li>guy762.MM.KotORVehicles</li>
-	</loadAfter>
+	
+	
+	
+	<loadAfterByVersion>
+		<v1.5>
+			<li>Ludeon.RimWorld</li>
+			<li>Ludeon.RimWorld.Royalty</li>
+			<li>Ludeon.RimWorld.Ideology</li>
+			<li>Ludeon.RimWorld.Biotech</li>
+			<li>Ludeon.RimWorld.Odyssey</li>
+			<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+			<li>VanillaExpanded.VMemesE</li>
+			<li>Rick.FCP.Core.Tools.Beta</li>
+			<li>Rick.FCP.Core.Tools</li>
+			
+			<li>guy762.StarWarsXenotypes</li>
+			<li>guy762.MM.KotORCore</li>
+			<li>guy762.KotORWeapons</li>
+			<li>guy762.KotORDroids</li>
+			<li>guy762.MM.KotORVehicles</li>
+		</v1.5>
+		<v1.6>
+			<li>Ludeon.RimWorld</li>
+			<li>Ludeon.RimWorld.Royalty</li>
+			<li>Ludeon.RimWorld.Ideology</li>
+			<li>Ludeon.RimWorld.Biotech</li>
+			<li>Ludeon.RimWorld.Odyssey</li>
+			<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+			<li>VanillaExpanded.VMemesE</li>
+			<li>Rick.FCP.Core.Tools.Beta</li>
+			<li>Rick.FCP.Core.Tools</li>
+			
+			<li>lee.theforce.lightsaber</li>
+			
+			<li>guy762.StarWarsXenotypes</li>
+			<li>guy762.MM.KotORCore</li>
+			<li>guy762.KotORWeapons</li>
+			<li>guy762.KotORDroids</li>
+			<li>guy762.MM.KotORVehicles</li>
+		</v1.6>
+	</loadAfterByVersion>
+	
 	<loadBefore>
 		<li>lee.theforce.psycast</li>
 		<li>guy762.Lee.KotORPotF</li>

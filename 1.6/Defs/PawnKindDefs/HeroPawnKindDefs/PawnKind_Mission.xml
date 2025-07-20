@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	
+	<PawnKindDef MayRequire="guy762.StarWarsXenotypes" Name="KotORPlayableHero_Mission"  ParentName="guy762_HeroPawnKindBase">
+		<defName>KotORPlayableHero_Mission</defName>
+		<nameMaker>guy762_HeroNamer_Mission</nameMaker>
+		<combatPower>500</combatPower>
+		<minGenerationAge>23</minGenerationAge>
+		<maxGenerationAge>24</maxGenerationAge>
+		<fixedGender>Female</fixedGender>
+
+		<xenotypeSet>
+			<xenotypeChances>
+				<guy762_xenotype_twilek>999</guy762_xenotype_twilek>
+			</xenotypeChances>
+		</xenotypeSet>
+		
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<itemQuality>Legendary</itemQuality>
+		<apparelMoney>49999</apparelMoney>
+		<apparelTags>
+		  <li>SaV_apparel_mission</li>
+		  <li>KotORHeroAccessories_mission</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_TwilekHeadband_mission</li>
+		   <li>guy762_Jacket_mission</li>
+		   <li>guy762_Clothing_light</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<apparelDef>guy762_Clothing_light</apparelDef>
+				<color>(190,185,200)</color>
+				<quality>Legendary</quality>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<apparelDef>guy762_Jacket_mission</apparelDef>
+				<color>(130,125,140)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<apparelDef>guy762_TwilekHeadband_mission</apparelDef>
+				<quality>Legendary</quality>
+				<color>(50,50,50)</color>
+			</li>
+		</specificApparelRequirements>
+		<weaponMoney>99999999</weaponMoney>
+		<weaponTags>
+		  <li>SaV_mission</li>
+		</weaponTags>
+		<techHediffsRequired>
+		  <li>guy762_ImplantDock_I</li>
+		</techHediffsRequired>
+		
+		<inventoryOptions>
+		  <skipChance>0</skipChance>
+		  <subOptionsTakeAll>
+			<li>
+			  <thingDef>guy762_holdout_needler</thingDef>
+			  <countRange>1</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_ImplantItemPkg_pheromone</thingDef>
+			  <countRange>1</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_KotORcredits</thingDef>
+			  <countRange>100000~125000</countRange>
+			</li>
+		  </subOptionsTakeAll>
+		</inventoryOptions>
+		
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>10~12</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>12~14</range>
+			</li>
+			<li>
+				<skill>Social</skill>
+				<range>18~20</range>
+			</li>
+			<li>
+				<skill>Intellectual</skill>
+				<range>12~14</range>
+			</li>
+		</skills>
+		<forcedTraits>
+			<Nimble>0</Nimble>
+			<SpeedOffset>1</SpeedOffset>
+			<Undergrounder>0</Undergrounder>
+			<NaturalMood>1</NaturalMood>
+		</forcedTraits>
+		<disallowedTraits>
+		  <li>BodyPurist</li>
+		</disallowedTraits>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_mission</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		<modExtensions>
+			<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
+			  <whitelist>
+				<li>Female_AveragePointy</li>
+			  </whitelist>
+			  <blacklist>
+				<!--leave blank to disable-->
+			  </blacklist>
+			  <priority>
+				<li>Female_AveragePointy</li>
+			  </priority>
+			  <checkGender>False</checkGender>
+			</li>
+			<li Class="AddGeneForPK.PKAdditionalGenes">
+			  <geneSets>
+				<li>
+				  <isXenogene>true</isXenogene>
+				  <chance>1</chance>
+				  <geneDefs>
+					<li>Skin_Blue</li>
+				  </geneDefs>
+				</li>
+			  </geneSets>
+			</li>
+		</modExtensions>
+	  </PawnKindDef>
+	  
+	  <RulePackDef>
+        <defName>guy762_HeroNamer_Mission</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[mission] '[mission]' [vao]</li>
+				<li>mission->Mission</li>
+				<li>vao->Vao</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+		<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun]-->
+	
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryC_Mission</defName>
+		<title>Tarisian urchin</title>
+		<titleShort>Urchin</titleShort>
+		<description>[PAWN_nameDef] grew up as an orphan on the mean streets of Taris alongside [PAWN_possessive] brother Griff. [PAWN_pronoun] and [PAWN_possessive] brother worked odd jobs for the local swoop gang, sneaking into restricted areas to steal valuable swoop parts, shaking down unsuspecting cantina patrons for credits, and slicing into upper city computer networks. Eventually [PAWN_possessive] brother fell in love with a cantina girl and abandoned [PAWN_nameDef] on Taris.\n\n[PAWN_pronoun] was not left alone for long, however, as on one fateful day [PAWN_pronoun] encountered a lone Wookiee being harassed by rival gang members and charged in to help. The two became fast friends after that, and went on to have many more adventures together in the Tarisian lower city.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>8</Melee>
+			<Intellectual>8</Intellectual>
+		</skillGains>
+		<forcedTraits>
+		  <Undergrounder>0</Undergrounder>
+		  <Nimble>0</Nimble>
+		</forcedTraits>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		  <li>Intellectual</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_Mission</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_mission</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryA_Mission</defName>
+		<title>Shipping mogul</title>
+		<titleShort>Mogul</titleShort>
+		<description>After helping Revan escape the destruction of Taris and aiding them on their quest to find the Star Forge, [PAWN_nameDef] put [PAWN_possessive] street smarts and newfound fame and connections in the Republic to use and founded [PAWN_possessive] own shipping company. Thanks to the ensuing galactic reconstruction efforts, this venture proved to be wildly successful, and the Vao Shipping Consortium quickly became one of the Republic's leading logistics enterprises. [PAWN_nameDef] had overnight become one of the youngest billionaires in galactic history.\n\nWhen [PAWN_possessive] old Jedi friend Bastila Shan came to [PAWN_possessive] for help in setting up the new Jedi Order, [PAWN_nameDef] used [PAWN_possessive] wealth to set up a small smuggling ring to covertly aid the Jedi.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Social>10</Social>
+		</skillGains>
+		<requiredWorkTags>
+		  <li>Social</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_Mission</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_mission</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	
+
+</Defs>

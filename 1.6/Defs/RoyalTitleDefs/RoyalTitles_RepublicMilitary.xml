@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <RoyalTitleDef Abstract="True" Name="KotORTitleORenlstd_base">
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+    <tags>
+      <li>KotORTitleTag_OR_enlisted</li>
+    </tags>
+    <awardThought>GainedTitle</awardThought>
+    <lostThought>LostTitle</lostThought>
+    <canBeInherited>false</canBeInherited>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <replaceOnRecruited>KotORTitleORpriv_contact</replaceOnRecruited>
+
+    <permits>
+      <li>TradeSettlement</li>
+      <li>TradeCaravan</li>
+      <li>TradeOrbital</li>
+    </permits>
+  </RoyalTitleDef>
+
+
+
+
+
+
+  <!--RoyalTitleDef ParentName="KotORTitleORenlstd_base">
+    <defName>KotORTitleORenlstd_contact</defName>
+    <label>contact</label>
+    <description>The "contact" status within the Republic's information network signifies an outside individual who has been identified as being open to collaborating with Republic military personnel when needed.</description>
+    <seniority>0</seniority>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+	
+	<permitPointsAwarded>1</permitPointsAwarded>
+  </RoyalTitleDef-->
+
+
+  <!-- ============== titles ============================= -->
+
+  <RoyalTitleDef ParentName="KotORTitleORenlstd_base">
+    <defName>KotORTitleORenlstd_private</defName>
+    <label>private</label>
+    <description>The lowest rank in the Republic's military, granted upon graduating from a Republic military academy.</description>
+    <seniority>1</seniority>
+    <!--favorCost>1</favorCost-->
+    <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="KotORTitleORenlstd_base">
+    <defName>KotORTitleORenlstd_sergeant</defName>
+    <label>sergeant</label>
+    <description>The only non-commissioned officer rank within the Republic's military structure. Sergeants typically lead squadrons of soldiers into battle, and have authority to request shuttle transportation and basic supply drops of food and medkits.</description>
+    <seniority>10</seniority>
+    <favorCost>20</favorCost>
+    <recruitmentResistanceOffset>10</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+
+    <permitPointsAwarded>2</permitPointsAwarded>
+    <!--requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>KotORRoyaltyTag_AnyRepublicArmor</li>
+        </requiredTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>KotORRoyaltyTag_AnyRepublicArmor</li>
+        </requiredTags>
+      </li>
+    </requiredApparel-->
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="KotORTitleORenlstd_base">
+    <defName>KotORTitleORenlstd_lieutenant</defName>
+    <label>lieutenant</label>
+    <description>The lowest commissioned officer rank within the Republic military. Lieutenants command platoons of soldiers and have the authority to request transportation, basic supplies, and deployment of temporary squads of reinforcements.</description>
+    <seniority>50</seniority>
+    <favorCost>40</favorCost>
+    <recruitmentResistanceOffset>20</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+
+    <permitPointsAwarded>2</permitPointsAwarded>
+    <disabledWorkTags>
+      <li>Cleaning</li>
+    </disabledWorkTags>
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>KotORRoyaltyTag_AnyRepublicArmor</li>
+          <li>KotORRoyaltyTag_AnyJediTunic</li>
+          <li>KotORRoyaltyTag_RepComArmor</li>
+          <li>KotORRoyaltyTag_LSCharacterApparel</li>
+        </requiredTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>KotORRoyaltyTag_RepublicOfficerCap</li>
+          <li>KotORRoyaltyTag_RepComArmor</li>
+          <li>KotORRoyaltyTag_LSCharacterApparel</li>
+        </requiredTags>
+      </li>
+    </requiredApparel>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="KotORTitleORenlstd_base">
+    <defName>KotORTitleORenlstd_captain</defName>
+    <label>captain</label>
+    <description>The highest officer rank at the "junior" level within the Republic military. Captains command entire companies of military personnel (or individual starships) and have the authority to request orbital bombardment strikes, supplies, transportation, and temporary platoons of reinforcements. In addition, captains are also expected to direct the construction of field bases for military use, and as such have been granted full authority to requisition matériels from their fleet's supply division and engineering personnel.</description>
+    <seniority>100</seniority>
+    <favorCost>40</favorCost>
+    <minExpectation>Moderate</minExpectation>
+    <requiredMinimumApparelQuality>Normal</requiredMinimumApparelQuality>
+    <recruitmentResistanceOffset>40</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+
+    <permitPointsAwarded>4</permitPointsAwarded>
+
+    <grantedAbilities>
+      <li>Speech</li>
+    </grantedAbilities>
+    <speechCooldown>2400000</speechCooldown>
+
+    <disabledWorkTags>
+      <li>ManualDumb</li>
+    </disabledWorkTags>
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>KotORRoyaltyTag_RepublicUniform</li>
+          <li>KotORRoyaltyTag_RepComArmor</li>
+          <li>KotORRoyaltyTag_AnyJediTunic</li>
+          <li>KotORRoyaltyTag_LSCharacterApparel</li>
+        </requiredTags>
+        <allowedTags>
+        </allowedTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>KotORRoyaltyTag_RepublicOfficerCap</li>
+          <li>KotORRoyaltyTag_RepComArmor</li>
+          <li>KotORRoyaltyTag_LSCharacterApparel</li>
+        </requiredTags>
+        <allowedTags>
+        </allowedTags>
+      </li>
+    </requiredApparel>
+    <foodRequirement>
+      <minQuality>MealFine</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+      </allowedDefs>
+    </foodRequirement>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="KotORTitleORenlstd_base">
+    <defName>KotORTitleORenlstd_commander</defName>
+    <label>commander</label>
+    <description>The first "senior" officer rank in the Republic's military structure. Commanders lead entire legions of military personnel (or command larger starcruisers), and have full access to the resources, personnel, and firepower of their host fleet.</description>
+    <!-- TO DO: find some way to nullify favor penalties when overusing permits -->
+    <seniority>500</seniority>
+    <favorCost>50</favorCost>
+    <minExpectation>High</minExpectation>
+    <requiredMinimumApparelQuality>Good</requiredMinimumApparelQuality>
+
+    <recruitmentResistanceOffset>60</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+
+    <permitPointsAwarded>4</permitPointsAwarded>
+
+    <decreeTags>
+      <li>All</li>
+    </decreeTags>
+    <decreeMtbDays>-1</decreeMtbDays>    <!-- disabled -->
+    <!--decreeMentalBreakCommonality>4</decreeMentalBreakCommonality-->
+
+    <disabledWorkTags>
+      <li>ManualDumb</li>
+      <li>PlantWork</li>
+      <li>Mining</li>
+    </disabledWorkTags>
+
+    <grantedAbilities>
+      <li>guy762_Ability_CommandTierV</li>
+      <li>Speech</li>
+    </grantedAbilities>
+    <speechCooldown>1200000</speechCooldown>
+    <modExtensions>
+      <li Class="TitleRemovesAbility.ModExtension_TitleRemovesAbility">        <!-- removes duplicates -->
+        <abilityDefs>
+          <li>guy762_Ability_CommandTierV</li>
+        </abilityDefs>
+      </li>
+    </modExtensions>
+
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>KotORRoyaltyTag_RepublicOfficerUniform</li>
+          <li>KotORRoyaltyTag_RepComArmor</li>
+          <li>KotORRoyaltyTag_AnyJediTunic</li>
+          <li>KotORRoyaltyTag_LSCharacterApparel</li>
+        </requiredTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>KotORRoyaltyTag_RepublicOfficerCap</li>
+          <li>KotORRoyaltyTag_RepComArmor</li>
+          <li>KotORRoyaltyTag_LSCharacterApparel</li>
+        </requiredTags>
+      </li>
+    </requiredApparel>
+
+    <throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things>
+          <li>Throne</li>
+          <li>GS_Palp_Throne</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>24</area>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags>
+          <li>Production</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags>
+          <li>Bed</li>
+        </buildingTags>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+        <labelKey>RoomRequirementNoAltars</labelKey>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags>
+          <li>Biotech</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags>
+          <li>Anomaly</li>
+        </buildingTags>
+      </li>
+    </throneRoomRequirements>
+
+    <bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>16</area>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>DoubleBed</li>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags>
+          <li>Production</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags>
+          <li>Biotech</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags>
+          <li>Anomaly</li>
+        </buildingTags>
+      </li>
+    </bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealFine</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+      </allowedDefs>
+    </foodRequirement>
+  </RoyalTitleDef>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- unobtainable ranks
+  
+  there should be a "rear admiral" rank here that gives command tier IV, but I wasn't planning to use it anywhere and I just wanted a vice admiral rank for Brianna so she can have a tier III command
+  
+
+  
+  
+  
+  <RoyalTitleDef ParentName="KotORTitleORenlstd_base">
+    <defName>KotORTitleORenlstd_viceadmiral</defName>
+    <label>vice admiral</label>
+    <description>The middle "senior" officer rank in the Republic's starfleet. Vice admirals command small naval battlegroups composed of several cruisers, frigates, or corvettes.</description>
+    <!- TO DO: find some way to nullify favor penalties when overusing permits ->
+	<seniority>750</seniority>
+	<!- <favorCost>10</favorCost> ->
+	<minExpectation>SkyHigh</minExpectation>
+    <requiredMinimumApparelQuality>Excellent</requiredMinimumApparelQuality>
+	
+    <recruitmentResistanceOffset>100</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+	
+	<permitPointsAwarded>6</permitPointsAwarded>
+	
+	<decreeTags>
+      <li>All</li>
+    </decreeTags>
+    <decreeMtbDays>-1</decreeMtbDays> <!- disabled ->
+    <!-decreeMentalBreakCommonality>4</decreeMentalBreakCommonality->
+
+    <disabledWorkTags>
+      <li>ManualDumb</li>
+      <li>PlantWork</li>
+      <li>Mining</li>
+    </disabledWorkTags>
+	
+	<grantedAbilities>
+		<li>guy762_Ability_CommandTierIII</li>
+		<li>Speech</li>
+	</grantedAbilities>
+    <speechCooldown>600000</speechCooldown>
+	<modExtensions>
+	  <li Class="TitleRemovesAbility.ModExtension_TitleRemovesAbility"> <!- removes duplicates ->
+		<abilityDefs>
+          <li>guy762_Ability_CommandTierV</li>
+          <li>guy762_Ability_CommandTierIV</li>
+          <li>guy762_Ability_CommandTierIII</li>
+        </abilityDefs>
+      </li>
+	</modExtensions>
+	
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>KotORRoyaltyTag_RepublicOfficerUniform</li>
+		  <li>KotORRoyaltyTag_RepComArmor</li>
+		  <li>KotORRoyaltyTag_AnyJediTunic</li>
+		  <li>KotORRoyaltyTag_LSCharacterApparel</li>
+        </requiredTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>KotORRoyaltyTag_RepublicOfficerCap</li>
+		  <li>KotORRoyaltyTag_RepComArmor</li>
+		  <li>KotORRoyaltyTag_LSCharacterApparel</li>
+        </requiredTags>
+      </li>
+    </requiredApparel>
+	
+    <throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things>
+          <li>Throne</li>
+          <li>GS_Palp_Throne</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>24</area>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags><li>Bed</li></buildingTags>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+        <labelKey>RoomRequirementNoAltars</labelKey>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags><li>Anomaly</li></buildingTags>
+      </li>
+    </throneRoomRequirements>
+	
+    <bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>16</area>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>DoubleBed</li>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags><li>Anomaly</li></buildingTags>
+      </li>
+    </bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealFine</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+      </allowedDefs>
+    </foodRequirement>
+  </RoyalTitleDef>
+
+  -->
+
+</Defs>

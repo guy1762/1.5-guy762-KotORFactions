@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <RoyalTitleDef Abstract="True" Name="KotORTitleExchange_base">
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+    <tags>
+      <li>KotORTitleTag_Exchange</li>
+    </tags>
+    <awardThought>GainedTitle</awardThought>
+    <lostThought>LostTitle</lostThought>
+    <canBeInherited>false</canBeInherited>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+  </RoyalTitleDef>
+
+  <!-- ============== outsider titles ============================= -->
+
+  <RoyalTitleDef ParentName="KotORTitleExchange_base">
+    <defName>KotORTitleExchange_contact</defName>
+    <label>contact</label>
+    <description>The "contact" role denotes an individual who is known to an Exchange crew to have skills and services they can call upon to aid in their illicit affairs.</description>
+    <seniority>0</seniority>
+    <favorCost>1</favorCost>
+    <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="KotORTitleExchange_base">
+    <defName>KotORTitleExchange_associate</defName>
+    <label>associate</label>
+    <description>The "associate" role denotes a trusted individual who has frequently worked with an Exchange crew and can be relied upon to serve as the backbone of their street-level operations. Associates are on the street pushing spice, smuggling cargo, breaking legs, robbing businesses, and more. Associates, like all members of the Exchange, are expected to 'kick up' a cut of their profits to whichever higher-ranking member they work under, or whichever one tipped them off about a particular profitable opportunity. This is considered a "mutual exchange" done as a sign of respect, and to ensure order and steady cash flow in a perpetually at-risk criminal organization.\n\nAssociates are given permission to trade with most 'black market' dealers, trading in illicit goods that normal civilians couldn't be trusted with otherwise.</description>
+    <seniority>15</seniority>
+    <favorCost>20</favorCost>
+    <commonality>1</commonality>
+
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <replaceOnRecruited>KotORTitleExchange_contact</replaceOnRecruited>
+    <permits>
+      <li>TradeSettlement</li>
+      <li>TradeCaravan</li>
+      <li>TradeOrbital</li>
+      <li>guy762_KotORPermit_BlackMarketOrbital</li>
+    </permits>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <!-- ============== "made" titles ============================= -->
+
+  <RoyalTitleDef ParentName="KotORTitleExchange_base">
+    <defName>KotORTitleExchange_made</defName>
+    <label>made member</label>
+    <description>The "made member" role denotes a trusted individual that has been "made", meaning they have been formally welcomed to the upper ranks of an Exchange family by participating in an ancient Tionese pirate's ritual to cement their loyalty to their crew. Made members are typically thought of as "soldiers" and serve as the street-level enforcers of an Exchange crew, overseeing and facilitating the daily affairs of associates and participating directly in higher-risk missions.\n\nMade members have the authority to request planetary transportation thanks to their Exchange family's connections to civilian shuttle services.</description>
+    <seniority>25</seniority>
+    <favorCost>50</favorCost>
+    <minExpectation>Moderate</minExpectation>
+    <requiredMinimumApparelQuality>Good</requiredMinimumApparelQuality>
+    <recruitmentResistanceOffset>30</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+
+    <permitPointsAwarded>2</permitPointsAwarded>
+    <!--replaceOnRecruited>KotORTitleExchange_contact</replaceOnRecruited-->
+
+    <permits>
+      <li>TradeSettlement</li>
+      <li>TradeCaravan</li>
+      <li>TradeOrbital</li>
+      <li>guy762_KotORPermit_BlackMarketOrbital</li>
+    </permits>
+
+    <foodRequirement>
+      <minQuality>MealFine</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+      </allowedDefs>
+    </foodRequirement>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="KotORTitleExchange_base">
+    <defName>KotORTitleExchange_capo</defName>
+    <label>capo</label>
+    <description>The "capo" role (also referred to as "captain") denotes an individual who has been given the authority to run their own 'crew' of Exchange operatives by their organization's vigo. Publicly, capos may be a "silent partner" to several civilian businesses, receiving a cut of their profits in exchange for various protection services. Capos may also manage street-level dealing, trafficking, and smuggling rings. The most accomplished capos might own and manage their own casino or nightclub, serving as a headquarters for their crew.\n\nCapos have the authority to request the services of street gangs and Exchange agents from broader Exchange networks. Connections to various construction and manufacturing companies also allow them to request civilian construction workers and shipments of materials for construction. Finally, capos have the authority to trade with elite smuggler networks that deal in expensive, difficult-to-acquire goods.</description>
+    <seniority>100</seniority>
+    <favorCost>50</favorCost>
+    <minExpectation>High</minExpectation>
+    <requiredMinimumApparelQuality>Excellent</requiredMinimumApparelQuality>
+    <recruitmentResistanceOffset>60</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+
+    <canBeInherited>true</canBeInherited>
+    <changeHeirQuestPoints>1600</changeHeirQuestPoints>
+
+    <permitPointsAwarded>4</permitPointsAwarded>
+    <replaceOnRecruited>KotORTitleExchange_made</replaceOnRecruited>
+    <!--disabledWorkTags>
+      <li>ManualDumb</li>
+    </disabledWorkTags-->
+    <permits>
+      <li>TradeSettlement</li>
+      <li>TradeCaravan</li>
+      <li>TradeOrbital</li>
+      <li>guy762_KotORPermit_BlackMarketOrbital</li>
+      <li>guy762_KotORPermit_BlackMarketOrbitalII</li>
+    </permits>
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>KotORRoyaltyTag_ExchangeJacket</li>
+          <li>KotORRoyaltyTag_drip</li>
+
+          <li>KotORRoyaltyTag_AnyHighTier</li>
+          <li>KotORRoyaltyTag_AnyMandoArmor</li>
+          <li>KotORRoyaltyTag_LSCharacterApparel</li>
+          <li>KotORRoyaltyTag_DSCharacterApparel</li>
+        </requiredTags>
+        <allowedTags>
+        </allowedTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>guy762PatchedTag_RoyalHats</li>
+          <li>guy762PatchedTag_AuthorityCap</li>
+          <li>KotORRoyaltyTag_ExchangeShades</li>
+          <li>KotORRoyaltyTag_LSCharacterApparel</li>
+          <li>KotORRoyaltyTag_DSCharacterApparel</li>
+        </requiredTags>
+        <allowedTags>
+        </allowedTags>
+      </li>
+    </requiredApparel>
+    <foodRequirement>
+      <minQuality>MealFine</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+      </allowedDefs>
+    </foodRequirement>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="KotORTitleExchange_base">
+    <defName>KotORTitleExchange_vigo</defName>
+    <label>vigo</label>
+    <description>The "vigo" role, named after the Old Tionese word for "nephew", denotes an individual who runs an entire Exchange crime family, controlling all Exchange operations in large metropolitan cities or entire planets. Vigos kick up payments to no one and feud with other Exchange families frequently, especially ones they share a planet with. Vigos are typically kept from starting full-scale gang wars with each other by the Commission, an external Exchange organization ran by a mysterious individual known as the "Compeer" that mediates peace between the various Exchange families and helps mitigate the risk of crackdowns from Republic judicial forces.\n\nExchange vigos have the authority to request the services of professional data slicers, assassins, and assassin droids from the most exclusive parts of the Exchange criminal networks.\n\nThe vigos believe themselves to be the continuation of ancient Tionese pirate nobility, and as such they expect to live as lavishly as the descendants of Xim the Despot once did.</description>
+    <seniority>250</seniority>
+    <favorCost>70</favorCost>
+    <minExpectation>SkyHigh</minExpectation>
+    <requiredMinimumApparelQuality>Excellent</requiredMinimumApparelQuality>
+    <recruitmentResistanceOffset>100</recruitmentResistanceOffset>
+    <commonality>1</commonality>
+    <decreeMtbDays>-1</decreeMtbDays>    <!-- disabled -->
+    <!--decreeMentalBreakCommonality>4</decreeMentalBreakCommonality-->
+
+    <canBeInherited>true</canBeInherited>
+    <changeHeirQuestPoints>2200</changeHeirQuestPoints>
+
+    <permitPointsAwarded>4</permitPointsAwarded>
+    <replaceOnRecruited>KotORTitleExchange_made</replaceOnRecruited>
+    <decreeTags>
+      <li>All</li>
+    </decreeTags>
+    <disabledWorkTags>
+      <li>ManualDumb</li>
+      <li>PlantWork</li>
+      <li>Mining</li>
+    </disabledWorkTags>
+    <permits>
+      <li>TradeSettlement</li>
+      <li>TradeCaravan</li>
+      <li>TradeOrbital</li>
+      <li>guy762_KotORPermit_BlackMarketOrbital</li>
+      <li>guy762_KotORPermit_BlackMarketOrbitalII</li>
+    </permits>
+
+    <grantedAbilities>
+      <li>Speech</li>
+      <!--li>guy762_Ability_CommandTierV</li-->
+    </grantedAbilities>
+    <speechCooldown>1200000</speechCooldown>
+    <!--modExtensions>
+	  <li Class="TitleRemovesAbility.ModExtension_TitleRemovesAbility"> removes duplicates
+		<abilityDefs>
+          <li>guy762_Ability_CommandTierV</li>
+        </abilityDefs>
+      </li>
+	</modExtensions-->
+
+    <requiredApparel>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>Torso</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>KotORRoyaltyTag_ExchangeJacket</li>
+          <li>KotORRoyaltyTag_drip</li>
+
+          <!--<li>KotORRoyaltyTag_AnyHighTier</li>
+		  <li>KotORRoyaltyTag_AnyMandoArmor</li>-->
+          <li>KotORRoyaltyTag_LSCharacterApparel</li>
+          <li>KotORRoyaltyTag_DSCharacterApparel</li>
+        </requiredTags>
+        <allowedTags>
+        </allowedTags>
+      </li>
+      <li>
+        <bodyPartGroupsMatchAny>
+          <li>UpperHead</li>
+          <li>FullHead</li>
+        </bodyPartGroupsMatchAny>
+        <requiredTags>
+          <li>guy762PatchedTag_RoyalHats</li>
+          <li>guy762PatchedTag_AuthorityCap</li>
+          <li>KotORRoyaltyTag_ExchangeShades</li>
+          <li>KotORRoyaltyTag_RegalVisor</li>
+          <li>KotORRoyaltyTag_LSCharacterApparel</li>
+          <li>KotORRoyaltyTag_DSCharacterApparel</li>
+        </requiredTags>
+        <allowedTags>
+        </allowedTags>
+      </li>
+    </requiredApparel>
+    <throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things>
+          <li>Throne</li>
+          <li>GrandThrone</li>
+          <li>GS_Palp_Throne</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>24</area>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags>
+          <li>Production</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags>
+          <li>Bed</li>
+        </buildingTags>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+        <labelKey>RoomRequirementNoAltars</labelKey>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags>
+          <li>Biotech</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags>
+          <li>Anomaly</li>
+        </buildingTags>
+      </li>
+    </throneRoomRequirements>
+    <bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>16</area>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>DoubleBed</li>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags>
+          <li>Production</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags>
+          <li>Biotech</li>
+        </buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags>
+          <li>Anomaly</li>
+        </buildingTags>
+      </li>
+    </bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealFine</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+      </allowedDefs>
+    </foodRequirement>
+  </RoyalTitleDef>
+
+
+
+</Defs>

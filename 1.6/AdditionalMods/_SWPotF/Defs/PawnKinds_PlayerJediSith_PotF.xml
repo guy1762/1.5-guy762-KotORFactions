@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<PawnKindDef MayRequire="guy762.Lee.KotORPotF" Name="KotORPlayablePawn_JediConsular_PotF" ParentName="KotORRepub_jediconsular_PotF">
+		<defName>KotORPlayablePawn_JediConsular_PotF</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_RepublicStrikeTeam</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef MayRequire="guy762.Lee.KotORPotF" Name="KotORPlayablePawn_JediGuardian_PotF" ParentName="KotORRepub_jediguardian_PotF">
+		<defName>KotORPlayablePawn_JediGuardian_PotF</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_RepublicStrikeTeam</defaultFactionType>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef MayRequire="guy762.Lee.KotORPotF" Name="KotORPlayablePawn_JediSentinel_PotF" ParentName="KotORRepub_jedisentinel_PotF">
+		<defName>KotORPlayablePawn_JediSentinel_PotF</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SmugglerCrew</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef MayRequire="guy762.Lee.KotORPotF" Name="KotORPlayablePawn_DarkJedi_PotF" ParentName="KotORSith_darkjedi_PotF">
+		<defName>KotORPlayablePawn_DarkJedi_PotF</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SmugglerCrew</defaultFactionType>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="KotORPlayablePawn_SithWarlord_PotF" ParentName="KotORSith_warlord_PotF">
+		<defName>KotORPlayablePawn_SithWarlord_PotF</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SithWarlord</defaultFactionType>
+		<isBoss>false</isBoss>
+		<skipResistant>false</skipResistant>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORPlayablePawn_SithAcolyte_PotF" ParentName="KotORSith_acolyte_PotF">
+		<defName>KotORPlayablePawn_SithAcolyte_PotF</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SithWarlord</defaultFactionType>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+
+</Defs>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	
+	<!--<Operation MayRequire="VanillaExpanded.VMemesE" Class="PatchOperationAdd">
+	  <xpath>Defs/PreceptDef[defName="VME_IdeoRole_Commissar"]/requiredMemes</xpath>
+	  <value>
+		<li>guy762_MemeDef_sith</li>
+	  </value>
+	</Operation>
+	
+	<Operation MayRequire="VanillaExpanded.VMemesE" Class="PatchOperationAdd">
+	  <xpath>Defs/AbilityDef[defName="VME_EnforceCompliance"]/requiredMemes</xpath> MOVED TO DOC IN LOADFOLDERS!!!
+	  <value>
+		<li>guy762_MemeDef_sith</li>
+		<li>guy762_MemeDef_mando</li>
+	  </value>
+	</Operation>-->
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/PreceptDef[defName="IdeoRole_ShootingSpecialist"]/requiredMemes</xpath>
+	  <value>
+		<li>guy762_MemeDef_mando</li>
+	  </value>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/PreceptDef[defName="IdeoRole_MeleeSpecialist"]/requiredMemes</xpath>
+	  <value>
+		<li>guy762_MemeDef_mando</li>
+		<li>guy762_MemeDef_sith</li>
+	  </value>
+	</Operation>
+	
+	
+	
+</Patch>

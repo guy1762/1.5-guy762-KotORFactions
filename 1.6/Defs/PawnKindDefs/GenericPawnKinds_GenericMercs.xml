@@ -134,6 +134,7 @@
 	  <li>KotORAccessory_outlaw</li>
 	  <li>KotORHeadband_bandana</li>
 	  <li>KotORHeadband_combat</li>
+	  <li>SWKotORSpecificApparelItem_CombatSuit</li>
     </apparelTags>
     <apparelRequired>
 	   <li>guy762_CombatSuit</li>	
@@ -199,6 +200,7 @@
 	  <li>KotORAccessory_outlaw</li>
 	  <li>KotORHeadband_bandana</li>
 	  <li>KotORHeadband_melee</li>
+	  <li>SWKotORSpecificApparelItem_HeavyCombatSuit</li>
     </apparelTags>
     <apparelRequired>
 	   <li>guy762_HvySuit</li>	
@@ -293,6 +295,9 @@
 	  <li>KotORUtility_weakgrenade</li>
 	  <li>KotOREquipment_basic</li>
 	  <li>KotORAccessory_trooper</li>
+	  <li>SWKotORSpecificApparelItem_MilitarySuit</li>
+	  <li>SWKotORSpecificApparelItem_MilitaryHelmet</li>
+	  <li>SWCPSpecificApparelItem_StripedFatigues</li>
     </apparelTags>
 	<apparelRequired>
 	   <li>guy762_Bodysuit_striped</li>
@@ -375,6 +380,8 @@
 	  <li>KotORHeadband_combat</li>
       <li>KotORStealthBelt_basic</li>
 	  <li>KotORShield_basic</li>
+	  <li>SWCPSpecificApparelItem_DyeableFatigues</li>
+	  <li>SWKotORSpecificApparelItem_EriaduHeavyCombatSuit</li>
     </apparelTags>
     <apparelRequired>
 	   <li>guy762_HvySuit_mod</li>
@@ -466,6 +473,8 @@
 	  <li>KotORHeadband_sapper</li>
 	  <li>KotORUtility_stronggrenade</li>
 	  <li>KotORUtility_sapper</li>
+	  <li>SWCPSpecificApparelItem_StripedFatigues</li>
+	  <li>SWKotORSpecificApparelItem_BonadanHeavyCombatSuit</li>
     </apparelTags>
     <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 	<apparelRequired>
@@ -582,6 +591,7 @@
 	  <li>KotOREquipment_adv</li>
 	  <li>KotORShield_mid</li>
 	  <li>SaV_jetpack</li>
+	  <li>SWKotORSpecificApparelItem_PoweredLightBattleArmor</li>
     </apparelTags>
     <apparelRequired>
 	   	<li>guy762_LgtBattleArmor_power</li>
@@ -677,6 +687,7 @@
 	  <li>KotORHeadband_combat</li>
 	  <li>KotOREquipment_adv</li>
 	  <li>SaV_jetpack</li>
+	  <li>SWKotORSpecificApparelItem_BattleArmor</li>
     </apparelTags>
 	<apparelRequired>
 		<li>guy762_MidBattleArmor</li>
@@ -783,6 +794,9 @@
 	  <li>KotORUtility_stronggrenade</li>
 	  <li>KotORHeadband_combat</li>
 	  <li>KotOREquipment_adv</li>
+	  <li>SWCPSpecificApparelItem_DyeableFatigues</li>
+	  <li>SWKotORSpecificApparelItem_HeavyBattleArmor</li>
+	  <li>SWKotORSpecificApparelItem_HeavyBattleHelmet</li>
     </apparelTags>
 	<apparelRequired>
 		<li>guy762_Bodysuit_Dyeable</li>
@@ -900,6 +914,7 @@
 	  <li>KotORHeadband_sapper</li>
 	  <li>KotOREquipment_adv</li>
 	  <li>SaV_jetpack</li>
+	  <li>SWKotORSpecificApparelItem_BronziumLightBattleArmor</li>
     </apparelTags>
 	<apparelRequired>
 		<li>guy762_LgtBattleArmor_bronzium</li>
@@ -1018,6 +1033,9 @@
 		<apparelTags>
 		  <li>KotORShield_adv</li>
 		  <li>KotOREquipment_adv</li>
+		  <li>SWKotORSpecificApparelItem_FiberHeavyCombatSuit</li>
+		  <li>SWCPSpecificApparelItem_StripedFatigues</li>
+		  <li>SWCPSpecificApparelItem_HeavySuspenders</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>guy762_Bodysuit_striped</li>
@@ -1112,6 +1130,8 @@
 	  <li>KotORHeadband_combat</li>
 	  <li>KotORHeadband_gasmask</li>
 	  <li>KotOREquipment_adv</li>
+	  <li>SWKotORSpecificApparelItem_DurasteelHeavyBattleArmor</li>
+	  <li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
     </apparelTags>
 	<apparelRequired>
 		<li>guy762_Bodysuit</li>
@@ -1207,6 +1227,7 @@
 	  <li>KotORUtility_stronggrenade</li>
 	  <li>KotOREquipment_rare</li>
 	  <li>KotORHeadband_combat</li>
+	  <li>SWKotORSpecificApparelItem_PoweredBattleArmor</li>
     </apparelTags>
 	<apparelRequired>
 	   <li>guy762_MidBattleArmor_powered</li>

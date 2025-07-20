@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================= Permits from royal titles ============================= -->
+	<!--
+  <RoyalTitlePermitDef>
+    <defName>TradeSettlement</defName>
+    <label>trade with settlements</label>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef>
+    <defName>TradeOrbital</defName>
+    <label>trade with orbital traders</label>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef>
+    <defName>TradeCaravan</defName>
+    <label>trade with caravans</label>
+  </RoyalTitlePermitDef>
+	-->
+
+  <!-- ============================= Faction permits ============================= -->
+  
+  
+  <!-- base -->
+
+  <RoyalTitlePermitDef Name="guy762_KotORPermitHutts_ResourceDropBase" Abstract="True">
+    <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
+    <faction>guy762_KotORFaction_HuttCartel</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>45</cooldownDays>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <royalAid>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  
+  <RoyalTitlePermitDef Name="guy762_KotORPermitHutts_LaborerDropBase" Abstract="True">
+    <workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass>
+    <faction>guy762_KotORFaction_HuttCartel</faction>
+	
+	<permitPointCost>1</permitPointCost>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef Name="guy762_KotORPermitHutts_CustomLaborerDropBase" Abstract="True">
+    <workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass>
+    <faction>guy762_KotORFaction_HuttCartel</faction>
+	
+	<permitPointCost>1</permitPointCost>
+	<modExtensions>
+      <li Class="CallLaborerCustom.ModExtension_CallLaborerCustom">
+        <questScriptDef>KotORQuestScript_CallLaborersCustom</questScriptDef>
+      </li>
+    </modExtensions>
+  </RoyalTitlePermitDef>
+  
+  
+  <RoyalTitlePermitDef Name="guy762_KotORPermitHutts_TrooperDropBase" Abstract="True">
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <faction>guy762_KotORFaction_HuttCartel</faction>
+	
+	<permitPointCost>1</permitPointCost>
+  </RoyalTitlePermitDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- fleet services -->
+  
+  
+  <RoyalTitlePermitDef>
+    <defName>guy762_KotORPermitHutts_shuttle</defName>
+    <label>call transport shuttle</label>
+    <description>Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles.</description>
+    <workerClass>RoyalTitlePermitWorker_CallShuttle</workerClass>
+    <faction>guy762_KotORFaction_HuttCartel</faction>
+    
+	<minTitle>KotORTitleHutts_associate</minTitle>
+	<permitPointCost>1</permitPointCost>
+    <uiPosition>(0,0)</uiPosition>
+    
+	<usableOnWorldMap>true</usableOnWorldMap>
+	<royalAid>
+      <favorCost>8</favorCost>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+    </royalAid>
+	<cooldownDays>1</cooldownDays>
+  </RoyalTitlePermitDef>
+
+  
+  
+  
+  
+  <!-- items -->
+  
+  
+  <RoyalTitlePermitDef MayRequire="Rick.FCP.Core.Tools.Beta" ParentName="guy762_KotORPermitHutts_ResourceDropBase">
+    <defName>guy762_KotORPermitHutts_resupplydrop</defName>
+    <label>resupply drop</label>
+    <description>Call for a drop of 4 supply crates containing food, medpacs, combat stimulants, and energy shields.</description>
+	
+    <minTitle>KotORTitleHutts_lowtrader</minTitle>
+    <uiPosition>(0,1)</uiPosition>
+	
+    <royalAid>
+      <favorCost>2</favorCost>
+	  <itemsToDrop>
+        <guy762_KotORLootBox_FoodMeds>2</guy762_KotORLootBox_FoodMeds>
+        <guy762_KotORLootBox_ShieldsStims>2</guy762_KotORLootBox_ShieldsStims>
+      </itemsToDrop>
+    </royalAid>
+	<cooldownDays>5</cooldownDays>
+  </RoyalTitlePermitDef>
+  
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_ResourceDropBase">
+    <defName>guy762_KotORPermitHutts_fooddrop</defName>
+    <label>food drop</label>
+    <description>Call for a drop of 60 simple meals.</description>
+	
+    <minTitle>KotORTitleHutts_lowtrader</minTitle>
+    <uiPosition>(1,1)</uiPosition>
+	
+    <royalAid>
+      <favorCost>2</favorCost>
+	  <itemsToDrop>
+        <MealSimple>60</MealSimple>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_ResourceDropBase">
+    <defName>guy762_KotORPermitHutts_medkitdrop</defName>
+    <label>spacer medkit drop</label>
+    <description>Call for a drop of 20 spacer medkits.</description>
+	
+    <minTitle>KotORTitleHutts_lowtrader</minTitle>
+    <uiPosition>(2,1)</uiPosition>
+	
+    <royalAid>
+      <favorCost>4</favorCost>
+	  <itemsToDrop>
+        <KOTOR_SpacerMedKit>20</KOTOR_SpacerMedKit>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  
+  <RoyalTitlePermitDef MayRequire="Rick.FCP.Core.Tools.Beta" ParentName="guy762_KotORPermitHutts_ResourceDropBase">
+    <defName>guy762_KotORPermitHutts_armordrop</defName>
+    <label>weapons and armor drop</label>
+    <description>Call for a drop of 2 Kajidic equipment crates containing standard issue Kajidic soldier armor and weapons, enough for a small platoon.</description>
+	
+    <minTitle>KotORTitleHutts_hightrader</minTitle>
+    <uiPosition>(3,1)</uiPosition>
+	
+    <royalAid>
+      <favorCost>1</favorCost>
+	  <itemsToDrop>
+        <guy762_KotORLootBox_HuttWeaponsArmor>2</guy762_KotORLootBox_HuttWeaponsArmor>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  
+  
+  
+  
+  
+  <!-- engineers -->
+
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_CustomLaborerDropBase">
+    <defName>guy762_KotORPermitHutts_slaves</defName>
+    <label>call slave laborer team</label>
+    <description>Call a group of 6 slave laborers to join your ranks for five years. You can control them as though they were your own colonists.</description>
+	
+	<minTitle>KotORTitleHutts_lowtrader</minTitle>
+    <uiPosition>(0,2)</uiPosition>
+	
+    <royalAid>
+      <favorCost>6</favorCost>
+      <pawnKindDef>KotORHutts_slave</pawnKindDef>
+      <pawnCount>6</pawnCount>
+      <aidDurationDays>300</aidDurationDays>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+    </royalAid>
+    <cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_CustomLaborerDropBase">
+    <defName>guy762_KotORPermitHutts_slavesII</defName>
+    <label>call slave laborer gang</label>
+    <description>Call a group of 12 slave laborers to join your ranks for five years. You can control them as though they were your own colonists.</description>
+	
+	<minTitle>KotORTitleHutts_hightrader</minTitle>
+	<prerequisite>guy762_KotORPermitHutts_slaves</prerequisite>
+    <uiPosition>(1,2)</uiPosition>
+	
+    <royalAid>
+      <favorCost>12</favorCost>
+      <pawnKindDef>KotORHutts_slave</pawnKindDef>
+      <pawnCount>12</pawnCount>
+      <aidDurationDays>300</aidDurationDays>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+    </royalAid>
+    <cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+  
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_LaborerDropBase">
+    <defName>guy762_KotORPermitHutts_ugnaughts</defName>
+    <label>call Ugnaught engineering team</label>
+    <description>Call a group of 6 Ugnaught engineers to assist you for 15 days. These workers can only do general labor tasks. You can control them as though they were your own colonists. You are required to keep them safe.</description>
+	
+	<minTitle>KotORTitleHutts_hightrader</minTitle>
+    <uiPosition>(2,2)</uiPosition>
+	
+    <royalAid>
+      <favorCost>24</favorCost>
+      <pawnKindDef>KotORCiv_ugnaught</pawnKindDef>
+      <pawnCount>6</pawnCount>
+      <aidDurationDays>15</aidDurationDays>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+    </royalAid>
+    <cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+
+
+  <!-- droids -->
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_CustomLaborerDropBase">
+    <defName>guy762_KotORPermitHutts_battledroids</defName>
+    <label>call battle droid squad</label>
+    <description>Call a group of 6 battle droids to join your ranks for five years. You can control them as though they were your own colonists.</description>
+	
+	<minTitle>KotORTitleHutts_hightrader</minTitle>
+    <uiPosition>(0,3)</uiPosition>
+	
+    <royalAid>
+      <favorCost>4</favorCost>
+      <pawnKindDef>KotORDroidBad_DevWD_weak</pawnKindDef>
+      <pawnCount>6</pawnCount>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+	  
+	  <aidDurationDays>300</aidDurationDays>
+    </royalAid>
+    <cooldownDays>30</cooldownDays>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_CustomLaborerDropBase">
+    <defName>guy762_KotORPermitHutts_battledroidsII</defName>
+    <label>call battle droid division</label>
+    <description>Call a group of 12 battle droids to join your ranks for five years. You can control them as though they were your own colonists.</description>
+    
+	<minTitle>KotORTitleHutts_huun</minTitle>
+	<prerequisite>guy762_KotORPermitHutts_battledroids</prerequisite>
+    <uiPosition>(1,3)</uiPosition>
+    
+	<royalAid>
+      <favorCost>8</favorCost>
+      <pawnKindDef>KotORDroidBad_DevWD_weak</pawnKindDef>
+      <pawnCount>12</pawnCount>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+	  
+	  <aidDurationDays>300</aidDurationDays>
+    </royalAid>
+    <cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_CustomLaborerDropBase">
+    <defName>guy762_KotORPermitHutts_assassindroids</defName>
+    <label>call assassin droids</label>
+    <description>Call a group of 4 assassin droids to join your ranks for five years. You can control them as though they were your own colonists.</description>
+    
+	<minTitle>KotORTitleHutts_hutt</minTitle>
+    <uiPosition>(2,3)</uiPosition>
+    
+	<royalAid>
+      <favorCost>12</favorCost>
+      <pawnKindDef>KotORDroidBad_DevWD_strong</pawnKindDef>
+      <pawnCount>4</pawnCount>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+	  
+	  <aidDurationDays>300</aidDurationDays>
+    </royalAid>
+    <cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+
+
+
+
+
+	<!-- soldiers -->
+
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_CustomLaborerDropBase">
+    <defName>guy762_KotORPermitHutts_gang</defName>
+    <label>call street gang</label>
+    <description>Call a 10-man street gang to join your ranks for one year. You can control them as though they were your own colonists.</description>
+	
+	<minTitle>KotORTitleHutts_hightrader</minTitle>
+    <uiPosition>(0,4)</uiPosition>
+    
+	<royalAid>
+      <favorCost>8</favorCost>
+      <pawnKindDef>KotORMerc_thug</pawnKindDef>
+      <pawnCount>10</pawnCount>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+	  
+	  <aidDurationDays>60</aidDurationDays>
+    </royalAid>
+    <cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_CustomLaborerDropBase">
+    <defName>guy762_KotORPermitHutts_soldiers</defName>
+    <label>call Kajidic soldiers</label>
+    <description>Call a group of 8 Kajidic soldiers to join your ranks for one year. You can control them as though they were your own colonists.</description>
+    
+	<minTitle>KotORTitleHutts_huun</minTitle>
+    <uiPosition>(1,4)</uiPosition>
+	
+    <royalAid>
+      <favorCost>12</favorCost>
+      <pawnKindDef>KotORHutts_soldier</pawnKindDef>
+      <pawnCount>8</pawnCount>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+	  
+	  <aidDurationDays>60</aidDurationDays>
+    </royalAid>
+    <cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_TrooperDropBase">
+    <defName>guy762_KotORPermitHutts_soldierarmy</defName>
+    <label>call Kajidic soldier platoon</label>
+    <description>Call a group of 14 Kajidic soldiers to aid you in battle.</description>
+	
+	<minTitle>KotORTitleHutts_hutt</minTitle>
+    <uiPosition>(2,4)</uiPosition>
+    
+	<royalAid>
+      <favorCost>24</favorCost>
+      <pawnKindDef>KotORHutts_soldier</pawnKindDef>
+      <pawnCount>14</pawnCount>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+    </royalAid>
+    <cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+  
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_CustomLaborerDropBase">
+    <defName>guy762_KotORPermitHutts_gamorreans</defName>
+    <label>call Gamorrean guards</label>
+    <description>Call a group of 6 Gamorrean guards to join your ranks for five years. You can control them as though they were your own colonists.</description>
+    
+	<minTitle>KotORTitleHutts_huun</minTitle>
+    <uiPosition>(3,4)</uiPosition>
+	
+    <royalAid>
+      <favorCost>24</favorCost>
+      <pawnKindDef>KotORHutts_gamorreanlgt</pawnKindDef>
+      <pawnCount>6</pawnCount>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+	  
+	  <aidDurationDays>300</aidDurationDays>
+    </royalAid>
+    <cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+
+
+
+
+  
+  
+  
+  <!-- ROW 5 RESERVE FOR LOOT BOXES! -->
+  
+  
+  <!-- textiles -->
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_ResourceDropBase">
+    <defName>guy762_KotORPermitHutts_clothdrop</defName>
+    <label>cloth drop</label>
+    <description>Call for a drop of 400 cloth.</description>
+	
+    <minTitle>KotORTitleHutts_lowtrader</minTitle>
+    <uiPosition>(0,6)</uiPosition>
+	
+    <royalAid>
+      <favorCost>4</favorCost>
+	  <itemsToDrop>
+        <Cloth>400</Cloth>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_ResourceDropBase">
+    <defName>guy762_KotORPermitHutts_synthreaddrop</defName>
+    <label>synthread drop</label>
+    <description>Call for a drop of 400 synthread.</description>
+	
+    <minTitle>KotORTitleHutts_lowtrader</minTitle>
+    <uiPosition>(1,6)</uiPosition>
+	
+    <royalAid>
+      <favorCost>4</favorCost>
+	  <itemsToDrop>
+        <Synthread>400</Synthread>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_ResourceDropBase">
+    <defName>guy762_KotORPermitHutts_devilstranddrop</defName>
+    <label>devilstrand drop</label>
+    <description>Call for a drop of 200 devilstrand.</description>
+	
+    <minTitle>KotORTitleHutts_hightrader</minTitle>
+    <uiPosition>(1,6)</uiPosition>
+	
+    <royalAid>
+      <favorCost>8</favorCost>
+	  <itemsToDrop>
+        <DevilstrandCloth>200</DevilstrandCloth>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+
+
+  <!-- hard materials -->
+
+
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_ResourceDropBase">
+    <defName>guy762_KotORPermitHutts_steeldrop</defName>
+    <label>steel drop</label>
+    <description>Call for a drop of 400 steel.</description>
+	
+    <minTitle>KotORTitleHutts_lowtrader</minTitle>
+    <uiPosition>(0,7)</uiPosition>
+	
+    <royalAid>
+      <favorCost>4</favorCost>
+	  <itemsToDrop>
+        <Steel>400</Steel>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_ResourceDropBase">
+    <defName>guy762_KotORPermitHutts_duracretedrop</defName>
+    <label>duracrete drop</label>
+    <description>Call for a drop of 500 duracrete.</description>
+	
+    <minTitle>KotORTitleHutts_lowtrader</minTitle>
+    <uiPosition>(1,7)</uiPosition>
+	
+    <royalAid>
+      <favorCost>4</favorCost>
+	  <itemsToDrop>
+        <KOTOR_Duracrete>500</KOTOR_Duracrete>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_ResourceDropBase">
+    <defName>guy762_KotORPermitHutts_plasteeldrop</defName>
+    <label>plasteel drop</label>
+    <description>Call for a drop of 400 plasteel.</description>
+	
+    <minTitle>KotORTitleHutts_lowtrader</minTitle>
+    <uiPosition>(2,7)</uiPosition>
+	
+    <royalAid>
+      <favorCost>6</favorCost>
+	  <itemsToDrop>
+        <Plasteel>400</Plasteel>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_ResourceDropBase">
+    <defName>guy762_KotORPermitHutts_bronziumdrop</defName>
+    <label>bronzium drop</label>
+    <description>Call for a drop of 400 bronzium.</description>
+	
+    <minTitle>KotORTitleHutts_lowtrader</minTitle>
+    <uiPosition>(3,7)</uiPosition>
+	
+    <royalAid>
+      <favorCost>2</favorCost>
+	  <itemsToDrop>
+        <KOTOR_AlloyBronzium>400</KOTOR_AlloyBronzium>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  
+  
+  <!-- fuels -->
+  
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_ResourceDropBase">
+    <defName>guy762_KotORPermitHutts_tibannadrop</defName>
+    <label>tibanna drop</label>
+    <description>Call for a drop of 50 tibanna.</description>
+	
+    <minTitle>KotORTitleHutts_hightrader</minTitle>
+	<!--modExtensions>
+		<li Class="FCP.Factions.MaxTitlePermitExtension">
+			<maxTitle>KotORTitleHutts_hightrader</maxTitle>
+		</li>
+	</modExtensions-->
+    <uiPosition>(0,8)</uiPosition>
+	
+    <royalAid>
+      <favorCost>24</favorCost>
+	  <itemsToDrop>
+        <KOTOR_Tibanna>50</KOTOR_Tibanna>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_ResourceDropBase">
+    <defName>guy762_KotORPermitHutts_tibannadropII</defName>
+    <label>tibanna shipment</label>
+    <description>Call for a drop of 250 tibanna.</description>
+	
+    <minTitle>KotORTitleHutts_huun</minTitle>
+	<prerequisite>guy762_KotORPermitHutts_tibannadrop</prerequisite>
+    <uiPosition>(1,8)</uiPosition>
+	
+    <royalAid>
+      <favorCost>48</favorCost>
+	  <itemsToDrop>
+        <KOTOR_Tibanna>250</KOTOR_Tibanna>
+      </itemsToDrop>
+    </royalAid>
+	<cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+  
+  
+  
+  <!-- medical components -->
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_ResourceDropBase">
+    <defName>guy762_KotORPermitHutts_spicedrop</defName>
+    <label>spice drop</label>
+    <description>Call for a drop of 100 units of spice.</description>
+	
+    <minTitle>KotORTitleHutts_hightrader</minTitle>
+	<!--modExtensions>
+		<li Class="FCP.Factions.MaxTitlePermitExtension">
+			<maxTitle>KotORTitleHutts_hightrader</maxTitle>
+		</li>
+	</modExtensions-->
+    <uiPosition>(0,9)</uiPosition>
+	
+    <royalAid>
+      <favorCost>24</favorCost>
+	  <itemsToDrop>
+        <KOTOR_Spice>100</KOTOR_Spice>
+      </itemsToDrop>
+    </royalAid>
+	<cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_ResourceDropBase">
+    <defName>guy762_KotORPermitHutts_spicedropII</defName>
+    <label>spice shipment</label>
+    <description>Call for a drop of 500 units of spice.</description>
+	
+    <minTitle>KotORTitleHutts_huun</minTitle>
+	<prerequisite>guy762_KotORPermitHutts_spicedrop</prerequisite>
+    <uiPosition>(1,9)</uiPosition>
+	
+    <royalAid>
+      <favorCost>48</favorCost>
+	  <itemsToDrop>
+        <KOTOR_Spice>500</KOTOR_Spice>
+      </itemsToDrop>
+    </royalAid>
+	<cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+  
+  
+  
+    <!-- component components -->
+  
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_ResourceDropBase">
+    <defName>guy762_KotORPermitHutts_componentdrop</defName>
+    <label>component drop</label>
+    <description>Call for a drop of 50 components.</description>
+	
+    <minTitle>KotORTitleHutts_lowtrader</minTitle>
+    <uiPosition>(0,10)</uiPosition>
+	
+    <royalAid>
+      <favorCost>12</favorCost>
+	  <itemsToDrop>
+        <ComponentIndustrial>50</ComponentIndustrial>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_ResourceDropBase">
+    <defName>guy762_KotORPermitHutts_spacercompdrop</defName>
+    <label>adv. component drop</label>
+    <description>Call for a drop of 25 adv. components.</description>
+	
+    <minTitle>KotORTitleHutts_hightrader</minTitle>
+    <uiPosition>(1,10)</uiPosition>
+	
+    <royalAid>
+      <favorCost>24</favorCost>
+	  <itemsToDrop>
+        <ComponentSpacer>25</ComponentSpacer>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  
+  
+  <RoyalTitlePermitDef MayRequire="Rick.FCP.Core.Tools.Beta" ParentName="guy762_KotORPermitHutts_ResourceDropBase">
+    <defName>guy762_KotORPermitHutts_foodstuffdrop</defName>
+    <label>foodstuff shipment</label>
+    <description>Call for a drop of four large crates of foodstuffs, containing bulk grains or animal products.</description>
+	
+    <minTitle>KotORTitleHutts_lowtrader</minTitle>
+    <uiPosition>(0,11)</uiPosition>
+	
+    <royalAid>
+      <favorCost>2</favorCost>
+	  <itemsToDrop>
+        <guy762_KotORLootBox_RawFood>4</guy762_KotORLootBox_RawFood>
+      </itemsToDrop>
+    </royalAid>
+  </RoyalTitlePermitDef>
+  
+  
+  
+  
+  
+  
+
+</Defs>

@@ -105,8 +105,8 @@
       <li Class="HediffCompProperties_DisappearsOnDeath"/>
       <li Class="HediffCompProperties_GiveHediffsInRange">
         <range>500</range>
-        <!--mote>Mote_CombatCommand</mote>
-        <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted-->
+        <!-- <mote>Mote_CombatCommand</mote> -->
+        <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
         <targetingParameters>
           <canTargetBuildings>false</canTargetBuildings>
           <canTargetAnimals>false</canTargetAnimals>
@@ -136,11 +136,11 @@
         <showRemainingTime>false</showRemainingTime>
       </li>
       <li Class="HediffCompProperties_DisappearsOnDeath"/>
-      <li Class="HediffCompProperties_Link">
-        <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
-        <maxDistance>500</maxDistance>
+      <!-- <li Class="HediffCompProperties_Link"> -->
+        <!-- <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn> -->
+        <!-- <maxDistance>500</maxDistance> -->
         <!-- <customMote>Mote_CombatCommandLinkLine</customMote> -->
-      </li>
+      <!-- </li> -->
     </comps>
     <isBad>false</isBad>
     <stages>
@@ -243,8 +243,8 @@
       <li Class="HediffCompProperties_DisappearsOnDeath"/>
       <li Class="HediffCompProperties_GiveHediffsInRange">
         <range>500</range>
-        <!--mote>Mote_CombatCommand</mote>
-        <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted-->
+        <!-- <mote>Mote_CombatCommand</mote> -->
+        <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
         <targetingParameters>
           <canTargetBuildings>false</canTargetBuildings>
           <canTargetAnimals>false</canTargetAnimals>
@@ -273,11 +273,11 @@
         <showRemainingTime>false</showRemainingTime>
       </li>
       <li Class="HediffCompProperties_DisappearsOnDeath"/>
-      <li Class="HediffCompProperties_Link">
-        <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
-        <maxDistance>500</maxDistance>
+      <!-- <li Class="HediffCompProperties_Link"> -->
+        <!-- <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn> -->
+        <!-- <maxDistance>500</maxDistance> -->
         <!-- <customMote>Mote_CombatCommandLinkLine</customMote> -->
-      </li>
+      <!-- </li> -->
     </comps>
     <isBad>false</isBad>
     <stages>
@@ -387,8 +387,8 @@
       <li Class="HediffCompProperties_DisappearsOnDeath"/>
       <li Class="HediffCompProperties_GiveHediffsInRange">
         <range>500</range>
-        <!--mote>Mote_CombatCommand</mote>
-        <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted-->
+        <!-- <mote>Mote_CombatCommand</mote> -->
+        <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
         <targetingParameters>
           <canTargetBuildings>false</canTargetBuildings>
           <canTargetAnimals>false</canTargetAnimals>
@@ -417,11 +417,11 @@
         <showRemainingTime>false</showRemainingTime>
       </li>
       <li Class="HediffCompProperties_DisappearsOnDeath"/>
-      <li Class="HediffCompProperties_Link">
-        <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
-        <maxDistance>500</maxDistance>
+      <!-- <li Class="HediffCompProperties_Link"> -->
+        <!-- <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn> -->
+        <!-- <maxDistance>500</maxDistance> -->
         <!-- <customMote>Mote_CombatCommandLinkLine</customMote> -->
-      </li>
+      <!-- </li> -->
     </comps>
     <isBad>false</isBad>
     <stages>
@@ -532,8 +532,8 @@
       <li Class="HediffCompProperties_DisappearsOnDeath"/>
       <li Class="HediffCompProperties_GiveHediffsInRange">
         <range>500</range>
-        <!--mote>Mote_CombatCommand</mote>
-        <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted-->
+        <!-- <mote>Mote_CombatCommand</mote> -->
+        <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
         <targetingParameters>
           <canTargetBuildings>false</canTargetBuildings>
           <canTargetAnimals>false</canTargetAnimals>
@@ -562,11 +562,11 @@
         <showRemainingTime>false</showRemainingTime>
       </li>
       <li Class="HediffCompProperties_DisappearsOnDeath"/>
-      <li Class="HediffCompProperties_Link">
-        <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
-        <maxDistance>500</maxDistance>
+      <!-- <li Class="HediffCompProperties_Link"> -->
+        <!-- <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn> -->
+        <!-- <maxDistance>500</maxDistance> -->
         <!-- <customMote>Mote_CombatCommandLinkLine</customMote> -->
-      </li>
+      <!-- </li> -->
     </comps>
     <isBad>false</isBad>
     <stages>
@@ -670,8 +670,8 @@
       <li Class="HediffCompProperties_DisappearsOnDeath"/>
       <li Class="HediffCompProperties_GiveHediffsInRange">
         <range>500</range>
-        <!--mote>Mote_CombatCommand</mote>
-        <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted-->
+        <!-- <mote>Mote_CombatCommand</mote> -->
+        <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
         <targetingParameters>
           <canTargetBuildings>false</canTargetBuildings>
           <canTargetAnimals>false</canTargetAnimals>
@@ -700,11 +700,11 @@
         <showRemainingTime>false</showRemainingTime>
       </li>
       <li Class="HediffCompProperties_DisappearsOnDeath"/>
-      <li Class="HediffCompProperties_Link">
-        <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
-        <maxDistance>500</maxDistance>
+      <!-- <li Class="HediffCompProperties_Link"> -->
+        <!-- <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn> -->
+        <!-- <maxDistance>500</maxDistance> -->
         <!-- <customMote>Mote_CombatCommandLinkLine</customMote> -->
-      </li>
+      <!-- </li> -->
     </comps>
     <isBad>false</isBad>
     <stages>

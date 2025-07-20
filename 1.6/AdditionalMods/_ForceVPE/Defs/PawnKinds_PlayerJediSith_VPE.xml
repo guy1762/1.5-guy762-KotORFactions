@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<PawnKindDef MayRequire="lee.theforce.psycast" Name="KotORPlayablePawn_JediConsular_VPE" ParentName="KotORRepub_jediconsular_VPE">
+		<defName>KotORPlayablePawn_JediConsular_VPE</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_RepublicStrikeTeam</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef MayRequire="lee.theforce.psycast" Name="KotORPlayablePawn_JediGuardian_VPE" ParentName="KotORRepub_jediguardian_VPE">
+		<defName>KotORPlayablePawn_JediGuardian_VPE</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_RepublicStrikeTeam</defaultFactionType>
+	</PawnKindDef>
+
+
+
+	
+	<PawnKindDef MayRequire="lee.theforce.psycast" Name="KotORPlayablePawn_JediSentinel_VPE" ParentName="KotORRepub_jedisentinel_VPE">
+		<defName>KotORPlayablePawn_JediSentinel_VPE</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SmugglerCrew</defaultFactionType>
+	</PawnKindDef>
+	
+	<PawnKindDef MayRequire="lee.theforce.psycast" Name="KotORPlayablePawn_DarkJedi_VPE" ParentName="KotORSith_darkjedi_VPE">
+		<defName>KotORPlayablePawn_DarkJedi_VPE</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SmugglerCrew</defaultFactionType>
+	</PawnKindDef>
+	
+	
+	
+	
+	<PawnKindDef Name="KotORPlayablePawn_SithWarlord_VPE" ParentName="KotORSith_warlord_VPE">
+		<defName>KotORPlayablePawn_SithWarlord_VPE</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SithWarlord</defaultFactionType>
+		<isBoss>false</isBoss>
+		<skipResistant>false</skipResistant>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORPlayablePawn_SithAcolyte_VPE" ParentName="KotORSith_acolyte_VPE">
+		<defName>KotORPlayablePawn_SithAcolyte_VPE</defName>
+		<defaultFactionType>guy762_KotORPlayerFaction_SithWarlord</defaultFactionType>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</Defs>

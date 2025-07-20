@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<!--<Operation MayRequire="VanillaExpanded.VMemesE" Class="PatchOperationAdd">
+	  <xpath>Defs/RulePackDef[defName="VME_Trader"]/rulePack/rulesStrings</xpath>     MOVED TO LOADFOLDERS DOC!!!
+	  <value>
+		<li>r_roleName(p=10)->[memeTrader]</li>
+	  </value>
+	</Operation>--> 
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/RulePackDef[defName="NamerRoleShooter"]/rulePack/rulesStrings</xpath>
+	  <value>
+		<li>r_roleName(p=10)->[memeShooter]</li>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	  <xpath>Defs/RulePackDef[defName="NamerRoleBrawler"]/rulePack/rulesStrings</xpath>
+	  <value>
+		<li>r_roleName(p=10)->[memeBrawler]</li>
+	  </value>
+	</Operation>
+	
+	
+	
+	
+</Patch>

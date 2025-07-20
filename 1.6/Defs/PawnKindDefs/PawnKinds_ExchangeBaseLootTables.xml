@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	  
+  
+  
+  
+  
+  <!-- ||||||||||| LOOT TIER 1 ||||||||||| -->
+  
+  
+  
+  
+  <PawnKindDef Name="KotORExchgBase_T1LootPool_DudOnly" ParentName="KotORExchgBase" Abstract="True">
+	<inventoryOptions>
+      <skipChance>0.75</skipChance>
+	  <subOptionsChooseOne>
+        <li>
+			<thingDef>guy762_KotORcredits</thingDef>
+			<countRange>0~300</countRange>
+		</li>
+		<li>
+			<thingDef>KOTOR_SpacerMedKit</thingDef>
+			<countRange>0~2</countRange>
+		</li>
+		<li>
+			<thingDef>KOTOR_PlasmaCartridge</thingDef>
+			<countRange>0~3</countRange>
+		</li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="KotORExchgBase_T1LootPool" ParentName="KotORExchgBase" Abstract="True">
+	<inventoryOptions>
+      <skipChance>0.875</skipChance>
+	  <subOptionsChooseOne>
+        <li>
+			<thingDef>guy762_KotORcredits</thingDef>
+			<countRange>0~300</countRange>
+		</li>
+		<li>
+			<thingDef>KOTOR_SpacerMedKit</thingDef>
+			<countRange>0~2</countRange>
+		</li>
+		<li>
+			<thingDef>KOTOR_PlasmaCartridge</thingDef>
+			<countRange>0~3</countRange>
+		</li>
+		
+		
+		<!-- IMPLANTS -->
+		<li>
+			<thingDef>guy762_ImplantItemPkg_reflex</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_ImplantItemPkg_cardio</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_ImplantItemPkg_strength</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_ImplantItemPkg_response</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_ImplantItemPkg_fitness</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		
+		
+		<!-- BLASTER MODS -->
+		<li>
+			<thingDef>guy762_scopeitem_accuracy</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_pcellitem_optimized</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_pcellitem_charge</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_chamberitem_precision</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_triggeritem_rapid</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_beamitem_sniper</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		
+		<!-- MELEE MODS -->
+		<li>
+			<thingDef>guy762_edgeitem_devaronian</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_edgeitem_neutronium</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_gripitem_contoured</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_gripitem_agrinium</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		
+		
+		<!-- ARMOR MODS -->
+		<li>
+			<thingDef>guy762_underlayitem_armorweave</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_underlayitem_environment</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_underlayitem_durasteel</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_overlayitem_heat</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_overlayitem_energy</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_overlayitem_ballistic</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- ||||||||||| LOOT TIER 2 ||||||||||| -->
+  
+  
+  
+  
+  <PawnKindDef Name="KotORExchgBase_T2LootPool_DudOnly" ParentName="KotORExchgBase" Abstract="True">
+	<inventoryOptions>
+      <skipChance>0.75</skipChance>
+	  <subOptionsChooseOne>
+        <li>
+			<thingDef>guy762_KotORcredits</thingDef>
+			<countRange>300~1000</countRange>
+		</li>
+		<li>
+			<thingDef>KOTOR_SpacerMedKit</thingDef>
+			<countRange>0~2</countRange>
+		</li>
+		<li>
+			<thingDef>KOTOR_PlasmaCartridge</thingDef>
+			<countRange>0~3</countRange>
+		</li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="KotORExchgBase_T2LootPool" ParentName="KotORExchgBase" Abstract="True">
+	<inventoryOptions>
+      <skipChance>0.875</skipChance>
+	  <subOptionsChooseOne>
+        <li>
+			<thingDef>guy762_KotORcredits</thingDef>
+			<countRange>300~1000</countRange>
+		</li>
+		<li>
+			<thingDef>KOTOR_SpacerMedKit</thingDef>
+			<countRange>0~2</countRange>
+		</li>
+		<li>
+			<thingDef>KOTOR_PlasmaCartridge</thingDef>
+			<countRange>0~3</countRange>
+		</li>
+		
+		
+		<!-- IMPLANTS -->
+		<li>
+			<thingDef>guy762_ImplantItemImp_retinal</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_ImplantItemImp_lornan</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_ImplantItemImp_biotech</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_ImplantItemImp_power</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_ImplantItemImp_alacrity</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		
+		
+		<!-- BLASTER MODS -->
+		<li>
+			<thingDef>guy762_scopeitem_holographic</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_scopeitem_targeting</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_pcellitem_pulsator</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_pcellitem_ion</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_pcellitem_advcharge</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_chamberitem_carbonite</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_chamberitem_amp</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_triggeritem_hair</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_triggeritem_advrapid</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_beamitem_splitter</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_beamitem_focuser</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_beamitem_advsniper</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		
+		<!-- MELEE MODS -->
+		<li>
+			<thingDef>guy762_edgeitem_mullinine</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_ecellitem_ion</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_ecellitem_vibration</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_gripitem_basket</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_gripitem_nagai</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		
+		
+		<!-- ARMOR MODS -->
+		<li>
+			<thingDef>guy762_underlayitem_regen</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_underlayitem_flex</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_underlayitem_strength</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_overlayitem_armorply</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_overlayitem_ablative</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- ||||||||||| LOOT TIER 3 ||||||||||| -->
+  
+  
+  
+  
+  <PawnKindDef Name="KotORExchgBase_T3LootPool_DudOnly" ParentName="KotORExchgBase" Abstract="True">
+	<inventoryOptions>
+      <skipChance>0.75</skipChance>
+	  <subOptionsChooseOne>
+        <li>
+			<thingDef>guy762_KotORcredits</thingDef>
+			<countRange>1000~10000</countRange>
+		</li>
+		<li>
+			<thingDef>KOTOR_kolto</thingDef>
+			<countRange>0~2</countRange>
+		</li>
+		<li>
+			<thingDef>KOTOR_PlasmaCartridge</thingDef>
+			<countRange>0~3</countRange>
+		</li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="KotORExchgBase_T3LootPool" ParentName="KotORExchgBase" Abstract="True">
+	<inventoryOptions>
+      <skipChance>0.875</skipChance>
+	  <subOptionsChooseOne>
+        <li>
+			<thingDef>guy762_KotORcredits</thingDef>
+			<countRange>1000~10000</countRange>
+		</li>
+		<li>
+			<thingDef>KOTOR_kolto</thingDef>
+			<countRange>0~2</countRange>
+		</li>
+		<li>
+			<thingDef>KOTOR_PlasmaCartridge</thingDef>
+			<countRange>0~3</countRange>
+		</li>
+		
+		
+		<!-- IMPLANTS -->
+		<li>
+			<thingDef>guy762_ImplantItemSys_antidote</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_ImplantItemSys_nerve</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_ImplantItemSys_reaction</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_ImplantItemSys_advcombat</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_ImplantItemSys_bavakar</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_ImplantItemSys_cardiopwr</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		
+		
+		<!-- BLASTER MODS -->
+		<li>
+			<thingDef>guy762_scopeitem_crippling</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_pcellitem_rylith</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_pcellitem_mstcharge</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_chamberitem_mando</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_triggeritem_mstrapid</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_beamitem_mstsniper</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		
+		<!-- MELEE MODS -->
+		<li>
+			<thingDef>guy762_edgeitem_quadranium</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_ecellitem_energy</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_ecellitem_sonic</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_gripitem_zabrak</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		
+		
+		<!-- ARMOR MODS -->
+		<li>
+			<thingDef>guy762_overlayitem_bonded</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_overlayitem_hvybonded</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- ||||||||||| SPECIAL ||||||||||| -->
+
+  
+  
+  
+  <PawnKindDef Name="KotORExchgBase_T3LootPool_slicer" ParentName="KotORExchgBase" Abstract="True">
+	<inventoryOptions Inherit="False">
+      <skipChance>0.75</skipChance>
+	  <subOptionsChooseOne>
+		
+		
+		<!-- IMPLANTS -->
+		<li>
+			<thingDef>guy762_ImplantItemPkg_memory</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_ImplantItemImp_insight</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_ImplantItemSys_skills</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_ImplantItemSys_mentboost</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+		<li>
+			<thingDef>guy762_ImplantItemDPkg_perception</thingDef>
+			<countRange>0~1</countRange>
+		</li>
+
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  
+  
+  
+  
+  
+  
+ </Defs>

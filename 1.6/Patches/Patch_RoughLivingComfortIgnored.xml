@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationRemove">
+	  <xpath>Defs/PreceptDef[defName="Comfort_Ignored"]/requiredMemes</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationRemove">
+	  <xpath>Defs/PreceptDef[defName="RoughLiving_Welcomed"]/requiredMemes</xpath>
+	</Operation>
+
+	
+	
+
+</Patch>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<Operation MayRequire="VanillaExpanded.VMemesE" Class="PatchOperationAdd">
+	  <xpath>Defs/RulePackDef[defName="VME_Trader"]/rulePack/rulesStrings</xpath>
+	  <value>
+		<li>r_roleName(p=10)->[memeTrader]</li>
+	  </value>
+	</Operation>
+	
+	
+	
+	
+	
+</Patch>

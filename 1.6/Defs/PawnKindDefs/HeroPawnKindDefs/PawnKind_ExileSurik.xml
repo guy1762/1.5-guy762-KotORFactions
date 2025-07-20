@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	<PawnKindDef Name="KotORHeroBase_ExileSurik"  ParentName="guy762_HeroPawnKindBase" Abstract="True">
+		<defName>KotORHeroBase_ExileSurik</defName>
+		<nameMaker>guy762_HeroNamer_ExileSurik</nameMaker>
+		<combatPower>500</combatPower>
+		<minGenerationAge>37</minGenerationAge>
+		<maxGenerationAge>40</maxGenerationAge>
+		<fixedGender>Female</fixedGender>
+		<forcedHair>Keeper</forcedHair>
+		<forcedHairColor>(74,67,62)</forcedHairColor>
+		<skinColorOverride>(237,212,172)</skinColorOverride>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Baseliner>999</Baseliner>
+			</xenotypeChances>
+			
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<itemQuality>Legendary</itemQuality>
+		<apparelMoney>29999</apparelMoney>
+		<apparelTags>
+		  <li>KotORHeroAccessories_exile</li>
+		  <li>KotORHeadband_regalvisor</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_JediCloak_light</li>
+		   <li>guy762_JediTunic_trad</li>
+		   <li>guy762_armband</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<apparelDef>guy762_JediTunic_trad</apparelDef>
+				<color>(210,210,180)</color>
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<apparelDef>guy762_JediCloak_light</apparelDef>
+				<quality>Legendary</quality>
+				<color>(90,110,90)</color>
+			</li>
+		</specificApparelRequirements>
+		<weaponMoney>99999999</weaponMoney>
+		<weaponTags>
+		  <li>OR_exile</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>16~18</range>
+			</li>
+			<li>
+				<skill>Animals</skill>
+				<range>16~18</range>
+			</li>
+			<li>
+				<skill>Medicine</skill>
+				<range>12~14</range>
+			</li>
+			<li>
+				<skill>Social</skill>
+				<range>18~20</range>
+			</li>
+			<li>
+				<skill>Intellectual</skill>
+				<range>10~12</range>
+			</li>
+		</skills>
+		<forcedTraits>
+			<PsychicSensitivity>2</PsychicSensitivity>
+			<Nerves>2</Nerves>
+			<FastLearner>0</FastLearner>
+			<Beauty>2</Beauty>
+			<Bisexual>0</Bisexual>
+		</forcedTraits>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_exile</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		<abilities>
+			<li MayRequire="Ludeon.RimWorld.Ideology">LeaderSpeech</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnimalCalm</li>
+			<li>guy762_Ability_CommandTierII</li>
+		</abilities>
+		<modExtensions>
+		 <li Class="AddGeneForPK.PKAdditionalGenes"> <!-- NOTE: this mod extension cannot be split between two different PKDefs, all genes have to go in the same block!!! -->
+          <geneSets>
+			<li>
+              <isXenogene>true</isXenogene>
+              <chance>1</chance>
+              <geneDefs>
+                <li MayRequire="guy762.Lee.KotORPotF">SWPotF_Gene_LSEnlightenmentIII</li>
+              </geneDefs>
+            </li>
+			<li>
+              <isXenogene>false</isXenogene>
+              <chance>1</chance>
+              <geneDefs>
+                <li>Skin_Melanin5</li>
+              </geneDefs>
+            </li>
+          </geneSets>
+		</li>
+		<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
+		  <whitelist>
+			<li>Female_AverageNormal</li>
+		  </whitelist>
+		  <blacklist>
+			<!--leave blank to disable-->
+		  </blacklist>
+		  <priority>
+			<li>Female_AverageNormal</li>
+		  </priority>
+		  <checkGender>False</checkGender>
+		</li>
+      </modExtensions>
+	  </PawnKindDef>
+	  
+	  <RulePackDef>
+        <defName>guy762_HeroNamer_ExileSurik</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[meetra] '[exile]' [surik]</li>
+				<li>meetra->Meetra</li>
+				<li>surik->Surik</li>
+				<li>exile->Exile</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<!--RulePackDef>
+        <defName>guy762_HeroNamer_ExileJesus</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[jesus] '[exile]' [christ]</li>
+				<li>jesus->Je-Sui</li>
+				<li>christ->Krist</li>
+				<li>exile->Exile</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef-->
+	
+	
+	<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun]-->
+	
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryC_Exile</defName>
+		<title>Unusual Padawan</title>
+		<titleShort>Padawan</titleShort>
+		<description>[PAWN_nameDef] was trained at the Jedi Enclave on Dantooine under the tutelage of the famed Master Sunrider. [PAWN_pronoun] was found to have rare talents for severing a creature's ties to the force and for forming Force bonds with others, and as a result was watched closely by the academy's Masters.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>8</Melee>
+			<Medicine>8</Medicine>
+			<Social>8</Social>
+		</skillGains>
+		<forcedTraits>
+		  <PsychicSensitivity>2</PsychicSensitivity>
+		  <FastLearner>0</FastLearner>
+		</forcedTraits>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_ExileSurik</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_exile</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryA_Exile</defName>
+		<title>Jedi Exile</title>
+		<titleShort>Jedi Exile</titleShort>
+		<description>[PAWN_nameDef] was swept up into the Mandalorian Wars and quickly rose to prominence, becoming one of Revan's top generals and leading the charge on a number of bloody campaigns. At the war's end, [PAWN_pronoun] was chosen to lead the Republic forces in a desperate gambit to wipe out the bulk of the Mandalorian forces over the planet Malachor V. [PAWN_nameDef] gave the order to activate the superweapon that would annihilate the Mandalorians, but the resulting devastation of both sides was so great [PAWN_pronoun] had no choice but to sever [PAWN_possessive] own ties to the Force to survive the immense wave of death.\n\n[PAWN_nameDef] returned to the Jedi after the battle to willingly face their judgment for [PAWN_possessive] actions, and was exiled from the Jedi Order.</description>
+		<slot>Adulthood</slot>
+		<forcedTraits>
+		  <Nerves>2</Nerves>
+		</forcedTraits>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_ExileSurik</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_exile</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+
+
+
+</Defs>

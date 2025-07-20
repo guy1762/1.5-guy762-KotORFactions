@@ -53,18 +53,11 @@
 	
 	
 	<Operation Class="PatchOperationAdd">
-	  <xpath>Defs/ThingDef[defName="Apparel_HatTop" or defName="Apparel_HatLadies"]/apparel</xpath>
+	  <xpath>Defs/ThingDef[defName="Apparel_Beret" or defName="Apparel_HatTop" or defName="Apparel_HatLadies"]/apparel</xpath>
 	  <value>
 		<tags>
 			<li>guy762PatchedTag_RoyalHats</li>
 		</tags>
-	  </value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-	  <xpath>Defs/ThingDef[defName="Apparel_Beret"]/apparel/tags</xpath>
-	  <value>
-		<li>guy762PatchedTag_RoyalHats</li>
 	  </value>
 	</Operation>
 	

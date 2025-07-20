@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<PawnKindDef MayRequire="guy762.StarWarsXenotypes" Name="KotORHeroBase_Yuthura"  ParentName="guy762_HeroPawnKindBase" Abstract="True">
+		<defName>KotORHeroBase_Yuthura</defName>
+		<nameMaker>guy762_HeroNamer_Yuthura</nameMaker>
+		<combatPower>500</combatPower>
+		<minGenerationAge>27</minGenerationAge>
+		<maxGenerationAge>29</maxGenerationAge> <!-- jedi master version should be in her late 30s, this is now the K1 version -->
+		<fixedGender>Female</fixedGender>
+		<!--skinColorOverride>(150,135,225)</skinColorOverride-->
+		<xenotypeSet>
+			<xenotypeChances>
+				<guy762_xenotype_twilek>999</guy762_xenotype_twilek>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<itemQuality>Legendary</itemQuality>
+		<apparelMoney>49999</apparelMoney>
+		<apparelTags>
+		  <li>KotORHeroAccessories_yuthura</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>Apparel_Cape</li>
+		   <li>guy762_SithUniform_officer</li>
+		   <li>guy762_TwilekHeadband_yuthura</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<apparelDef>guy762_SithUniform_officer</apparelDef>
+				<quality>Legendary</quality>
+				<color>(100,100,120)</color>
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<apparelDef>Apparel_Cape</apparelDef>
+				<quality>Legendary</quality>
+				<stuff>KOTOR_FabricArmorweave</stuff>
+			</li>
+			<li>
+				<bodyPartGroup>UpperHead</bodyPartGroup>
+				<apparelDef>guy762_TwilekHeadband_yuthura</apparelDef>
+				<quality>Legendary</quality>
+				<color>(54,41,66)</color>
+				<!--stuff>KOTOR_IngotCortosis</stuff-->    <!-- under no circumstances will this actually work, believe me I've tried every possible node combination here -->
+			</li>
+		</specificApparelRequirements>
+		<weaponMoney>99999999</weaponMoney>
+		<weaponTags>
+		  <li>SE_yuthura</li>
+		</weaponTags>
+		<techHediffsRequired>
+		  <li>guy762_ImplantDock_II</li>
+		</techHediffsRequired>
+		
+		<inventoryOptions>
+		  <skipChance>0</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+			  <thingDef>guy762_ImplantItemImp_sith</thingDef>
+			  <countRange>1</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_ImplantItemImp_alacrity</thingDef>
+			  <countRange>1</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_ImplantItemImp_power</thingDef>
+			  <countRange>1</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>18~20</range>
+			</li>
+			<li>
+				<skill>Social</skill>
+				<range>12~14</range>
+			</li>
+		</skills>
+		<forcedTraits>
+			<PsychicSensitivity>1</PsychicSensitivity>
+			<Brawler>0</Brawler>
+			<Greedy>0</Greedy>
+		</forcedTraits>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_yuthura</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		<abilities>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Convert</li>
+		</abilities>
+		<modExtensions>
+		 <li Class="AddGeneForPK.PKAdditionalGenes"> <!-- NOTE: this mod extension cannot be split between two different PKDefs, all genes have to go in the same block!!! -->
+		  <geneSets>
+			<li>
+              <isXenogene>true</isXenogene>
+              <chance>1</chance>
+              <geneDefs>
+                <li MayRequire="guy762.Lee.KotORPotF">SWPotF_Gene_DSCorruptionII</li>
+				<li>guy762_Skin_Lavender</li>
+              </geneDefs>
+            </li>
+		  </geneSets>
+		</li>
+		<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
+          <whitelist>
+            <li>Female_AverageWide</li>
+          </whitelist>
+          <blacklist>
+            <!--leave blank to disable-->
+          </blacklist>
+          <priority>
+            <li>Female_AverageWide</li>
+          </priority>
+          <checkGender>False</checkGender>
+        </li>
+		<li MayRequire="Ludeon.RimWorld.Ideology" Class="BodyTypeForPawnKind.ModExtension_ForcedStyleItem">
+		  <forcedFaceTattoo>guy762_FaceTattoo_yuthura</forcedFaceTattoo>
+		</li>
+      </modExtensions>
+	  </PawnKindDef>
+	  
+	  <RulePackDef>
+        <defName>guy762_HeroNamer_Yuthura</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[yuthura] '[yuthura]' [ban]</li>
+				<li>yuthura->Yuthura</li>
+				<li>ban->Ban</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun]-->
+	
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryC_Yuthura</defName>
+		<title>Fallen Padawan</title>
+		<titleShort>Fallen Padawan</titleShort>
+		<description>[PAWN_nameDef] was once a slave to a cruel Hutt overlord on Sleheyron. Frustrated by [PAWN_possessive] predicament, [PAWN_pronoun] drew upon [PAWN_possessive] anger and [PAWN_possessive] latent Force sensitivity and slew the Hutt. [PAWN_pronoun] was later inducted into the Jedi Order as a Padawan, but grew frustrated with [PAWN_possessive] teachings and eventually abandoned the order.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>8</Melee>
+		</skillGains>
+		<forcedTraits>
+		  <PsychicSensitivity>1</PsychicSensitivity>
+		</forcedTraits>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_Yuthura</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_yuthura</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryA_Yuthura</defName>
+		<title>Sith Instructor</title>
+		<titleShort>Instructor</titleShort>
+		<description>When the Jedi Civil War broke out, [PAWN_nameDef] journeyed to the Sith world Korriban and was one of the first students accepted into the newly established Sith academy there. [PAWN_pronoun] was found to be an exceptional Lightsaber duelist, and was taken under the wing of Headmaster Uthar Wynn. [PAWN_pronoun] was tasked with training Force-sensitive recruits in the ways of the Dark Side and became a distinguished instructor, though was eventually brought back to the Light by a redeemed Revan attempting to infiltrate the Korriban academy.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>8</Melee>
+			<Social>8</Social>
+		</skillGains>
+		<forcedTraits>
+		  <Brawler>0</Brawler>
+		  <Greedy>0</Greedy>
+		</forcedTraits>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_Yuthura</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_yuthura</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+
+
+
+</Defs>

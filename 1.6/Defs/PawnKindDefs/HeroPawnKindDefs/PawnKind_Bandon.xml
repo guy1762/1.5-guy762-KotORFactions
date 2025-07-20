@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<PawnKindDef Name="KotORHeroBase_Bandon"  ParentName="guy762_HeroPawnKindBase" Abstract="True">
+		<defName>KotORHeroBase_Bandon</defName>
+		<nameMaker>guy762_HeroNamer_Bandon</nameMaker>
+		<combatPower>500</combatPower>
+		<minGenerationAge>25</minGenerationAge>
+		<maxGenerationAge>26</maxGenerationAge>
+		<fixedGender>Male</fixedGender>
+		<forcedHair>Shaved</forcedHair>
+		<forcedHairColor>(85,75,55)</forcedHairColor>
+		<!--skinColorOverride>(150,135,225)</skinColorOverride-->
+		<xenotypeSet>
+			<xenotypeChances>
+				<Baseliner>999</Baseliner>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<itemQuality>Legendary</itemQuality>
+		<apparelMoney>49999</apparelMoney>
+		<apparelTags>
+		  <li>KotORHeroAccessories_yuthura</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>Apparel_Cape</li>
+		   <li>guy762_SithArmor_colormarauder</li>
+		   <li>guy762_SithMask_colormarauder</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<apparelDef>guy762_SithArmor_colormarauder</apparelDef>
+				<quality>Legendary</quality>
+				<color>(50,50,50)</color>
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<apparelDef>Apparel_Cape</apparelDef>
+				<quality>Legendary</quality>
+				<stuff>KOTOR_FabricArmorweave</stuff>
+			</li>
+			<li>
+				<bodyPartGroup>Neck</bodyPartGroup>
+				<apparelDef>guy762_SithMask_colormarauder</apparelDef>
+				<quality>Legendary</quality>
+				<color>(50,50,50)</color>
+			</li>
+		</specificApparelRequirements>
+		<weaponMoney>99999999</weaponMoney>
+		<weaponTags>
+		  <li>SE_bandon</li>
+		</weaponTags>
+		<techHediffsRequired>
+		  <li>guy762_ImplantDock_I</li>
+		</techHediffsRequired>
+		
+		<inventoryOptions>
+		  <skipChance>0</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+			  <thingDef>guy762_ImplantItemImp_sith</thingDef>
+			  <countRange>1</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_ImplantItemImp_alacrity</thingDef>
+			  <countRange>1</countRange>
+			</li>
+			<li>
+			  <thingDef>guy762_ImplantItemImp_power</thingDef>
+			  <countRange>1</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>18~20</range>
+			</li>
+		</skills>
+		<forcedTraits>
+			<PsychicSensitivity>1</PsychicSensitivity>
+			<Tough>0</Tough>
+			<Psychopath>0</Psychopath>
+			<Bloodlust>0</Bloodlust>
+			<Nerves>-2</Nerves>
+		</forcedTraits>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_bandon</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		<modExtensions>
+		 <li Class="AddGeneForPK.PKAdditionalGenes"> <!-- NOTE: this mod extension cannot be split between two different PKDefs, all genes have to go in the same block!!! -->
+		  <geneSets>
+			<li>
+              <isXenogene>true</isXenogene>
+              <chance>1</chance>
+              <geneDefs>
+                <li MayRequire="guy762.Lee.KotORPotF">SWPotF_Gene_DSCorruptionIII</li>
+              </geneDefs>
+            </li>
+			<li>
+              <isXenogene>false</isXenogene>
+              <chance>1</chance>
+              <geneDefs>
+                <li>Skin_Melanin1</li>
+              </geneDefs>
+            </li>
+		  </geneSets>
+		</li>
+		<li Class="BodyTypeForPawnKind.ModExtension_HeadTypesOfPawnKind">
+          <whitelist>
+            <li>Male_AverageNormal</li>
+          </whitelist>
+          <blacklist>
+            <!--leave blank to disable-->
+          </blacklist>
+          <priority>
+            <li>Male_AverageNormal</li>
+          </priority>
+          <checkGender>False</checkGender>
+        </li>
+		<li Class="BodyTypeForPawnKind.ModExtension_ForcedStyleItem">
+		  <forcedBeard>Circle</forcedBeard>
+		</li>
+      </modExtensions>
+	  </PawnKindDef>
+	  
+	  <RulePackDef>
+        <defName>guy762_HeroNamer_Bandon</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[dirk] '[darth]' [brandon]</li>
+				<li>dirk->Dirk</li>
+				<li>darth->Darth Bandon</li>
+				<li>brandon->Brandon</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<!--[PAWN_nameDef] [PAWN_possessive] [PAWN_pronoun]-->
+	
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryC_Bandon</defName>
+		<title>Fallen Padawan</title>
+		<titleShort>Fallen Padawan</titleShort>
+		<description>.</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>8</Melee>
+		</skillGains>
+		<forcedTraits>
+		  <PsychicSensitivity>1</PsychicSensitivity>
+		</forcedTraits>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_Bandon</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_bandon</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>guy762_BackstoryA_Bandon</defName>
+		<title>Sith Shadow Hand</title>
+		<titleShort>Shadow Hand</titleShort>
+		<description>.</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>8</Melee>
+		</skillGains>
+		<forcedTraits>
+		  <Brawler>0</Brawler>
+		  <Greedy>0</Greedy>
+		</forcedTraits>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<nameMaker>guy762_HeroNamer_Bandon</nameMaker>
+		<spawnCategories>
+			<li>guy762BSC_bandon</li>
+		</spawnCategories>
+		<!--shuffleable>False</shuffleable-->
+	</BackstoryDef>
+
+
+
+</Defs>

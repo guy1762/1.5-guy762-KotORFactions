@@ -161,6 +161,7 @@
 		  <li>KotORAccessory_bigbackpack</li>
 		  <li>guy762PatchedTag_Flophat</li>
 		  <li>guy762PatchedTag_Shadecone</li>
+		  <li>SWCPSpecificApparelItem_KotOROnderonRobes</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_Robes_onderon</li>
@@ -323,6 +324,7 @@
 		  <li>KotORAccessory_richcivilian</li>
 		  <li>RoyalRobe</li>
 		  <li>guy762PatchedTag_Sash</li>
+		  <li>SWCPSpecificApparelItem_KotOROnderonRobes</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_Robes_onderon</li>
@@ -563,6 +565,8 @@
 		  <li>KotORHeadband_tech</li>
 		  <li>KotORApparel_pilothelmet</li>
 		  <li>KotORAccessory_engi</li>
+		  <li>SWCPSpecificApparelItem_FlightVest</li>
+		  <li>SWCPSpecificApparelItem_DyeableFatigues</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_Bodysuit_Dyeable</li>
@@ -655,6 +659,7 @@
 		<apparelTags Inherit="False">
 		  <li>KotORUtility_engi</li>
 		  <li>KotORAccessory_engi</li>
+		  <li>SWCPSpecificApparelItem_DyeableFatigues</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_Bodysuit_Dyeable</li>
@@ -730,6 +735,8 @@
 		  <li>KotORAccessory_engi</li>
 		  <li>KotORAccessory_civilian</li>
 		  <li>KotORAccessory_light</li>
+		  <li>SWCPSpecificApparelItem_TuskenRobes</li>
+		  <li>SWCPSpecificApparelItem_KotORJawaHood</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_JawaHood</li>
@@ -836,6 +843,8 @@
 		<apparelMoney>9999</apparelMoney>
 		<apparelTags>
 		  <li>KotOREquipment_basic</li>
+		  <li>SWKotORSpecificApparelItem_TSFOldRepublicTrooperHelmet</li>
+		  <li>SWKotORSpecificApparelItem_TSFOldRepublicTrooperArmor</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>guy762_RepArmor_TSF</li>	
@@ -877,6 +886,10 @@
 		  <li>KotORWeapon_civhunter</li>
 		</weaponTags>
 		<weaponMoney>100~300</weaponMoney>
+		
+		<apparelTags>
+		  <li>SWCPSpecificApparelItem_CamoPoncho</li>
+		</apparelTags>
 		<apparelRequired>
 		  <li>Apparel_Tailcap</li>
 		  <li>guy762_Accessory_ponchoCamo</li>
@@ -899,6 +912,9 @@
 	<PawnKindDef Name="KotORCiv_logger" ParentName="KotORCiv_villager">
 		<defName>KotORCiv_logger</defName>
 		<label>lumberjack</label>
+		<apparelTags>
+		  <li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+		</apparelTags>
 		<apparelRequired>
 		  <li>Apparel_Tailcap</li>
 		  <li>guy762_Accessory_suspendersA</li>
@@ -921,6 +937,9 @@
 	<PawnKindDef Name="KotORCiv_farmer" ParentName="KotORCiv_villager">
 		<defName>KotORCiv_farmer</defName>
 		<label>farmer</label>
+		<apparelTags>
+		  <li>guy762PatchedTag_Shadecone</li>
+		</apparelTags>
 		<apparelRequired>
 		  <li>Apparel_Shadecone</li>
 		</apparelRequired>
@@ -953,6 +972,9 @@
 		  <li>KotORRanged_mininglaser</li>
 		</weaponTags>
 		<weaponMoney>150~200</weaponMoney>
+		<apparelTags>
+		  <li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+		</apparelTags>
 		<apparelRequired>
 		  <li>guy762_Accessory_suspendersA</li>
 		  <li>Apparel_SimpleHelmet</li>
@@ -1020,16 +1042,19 @@
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
 		
+		<apparelTags Inherit="False">
+		  <li>KotORUtility_engi</li>
+		  <li>KotORAccessory_engi</li>
+		  <li>SWCPSpecificApparelItem_DyeableFatigues</li>
+		  <li>SWCPSpecificApparelItem_EngineerSuspenders</li>
+		  <li>SWCPSpecificApparelItem_ScoutVest</li>
+		</apparelTags>
 		<apparelRequired>
 		  <li>guy762_Accessory_suspendersB</li>
 		  <li>Apparel_SimpleHelmet</li>
 		  <li>guy762_Bodysuit_Dyeable</li>
 		  <li>guy762_Jacket_scout</li>
 		</apparelRequired>
-		<apparelTags Inherit="False">
-		  <li>KotORUtility_engi</li>
-		  <li>KotORAccessory_engi</li>
-		</apparelTags>
 		<specificApparelRequirements>
 			<li>
 				<apparelLayer>Overhead</apparelLayer>

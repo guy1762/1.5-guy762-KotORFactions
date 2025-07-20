@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	  
+	  
+	<!--officers-->
+		  
+		  
+	<PawnKindDef Name="KotOREvlRS_ensign" ParentName="KotORRepub_ensign">
+		<defName>KotOREvlRS_ensign</defName>
+		<defaultFactionType>guy762_KotORFaction_CorruptRepublic</defaultFactionType>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(125,125,125)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(125,125,125)</color>
+			</li>
+		</specificApparelRequirements>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  <PawnKindDef Name="KotOREvlRS_engineer" ParentName="KotORRepub_engineer">
+		<defName>KotOREvlRS_engineer</defName>
+		<defaultFactionType>guy762_KotORFaction_CorruptRepublic</defaultFactionType>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(125,125,125)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(125,125,125)</color>
+			</li>
+		</specificApparelRequirements>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  <PawnKindDef Name="KotOREvlRS_lieutenant" ParentName="KotORRepub_lieutenant">
+		<defName>KotOREvlRS_lieutenant</defName>
+		<defaultFactionType>guy762_KotORFaction_CorruptRepublic</defaultFactionType>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(125,125,125)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(125,125,125)</color>
+			</li>
+		</specificApparelRequirements>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  <PawnKindDef Name="KotOREvlRS_captain" ParentName="KotORRepub_captain">
+		<defName>KotOREvlRS_captain</defName>
+		<defaultFactionType>guy762_KotORFaction_CorruptRepublic</defaultFactionType>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(125,125,125)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(125,125,125)</color>
+			</li>
+		</specificApparelRequirements>
+	  </PawnKindDef>
+	  
+	  
+	    <!--troopers-->
+		  
+		  
+	<PawnKindDef Name="KotOREvlRS_soldier" ParentName="KotORRepub_soldier">
+		<defName>KotOREvlRS_soldier</defName>
+		<defaultFactionType>guy762_KotORFaction_CorruptRepublic</defaultFactionType>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(125,125,125)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(125,125,125)</color>
+			</li>
+		</specificApparelRequirements>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  <!--
+	  <PawnKindDef Name="KotOREvlRS_medic" ParentName="KotORRepub_medic">
+		<defName>KotOREvlRS_medic</defName>
+		<defaultFactionType>guy762_KotORFaction_CorruptRepublic</defaultFactionType>
+	  </PawnKindDef>
+	  
+	  NOT NECESSARY, can use normal version since no color swap
+	  -->
+	  
+	  <PawnKindDef Name="KotOREvlRS_hvysoldier" ParentName="KotORRepub_hvysoldier">
+		<defName>KotOREvlRS_hvysoldier</defName>
+		<defaultFactionType>guy762_KotORFaction_CorruptRepublic</defaultFactionType>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(125,125,125)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(125,125,125)</color>
+			</li>
+		</specificApparelRequirements>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  
+	  
+			<!--commandos-->
+	  
+	  
+	  
+	  
+	  <PawnKindDef Name="KotOREvlRS_commando" ParentName="KotORRepub_commando">
+		<defName>KotOREvlRS_commando</defName>
+		<defaultFactionType>guy762_KotORFaction_CorruptRepublic</defaultFactionType>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(125,125,125)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(125,125,125)</color>
+			</li>
+		</specificApparelRequirements>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  <PawnKindDef Name="KotOREvlRS_saboteur" ParentName="KotORRepub_saboteur">
+		<defName>KotOREvlRS_saboteur</defName>
+		<defaultFactionType>guy762_KotORFaction_CorruptRepublic</defaultFactionType>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(125,125,125)</color>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(125,125,125)</color>
+			</li>
+		</specificApparelRequirements>
+	  </PawnKindDef>
+	  
+	  
+	  
+
+
+   
+</Defs>
