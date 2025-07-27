@@ -133,6 +133,9 @@
 	  </specificApparelRequirements>
       <weaponTags Inherit="False">
 		<li>OR_jediguardian</li>
+		<li>Force_LightsaberSingle</li>
+		<!-- <li>Force_LightsaberDual</li> -->
+		<li>Force_LightsaberCrossguard</li>
       </weaponTags>
 	  <skills>
 		<li>
@@ -147,6 +150,30 @@
 
       <initialWillRange>6~8</initialWillRange>
       <initialResistanceRange>30~46</initialResistanceRange>
+	  
+		<modExtensions>
+			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
+				<bladeColors>
+					<!-- KotOR blue -->
+					<li>(0, 64, 255, 255)</li>
+				</bladeColors>
+				<coreColors>
+				   <!-- White Core -->
+				   <li>(1.0, 1.0, 1.0, 1.0)</li>
+				</coreColors>
+				<defaultBladeLength1>0.9</defaultBladeLength1>
+				<defaultBladeLength2>0.85</defaultBladeLength2>
+				<hiltColorOne>(255, 255, 255, 255)</hiltColorOne>
+				<hiltColorTwo>(255, 255, 255, 255)</hiltColorTwo>
+				<preferredHilts>
+				   <li>Force_LightsaberHilt_KOTOR</li>
+				   <li>Force_LightsaberHilt_KOTORCrossguard</li>
+				</preferredHilts>
+				<!-- <preferredHiltParts> -->
+				   <!-- <li>Force_AdeganCrystalHiltPart</li> -->
+				<!-- </preferredHiltParts> -->
+			</li>
+		</modExtensions>
    </PawnKindDef>
    
    
@@ -180,6 +207,8 @@
 	  </specificApparelRequirements>
       <weaponTags Inherit="False">
 		<li>OR_jedisentinel</li>
+		<li>Force_LightsaberSingle</li>
+		<!-- <li>Force_LightsaberDual</li> -->
       </weaponTags>
 	  <skills>
 		<li>
@@ -202,6 +231,31 @@
 
       <initialWillRange>6~8</initialWillRange>
       <initialResistanceRange>30~46</initialResistanceRange>
+	  
+		<modExtensions>
+			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
+				<bladeColors>
+					<!-- KotOR soft yellow -->
+					<li>(255, 196, 0, 255)</li>
+				</bladeColors>
+				<coreColors>
+				   <!-- White Core -->
+				   <li>(1.0, 1.0, 1.0, 1.0)</li>
+				</coreColors>
+				<defaultBladeLength1>0.9</defaultBladeLength1>
+				<!-- <defaultBladeLength1>1.05</defaultBladeLength1> -->
+				<!-- <defaultBladeLength2>1.05</defaultBladeLength2> -->
+				<hiltColorOne>(255, 255, 255, 255)</hiltColorOne>
+				<hiltColorTwo>(255, 255, 255, 255)</hiltColorTwo>
+				<preferredHilts>
+				   <li>Force_LightsaberHilt_KOTOR</li>
+				   <!-- <li>Force_LightsaberHilt_KOTORDual</li> -->
+				</preferredHilts>
+				<!-- <preferredHiltParts> -->
+				   <!-- <li>Force_AdeganCrystalHiltPart</li> -->
+				<!-- </preferredHiltParts> -->
+			</li>
+		</modExtensions>
    </PawnKindDef>
    
    
@@ -235,6 +289,8 @@
 	  </specificApparelRequirements>
       <weaponTags Inherit="False">
 		<li>OR_jediconsular</li>
+		<li>Force_LightsaberSingle</li>
+		<li>Force_Lightsaber_Curved</li>
       </weaponTags>
 	  <skills>
 		<li>
@@ -257,6 +313,30 @@
 
       <initialWillRange>6~8</initialWillRange>
       <initialResistanceRange>30~46</initialResistanceRange>
+	  
+		<modExtensions>
+			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
+				<bladeColors>
+					<!-- green -->
+					<li>(0, 255, 0, 255)</li>
+				</bladeColors>
+				<coreColors>
+				   <!-- White Core -->
+				   <li>(1.0, 1.0, 1.0, 1.0)</li>
+				</coreColors>
+				<defaultBladeLength1>0.9</defaultBladeLength1>
+				<hiltColorOne>(255, 255, 255, 255)</hiltColorOne>
+				<hiltColorTwo>(255, 255, 255, 255)</hiltColorTwo>
+				<preferredHilts>
+				   <li>Force_LightsaberHilt_KOTOR</li>
+				   <li>Force_LightsaberHilt_KOTORCurved</li>
+				</preferredHilts>
+				<!-- <preferredHiltParts> -->
+				   <!-- <li>Force_AdeganCrystalHiltPart</li> -->
+				<!-- </preferredHiltParts> -->
+			</li>
+		</modExtensions>
+	
    </PawnKindDef>
 
    

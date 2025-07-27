@@ -8,7 +8,7 @@
     <pawnSingular>sith</pawnSingular>
     <pawnsPlural>sith</pawnsPlural>
     <categoryTag>Empire</categoryTag>
-    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
     <maxConfigurableAtWorldCreation>2</maxConfigurableAtWorldCreation>
 	<listOrderPriority>777</listOrderPriority>
 	<configurationListOrderPriority>777</configurationListOrderPriority>
@@ -43,7 +43,7 @@
 	<naturalEnemy>true</naturalEnemy>
 	<settlementGenerationWeight>10</settlementGenerationWeight>
 	<modExtensions Inherit="False">
-      <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Currencies.CurrencyReplacement">
+      <li Class="SWCP.Currencies.CurrencyReplacement">
 		<currency>guy762_KotORcredits</currency>
 	  </li>
 	  <li Class="VEF.Factions.FactionDefExtension">
@@ -82,7 +82,7 @@
 		<excludeFromCommConsole>false</excludeFromCommConsole>
 		<hasCities>true</hasCities>
       </li>
-	  <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Core.ModExtension_FixedIdeo">
+	  <li Class="SWCP.Core.ModExtension_FixedIdeo">
 		<ideoIconDef>guy762_IdeoIcon_sithC</ideoIconDef>
 		<ideoColorDef>DarkGrey</ideoColorDef>
 		<memberName>Sith</memberName>
@@ -429,12 +429,12 @@
 		<kindDef>Settlement</kindDef> <!-- occupied settlement -->
 		<commonality>1</commonality>
 		<options>
-		  <KotORCiv_prole>15</KotORCiv_prole>
-		  <KotORCiv_mid>5</KotORCiv_mid>
-		  <KotORCiv_bougie>1</KotORCiv_bougie>
+		  <SWCPCivilian_prole>15</SWCPCivilian_prole>
+		  <SWCPCivilian_mid>5</SWCPCivilian_mid>
+		  <SWCPCivilian_bougie>1</SWCPCivilian_bougie>
 		  
-		  <KotORCiv_spacer>1</KotORCiv_spacer>
-		  <KotORCiv_doctormid>1</KotORCiv_doctormid>
+		  <SWCPCivilian_spacer>1</SWCPCivilian_spacer>
+		  <SWCPCivilian_doctormid>1</SWCPCivilian_doctormid>
 		  
 		  <KotORSith_ensign>10</KotORSith_ensign>
 		  <KotORSith_engineer>5</KotORSith_engineer>

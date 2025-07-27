@@ -371,7 +371,7 @@
 		  <li>SWCPSpecificApparelItem_PlainClothing</li>
 		  <li>SWKotORSpecificApparelItem_ExchangeJacket</li>
 		  <li>SWCPSpecificApparelItem_DoubleBandolier</li>
-		  <li>SWCPSpecificGadgetItem_3MinStealthBelt</li>
+		  <li>SWKotORSpecificGadgetItem_Exchange2MinStealthBelt</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>guy762_Jacket_exchange</li>

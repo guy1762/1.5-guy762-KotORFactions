@@ -43,7 +43,7 @@
 	<naturalEnemy>true</naturalEnemy>
 	<settlementGenerationWeight>0.1</settlementGenerationWeight>
 	<modExtensions Inherit="False">
-      <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Currencies.CurrencyReplacement">
+      <li Class="SWCP.Currencies.CurrencyReplacement">
 		<currency>guy762_KotORcredits</currency>
 	  </li>
 	  <li Class="VEF.Factions.FactionDefExtension">
@@ -84,7 +84,7 @@
 		<neverConnectToRoads>true</neverConnectToRoads>
 		<minDistanceToOtherSettlements>40</minDistanceToOtherSettlements>
       </li>
-	  <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Core.ModExtension_FixedIdeo">
+	  <li Class="SWCP.Core.ModExtension_FixedIdeo">
 		<ideoIconDef>guy762_IdeoIcon_sithC</ideoIconDef>
 		<ideoColorDef>DarkGrey</ideoColorDef>
 		<memberName>Sith</memberName>

@@ -12,7 +12,7 @@
   
   
   
-  <PawnKindDef Name="KotORMercBase_T1LootPool_DudOnly" ParentName="KotORMercBase" Abstract="True">
+  <PawnKindDef Name="SWCPMercBase_T1LootPool_DudOnly" ParentName="SWCPMercBase" Abstract="True">
 	<inventoryOptions>
       <skipChance>0.75</skipChance>
 	  <subOptionsChooseOne>
@@ -32,7 +32,7 @@
     </inventoryOptions>
   </PawnKindDef>
   
-  <PawnKindDef Name="KotORMercBase_T1LootPool" ParentName="KotORMercBase" Abstract="True">
+  <PawnKindDef Name="SWCPMercBase_T1LootPool" ParentName="SWCPMercBase" Abstract="True">
 	<inventoryOptions>
       <skipChance>0.875</skipChance>
 	  <subOptionsChooseOne>
@@ -175,7 +175,7 @@
   
   
   
-  <PawnKindDef Name="KotORMercBase_T2LootPool_DudOnly" ParentName="KotORMercBase" Abstract="True">
+  <PawnKindDef Name="SWCPMercBase_T2LootPool_DudOnly" ParentName="SWCPMercBase" Abstract="True">
 	<inventoryOptions>
       <skipChance>0.75</skipChance>
 	  <subOptionsChooseOne>
@@ -195,7 +195,7 @@
     </inventoryOptions>
   </PawnKindDef>
   
-  <PawnKindDef Name="KotORMercBase_T2LootPool" ParentName="KotORMercBase" Abstract="True">
+  <PawnKindDef Name="SWCPMercBase_T2LootPool" ParentName="SWCPMercBase" Abstract="True">
 	<inventoryOptions>
       <skipChance>0.875</skipChance>
 	  <subOptionsChooseOne>
@@ -350,7 +350,7 @@
   
   
   
-  <PawnKindDef Name="KotORMercBase_T3LootPool_DudOnly" ParentName="KotORMercBase" Abstract="True">
+  <PawnKindDef Name="SWCPMercBase_T3LootPool_DudOnly" ParentName="SWCPMercBase" Abstract="True">
 	<inventoryOptions>
       <skipChance>0.75</skipChance>
 	  <subOptionsChooseOne>
@@ -370,7 +370,7 @@
     </inventoryOptions>
   </PawnKindDef>
   
-  <PawnKindDef Name="KotORMercBase_T3LootPool" ParentName="KotORMercBase" Abstract="True">
+  <PawnKindDef Name="SWCPMercBase_T3LootPool" ParentName="SWCPMercBase" Abstract="True">
 	<inventoryOptions>
       <skipChance>0.875</skipChance>
 	  <subOptionsChooseOne>
@@ -501,7 +501,7 @@
   <!-- ||||||||||| SPECIAL ||||||||||| -->
   
   
-  <PawnKindDef Name="KotORMercBase_T2LootPool_kaleesh" ParentName="KotORMercBase" Abstract="True">
+  <PawnKindDef Name="SWCPMercBase_T2LootPool_kaleesh" ParentName="SWCPMercBase" Abstract="True">
 	<inventoryOptions Inherit="False">
       <skipChance>0.875</skipChance>
 	  <subOptionsChooseOne>
@@ -614,7 +614,7 @@
   
   
   
-  <PawnKindDef Name="KotORMercBase_T3LootPool_chiss" ParentName="KotORMercBase" Abstract="True">
+  <PawnKindDef Name="SWCPMercBase_T3LootPool_chiss" ParentName="SWCPMercBase" Abstract="True">
 	<inventoryOptions Inherit="False">
       <skipChance>0.75</skipChance>
 	  <subOptionsTakeAll>

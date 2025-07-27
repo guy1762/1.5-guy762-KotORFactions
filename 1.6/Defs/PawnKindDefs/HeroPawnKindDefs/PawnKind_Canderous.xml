@@ -24,6 +24,10 @@
 		<apparelTags>
 		  <li>MNC_outfit_mandalore</li>
 		  <li>KotORHeroAccessories_canderous</li>
+		  <li>SWKotORSpecificApparelItem_MandoSupercommandoHelmet</li>
+		  <li>SWKotORSpecificApparelItem_MandoSupercommandoArmor</li>
+		  <li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
+		  <li>SWKotORSpecificGadgetItem_MissileJetpack</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>guy762_MandoHelmet_supercom</li>

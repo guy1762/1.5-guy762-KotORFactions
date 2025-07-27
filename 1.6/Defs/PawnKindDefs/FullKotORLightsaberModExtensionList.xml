@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	
+	
+	  <PawnKindDef ParentName="SWCPCivilian_Base" Name="SWCPCivilian_FullKotORLightsaberModExtensionList" Abstract="True">
+		
+		<modExtensions>
+			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
+				<bladeColors>
+					<!-- red -->
+					<li>(255, 0, 0, 255)</li>
+					<!-- orange -->
+					<li>(255, 64, 0, 255)</li>
+					<!-- KotOR soft yellow -->
+					<li>(255, 196, 0, 255)</li>
+					<!-- green -->
+					<li>(0, 255, 0, 255)</li>
+					<!-- KotOR blue -->
+					<li>(0, 64, 255, 255)</li>
+					<!-- purple -->
+					<li>(255, 0, 255, 255)</li>
+				</bladeColors>
+				<coreColors>
+				   <!-- White Core -->
+				   <li>(1.0, 1.0, 1.0, 1.0)</li>
+				</coreColors>
+				<defaultBladeLength1>0.9</defaultBladeLength1>
+				<hiltColorOne>(255, 255, 255, 255)</hiltColorOne>
+				<hiltColorTwo>(255, 255, 255, 255)</hiltColorTwo>
+				<preferredHilts>
+				   <li>Force_LightsaberHilt_KOTOR</li>
+				   <li>Force_LightsaberHilt_KOTORDual</li>
+				   <li>Force_LightsaberHilt_KOTORCurved</li>
+				   <li>Force_LightsaberHilt_KOTORCrossguard</li>
+				</preferredHilts>
+				<!-- <preferredHiltParts> -->
+				   <!-- <li>Force_AdeganCrystalHiltPart</li> -->
+				<!-- </preferredHiltParts> -->
+			</li>
+		</modExtensions>
+		
+	  </PawnKindDef>
+	  
+	  
+
+
+ </Defs>

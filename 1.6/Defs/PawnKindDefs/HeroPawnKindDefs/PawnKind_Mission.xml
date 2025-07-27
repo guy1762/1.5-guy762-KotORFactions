@@ -21,6 +21,8 @@
 		<apparelTags>
 		  <li>SaV_apparel_mission</li>
 		  <li>KotORHeroAccessories_mission</li>
+		  <li>SWCPSpecificApparelItem_LightClothing</li>
+		  <li>SWCPSpecificApparelItem_TrendyVest</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>guy762_TwilekHeadband_mission</li>

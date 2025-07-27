@@ -67,7 +67,7 @@
 		<excludeFromCommConsole>false</excludeFromCommConsole>
 		<hasCities>true</hasCities>
       </li>
-	  <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Core.ModExtension_FixedIdeo">
+	  <li Class="SWCP.Core.ModExtension_FixedIdeo">
 		<ideoIconDef>guy762_IdeoIcon_mandoNeoCrusaders</ideoIconDef>
 		<ideoColorDef>DarkRed</ideoColorDef>
 		<memberName>Neo-Crusader</memberName>

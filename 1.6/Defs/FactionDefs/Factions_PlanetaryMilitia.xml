@@ -31,7 +31,7 @@
 		
 		<settlementGenerationWeight>10</settlementGenerationWeight>
 		<modExtensions Inherit="False">
-		  <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Currencies.CurrencyReplacement">
+		  <li Class="SWCP.Currencies.CurrencyReplacement">
 			<currency>guy762_KotORcredits</currency>
 		  </li>
 		  <li Class="VEF.Factions.FactionDefExtension">
@@ -220,8 +220,8 @@
 		  <li>
 			<kindDef>Peaceful</kindDef>
 			<options>
-			  <KotORCiv_villager>5</KotORCiv_villager>
-			  <KotORCiv_hooded>1</KotORCiv_hooded>
+			  <SWCPCivilian_villager>5</SWCPCivilian_villager>
+			  <SWCPCivilian_hooded>1</SWCPCivilian_hooded>
 			  <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">2.5</Villager_Child>
 			  
 			  <KotORMlita_scout>10</KotORMlita_scout>
@@ -234,7 +234,7 @@
 		  <li>
 			<kindDef>Trader</kindDef>
 			<traders>
-			  <KotORCiv_wanderingtrader>2.5</KotORCiv_wanderingtrader>
+			  <SWCPCivilian_wanderingtrader>2.5</SWCPCivilian_wanderingtrader>
 			  <KotORMlita_droid_GE3PD MayRequire="guy762.KotORDroids">1</KotORMlita_droid_GE3PD>
 			</traders>
 			<carriers>
@@ -250,8 +250,8 @@
 			  <Muffalo>0.01</Muffalo> <!-- required because trader caravan won't generate without at least one carrier type -->
 			</carriers>
 			<guards>
-			  <KotORCiv_villager>10</KotORCiv_villager>
-			  <KotORCiv_hooded>1</KotORCiv_hooded>
+			  <SWCPCivilian_villager>10</SWCPCivilian_villager>
+			  <SWCPCivilian_hooded>1</SWCPCivilian_hooded>
 			  <KotORMlita_scout>10</KotORMlita_scout>
 			  <KotORMlita_trooper>10</KotORMlita_trooper>
 			  <KotORMlita_heavy>2.5</KotORMlita_heavy>
@@ -265,12 +265,12 @@
 		  </li>
 		  
 		  
-		  <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Core.GroupMakerWithTraderKind">
+		  <li Class="SWCP.Core.GroupMakerWithTraderKind">
 			<kindDef>Trader</kindDef> <!-- wandering doctor -->
 			<commonality>0.5</commonality>
 			<traderKinds><li>guy762_TraderKind_WanderingDoctor</li></traderKinds>
 			<traders>
-			  <KotORCiv_doctormid>100</KotORCiv_doctormid>
+			  <SWCPCivilian_doctormid>100</SWCPCivilian_doctormid>
 			</traders>
 			<carriers>
 			  <Bantha MayRequire="Mlie.StarWarsAnimalCollection">5</Bantha>
@@ -285,7 +285,7 @@
 			  <Muffalo>0.01</Muffalo> <!-- required because trader caravan won't generate without at least one valid carrier type -->
 			</carriers>
 			<guards>
-			  <KotORCiv_doctormid>2</KotORCiv_doctormid>
+			  <SWCPCivilian_doctormid>2</SWCPCivilian_doctormid>
 			  <KotORMlita_droid_GE3PD MayRequire="guy762.KotORDroids">2</KotORMlita_droid_GE3PD>
 			  
 			  <KotORMerc_merc>5</KotORMerc_merc>
@@ -301,14 +301,14 @@
 			<commonality>1</commonality>
 			<options>
 			  <!-- unaligned -->
-			  <KotORCiv_villager>10</KotORCiv_villager>
-			  <KotORCiv_prole>15</KotORCiv_prole>
-			  <KotORCiv_mid>0</KotORCiv_mid>
-			  <KotORCiv_bougie>0</KotORCiv_bougie>
+			  <SWCPCivilian_villager>10</SWCPCivilian_villager>
+			  <SWCPCivilian_prole>15</SWCPCivilian_prole>
+			  <SWCPCivilian_mid>0</SWCPCivilian_mid>
+			  <SWCPCivilian_bougie>0</SWCPCivilian_bougie>
 			  
-			  <KotORCiv_hooded>5</KotORCiv_hooded>
-			  <KotORCiv_poortraveler>1</KotORCiv_poortraveler>
-			  <KotORCiv_exotictraveler>0</KotORCiv_exotictraveler>
+			  <SWCPCivilian_hooded>5</SWCPCivilian_hooded>
+			  <SWCPCivilian_poortraveler>1</SWCPCivilian_poortraveler>
+			  <SWCPCivilian_exotictraveler>0</SWCPCivilian_exotictraveler>
 			  
 			  <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Villager_Child>
 			  <!-- factional -->
@@ -322,7 +322,7 @@
 			  
 			  <KotORMlita_scout>2.5</KotORMlita_scout>
 			  <KotORMlita_trooper>5</KotORMlita_trooper>
-			  <KotORCiv_cop>0</KotORCiv_cop>
+			  <SWCPCivilian_cop>0</SWCPCivilian_cop>
 			  <KotORMlita_heavy>0</KotORMlita_heavy>
 			  <KotORMlita_veteran>2.5</KotORMlita_veteran>
 			  <KotORDroidBad_SentWD MayRequire="guy762.KotORDroids">1</KotORDroidBad_SentWD>
@@ -336,14 +336,14 @@
 			<commonality>0.5</commonality>
 			<options>
 			  <!-- unaligned -->
-			  <KotORCiv_villager>1</KotORCiv_villager>
-			  <KotORCiv_prole>2.5</KotORCiv_prole>
-			  <KotORCiv_mid>10</KotORCiv_mid>
-			  <KotORCiv_bougie>5</KotORCiv_bougie>
+			  <SWCPCivilian_villager>1</SWCPCivilian_villager>
+			  <SWCPCivilian_prole>2.5</SWCPCivilian_prole>
+			  <SWCPCivilian_mid>10</SWCPCivilian_mid>
+			  <SWCPCivilian_bougie>5</SWCPCivilian_bougie>
 			  
-			  <KotORCiv_hooded>0</KotORCiv_hooded>
-			  <KotORCiv_poortraveler>1</KotORCiv_poortraveler>
-			  <KotORCiv_exotictraveler>5</KotORCiv_exotictraveler>
+			  <SWCPCivilian_hooded>0</SWCPCivilian_hooded>
+			  <SWCPCivilian_poortraveler>1</SWCPCivilian_poortraveler>
+			  <SWCPCivilian_exotictraveler>5</SWCPCivilian_exotictraveler>
 			  
 			  <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Villager_Child>
 			  <!-- factional -->
@@ -357,7 +357,7 @@
 			  
 			  <KotORMlita_scout>0</KotORMlita_scout>
 			  <KotORMlita_trooper>1</KotORMlita_trooper>
-			  <KotORCiv_cop>10</KotORCiv_cop>
+			  <SWCPCivilian_cop>10</SWCPCivilian_cop>
 			  <KotORMlita_heavy>1</KotORMlita_heavy>
 			  <KotORMlita_veteran>1</KotORMlita_veteran>
 			  <KotORDroidBad_SentWD MayRequire="guy762.KotORDroids">5</KotORDroidBad_SentWD>
@@ -379,7 +379,7 @@
 			<kindDef>Loggers</kindDef>
 			<commonality>1</commonality>
 			<options>
-			  <KotORCiv_logger>1</KotORCiv_logger>
+			  <SWCPCivilian_logger>1</SWCPCivilian_logger>
 			  <KotORDroidGood_GE3LD MayRequire="guy762.KotORDroids">2</KotORDroidGood_GE3LD>
 			</options>
 		  </li>
@@ -387,7 +387,7 @@
 			<kindDef>Farmers</kindDef>
 			<commonality>1</commonality>
 			<options>
-			  <KotORCiv_farmer>1</KotORCiv_farmer>
+			  <SWCPCivilian_farmer>1</SWCPCivilian_farmer>
 			  <KotORDroidGood_GE3LD MayRequire="guy762.KotORDroids">2</KotORDroidGood_GE3LD>
 			</options>
 		  </li>
@@ -395,7 +395,7 @@
 			<kindDef>Miners</kindDef>
 			<commonality>1</commonality>
 			<options>
-			  <KotORCiv_miner>1</KotORCiv_miner>
+			  <SWCPCivilian_miner>1</SWCPCivilian_miner>
 			  <KotORDroidBad_KM1MD MayRequire="guy762.KotORDroids">2</KotORDroidBad_KM1MD>
 			</options>
 		  </li>
@@ -403,7 +403,7 @@
 			<kindDef>Hunters</kindDef>
 			<commonality>1</commonality>
 			<options>
-			  <KotORCiv_hunter>10</KotORCiv_hunter>
+			  <SWCPCivilian_hunter>10</SWCPCivilian_hunter>
 			  <KotORMlita_scout>10</KotORMlita_scout>
 			  <KotORDroidBad_KX12UPD MayRequire="guy762.KotORDroids">5</KotORDroidBad_KX12UPD>
 			</options>

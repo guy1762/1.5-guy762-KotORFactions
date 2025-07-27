@@ -48,33 +48,8 @@
 	  </PawnKindDef>
 	  
 	  
-	  <PawnKindDef Name="KotORCzrka_SlaveBase" Abstract="True">
-		<race>Human</race>
+	  <PawnKindDef Name="KotORCzrka_SlaveBase" ParentName="SWCPCivilian_SlaveBase" Abstract="True">
 		<defaultFactionType>guy762_KotORFaction_Czerka</defaultFactionType>
-		<chemicalAddictionChance>0.05</chemicalAddictionChance>
-		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
-		<backstoryFilters>
-		  <li>
-			<categories>
-			  <li>Offworld</li>
-			  <li>Outlander</li>
-			  <li>Outsider</li>
-			</categories>
-		  </li>
-		</backstoryFilters>
-		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
-		<allowOldAgeInjuries>true</allowOldAgeInjuries>
-		<techHediffsTags>
-		  <li>Poor</li>
-		</techHediffsTags>
-		<requiredWorkTags>
-		  <li>Hauling</li>
-		</requiredWorkTags>
-		<invNutrition>1</invNutrition>
-		<invFoodDef>MealNutrientPaste</invFoodDef>
-		<initialWillRange>0~0</initialWillRange>
-		<initialResistanceRange>10~17</initialResistanceRange>
 	  </PawnKindDef>
 	  
 	  
@@ -121,7 +96,7 @@
 	  
 	  
 	  
-	  <PawnKindDef Name="KotORCzrka_employee" ParentName="KotORCivilian_Base">
+	  <PawnKindDef Name="KotORCzrka_employee" ParentName="SWCPCivilian_Base">
 		<defName>KotORCzrka_employee</defName>
 		<label>employee</label>
 		<defaultFactionType>guy762_KotORFaction_Czerka</defaultFactionType>
@@ -153,7 +128,7 @@
 		<initialResistanceRange>10~17</initialResistanceRange>
 	  </PawnKindDef>
 	  
-	  <PawnKindDef Name="KotORCzrka_lobot" ParentName="KotORCivilian_Base">
+	  <PawnKindDef Name="KotORCzrka_lobot" ParentName="SWCPCivilian_Base">
 		<defName>KotORCzrka_lobot</defName>
 		<label>computer systems manager</label>
 		<defaultFactionType>guy762_KotORFaction_Czerka</defaultFactionType>
@@ -192,7 +167,7 @@
 		<initialResistanceRange>10~17</initialResistanceRange>
 	  </PawnKindDef>
 	  
-	  <PawnKindDef Name="KotORCzrka_officer" ParentName="KotORCivilian_Base">
+	  <PawnKindDef Name="KotORCzrka_officer" ParentName="SWCPCivilian_Base">
 		<defName>KotORCzrka_officer</defName>
 		<label>executive officer</label>
 		<defaultFactionType>guy762_KotORFaction_Czerka</defaultFactionType>
@@ -265,7 +240,7 @@
 	  
 	  
 	  
-	  <PawnKindDef Name="KotORCzrka_scout" ParentName="KotORCivilian_Base">
+	  <PawnKindDef Name="KotORCzrka_scout" ParentName="SWCPCivilian_Base">
 		<defName>KotORCzrka_scout</defName>
 		<label>expeditionary agent</label>
 		<defaultFactionType>guy762_KotORFaction_Czerka</defaultFactionType>
@@ -354,6 +329,7 @@
 		  <li>KotOREquipment_basic</li>
 		  <li>SWKotORSpecificApparelItem_CzerkaLightBattleHelmet</li>
 		  <li>SWKotORSpecificApparelItem_CzerkaLightBattleArmor</li>
+		  <li>SWKotORSpecificGadgetItem_CzerkaDefenseGloves</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>guy762_glove_defense</li>
@@ -432,6 +408,7 @@
 		  <li>KotOREquipment_basic</li>
 		  <li>SWKotORSpecificApparelItem_CzerkaLightBattleHelmet</li>
 		  <li>SWKotORSpecificApparelItem_CzerkaLightBattleArmor</li>
+		  <li>SWKotORSpecificGadgetItem_CzerkaDefenseGloves</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>guy762_glove_defense</li>

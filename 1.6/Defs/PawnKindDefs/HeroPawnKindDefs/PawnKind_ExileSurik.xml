@@ -24,6 +24,9 @@
 		<apparelTags>
 		  <li>KotORHeroAccessories_exile</li>
 		  <li>KotORHeadband_regalvisor</li>
+		  <li>SWCPSpecificApparelItem_SimpleCloak</li>
+		  <li>SWCPSpecificGadgetItem_JediArmband</li>
+		  <li>SWKotORSpecificApparelItem_TraditionalJediTunic</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>guy762_JediCloak_light</li>
@@ -46,6 +49,7 @@
 		<weaponMoney>99999999</weaponMoney>
 		<weaponTags>
 		  <li>OR_exile</li>
+		  <li>Force_LightsaberSingle</li>
 		</weaponTags>
 		<skills>
 			<li>
@@ -118,6 +122,25 @@
 			<li>Female_AverageNormal</li>
 		  </priority>
 		  <checkGender>False</checkGender>
+		</li>
+		<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
+			<bladeColors>
+				<!-- KotOR Cyan -->
+				<li>(128, 255, 255, 255)</li>
+			</bladeColors>
+			<coreColors>
+			   <!-- White Core -->
+			   <li>(1.0, 1.0, 1.0, 1.0)</li>
+			</coreColors>
+			<defaultBladeLength1>0.9</defaultBladeLength1>
+			<hiltColorOne>(255, 255, 255, 255)</hiltColorOne>
+			<hiltColorTwo>(255, 255, 255, 255)</hiltColorTwo>
+			<preferredHilts>
+			   <li>Force_LightsaberHilt_KOTORRevan2</li>
+			</preferredHilts>
+			<preferredHiltParts>
+			   <li>guy762_SWForceLightsabers_CrystalPart_cyan</li>
+			</preferredHiltParts>
 		</li>
       </modExtensions>
 	  </PawnKindDef>

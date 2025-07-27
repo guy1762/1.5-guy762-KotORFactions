@@ -35,6 +35,7 @@
 		<weaponMoney>99999999</weaponMoney>
 		<weaponTags>
 		  <li>SE_malak</li>
+		  <li>Force_LightsaberSingle</li>
 		</weaponTags>
 		<skills>
 			<li>
@@ -120,6 +121,25 @@
 				<li>Male_AveragePointy</li>
 			  </priority>
 			  <checkGender>False</checkGender>
+			</li>
+			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
+				<bladeColors>
+					<!-- red -->
+					<li>(255, 0, 0, 255)</li>
+				</bladeColors>
+				<coreColors>
+				   <!-- White Core -->
+				   <li>(1.0, 1.0, 1.0, 1.0)</li>
+				</coreColors>
+				<defaultBladeLength1>1.1</defaultBladeLength1>
+				<hiltColorOne>(255, 255, 255, 255)</hiltColorOne>
+				<hiltColorTwo>(255, 255, 255, 255)</hiltColorTwo>
+				<preferredHilts>
+				   <li>Force_LightsaberHilt_KOTORMalak</li>
+				</preferredHilts>
+				<preferredHiltParts>
+				   <li>guy762_SWForceLightsabers_CrystalPart_red</li>
+				</preferredHiltParts>
 			</li>
 		</modExtensions>
 	  </PawnKindDef>

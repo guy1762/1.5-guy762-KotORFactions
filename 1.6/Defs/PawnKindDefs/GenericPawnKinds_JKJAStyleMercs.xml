@@ -5,7 +5,7 @@
   
 	<!-- jedi outcast/academy-style goons -->
 			
-  <PawnKindDef Name="KotORMerc_JKRodian" ParentName="KotORMercBase_T1LootPool_DudOnly">
+  <PawnKindDef Name="KotORMerc_JKRodian" ParentName="SWCPMercBase_T1LootPool_DudOnly">
     <defName>KotORMerc_JKRodian</defName>
 	<label>underworld thug</label>
     <combatPower>40</combatPower>
@@ -63,7 +63,7 @@
   
   
   
-  <PawnKindDef Name="KotORMerc_JKWeequay" ParentName="KotORMercBase_T1LootPool_DudOnly">
+  <PawnKindDef Name="KotORMerc_JKWeequay" ParentName="SWCPMercBase_T1LootPool_DudOnly">
     <defName>KotORMerc_JKWeequay</defName>
 	<label>underworld shooter</label>
     <combatPower>75</combatPower>
@@ -123,7 +123,7 @@
   
   
   
-  <PawnKindDef Name="KotORMerc_JKTrando" ParentName="KotORMercBase_T2LootPool_DudOnly">
+  <PawnKindDef Name="KotORMerc_JKTrando" ParentName="SWCPMercBase_T2LootPool_DudOnly">
     <defName>KotORMerc_JKTrando</defName>
 	<label>underworld gunner</label>
     <combatPower>75</combatPower>
@@ -224,7 +224,7 @@
   
   
   
-  <PawnKindDef Name="KotORMerc_JKSniperRodian" ParentName="KotORMercBase_T2LootPool_DudOnly">
+  <PawnKindDef Name="KotORMerc_JKSniperRodian" ParentName="SWCPMercBase_T2LootPool_DudOnly">
     <defName>KotORMerc_JKSniperRodian</defName>
 	<label>underworld sniper</label>
     <combatPower>75</combatPower>
@@ -288,7 +288,7 @@
   
   
   
-  <PawnKindDef Name="KotORMerc_JKHumanMerc" ParentName="KotORMercBase_T1LootPool_DudOnly">
+  <PawnKindDef Name="KotORMerc_JKHumanMerc" ParentName="SWCPMercBase_T1LootPool_DudOnly">
     <defName>KotORMerc_JKHumanMerc</defName>
 	<label>underworld mercenary</label>
     <combatPower>100</combatPower>

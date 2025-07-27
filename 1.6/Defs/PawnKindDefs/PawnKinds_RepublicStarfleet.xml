@@ -66,6 +66,7 @@
 		  <li>KotORDroidArmorT2</li>
 		  <li>KotORDroidUpgrade_hacking</li>
 		  <li>KotORDroidUpgrade_combat</li>
+		  <li>SWKotORSpecificDroidWeapon_HoldoutBlaster</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>guy762_DroidArmorMid_desh</li>
@@ -152,6 +153,7 @@
 		  <li>KotOREquipment_basic</li>
 		  <li>SWKotORSpecificApparelItem_OldRepublicEnsignUniform</li>
 		  <li>SWKotORSpecificApparelItem_OldRepublicTrooperHelmet</li>
+		  <li>SWKotORSpecificGadgetItem_WeakEchaniEnergyShield</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_RepHelmet_fleet</li>
@@ -294,6 +296,7 @@
 		  <li>SWKotORSpecificApparelItem_OldRepublicTrooperArmor</li>
 		  <li>SWKotORSpecificApparelItem_OldRepublicOfficerHat</li>
 		  <li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+		  <li>SWKotORSpecificGadgetItem_ArkanianEnergyShield</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_RepHat_officer</li>
@@ -373,6 +376,7 @@
 		  <li>KotOREquipment_officer</li>
 		  <li>SWKotORSpecificApparelItem_OldRepublicOfficerHat</li>
 		  <li>SWKotORSpecificApparelItem_OldRepublicOfficerUniform</li>
+		  <li>SWKotORSpecificGadgetItem_StrongEchaniEnergyShield</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_RepHat_officer</li>

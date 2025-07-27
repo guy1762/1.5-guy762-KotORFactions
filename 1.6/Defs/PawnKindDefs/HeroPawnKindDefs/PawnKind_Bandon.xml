@@ -22,6 +22,9 @@
 		<apparelMoney>49999</apparelMoney>
 		<apparelTags>
 		  <li>KotORHeroAccessories_yuthura</li>
+		  <li>SWKotORSpecificApparelItem_ColorableSithMarauderNeck</li>
+		  <li>SWKotORSpecificApparelItem_ColorableSithMarauderArmor</li>
+		  <li>guy762PatchedTag_Cape</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>Apparel_Cape</li>
@@ -53,6 +56,7 @@
 		<weaponMoney>99999999</weaponMoney>
 		<weaponTags>
 		  <li>SE_bandon</li>
+		  <li>Force_LightsaberDual</li>
 		</weaponTags>
 		<techHediffsRequired>
 		  <li>guy762_ImplantDock_I</li>
@@ -129,6 +133,26 @@
         </li>
 		<li Class="BodyTypeForPawnKind.ModExtension_ForcedStyleItem">
 		  <forcedBeard>Circle</forcedBeard>
+		</li>
+		<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
+			<bladeColors>
+				<!-- red -->
+				<li>(255, 0, 0, 255)</li>
+			</bladeColors>
+			<coreColors>
+			   <!-- White Core -->
+			   <li>(1.0, 1.0, 1.0, 1.0)</li>
+			</coreColors>
+			<defaultBladeLength1>1.05</defaultBladeLength1>
+			<defaultBladeLength2>1.05</defaultBladeLength2>
+			<hiltColorOne>(255, 255, 255, 255)</hiltColorOne>
+			<hiltColorTwo>(255, 255, 255, 255)</hiltColorTwo>
+			<preferredHilts>
+			   <li>Force_LightsaberHilt_KOTORDual</li>
+			</preferredHilts>
+			<preferredHiltParts>
+			   <li>guy762_SWForceLightsabers_CrystalPart_red</li>
+			</preferredHiltParts>
 		</li>
       </modExtensions>
 	  </PawnKindDef>

@@ -34,6 +34,7 @@
 		<weaponMoney>99999999</weaponMoney>
 		<weaponTags>
 		  <li>SE_sion</li>
+		  <li>Force_LightsaberSingle</li>
 		</weaponTags>
 		<skills>
 			<li>
@@ -81,6 +82,26 @@
 				<li>Male_AverageWide</li>
 			  </priority>
 			  <checkGender>False</checkGender>
+			</li>
+			
+			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
+				<bladeColors>
+					<!-- darker red that's actually just a less bright red -->
+					<li>(128, 0, 0, 255)</li>
+				</bladeColors>
+				<coreColors>
+				   <!-- White Core -->
+				   <li>(1.0, 1.0, 1.0, 1.0)</li>
+				</coreColors>
+				<defaultBladeLength1>1</defaultBladeLength1>
+				<hiltColorOne>(255, 255, 255, 255)</hiltColorOne>
+				<hiltColorTwo>(255, 255, 255, 255)</hiltColorTwo>
+				<preferredHilts>
+				   <li>Force_LightsaberHilt_KOTORSion</li>
+				</preferredHilts>
+				<preferredHiltParts>
+				   <li>guy762_SWForceLightsabers_CrystalPart_red</li>
+				</preferredHiltParts>
 			</li>
 		</modExtensions>
 	  </PawnKindDef>
@@ -222,7 +243,28 @@
 			  </defaultData>
 			</drawData>
 		  </li>
-		  <li Class="PawnRenderNodeProperties_Eye">
+		  
+		  
+		  <li MayRequire="lee.theforce.psycast" Class="PawnRenderNodeProperties_Eye">
+			<texPath>Things/Pawn/Humanlike/HeadAttachments/SithEyes/Male/SithEyes_Male</texPath>
+			<texPathFemale>Things/Pawn/Humanlike/HeadAttachments/SithEyes/Female/SithEyes_Female</texPathFemale>
+			<anchorTag>LeftEye</anchorTag>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<parentTagDef>Head</parentTagDef>
+			<drawSize>0.2</drawSize>
+			<side>Left</side>
+			<drawData>
+			  <defaultData>
+				<layer>54</layer>
+				<offset>(0, 0, -0.25)</offset>
+				<flip>true</flip>
+			  </defaultData>
+			  <dataWest>
+				<flip>false</flip>
+			  </dataWest>
+			</drawData>
+		  </li>
+		  <li MayRequire="guy762.Lee.KotORPotF" Class="PawnRenderNodeProperties_Eye">
 			<texPath>Pawn/SithEyes/T3SithEyes_male</texPath>
 			<texPathFemale>Pawn/SithEyes/T3SithEyes_female</texPathFemale>
 			<anchorTag>LeftEye</anchorTag>
@@ -241,6 +283,7 @@
 			  </dataWest>
 			</drawData>
 		  </li>
+		  
 		  <li>
 			  <parentTagDef>Body</parentTagDef>
 			  <useSkinShader>true</useSkinShader>

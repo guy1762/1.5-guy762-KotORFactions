@@ -31,10 +31,11 @@
 	
 	<settlementGenerationWeight>1</settlementGenerationWeight>
 	<modExtensions Inherit="False">
-      <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Currencies.CurrencyReplacement">
+      <li Class="SWCP.Currencies.CurrencyReplacement">
 		<currency>Silver</currency>
 	  </li>
-	  <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Core.ModExtension_HiddenFactionHasCaravans" />
+	  <li Class="SWCP.Core.ModExtension_HiddenFactionHasCaravans" />
+	  
 	  <li Class="VEF.Factions.FactionDefExtension">
 		<startingGoodwillByFactionDefs>
 			<guy762_KotORFaction_OldRepublic>-50~25</guy762_KotORFaction_OldRepublic>
@@ -73,7 +74,7 @@
 		<neverConnectToRoads>true</neverConnectToRoads>
 		<minDistanceToOtherSettlements>10</minDistanceToOtherSettlements>
       </li>
-	  <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Core.ModExtension_FixedIdeo">
+	  <li Class="SWCP.Core.ModExtension_FixedIdeo">
 		<ideoIconDef>guy762_IdeoIcon_mandoB</ideoIconDef>
 		<ideoColorDef>Grey</ideoColorDef>
 		<memberName>Mandalorian</memberName>
@@ -345,7 +346,7 @@
       </li>
 	  
 	  
-	  <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Core.GroupMakerWithTraderKind">
+	  <li Class="SWCP.Core.GroupMakerWithTraderKind">
 			<kindDef>Trader</kindDef>
 			<commonality>1</commonality>
 			<traderKinds><li>guy762_TraderKind_MandoArmorer</li></traderKinds>

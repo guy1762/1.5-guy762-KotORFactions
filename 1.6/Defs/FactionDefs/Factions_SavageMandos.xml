@@ -71,7 +71,7 @@
 		<neverConnectToRoads>true</neverConnectToRoads>
 		<minDistanceToOtherSettlements>50</minDistanceToOtherSettlements>
       </li>
-	  <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Core.ModExtension_FixedIdeo">
+	  <li Class="SWCP.Core.ModExtension_FixedIdeo">
 		<ideoIconDef>guy762_IdeoIcon_mandoA</ideoIconDef>
 		<ideoColorDef>DarkRed</ideoColorDef>
 		<memberName>Neo-Crusader</memberName>

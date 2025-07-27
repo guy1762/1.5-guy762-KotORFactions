@@ -133,6 +133,10 @@
 		<weaponMoney>99999</weaponMoney>
 		<weaponTags>
 			<li>SaV_darkjedisaber</li>
+			<li>Force_LightsaberSingle</li>
+			<li>Force_Lightsaber_Curved</li>
+			<!-- <li>Force_LightsaberDual</li> -->
+			<li>Force_LightsaberCrossguard</li>
 		</weaponTags>
 		<biocodeWeaponChance>999</biocodeWeaponChance>
 
@@ -145,6 +149,36 @@
 
 		<initialWillRange>10~12</initialWillRange>
 		<initialResistanceRange>50~72</initialResistanceRange>
+		
+		<modExtensions>
+			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
+				<bladeColors>
+					<!-- red -->
+					<li>(255, 0, 0, 255)</li>
+					<!-- purple -->
+					<li>(255, 0, 255, 255)</li>
+					<!-- orange -->
+					<li>(255, 64, 0, 255)</li>
+				</bladeColors>
+				<coreColors>
+				   <!-- White Core -->
+				   <li>(1.0, 1.0, 1.0, 1.0)</li>
+				</coreColors>
+				<defaultBladeLength1>0.9</defaultBladeLength1>
+				<defaultBladeLength2>0.85</defaultBladeLength2>
+				<hiltColorOne>(255, 255, 255, 255)</hiltColorOne>
+				<hiltColorTwo>(255, 255, 255, 255)</hiltColorTwo>
+				<preferredHilts>
+				   <li>Force_LightsaberHilt_KOTOR</li>
+				   <!-- <li>Force_LightsaberHilt_KOTORDual</li> -->
+				   <li>Force_LightsaberHilt_KOTORCurved</li>
+				   <li>Force_LightsaberHilt_KOTORCrossguard</li>
+				</preferredHilts>
+				<!-- <preferredHiltParts> -->
+				   <!-- <li>Force_AdeganCrystalHiltPart</li> -->
+				<!-- </preferredHiltParts> -->
+			</li>
+		</modExtensions>
 
 	</PawnKindDef>
 
@@ -170,6 +204,7 @@
 			<li>SWKotORSpecificApparelItem_ColorableSithCommandoHelmet</li>
 			<li>SWKotORSpecificApparelItem_ColorableSithCommandoArmor</li>
 			<li>guy762PatchedTag_Cape</li>
+			<li>SWKotORSpecificGadgetItem_StrongEchaniEnergyShield</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>Apparel_Cape</li>
@@ -303,6 +338,7 @@
 		<weaponMoney>99999</weaponMoney>
 		<weaponTags>
 			<li>SE_sithsaber_apprentice</li>
+			<li>Force_LightsaberSingle</li>
 			<!--<li>KotORWeapon_SithAsnPistol</li> disabled because they all insist on spawning with assassin pistols instead of sabers -->
 		</weaponTags>
 		<biocodeWeaponChance>999</biocodeWeaponChance>
@@ -316,6 +352,30 @@
 
 		<initialWillRange>10~12</initialWillRange>
 		<initialResistanceRange>50~72</initialResistanceRange>
+		
+		<modExtensions>
+			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
+				<bladeColors>
+					<!-- red -->
+					<li>(255, 0, 0, 255)</li>
+					<!-- purple -->
+					<li>(255, 0, 255, 255)</li>
+				</bladeColors>
+				<coreColors>
+				   <!-- White Core -->
+				   <li>(1.0, 1.0, 1.0, 1.0)</li>
+				</coreColors>
+				<defaultBladeLength1>0.9</defaultBladeLength1>
+				<hiltColorOne>(255, 255, 255, 255)</hiltColorOne>
+				<hiltColorTwo>(255, 255, 255, 255)</hiltColorTwo>
+				<preferredHilts>
+				   <li>Force_LightsaberHilt_KOTOR</li>
+				</preferredHilts>
+				<!-- <preferredHiltParts> -->
+				   <!-- <li>Force_AdeganCrystalHiltPart</li> -->
+				<!-- </preferredHiltParts> -->
+			</li>
+		</modExtensions>
 
 	</PawnKindDef>
 
@@ -355,6 +415,9 @@
 		<weaponTags>
 			<li>SE_assassin</li>
 			<li>SE_sithsaber_assassin</li>
+			<li>Force_LightsaberSingle</li>
+			<li>Force_Lightsaber_Curved</li>
+			<!-- <li>Force_LightsaberDual</li> -->
 		</weaponTags>
 		<biocodeWeaponChance>999</biocodeWeaponChance>
 		<techHediffsMoney>4000~6000</techHediffsMoney>
@@ -395,6 +458,29 @@
 				<!--Align body gender to pawn's gender (default: True)-->
 				<checkGender>True</checkGender>
 			</li>
+			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
+				<bladeColors>
+					<!-- red -->
+					<li>(255, 0, 0, 255)</li>
+					<!-- purple -->
+					<li>(255, 0, 255, 255)</li>
+				</bladeColors>
+				<coreColors>
+				   <!-- White Core -->
+				   <li>(1.0, 1.0, 1.0, 1.0)</li>
+				</coreColors>
+				<defaultBladeLength1>0.9</defaultBladeLength1>
+				<hiltColorOne>(255, 255, 255, 255)</hiltColorOne>
+				<hiltColorTwo>(255, 255, 255, 255)</hiltColorTwo>
+				<preferredHilts>
+				   <li>Force_LightsaberHilt_KOTOR</li>
+				   <li>Force_LightsaberHilt_KOTORCurved</li>
+				   <!-- <li>Force_LightsaberHilt_KOTORDual</li> -->
+				</preferredHilts>
+				<!-- <preferredHiltParts> -->
+				   <!-- <li>Force_AdeganCrystalHiltPart</li> -->
+				<!-- </preferredHiltParts> -->
+			</li>
 		</modExtensions>
 	</PawnKindDef>
 
@@ -434,6 +520,8 @@
 		<weaponMoney>99999</weaponMoney>
 		<weaponTags>
 			<li>SE_sithwarrior</li>
+			<li>Force_LightsaberSingle</li>
+			<li>Force_LightsaberCrossguard</li>
 		</weaponTags>
 		<biocodeWeaponChance>999</biocodeWeaponChance>
 		<techHediffsMoney>4000~6000</techHediffsMoney>
@@ -447,6 +535,31 @@
 
 		<initialWillRange>10~12</initialWillRange>
 		<initialResistanceRange>50~72</initialResistanceRange>
+		
+		<modExtensions>
+			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
+				<bladeColors>
+					<!-- red -->
+					<li>(255, 0, 0, 255)</li>
+				</bladeColors>
+				<coreColors>
+				   <!-- White Core -->
+				   <li>(1.0, 1.0, 1.0, 1.0)</li>
+				</coreColors>
+				<defaultBladeLength1>0.9</defaultBladeLength1>
+				<defaultBladeLength2>0.85</defaultBladeLength2>
+				<hiltColorOne>(255, 255, 255, 255)</hiltColorOne>
+				<hiltColorTwo>(255, 255, 255, 255)</hiltColorTwo>
+				<preferredHilts>
+				   <li>Force_LightsaberHilt_KOTOR</li>
+				   <li>Force_LightsaberHilt_KOTORCrossguard</li>
+				   <!-- <li>Force_LightsaberHilt_KOTORDual</li> -->
+				</preferredHilts>
+				<!-- <preferredHiltParts> -->
+				   <!-- <li>Force_AdeganCrystalHiltPart</li> -->
+				<!-- </preferredHiltParts> -->
+			</li>
+		</modExtensions>
 
 	</PawnKindDef>
 
@@ -496,6 +609,8 @@
 		<weaponMoney>99999</weaponMoney>
 		<weaponTags>
 			<li>SE_sithmarauder</li>
+			<li>Force_LightsaberDual</li>
+			<!-- <li>Force_LightsaberCrossguard</li> -->
 		</weaponTags>
 		<biocodeWeaponChance>999</biocodeWeaponChance>
 
@@ -514,6 +629,31 @@
 
 		<initialWillRange>10~12</initialWillRange>
 		<initialResistanceRange>50~72</initialResistanceRange>
+		
+		<modExtensions>
+			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
+				<bladeColors>
+					<!-- red -->
+					<li>(255, 0, 0, 255)</li>
+				</bladeColors>
+				<coreColors>
+				   <!-- White Core -->
+				   <li>(1.0, 1.0, 1.0, 1.0)</li>
+				</coreColors>
+				<!-- <defaultBladeLength1>0.9</defaultBladeLength1> -->
+				<defaultBladeLength1>1.05</defaultBladeLength1>
+				<defaultBladeLength2>1.05</defaultBladeLength2>
+				<hiltColorOne>(255, 255, 255, 255)</hiltColorOne>
+				<hiltColorTwo>(255, 255, 255, 255)</hiltColorTwo>
+				<preferredHilts>
+				   <!-- <li>Force_LightsaberHilt_KOTOR</li> -->
+				   <li>Force_LightsaberHilt_KOTORDual</li>
+				</preferredHilts>
+				<!-- <preferredHiltParts> -->
+				   <!-- <li>Force_AdeganCrystalHiltPart</li> -->
+				<!-- </preferredHiltParts> -->
+			</li>
+		</modExtensions>
 
 	</PawnKindDef>
 
@@ -542,6 +682,7 @@
 			<li>SWKotORSpecificApparelItem_ColorableSithMarauderNeck</li>
 			<li>SWKotORSpecificApparelItem_ColorableSithMarauderArmor</li>
 			<li>guy762PatchedTag_Cape</li>
+			<li>SWKotORSpecificGadgetItem_StrongEchaniEnergyShield</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>Apparel_Cape</li>
@@ -570,6 +711,9 @@
 		<weaponTags>
 			<li>SE_sithmarauder</li>
 			<li>SE_sithsaber_sorcerer</li>
+			<li>Force_Lightsaber_Curved</li>
+			<!-- <li>Force_LightsaberDual</li> -->
+			<li>Force_LightsaberCrossguard</li>
 		</weaponTags>
 		<biocodeWeaponChance>999</biocodeWeaponChance>
 
@@ -592,6 +736,33 @@
 
 		<initialWillRange>10~12</initialWillRange>
 		<initialResistanceRange>50~72</initialResistanceRange>
+		
+		<modExtensions>
+			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
+				<bladeColors>
+					<!-- red -->
+					<li>(255, 0, 0, 255)</li>
+					<!-- purple -->
+					<li>(255, 0, 255, 255)</li>
+				</bladeColors>
+				<coreColors>
+				   <!-- White Core -->
+				   <li>(1.0, 1.0, 1.0, 1.0)</li>
+				</coreColors>
+				<defaultBladeLength1>0.9</defaultBladeLength1>
+				<defaultBladeLength2>0.85</defaultBladeLength2>
+				<hiltColorOne>(255, 255, 255, 255)</hiltColorOne>
+				<hiltColorTwo>(255, 255, 255, 255)</hiltColorTwo>
+				<preferredHilts>
+				   <li>Force_LightsaberHilt_KOTORCrossguard</li>
+				   <!-- <li>Force_LightsaberHilt_KOTORDual</li> -->
+				   <li>Force_LightsaberHilt_KOTORCurved</li>
+				</preferredHilts>
+				<!-- <preferredHiltParts> -->
+				   <!-- <li>Force_AdeganCrystalHiltPart</li> -->
+				<!-- </preferredHiltParts> -->
+			</li>
+		</modExtensions>
 
 	</PawnKindDef>
 

@@ -3,124 +3,124 @@
 <Defs>
 	
 	
-	<PawnKindDef Name="KotORMercBase" Abstract="True">
-		<race>Human</race>
-		<defaultFactionType>guy762_KotORFaction_Civilians</defaultFactionType>
-		<minGenerationAge>18</minGenerationAge>
-		<maxGenerationAge>45</maxGenerationAge>
+	<!-- <PawnKindDef Name="SWCPMercBase" Abstract="True"> -->
+		<!-- <race>Human</race> -->
+		<!-- <defaultFactionType>guy762_KotORFaction_Civilians</defaultFactionType> -->
+		<!-- <minGenerationAge>18</minGenerationAge> -->
+		<!-- <maxGenerationAge>45</maxGenerationAge> -->
 		
-		<fleeHealthThresholdRange>0.5~0.6</fleeHealthThresholdRange>
+		<!-- <fleeHealthThresholdRange>0.5~0.6</fleeHealthThresholdRange> -->
 		
-		<chemicalAddictionChance>0.35</chemicalAddictionChance>
-		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
-		<invNutrition>1</invNutrition>
-		<invFoodDef>MealSurvivalPack</invFoodDef>
-		<biocodeWeaponChance>0.95</biocodeWeaponChance>
-		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
-		<!--apparelTags>
-		  <li>KotORHeadband_gasmask</li>
-		</apparelTags-->
+		<!-- <chemicalAddictionChance>0.35</chemicalAddictionChance> -->
+		<!-- <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality> -->
+		<!-- <invNutrition>1</invNutrition> -->
+		<!-- <invFoodDef>MealSurvivalPack</invFoodDef> -->
+		<!-- <biocodeWeaponChance>0.95</biocodeWeaponChance> -->
+		<!-- <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors> -->
+		<!-- <!--apparelTags> -->
+		  <!-- <li>KotORHeadband_gasmask</li> -->
+		<!-- </apparelTags> --> 
 		
-		<allowOldAgeInjuries>False</allowOldAgeInjuries>
-		<isFighter>true</isFighter>
-		<requiredWorkTags>
-		  <li>Violent</li>
-		  <li>Hauling</li>
-		</requiredWorkTags>
-		<disallowedTraits>
-		  <li>Nudist</li>
-		</disallowedTraits>
+		<!-- <allowOldAgeInjuries>False</allowOldAgeInjuries> -->
+		<!-- <isFighter>true</isFighter> -->
+		<!-- <requiredWorkTags> -->
+		  <!-- <li>Violent</li> -->
+		  <!-- <li>Hauling</li> -->
+		<!-- </requiredWorkTags> -->
+		<!-- <disallowedTraits> -->
+		  <!-- <li>Nudist</li> -->
+		<!-- </disallowedTraits> -->
 
-		<inventoryOptions>
-		  <skipChance>0.5</skipChance>
-		  <subOptionsTakeAll>
-			<li>
-			  <thingDef>KOTOR_Deathstick</thingDef>
-			  <countRange>2~3</countRange>
-			</li>
-		  </subOptionsTakeAll>
-		</inventoryOptions>
+		<!-- <inventoryOptions> -->
+		  <!-- <skipChance>0.5</skipChance> -->
+		  <!-- <subOptionsTakeAll> -->
+			<!-- <li> -->
+			  <!-- <thingDef>KOTOR_Deathstick</thingDef> -->
+			  <!-- <countRange>2~3</countRange> -->
+			<!-- </li> -->
+		  <!-- </subOptionsTakeAll> -->
+		<!-- </inventoryOptions> -->
 		
-		<xenotypeSet>
-		  <xenotypeChances>
-			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.20</Baseliner>
-			<guy762_xenotype_aqualish MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_aqualish>
-			<guy762_xenotype_bith MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_bith>
-			<guy762_xenotype_cathar MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_cathar>
-			<guy762_xenotype_devaronian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_devaronian>
-			<guy762_xenotype_duros MayRequire="guy762.StarWarsXenotypes">0.09</guy762_xenotype_duros>
-			<guy762_xenotype_falleen MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_falleen> <!--1.00 total-->
-			<guy762_xenotype_iridonian MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_iridonian>
-			<guy762_xenotype_klatoonian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_klatoonian>
-			<guy762_xenotype_nautolan MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_nautolan>
-			<guy762_xenotype_nikto MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_nikto>
-			<guy762_xenotype_pantoran MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_pantoran>
-			<guy762_xenotype_quarren MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_quarren>
-			<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_rodian>
-			<guy762_xenotype_snivvian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_snivvian>
-			<guy762_xenotype_sullustan MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_sullustan>
-			<guy762_xenotype_togruta MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_togruta>
-			<guy762_xenotype_trandoshan MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_trandoshan>
-			<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.14</guy762_xenotype_twilek>
-			<guy762_xenotype_weequay MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_weequay>
-			<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.07</guy762_xenotype_zabrak>
-			<guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_zeltron>
-		  </xenotypeChances>
-		</xenotypeSet>
+		<!-- <xenotypeSet> -->
+		  <!-- <xenotypeChances> -->
+			<!-- <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.20</Baseliner> -->
+			<!-- <guy762_xenotype_aqualish MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_aqualish> -->
+			<!-- <guy762_xenotype_bith MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_bith> -->
+			<!-- <guy762_xenotype_cathar MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_cathar> -->
+			<!-- <guy762_xenotype_devaronian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_devaronian> -->
+			<!-- <guy762_xenotype_duros MayRequire="guy762.StarWarsXenotypes">0.09</guy762_xenotype_duros> -->
+			<!-- <guy762_xenotype_falleen MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_falleen> <!--1.00 total--> -->
+			<!-- <guy762_xenotype_iridonian MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_iridonian> -->
+			<!-- <guy762_xenotype_klatoonian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_klatoonian> -->
+			<!-- <guy762_xenotype_nautolan MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_nautolan> -->
+			<!-- <guy762_xenotype_nikto MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_nikto> -->
+			<!-- <guy762_xenotype_pantoran MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_pantoran> -->
+			<!-- <guy762_xenotype_quarren MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_quarren> -->
+			<!-- <guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_rodian> -->
+			<!-- <guy762_xenotype_snivvian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_snivvian> -->
+			<!-- <guy762_xenotype_sullustan MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_sullustan> -->
+			<!-- <guy762_xenotype_togruta MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_togruta> -->
+			<!-- <guy762_xenotype_trandoshan MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_trandoshan> -->
+			<!-- <guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.14</guy762_xenotype_twilek> -->
+			<!-- <guy762_xenotype_weequay MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_weequay> -->
+			<!-- <guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.07</guy762_xenotype_zabrak> -->
+			<!-- <guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_zeltron> -->
+		  <!-- </xenotypeChances> -->
+		<!-- </xenotypeSet> -->
 		
-	</PawnKindDef>
+	<!-- </PawnKindDef> -->
   
   
 
 		<!-- thugs -->
 
 
-  <PawnKindDef Name="KotORMerc_thug" ParentName="KotORMercBase">
-    <defName>KotORMerc_thug</defName>
-	<label>thug</label>
-    <combatPower>35</combatPower>
-	<minGenerationAge>15</minGenerationAge>
-	<maxGenerationAge>25</maxGenerationAge>
-    <invNutrition>0</invNutrition>
+  <!-- <PawnKindDef Name="KotORMerc_thug" ParentName="SWCPMercBase"> -->
+    <!-- <defName>KotORMerc_thug</defName> -->
+	<!-- <label>thug</label> -->
+    <!-- <combatPower>35</combatPower> -->
+	<!-- <minGenerationAge>15</minGenerationAge> -->
+	<!-- <maxGenerationAge>25</maxGenerationAge> -->
+    <!-- <invNutrition>0</invNutrition> -->
 	
-    <gearHealthRange>0.2~0.6</gearHealthRange>
-    <itemQuality>Awful</itemQuality>
-    <apparelMoney>100~500</apparelMoney>
-    <apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
-    <apparelTags>
-	  <li>SaV_apparel_thug</li>
-	  <li>KotORAccessory_outlaw</li>
-	  <li>KotORHeadband_bandana</li>
-    </apparelTags>
-	<specificApparelRequirements>
-		<li>
-			<apparelLayer>OnSkin</apparelLayer>
-			<requiredTag>SaV_apparel_thug</requiredTag>
-		</li>
-	</specificApparelRequirements>
+    <!-- <gearHealthRange>0.2~0.6</gearHealthRange> -->
+    <!-- <itemQuality>Awful</itemQuality> -->
+    <!-- <apparelMoney>100~500</apparelMoney> -->
+    <!-- <apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance> -->
+    <!-- <apparelTags> -->
+	  <!-- <li>SaV_apparel_thug</li> -->
+	  <!-- <li>KotORAccessory_outlaw</li> -->
+	  <!-- <li>KotORHeadband_bandana</li> -->
+    <!-- </apparelTags> -->
+	<!-- <specificApparelRequirements> -->
+		<!-- <li> -->
+			<!-- <apparelLayer>OnSkin</apparelLayer> -->
+			<!-- <requiredTag>SaV_apparel_thug</requiredTag> -->
+		<!-- </li> -->
+	<!-- </specificApparelRequirements> -->
 	
-    <weaponMoney>200~2100</weaponMoney>
-	<biocodeWeaponChance>0</biocodeWeaponChance>
-    <weaponTags>
-	  <li>SaV_thug</li>
-    </weaponTags>
+    <!-- <weaponMoney>200~2100</weaponMoney> -->
+	<!-- <biocodeWeaponChance>0</biocodeWeaponChance> -->
+    <!-- <weaponTags> -->
+	  <!-- <li>SaV_thug</li> -->
+    <!-- </weaponTags> -->
 	
-    <techHediffsMoney>50~150</techHediffsMoney>
-    <techHediffsTags>
-      <li>Poor</li>
-    </techHediffsTags>
-    <techHediffsChance>0.15</techHediffsChance>
+    <!-- <techHediffsMoney>50~150</techHediffsMoney> -->
+    <!-- <techHediffsTags> -->
+      <!-- <li>Poor</li> -->
+    <!-- </techHediffsTags> -->
+    <!-- <techHediffsChance>0.15</techHediffsChance> -->
 	
-    <initialWillRange>0.2~1.6</initialWillRange>
-    <initialResistanceRange>3~7</initialResistanceRange>
-	<isFighter>true</isFighter>
-	<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-  </PawnKindDef>
+    <!-- <initialWillRange>0.2~1.6</initialWillRange> -->
+    <!-- <initialResistanceRange>3~7</initialResistanceRange> -->
+	<!-- <isFighter>true</isFighter> -->
+	<!-- <apparelIgnoreSeasons>false</apparelIgnoreSeasons> -->
+  <!-- </PawnKindDef> -->
   
 
 
 				
-  <PawnKindDef Name="KotORMerc_shooter" ParentName="KotORMercBase">
+  <PawnKindDef Name="KotORMerc_shooter" ParentName="SWCPMercBase">
     <defName>KotORMerc_shooter</defName>
 	<label>thug shooter</label>
     <combatPower>50</combatPower>
@@ -186,7 +186,7 @@
 
 
 
-  <PawnKindDef Name="KotORMerc_brawler" ParentName="KotORMercBase">
+  <PawnKindDef Name="KotORMerc_brawler" ParentName="SWCPMercBase">
     <defName>KotORMerc_brawler</defName>
 	<label>thug brawler</label>
     <combatPower>50</combatPower>
@@ -281,7 +281,7 @@
 			
 			
 
-  <PawnKindDef Name="KotORMerc_merc" ParentName="KotORMercBase">
+  <PawnKindDef Name="KotORMerc_merc" ParentName="SWCPMercBase">
     <defName>KotORMerc_merc</defName>
 	<label>mercenary</label>
     <combatPower>75</combatPower>
@@ -367,7 +367,7 @@
   
 
   
-  <PawnKindDef Name="KotORMerc_sniper" ParentName="KotORMercBase">
+  <PawnKindDef Name="KotORMerc_sniper" ParentName="SWCPMercBase">
     <defName>KotORMerc_sniper</defName>
 	<label>mercenary sharpshooter</label>
     <combatPower>75</combatPower>
@@ -455,7 +455,7 @@
   
   
   
-  <PawnKindDef Name="KotORMerc_demo" ParentName="KotORMercBase">
+  <PawnKindDef Name="KotORMerc_demo" ParentName="SWCPMercBase">
     <defName>KotORMerc_demo</defName>
 	<label>mercenary demolisher</label>
     <combatPower>150</combatPower>
@@ -577,7 +577,7 @@
 			
 			
 			
-  <PawnKindDef Name="KotORMerc_warrior" ParentName="KotORMercBase">
+  <PawnKindDef Name="KotORMerc_warrior" ParentName="SWCPMercBase">
     <defName>KotORMerc_warrior</defName>
 	<label>mercenary slasher</label>
     <combatPower>100</combatPower>
@@ -672,7 +672,7 @@
 
             <!--commando-->
 			
-  <PawnKindDef Name="KotORMerc_commando" ParentName="KotORMercBase">
+  <PawnKindDef Name="KotORMerc_commando" ParentName="SWCPMercBase">
     <defName>KotORMerc_commando</defName>
 	<label>mercenary commando</label>
     <combatPower>100</combatPower>
@@ -778,7 +778,7 @@
   
   
   
-  <PawnKindDef Name="KotORMerc_heavy" ParentName="KotORMercBase">
+  <PawnKindDef Name="KotORMerc_heavy" ParentName="SWCPMercBase">
     <defName>KotORMerc_heavy</defName>
 	<label>mercenary heavy</label>
     <canBeSapper>true</canBeSapper>
@@ -900,7 +900,7 @@
   </PawnKindDef>
   
   
-  <PawnKindDef Name="KotORMerc_sapper" ParentName="KotORMercBase">
+  <PawnKindDef Name="KotORMerc_sapper" ParentName="SWCPMercBase">
     <defName>KotORMerc_sapper</defName>
 	<label>mercenary saboteur</label>
     <combatPower>100</combatPower>
@@ -915,6 +915,7 @@
 	  <li>KotOREquipment_adv</li>
 	  <li>SaV_jetpack</li>
 	  <li>SWKotORSpecificApparelItem_BronziumLightBattleArmor</li>
+	  <li>SWCPSpecificGadgetItem_SonicGrenadeBelt</li>
     </apparelTags>
 	<apparelRequired>
 		<li>guy762_LgtBattleArmor_bronzium</li>
@@ -1020,7 +1021,7 @@
 			
 			
 			
-	<PawnKindDef Name="KotORMerc_lieutenant" ParentName="KotORMercBase">
+	<PawnKindDef Name="KotORMerc_lieutenant" ParentName="SWCPMercBase">
 		<defName>KotORMerc_lieutenant</defName>
 		<label>mercenary lieutenant</label>
 		<combatPower>75</combatPower>
@@ -1113,7 +1114,7 @@
   
   
 			
-  <PawnKindDef Name="KotORMerc_elite" ParentName="KotORMercBase">
+  <PawnKindDef Name="KotORMerc_elite" ParentName="SWCPMercBase">
     <defName>KotORMerc_elite</defName>
 	<label>mercenary elite</label>
     <combatPower>150</combatPower>
@@ -1207,7 +1208,7 @@
   </PawnKindDef>
   
   
-  <PawnKindDef Name="KotORMerc_gangboss" ParentName="KotORMercBase">
+  <PawnKindDef Name="KotORMerc_gangboss" ParentName="SWCPMercBase">
     <defName>KotORMerc_gangboss</defName>
 	<label>underworld boss</label>
 	<factionLeader>true</factionLeader>

@@ -24,6 +24,7 @@
 		<apparelTags>
 		  <li>KotORHeroAccessories_bastila</li>
 		  <li>KotORHeadband_neuralband</li>
+		  <li>SWKotORSpecificApparelItem_BastilaTunic</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>guy762_BastilaTunic</li>
@@ -31,6 +32,7 @@
 		<weaponMoney>99999999</weaponMoney>
 		<weaponTags>
 		  <li>OR_bastila</li>
+		  <li>Force_LightsaberDual</li>
 		</weaponTags>
 		<skills>
 			<li>
@@ -97,6 +99,26 @@
 			<li>Female_NarrowNormal</li>
 		  </priority>
 		  <checkGender>False</checkGender>
+		</li>
+		<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
+			<bladeColors>
+				<!-- KotOR soft yellow -->
+				<li>(255, 196, 0, 255)</li>
+			</bladeColors>
+			<coreColors>
+			   <!-- White Core -->
+			   <li>(1.0, 1.0, 1.0, 1.0)</li>
+			</coreColors>
+			<defaultBladeLength1>1.05</defaultBladeLength1>
+			<defaultBladeLength2>1.1</defaultBladeLength2> <!-- blades are unevenly spaced on this hilt -->
+			<hiltColorOne>(255, 255, 255, 255)</hiltColorOne>
+			<hiltColorTwo>(255, 255, 255, 255)</hiltColorTwo>
+			<preferredHilts>
+			   <li>Force_LightsaberHilt_Bastila_Shan</li>
+			</preferredHilts>
+			<preferredHiltParts>
+			   <li>guy762_SWForceLightsabers_CrystalPart_yellow</li>
+			</preferredHiltParts>
 		</li>
       </modExtensions>
 	  </PawnKindDef>

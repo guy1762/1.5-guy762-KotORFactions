@@ -32,7 +32,7 @@
 	<!--<naturalEnemy>true</naturalEnemy>-->
 	<settlementGenerationWeight>0</settlementGenerationWeight>
 	<modExtensions Inherit="False">
-      <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Currencies.CurrencyReplacement">
+      <li Class="SWCP.Currencies.CurrencyReplacement">
 		<currency>guy762_KotORcredits</currency>
 	  </li>
 	  <li Class="VEF.Factions.FactionDefExtension">
@@ -229,7 +229,7 @@
 			<li>ImmediateAttackBreachingSmart</li>
 		</disallowedStrategies>
         <options>
-          <KotORMerc_thug>100</KotORMerc_thug>
+          <SWCPCivilian_thug>100</SWCPCivilian_thug>
 		  <KotORMerc_shooter>50</KotORMerc_shooter>
           <KotORMerc_brawler>50</KotORMerc_brawler>
         </options>
@@ -358,7 +358,7 @@
 		<commonality>1</commonality>
 		<options>
 		  <!-- civilians -->
-		  <KotORCiv_SlaveEntertainer>20</KotORCiv_SlaveEntertainer>
+		  <SWCPCivilian_SlaveEntertainer>20</SWCPCivilian_SlaveEntertainer>
 		  
 		  <!-- factional -->
 		  

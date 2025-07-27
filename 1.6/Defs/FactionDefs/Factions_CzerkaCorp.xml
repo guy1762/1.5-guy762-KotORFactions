@@ -38,7 +38,7 @@
 	
 	<settlementGenerationWeight>5</settlementGenerationWeight>
 	<modExtensions Inherit="False">
-      <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Currencies.CurrencyReplacement">
+      <li Class="SWCP.Currencies.CurrencyReplacement">
 		<currency>guy762_KotORcredits</currency>
 	  </li>
 	  <li Class="VEF.Factions.FactionDefExtension">
@@ -274,9 +274,9 @@
 		<kindDef>Settlement</kindDef> <!-- retailer -->
 		<commonality>0.5</commonality>
 		<options>
-		  <KotORCiv_mid>10</KotORCiv_mid>
-		  <KotORCiv_bougie>5</KotORCiv_bougie>
-		  <KotORCiv_exotictraveler>1</KotORCiv_exotictraveler>
+		  <SWCPCivilian_mid>10</SWCPCivilian_mid>
+		  <SWCPCivilian_bougie>5</SWCPCivilian_bougie>
+		  <SWCPCivilian_exotictraveler>1</SWCPCivilian_exotictraveler>
 		  
 		  <KotORCzrka_slave>1</KotORCzrka_slave>
 		  

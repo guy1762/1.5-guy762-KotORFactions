@@ -23,6 +23,9 @@
 		<apparelMoney>29999</apparelMoney>
 		<apparelTags>
 		  <li>KotORHeroAccessories_handmaiden</li>
+		  <li>SWKotORSpecificApparelItem_FormalJediTunic</li>
+		  <li>SWCPSpecificApparelItem_SimpleCloak</li>
+		  <li>SWKotORSpecificGadgetItem_StrongEchaniEnergyShield</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>guy762_JediHood_light</li>
@@ -52,6 +55,7 @@
 		<weaponMoney>99999999</weaponMoney>
 		<weaponTags>
 		  <li>OR_handmaiden</li>
+		  <li>Force_LightsaberDual</li>
 		</weaponTags>
 		<techHediffsRequired>
 		  <li>guy762_ImplantDock_I</li>
@@ -147,6 +151,26 @@
 			  </priority>
 			  <!--Align body gender to pawn's gender (default: True)-->
 			  <checkGender>False</checkGender>
+			</li>
+			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
+				<bladeColors>
+					<!-- KotOR blue -->
+					<li>(0, 64, 255, 255)</li>
+				</bladeColors>
+				<coreColors>
+				   <!-- White Core -->
+				   <li>(1.0, 1.0, 1.0, 1.0)</li>
+				</coreColors>
+				<defaultBladeLength1>1.05</defaultBladeLength1>
+				<defaultBladeLength2>1.05</defaultBladeLength2>
+				<hiltColorOne>(255, 255, 255, 255)</hiltColorOne>
+				<hiltColorTwo>(255, 255, 255, 255)</hiltColorTwo>
+				<preferredHilts>
+				   <li>Force_LightsaberHilt_KOTORDual</li>
+				</preferredHilts>
+				<preferredHiltParts>
+				   <li>guy762_SWForceLightsabers_CrystalPart_blue</li>
+				</preferredHiltParts>
 			</li>
       </modExtensions>
 	</PawnKindDef>

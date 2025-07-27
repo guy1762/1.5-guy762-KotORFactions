@@ -423,6 +423,7 @@
 		  <li>KotORHeadband_gasmask</li>
 		  <li>SWCPSpecificApparelItem_GamorreanHood</li>
 		  <li>SWKotORSpecificApparelItem_KrathLightBattleArmor</li>
+		  <li>SWCPSpecificGadgetItem_SonicGrenadeBelt</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_Hat_gamorrean</li>
@@ -502,6 +503,7 @@
 		  <li>guy762PatchedTag_Sash</li>
 		  <li>SWCPSpecificApparelItem_KotORSithUniformHat</li>
 		  <li>SWKotORSpecificApparelItem_SithOfficerUniform</li>
+		  <li>SWKotORSpecificGadgetItem_SithEnergyShield</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_UniformCap</li>

@@ -21,6 +21,8 @@
 		<apparelMoney>49999</apparelMoney>
 		<apparelTags>
 		  <li>KotORHeroAccessories_zaalbar</li>
+		  <li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+		  <li>SWCPSpecificApparelItem_KotORBigBackpack</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>guy762_Accessory_suspendersA</li>

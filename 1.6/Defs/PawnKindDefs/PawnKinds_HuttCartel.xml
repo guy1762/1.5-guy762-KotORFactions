@@ -68,34 +68,8 @@
 	  
 	  
 	  
-	  <PawnKindDef Name="KotORHutts_SlaveBase_AlienList" ParentName="KotORCzrka_SlaveBase" Abstract="True">
+	  <PawnKindDef Name="KotORHutts_SlaveBase_AlienList" ParentName="SWCPCivilian_SlaveBase_AlienList" Abstract="True">
 		<defaultFactionType>guy762_KotORFaction_HuttCartel</defaultFactionType>
-		<xenotypeSet>
-		  <xenotypeChances>
-			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.05</Baseliner>
-			<guy762_xenotype_aqualish MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_aqualish>
-			<guy762_xenotype_bith MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_bith>
-			<guy762_xenotype_cathar MayRequire="guy762.StarWarsXenotypes">0.08</guy762_xenotype_cathar>
-			<guy762_xenotype_chadrafan MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_chadrafan>
-			<guy762_xenotype_devaronian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_devaronian>
-			<guy762_xenotype_duros MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_duros>
-			<guy762_xenotype_klatoonian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_klatoonian> <!--1.00-->
-			<guy762_xenotype_kubaz MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_kubaz>
-			<guy762_xenotype_mimbanese MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_mimbanese>
-			<guy762_xenotype_nautolan MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_nautolan>
-			<guy762_xenotype_nikto MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_nikto>
-			<guy762_xenotype_quarren MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_quarren>
-			<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_rodian>
-			<guy762_xenotype_snivvian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_snivvian>
-			<guy762_xenotype_sullustan MayRequire="guy762.StarWarsXenotypes">0.08</guy762_xenotype_sullustan>
-			<guy762_xenotype_togruta MayRequire="guy762.StarWarsXenotypes">0.12</guy762_xenotype_togruta>
-			<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.15</guy762_xenotype_twilek>
-			<guy762_xenotype_weequay MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_weequay>
-			<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_zabrak>
-			<guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_zeltron>
-		  </xenotypeChances>
-		</xenotypeSet>
-		<useFactionXenotypes>false</useFactionXenotypes>
 	  </PawnKindDef>
 	
 	
@@ -299,6 +273,7 @@
 		  <li>KotORDroidArmorT1_gladiator</li>
 		  <li>KotORDroidUpgrade_combat</li>
 		  <li>SaV_DroidShield_gladiator</li>
+		  <li>SWCPSpecificDroidArmor_ImpactLight</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>guy762_DroidArmorLte_impact</li>
@@ -579,41 +554,9 @@
 	
 	
 	
-	<PawnKindDef Name="KotORHutts_slave" ParentName="KotORHutts_SlaveBase_AlienList">
+	<PawnKindDef Name="KotORHutts_slave" ParentName="SWCPCivilian_slavelaborer">
 		<defName>KotORHutts_slave</defName>
-		<label>slave</label>
-		<combatPower>20</combatPower>
-		<itemQuality>Awful</itemQuality>
-		<gearHealthRange>0.2~0.8</gearHealthRange>
-		<apparelMoney>0~0</apparelMoney>
-		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-		<apparelTags>
-			<li>czkera_slave</li>
-			<li>SWCPSpecificApparelItem_RusticClothing</li>
-		</apparelTags>
-		<apparelRequired>
-		   <li>Apparel_BodyStrap</li>	
-		   <li>Apparel_Collar</li>
-		   <li>guy762_Clothing_scumII</li>
-		</apparelRequired>
-		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
-		<specificApparelRequirements>
-			<li>
-				<apparelLayer>Shell</apparelLayer>
-				<stuff>Leather_Plain</stuff>
-			</li>
-			<li>
-				<apparelLayer>Overhead</apparelLayer>
-				<stuff>Steel</stuff>
-			</li>
-		</specificApparelRequirements>
-		<requiredWorkTags>
-		   <li>Firefighting</li>
-		   <li>ManualDumb</li>
-		   <li>Mining</li>
-		   <li>Hauling</li>
-		   <li>PlantWork</li>
-		</requiredWorkTags>
+		<defaultFactionType>guy762_KotORFaction_HuttCartel</defaultFactionType>
 	  </PawnKindDef>
 	
 	
@@ -653,7 +596,7 @@
 		</modExtensions>
 	  </PawnKindDef>
 	  
-	  <PawnKindDef Name="KotORHutts_SlaveEntertainer" ParentName="KotORCiv_SlaveEntertainer">
+	  <PawnKindDef Name="KotORHutts_SlaveEntertainer" ParentName="SWCPCivilian_SlaveEntertainer">
 		<defName>KotORHutts_SlaveEntertainer</defName>
 		<defaultFactionType>guy762_KotORFaction_HuttCartel</defaultFactionType>
 		<!--fixedGender>Female</fixedGender-->
@@ -667,7 +610,7 @@
 		<skinColorOverride>(220,175,80)</skinColorOverride>
 	  </PawnKindDef>
 	  
-	  <PawnKindDef Name="KotORHutts_smuggler" ParentName="KotORCiv_smuggler">
+	  <PawnKindDef Name="KotORHutts_smuggler" ParentName="SWCPCivilian_smuggler">
 		<defName>KotORHutts_smuggler</defName>
 		<defaultFactionType>guy762_KotORFaction_HuttCartel</defaultFactionType>
 		<trader>true</trader>

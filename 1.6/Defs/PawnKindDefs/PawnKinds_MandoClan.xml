@@ -557,6 +557,7 @@
 			<li>KotOREquipment_adv</li>
 			<li>MNC_jetpack_light</li>
 			<li>SWKotORSpecificApparelItem_MandoReconArmor</li>
+			<li>SWCPSpecificGadgetItem_SonicGrenadeBelt</li>
 		</apparelTags>
 		<apparelRequired Inherit="False">
 			<li>guy762_MidBattleArmor_mando</li>
@@ -697,6 +698,7 @@
 			<li>SWKotORSpecificApparelItem_MandoSupercommandoHelmet</li>
 			<li>SWKotORSpecificApparelItem_MandoSupercommandoArmor</li>
 			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
+			<li>SWKotORSpecificGadgetItem_StrongMandoMeleeShield</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_MandoHelmet_supercom</li>
@@ -936,6 +938,7 @@
 			<li>SWKotORSpecificApparelItem_MandoSupercommandoArmor</li>
 			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
 			<li>guy762PatchedTag_Cape</li>
+			<li>SWKotORSpecificGadgetItem_StrongMandoMeleeShield</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_MandoHelmet_supercom</li>

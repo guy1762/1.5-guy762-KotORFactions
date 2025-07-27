@@ -284,6 +284,7 @@
 			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
 			<li>SWKotORSpecificApparelItem_SithOfficerHat</li>
 			<li>SWKotORSpecificApparelItem_SithOfficerUniform</li>
+			<li>SWKotORSpecificGadgetItem_SithEnergyShield</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_SithHat_officer</li>
@@ -425,6 +426,7 @@
 			<li>KotOREquipment_officer</li>
 			<li>SWKotORSpecificApparelItem_SithOfficerHat</li>
 			<li>SWKotORSpecificApparelItem_SithOfficerUniform</li>
+			<li>SWKotORSpecificGadgetItem_SithEnergyShield</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_SithHat_officer</li>
@@ -1074,6 +1076,7 @@
 			<li>SWCPSpecificApparelItem_KotORSmallBackpack</li>
 			<li>SWKotORSpecificApparelItem_SilverSithCommandoArmor</li>
 			<li>SWKotORSpecificApparelItem_SilverSithCommandoHelmet</li>
+			<li>SWKotORSpecificGadgetItem_SithEnergyShield</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_Backpack_light</li>
@@ -1182,6 +1185,7 @@
 			<li>SWCPSpecificApparelItem_KotORSmallBackpack</li>
 			<li>SWKotORSpecificApparelItem_ColorableSithCommandoHelmet</li>
 			<li>SWKotORSpecificApparelItem_ColorableSithCommandoArmor</li>
+			<li>SWKotORSpecificGadgetItem_StrongEchaniEnergyShield</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_Backpack_light</li>

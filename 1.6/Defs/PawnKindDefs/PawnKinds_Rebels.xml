@@ -401,6 +401,7 @@
 		  <li>KotORShield_basic</li>
 		  <li>SWKotORSpecificApparelItem_MatteSithTrooperArmor</li>
 		  <li>SWCPSpecificApparelItem_RusticClothing</li>
+		  <li>SWCPSpecificGadgetItem_SonicGrenadeBelt</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>guy762_SithArmor_remtrooper</li>
@@ -742,7 +743,7 @@
 		
 			<!-- civilians -->
 	  
-	  <PawnKindDef Name="KotORRebel_civrural" ParentName="KotORCiv_villager">
+	  <PawnKindDef Name="KotORRebel_civrural" ParentName="SWCPCivilian_villager">
 		<defName>KotORRebel_civrural</defName>
 		<label>civilian</label>
 		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
@@ -754,7 +755,7 @@
 		<weaponMoney>60~120</weaponMoney>
 	  </PawnKindDef>
 	  
-	  <PawnKindDef Name="KotORRebel_civprole" ParentName="KotORCiv_prole">
+	  <PawnKindDef Name="KotORRebel_civprole" ParentName="SWCPCivilian_prole">
 		<defName>KotORRebel_civprole</defName>
 		<label>civilian</label>
 		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
@@ -766,17 +767,17 @@
 		<weaponMoney>60~120</weaponMoney>
 	  </PawnKindDef>
 	  
-	  <!--<PawnKindDef Name="KotORRebel_shadydealer" ParentName="KotORCiv_shadydealer">
+	  <!--<PawnKindDef Name="KotORRebel_shadydealer" ParentName="SWCPCivilian_shadydealer">
 		<defName>KotORRebel_shadydealer</defName>
 		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
 	  </PawnKindDef>
 	  
-	  <PawnKindDef Name="KotORRebel_smuggler" ParentName="KotORCiv_smuggler">
+	  <PawnKindDef Name="KotORRebel_smuggler" ParentName="SWCPCivilian_smuggler">
 		<defName>KotORRebel_smuggler</defName>
 		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
 	  </PawnKindDef>
 	  
-	  <PawnKindDef Name="KotORRebel_spacer" ParentName="KotORCiv_spacer">
+	  <PawnKindDef Name="KotORRebel_spacer" ParentName="SWCPCivilian_spacer">
 		<defName>KotORRebel_spacer</defName>
 		<label>contracted spacer</label>
 		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
@@ -788,22 +789,22 @@
 	  
 		work camp types
 	
-	<PawnKindDef Name="KotORRebel_civhunter" ParentName="KotORCiv_hunter">
+	<PawnKindDef Name="KotORRebel_civhunter" ParentName="SWCPCivilian_hunter">
 		<defName>KotORRebel_civhunter</defName>
 		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="KotORRebel_civlogger" ParentName="KotORCiv_logger">
+	<PawnKindDef Name="KotORRebel_civlogger" ParentName="SWCPCivilian_logger">
 		<defName>KotORRebel_civlogger</defName>
 		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="KotORRebel_civfarmer" ParentName="KotORCiv_farmer">
+	<PawnKindDef Name="KotORRebel_civfarmer" ParentName="SWCPCivilian_farmer">
 		<defName>KotORRebel_civfarmer</defName>
 		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="KotORRebel_civminer" ParentName="KotORCiv_miner">
+	<PawnKindDef Name="KotORRebel_civminer" ParentName="SWCPCivilian_miner">
 		<defName>KotORRebel_civminer</defName>
 		<defaultFactionType>guy762_KotORFaction_Rebellion</defaultFactionType>
 	</PawnKindDef>

@@ -32,7 +32,7 @@
 		
 		<settlementGenerationWeight>10</settlementGenerationWeight>
 		<modExtensions Inherit="False">
-		  <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Currencies.CurrencyReplacement">
+		  <li Class="SWCP.Currencies.CurrencyReplacement">
 			<currency>Silver</currency>
 		  </li>
 		  <li Class="VEF.Factions.FactionDefExtension">
@@ -264,7 +264,7 @@
 			<kindDef>Peaceful</kindDef>
 			<options>
 			  <KotORRebel_civrural>10</KotORRebel_civrural>
-			  <KotORCiv_hooded>1</KotORCiv_hooded>
+			  <SWCPCivilian_hooded>1</SWCPCivilian_hooded>
 			  <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">2.5</Villager_Child>
 			  
 			  <KotORRebel_trooper>10</KotORRebel_trooper>
@@ -275,7 +275,7 @@
 		  <li>
 			<kindDef>Trader</kindDef>
 			<traders>
-			  <KotORCiv_wanderingtrader>2.5</KotORCiv_wanderingtrader>
+			  <SWCPCivilian_wanderingtrader>2.5</SWCPCivilian_wanderingtrader>
 			  <KotORMlita_droid_GE3PD MayRequire="guy762.KotORDroids">1</KotORMlita_droid_GE3PD>
 			</traders>
 			<carriers>
@@ -292,7 +292,7 @@
 			</carriers>
 			<guards>
 			  <KotORRebel_civrural>10</KotORRebel_civrural>
-			  <KotORCiv_hooded>1</KotORCiv_hooded>
+			  <SWCPCivilian_hooded>1</SWCPCivilian_hooded>
 
 			  <KotORRebel_trooper>10</KotORRebel_trooper>
 			  <KotORRebel_wookieeranged>5</KotORRebel_wookieeranged>
@@ -310,8 +310,8 @@
 			  <!-- civilians -->
 			  <KotORRebel_civrural>25</KotORRebel_civrural>
 			  
-			  <KotORCiv_hooded>5</KotORCiv_hooded>
-			  <KotORCiv_poortraveler>1</KotORCiv_poortraveler>
+			  <SWCPCivilian_hooded>5</SWCPCivilian_hooded>
+			  <SWCPCivilian_poortraveler>1</SWCPCivilian_poortraveler>
 			  
 			  <KotORMlita_ugnaught>0.5</KotORMlita_ugnaught>
 			  
@@ -340,9 +340,9 @@
 			  <!-- civilians -->
 			  <KotORRebel_civprole>25</KotORRebel_civprole>
 			  
-			  <KotORCiv_hooded>2.5</KotORCiv_hooded>
-			  <KotORCiv_poortraveler>2.5</KotORCiv_poortraveler>
-			  <KotORCiv_exotictraveler>1</KotORCiv_exotictraveler>
+			  <SWCPCivilian_hooded>2.5</SWCPCivilian_hooded>
+			  <SWCPCivilian_poortraveler>2.5</SWCPCivilian_poortraveler>
+			  <SWCPCivilian_exotictraveler>1</SWCPCivilian_exotictraveler>
 			  
 			  <KotORMlita_spacer>2.5</KotORMlita_spacer>
 			  <KotORMlita_ugnaught>2.5</KotORMlita_ugnaught>
@@ -378,7 +378,7 @@
 			<kindDef>Loggers</kindDef>
 			<commonality>1</commonality>
 			<options>
-			  <KotORCiv_logger>2</KotORCiv_logger>
+			  <SWCPCivilian_logger>2</SWCPCivilian_logger>
 			  <KotORDroidGood_GE3LD MayRequire="guy762.KotORDroids">0.5</KotORDroidGood_GE3LD>
 			</options>
 		  </li>
@@ -386,7 +386,7 @@
 			<kindDef>Farmers</kindDef>
 			<commonality>1</commonality>
 			<options>
-			  <KotORCiv_farmer>2</KotORCiv_farmer>
+			  <SWCPCivilian_farmer>2</SWCPCivilian_farmer>
 			  <KotORDroidGood_GE3LD MayRequire="guy762.KotORDroids">0.5</KotORDroidGood_GE3LD>
 			</options>
 		  </li>
@@ -394,7 +394,7 @@
 			<kindDef>Miners</kindDef>
 			<commonality>1</commonality>
 			<options>
-			  <KotORCiv_miner>2</KotORCiv_miner>
+			  <SWCPCivilian_miner>2</SWCPCivilian_miner>
 			  <KotORDroidBad_KM1MD MayRequire="guy762.KotORDroids">1</KotORDroidBad_KM1MD>
 			</options>
 		  </li>
@@ -402,7 +402,7 @@
 			<kindDef>Hunters</kindDef>
 			<commonality>1</commonality>
 			<options>
-			  <KotORCiv_hunter>10</KotORCiv_hunter>
+			  <SWCPCivilian_hunter>10</SWCPCivilian_hunter>
 			  <KotORRebel_sniper>10</KotORRebel_sniper>
 			</options>
 		  </li>

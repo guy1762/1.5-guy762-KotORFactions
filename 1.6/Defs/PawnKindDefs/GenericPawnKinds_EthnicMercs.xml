@@ -5,7 +5,7 @@
 	
 		<!--trandoshans-->
 		
-	<PawnKindDef Name="KotORMerc_trandoslaver" ParentName="KotORMercBase">
+	<PawnKindDef Name="KotORMerc_trandoslaver" ParentName="SWCPMercBase">
 		<defName>KotORMerc_trandoslaver</defName>
 		<label>Trandoshan slaver</label>
 		<combatPower>80</combatPower>
@@ -121,7 +121,7 @@
 	</PawnKindDef>
 	
 	
-	<PawnKindDef Name="KotORMerc_trando" ParentName="KotORMercBase">
+	<PawnKindDef Name="KotORMerc_trando" ParentName="SWCPMercBase">
 		<defName>KotORMerc_trando</defName>
 		<label>Trandoshan merc</label>
 		<combatPower>150</combatPower>
@@ -242,7 +242,7 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="KotORMerc_trandoham" ParentName="KotORMercBase">
+	<PawnKindDef Name="KotORMerc_trandoham" ParentName="SWCPMercBase">
 		<defName>KotORMerc_trandoham</defName>
 		<label>Trandoshan heavy assault merc</label>
 		<combatPower>225</combatPower>
@@ -359,7 +359,7 @@
 	
 	
 	
-	<PawnKindDef Name="KotORMerc_trandoveteran" ParentName="KotORMercBase">
+	<PawnKindDef Name="KotORMerc_trandoveteran" ParentName="SWCPMercBase">
 		<defName>KotORMerc_trandoveteran</defName>
 		<label>Trandoshan veteran</label>
 		<combatPower>200</combatPower>
@@ -493,7 +493,7 @@
 		<!--mandalorians-->
 
 	
-	<PawnKindDef Name="KotORMerc_mando" ParentName="KotORMercBase">
+	<PawnKindDef Name="KotORMerc_mando" ParentName="SWCPMercBase">
 		<defName>KotORMerc_mando</defName>
 		<label>Mandalorian mercenary</label>
 		<combatPower>150</combatPower>
@@ -599,7 +599,7 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="KotORMerc_mandoboss" ParentName="KotORMercBase">
+	<PawnKindDef Name="KotORMerc_mandoboss" ParentName="SWCPMercBase">
 		<defName>KotORMerc_mandoboss</defName>
 		<label>Mandalorian merc boss</label>
 		<combatPower>200</combatPower>
@@ -739,7 +739,7 @@
 			<!--wookiees-->
 
 
-	<PawnKindDef Name="KotORMerc_wookieeranged" ParentName="KotORMercBase">
+	<PawnKindDef Name="KotORMerc_wookieeranged" ParentName="SWCPMercBase">
 		<defName>KotORMerc_wookieeranged</defName>
 		<label>Wookiee scoundrel</label>
 		<combatPower>150</combatPower>
@@ -836,7 +836,7 @@
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="KotORMerc_wookieemelee" ParentName="KotORMercBase">
+	<PawnKindDef Name="KotORMerc_wookieemelee" ParentName="SWCPMercBase">
 		<defName>KotORMerc_wookieemelee</defName>
 		<label>Wookiee marauder</label>
 		<combatPower>150</combatPower>
@@ -926,7 +926,7 @@
 	<!-- gand -->
 	
 	
-	<PawnKindDef Name="KotORMerc_gandmelee" ParentName="KotORMercBase">
+	<PawnKindDef Name="KotORMerc_gandmelee" ParentName="SWCPMercBase">
 		<defName>KotORMerc_gandmelee</defName>
 		<label>Gand Findsman</label>
 		<labelFemale>Gand Findswoman</labelFemale>
@@ -991,7 +991,7 @@
 		</disallowedTraits>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="KotORMerc_gandranged" ParentName="KotORMercBase">
+	<PawnKindDef Name="KotORMerc_gandranged" ParentName="SWCPMercBase">
 		<defName>KotORMerc_gandranged</defName>
 		<label>Gand Findsman</label>
 		<labelFemale>Gand Findswoman</labelFemale>
@@ -1062,7 +1062,7 @@
 	<!--echani-->
 
 
-	<PawnKindDef Name="KotORMerc_echanilight" ParentName="KotORMercBase">
+	<PawnKindDef Name="KotORMerc_echanilight" ParentName="SWCPMercBase">
 		<defName>KotORMerc_echanilight</defName>
 		<label>Echani warrior</label>
 		<combatPower>100</combatPower>
@@ -1137,7 +1137,7 @@
 		</disallowedTraits>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="KotORMerc_echanimid" ParentName="KotORMercBase">
+	<PawnKindDef Name="KotORMerc_echanimid" ParentName="SWCPMercBase">
 		<defName>KotORMerc_echanimid</defName>
 		<label>Echani sentinel</label>
 		<combatPower>150</combatPower>
@@ -1213,7 +1213,7 @@
 		</disallowedTraits>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="KotORMerc_echaniheavy" ParentName="KotORMercBase">
+	<PawnKindDef Name="KotORMerc_echaniheavy" ParentName="SWCPMercBase">
 		<defName>KotORMerc_echaniheavy</defName>
 		<label>Echani bodyguard</label>
 		<combatPower>250</combatPower>
@@ -1297,7 +1297,7 @@
 	  
 	  
 	  
-	  <PawnKindDef Name="KotORMerc_bothan" ParentName="KotORMercBase">
+	  <PawnKindDef Name="KotORMerc_bothan" ParentName="SWCPMercBase">
 		<defName>KotORMerc_bothan</defName>
 		<label>Bothan spy</label>
 		<combatPower>100</combatPower>
@@ -1322,6 +1322,7 @@
 		  <li>SWCPSpecificApparelItem_KotORSmallBackpack</li>
 		  <li>SWKotORSpecificApparelItem_BaragwinHeavyCombatSuit</li>
 		  <li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
+		  <li>SWKotORSpecificGadgetItem_BothanGoggles</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelRequired>
@@ -1438,7 +1439,7 @@
 		<!-- unknown regions-->	  
 	  
 	  
-	  <PawnKindDef Name="KotORMerc_kaleeshmelee" ParentName="KotORMercBase">
+	  <PawnKindDef Name="KotORMerc_kaleeshmelee" ParentName="SWCPMercBase">
 		<defName>KotORMerc_kaleeshmelee</defName>
 		<label>Kaleesh slasher</label>
 		<combatPower>200</combatPower>
@@ -1550,7 +1551,7 @@
 		</disallowedTraits>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="KotORMerc_kaleeshranged" ParentName="KotORMercBase">
+	<PawnKindDef Name="KotORMerc_kaleeshranged" ParentName="SWCPMercBase">
 		<defName>KotORMerc_kaleeshranged</defName>
 		<label>Kaleesh headhunter</label>
 		<combatPower>200</combatPower>
@@ -1659,7 +1660,7 @@
 	
 	
 	
-	<PawnKindDef Name="KotORMerc_moncal" ParentName="KotORMercBase">
+	<PawnKindDef Name="KotORMerc_moncal" ParentName="SWCPMercBase">
 		<defName>KotORMerc_moncal</defName>
 		<label>Mon Calamari janissary</label>
 		<combatPower>150</combatPower>
@@ -1775,7 +1776,7 @@
 	
 	
 	
-	<PawnKindDef Name="KotORMerc_nagaimelee" ParentName="KotORMercBase">
+	<PawnKindDef Name="KotORMerc_nagaimelee" ParentName="SWCPMercBase">
 		<defName>KotORMerc_nagaimelee</defName>
 		<label>Nagai warrior</label>
 		<combatPower>225</combatPower>
@@ -1858,7 +1859,7 @@
 		</disallowedTraits>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="KotORMerc_nagairanged" ParentName="KotORMercBase">
+	<PawnKindDef Name="KotORMerc_nagairanged" ParentName="SWCPMercBase">
 		<defName>KotORMerc_nagairanged</defName>
 		<label>Nagai commando</label>
 		<combatPower>225</combatPower>
@@ -1941,7 +1942,7 @@
 	
 	
 	
-	<PawnKindDef Name="KotORMerc_chiss" ParentName="KotORMercBase">
+	<PawnKindDef Name="KotORMerc_chiss" ParentName="SWCPMercBase">
 		<defName>KotORMerc_chiss</defName>
 		<label>Chiss commando</label>
 		<combatPower>300</combatPower>
@@ -1963,6 +1964,7 @@
 		  <li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
 		  <li>SWKotORSpecificApparelItem_BastionMilitarySuit</li>
 		  <li>SWKotORSpecificApparelItem_PoweredHeavyBattleHelmet</li>
+		  <li>SWKotORSpecificGadgetItem_GreeHyperShield</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
 		<apparelRequired>

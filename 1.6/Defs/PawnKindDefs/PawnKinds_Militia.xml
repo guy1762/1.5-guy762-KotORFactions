@@ -463,13 +463,13 @@
 		<!-- borrowed from civilian lists -->	  
 	  
 	  
-	  <PawnKindDef Name="KotORMlita_spacer" ParentName="KotORCiv_spacer">
+	  <PawnKindDef Name="KotORMlita_spacer" ParentName="SWCPCivilian_spacer">
 		<defName>KotORMlita_spacer</defName>
 		<label>contracted spacer</label>
 		<defaultFactionType>guy762_KotORFaction_Militia</defaultFactionType>
 	  </PawnKindDef>
 	  
-	  <PawnKindDef Name="KotORMlita_ugnaught" ParentName="KotORCiv_ugnaught">
+	  <PawnKindDef Name="KotORMlita_ugnaught" ParentName="SWCPCivilian_ugnaught">
 		<defName>KotORMlita_ugnaught</defName>
 		<maxPerGroup>12</maxPerGroup>
 		<defaultFactionType>guy762_KotORFaction_Militia</defaultFactionType>
@@ -479,41 +479,41 @@
 	  
 	  <!--  NOT NECESSARY, use civ versions
 	  
-	  <PawnKindDef Name="KotORMlita_cop" ParentName="KotORCiv_cop">
+	  <PawnKindDef Name="KotORMlita_cop" ParentName="SWCPCivilian_cop">
 		<defName>KotORMlita_cop</defName>
 		<defaultFactionType>guy762_KotORFaction_Militia</defaultFactionType>
 	  </PawnKindDef>
 	  
 	  
 	  
-	  <PawnKindDef Name="KotORMlita_wanderingtrader" ParentName="KotORCiv_wanderingtrader">
+	  <PawnKindDef Name="KotORMlita_wanderingtrader" ParentName="SWCPCivilian_wanderingtrader">
 		<defName>KotORMlita_wanderingtrader</defName>
 		<defaultFactionType>guy762_KotORFaction_Militia</defaultFactionType>
 	  </PawnKindDef>
 	  
-	  <PawnKindDef Name="KotORMlita_doctormid" ParentName="KotORCiv_doctormid">
+	  <PawnKindDef Name="KotORMlita_doctormid" ParentName="SWCPCivilian_doctormid">
 		<defName>KotORMlita_doctormid</defName>
 		<defaultFactionType>guy762_KotORFaction_Militia</defaultFactionType>
 	  </PawnKindDef>
 	  
 	  
 	  
-	  <PawnKindDef Name="KotORMlita_civvillager" ParentName="KotORCiv_villager">
+	  <PawnKindDef Name="KotORMlita_civvillager" ParentName="SWCPCivilian_villager">
 		<defName>KotORMlita_civvillager</defName>
 		<defaultFactionType>guy762_KotORFaction_Militia</defaultFactionType>
 	  </PawnKindDef>
 	  
-	  <PawnKindDef Name="KotORMlita_civprole" ParentName="KotORCiv_prole">
+	  <PawnKindDef Name="KotORMlita_civprole" ParentName="SWCPCivilian_prole">
 		<defName>KotORMlita_civprole</defName>
 		<defaultFactionType>guy762_KotORFaction_Militia</defaultFactionType>
 	  </PawnKindDef>
 	  
-	  <PawnKindDef Name="KotORMlita_civmid" ParentName="KotORCiv_mid">
+	  <PawnKindDef Name="KotORMlita_civmid" ParentName="SWCPCivilian_mid">
 		<defName>KotORMlita_civmid</defName>
 		<defaultFactionType>guy762_KotORFaction_Militia</defaultFactionType>
 	  </PawnKindDef>
 	  
-	  <PawnKindDef Name="KotORMlita_civbougie" ParentName="KotORCiv_bougie">
+	  <PawnKindDef Name="KotORMlita_civbougie" ParentName="SWCPCivilian_bougie">
 		<defName>KotORMlita_civbougie</defName>
 		<defaultFactionType>guy762_KotORFaction_Militia</defaultFactionType>
 	  </PawnKindDef>
@@ -524,22 +524,22 @@
 	  
 		work camp types
 	
-	<PawnKindDef Name="KotORMlita_civhunter" ParentName="KotORCiv_hunter">
+	<PawnKindDef Name="KotORMlita_civhunter" ParentName="SWCPCivilian_hunter">
 		<defName>KotORMlita_civhunter</defName>
 		<defaultFactionType>guy762_KotORFaction_Militia</defaultFactionType>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="KotORMlita_civlogger" ParentName="KotORCiv_logger">
+	<PawnKindDef Name="KotORMlita_civlogger" ParentName="SWCPCivilian_logger">
 		<defName>KotORMlita_civlogger</defName>
 		<defaultFactionType>guy762_KotORFaction_Militia</defaultFactionType>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="KotORMlita_civfarmer" ParentName="KotORCiv_farmer">
+	<PawnKindDef Name="KotORMlita_civfarmer" ParentName="SWCPCivilian_farmer">
 		<defName>KotORMlita_civfarmer</defName>
 		<defaultFactionType>guy762_KotORFaction_Militia</defaultFactionType>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="KotORMlita_civminer" ParentName="KotORCiv_miner">
+	<PawnKindDef Name="KotORMlita_civminer" ParentName="SWCPCivilian_miner">
 		<defName>KotORMlita_civminer</defName>
 		<defaultFactionType>guy762_KotORFaction_Militia</defaultFactionType>
 	</PawnKindDef>

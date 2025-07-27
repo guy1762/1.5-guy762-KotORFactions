@@ -7,7 +7,7 @@
 	  <!--bounty hunters-->
 
 
-	<PawnKindDef Name="KotORBntyHntr_light" ParentName="KotORMercBase">
+	<PawnKindDef Name="KotORBntyHntr_light" ParentName="SWCPMercBase">
 		<defName>KotORBntyHntr_light</defName>
 		<label>bounty hunter</label>
 		<combatPower>125</combatPower>
@@ -97,7 +97,7 @@
 	  
 	  
 	  
-	  <PawnKindDef Name="KotORBntyHntr_mid" ParentName="KotORMercBase">
+	  <PawnKindDef Name="KotORBntyHntr_mid" ParentName="SWCPMercBase">
 		<defName>KotORBntyHntr_mid</defName>
 		<label>veteran bounty hunter</label>
 		<combatPower>175</combatPower>
@@ -183,7 +183,7 @@
 	
 	  
 	  
-	  <PawnKindDef Name="KotORBntyHntr_heavy" ParentName="KotORMercBase">
+	  <PawnKindDef Name="KotORBntyHntr_heavy" ParentName="SWCPMercBase">
 		<defName>KotORBntyHntr_heavy</defName>
 		<label>elite bounty hunter</label>
 		<combatPower>250</combatPower>
@@ -271,7 +271,7 @@
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
 	  </PawnKindDef>
 	  
-	  <PawnKindDef Name="KotORBntyHntr_star" ParentName="KotORMercBase">
+	  <PawnKindDef Name="KotORBntyHntr_star" ParentName="SWCPMercBase">
 		<defName>KotORBntyHntr_star</defName>
 		<label>star bounty hunter</label>
 		<combatPower>2500</combatPower>
@@ -396,7 +396,7 @@
 	  
 	  
 	  
-	  <PawnKindDef Name="KotORBntyHntr_mandoweak" ParentName="KotORMercBase">
+	  <PawnKindDef Name="KotORBntyHntr_mandoweak" ParentName="SWCPMercBase">
 		<defName>KotORBntyHntr_mandoweak</defName>
 		<label>Mandalorian bounty hunter</label>
 		<combatPower>125</combatPower>
@@ -504,7 +504,7 @@
 	
 	
 	
-	<PawnKindDef Name="KotORBntyHntr_mandomid" ParentName="KotORMercBase">
+	<PawnKindDef Name="KotORBntyHntr_mandomid" ParentName="SWCPMercBase">
 		<defName>KotORBntyHntr_mandomid</defName>
 		<label>Mandalorian veteran bounty hunter</label>
 		<combatPower>200</combatPower>
@@ -628,7 +628,7 @@
 	
 	
 	
-	<PawnKindDef Name="KotORBntyHntr_mandostar" ParentName="KotORMercBase">
+	<PawnKindDef Name="KotORBntyHntr_mandostar" ParentName="SWCPMercBase">
 		<defName>KotORBntyHntr_mandostar</defName>
 		<label>Mandalorian star bounty hunter</label>
 		<combatPower>400</combatPower>
@@ -651,6 +651,7 @@
 			<li>SWKotORSpecificApparelItem_MandoNeoCrusaderHood</li>
 			<li>SWKotORSpecificApparelItem_MandoAssaultArmor</li>
 			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
+			<li>SWKotORSpecificGadgetItem_MissileJetpack</li>
 		</apparelTags>
 		<apparelRequired Inherit="False">
 			<li>guy762_Jetpack_missile</li>

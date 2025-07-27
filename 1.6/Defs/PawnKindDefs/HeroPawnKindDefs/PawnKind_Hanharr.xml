@@ -21,6 +21,8 @@
 		<apparelMoney>49999</apparelMoney>
 		<apparelTags>
 		  <li>KotORHeroAccessories_hanharr</li>
+		  <li>SWCPSpecificApparelItem_KotORBigBackpack</li>
+		  <li>SWCPSpecificApparelItem_DoubleBandolier</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>guy762_Accessory_bandolierA</li>

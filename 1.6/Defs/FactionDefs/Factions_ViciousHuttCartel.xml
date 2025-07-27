@@ -37,7 +37,7 @@
 	<naturalEnemy>true</naturalEnemy>
 	<settlementGenerationWeight>4</settlementGenerationWeight>
 	<modExtensions Inherit="False">
-      <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Currencies.CurrencyReplacement">
+      <li Class="SWCP.Currencies.CurrencyReplacement">
 		<currency>Silver</currency>
 	  </li>
 	  <li Class="VEF.Factions.FactionDefExtension">
@@ -74,7 +74,7 @@
 		<excludeFromCommConsole>false</excludeFromCommConsole>
 		<hasCities>true</hasCities>
       </li>
-	  <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Core.ModExtension_FixedIdeo">
+	  <li Class="SWCP.Core.ModExtension_FixedIdeo">
 		<ideoIconDef>guy762_IdeoIcon_huttsB</ideoIconDef>
 		<ideoColorDef>Orange</ideoColorDef>
 		<!--memberName>Citizen</memberName>
@@ -408,7 +408,7 @@
 		<options>
 		  <KotORHutts_HuttTrader>10</KotORHutts_HuttTrader>
 		  <KotORHutts_slave>10</KotORHutts_slave>
-		  <KotORCiv_hooded>5</KotORCiv_hooded>
+		  <SWCPCivilian_hooded>5</SWCPCivilian_hooded>
 		  
 		  <KotORHutts_thug>15</KotORHutts_thug>
 		  <KotORHutts_soldier>10</KotORHutts_soldier>
@@ -426,7 +426,7 @@
 		<commonality>1</commonality>
 		<traders>
 		  <KotORHutts_HuttTrader>10</KotORHutts_HuttTrader>
-		  <KotORCiv_shadydealer>5</KotORCiv_shadydealer>
+		  <SWCPCivilian_shadydealer>5</SWCPCivilian_shadydealer>
 		</traders>
 		<carriers>
 		  <Bantha MayRequire="Mlie.StarWarsAnimalCollection">5</Bantha>
@@ -441,7 +441,7 @@
 		</carriers>
 		<guards>
 		  <KotORHutts_slave>10</KotORHutts_slave>
-		  <KotORCiv_hooded>5</KotORCiv_hooded>
+		  <SWCPCivilian_hooded>5</SWCPCivilian_hooded>
 		  
 		  <KotORHutts_thug>15</KotORHutts_thug>
 		  <KotORHutts_soldier>10</KotORHutts_soldier>
@@ -453,7 +453,7 @@
 		<kindDef>Trader</kindDef> <!-- jawa caravan -->
 		<commonality>0.5</commonality>
 		<traders>
-		  <KotORCiv_jawatrader_offworld>100</KotORCiv_jawatrader_offworld>
+		  <SWCPCivilian_jawatrader_offworld>100</SWCPCivilian_jawatrader_offworld>
 		</traders>
 		<carriers>
 		  <Bantha MayRequire="Mlie.StarWarsAnimalCollection">5</Bantha>
@@ -467,7 +467,7 @@
 		  <Skalder MayRequire="Mlie.StarWarsAnimalCollection">0.1</Skalder>
 		</carriers>
 		<guards>
-		  <KotORCiv_jawa_offworld>15</KotORCiv_jawa_offworld>
+		  <SWCPCivilian_jawa_offworld>15</SWCPCivilian_jawa_offworld>
 		  <KotORMlita_droid_GE3PD MayRequire="guy762.KotORDroids">3</KotORMlita_droid_GE3PD>
 		  <KotORDroidGood_GE3LD MayRequire="guy762.KotORDroids">7</KotORDroidGood_GE3LD>
 		  <KotORDroidGood_R8009 MayRequire="guy762.KotORDroids">5</KotORDroidGood_R8009>
@@ -485,10 +485,10 @@
 		<options>
 		  <!-- civilians -->
 		  <KotORHutts_slave>15</KotORHutts_slave>
-		  <KotORCiv_villager>25</KotORCiv_villager>
+		  <SWCPCivilian_villager>25</SWCPCivilian_villager>
 		  
-		  <KotORCiv_hooded>10</KotORCiv_hooded>
-		  <KotORCiv_poortraveler>5</KotORCiv_poortraveler>
+		  <SWCPCivilian_hooded>10</SWCPCivilian_hooded>
+		  <SWCPCivilian_poortraveler>5</SWCPCivilian_poortraveler>
 		  
 		  <KotORMlita_ugnaught>1</KotORMlita_ugnaught>
 		  
@@ -523,7 +523,7 @@
 		<commonality>1</commonality>
 		<options>
 		  <KotORHutts_slave>10</KotORHutts_slave>
-		  <KotORCiv_SlaveFurry>10</KotORCiv_SlaveFurry>
+		  <SWCPCivilian_SlaveFurry>10</SWCPCivilian_SlaveFurry>
 		  
 		  <KotORDroidBad_DevWD_weak MayRequire="guy762.KotORDroids">4</KotORDroidBad_DevWD_weak>
 		  <KotORHutts_thug>2</KotORHutts_thug>
@@ -535,7 +535,7 @@
 		<commonality>1</commonality>
 		<options>
 		  <KotORHutts_slave>10</KotORHutts_slave>
-		  <KotORCiv_SlaveFurry>10</KotORCiv_SlaveFurry>
+		  <SWCPCivilian_SlaveFurry>10</SWCPCivilian_SlaveFurry>
 		  
 		  <KotORDroidBad_DevWD_weak MayRequire="guy762.KotORDroids">4</KotORDroidBad_DevWD_weak>
 		  <KotORHutts_thug>2</KotORHutts_thug>
@@ -547,7 +547,7 @@
 		<commonality>1</commonality>
 		<options>
 		  <KotORHutts_slave>10</KotORHutts_slave>
-		  <KotORCiv_SlaveFurry>10</KotORCiv_SlaveFurry>
+		  <SWCPCivilian_SlaveFurry>10</SWCPCivilian_SlaveFurry>
 		  <KotORDroidBad_KM1MD MayRequire="guy762.KotORDroids">1</KotORDroidBad_KM1MD>
 		  
 		  <KotORDroidBad_DevWD_weak MayRequire="guy762.KotORDroids">4</KotORDroidBad_DevWD_weak>

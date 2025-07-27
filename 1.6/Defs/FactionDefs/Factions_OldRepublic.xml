@@ -58,7 +58,7 @@
 	
 	<settlementGenerationWeight>2</settlementGenerationWeight>
 	<modExtensions Inherit="False">
-      <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Currencies.CurrencyReplacement">
+      <li Class="SWCP.Currencies.CurrencyReplacement">
 		<currency>guy762_KotORcredits</currency>
 	  </li>
 	  <li Class="VEF.Factions.FactionDefExtension">
@@ -327,12 +327,12 @@
 	  
 	  
 	  
-	  <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="FCP.Core.GroupMakerWithTraderKind">
+	  <li Class="SWCP.Core.GroupMakerWithTraderKind">
 		<kindDef>Trader</kindDef> <!-- wandering doctor -->
 		<commonality>1</commonality>
 		<traderKinds><li>guy762_TraderKind_WanderingDoctor</li></traderKinds>
 		<traders>
-		  <KotORCiv_doctormid>100</KotORCiv_doctormid>
+		  <SWCPCivilian_doctormid>100</SWCPCivilian_doctormid>
 		</traders>
 		<carriers>
 		  <Bantha MayRequire="Mlie.StarWarsAnimalCollection">5</Bantha>
