@@ -212,16 +212,16 @@
 			<thingDef>ABF_Thing_Synstruct_Enervoir</thingDef>
 			<count>2</count>
 		</li>
-		<li Class="ScenPart_StartingThing_Defined" MayRequire="guy762.KotORDroids">
-			<def>StartingThing_Defined</def>
-			<thingDef>ABF_Thing_Synstruct_CoolantPack</thingDef>
-			<count>15</count>
-		</li>
-		<li Class="ScenPart_StartingThing_Defined" MayRequire="guy762.KotORDroids">
-			<def>StartingThing_Defined</def>
-			<thingDef>ABF_Thing_Synstruct_LubricantPack</thingDef>
-			<count>15</count>
-		</li>
+		<!-- <li Class="ScenPart_StartingThing_Defined" MayRequire="guy762.KotORDroids"> -->
+			<!-- <def>StartingThing_Defined</def> -->
+			<!-- <thingDef>ABF_Thing_Synstruct_CoolantPack</thingDef> -->
+			<!-- <count>15</count> -->
+		<!-- </li> -->
+		<!-- <li Class="ScenPart_StartingThing_Defined" MayRequire="guy762.KotORDroids"> -->
+			<!-- <def>StartingThing_Defined</def> -->
+			<!-- <thingDef>ABF_Thing_Synstruct_LubricantPack</thingDef> -->
+			<!-- <count>15</count> -->
+		<!-- </li> -->
 		<li Class="ScenPart_StartingThing_Defined" MayRequire="guy762.KotORDroids">
 			<def>StartingThing_Defined</def>
 			<thingDef>ABF_Thing_Synstruct_RepairStim</thingDef>

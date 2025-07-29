@@ -226,7 +226,7 @@
 	
     <royalAid>
       <favorCost>24</favorCost>
-      <pawnKindDef>KotORCiv_ugnaught</pawnKindDef>
+      <pawnKindDef>SWCPCivilian_ugnaught</pawnKindDef>
       <pawnCount>6</pawnCount>
       <aidDurationDays>15</aidDurationDays>
       <targetingRange>44.9</targetingRange>
@@ -315,7 +315,7 @@
     
 	<royalAid>
       <favorCost>8</favorCost>
-      <pawnKindDef>KotORMerc_thug</pawnKindDef>
+      <pawnKindDef>SWCPCivilian_thug</pawnKindDef>
       <pawnCount>10</pawnCount>
       <targetingRange>44.9</targetingRange>
       <targetingRequireLOS>false</targetingRequireLOS>

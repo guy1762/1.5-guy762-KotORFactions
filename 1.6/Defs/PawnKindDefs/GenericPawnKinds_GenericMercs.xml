@@ -17,7 +17,7 @@
 		<!-- <invFoodDef>MealSurvivalPack</invFoodDef> -->
 		<!-- <biocodeWeaponChance>0.95</biocodeWeaponChance> -->
 		<!-- <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors> -->
-		<!-- <!--apparelTags> -->
+		<!-- <apparelTags> -->
 		  <!-- <li>KotORHeadband_gasmask</li> -->
 		<!-- </apparelTags> --> 
 		
@@ -49,7 +49,7 @@
 			<!-- <guy762_xenotype_cathar MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_cathar> -->
 			<!-- <guy762_xenotype_devaronian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_devaronian> -->
 			<!-- <guy762_xenotype_duros MayRequire="guy762.StarWarsXenotypes">0.09</guy762_xenotype_duros> -->
-			<!-- <guy762_xenotype_falleen MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_falleen> <!--1.00 total--> -->
+			<!-- <guy762_xenotype_falleen MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_falleen> 1.00 total -->
 			<!-- <guy762_xenotype_iridonian MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_iridonian> -->
 			<!-- <guy762_xenotype_klatoonian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_klatoonian> -->
 			<!-- <guy762_xenotype_nautolan MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_nautolan> -->
@@ -75,8 +75,8 @@
 		<!-- thugs -->
 
 
-  <!-- <PawnKindDef Name="KotORMerc_thug" ParentName="SWCPMercBase"> -->
-    <!-- <defName>KotORMerc_thug</defName> -->
+  <!-- <PawnKindDef Name="SWCPCivilian_thug" ParentName="SWCPMercBase"> -->
+    <!-- <defName>SWCPCivilian_thug</defName> -->
 	<!-- <label>thug</label> -->
     <!-- <combatPower>35</combatPower> -->
 	<!-- <minGenerationAge>15</minGenerationAge> -->
