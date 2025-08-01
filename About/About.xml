@@ -95,10 +95,19 @@
 		</v1.6>
 	</loadAfterByVersion>
 	
-	<loadBefore>
+	<!-- <loadBefore> -->
+		<!-- <li>lee.theforce.psycast</li> -->
+		<!-- <li>guy762.Lee.KotORPotF</li> -->
+	<!-- </loadBefore> -->
+	<loadBeforeByVersion>
+	  <v1.5>
 		<li>lee.theforce.psycast</li>
 		<li>guy762.Lee.KotORPotF</li>
-	</loadBefore>
+	  </v1.5>
+	  <v1.6>
+	  </v1.6>
+	</loadBeforeByVersion>
+	
 	<!-- <incompatibleWith> -->
 	  <!-- <li>smartkar.athenaframework</li> -->
 	<!-- </incompatibleWith> -->
