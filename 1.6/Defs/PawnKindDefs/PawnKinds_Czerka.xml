@@ -188,6 +188,7 @@
 		  <li>KotOREquipment_officer</li>
 		  <li>KotORShield_strong</li>
 		  <li>SWKotORSpecificApparelItem_CzerkaOfficerClothes</li>
+		  <li>guy762PatchedTag_AuthorityCap</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>guy762_Clothing_czerkaofficer</li>

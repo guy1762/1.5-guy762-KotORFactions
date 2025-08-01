@@ -195,6 +195,13 @@
     </backstoryFilters>
     <settlementTexturePath>World/WorldObjects/Expanding/SettlementTemporary</settlementTexturePath>
 	
+	
+	<baseTraderKinds>
+	  <li>guy762_BaseTraderKind_spicerunner</li>
+	  <li>guy762_BaseTraderKind_gunrunner</li>
+	  <li>guy762_BaseTraderKind_baragwin</li>
+	</baseTraderKinds>
+	
 	<maxPawnCostPerTotalPointsCurve>
       <points>
         <li>(0,50)</li> <!-- cost of thug shooter/brawler -->

@@ -67,6 +67,7 @@
 		  <li>KotORDroidUpgrade_hacking</li>
 		  <li>KotORDroidUpgrade_combat</li>
 		  <li>SWKotORSpecificDroidWeapon_HoldoutBlaster</li>
+		  <li>SWCPSpecificDroidArmor_DeshMedium</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>guy762_DroidArmorMid_desh</li>

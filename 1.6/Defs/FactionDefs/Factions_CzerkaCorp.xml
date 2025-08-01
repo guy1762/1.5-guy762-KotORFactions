@@ -165,6 +165,21 @@
     </backstoryFilters>
     <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 	
+	
+	<!-- <caravanTraderKinds> -->
+	  <!-- <li>Caravan_Outlander_BulkGoods</li> -->
+	  <!-- <li>Caravan_Outlander_CombatSupplier</li> -->
+	  <!-- <li>Caravan_Outlander_Exotic</li> -->
+	  <!-- <li>Caravan_Outlander_PirateMerchant</li> -->
+	  <!-- <li>guy762_TraderKind_JawaScavs</li> -->
+	<!-- </caravanTraderKinds> -->
+	<!-- <visitorTraderKinds> -->
+	  <!-- <li>guy762_TraderKind_JawaScavs</li> -->
+	<!-- </visitorTraderKinds> -->
+	<baseTraderKinds>
+	  <li>guy762_BaseTraderKind_Czerka</li>
+	</baseTraderKinds>
+	
     <maxPawnCostPerTotalPointsCurve>
       <points>
         <li>(0,50)</li> <!-- cost of scouts or patrol droids -->

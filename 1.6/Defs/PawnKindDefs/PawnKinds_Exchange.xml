@@ -99,6 +99,7 @@
 		  <li>KotORShield_basic</li>
 		  <li>SWCPSpecificApparelItem_SmugglerClothing</li>
 		  <li>SWCPSpecificApparelItem_ScoutVest</li>
+		  <li>SWKotORSpecificGadgetItem_ExchangeUtilityBelt</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>guy762_Jacket_scout</li>
@@ -204,6 +205,7 @@
 		  <li>KotORShield_adv</li>
 		  <li>SWCPSpecificApparelItem_PlainClothing</li>
 		  <li>SWKotORSpecificApparelItem_ExchangeJacket</li>
+		  <li>SWKotORSpecificGadgetItem_ExchangeUtilityBelt</li>
 		</apparelTags>
 		<apparelRequired>
 		   <li>guy762_Jacket_exchange</li>

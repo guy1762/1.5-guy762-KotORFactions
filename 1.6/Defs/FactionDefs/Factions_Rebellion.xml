@@ -154,7 +154,7 @@
 		  <li>Visitor_Outlander_Standard</li>
 		</visitorTraderKinds>
 		<baseTraderKinds>
-		  <li>Base_Outlander_Standard</li>
+		  <li>guy762_BaseTraderKind_gunrunner</li>
 		</baseTraderKinds>
 		
 		<maxPawnCostPerTotalPointsCurve>

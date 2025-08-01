@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationReplace">
+	  <xpath>Defs/ThingDef[defName="Apparel_Sash"]/apparel/layers/li[1]</xpath>
+	  <value>
+			<li>Shell</li>
+	  </value>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Apparel_Broadwrap"]/apparel/bodyPartGroups</xpath>
+			<value>
+				<bodyPartGroups>
+					<li>UpperHead</li>
+					<li>Neck</li>
+				</bodyPartGroups>
+			</value>
+		</match>
+	  
+	</Operation>
+
+
+    
+
+</Patch>
