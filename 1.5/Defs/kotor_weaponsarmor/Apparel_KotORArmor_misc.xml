@@ -8,7 +8,7 @@
     <label>Trandoshan Slaver Mesh Suit</label>
     <description>When king Trossk of Trandosha ordered a series of brutal galaxy-wide slave raids over a century ago, these flexible suits became a common - and feared - sight among the unprotected Outer Rim colonies.</description>
     <graphicData>
-      <texPath>Apparel/CombatSuit/echani/Apparel</texPath>
+      <texPath>SWApparel/CombatSuit/echani/Apparel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
 	  <colorTwo>(130,60,60)</colorTwo>
@@ -39,7 +39,7 @@
 			<li>KotORArmor_light</li>
 			<li>SaV_apparel_trandoslaver</li>
 		</tags>
-		<wornGraphicPath>Apparel/CombatSuit/echani/Apparel</wornGraphicPath>
+		<wornGraphicPath>SWApparel/CombatSuit/echani/Apparel</wornGraphicPath>
 		<useWornGraphicMask>true</useWornGraphicMask>
     </apparel>
 	<tradeTags>
@@ -72,7 +72,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>While most Trandoshan hunters prefer to travel light, heavier armor such as this is used by mercenary commando units who engage in more direct combat.</description>
 		<graphicData>
-			<texPath>Apparel/MidBattleArmor/Apparel</texPath>
+			<texPath>SWApparel/MidBattleArmor/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(175,90,50)</colorTwo>
@@ -97,7 +97,7 @@
 				<li>KotORArmor_heavy</li>
 				<li>SaV_apparel_trandomerc</li>
 			</tags>
-			<wornGraphicPath>Apparel/MidBattleArmor/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/MidBattleArmor/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -150,7 +150,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>While underpowered for its class, this rare powered armor compensates by integrating a personal energy shield unit directly into the suit itself. While the shield output is comparable to common models, the power cell used is of advanced Mon Calamari design and does not need to be replaced after repeated use.</description>
 		<graphicData>
-			<texPath>Apparel/LightBattleArmor/TSL/Apparel</texPath>
+			<texPath>SWApparel/LightBattleArmor/TSL/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(130,140,170)</colorTwo>
@@ -181,7 +181,7 @@
 				<li>SaV_outfit_moncal</li>
 				<li>KotORRoyaltyTag_AnyHighTier</li>
 			</tags>
-			<wornGraphicPath>Apparel/LightBattleArmor/TSL/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/LightBattleArmor/TSL/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -258,7 +258,7 @@
 		<label>clothing, rustic</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
-		  <texPath>Apparel/Undersuits/scum/Apparel</texPath>
+		  <texPath>SWApparel/Undersuits/scum/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(105,105,125)</colorTwo> <!-- slate blue -->
@@ -278,7 +278,7 @@
 		  <tags Inherit="False">
 			<li>SaV_gravetusken</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/Undersuits/scum/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Undersuits/scum/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
@@ -311,7 +311,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>The Republic has prospered militarily by keeping its troops well supplied with modular armor, ensuring they are always prepared for a variety of battle conditions.</description>
 		<graphicData>
-			<texPath>Apparel/Republic/trooper/Apparel</texPath>
+			<texPath>SWApparel/Republic/trooper/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(190,60,40)</colorTwo>
@@ -337,7 +337,7 @@
 			<tags>
 				<li>OR_apparel_medic</li>
 			</tags>
-			<wornGraphicPath>Apparel/Republic/trooper/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Republic/trooper/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -384,7 +384,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>The Republic has prospered militarily by keeping its troops well supplied with modular armor, ensuring they are always prepared for a variety of battle conditions.</description>
 		<graphicData>
-			<texPath>Apparel/Republic/trooper/Helmet</texPath>
+			<texPath>SWApparel/Republic/trooper/Helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<colorTwo>(190,60,40)</colorTwo>
@@ -406,7 +406,7 @@
 			<tags>
 				<li>OR_apparel_medic</li>
 			</tags>
-			<wornGraphicPath>Apparel/Republic/trooper/Helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Republic/trooper/Helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -464,7 +464,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>This full body armor was once standard issue for Sith infantry forces, though years of use has dulled its distinctive shine.</description>
 		<graphicData>
-			<texPath>Apparel/Sith/trooper/Apparel</texPath>
+			<texPath>SWApparel/Sith/trooper/Apparel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -485,7 +485,7 @@
 			<tags>
 				<li>SithRem_apparel_raider</li>
 			</tags>
-			<wornGraphicPath>Apparel/Sith/trooper/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Sith/trooper/Apparel</wornGraphicPath>
 			<useWornGraphicMask>false</useWornGraphicMask>
 			<layers>
 				<li>Middle</li>
@@ -530,7 +530,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>This helmet was once standard issue for Sith infantry forces, though years of use has dulled its distinctive shine.</description>
 		<graphicData>
-			<texPath>Apparel/Sith/trooper/Helmet</texPath>
+			<texPath>SWApparel/Sith/trooper/Helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<thingCategories>
@@ -552,7 +552,7 @@
 				<li>SithRem_raiderhelmet</li>
 				<li>PReb_apparel_heavyhelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/Sith/trooper/Helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Sith/trooper/Helmet</wornGraphicPath>
 			<useWornGraphicMask>false</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
@@ -593,7 +593,7 @@
 		<label>Sith Inquisitor uniform</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
-		  <texPath>Apparel/Sith/uniform/Apparel</texPath>
+		  <texPath>SWApparel/Sith/uniform/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(190,0,0)</colorTwo>
@@ -617,7 +617,7 @@
 		  <tags Inherit="False">
 			<li>SE_apparel_inquisitor</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/Sith/uniform/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Sith/uniform/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
