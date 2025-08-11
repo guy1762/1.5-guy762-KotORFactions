@@ -101,7 +101,7 @@
   <!-- items -->
   
   
-  <RoyalTitlePermitDef MayRequire="Rick.FCP.Core.Tools.Beta" ParentName="guy762_KotORPermitHutts_ResourceDropBase">
+  <RoyalTitlePermitDef  ParentName="guy762_KotORPermitHutts_ResourceDropBase">
     <defName>guy762_KotORPermitHutts_resupplydrop</defName>
     <label>resupply drop</label>
     <description>Call for a drop of 4 supply crates containing food, medpacs, combat stimulants, and energy shields.</description>
@@ -153,7 +153,7 @@
   </RoyalTitlePermitDef>
   
   
-  <RoyalTitlePermitDef MayRequire="Rick.FCP.Core.Tools.Beta" ParentName="guy762_KotORPermitHutts_ResourceDropBase">
+  <RoyalTitlePermitDef  ParentName="guy762_KotORPermitHutts_ResourceDropBase">
     <defName>guy762_KotORPermitHutts_armordrop</defName>
     <label>weapons and armor drop</label>
     <description>Call for a drop of 2 Kajidic equipment crates containing standard issue Kajidic soldier armor and weapons, enough for a small platoon.</description>
@@ -639,7 +639,7 @@
   
   
   
-  <RoyalTitlePermitDef MayRequire="Rick.FCP.Core.Tools.Beta" ParentName="guy762_KotORPermitHutts_ResourceDropBase">
+  <RoyalTitlePermitDef  ParentName="guy762_KotORPermitHutts_ResourceDropBase">
     <defName>guy762_KotORPermitHutts_foodstuffdrop</defName>
     <label>foodstuff shipment</label>
     <description>Call for a drop of four large crates of foodstuffs, containing bulk grains or animal products.</description>

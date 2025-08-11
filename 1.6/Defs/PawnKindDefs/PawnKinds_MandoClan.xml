@@ -84,6 +84,7 @@
 		  </xenotypeChances>
 		</xenotypeSet>-->
 		
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
 	</PawnKindDef>
 	
 	<PawnKindDef Name="KotORMando_Base_blue" Abstract="True" ParentName="KotORMando_Base">

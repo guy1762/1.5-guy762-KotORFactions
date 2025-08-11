@@ -50,6 +50,8 @@
 			</li>
 		  </subOptionsChooseOne>
 		</inventoryOptions>
+		
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
 	</PawnKindDef>
 	
 	<PawnKindDef Name="KotORRebel_berserker" ParentName="KotORRebelBase">

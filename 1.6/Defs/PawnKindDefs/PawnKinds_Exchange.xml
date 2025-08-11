@@ -71,6 +71,8 @@
 			<guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_zeltron>
 		  </xenotypeChances>
 		</xenotypeSet-->
+		
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
 	  </PawnKindDef>
 	  
 	  

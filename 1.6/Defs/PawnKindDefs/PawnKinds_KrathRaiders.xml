@@ -47,6 +47,8 @@
 			<li>Violent</li>
 			<li>Hauling</li>
 		</requiredWorkTags>
+		
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
 	  </PawnKindDef>
 	    
           <!--poverty raiders-->

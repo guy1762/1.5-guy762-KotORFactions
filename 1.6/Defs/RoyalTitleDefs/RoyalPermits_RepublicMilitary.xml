@@ -140,7 +140,7 @@
   
   <!-- items -->
   
-  <RoyalTitlePermitDef MayRequire="Rick.FCP.Core.Tools.Beta" ParentName="guy762_KotORPermitORenlstd_ResourceDropBase">
+  <RoyalTitlePermitDef  ParentName="guy762_KotORPermitORenlstd_ResourceDropBase">
     <defName>guy762_KotORPermitORenlstd_resupplydrop</defName>
     <label>resupply drop</label>
     <description>Call for a drop of 4 supply crates containing food, medpacs, combat stimulants, and energy shields.</description>
@@ -190,7 +190,7 @@
     </royalAid>
   </RoyalTitlePermitDef-->
   
-  <RoyalTitlePermitDef MayRequire="Rick.FCP.Core.Tools.Beta" ParentName="guy762_KotORPermitORenlstd_ResourceDropBase">
+  <RoyalTitlePermitDef  ParentName="guy762_KotORPermitORenlstd_ResourceDropBase">
     <defName>guy762_KotORPermitORenlstd_armordrop</defName>
     <label>weapons and armor drop</label>
     <description>Call for a drop of 2 Republic equipment crates, containing standard issue Republic soldier armor and weapons.</description>

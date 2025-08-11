@@ -45,6 +45,8 @@
 			</li>
 		  </subOptionsChooseOne>
 		</inventoryOptions>
+		
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
 	  </PawnKindDef>
 	  
 	  

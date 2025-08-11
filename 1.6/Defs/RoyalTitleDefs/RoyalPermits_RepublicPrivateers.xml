@@ -249,7 +249,7 @@
 	<cooldownDays>60</cooldownDays>
   </RoyalTitlePermitDef>
   
-  <RoyalTitlePermitDef MayRequire="Rick.FCP.Core.Tools.Beta" ParentName="guy762_KotORPermitORpriv_ResourceDropBase">
+  <RoyalTitlePermitDef  ParentName="guy762_KotORPermitORpriv_ResourceDropBase">
     <defName>guy762_KotORPermitORpriv_weaponarmordrop</defName>
     <label>weapons and armor drop</label>
     <description>Call for a drop of 2 equipment crates containing random blasters, vibroblades, and armor.</description>

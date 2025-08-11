@@ -35,6 +35,8 @@
 		<requiredWorkTags>
 			<li>Violent</li>
 		</requiredWorkTags>
+		
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
 	  </PawnKindDef>
 	  
 	  

@@ -102,7 +102,7 @@
 	<cooldownDays>1</cooldownDays>
   </RoyalTitlePermitDef>
   
-  <RoyalTitlePermitDef MayRequire="Rick.FCP.Core.Tools.Beta" ParentName="guy762_KotORPermitExchange_ResourceDropBase">
+  <RoyalTitlePermitDef  ParentName="guy762_KotORPermitExchange_ResourceDropBase">
     <defName>guy762_KotORPermitExchange_equipmentdrop</defName>
     <label>illicit equipment drop</label>
     <description>Call for a drop of a crate containing illicit weapons and gadgets.</description>
@@ -119,7 +119,7 @@
   </RoyalTitlePermitDef>
   
   
-  <RoyalTitlePermitDef MayRequire="Rick.FCP.Core.Tools.Beta" ParentName="guy762_KotORPermitExchange_ResourceDropBase">
+  <RoyalTitlePermitDef  ParentName="guy762_KotORPermitExchange_ResourceDropBase">
     <defName>guy762_KotORPermitExchange_drugsalcoholdrop</defName>
     <label>party crate drop</label>
     <description>Call for a drop of two "party crates" containing lavish meals, alcohol, Deathsticks, and spice.</description>
@@ -499,7 +499,7 @@
   
   
   
-  <RoyalTitlePermitDef MayRequire="Rick.FCP.Core.Tools.Beta" ParentName="guy762_KotORPermitExchange_ResourceDropBase">
+  <RoyalTitlePermitDef  ParentName="guy762_KotORPermitExchange_ResourceDropBase">
     <defName>guy762_KotORPermitExchange_foodstuffdrop</defName>
     <label>foodstuff shipment</label>
     <description>Call for a drop of four large crates of foodstuffs, containing bulk grains or animal products.</description>

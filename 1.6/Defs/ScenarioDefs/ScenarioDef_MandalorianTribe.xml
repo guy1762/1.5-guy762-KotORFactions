@@ -139,12 +139,12 @@
           <thingDef>Silver</thingDef>
           <count>5000</count>
         </li>
-        <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="ScenPart_StartingThing_Defined">
+        <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>guy762_KotORLootBox_FoodMeds</thingDef>
           <count>4</count>
         </li>
-        <li MayRequire="Rick.FCP.Core.Tools.Beta" Class="ScenPart_StartingThing_Defined">
+        <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>guy762_KotORLootBox_ShieldsStims</thingDef>
           <count>2</count>

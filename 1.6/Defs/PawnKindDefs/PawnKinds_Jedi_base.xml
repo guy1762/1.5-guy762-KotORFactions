@@ -50,6 +50,8 @@
 			<PsychicSensitivity>-1</PsychicSensitivity>
 			<PsychicSensitivity>-2</PsychicSensitivity>
 		</disallowedTraitsWithDegree>
+		
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
 	  </PawnKindDef>
 	  
 	  <PawnKindDef Name="KotORJedi_XenoList" ParentName="KotORJedi_Base" Abstract="True">
