@@ -37,6 +37,10 @@
 		  <li>AdvancedWeapon</li>
 		</techHediffsTags>
 		
+		<disallowedTraits>
+		  <li>Nudist</li>
+		</disallowedTraits>
+		
 		<inventoryOptions>
 		  <subOptionsChooseOne>
 			<li>

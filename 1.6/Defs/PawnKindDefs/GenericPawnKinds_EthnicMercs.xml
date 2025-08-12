@@ -333,6 +333,7 @@
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
 		<disallowedTraits>
 		  <li>Wimp</li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
 		</disallowedTraits>
 		<abilities>
 			<li>BerserkTrance</li>
@@ -455,6 +456,7 @@
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
 		<disallowedTraits>
 		  <li>Wimp</li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
 		</disallowedTraits>
 		<abilities>
 			<li>MarksmanCommand</li>
@@ -1210,6 +1212,7 @@
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
 		<disallowedTraits>
 		  <li>Wimp</li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
 		</disallowedTraits>
 	</PawnKindDef>
 	
@@ -1285,6 +1288,7 @@
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
 		<disallowedTraits>
 		  <li>Wimp</li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
 		</disallowedTraits>
 	</PawnKindDef>
 	  
@@ -1548,6 +1552,7 @@
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
 		<disallowedTraits>
 		  <li>Wimp</li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
 		</disallowedTraits>
 	</PawnKindDef>
 	
@@ -1652,6 +1657,7 @@
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
 		<disallowedTraits>
 		  <li>Wimp</li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
 		</disallowedTraits>
 	</PawnKindDef>
 	

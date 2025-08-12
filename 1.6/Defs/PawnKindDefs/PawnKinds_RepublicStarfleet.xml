@@ -36,6 +36,10 @@
 			<li>Violent</li>
 		</requiredWorkTags>
 		
+		<disallowedTraits>
+		  <li>Nudist</li>
+		</disallowedTraits>
+		
 		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
 	  </PawnKindDef>
 	  

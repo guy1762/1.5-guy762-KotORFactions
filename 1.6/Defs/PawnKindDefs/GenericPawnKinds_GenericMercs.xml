@@ -873,6 +873,7 @@
 	<disallowedTraits>
       <li>Brawler</li>
 	  <li>Wimp</li>
+	  <li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
     </disallowedTraits>
     <biocodeWeaponChance>0.7</biocodeWeaponChance>
     <initialWillRange>0.5~2</initialWillRange>

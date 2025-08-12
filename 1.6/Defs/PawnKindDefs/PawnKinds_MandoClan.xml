@@ -30,6 +30,7 @@
 		</requiredWorkTags>
 		<disallowedTraits>
 			<li>Wimp</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
 			<li>Nudist</li>
         </disallowedTraits>
 		<apparelMoney>

@@ -278,6 +278,7 @@
 		<disallowedTraits Inherit="False">
 			<li>BodyPurist</li>
 			<li>Wimp</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
 			<li>Brawler</li>
 			<li>PsychicSensitivity</li>
 		</disallowedTraits>

@@ -35,8 +35,10 @@
 
 
 		<disallowedTraits>
+			<li>Nudist</li>
 			<li>BodyPurist</li>
 			<li>Wimp</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Delicate</li>
 		</disallowedTraits>
 		<disallowedTraitsWithDegree>
 			<PsychicSensitivity>1</PsychicSensitivity>
