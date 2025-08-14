@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	
+	<SWCP.Core.CharacterDef>
+        <defName>SWKotORRepub_InitialCaptain</defName>
+        <pawnKind>KotORRepub_captain</pawnKind>
+        <faction>guy762_KotORFaction_OldRepublic</faction>
+        <!-- <xenotype>Baseliner</xenotype> -->
+		<roles>
+            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+    </SWCP.Core.CharacterDef>
+	
+	
+	<SWCP.Core.CharacterDef>
+        <defName>SWKotOREvlRS_InitialCaptain</defName>
+        <pawnKind>KotOREvlRS_captain</pawnKind>
+        <faction>guy762_KotORFaction_CorruptRepublic</faction>
+        <!-- <xenotype>Baseliner</xenotype> -->
+		<roles>
+            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+    </SWCP.Core.CharacterDef>
+	
+	<SWCP.Core.CharacterDef>
+        <defName>SWKotORMlita_InitialLeader</defName>
+        <pawnKind>KotORMlita_leader</pawnKind>
+        <faction>guy762_KotORFaction_Militia</faction>
+        <!-- <xenotype>Baseliner</xenotype> -->
+		<roles>
+            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+    </SWCP.Core.CharacterDef>
+	
+	<SWCP.Core.CharacterDef>
+        <defName>SWKotORRebel_InitialLeader</defName>
+        <pawnKind>KotORRebel_leader</pawnKind>
+        <faction>guy762_KotORFaction_Rebellion</faction>
+        <!-- <xenotype>Baseliner</xenotype> -->
+		<roles>
+            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+    </SWCP.Core.CharacterDef>
+	
+	<SWCP.Core.CharacterDef>
+        <defName>SWKotORCzrka_InitialOfficer</defName>
+        <pawnKind>KotORCzrka_officer</pawnKind>
+        <faction>guy762_KotORFaction_Czerka</faction>
+        <!-- <xenotype>Baseliner</xenotype> -->
+		<roles>
+            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+    </SWCP.Core.CharacterDef>
+	
+	
+	<SWCP.Core.CharacterDef>
+        <defName>SWKotORExchg_InitialVigo</defName>
+        <pawnKind>KotORExchg_vigo</pawnKind>
+        <faction>guy762_KotORFaction_Exchange</faction>
+        <!-- <xenotype>Baseliner</xenotype> -->
+		<roles>
+            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+    </SWCP.Core.CharacterDef>
+	
+	
+	<SWCP.Core.CharacterDef>
+        <defName>SWKotORHutts_InitialLord</defName>
+        <pawnKind>KotORHutts_HuttLord</pawnKind>
+        <faction>guy762_KotORFaction_HuttCartel</faction>
+        <!-- <xenotype>Baseliner</xenotype> -->
+		<roles>
+            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+    </SWCP.Core.CharacterDef>
+	
+	<SWCP.Core.CharacterDef>
+        <defName>SWKotOREvlHutts_InitialLord</defName>
+        <pawnKind>KotORViciousHutts_HuttLord</pawnKind>
+        <faction>guy762_KotORFaction_ViciousHutts</faction>
+        <!-- <xenotype>Baseliner</xenotype> -->
+		<roles>
+            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+    </SWCP.Core.CharacterDef>
+	
+	
+	
+	<SWCP.Core.CharacterDef>
+        <defName>SWKotORMando_InitialFieldMarshal</defName>
+        <pawnKind>KotORMando_fieldmarshal</pawnKind>
+        <faction>guy762_KotORFaction_MandoClan</faction>
+        <!-- <xenotype>Baseliner</xenotype> -->
+		<roles>
+            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+    </SWCP.Core.CharacterDef>
+	
+	
+	<SWCP.Core.CharacterDef>
+        <defName>SWKotOREvlMando_InitialFieldMarshal</defName>
+        <pawnKind>KotORMando_fieldmarshal</pawnKind>
+        <faction>guy762_KotORFaction_SavageMandos</faction>
+        <!-- <xenotype>Baseliner</xenotype> -->
+		<roles>
+            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+    </SWCP.Core.CharacterDef>
+	
+	
+	<SWCP.Core.CharacterDef>
+        <defName>SWKotORKrath_InitialCommander</defName>
+        <pawnKind>KotORKrath_raidercmdr</pawnKind>
+        <faction>guy762_KotORFaction_KrathRaiders</faction>
+        <!-- <xenotype>Baseliner</xenotype> -->
+		<roles>
+            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+    </SWCP.Core.CharacterDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<SWCP.Core.CharacterDef>
+        <defName>SWKotORSith_InitialGovernor</defName>
+        <pawnKind>KotORSith_governor</pawnKind>
+        <faction>guy762_KotORFaction_SithRemnant</faction>
+        <!-- <xenotype>Baseliner</xenotype> -->
+		<roles>
+            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+    </SWCP.Core.CharacterDef>
+	
+	<SWCP.Core.CharacterDef MayRequire="guy762.Lee.KotORPotF">
+        <defName>SWKotORSith_SecondWarlord_PotF</defName>
+        <pawnKind>KotORSith_warlord_PotF</pawnKind>
+        <faction>guy762_KotORFaction_SithRemnant</faction>
+        <!-- <xenotype>Baseliner</xenotype> -->
+		<roles>
+            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+                <seniority>500</seniority>
+            </li>
+        </roles>
+    </SWCP.Core.CharacterDef>
+	
+	<SWCP.Core.CharacterDef MayRequire="lee.theforce.psycast">
+        <defName>SWKotORSith_SecondWarlord_VPE</defName>
+        <pawnKind>KotORSith_warlord_VPE</pawnKind>
+        <faction>guy762_KotORFaction_SithRemnant</faction>
+        <!-- <xenotype>Baseliner</xenotype> -->
+		<roles>
+            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+                <seniority>500</seniority>
+            </li>
+        </roles>
+    </SWCP.Core.CharacterDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<SWCP.Core.CharacterDef>
+        <defName>SWKotORMandoNeoCrusaders_InitialFieldMarshal</defName>
+        <pawnKind>KotORMando_fieldmarshal</pawnKind>
+        <faction>guy762_KotORFaction_MandoNeoCrusaders</faction>
+        <!-- <xenotype>Baseliner</xenotype> -->
+		<roles>
+            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+    </SWCP.Core.CharacterDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<SWCP.Core.CharacterDef>
+        <defName>SWKotORSithEmpire_InitialGovernor</defName>
+        <pawnKind>KotORSith_governor</pawnKind>
+        <faction>guy762_KotORFaction_SithEmpire</faction>
+        <!-- <xenotype>Baseliner</xenotype> -->
+		<roles>
+            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+                <seniority>1000</seniority>
+            </li>
+        </roles>
+    </SWCP.Core.CharacterDef>
+	
+	<SWCP.Core.CharacterDef MayRequire="guy762.Lee.KotORPotF">
+        <defName>SWKotORSithEmpire_SecondWarlord_PotF</defName>
+        <pawnKind>KotORSith_warlord_PotF</pawnKind>
+        <faction>guy762_KotORFaction_SithEmpire</faction>
+        <!-- <xenotype>Baseliner</xenotype> -->
+		<roles>
+            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+                <seniority>500</seniority>
+            </li>
+        </roles>
+    </SWCP.Core.CharacterDef>
+	
+	<SWCP.Core.CharacterDef MayRequire="lee.theforce.psycast">
+        <defName>SWKotORSithEmpire_SecondWarlord_VPE</defName>
+        <pawnKind>KotORSith_warlord_VPE</pawnKind>
+        <faction>guy762_KotORFaction_SithEmpire</faction>
+        <!-- <xenotype>Baseliner</xenotype> -->
+		<roles>
+            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+                <seniority>500</seniority>
+            </li>
+        </roles>
+    </SWCP.Core.CharacterDef>
+	
+	
+	
+
+</Defs>
