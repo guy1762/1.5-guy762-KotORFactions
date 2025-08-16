@@ -504,11 +504,12 @@
 		  <li>KotORAccessory_backpack</li>
 		  <li>KotORAccessory_trooper_strapsonly</li>
 		  <li>SWKotORSpecificApparelItem_CinnagarBattleArmor</li>
-		  <li>guy762PatchedTag_Broadwrap</li>
+		  <!-- <li>guy762PatchedTag_Broadwrap</li> -->
+		  <li>SWCPSpecificApparelItem_OpenHeadwrap</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelRequired>
-		   <li>Apparel_Broadwrap</li>
+		   <li>guy762_Headwrap_open</li>
 		   <li>guy762_MidBattleArmor_cinnagar</li>
 		</apparelRequired>
 		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>

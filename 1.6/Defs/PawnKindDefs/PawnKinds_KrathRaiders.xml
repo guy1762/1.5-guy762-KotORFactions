@@ -67,7 +67,8 @@
 		<apparelMoney>1500~5500</apparelMoney>
 		<apparelTags>
 		  <li>KotORUtility_weakgrenade</li>
-		  <li>guy762PatchedTag_Broadwrap</li>
+		  <!-- <li>guy762PatchedTag_Broadwrap</li> -->
+		  <li>SaV_apparel_headwrapmix</li>
 		  <li>SithRem_apparel_undersuit</li>
 		  <li>SithRem_apparel_raider</li>
 		  <li>SithRem_raiderhelmet</li>
@@ -101,7 +102,7 @@
 					<chance>0.1</chance>
 				  </li>
 				  <li>
-					<tag>guy762PatchedTag_Broadwrap</tag>
+					<tag>SaV_apparel_headwrapmix</tag>
 					<chance>0.1</chance>
 				  </li>
 				</alternateTagChoices>
