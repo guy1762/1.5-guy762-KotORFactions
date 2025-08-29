@@ -227,7 +227,7 @@
 			<Medicine>8</Medicine>
 		</skillGains>
 		<forcedTraits>
-		  <PsychicSensitivity>1</PsychicSensitivity>
+		  <!-- <PsychicSensitivity>1</PsychicSensitivity> -->
 		</forcedTraits>
 		<requiredWorkTags>
 		  <li>Violent</li>

@@ -182,7 +182,7 @@
 			<Melee>8</Melee>
 		</skillGains>
 		<forcedTraits>
-		  <PsychicSensitivity>1</PsychicSensitivity>
+		  <!-- <PsychicSensitivity>1</PsychicSensitivity> -->
 		</forcedTraits>
 		<requiredWorkTags>
 		  <li>Violent</li>

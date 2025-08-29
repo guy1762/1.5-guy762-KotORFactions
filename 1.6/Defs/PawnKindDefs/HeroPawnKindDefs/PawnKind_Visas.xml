@@ -141,7 +141,7 @@
 		<description>At a young age, [PAWN_nameDef] was forced to watch as [PAWN_possessive] homeworld was destroyed by a Sith Lord of incomprehensible power. Having sensed [PAWN_possessive] strength in the Force from afar, this Sith Lord spared [PAWN_nameDef] from his catastrophic wrath and enslaved [PAWN_possessive] for his own ends.</description>
 		<slot>Childhood</slot>
 		<forcedTraits>
-		  <PsychicSensitivity>2</PsychicSensitivity>
+		  <!-- <PsychicSensitivity>2</PsychicSensitivity> -->
 		  <Psychopath>0</Psychopath>
 		  <Masochist>0</Masochist>
 		</forcedTraits>

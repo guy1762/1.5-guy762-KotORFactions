@@ -129,6 +129,11 @@
             </li>
 			
 			
+			<li MayRequire="lee.theforce.standalone">
+              <kindDef>KotORPlayablePawn_JediSentinel_TFS</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
 			<li MayRequire="lee.theforce.psycast">
               <kindDef>KotORPlayablePawn_JediSentinel_VPE</kindDef>
               <count>1</count>
@@ -168,6 +173,11 @@
               <requiredAtStart>false</requiredAtStart>
             </li>
 			
+			<li MayRequire="lee.theforce.standalone">
+              <kindDef>KotORPlayablePawn_DarkJedi_TFS</kindDef>
+              <count>1</count>
+              <requiredAtStart>false</requiredAtStart>
+            </li>
 			<li MayRequire="lee.theforce.psycast">
               <kindDef>KotORPlayablePawn_DarkJedi_VPE</kindDef>
               <count>1</count>

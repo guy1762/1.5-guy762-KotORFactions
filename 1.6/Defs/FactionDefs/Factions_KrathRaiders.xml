@@ -259,6 +259,8 @@
           <KotORKrath_raiderveteran>10</KotORKrath_raiderveteran>
 		  <KotORKrath_krathmelee>25</KotORKrath_krathmelee>
 		  
+		  <KotORSith_darkjedi_TFS MayRequire="lee.theforce.standalone">5</KotORSith_darkjedi_TFS>
+		  
 		  <KotORSith_darkjedi_PotF MayRequire="guy762.Lee.KotORPotF">5</KotORSith_darkjedi_PotF>
 		  
 		  <KotORSith_darkjedi_VPE MayRequire="lee.theforce.psycast">5</KotORSith_darkjedi_VPE>
@@ -284,6 +286,8 @@
           <KotORKrath_raiderveteran>50</KotORKrath_raiderveteran>
           <KotORSith_lieutenant>100</KotORSith_lieutenant>
 		  
+		  <KotORSith_darkjedi_TFS MayRequire="lee.theforce.standalone">10</KotORSith_darkjedi_TFS>
+		  
 		  <KotORSith_darkjedi_PotF MayRequire="guy762.Lee.KotORPotF">10</KotORSith_darkjedi_PotF>
 		  
 		  <KotORSith_darkjedi_VPE MayRequire="lee.theforce.psycast">10</KotORSith_darkjedi_VPE>
@@ -307,6 +311,8 @@
 		  <KotORKrath_krathmelee>25</KotORKrath_krathmelee>
 		  <KotORKrath_raiderveteran>25</KotORKrath_raiderveteran>
 		  <KotORSith_droid_SentWD MayRequire="guy762.KotORDroids">50</KotORSith_droid_SentWD>
+		  
+		  <KotORSith_darkjedi_TFS MayRequire="lee.theforce.standalone">10</KotORSith_darkjedi_TFS>
 		  
 		  <KotORSith_darkjedi_PotF MayRequire="guy762.Lee.KotORPotF">10</KotORSith_darkjedi_PotF>
 		  
@@ -333,6 +339,8 @@
 		  
 		  <KotORSith_lieutenant>100</KotORSith_lieutenant>
 		  <KotORKrath_raidercmdr>100</KotORKrath_raidercmdr>
+		  
+		  <KotORSith_darkjedi_TFS MayRequire="lee.theforce.standalone">5</KotORSith_darkjedi_TFS>
 		  
 		  <KotORSith_darkjedi_PotF MayRequire="guy762.Lee.KotORPotF">5</KotORSith_darkjedi_PotF>
 		  

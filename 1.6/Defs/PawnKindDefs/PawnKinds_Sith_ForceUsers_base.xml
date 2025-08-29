@@ -10,6 +10,12 @@
 			<PsychicSensitivity>-1</PsychicSensitivity>
 			<PsychicSensitivity>-2</PsychicSensitivity>
 		</disallowedTraitsWithDegree>
+		
+		<!-- <forcedTraits> -->
+			<!-- <Force_NeutralSensitivity MayRequire="lee.theforce.standalone">-1~2</Force_NeutralSensitivity> -->
+			<!-- <Force_DarkAffinity MayRequire="lee.theforce.standalone">-1~1</Force_DarkAffinity> -->
+		<!-- </forcedTraits> -->
+		
 		<useFactionXenotypes>false</useFactionXenotypes>
 		<xenotypeSet>
 			<xenotypeChances>

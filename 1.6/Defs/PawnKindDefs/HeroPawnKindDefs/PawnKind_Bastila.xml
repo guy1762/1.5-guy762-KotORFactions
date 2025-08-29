@@ -149,7 +149,7 @@
 			<Medicine>8</Medicine>
 		</skillGains>
 		<forcedTraits>
-		  <PsychicSensitivity>2</PsychicSensitivity>
+		  <!-- <PsychicSensitivity>2</PsychicSensitivity> -->
 		  <Brawler>0</Brawler>
 		</forcedTraits>
 		<requiredWorkTags>

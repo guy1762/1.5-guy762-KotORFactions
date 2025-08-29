@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	
+	<PawnKindDef Name="KotORSith_darkjedi_TFS" ParentName="KotORSith_BASEdarkjedi">
+		  <defName>KotORSith_darkjedi_TFS</defName>
+		  <modExtensions>
+			 <li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+				<forceLevelRange>
+				   <min>10</min>
+				   <max>12</max>
+				</forceLevelRange>
+				<darkSideRange>25 ~ 55</darkSideRange>
+				<grantRandomAbilities>true</grantRandomAbilities>
+				<minRandomAbilities>6</minRandomAbilities>
+				<maxRandomAbilities>8</maxRandomAbilities>
+				<abilityCategories>
+				   <li>Force_Neutral</li>
+				   <li>Force_Darkside</li>
+				   <li>Force_Telekinesis</li>
+				   <li>Force_LightsaberCombat</li>
+				</abilityCategories>
+			 </li>
+		  </modExtensions>
+	   </PawnKindDef>	
+		
+		
+		<!--force users-->  
+   
+   
+   <PawnKindDef Name="KotORSith_acolyte_TFS" ParentName="KotORSith_BASEacolyte">
+      <defName>KotORSith_acolyte_TFS</defName>
+	  <modExtensions>
+         <li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+            <forceLevelRange>
+               <min>2</min>
+               <max>3</max>
+            </forceLevelRange>
+            <darkSideRange>15 ~ 35</darkSideRange>
+            <grantRandomAbilities>true</grantRandomAbilities>
+            <minRandomAbilities>1</minRandomAbilities>
+            <maxRandomAbilities>2</maxRandomAbilities>
+            <abilityCategories>
+               <li>Force_Darkside</li>
+            </abilityCategories>
+         </li>
+      </modExtensions>
+   </PawnKindDef>
+   
+   
+   
+   <PawnKindDef Name="KotORSith_assassin_TFS" ParentName="KotORSith_BASEassassin">
+      <defName>KotORSith_assassin_TFS</defName>
+	  <modExtensions>
+         <li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+            <forceLevelRange>
+               <min>6</min>
+               <max>8</max>
+            </forceLevelRange>
+            <darkSideRange>45 ~ 85</darkSideRange>
+            <grantRandomAbilities>true</grantRandomAbilities>
+            <minRandomAbilities>4</minRandomAbilities>
+            <maxRandomAbilities>7</maxRandomAbilities>
+            <abilityCategories>
+               <li>Force_Darkside</li>
+               <li>Force_Neutral</li>
+            </abilityCategories>
+         </li>
+      </modExtensions>
+   </PawnKindDef>
+   
+   
+   
+   
+   
+   <PawnKindDef Name="KotORSith_warrior_TFS" ParentName="KotORSith_BASEwarrior">
+      <defName>KotORSith_warrior_TFS</defName>
+	  <modExtensions>
+         <li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+            <forceLevelRange>
+               <min>6</min>
+               <max>8</max>
+            </forceLevelRange>
+            <darkSideRange>25 ~ 55</darkSideRange>
+            <grantRandomAbilities>true</grantRandomAbilities>
+            <minRandomAbilities>4</minRandomAbilities>
+            <maxRandomAbilities>7</maxRandomAbilities>
+            <abilityCategories>
+               <li>Force_Darkside</li>
+               <li>Force_Telekinesis</li>
+            </abilityCategories>
+         </li>
+      </modExtensions>
+   </PawnKindDef>
+   
+   <PawnKindDef Name="KotORSith_marauder_TFS" ParentName="KotORSith_BASEmarauder">
+      <defName>KotORSith_marauder_TFS</defName>
+	  <modExtensions>
+         <li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+            <forceLevelRange>
+               <min>10</min>
+               <max>12</max>
+            </forceLevelRange>
+            <darkSideRange>55 ~ 100</darkSideRange>
+            <grantRandomAbilities>true</grantRandomAbilities>
+            <minRandomAbilities>6</minRandomAbilities>
+            <maxRandomAbilities>8</maxRandomAbilities>
+            <abilityCategories>
+               <li>Force_Darkside</li>
+               <li>Force_Telekinesis</li>
+               <li>Force_LightsaberCombat</li>
+            </abilityCategories>
+         </li>
+      </modExtensions>
+   </PawnKindDef>
+   
+   
+   <PawnKindDef Name="KotORSith_warlord_TFS" ParentName="KotORSith_BASEwarlord">
+      <defName>KotORSith_warlord_TFS</defName>
+	  <modExtensions>
+         <li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+            <forceLevelRange>
+               <min>14</min>
+               <max>16</max>
+            </forceLevelRange>
+            <darkSideRange>75 ~ 100</darkSideRange>
+            <grantRandomAbilities>true</grantRandomAbilities>
+            <minRandomAbilities>10</minRandomAbilities>
+            <maxRandomAbilities>12</maxRandomAbilities>
+            <abilityCategories>
+               <li>Force_Neutral</li>
+               <li>Force_Darkside</li>
+               <li>Force_Telekinesis</li>
+               <li>Force_LightsaberCombat</li>
+            </abilityCategories>
+         </li>
+      </modExtensions>
+   </PawnKindDef>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <PawnKindDef Name="KotORSith_redguard_TFS" ParentName="KotORSith_BASEredguard" Abstract="True">
+      <defName>KotORSith_redguard_TFS</defName>
+	  <modExtensions>
+         <li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+            <forceLevelRange>
+               <min>2</min>
+               <max>3</max>
+            </forceLevelRange>
+            <darkSideRange>15 ~ 35</darkSideRange>
+            <grantRandomAbilities>true</grantRandomAbilities>
+            <minRandomAbilities>1</minRandomAbilities>
+            <maxRandomAbilities>2</maxRandomAbilities>
+            <abilityCategories>
+               <li>Force_Darkside</li>
+            </abilityCategories>
+         </li>
+      </modExtensions>
+   </PawnKindDef>
+   
+   <PawnKindDef Name="KotORSith_redguardranged_TFS" ParentName="KotORSith_redguard_TFS">
+	  <defName>KotORSith_redguardranged_TFS</defName>
+	  <weaponMoney>15000~100000</weaponMoney>
+	  <weaponTags>
+		  <li>SE_redguard</li>
+	  </weaponTags>
+   </PawnKindDef>
+   
+   <PawnKindDef Name="KotORSith_redguardmelee_TFS" ParentName="KotORSith_redguard_TFS">
+	  <defName>KotORSith_redguardmelee_TFS</defName>
+	  <weaponMoney>1600~10000</weaponMoney>
+	  <weaponTags>
+		  <li>SE_redguardmelee</li> 
+	  </weaponTags>
+   </PawnKindDef>
+   
+</Defs>

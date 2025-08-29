@@ -34,6 +34,7 @@
 	<leaderTitle>warlord</leaderTitle>
 	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
 	<fixedLeaderKinds>
+      <li MayRequire="lee.theforce.standalone">KotORSith_warlord_TFS</li>
       <li MayRequire="guy762.Lee.KotORPotF">KotORSith_warlord_PotF</li>
       <li MayRequire="lee.theforce.psycast">KotORSith_warlord_VPE</li>
       <li>KotORSith_governor</li>
@@ -280,6 +281,9 @@
           <KotORSith_elitemelee>25</KotORSith_elitemelee>
 		  <KotORSith_lieutenant>25</KotORSith_lieutenant>
 		  
+		  <KotORSith_acolyte_TFS MayRequire="lee.theforce.standalone">10</KotORSith_acolyte_TFS>
+          <KotORSith_warrior_TFS MayRequire="lee.theforce.standalone">5</KotORSith_warrior_TFS>
+		  
 		  <KotORSith_acolyte_PotF MayRequire="guy762.Lee.KotORPotF">10</KotORSith_acolyte_PotF>
           <KotORSith_warrior_PotF MayRequire="guy762.Lee.KotORPotF">5</KotORSith_warrior_PotF>
 		  
@@ -311,6 +315,8 @@
           <KotORSith_elitemelee>5</KotORSith_elitemelee>
 		  <KotORSith_lieutenant>50</KotORSith_lieutenant>
 		  
+		  <KotORSith_warrior_TFS MayRequire="lee.theforce.standalone">5</KotORSith_warrior_TFS>
+		  
 		  <KotORSith_warrior_PotF MayRequire="guy762.Lee.KotORPotF">5</KotORSith_warrior_PotF>
 		  
 		  <KotORSith_warrior_VPE MayRequire="lee.theforce.psycast">5</KotORSith_warrior_VPE>
@@ -339,6 +345,9 @@
           <KotORSith_elite>10</KotORSith_elite>
           <KotORSith_elitemelee>5</KotORSith_elitemelee>
           <KotORSith_lieutenant>100</KotORSith_lieutenant>
+		  
+		  <KotORSith_acolyte_TFS MayRequire="lee.theforce.standalone">10</KotORSith_acolyte_TFS>
+          <KotORSith_warrior_TFS MayRequire="lee.theforce.standalone">5</KotORSith_warrior_TFS>
 		  
 		  <KotORSith_acolyte_PotF MayRequire="guy762.Lee.KotORPotF">10</KotORSith_acolyte_PotF>
           <KotORSith_warrior_PotF MayRequire="guy762.Lee.KotORPotF">5</KotORSith_warrior_PotF>
@@ -369,6 +378,9 @@
 		  <KotORSith_lieutenant>100</KotORSith_lieutenant>
           <KotORSith_operative>50</KotORSith_operative>
 		  
+		  <KotORSith_acolyte_TFS MayRequire="lee.theforce.standalone">25</KotORSith_acolyte_TFS>
+          <KotORSith_warrior_TFS MayRequire="lee.theforce.standalone">10</KotORSith_warrior_TFS>
+		  
 		  <KotORSith_acolyte_PotF MayRequire="guy762.Lee.KotORPotF">25</KotORSith_acolyte_PotF>
           <KotORSith_warrior_PotF MayRequire="guy762.Lee.KotORPotF">10</KotORSith_warrior_PotF>
 		  
@@ -395,7 +407,10 @@
           <KotORSith_shocktrooper>50</KotORSith_shocktrooper>
 		  <KotORSith_lieutenant>100</KotORSith_lieutenant>
 		  
-          <KotORSith_warrior_PotF MayRequire="guy762.Lee.KotORPotF">25</KotORSith_warrior_PotF>
+          <KotORSith_warrior_TFS MayRequire="lee.theforce.standalone">25</KotORSith_warrior_TFS>
+          <KotORSith_marauder_TFS MayRequire="lee.theforce.standalone">10</KotORSith_marauder_TFS>
+		  
+		  <KotORSith_warrior_PotF MayRequire="guy762.Lee.KotORPotF">25</KotORSith_warrior_PotF>
           <KotORSith_marauder_PotF MayRequire="guy762.Lee.KotORPotF">10</KotORSith_marauder_PotF>
 		  
 		  <KotORSith_warrior_VPE MayRequire="lee.theforce.psycast">25</KotORSith_warrior_VPE>
@@ -416,6 +431,8 @@
 		</disallowedStrategies>
         <options>
 		  <KotORSith_operative>50</KotORSith_operative>
+		  
+		  <KotORSith_assassin_TFS MayRequire="lee.theforce.standalone">100</KotORSith_assassin_TFS>
 		  
 		  <KotORSith_assassin_PotF MayRequire="guy762.Lee.KotORPotF">100</KotORSith_assassin_PotF>
 		  
@@ -454,6 +471,8 @@
 		  <KotORSith_tactician>100</KotORSith_tactician>
 		  <KotORSith_captain>100</KotORSith_captain>
 		  
+		  <KotORSith_darkjedi_TFS MayRequire="lee.theforce.standalone">5</KotORSith_darkjedi_TFS>
+		  
 		  <KotORSith_darkjedi_PotF MayRequire="guy762.Lee.KotORPotF">5</KotORSith_darkjedi_PotF>
 		  
 		  <KotORSith_darkjedi_VPE MayRequire="lee.theforce.psycast">10</KotORSith_darkjedi_VPE>
@@ -472,6 +491,13 @@
 		  <KotORSith_elitemelee>10</KotORSith_elitemelee>
 		  <KotORCzrka_droid_ADMkIV MayRequire="guy762.KotORDroids">5</KotORCzrka_droid_ADMkIV>
 		  
+		  <KotORSith_darkjedi_TFS MayRequire="lee.theforce.standalone">10</KotORSith_darkjedi_TFS>
+		  <KotORSith_acolyte_TFS MayRequire="lee.theforce.standalone">25</KotORSith_acolyte_TFS>
+		  <KotORSith_warrior_TFS MayRequire="lee.theforce.standalone">25</KotORSith_warrior_TFS>
+		  <KotORSith_assassin_TFS MayRequire="lee.theforce.standalone">10</KotORSith_assassin_TFS>
+          <KotORSith_marauder_TFS MayRequire="lee.theforce.standalone">10</KotORSith_marauder_TFS>
+		  
+		  
 		  <KotORSith_darkjedi_PotF MayRequire="guy762.Lee.KotORPotF">10</KotORSith_darkjedi_PotF>
 		  <KotORSith_acolyte_PotF MayRequire="guy762.Lee.KotORPotF">25</KotORSith_acolyte_PotF>
 		  <KotORSith_warrior_PotF MayRequire="guy762.Lee.KotORPotF">25</KotORSith_warrior_PotF>
@@ -487,6 +513,9 @@
 		  <KotORSith_operative>10</KotORSith_operative>
 		  <KotORSith_lieutenant>100</KotORSith_lieutenant>
 		  <KotORSith_captain>100</KotORSith_captain>
+		  
+		  <KotORSith_redguardmelee_TFS MayRequire="lee.theforce.standalone">100</KotORSith_redguardmelee_TFS>
+		  <KotORSith_warlord_TFS MayRequire="lee.theforce.standalone">100</KotORSith_warlord_TFS>
 		  
 		  <KotORSith_redguardmelee_PotF MayRequire="guy762.Lee.KotORPotF">100</KotORSith_redguardmelee_PotF>
 		  <KotORSith_warlord_PotF MayRequire="guy762.Lee.KotORPotF">100</KotORSith_warlord_PotF>

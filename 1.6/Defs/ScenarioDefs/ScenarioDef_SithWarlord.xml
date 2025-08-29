@@ -98,6 +98,11 @@
           <pawnChoiceCount>12</pawnChoiceCount>
           <!--leftBehindPawnKind>KotORPlayableHero_T3M4</leftBehindPawnKind-->
           <kindCounts>
+			<li MayRequire="lee.theforce.standalone">
+              <kindDef>KotORPlayablePawn_SithWarlord_TFS</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
 			<li MayRequire="lee.theforce.psycast">
               <kindDef>KotORPlayablePawn_SithWarlord_VPE</kindDef>
               <count>1</count>
@@ -111,6 +116,11 @@
 			
 			
 			
+			<li MayRequire="lee.theforce.standalone">
+              <kindDef>KotORPlayablePawn_SithAcolyte_TFS</kindDef>
+              <count>3</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
 			<li MayRequire="lee.theforce.psycast">
               <kindDef>KotORPlayablePawn_SithAcolyte_VPE</kindDef>
               <count>3</count>

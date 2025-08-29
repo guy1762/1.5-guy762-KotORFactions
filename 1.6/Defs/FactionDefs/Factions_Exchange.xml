@@ -353,6 +353,8 @@
 		  <KotORBntyHntr_mandostar>100</KotORBntyHntr_mandostar>
 		  <KotORDroidBad_hk50boss>100</KotORDroidBad_hk50boss>
 		  
+		  <KotORSith_darkjedi_TFS MayRequire="lee.theforce.standalone">25</KotORSith_darkjedi_TFS>
+		  
 		  <KotORSith_darkjedi_PotF MayRequire="guy762.Lee.KotORPotF">25</KotORSith_darkjedi_PotF>
 		  
 		  <KotORSith_darkjedi_VPE MayRequire="lee.theforce.psycast">25</KotORSith_darkjedi_VPE>

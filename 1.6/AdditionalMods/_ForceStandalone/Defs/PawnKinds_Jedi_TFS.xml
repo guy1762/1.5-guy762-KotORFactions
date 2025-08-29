@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	
+	 
+			<!--jedi-->
+	  
+	  
+	<PawnKindDef Name="KotORRepub_jediguardian_TFS" ParentName="KotORRepub_BASEjediguardian">
+      <defName>KotORRepub_jediguardian_TFS</defName>
+	  <modExtensions>
+		 <li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+			<forceLevelRange>
+			   <min>10</min>
+			   <max>12</max>
+			</forceLevelRange>
+			<lightSideRange>25 ~ 55</lightSideRange>
+			<grantRandomAbilities>true</grantRandomAbilities>
+			<minRandomAbilities>6</minRandomAbilities>
+			<maxRandomAbilities>8</maxRandomAbilities>
+			<abilityCategories>
+			   <li>Force_Lightside</li>
+			   <li>Force_Telekinesis</li>
+			   <li>Force_LightsaberCombat</li>
+			</abilityCategories>
+		 </li>
+	  </modExtensions>
+   </PawnKindDef>
+   
+   
+   
+   
+   
+   
+   <PawnKindDef Name="KotORRepub_jedisentinel_TFS" ParentName="KotORRepub_BASEjedisentinel">
+      <defName>KotORRepub_jedisentinel_TFS</defName>
+	  <modExtensions>
+		 <li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+			<forceLevelRange>
+			   <min>10</min>
+			   <max>12</max>
+			</forceLevelRange>
+			<lightSideRange>25 ~ 55</lightSideRange>
+			<grantRandomAbilities>true</grantRandomAbilities>
+			<minRandomAbilities>6</minRandomAbilities>
+			<maxRandomAbilities>8</maxRandomAbilities>
+			<abilityCategories>
+			   <li>Force_Neutral</li>
+			   <li>Force_Lightside</li>
+			   <li>Force_Telekinesis</li>
+			</abilityCategories>
+		 </li>
+	  </modExtensions>
+   </PawnKindDef>
+   
+   
+   
+   
+   
+   
+   
+   <PawnKindDef Name="KotORRepub_jediconsular_TFS" ParentName="KotORRepub_BASEjediconsular">
+      <defName>KotORRepub_jediconsular_TFS</defName>
+	  <modExtensions>
+		 <li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+			<forceLevelRange>
+			   <min>10</min>
+			   <max>12</max>
+			</forceLevelRange>
+			<lightSideRange>45 ~ 85</lightSideRange>
+			<grantRandomAbilities>true</grantRandomAbilities>
+			<minRandomAbilities>6</minRandomAbilities>
+			<maxRandomAbilities>8</maxRandomAbilities>
+			<abilityCategories>
+			   <li>Force_Neutral</li>
+			   <li>Force_Lightside</li>
+			   <li>Force_Telekinesis</li>
+			</abilityCategories>
+		 </li>
+	  </modExtensions>
+   </PawnKindDef>
+
+   
+</Defs>

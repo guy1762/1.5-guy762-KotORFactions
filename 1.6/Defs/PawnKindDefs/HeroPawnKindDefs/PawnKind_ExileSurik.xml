@@ -185,7 +185,7 @@
 			<Social>8</Social>
 		</skillGains>
 		<forcedTraits>
-		  <PsychicSensitivity>2</PsychicSensitivity>
+		  <!-- <PsychicSensitivity>2</PsychicSensitivity> -->
 		  <FastLearner>0</FastLearner>
 		</forcedTraits>
 		<requiredWorkTags>

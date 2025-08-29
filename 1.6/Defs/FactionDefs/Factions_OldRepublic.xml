@@ -292,6 +292,10 @@
           <KotORRepub_commando>100</KotORRepub_commando>
 		  <KotORRepub_saboteur>100</KotORRepub_saboteur>
 		  
+		  <KotORRepub_jediguardian_TFS MayRequire="lee.theforce.standalone">10</KotORRepub_jediguardian_TFS>
+		  <KotORRepub_jedisentinel_TFS MayRequire="lee.theforce.standalone">10</KotORRepub_jedisentinel_TFS>
+		  <KotORRepub_jediconsular_TFS MayRequire="lee.theforce.standalone">10</KotORRepub_jediconsular_TFS>
+		  
 		  <KotORRepub_jediguardian_PotF MayRequire="guy762.Lee.KotORPotF">10</KotORRepub_jediguardian_PotF>
 		  <KotORRepub_jedisentinel_PotF MayRequire="guy762.Lee.KotORPotF">10</KotORRepub_jedisentinel_PotF>
 		  <KotORRepub_jediconsular_PotF MayRequire="guy762.Lee.KotORPotF">10</KotORRepub_jediconsular_PotF>
@@ -344,7 +348,11 @@
 		  <Orray MayRequire="Mlie.StarWarsAnimalCollection">1</Orray>
 		  <Bordok MayRequire="Mlie.StarWarsAnimalCollection">1</Bordok>
 		  <Skalder MayRequire="Mlie.StarWarsAnimalCollection">0.1</Skalder>
-		  <Muffalo>0.01</Muffalo> <!-- required because trader caravan won't generate without at least one valid carrier type -->
+		  <!-- <Muffalo>0.01</Muffalo> alright fuck me man I guess this shit doesn't even work without the vanilla animal spawns -->
+		  <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2</Alpaca>
+          <Elephant>1</Elephant>
 		</carriers>
 		<guards>
 		  <KotORRepub_medic>5</KotORRepub_medic>
@@ -353,6 +361,8 @@
 		  <KotORRepub_soldier>10</KotORRepub_soldier>
 		  <KotORDroidBad_KX12UPD MayRequire="guy762.KotORDroids">3</KotORDroidBad_KX12UPD>
 		  <KotORRepub_droid_SentWD MayRequire="guy762.KotORDroids">4</KotORRepub_droid_SentWD>
+		  
+		  <KotORRepub_jediconsular_TFS MayRequire="lee.theforce.standalone">1</KotORRepub_jediconsular_TFS>
 		  
 		  <KotORRepub_jediconsular_PotF MayRequire="guy762.Lee.KotORPotF">1</KotORRepub_jediconsular_PotF>
 		  
@@ -381,6 +391,10 @@
 		  <KotORRepub_commando>5</KotORRepub_commando>
 		  <KotORRepub_lieutenant>100</KotORRepub_lieutenant>
 		  <KotORRepub_captain>100</KotORRepub_captain>
+		  
+		  <KotORRepub_jediguardian_TFS MayRequire="lee.theforce.standalone">1</KotORRepub_jediguardian_TFS>
+		  <KotORRepub_jedisentinel_TFS MayRequire="lee.theforce.standalone">1</KotORRepub_jedisentinel_TFS>
+		  <KotORRepub_jediconsular_TFS MayRequire="lee.theforce.standalone">1</KotORRepub_jediconsular_TFS>
 		  
 		  <KotORRepub_jediguardian_PotF MayRequire="guy762.Lee.KotORPotF">1</KotORRepub_jediguardian_PotF>
 		  <KotORRepub_jedisentinel_PotF MayRequire="guy762.Lee.KotORPotF">1</KotORRepub_jedisentinel_PotF>

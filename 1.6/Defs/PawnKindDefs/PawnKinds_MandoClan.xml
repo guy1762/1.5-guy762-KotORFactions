@@ -43,11 +43,13 @@
 		<apparelTags>
 			<li>MNCFactionArmor</li>
 		</apparelTags>
+		<weaponMoney>6000~12000</weaponMoney>
 		<!-- <weaponMoney> -->
 			<!-- <min>6000</min> -->
 			<!-- <max>12000</max> -->
 		<!-- </weaponMoney> -->
 		<techHediffsChance>0.3</techHediffsChance>
+		<techHediffsMoney>12000~20000</techHediffsMoney>
 		<!-- <techHediffsMoney> -->
 			<!-- <min>12000</min> -->
 			<!-- <max>20000</max> -->

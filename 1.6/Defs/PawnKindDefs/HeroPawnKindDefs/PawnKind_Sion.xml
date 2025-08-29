@@ -154,7 +154,7 @@
 		<description>During [PAWN_possessive] time as a Sith Marauder in the Exar Kun war, [PAWN_nameDef] was struck down by a Jedi. However, rather than giving in to [PAWN_possessive] wounds, [PAWN_nameDef] found [PAWN_pronoun] had a rare Force ability to draw upon the power of [PAWN_possessive] own pain and anger to avoid imminent death and hold [PAWN_possessive] damaged body together. In this way, [PAWN_nameDef] survived the Exar Kun war and continue to fight against the Jedi for decades after, rising to prominence in Revan's Sith Empire and being bestowed the title "The Lord of Pain" by Darth Traya.</description>
 		<slot>Adulthood</slot>
 		<forcedTraits>
-		  <PsychicSensitivity>2</PsychicSensitivity>
+		  <!-- <PsychicSensitivity>2</PsychicSensitivity> -->
 		  <Tough>0</Tough>
 		</forcedTraits>
 		<requiredWorkTags>

@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<PawnKindDef MayRequire="guy762.StarWarsXenotypes" Name="KotORPlayableHero_Visas_TFS"  ParentName="KotORHeroBase_Visas">
+		<defName>KotORPlayableHero_Visas_TFS</defName>
+		<forcedTraits Inherit="False">
+			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">2</Force_NeutralSensitivity>
+			<Force_DarkAffinity MayRequire="lee.theforce.standalone">-1</Force_DarkAffinity>
+			<Psychopath>0</Psychopath>
+			<Masochist>0</Masochist>
+			<Bisexual>0</Bisexual>
+		</forcedTraits>
+		<abilities>
+			<li MayRequire="lee.theforce.standalone">Force_Speed</li>
+			<li MayRequire="lee.theforce.standalone">Force_Leap</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceCloak</li>
+			<li MayRequire="lee.theforce.standalone">Force_Precognition</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_ForcePush</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForcePull</li>
+			<li MayRequire="lee.theforce.standalone">Force_ThrowItem</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceGrip</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_DrainVitality</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceChoke</li>
+			<li MayRequire="lee.theforce.standalone">Force_Fear</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_HealthSwap</li>
+			<li MayRequire="lee.theforce.standalone">Force_Revitalize</li>
+			<li MayRequire="lee.theforce.standalone">Force_JediMindTrick</li>
+			<li MayRequire="lee.theforce.standalone">Force_ProtectionBubble</li>
+		</abilities>
+		<modExtensions>
+			<li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+				<forceLevelRange>
+					<min>15</min>
+					<max>15</max>
+				</forceLevelRange>
+				<darkSideRange>15 ~ 25</darkSideRange>
+				<grantRandomAbilities>false</grantRandomAbilities>
+			</li> 
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	  
+	<PawnKindDef MayRequire="guy762.StarWarsXenotypes" Name="KotORPlayableVillain_Yuthura_TFS"  ParentName="KotORHeroBase_Yuthura">
+		<defName>KotORPlayableVillain_Yuthura_TFS</defName>
+		<forcedTraits Inherit="False">
+			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">2</Force_NeutralSensitivity>
+			<Force_DarkAffinity MayRequire="lee.theforce.standalone">0</Force_DarkAffinity>
+			<Brawler>0</Brawler>
+			<Greedy>0</Greedy>
+		</forcedTraits>
+		<abilities>
+			<li MayRequire="lee.theforce.standalone">Force_Speed</li>
+			<li MayRequire="lee.theforce.standalone">Force_Leap</li>
+			<li MayRequire="lee.theforce.standalone">Force_Malacia</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_ForcePush</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForcePull</li>
+			<li MayRequire="lee.theforce.standalone">Force_ThrowItem</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceGrip</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_DrainVitality</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceChoke</li>
+			<li MayRequire="lee.theforce.standalone">Force_Fear</li>
+			<li MayRequire="lee.theforce.standalone">Force_Rage</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_SunDjerm</li>
+			<li MayRequire="lee.theforce.standalone">Force_ChoMai</li>
+		</abilities>
+		<modExtensions>
+			<li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+				<forceLevelRange>
+					<min>13</min>
+					<max>13</max>
+				</forceLevelRange>
+				<darkSideRange>35 ~ 55</darkSideRange>
+				<grantRandomAbilities>false</grantRandomAbilities>
+			</li> 
+		</modExtensions>
+	</PawnKindDef>  
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef MayRequire="guy762.StarWarsXenotypes" Name="KotORPlayableHero_Handmaiden_TFS"  ParentName="KotORHeroBase_Handmaiden">
+		<defName>KotORPlayableHero_Handmaiden_TFS</defName>
+		<forcedTraits Inherit="False">
+			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">1</Force_NeutralSensitivity>
+			<Tough>0</Tough>
+			<Ascetic>0</Ascetic>
+			<Jealous>0</Jealous>
+		</forcedTraits>
+		<abilities>
+			<li MayRequire="lee.theforce.standalone">Force_Leap</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_ForcePull</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceAttract</li>
+			<li MayRequire="lee.theforce.standalone">Force_ThrowItem</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_ForceHealing</li>
+			<li MayRequire="lee.theforce.standalone">Force_ProtectionBubble</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_SunDjerm</li>
+			<li MayRequire="lee.theforce.standalone">Force_ChoMai</li>
+		</abilities>
+		<modExtensions>
+			<li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+				<forceLevelRange>
+					<min>8</min>
+					<max>8</max>
+				</forceLevelRange>
+				<lightSideRange>15 ~ 25</lightSideRange>
+				<grantRandomAbilities>false</grantRandomAbilities>
+			</li> 
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef MayRequire="guy762.StarWarsXenotypes" Name="KotORPlayableVillain_Sion_TFS"  ParentName="KotORHeroBase_Sion">
+		<defName>KotORPlayableVillain_Sion_TFS</defName>
+		<forcedTraits Inherit="False">
+			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">2</Force_NeutralSensitivity>
+			<Force_DarkAffinity MayRequire="lee.theforce.standalone">1</Force_DarkAffinity>
+			<Psychopath>0</Psychopath>
+			<Tough>0</Tough>
+			<Abrasive>0</Abrasive>
+			<Brawler>0</Brawler>
+		</forcedTraits>
+		<abilities>
+			<li MayRequire="lee.theforce.standalone">Force_Speed</li>
+			<li MayRequire="lee.theforce.standalone">Force_Leap</li>
+			<li MayRequire="lee.theforce.standalone">Force_Malacia</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_ForcePush</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForcePull</li>
+			<li MayRequire="lee.theforce.standalone">Force_ThrowItem</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceGrip</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_DrainVitality</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceChoke</li>
+			<li MayRequire="lee.theforce.standalone">Force_Fear</li>
+			<li MayRequire="lee.theforce.standalone">Force_Insanity</li>
+			<li MayRequire="lee.theforce.standalone">Force_Hatred</li>
+			<li MayRequire="lee.theforce.standalone">Force_Rage</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_SunDjerm</li>
+			<li MayRequire="lee.theforce.standalone">Force_ChoMai</li>
+			<li MayRequire="lee.theforce.standalone">Force_ChoMok</li>
+			<li MayRequire="lee.theforce.standalone">Force_ChoSun</li>
+			<li MayRequire="lee.theforce.standalone">Force_MouKei</li>
+			<li MayRequire="lee.theforce.standalone">Force_SaiTok</li>
+			<li MayRequire="lee.theforce.standalone">Force_SaiCha</li>
+		</abilities>
+		<modExtensions>
+			<li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+				<forceLevelRange>
+					<min>20</min>
+					<max>20</max>
+				</forceLevelRange>
+				<darkSideRange>99 ~ 100</darkSideRange>
+				<grantRandomAbilities>false</grantRandomAbilities>
+			</li> 
+		</modExtensions>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <PawnKindDef MayRequire="guy762.StarWarsXenotypes" Name="KotORPlayableHero_Juhani_TFS"  ParentName="KotORHeroBase_Juhani">
+		<defName>KotORPlayableHero_Juhani_TFS</defName>
+		<forcedTraits Inherit="False">
+			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">1</Force_NeutralSensitivity>
+			<Force_DarkAffinity MayRequire="lee.theforce.standalone">-1</Force_DarkAffinity>
+			<Gay>0</Gay>
+			<Nimble>0</Nimble>
+		</forcedTraits>
+		<abilities>
+			<li MayRequire="lee.theforce.standalone">Force_Speed</li>
+			<li MayRequire="lee.theforce.standalone">Force_Leap</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceCloak</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_ForcePull</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceAttract</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceRepulse</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_Rage</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_ForceHealing</li>
+			<li MayRequire="lee.theforce.standalone">Force_ProtectionBubble</li>
+			<li MayRequire="lee.theforce.standalone">Force_StasisField</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_SunDjerm</li>
+			<li MayRequire="lee.theforce.standalone">Force_ChoMai</li>
+			<li MayRequire="lee.theforce.standalone">Force_ChoMok</li>
+			<li MayRequire="lee.theforce.standalone">Force_ChoSun</li>
+			<li MayRequire="lee.theforce.standalone">Force_MouKei</li>
+			<li MayRequire="lee.theforce.standalone">Force_SaiTok</li>
+			<li MayRequire="lee.theforce.standalone">Force_SaiCha</li>
+		</abilities>
+		<modExtensions>
+			<li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+				<forceLevelRange>
+					<min>17</min>
+					<max>17</max>
+				</forceLevelRange>
+				<lightSideRange>55 ~ 75</lightSideRange>
+				<grantRandomAbilities>false</grantRandomAbilities>
+			</li> 
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="KotORPlayableHero_Bastila_TFS"  ParentName="KotORHeroBase_Bastila">
+		<defName>KotORPlayableHero_Bastila_TFS</defName>
+		<forcedTraits Inherit="False">
+			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">2</Force_NeutralSensitivity>
+			<Beauty>1</Beauty>
+			<Nerves>1</Nerves>
+			<Brawler>0</Brawler>
+		</forcedTraits>
+		<abilities>
+			<li MayRequire="lee.theforce.standalone">Force_Speed</li>
+			<li MayRequire="lee.theforce.standalone">Force_Leap</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceBody</li>
+			<li MayRequire="lee.theforce.standalone">Force_Precognition</li>
+			<li MayRequire="lee.theforce.standalone">Force_BattleMeditation</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_ForcePush</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForcePull</li>
+			<li MayRequire="lee.theforce.standalone">Force_ThrowItem</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceGrip</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceWave</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_Apprenticeship</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_ForceHealing</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceStabilize</li>
+			<li MayRequire="lee.theforce.standalone">Force_Revitalize</li>
+			<li MayRequire="lee.theforce.standalone">Force_ProtectionBubble</li>
+			<li MayRequire="lee.theforce.standalone">Force_StasisField</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_Lightning</li>
+			<li MayRequire="lee.theforce.standalone">Force_ElectricJudgment</li>
+			
+		</abilities>
+		<modExtensions>
+			<li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+				<forceLevelRange>
+					<min>18</min>
+					<max>18</max>
+				</forceLevelRange>
+				<lightSideRange>55 ~ 75</lightSideRange>
+				<grantRandomAbilities>false</grantRandomAbilities>
+			</li> 
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="KotORPlayableVillain_Malak_TFS"  ParentName="KotORHeroBase_Malak">
+		<defName>KotORPlayableVillain_Malak_TFS</defName>
+		<forcedTraits Inherit="False">
+			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">2</Force_NeutralSensitivity>
+			<Force_DarkAffinity MayRequire="lee.theforce.standalone">1</Force_DarkAffinity>
+			<Psychopath>0</Psychopath>
+			<Jealous>0</Jealous>
+			<Nerves>-2</Nerves>
+			<Brawler>0</Brawler>
+		</forcedTraits>
+		<abilities>
+			<li MayRequire="lee.theforce.standalone">Force_Speed</li>
+			<li MayRequire="lee.theforce.standalone">Force_Leap</li>
+			<li MayRequire="lee.theforce.standalone">Force_Precognition</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceBody</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_ForcePush</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceWave</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceGrip</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceRepulse</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_SunDjerm</li>
+			<li MayRequire="lee.theforce.standalone">Force_ChoMai</li>
+			<li MayRequire="lee.theforce.standalone">Force_SaiCha</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_Apprenticeship</li>
+			<li MayRequire="lee.theforce.standalone">Force_Combat_Lecture</li>
+			<li MayRequire="lee.theforce.standalone">Force_Mental_Lecture</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_Rage</li>
+			<li MayRequire="lee.theforce.standalone">Force_Lightning</li>
+			<li MayRequire="lee.theforce.standalone">Force_DrainVitality</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceChoke</li>
+			<li MayRequire="lee.theforce.standalone">Force_MindControl</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceShockwave</li>
+			
+		</abilities>
+		<modExtensions>
+			<li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+				<forceLevelRange>
+					<min>20</min>
+					<max>20</max>
+				</forceLevelRange>
+				<darkSideRange>99 ~ 100</darkSideRange>
+				<grantRandomAbilities>false</grantRandomAbilities>
+			</li> 
+		</modExtensions>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <PawnKindDef Name="KotORPlayableHero_ExileSurik_TFS"  ParentName="KotORHeroBase_ExileSurik">
+		<defName>KotORPlayableHero_ExileSurik_TFS</defName>
+		<forcedTraits Inherit="False">
+			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">2</Force_NeutralSensitivity>
+			<Nerves>2</Nerves>
+			<FastLearner>0</FastLearner>
+			<Beauty>2</Beauty>
+			<Bisexual>0</Bisexual>
+		</forcedTraits>
+		<abilities>
+			<li MayRequire="lee.theforce.standalone">Force_Speed</li>
+			<li MayRequire="lee.theforce.standalone">Force_Leap</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceIonize</li>
+			<li MayRequire="lee.theforce.standalone">Force_Malacia</li>
+			<li MayRequire="lee.theforce.standalone">Force_BattleMeditation</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_ForcePush</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceGrip</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceRepulse</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_Apprenticeship</li>
+			<li MayRequire="lee.theforce.standalone">Force_Combat_Lecture</li>
+			<li MayRequire="lee.theforce.standalone">Force_Sensitivity_Lecture</li>
+			<li MayRequire="lee.theforce.standalone">Force_Manipulation_Lecture</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_ForceHealing</li>
+			<li MayRequire="lee.theforce.standalone">Force_Revitalize</li>
+			<li MayRequire="lee.theforce.standalone">Force_ProtectionBubble</li>
+			<li MayRequire="lee.theforce.standalone">Force_AnimalBond</li>
+			<li MayRequire="lee.theforce.standalone">Force_JediMindTrick</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_Lightning</li>
+			<li MayRequire="lee.theforce.standalone">Force_MindControl</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceShockwave</li>
+			
+		</abilities>
+		<modExtensions>
+			<li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+				<forceLevelRange>
+					<min>20</min>
+					<max>20</max>
+				</forceLevelRange>
+				<lightSideRange>45 ~ 65</lightSideRange>
+				<grantRandomAbilities>false</grantRandomAbilities>
+			</li> 
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="KotORPlayableHero_Jolee_TFS"  ParentName="KotORHeroBase_Jolee">
+		<defName>KotORPlayableHero_Jolee_TFS</defName>
+		<forcedTraits Inherit="False">
+			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">2</Force_NeutralSensitivity>
+			<Ascetic>0</Ascetic>
+			<DrugDesire>-1</DrugDesire>
+			<Nerves>1</Nerves>
+		</forcedTraits>
+		<abilities>
+			<li MayRequire="lee.theforce.standalone">Force_Precognition</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_ThrowItem</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceGrip</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_Apprenticeship</li>
+			<li MayRequire="lee.theforce.standalone">Force_Social_Lecture</li>
+			<li MayRequire="lee.theforce.standalone">Force_Mental_Lecture</li>
+			<li MayRequire="lee.theforce.standalone">Force_Sense_Lecture</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_ForceHealing</li>
+			<li MayRequire="lee.theforce.standalone">Force_Revitalize</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceCombustion</li>
+			<li MayRequire="lee.theforce.standalone">Force_ProtectionBubble</li>
+			<li MayRequire="lee.theforce.standalone">Force_AnimalBond</li>
+			<li MayRequire="lee.theforce.standalone">Force_JediMindTrick</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceSurge</li>
+			<li MayRequire="lee.theforce.standalone">Force_Enlightenment</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_Fear</li>
+			
+		</abilities>
+		<modExtensions>
+			<li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+				<forceLevelRange>
+					<min>16</min>
+					<max>16</max>
+				</forceLevelRange>
+				<lightSideRange>25 ~ 35</lightSideRange>
+				<grantRandomAbilities>false</grantRandomAbilities>
+			</li> 
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef MayRequire="guy762.StarWarsXenotypes" Name="KotORPlayableVillain_Bandon_TFS"  ParentName="KotORHeroBase_Bandon">
+		<defName>KotORPlayableVillain_Bandon_TFS</defName>
+		<forcedTraits Inherit="False">
+			<Force_NeutralSensitivity MayRequire="lee.theforce.standalone">1</Force_NeutralSensitivity>
+			<Force_DarkAffinity MayRequire="lee.theforce.standalone">1</Force_DarkAffinity>
+			<Tough>0</Tough>
+			<Psychopath>0</Psychopath>
+			<Bloodlust>0</Bloodlust>
+			<Nerves>-2</Nerves>
+		</forcedTraits>
+		<abilities>
+			<li MayRequire="lee.theforce.standalone">Force_Speed</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceBody</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_ForcePull</li>
+			<li MayRequire="lee.theforce.standalone">Force_ForceAttract</li>
+			
+			<li MayRequire="lee.theforce.standalone">Force_ChoMai</li>
+			<li MayRequire="lee.theforce.standalone">Force_SaiTok</li>
+			<li MayRequire="lee.theforce.standalone">Force_SaiCha</li>
+
+			<li MayRequire="lee.theforce.standalone">Force_Rage</li>
+			
+		</abilities>
+		<modExtensions>
+			<li MayRequire="lee.theforce.standalone" Class="TheForce_Standalone.ModExtension_ForceUser">
+				<forceLevelRange>
+					<min>8</min>
+					<max>8</max>
+				</forceLevelRange>
+				<darkSideRange>55 ~ 75</darkSideRange>
+				<grantRandomAbilities>false</grantRandomAbilities>
+			</li> 
+		</modExtensions>
+	  </PawnKindDef>
+
+</Defs>

@@ -171,7 +171,7 @@
 			<Social>10</Social>
 		</skillGains>
 		<forcedTraits>
-		  <PsychicSensitivity>2</PsychicSensitivity>
+		  <!-- <PsychicSensitivity>2</PsychicSensitivity> -->
 		  <Jealous>0</Jealous>
 		  <Brawler>0</Brawler>
 		</forcedTraits>

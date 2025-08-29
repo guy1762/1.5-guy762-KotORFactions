@@ -12,6 +12,7 @@
 	<v1.6>
 		<li>/</li>
 		<li>1.6</li>
+		<li IfModActive="lee.theforce.standalone">1.6/AdditionalMods/_ForceStandalone</li>
 		<li IfModActive="lee.theforce.psycast">1.6/AdditionalMods/_ForceVPE</li>
 		<li IfModActive="guy762.Lee.KotORPotF">1.6/AdditionalMods/_SWPotF</li>
 		<li IfModActive="VanillaExpanded.VMemesE">1.6/AdditionalMods/VanillaIdeologyExpanded</li>

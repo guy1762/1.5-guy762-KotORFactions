@@ -84,6 +84,18 @@
             </li>
 			
 			
+			<li MayRequire="lee.theforce.standalone">
+              <kindDef>KotORPlayablePawn_JediConsular_TFS</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			<li MayRequire="lee.theforce.standalone">
+              <kindDef>KotORPlayablePawn_JediGuardian_TFS</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+			
+			
 			<li MayRequire="lee.theforce.psycast">
               <kindDef>KotORPlayablePawn_JediConsular_VPE</kindDef>
               <count>1</count>

@@ -99,7 +99,7 @@
 			<IncomingDamageFactor>-0.15</IncomingDamageFactor>
 			<HuntingStealth>0.1</HuntingStealth>              <!---->
 		</equippedStatOffsets>
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>KotORArmor_heavy</li>
 				<li>SaV_apparel_trandomerc</li>
@@ -194,7 +194,7 @@
 			<VEF_MassCarryCapacity>10</VEF_MassCarryCapacity>
 			<DecompressionResistance MayRequire="kentington.saveourship2">0.75</DecompressionResistance>
 		</equippedStatOffsets>
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>SaV_outfit_moncal</li>
 				<li>KotORRoyaltyTag_AnyHighTier</li>
@@ -367,7 +367,7 @@
 			<IncomingDamageFactor>-0.05</IncomingDamageFactor>
 			<MedicalTendSpeed>0.2</MedicalTendSpeed>
 		</equippedStatOffsets>
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>OR_apparel_medic</li>
 				<li>SWKotORSpecificApparelItem_MedicOldRepublicTrooperArmor</li>
@@ -447,7 +447,7 @@
 			<EquipDelay>4</EquipDelay>
 		</statBases>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>OR_apparel_medic</li>
 				<li>SWKotORSpecificApparelItem_MedicOldRepublicTrooperHelmet</li>
@@ -537,7 +537,7 @@
 			<MeleeDodgeChance>-0.2</MeleeDodgeChance>
 			<!--IncomingDamageFactor>-0.1</IncomingDamageFactor-->
 		</equippedStatOffsets>
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>SithRem_apparel_raider</li>
 				<li>SWKotORSpecificApparelItem_MatteSithTrooperArmor</li>
@@ -603,7 +603,7 @@
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>SithRem_apparel_raider</li>
 				<li>SithRem_raiderhelmet</li>

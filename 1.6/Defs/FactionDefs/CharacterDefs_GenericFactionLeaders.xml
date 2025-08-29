@@ -167,6 +167,18 @@
         </roles>
     </SWCP.Core.CharacterDef>
 	
+	<SWCP.Core.CharacterDef MayRequire="lee.theforce.standalone">
+        <defName>SWKotORSith_SecondWarlord_TFS</defName>
+        <pawnKind>KotORSith_warlord_TFS</pawnKind>
+        <faction>guy762_KotORFaction_SithRemnant</faction>
+        <!-- <xenotype>Baseliner</xenotype> -->
+		<roles>
+            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+                <seniority>500</seniority>
+            </li>
+        </roles>
+    </SWCP.Core.CharacterDef>
+	
 	<SWCP.Core.CharacterDef MayRequire="guy762.Lee.KotORPotF">
         <defName>SWKotORSith_SecondWarlord_PotF</defName>
         <pawnKind>KotORSith_warlord_PotF</pawnKind>
@@ -235,6 +247,18 @@
 		<roles>
             <li Class="SWCP.Core.CharacterRole_FactionLeader">
                 <seniority>1000</seniority>
+            </li>
+        </roles>
+    </SWCP.Core.CharacterDef>
+	
+	<SWCP.Core.CharacterDef MayRequire="lee.theforce.standalone">
+        <defName>SWKotORSithEmpire_SecondWarlord_TFS</defName>
+        <pawnKind>KotORSith_warlord_TFS</pawnKind>
+        <faction>guy762_KotORFaction_SithEmpire</faction>
+        <!-- <xenotype>Baseliner</xenotype> -->
+		<roles>
+            <li Class="SWCP.Core.CharacterRole_FactionLeader">
+                <seniority>500</seniority>
             </li>
         </roles>
     </SWCP.Core.CharacterDef>

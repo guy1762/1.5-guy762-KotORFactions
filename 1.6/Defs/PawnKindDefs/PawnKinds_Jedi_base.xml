@@ -51,6 +51,11 @@
 			<PsychicSensitivity>-2</PsychicSensitivity>
 		</disallowedTraitsWithDegree>
 		
+		<!-- <forcedTraits> -->
+			<!-- <Force_NeutralSensitivity MayRequire="lee.theforce.standalone">-1~2</Force_NeutralSensitivity> -->
+			<!-- <Force_LightAffinity MayRequire="lee.theforce.standalone">-1~1</Force_LightAffinity> -->
+		<!-- </forcedTraits> -->
+		
 		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
 	  </PawnKindDef>
 	  
