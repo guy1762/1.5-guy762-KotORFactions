@@ -437,12 +437,16 @@
 	<modExtensions Inherit="False">
 		<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
 		  <whitelist>
+			<li>Male</li>
+			<li>Female</li>
+			<!-- <li>Hulk</li> -->
+			<li>Thin</li>
 		  </whitelist>
 		  <blacklist>
-			<li>Hulk</li>
-			<li>Fat</li>
-			<li>Baby</li>
-			<li>Child</li>
+			<!-- <li>Hulk</li> -->
+			<!-- <li>Fat</li> -->
+			<!-- <li>Baby</li> -->
+			<!-- <li>Child</li> -->
 		  </blacklist>
 		  <priority>
 			<!--When violates the black/whitelist, selected from these-->
@@ -536,11 +540,15 @@
 	<modExtensions Inherit="False">
 		<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
 		  <whitelist>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Hulk</li>
+			<li>Fat</li>
 		  </whitelist>
 		  <blacklist>
-			<li>Thin</li>
-			<li>Baby</li>
-			<li>Child</li>
+			<!-- <li>Thin</li> -->
+			<!-- <li>Baby</li> -->
+			<!-- <li>Child</li> -->
 		  </blacklist>
 		  <priority>
 			<!--When violates the black/whitelist, selected from these-->
@@ -654,11 +662,15 @@
 	<modExtensions Inherit="False">
 		<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
 		  <whitelist>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Hulk</li>
+			<li>Thin</li>
 		  </whitelist>
 		  <blacklist>
-			<li>Fat</li>
-			<li>Baby</li>
-			<li>Child</li>
+			<!-- <li>Fat</li> -->
+			<!-- <li>Baby</li> -->
+			<!-- <li>Child</li> -->
 		  </blacklist>
 		  <priority>
 			<!--When violates the black/whitelist, selected from these-->
@@ -760,12 +772,16 @@
 	<modExtensions Inherit="False">
 		<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
 		  <whitelist>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Hulk</li>
+			<!-- <li>Thin</li> -->
 		  </whitelist>
 		  <blacklist>
-			<li>Thin</li>
-			<li>Fat</li>
-			<li>Baby</li>
-			<li>Child</li>
+			<!-- <li>Thin</li> -->
+			<!-- <li>Fat</li> -->
+			<!-- <li>Baby</li> -->
+			<!-- <li>Child</li> -->
 		  </blacklist>
 		  <priority>
 			<!--When violates the black/whitelist, selected from these-->
@@ -884,12 +900,16 @@
 	<modExtensions Inherit="False">
 		<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
 		  <whitelist>
+			<li>Male</li>
+			<li>Female</li>
+			<li>Hulk</li>
+			<!-- <li>Thin</li> -->
 		  </whitelist>
 		  <blacklist>
-			<li>Thin</li>
-			<li>Fat</li>
-			<li>Baby</li>
-			<li>Child</li>
+			<!-- <li>Thin</li> -->
+			<!-- <li>Fat</li> -->
+			<!-- <li>Baby</li> -->
+			<!-- <li>Child</li> -->
 		  </blacklist>
 		  <priority>
 			<!--When violates the black/whitelist, selected from these-->
@@ -983,12 +1003,16 @@
 	<modExtensions Inherit="False">
 		<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
 		  <whitelist>
+			<li>Male</li>
+			<li>Female</li>
+			<!-- <li>Hulk</li> -->
+			<li>Thin</li>
 		  </whitelist>
 		  <blacklist>
-			<li>Hulk</li>
-			<li>Fat</li>
-			<li>Baby</li>
-			<li>Child</li>
+			<!-- <li>Hulk</li> -->
+			<!-- <li>Fat</li> -->
+			<!-- <li>Baby</li> -->
+			<!-- <li>Child</li> -->
 		  </blacklist>
 		  <priority>
 			<!--When violates the black/whitelist, selected from these-->
