@@ -181,7 +181,7 @@
     <cooldownDays>60</cooldownDays>
   </RoyalTitlePermitDef>
   
-  <RoyalTitlePermitDef ParentName="guy762_KotORPermitExchange_TrooperDropBase">
+  <RoyalTitlePermitDef MayRequire="guy762.KotORDroids" ParentName="guy762_KotORPermitExchange_TrooperDropBase">
     <defName>guy762_KotORPermitExchange_assassinprobes</defName>
     <label>call assassin probes</label>
     <description>Call a group of 4 assassin probe droids to aid you in battle.</description>
@@ -200,7 +200,7 @@
   </RoyalTitlePermitDef>
 
   
-  <RoyalTitlePermitDef ParentName="guy762_KotORPermitExchange_CustomLaborerDropBase">
+  <RoyalTitlePermitDef MayRequire="guy762.KotORDroids" ParentName="guy762_KotORPermitExchange_CustomLaborerDropBase">
     <defName>guy762_KotORPermitExchange_assassindroids</defName>
     <label>call assassin droids</label>
     <description>Call a group of 4 assassin droids to join your ranks for one year. You can control them as though they were your own colonists.</description>
@@ -243,7 +243,7 @@
   
   
   
-  <RoyalTitlePermitDef ParentName="guy762_KotORPermitExchange_CustomLaborerDropBase">
+  <RoyalTitlePermitDef MayRequire="guy762.KotORDroids" ParentName="guy762_KotORPermitExchange_CustomLaborerDropBase">
     <defName>guy762_KotORPermitExchange_hk50_</defName>
     <label>call HK-50</label>
     <description>Call upon a mysterious HK-50 unit to join your ranks for one year. You can control it as though it is your own colonist.</description>

@@ -34,12 +34,12 @@
 	
 	
 	
-	<PawnKindDef Name="KotORPlayablePawn_HK51AD" ParentName="KotORMIBColonist_HK51AD">
+	<PawnKindDef MayRequire="guy762.KotORDroids" Name="KotORPlayablePawn_HK51AD" ParentName="KotORMIBColonist_HK51AD">
 		<defName>KotORPlayablePawn_HK51AD</defName>
 		<defaultFactionType>guy762_KotORPlayerFaction_SmugglerCrew</defaultFactionType>
 	</PawnKindDef>
 	
-	<PawnKindDef Name="KotORPlayablePawn_3CUD" ParentName="KotORDroidGood_3C">
+	<PawnKindDef MayRequire="guy762.KotORDroids" Name="KotORPlayablePawn_3CUD" ParentName="KotORDroidGood_3C">
 		<defName>KotORPlayablePawn_3CUD</defName>
 		<defaultFactionType>guy762_KotORPlayerFaction_SmugglerCrew</defaultFactionType>
 	</PawnKindDef>

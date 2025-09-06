@@ -238,7 +238,7 @@
 
   <!-- droids -->
   
-  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_CustomLaborerDropBase">
+  <RoyalTitlePermitDef MayRequire="guy762.KotORDroids" ParentName="guy762_KotORPermitHutts_CustomLaborerDropBase">
     <defName>guy762_KotORPermitHutts_battledroids</defName>
     <label>call battle droid squad</label>
     <description>Call a group of 6 battle droids to join your ranks for five years. You can control them as though they were your own colonists.</description>
@@ -258,7 +258,7 @@
     <cooldownDays>30</cooldownDays>
   </RoyalTitlePermitDef>
 
-  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_CustomLaborerDropBase">
+  <RoyalTitlePermitDef MayRequire="guy762.KotORDroids" ParentName="guy762_KotORPermitHutts_CustomLaborerDropBase">
     <defName>guy762_KotORPermitHutts_battledroidsII</defName>
     <label>call battle droid division</label>
     <description>Call a group of 12 battle droids to join your ranks for five years. You can control them as though they were your own colonists.</description>
@@ -279,7 +279,7 @@
     <cooldownDays>60</cooldownDays>
   </RoyalTitlePermitDef>
   
-  <RoyalTitlePermitDef ParentName="guy762_KotORPermitHutts_CustomLaborerDropBase">
+  <RoyalTitlePermitDef MayRequire="guy762.KotORDroids" ParentName="guy762_KotORPermitHutts_CustomLaborerDropBase">
     <defName>guy762_KotORPermitHutts_assassindroids</defName>
     <label>call assassin droids</label>
     <description>Call a group of 4 assassin droids to join your ranks for five years. You can control them as though they were your own colonists.</description>

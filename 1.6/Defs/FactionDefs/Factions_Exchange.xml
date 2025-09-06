@@ -311,7 +311,7 @@
 		  <KotORBntyHntr_mandomid>25</KotORBntyHntr_mandomid>
 		  <KotORBntyHntr_mandostar>10</KotORBntyHntr_mandostar>
 		  
-		  <KotORDroidBad_hk50>25</KotORDroidBad_hk50>
+		  <KotORDroidBad_hk50 MayRequire="guy762.KotORDroids">25</KotORDroidBad_hk50>
 		</options>
 	  </li>
 
@@ -330,8 +330,8 @@
 		</disallowedStrategies>
         <options>
           <KotORExchg_assassin>50</KotORExchg_assassin>
-          <KotORDroidBad_KX12APD>100</KotORDroidBad_KX12APD>
-          <KotORDroidBad_KX12APD_sapper>50</KotORDroidBad_KX12APD_sapper>
+          <KotORDroidBad_KX12APD MayRequire="guy762.KotORDroids">100</KotORDroidBad_KX12APD>
+          <KotORDroidBad_KX12APD_sapper MayRequire="guy762.KotORDroids">50</KotORDroidBad_KX12APD_sapper>
         </options>
       </li>
 	  
@@ -351,7 +351,7 @@
 		  <KotORMerc_JKRocketTrando>100</KotORMerc_JKRocketTrando>
 		  <KotORBntyHntr_star>100</KotORBntyHntr_star>
 		  <KotORBntyHntr_mandostar>100</KotORBntyHntr_mandostar>
-		  <KotORDroidBad_hk50boss>100</KotORDroidBad_hk50boss>
+		  <KotORDroidBad_hk50boss MayRequire="guy762.KotORDroids">100</KotORDroidBad_hk50boss>
 		  
 		  <KotORSith_darkjedi_TFS MayRequire="lee.theforce.standalone">25</KotORSith_darkjedi_TFS>
 		  
@@ -371,7 +371,7 @@
 		  
 		  <!-- factional -->
 		  
-		  <KotORDroidBad_hk50>1</KotORDroidBad_hk50>
+		  <KotORDroidBad_hk50 MayRequire="guy762.KotORDroids">1</KotORDroidBad_hk50>
 		  
 		  <KotORMerc_gandmelee>5</KotORMerc_gandmelee>
 		  <KotORMerc_gandranged>5</KotORMerc_gandranged>
