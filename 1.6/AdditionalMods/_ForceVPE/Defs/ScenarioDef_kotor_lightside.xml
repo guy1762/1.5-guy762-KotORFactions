@@ -171,11 +171,11 @@
           <project>guy762_ResearchKotOR_bigZ</project>
         </li>
 		
-		<li Class="ScenPart_StartingResearch">
+		<li MayRequire="guy762.KotORDroids" Class="ScenPart_StartingResearch">
           <def>StartingResearch</def>
           <project>guy762_ResearchKotOR_hkequipment</project>
         </li>
-		<li Class="ScenPart_StartingResearch">
+		<li MayRequire="guy762.KotORDroids" Class="ScenPart_StartingResearch">
           <def>StartingResearch</def>
           <project>guy762_ResearchKotOR_teethree</project>
         </li>
