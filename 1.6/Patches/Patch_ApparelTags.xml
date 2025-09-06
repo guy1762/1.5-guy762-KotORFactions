@@ -5,6 +5,7 @@
 	  <xpath>Defs/ThingDef[defName="Apparel_Bandolier"]/apparel/tags</xpath>
 	  <value>
 		<li>guy762PatchedTag_Bandolier</li>
+		<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 	  </value>
 	</Operation>
 	
@@ -19,6 +20,7 @@
 	  <xpath>Defs/ThingDef[defName="Apparel_Duster"]/apparel/tags</xpath>
 	  <value>
 		<li>guy762PatchedTag_Duster</li>
+		<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 	  </value>
 	</Operation>
 	
@@ -35,6 +37,7 @@
 	  <value>
 		<li>guy762PatchedTag_Cape</li>
 		<li>guy762PatchedTag_RobesCapeSash</li>
+		<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 	  </value>
 	</Operation>
 	
