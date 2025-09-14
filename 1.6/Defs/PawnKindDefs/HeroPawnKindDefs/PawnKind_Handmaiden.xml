@@ -75,28 +75,28 @@
 		  </subOptionsTakeAll>
 		</inventoryOptions>
 		
-		<skills>
-			<li>
-				<skill>Melee</skill>
-				<range>18~20</range>
-			</li>
-			<li>
-				<skill>Crafting</skill>
-				<range>10~12</range>
-			</li>
-			<li>
-				<skill>Artistic</skill>
-				<range>6~8</range>
-			</li>
-			<li>
-				<skill>Medicine</skill>
-				<range>6~8</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>10~12</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>18~20</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Crafting</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Artistic</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Medicine</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<forcedTraits>
 			<PsychicSensitivity>1</PsychicSensitivity>
 			<!--Nimble>0</Nimble>   swapped for tough, Juhani will have nimble to better differentiate between the two Guardians-->
@@ -152,6 +152,33 @@
 			  <!--Align body gender to pawn's gender (default: True)-->
 			  <checkGender>False</checkGender>
 			</li>
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Melee</skill>
+						<range>18~20</range>
+					</li>
+					<li>
+						<skill>Crafting</skill>
+						<range>10~12</range>
+					</li>
+					<li>
+						<skill>Artistic</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Medicine</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>10~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+			
 			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
 				<bladeColors>
 					<!-- KotOR blue -->

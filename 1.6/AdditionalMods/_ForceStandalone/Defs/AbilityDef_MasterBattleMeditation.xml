@@ -5,10 +5,10 @@
 		
 	<AbilityDef>
 
-		<abilityClass>Psycast</abilityClass>
-		<category>Psychic</category>
+		<!-- <abilityClass>Psycast</abilityClass> -->
+		<!-- <category>Psychic</category> -->
 		<warmupSound>PsycastCastLoop</warmupSound>
-		<level>6</level>
+		<!-- <level>6</level> -->
 		<aiCanUse>true</aiCanUse>
 
 		

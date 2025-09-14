@@ -39,20 +39,20 @@
 		  <li>OR_juhani</li>
 		  <li>Force_Lightsaber_Curved</li>
 		</weaponTags>
-		<skills>
-			<li>
-				<skill>Melee</skill>
-				<range>18~20</range>
-			</li>
-			<li>
-				<skill>Animals</skill>
-				<range>10~12</range>
-			</li>
-			<li>
-				<skill>Medicine</skill>
-				<range>6~8</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>18~20</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Animals</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Medicine</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<forcedTraits>
 			<PsychicSensitivity>1</PsychicSensitivity>
 			<Gay>0</Gay>
@@ -96,6 +96,25 @@
           </priority>
           <checkGender>False</checkGender>
         </li>
+		
+		<li Class="BigAndSmall.PawnKindExtension">
+			<skillRange>
+				<li>
+					<skill>Melee</skill>
+					<range>18~20</range>
+				</li>
+				<li>
+					<skill>Animals</skill>
+					<range>10~12</range>
+				</li>
+				<li>
+					<skill>Medicine</skill>
+					<range>6~8</range>
+				</li>
+			</skillRange>
+			<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+		</li>
+		
 		<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
 			<bladeColors>
 				<!-- KotOR blue -->

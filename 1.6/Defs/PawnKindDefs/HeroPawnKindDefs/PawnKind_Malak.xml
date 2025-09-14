@@ -37,20 +37,20 @@
 		  <li>SE_malak</li>
 		  <li>Force_LightsaberSingle</li>
 		</weaponTags>
-		<skills>
-			<li>
-				<skill>Melee</skill>
-				<range>16~18</range>
-			</li>
-			<li>
-				<skill>Social</skill>
-				<range>16~18</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>8~10</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>16~18</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>16~18</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>8~10</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<forcedTraits>
 			<PsychicSensitivity>2</PsychicSensitivity>
 			<Psychopath>0</Psychopath>
@@ -122,6 +122,25 @@
 			  </priority>
 			  <checkGender>False</checkGender>
 			</li>
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Melee</skill>
+						<range>16~18</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>16~18</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>8~10</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+			
 			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
 				<bladeColors>
 					<!-- red -->

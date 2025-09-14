@@ -57,24 +57,24 @@
 		<weaponTags>
 		  <li>MNC_canderous</li>
 		</weaponTags>
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>16~18</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>18~20</range>
-			</li>
-			<li>
-				<skill>Construction</skill>
-				<range>12~14</range>
-			</li>
-			<li>
-				<skill>Social</skill>
-				<range>14~16</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>16~18</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>18~20</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Construction</skill> -->
+				<!-- <range>12~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>14~16</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<forcedTraits>
 			<ShootingAccuracy>-1</ShootingAccuracy>
 			<Psychopath>0</Psychopath>
@@ -157,6 +157,29 @@
 				</li>
 			  </geneSets>
 			</li>
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>16~18</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>18~20</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>12~14</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>14~16</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		
 		</modExtensions>
 	  </PawnKindDef>
 	  

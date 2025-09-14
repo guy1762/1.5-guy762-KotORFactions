@@ -34,24 +34,24 @@
 		  <li>OR_bastila</li>
 		  <li>Force_LightsaberDual</li>
 		</weaponTags>
-		<skills>
-			<li>
-				<skill>Melee</skill>
-				<range>14~16</range>
-			</li>
-			<li>
-				<skill>Artistic</skill>
-				<range>8~10</range>
-			</li>
-			<li>
-				<skill>Medicine</skill>
-				<range>12~14</range>
-			</li>
-			<li>
-				<skill>Social</skill>
-				<range>18~20</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>14~16</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Artistic</skill> -->
+				<!-- <range>8~10</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Medicine</skill> -->
+				<!-- <range>12~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>18~20</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<forcedTraits>
 			<PsychicSensitivity>2</PsychicSensitivity>
 			<Beauty>1</Beauty>
@@ -69,7 +69,10 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">LeaderSpeech</li>
 			<li MayRequire="lee.theforce.psycast">guy762_Ability_MstBatlMed</li>
 		</abilities>
-		<modExtensions>
+		
+	  <modExtensions>
+		 
+		 
 		 <li Class="AddGeneForPK.PKAdditionalGenes"> <!-- NOTE: this mod extension cannot be split between two different PKDefs, all genes have to go in the same block!!! -->
           <geneSets>
 			<li>
@@ -100,6 +103,29 @@
 		  </priority>
 		  <checkGender>False</checkGender>
 		</li>
+		
+		<li Class="BigAndSmall.PawnKindExtension">
+			<skillRange>
+				<li>
+					<skill>Melee</skill>
+					<range>14~16</range>
+				</li>
+				<li>
+					<skill>Artistic</skill>
+					<range>8~10</range>
+				</li>
+				<li>
+					<skill>Medicine</skill>
+					<range>12~14</range>
+				</li>
+				<li>
+					<skill>Social</skill>
+					<range>18~20</range>
+				</li>
+			</skillRange>
+			<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+		</li>
+		
 		<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
 			<bladeColors>
 				<!-- KotOR soft yellow -->
@@ -120,10 +146,13 @@
 			   <li>guy762_SWForceLightsabers_CrystalPart_yellow</li>
 			</preferredHiltParts>
 		</li>
+		
       </modExtensions>
-	  </PawnKindDef>
 	  
-	  <RulePackDef>
+	  
+	</PawnKindDef>
+	  
+	<RulePackDef>
         <defName>guy762_HeroNamer_Bastila</defName>
         <rulePack>
             <rulesStrings>

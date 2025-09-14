@@ -65,16 +65,16 @@
 		  </subOptionsTakeAll>
 		</inventoryOptions>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>10~12</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>18~20</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>18~20</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<forcedTraits>
 			<Psychopath>0</Psychopath>
 			<Bloodlust>0</Bloodlust>
@@ -121,6 +121,20 @@
 				  </geneDefs>
 				</li>
 			  </geneSets>
+			</li>
+			
+			<li Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>10~12</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>18~20</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
 	  </PawnKindDef>

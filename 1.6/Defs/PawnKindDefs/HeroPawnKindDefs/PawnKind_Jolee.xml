@@ -36,32 +36,32 @@
 		  <li>OR_jolee</li>
 		  <li>Force_LightsaberSingle</li>
 		</weaponTags>
-		<skills>
-			<li>
-				<skill>Melee</skill>
-				<range>10~12</range>
-			</li>
-			<li>
-				<skill>Cooking</skill>
-				<range>6~8</range>
-			</li>
-			<li>
-				<skill>Plants</skill>
-				<range>14~16</range>
-			</li>
-			<li>
-				<skill>Animals</skill>
-				<range>10~12</range>
-			</li>
-			<li>
-				<skill>Medicine</skill>
-				<range>10~12</range>
-			</li>
-			<li>
-				<skill>Social</skill>
-				<range>8~10</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Cooking</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Plants</skill> -->
+				<!-- <range>14~16</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Animals</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Medicine</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>8~10</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<forcedTraits>
 			<PsychicSensitivity>1</PsychicSensitivity>
 			<Ascetic>0</Ascetic>
@@ -104,6 +104,36 @@
 		</li>
 		<li Class="BodyTypeForPawnKind.ModExtension_ForcedStyleItem">
 		  <forcedBeard>Circle</forcedBeard>
+		</li>
+		
+		<li Class="BigAndSmall.PawnKindExtension">
+			<skillRange>
+				<li>
+					<skill>Melee</skill>
+					<range>10~12</range>
+				</li>
+				<li>
+					<skill>Cooking</skill>
+					<range>6~8</range>
+				</li>
+				<li>
+					<skill>Plants</skill>
+					<range>14~16</range>
+				</li>
+				<li>
+					<skill>Animals</skill>
+					<range>10~12</range>
+				</li>
+				<li>
+					<skill>Medicine</skill>
+					<range>10~12</range>
+				</li>
+				<li>
+					<skill>Social</skill>
+					<range>8~10</range>
+				</li>
+			</skillRange>
+			<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 		</li>
 		
 		<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
