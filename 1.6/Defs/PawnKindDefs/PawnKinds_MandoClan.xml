@@ -268,19 +268,35 @@
 				<color>(145,150,195)</color>
 			</li>
 		</specificApparelRequirements>
-		<skills>
-		<li>
-			<skill>Shooting</skill>
-			<range>7~11</range>
-		</li>
-		<li>
-			<skill>Melee</skill>
-			<range>0~7</range>
-		</li>
-		</skills>
+		<!-- <skills> -->
+		<!-- <li> -->
+			<!-- <skill>Shooting</skill> -->
+			<!-- <range>7~11</range> -->
+		<!-- </li> -->
+		<!-- <li> -->
+			<!-- <skill>Melee</skill> -->
+			<!-- <range>0~7</range> -->
+		<!-- </li> -->
+		<!-- </skills> -->
 		<disallowedTraits>
 		  <li>Brawler</li>
 		</disallowedTraits>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>7~11</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>0~7</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -316,19 +332,35 @@
 			<li>KotOREquipment_basic</li>
 			<li>KotORHeadband_bandana</li>
 		</apparelTags>
-		<skills>
-		<li>
-			<skill>Shooting</skill>
-			<range>8~13</range>
-		</li>
-		<li>
-			<skill>Melee</skill>
-			<range>0~8</range>
-		</li>
-		</skills>
+		<!-- <skills> -->
+		<!-- <li> -->
+			<!-- <skill>Shooting</skill> -->
+			<!-- <range>8~13</range> -->
+		<!-- </li> -->
+		<!-- <li> -->
+			<!-- <skill>Melee</skill> -->
+			<!-- <range>0~8</range> -->
+		<!-- </li> -->
+		<!-- </skills> -->
 		<disallowedTraits>
 		  <li>Brawler</li>
 		</disallowedTraits>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>8~13</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>0~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>	
 	
 	
@@ -362,19 +394,35 @@
 				<color>(145,150,195)</color>
 			</li>
 		</specificApparelRequirements>
-		<skills>
-		<li>
-			<skill>Shooting</skill>
-			<range>0~8</range>
-		</li>
-		<li>
-			<skill>Melee</skill>
-			<range>8~13</range>
-		</li>
-		</skills>
+		<!-- <skills> -->
+		<!-- <li> -->
+			<!-- <skill>Shooting</skill> -->
+			<!-- <range>0~8</range> -->
+		<!-- </li> -->
+		<!-- <li> -->
+			<!-- <skill>Melee</skill> -->
+			<!-- <range>8~13</range> -->
+		<!-- </li> -->
+		<!-- </skills> -->
 		<disallowedTraits>
 		  <li>ShootingAccuracy</li>
 		</disallowedTraits>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>0~8</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>8~13</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>	
 	
 		
@@ -406,16 +454,16 @@
 			<li>guy762_MNCHelmet</li>
 			<li>guy762_MandoArmor_assault</li>
 		</apparelRequired>
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>11~14</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>11~14</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>11~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>11~14</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<disallowedTraits>
 		  <li>Brawler</li>
 		</disallowedTraits>
@@ -425,6 +473,22 @@
 			<li>Advanced</li>
 			<li>AdvancedWeapon</li>
 		</techHediffsTags>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>11~14</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>11~14</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 			
@@ -454,16 +518,16 @@
 			<li>guy762_MandoArmor_assault</li>
 			<!-- <li>guy762_Jetpack_light</li> BUGGED WITH MELEE WEAPONS -->
 		</apparelRequired>
-		<skills>
-		<li>
-			<skill>Shooting</skill>
-			<range>0~13</range>
-		</li>
-		<li>
-			<skill>Melee</skill>
-			<range>13~17</range>
-		</li>
-		</skills>
+		<!-- <skills> -->
+		<!-- <li> -->
+			<!-- <skill>Shooting</skill> -->
+			<!-- <range>0~13</range> -->
+		<!-- </li> -->
+		<!-- <li> -->
+			<!-- <skill>Melee</skill> -->
+			<!-- <range>13~17</range> -->
+		<!-- </li> -->
+		<!-- </skills> -->
 		<disallowedTraits>
 		  <li>ShootingAccuracy</li>
 		</disallowedTraits>
@@ -473,6 +537,22 @@
 			<li>Advanced</li>
 			<li>AdvancedWeapon</li>
 		</techHediffsTags>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>0~13</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>13~17</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 		
@@ -505,16 +585,16 @@
 			<li>guy762_MNCHelmet</li>
 			<li>guy762_MandoArmor_assault</li>
 		</apparelRequired>
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>12~15</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>0~12</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>12~15</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>0~12</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<disallowedTraits>
 		  <li>Brawler</li>
 		</disallowedTraits>
@@ -537,6 +617,20 @@
 			  </priority>
 			  <!--Align body gender to pawn's gender (default: True)-->
 			  <checkGender>False</checkGender>
+			</li>
+			
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>12~15</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>0~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
@@ -592,19 +686,35 @@
 			</li>
 		  </subOptionsChooseOne>
 		</inventoryOptions>
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>12~15</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>12~15</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>12~15</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>12~15</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<disallowedTraits>
 		  <li>Brawler</li>
 		</disallowedTraits>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>12~15</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>12~15</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>	
 	
 		
@@ -641,24 +751,24 @@
 			<li>guy762_MandoArmor_assault</li>
 			<li>Apparel_PackBroadshield</li>
 		</apparelRequired>
-		<skills>
-		<li>
-			<skill>Shooting</skill>
-			<range>12~16</range>
-		</li>
-		<li>
-			<skill>Melee</skill>
-			<range>12~16</range>
-		</li>
-		<li>
-			<skill>Social</skill>
-			<range>9~14</range>
-		</li>
-		<li>
-			<skill>Intellectual</skill>
-			<range>7~12</range>
-		</li>
-		</skills>
+		<!-- <skills> -->
+		<!-- <li> -->
+			<!-- <skill>Shooting</skill> -->
+			<!-- <range>12~16</range> -->
+		<!-- </li> -->
+		<!-- <li> -->
+			<!-- <skill>Melee</skill> -->
+			<!-- <range>12~16</range> -->
+		<!-- </li> -->
+		<!-- <li> -->
+			<!-- <skill>Social</skill> -->
+			<!-- <range>9~14</range> -->
+		<!-- </li> -->
+		<!-- <li> -->
+			<!-- <skill>Intellectual</skill> -->
+			<!-- <range>7~12</range> -->
+		<!-- </li> -->
+		<!-- </skills> -->
 		<disallowedTraits>
 		  <li>Brawler</li>
 		  <li>CreepyBreathing</li>
@@ -680,6 +790,30 @@
 		<abilities>
 			<li>MarksmanCommand</li>
 		</abilities>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>12~16</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>12~16</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>9~14</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>7~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -722,16 +856,16 @@
 			</li>
 		</specificApparelRequirements>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>10~12</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>14~18</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>14~18</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		
 		<weaponMoney>8200~9200</weaponMoney>
 		<weaponTags>
@@ -757,6 +891,22 @@
 		<disallowedTraits>
 		  <li>ShootingAccuracy</li>
 		</disallowedTraits>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>10~12</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>14~18</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 		
@@ -801,24 +951,24 @@
 			<li>guy762_MNCHelmet</li>
 			<li>guy762_MandoArmor_assault</li>
 		</apparelRequired>
-		<skills>
-		<li>
-			<skill>Shooting</skill>
-			<range>16~20</range>
-		</li>
-		<li>
-			<skill>Melee</skill>
-			<range>16~20</range>
-		</li>
-		<li>
-			<skill>Social</skill>
-			<range>0~14</range>
-		</li>
-		<li>
-			<skill>Intellectual</skill>
-			<range>0~14</range>
-		</li>
-		</skills>
+		<!-- <skills> -->
+		<!-- <li> -->
+			<!-- <skill>Shooting</skill> -->
+			<!-- <range>16~20</range> -->
+		<!-- </li> -->
+		<!-- <li> -->
+			<!-- <skill>Melee</skill> -->
+			<!-- <range>16~20</range> -->
+		<!-- </li> -->
+		<!-- <li> -->
+			<!-- <skill>Social</skill> -->
+			<!-- <range>0~14</range> -->
+		<!-- </li> -->
+		<!-- <li> -->
+			<!-- <skill>Intellectual</skill> -->
+			<!-- <range>0~14</range> -->
+		<!-- </li> -->
+		<!-- </skills> -->
 		<disallowedTraits>
 		  <li>Brawler</li>
 		</disallowedTraits>
@@ -831,12 +981,34 @@
 		<techHediffsRequired>
 		  <li>guy762_ImplantDock_II</li>
 		</techHediffsRequired>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>16~20</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>16~20</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>0~14</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>0~14</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
-									
-		
 			<!--field marshal-->
-						
+	
 	<PawnKindDef Name="KotORMando_fieldmarshal" ParentName="KotORMando_Base_gold">
 		<defName>KotORMando_fieldmarshal</defName>
 		<label>Mandalorian field marshal</label>
@@ -873,24 +1045,24 @@
 			<li>guy762_MNCHelmet</li>
 			<li>guy762_MandoArmor_assault</li>
 		</apparelRequired>
-		<skills>
-		<li>
-			<skill>Shooting</skill>
-			<range>16~20</range>
-		</li>
-		<li>
-			<skill>Melee</skill>
-			<range>16~20</range>
-		</li>
-		<li>
-			<skill>Social</skill>
-			<range>14~17</range>
-		</li>
-		<li>
-			<skill>Intellectual</skill>
-			<range>14~17</range>
-		</li>
-		</skills>
+		<!-- <skills> -->
+		<!-- <li> -->
+			<!-- <skill>Shooting</skill> -->
+			<!-- <range>16~20</range> -->
+		<!-- </li> -->
+		<!-- <li> -->
+			<!-- <skill>Melee</skill> -->
+			<!-- <range>16~20</range> -->
+		<!-- </li> -->
+		<!-- <li> -->
+			<!-- <skill>Social</skill> -->
+			<!-- <range>14~17</range> -->
+		<!-- </li> -->
+		<!-- <li> -->
+			<!-- <skill>Intellectual</skill> -->
+			<!-- <range>14~17</range> -->
+		<!-- </li> -->
+		<!-- </skills> -->
 		<disallowedTraits>
 		  <li>Brawler</li>
 		  <li>CreepyBreathing</li>
@@ -914,6 +1086,30 @@
 		<abilities>
 			<li>CombatCommand</li>
 		</abilities>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+					<skillRange>
+						<li>
+							<skill>Shooting</skill>
+							<range>16~20</range>
+						</li>
+						<li>
+							<skill>Melee</skill>
+							<range>16~20</range>
+						</li>
+						<li>
+							<skill>Social</skill>
+							<range>14~17</range>
+						</li>
+						<li>
+							<skill>Intellectual</skill>
+							<range>14~17</range>
+						</li>
+					</skillRange>
+					<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+				</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -975,20 +1171,20 @@
 			</li>
 		</specificApparelRequirements>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>6~10</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>10~14</range>
-			</li>
-			<li>
-				<skill>Crafting</skill>
-				<range>14~16</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>6~10</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>10~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Crafting</skill> -->
+				<!-- <range>14~16</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<requiredWorkTags>
 		  <li>Social</li>
 		</requiredWorkTags>
@@ -1005,6 +1201,26 @@
 		<techHediffsRequired>
 		  <li>guy762_ImplantDock_II</li>
 		</techHediffsRequired>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+					<skillRange>
+						<li>
+							<skill>Shooting</skill>
+							<range>6~10</range>
+						</li>
+						<li>
+							<skill>Melee</skill>
+							<range>10~14</range>
+						</li>
+						<li>
+							<skill>Crafting</skill>
+							<range>14~16</range>
+						</li>
+					</skillRange>
+					<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+				</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 </Defs>

@@ -70,12 +70,12 @@
 		  <li>KotORRanged_basicrifle</li>
 		</weaponTags>
 		
-		<skills>
-		  <li>
-			<skill>Shooting</skill>
-			<range>6~12</range>
-		  </li>
-		</skills>
+		<!-- <skills> -->
+		  <!-- <li> -->
+			<!-- <skill>Shooting</skill> -->
+			<!-- <range>6~12</range> -->
+		  <!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 		  <skipChance>0.25</skipChance>
 		  <subOptionsChooseOne>
@@ -93,11 +93,23 @@
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>6~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	  
 	  
 	  
-	  <PawnKindDef Name="KotORBntyHntr_mid" ParentName="SWCPMercBase">
+	<PawnKindDef Name="KotORBntyHntr_mid" ParentName="SWCPMercBase">
 		<defName>KotORBntyHntr_mid</defName>
 		<label>veteran bounty hunter</label>
 		<combatPower>175</combatPower>
@@ -144,16 +156,16 @@
 		  <li>guy762_ImplantDock_I</li>
 		</techHediffsRequired>
 		
-		<skills>
-		  <li>
-			<skill>Shooting</skill>
-			<range>8~14</range>
-		  </li>
-		  <li>
-			<skill>Melee</skill>
-			<range>5~10</range>
-		  </li>
-		</skills>
+		<!-- <skills> -->
+		  <!-- <li> -->
+			<!-- <skill>Shooting</skill> -->
+			<!-- <range>8~14</range> -->
+		  <!-- </li> -->
+		  <!-- <li> -->
+			<!-- <skill>Melee</skill> -->
+			<!-- <range>5~10</range> -->
+		  <!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 		  <skipChance>0.125</skipChance>
 		  <subOptionsChooseOne>
@@ -179,11 +191,27 @@
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>8~14</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>5~10</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	
 	  
 	  
-	  <PawnKindDef Name="KotORBntyHntr_heavy" ParentName="SWCPMercBase">
+	<PawnKindDef Name="KotORBntyHntr_heavy" ParentName="SWCPMercBase">
 		<defName>KotORBntyHntr_heavy</defName>
 		<label>elite bounty hunter</label>
 		<combatPower>250</combatPower>
@@ -234,16 +262,16 @@
 		  <li>guy762_ImplantDock_II</li>
 		</techHediffsRequired>
 		
-		<skills>
-		  <li>
-			<skill>Shooting</skill>
-			<range>10~16</range>
-		  </li>
-		  <li>
-			<skill>Melee</skill>
-			<range>8~12</range>
-		  </li>
-		</skills>
+		<!-- <skills> -->
+		  <!-- <li> -->
+			<!-- <skill>Shooting</skill> -->
+			<!-- <range>10~16</range> -->
+		  <!-- </li> -->
+		  <!-- <li> -->
+			<!-- <skill>Melee</skill> -->
+			<!-- <range>8~12</range> -->
+		  <!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 		  <skipChance>0.05</skipChance>
 		  <subOptionsChooseOne>
@@ -269,9 +297,25 @@
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>10~16</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>8~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	  
-	  <PawnKindDef Name="KotORBntyHntr_star" ParentName="SWCPMercBase">
+	<PawnKindDef Name="KotORBntyHntr_star" ParentName="SWCPMercBase">
 		<defName>KotORBntyHntr_star</defName>
 		<label>star bounty hunter</label>
 		<combatPower>2500</combatPower>
@@ -335,20 +379,20 @@
 		  <li>guy762_ImplantDock_II</li>
 		</techHediffsRequired>
 		
-		<skills>
-		  <li>
-			<skill>Shooting</skill>
-			<range>19~20</range>
-		  </li>
-		  <li>
-			<skill>Melee</skill>
-			<range>19~20</range>
-		  </li>
-		  <li>
-			<skill>Social</skill>
-			<range>12~18</range>
-		  </li>
-		</skills>
+		<!-- <skills> -->
+		  <!-- <li> -->
+			<!-- <skill>Shooting</skill> -->
+			<!-- <range>19~20</range> -->
+		  <!-- </li> -->
+		  <!-- <li> -->
+			<!-- <skill>Melee</skill> -->
+			<!-- <range>19~20</range> -->
+		  <!-- </li> -->
+		  <!-- <li> -->
+			<!-- <skill>Social</skill> -->
+			<!-- <range>12~18</range> -->
+		  <!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 		  <skipChance>0</skipChance>
 		  <subOptionsChooseOne>
@@ -374,7 +418,27 @@
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>19~20</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>19~20</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>12~18</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	  
 	  
 	  
@@ -396,7 +460,7 @@
 	  
 	  
 	  
-	  <PawnKindDef Name="KotORBntyHntr_mandoweak" ParentName="SWCPMercBase">
+	<PawnKindDef Name="KotORBntyHntr_mandoweak" ParentName="SWCPMercBase">
 		<defName>KotORBntyHntr_mandoweak</defName>
 		<label>Mandalorian bounty hunter</label>
 		<combatPower>125</combatPower>
@@ -453,16 +517,16 @@
 		  <li>guy762_ImplantDock_I</li>
 		</techHediffsRequired>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>8~13</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>4~8</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>8~13</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>4~8</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 		  <skipChance>0.25</skipChance>
 		  <subOptionsChooseOne>
@@ -501,6 +565,20 @@
 			  </priority>
 			  <!--Align body gender to pawn's gender (default: True)-->
 			  <checkGender>True</checkGender>
+			</li>
+			
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>8~13</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>4~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
@@ -571,16 +649,16 @@
 		  <li>guy762_ImplantDock_II</li>
 		</techHediffsRequired>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>11~14</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>8~12</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>11~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>8~12</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 		  <skipChance>0.125</skipChance>
 		  <subOptionsChooseOne>
@@ -627,6 +705,20 @@
 			  </priority>
 			  <!--Align body gender to pawn's gender (default: True)-->
 			  <checkGender>True</checkGender>
+			</li>
+			
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>11~14</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>8~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
@@ -697,16 +789,16 @@
 		  <li>guy762_ImplantDock_II</li>
 		</techHediffsRequired>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>15~18</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>12~16</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>15~18</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>12~16</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 		  <skipChance>0</skipChance>
 		  <subOptionsChooseOne>
@@ -753,6 +845,20 @@
 			  </priority>
 			  <!--Align body gender to pawn's gender (default: True)-->
 			  <checkGender>True</checkGender>
+			</li>
+			
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>15~18</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>12~16</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
 			</li>
 		</modExtensions>
 	</PawnKindDef>

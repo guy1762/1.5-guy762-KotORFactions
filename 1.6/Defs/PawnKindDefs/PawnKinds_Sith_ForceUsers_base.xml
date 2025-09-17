@@ -146,17 +146,27 @@
 		</weaponTags>
 		<biocodeWeaponChance>999</biocodeWeaponChance>
 
-		<skills>
-			<li>
-				<skill>Melee</skill>
-				<range>12~16</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>12~16</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 
 		<initialWillRange>10~12</initialWillRange>
 		<initialResistanceRange>50~72</initialResistanceRange>
 		
 		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Melee</skill>
+						<range>12~16</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+			
 			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
 				<bladeColors>
 					<!-- red -->
@@ -253,16 +263,16 @@
 			<li>guy762_ImplantDock_II</li>
 		</techHediffsRequired>
 
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>16~18</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>16~18</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>16~18</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>16~18</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -311,6 +321,20 @@
 				<!--Align body gender to pawn's gender (default: True)-->
 				<checkGender>True</checkGender>
 			</li>
+			
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>16~18</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>16~18</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
 		</modExtensions>
 	</PawnKindDef>
 
@@ -354,17 +378,27 @@
 		</weaponTags>
 		<biocodeWeaponChance>999</biocodeWeaponChance>
 
-		<skills>
-			<li>
-				<skill>Melee</skill>
-				<range>8~12</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>8~12</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 
 		<initialWillRange>10~12</initialWillRange>
 		<initialResistanceRange>50~72</initialResistanceRange>
 		
 		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Melee</skill>
+						<range>8~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+			
 			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
 				<bladeColors>
 					<!-- red -->
@@ -436,16 +470,16 @@
 			<li>guy762_ImplantDock_I</li>
 		</techHediffsRequired>
 
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>10~14</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>10~14</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>10~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>10~14</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 
 		<disallowedTraitsWithDegree>
 			<ShootingAccuracy>-1</ShootingAccuracy>
@@ -473,6 +507,21 @@
 				<!--Align body gender to pawn's gender (default: True)-->
 				<checkGender>True</checkGender>
 			</li>
+			
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>10~14</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>10~14</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+			
 			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
 				<bladeColors>
 					<!-- red -->
@@ -541,17 +590,27 @@
 		<biocodeWeaponChance>999</biocodeWeaponChance>
 		<techHediffsMoney>4000~6000</techHediffsMoney>
 
-		<skills>
-			<li>
-				<skill>Melee</skill>
-				<range>12~14</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>12~14</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 
 		<initialWillRange>10~12</initialWillRange>
 		<initialResistanceRange>50~72</initialResistanceRange>
 		
 		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Melee</skill>
+						<range>12~14</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+			
 			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
 				<bladeColors>
 					<!-- red -->
@@ -635,17 +694,27 @@
 			<li>guy762_ImplantDock_II</li>
 		</techHediffsRequired>
 
-		<skills>
-			<li>
-				<skill>Melee</skill>
-				<range>14~16</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>14~16</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 
 		<initialWillRange>10~12</initialWillRange>
 		<initialResistanceRange>50~72</initialResistanceRange>
 		
 		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Melee</skill>
+						<range>14~16</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+			
 			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
 				<bladeColors>
 					<!-- red -->
@@ -738,21 +807,35 @@
 		<!-- <li>guy762_ImplantDock_II</li> -->
 		<!-- </techHediffsRequired> -->
 
-		<skills>
-			<li>
-				<skill>Melee</skill>
-				<range>14~16</range>
-			</li>
-			<li>
-				<skill>Social</skill>
-				<range>14~16</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>14~16</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>14~16</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 
 		<initialWillRange>10~12</initialWillRange>
 		<initialResistanceRange>50~72</initialResistanceRange>
 		
 		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Melee</skill>
+						<range>14~16</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>14~16</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+			
 			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
 				<bladeColors>
 					<!-- red -->

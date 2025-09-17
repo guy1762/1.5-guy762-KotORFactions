@@ -149,20 +149,20 @@
 		  <li>guy762_ImplantDock_II</li>
 		</techHediffsRequired>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>7~12</range>
-			</li>
-			<li>
-				<skill>Crafting</skill>
-				<range>8~12</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>8~12</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>7~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Crafting</skill> -->
+				<!-- <range>8~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>8~12</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -179,6 +179,26 @@
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>7~12</range>
+					</li>
+					<li>
+						<skill>Crafting</skill>
+						<range>8~12</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>8~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -240,20 +260,20 @@
 		</techHediffsRequired>
 		<forcedHair>Bald</forcedHair>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>4~8</range>
-			</li>
-			<li>
-				<skill>Crafting</skill>
-				<range>12~14</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>14~18</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>4~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Crafting</skill> -->
+				<!-- <range>12~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>14~18</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -270,6 +290,26 @@
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>4~8</range>
+					</li>
+					<li>
+						<skill>Crafting</skill>
+						<range>12~14</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>14~18</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	  
 	  
@@ -320,16 +360,16 @@
 		  <li>guy762_ImplantDock_I</li>
 		</techHediffsRequired>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>10~14</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>10~14</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>10~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>10~14</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -355,9 +395,27 @@
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-	  </PawnKindDef>
-	  
-	  <PawnKindDef Name="KotORExchg_assassin" ParentName="KotORExchgBase">
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>10~14</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>10~14</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef Name="KotORExchg_assassin" ParentName="KotORExchgBase">
 		<defName>KotORExchg_assassin</defName>
 		<label>Exchange assassin</label>
 		<combatPower>100</combatPower>
@@ -411,12 +469,12 @@
 		  <li>guy762_ImplantDock_II</li>
 		</techHediffsRequired>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>16~18</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>16~18</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -437,7 +495,19 @@
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>16~18</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
   
 
 
@@ -446,7 +516,7 @@
             <!--leadership-->
   
   
-	  <PawnKindDef Name="KotORExchg_capo" ParentName="KotORExchgBase">
+	<PawnKindDef Name="KotORExchg_capo" ParentName="KotORExchgBase">
 		<defName>KotORExchg_capo</defName>
 		<label>Exchange capo</label>
 		<combatPower>150</combatPower>
@@ -528,20 +598,20 @@
 			</li>
 		  </subOptionsChooseOne>
 		</inventoryOptions>
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>5~14</range>
-			</li>
-			<li>
-				<skill>Social</skill>
-				<range>9~14</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>7~12</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>5~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>9~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>7~12</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<disallowedTraits>
 		  <li>Brawler</li>
 		  <li>CreepyBreathing</li>
@@ -557,12 +627,32 @@
 		<abilities>
 			<li>MarksmanCommand</li>
 		</abilities>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>5~14</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>9~14</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>7~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	  
 	  
 	  
 	  
-	  <PawnKindDef Name="KotORExchg_vigo" ParentName="KotORExchgBase">
+	<PawnKindDef Name="KotORExchg_vigo" ParentName="KotORExchgBase">
 		<defName>KotORExchg_vigo</defName>
 		<label>Exchange vigo</label>
 		<combatPower>100</combatPower>
@@ -625,20 +715,20 @@
 		  <!-- <li>ImplantEmpireRoyal</li> -->
 		<!-- </techHediffsTags> -->
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>8~16</range>
-			</li>
-			<li>
-				<skill>Social</skill>
-				<range>14~20</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>12~18</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>8~16</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>14~20</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>12~18</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 		  <skipChance>0</skipChance>
 		  <subOptionsChooseOne>
@@ -670,7 +760,27 @@
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<allowOldAgeInjuries>True</allowOldAgeInjuries>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>8~16</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>14~20</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>12~18</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 
 
  </Defs>

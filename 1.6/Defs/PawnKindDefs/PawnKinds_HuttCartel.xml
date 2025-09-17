@@ -190,17 +190,29 @@
 		  <li>KotORRanged_hvyrepeater</li>
 		</weaponTags>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>5~20</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>5~20</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<isFighter>true</isFighter>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>5~20</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 	
@@ -351,18 +363,30 @@
 		  <li>HC_soldier</li>
 		</weaponTags>
 		
-		<skills>
-		  <li>
-			<skill>Shooting</skill>
-			<range>6~14</range>
-		  </li>
-		</skills>
+		<!-- <skills> -->
+		  <!-- <li> -->
+			<!-- <skill>Shooting</skill> -->
+			<!-- <range>6~14</range> -->
+		  <!-- </li> -->
+		<!-- </skills> -->
 		
 		<initialWillRange>0.2~1.6</initialWillRange>
 		<initialResistanceRange>3~7</initialResistanceRange>
 		<isFighter>true</isFighter>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>6~14</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 
 
 	<PawnKindDef Name="KotORHutts_soldier" ParentName="KotORHutts_Base">
@@ -403,17 +427,29 @@
 		  <li>HC_enforcer</li>
 		</weaponTags>
 		
-		<skills>
-		  <li>
-			<skill>Melee</skill>
-			<range>6~14</range>
-		  </li>
-		</skills>
+		<!-- <skills> -->
+		  <!-- <li> -->
+			<!-- <skill>Melee</skill> -->
+			<!-- <range>6~14</range> -->
+		  <!-- </li> -->
+		<!-- </skills> -->
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<isFighter>true</isFighter>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Melee</skill>
+						<range>6~14</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -530,16 +566,16 @@
 		  <li>HC_elite</li>
 		</weaponTags>
 		
-		<skills>
-		  <li>
-			<skill>Shooting</skill>
-			<range>14~18</range>
-		  </li>
-		  <li>
-			<skill>Melee</skill>
-			<range>8~14</range>
-		  </li>
-		</skills>
+		<!-- <skills> -->
+		  <!-- <li> -->
+			<!-- <skill>Shooting</skill> -->
+			<!-- <range>14~18</range> -->
+		  <!-- </li> -->
+		  <!-- <li> -->
+			<!-- <skill>Melee</skill> -->
+			<!-- <range>8~14</range> -->
+		  <!-- </li> -->
+		<!-- </skills> -->
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
@@ -548,6 +584,22 @@
 		<abilities>
 			<li>MarksmanCommand</li>
 		</abilities>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>14~18</range>
+					</li>
+					<li>
+						<skill>Shooting</skill>
+						<range>8~14</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -601,13 +653,13 @@
 			  <checkGender>False</checkGender>
 			</li>
 		</modExtensions>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
-	  <PawnKindDef Name="KotORHutts_SlaveEntertainer" ParentName="SWCPCivilian_SlaveEntertainer">
+	<PawnKindDef Name="KotORHutts_SlaveEntertainer" ParentName="SWCPCivilian_SlaveEntertainer">
 		<defName>KotORHutts_SlaveEntertainer</defName>
 		<defaultFactionType>guy762_KotORFaction_HuttCartel</defaultFactionType>
 		<!--fixedGender>Female</fixedGender-->
-	  </PawnKindDef>
+	</PawnKindDef>
 	
 	
 	<PawnKindDef Name="KotORHutts_droid_protocol" ParentName="KotORDroidGood_GE3PD" MayRequire="guy762.KotORDroids">
@@ -615,16 +667,16 @@
 		<label>interpreter droid</label>
 		<defaultFactionType>guy762_KotORFaction_HuttCartel</defaultFactionType>
 		<skinColorOverride>(220,175,80)</skinColorOverride>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
-	  <PawnKindDef Name="KotORHutts_smuggler" ParentName="SWCPCivilian_smuggler">
+	<PawnKindDef Name="KotORHutts_smuggler" ParentName="SWCPCivilian_smuggler">
 		<defName>KotORHutts_smuggler</defName>
 		<defaultFactionType>guy762_KotORFaction_HuttCartel</defaultFactionType>
 		<trader>true</trader>
 		<titleRequired>KotORTitleHutts_associate</titleRequired>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
-	  <PawnKindDef Name="KotORHutts_roguetrader" ParentName="KotORHutts_Base">
+	<PawnKindDef Name="KotORHutts_roguetrader" ParentName="KotORHutts_Base">
 		<defName>KotORHutts_roguetrader</defName>
 		<label>merchant-lord</label>
 		<nameMaker>guy762_PawnNamer_GlupShitto</nameMaker>
@@ -731,21 +783,33 @@
 			</li>
 		  </subOptionsChooseOne>
 		</inventoryOptions>
-		<skills>
-			<li>
-				<skill>Social</skill>
-				<range>12~16</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>12~16</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<allowOldAgeInjuries>True</allowOldAgeInjuries>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Social</skill>
+						<range>12~16</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	  
 	  
-	  <PawnKindDef Name="KotORHutts_HuttTrader" ParentName="KotORHutts_Base">
+	<PawnKindDef Name="KotORHutts_HuttTrader" ParentName="KotORHutts_Base">
 		<defName>KotORHutts_HuttTrader</defName>
 		<label>kajidic associate</label>
 		<!-- <nameMaker>KoTOR_NamerHutt_lowcaste</nameMaker> -->
@@ -812,12 +876,12 @@
 			</li>
 		  </subOptionsChooseOne>
 		</inventoryOptions>
-		<skills>
-			<li>
-				<skill>Social</skill>
-				<range>12~18</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>12~18</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		
 		<disallowedTraits>
 		  <li>Brawler</li>
@@ -830,6 +894,18 @@
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<allowOldAgeInjuries>True</allowOldAgeInjuries>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Social</skill>
+						<range>12~18</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -952,18 +1028,30 @@
 			</li>
 		  </subOptionsChooseOne>
 		</inventoryOptions>
-		<skills>
-			<li>
-				<skill>Social</skill>
-				<range>10~16</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>10~16</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<allowOldAgeInjuries>True</allowOldAgeInjuries>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Social</skill>
+						<range>10~16</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	
 	<PawnKindDef Name="KotORHutts_HuttLord" ParentName="KotORHutts_Base">
 		<defName>KotORHutts_HuttLord</defName>
@@ -1039,16 +1127,16 @@
 			</li>
 		  </subOptionsChooseOne>
 		</inventoryOptions>
-		<skills>
-			<li>
-				<skill>Social</skill>
-				<range>14~20</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>12~18</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>14~20</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>12~18</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		
 		<disallowedTraits>
 		  <li>Brawler</li>
@@ -1061,13 +1149,29 @@
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<allowOldAgeInjuries>True</allowOldAgeInjuries>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Social</skill>
+						<range>14~20</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>12~18</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
 	<PawnKindDef Name="KotORViciousHutts_HuttLord" ParentName="KotORHutts_HuttLord">
 		<defName>KotORViciousHutts_HuttLord</defName>
 		<defaultFactionType>guy762_KotORFaction_ViciousHutts</defaultFactionType>
-	  </PawnKindDef>
+	</PawnKindDef>
 
 
  </Defs>

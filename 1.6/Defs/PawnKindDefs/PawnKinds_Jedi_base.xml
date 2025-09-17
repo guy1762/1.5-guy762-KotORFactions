@@ -144,21 +144,35 @@
 		<!-- <li>Force_LightsaberDual</li> -->
 		<li>Force_LightsaberCrossguard</li>
       </weaponTags>
-	  <skills>
-		<li>
-			<skill>Melee</skill>
-			<range>14~16</range>
-		</li>
-		<li>
-			<skill>Medicine</skill>
-			<range>6~10</range>
-		</li>
-	  </skills>
+	  <!-- <skills> -->
+		<!-- <li> -->
+			<!-- <skill>Melee</skill> -->
+			<!-- <range>14~16</range> -->
+		<!-- </li> -->
+		<!-- <li> -->
+			<!-- <skill>Medicine</skill> -->
+			<!-- <range>6~10</range> -->
+		<!-- </li> -->
+	  <!-- </skills> -->
 
       <initialWillRange>6~8</initialWillRange>
       <initialResistanceRange>30~46</initialResistanceRange>
 	  
 		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Melee</skill>
+						<range>14~16</range>
+					</li>
+					<li>
+						<skill>Medicine</skill>
+						<range>6~10</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+			
 			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
 				<bladeColors>
 					<!-- KotOR blue -->
@@ -181,14 +195,14 @@
 				<!-- </preferredHiltParts> -->
 			</li>
 		</modExtensions>
-   </PawnKindDef>
+	</PawnKindDef>
    
    
    
    
    
    
-   <PawnKindDef Name="KotORRepub_BASEjedisentinel" ParentName="KotORJedi_XenoList" Abstract="True">
+	<PawnKindDef Name="KotORRepub_BASEjedisentinel" ParentName="KotORJedi_XenoList" Abstract="True">
       <defName>KotORRepub_BASEjedisentinel</defName>
       <label>Jedi sentinel</label>
       <combatPower>250</combatPower>
@@ -217,29 +231,51 @@
 		<li>Force_LightsaberSingle</li>
 		<!-- <li>Force_LightsaberDual</li> -->
       </weaponTags>
-	  <skills>
-		<li>
-			<skill>Melee</skill>
-			<range>12~16</range>
-		</li>
-		<li>
-			<skill>Medicine</skill>
-			<range>8~12</range>
-		</li>
-		<li>
-			<skill>Social</skill>
-			<range>6~12</range>
-		</li>
-		<li>
-			<skill>Intellectual</skill>
-			<range>6~12</range>
-		</li>
-	  </skills>
+	  <!-- <skills> -->
+		<!-- <li> -->
+			<!-- <skill>Melee</skill> -->
+			<!-- <range>12~16</range> -->
+		<!-- </li> -->
+		<!-- <li> -->
+			<!-- <skill>Medicine</skill> -->
+			<!-- <range>8~12</range> -->
+		<!-- </li> -->
+		<!-- <li> -->
+			<!-- <skill>Social</skill> -->
+			<!-- <range>6~12</range> -->
+		<!-- </li> -->
+		<!-- <li> -->
+			<!-- <skill>Intellectual</skill> -->
+			<!-- <range>6~12</range> -->
+		<!-- </li> -->
+	  <!-- </skills> -->
 
       <initialWillRange>6~8</initialWillRange>
       <initialResistanceRange>30~46</initialResistanceRange>
 	  
 		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Melee</skill>
+						<range>12~16</range>
+					</li>
+					<li>
+						<skill>Medicine</skill>
+						<range>8~12</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>6~12</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>6~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+			
 			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
 				<bladeColors>
 					<!-- KotOR soft yellow -->
@@ -263,7 +299,7 @@
 				<!-- </preferredHiltParts> -->
 			</li>
 		</modExtensions>
-   </PawnKindDef>
+	</PawnKindDef>
    
    
    
@@ -271,57 +307,79 @@
    
    
    
-   <PawnKindDef Name="KotORRepub_BASEjediconsular" ParentName="KotORJedi_XenoList" Abstract="True">
-      <defName>KotORRepub_BASEjediconsular</defName>
-      <label>Jedi consular</label>
-      <combatPower>250</combatPower>
-	  <maxPerGroup>1</maxPerGroup>
-	  <titleRequired>KotORTitleORenlstd_captain</titleRequired>
-	  <minGenerationAge>23</minGenerationAge>
-	  
-      <weaponMoney>99999</weaponMoney>
-      <techHediffsMoney>1000~4000</techHediffsMoney>
-	  <itemQuality>Good</itemQuality>
-      <apparelTags>
-		<li>KotOREquipment_jedi</li>
-		<li>KotORHeadband_jedi</li>
-		<li>OR_jeditunic_simple</li>
-		<li>SWKotORSpecificApparelItem_SimpleJediTunic</li>
-	  </apparelTags>
-	  <specificApparelRequirements>
+	<PawnKindDef Name="KotORRepub_BASEjediconsular" ParentName="KotORJedi_XenoList" Abstract="True">
+		<defName>KotORRepub_BASEjediconsular</defName>
+		<label>Jedi consular</label>
+		<combatPower>250</combatPower>
+		<maxPerGroup>1</maxPerGroup>
+		<titleRequired>KotORTitleORenlstd_captain</titleRequired>
+		<minGenerationAge>23</minGenerationAge>
+
+		<weaponMoney>99999</weaponMoney>
+		<techHediffsMoney>1000~4000</techHediffsMoney>
+		<itemQuality>Good</itemQuality>
+		<apparelTags>
+			<li>KotOREquipment_jedi</li>
+			<li>KotORHeadband_jedi</li>
+			<li>OR_jeditunic_simple</li>
+			<li>SWKotORSpecificApparelItem_SimpleJediTunic</li>
+		</apparelTags>
+		<specificApparelRequirements>
 		  <li>
 			<apparelLayer>OnSkin</apparelLayer>
 			<requiredTag>OR_jeditunic_simple</requiredTag>
 		  </li>
-	  </specificApparelRequirements>
-      <weaponTags Inherit="False">
-		<li>OR_jediconsular</li>
-		<li>Force_LightsaberSingle</li>
-		<li>Force_Lightsaber_Curved</li>
-      </weaponTags>
-	  <skills>
-		<li>
-			<skill>Melee</skill>
-			<range>10~12</range>
-		</li>
-		<li>
-			<skill>Medicine</skill>
-			<range>10~16</range>
-		</li>
-		<li>
-			<skill>Social</skill>
-			<range>10~16</range>
-		</li>
-		<li>
-			<skill>Intellectual</skill>
-			<range>10~16</range>
-		</li>
-	  </skills>
+		</specificApparelRequirements>
+		<weaponTags Inherit="False">
+			<li>OR_jediconsular</li>
+			<li>Force_LightsaberSingle</li>
+			<li>Force_Lightsaber_Curved</li>
+		</weaponTags>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Medicine</skill> -->
+				<!-- <range>10~16</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>10~16</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>10~16</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 
-      <initialWillRange>6~8</initialWillRange>
-      <initialResistanceRange>30~46</initialResistanceRange>
+		<initialWillRange>6~8</initialWillRange>
+		<initialResistanceRange>30~46</initialResistanceRange>
 	  
 		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Melee</skill>
+						<range>10~12</range>
+					</li>
+					<li>
+						<skill>Medicine</skill>
+						<range>10~16</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>10~16</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>10~16</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+			
 			<li MayRequire="lee.theforce.lightsaber" Class="Lightsaber.ModExtension_LightsaberPresets">
 				<bladeColors>
 					<!-- green -->
@@ -344,7 +402,7 @@
 			</li>
 		</modExtensions>
 	
-   </PawnKindDef>
+	</PawnKindDef>
 
    
 </Defs>

@@ -103,27 +103,43 @@
 		  </subOptionsChooseOne>
 		</inventoryOptions>
 		<biocodeWeaponChance>0</biocodeWeaponChance>
-		<skills>
-		  <li>
-			<skill>Shooting</skill>
-			<range>5~10</range>
-		  </li>
-		  <li>
-			<skill>Melee</skill>
-			<range>4~8</range>
-		  </li>
-		</skills>
+		<!-- <skills> -->
+		  <!-- <li> -->
+			<!-- <skill>Shooting</skill> -->
+			<!-- <range>5~10</range> -->
+		  <!-- </li> -->
+		  <!-- <li> -->
+			<!-- <skill>Melee</skill> -->
+			<!-- <range>4~8</range> -->
+		  <!-- </li> -->
+		<!-- </skills> -->
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<isFighter>true</isFighter>
 		<allowOldAgeInjuries>False</allowOldAgeInjuries>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>5~10</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>4~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	  
 	  
 	  
 	  
-	  <PawnKindDef Name="KotORMlita_trooper" ParentName="KotORMlita_Base">
+	<PawnKindDef Name="KotORMlita_trooper" ParentName="KotORMlita_Base">
 		<defName>KotORMlita_trooper</defName>
 		<label>militia trooper</label>
 		<combatPower>65</combatPower>
@@ -169,26 +185,42 @@
 		  </subOptionsChooseOne>
 		</inventoryOptions>
 		<biocodeWeaponChance>0.1</biocodeWeaponChance>
-		<skills>
-		  <li>
-			<skill>Shooting</skill>
-			<range>4~8</range>
-		  </li>
-		  <li>
-			<skill>Melee</skill>
-			<range>0~8</range>
-		  </li>
-		</skills>
+		<!-- <skills> -->
+		  <!-- <li> -->
+			<!-- <skill>Shooting</skill> -->
+			<!-- <range>4~8</range> -->
+		  <!-- </li> -->
+		  <!-- <li> -->
+			<!-- <skill>Melee</skill> -->
+			<!-- <range>0~8</range> -->
+		  <!-- </li> -->
+		<!-- </skills> -->
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<isFighter>true</isFighter>
 		<allowOldAgeInjuries>True</allowOldAgeInjuries>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>4~8</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>0~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	  
 	  
 	  
-	   <PawnKindDef Name="KotORMlita_heavy" ParentName="KotORMlita_Base">
+	<PawnKindDef Name="KotORMlita_heavy" ParentName="KotORMlita_Base">
 		<defName>KotORMlita_heavy</defName>
 		<label>militia heavy</label>
 		<combatPower>100</combatPower>
@@ -242,16 +274,16 @@
 		  </subOptionsChooseOne>
 		</inventoryOptions>
 		<biocodeWeaponChance>0.4</biocodeWeaponChance>
-		<skills>
-		  <li>
-			<skill>Shooting</skill>
-			<range>10~14</range>
-		  </li>
-		  <li>
-			<skill>Melee</skill>
-			<range>6~12</range>
-		  </li>
-		</skills>
+		<!-- <skills> -->
+		  <!-- <li> -->
+			<!-- <skill>Shooting</skill> -->
+			<!-- <range>10~14</range> -->
+		  <!-- </li> -->
+		  <!-- <li> -->
+			<!-- <skill>Melee</skill> -->
+			<!-- <range>6~12</range> -->
+		  <!-- </li> -->
+		<!-- </skills> -->
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<isFighter>true</isFighter>
@@ -271,10 +303,28 @@
 			  <!--Align body gender to pawn's gender (default: True)-->
 			  <checkGender>False</checkGender>
 			</li>
+			
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>10~14</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>6~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
 		</modExtensions>
-	  </PawnKindDef>
-	  
-	  <PawnKindDef Name="KotORMlita_veteran" ParentName="KotORMlita_Base">
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	<PawnKindDef Name="KotORMlita_veteran" ParentName="KotORMlita_Base">
 		<defName>KotORMlita_veteran</defName>
 		<label>Republic veteran</label>
 		<combatPower>100</combatPower>
@@ -320,12 +370,12 @@
 		  </subOptionsChooseOne>
 		</inventoryOptions>
 		<biocodeWeaponChance>0.4</biocodeWeaponChance>
-		<skills>
-		  <li>
-			<skill>Shooting</skill>
-			<range>6~14</range>
-		  </li>
-		</skills>
+		<!-- <skills> -->
+		  <!-- <li> -->
+			<!-- <skill>Shooting</skill> -->
+			<!-- <range>6~14</range> -->
+		  <!-- </li> -->
+		<!-- </skills> -->
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<isFighter>true</isFighter>
@@ -334,11 +384,23 @@
 		<abilities>
 			<li>MarksmanCommand</li>
 		</abilities>
-	  </PawnKindDef>
-	  
-	  
-	  
-	  <PawnKindDef Name="KotORMlita_leader" ParentName="KotORMlita_Base">
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>6~14</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef Name="KotORMlita_leader" ParentName="KotORMlita_Base">
 		<defName>KotORMlita_leader</defName>
 		<label>governor</label>
 		<combatPower>20</combatPower>
@@ -382,21 +444,37 @@
 			</li>
 		</specificApparelRequirements>
 		
-		<skills>
-		  <li>
-				<skill>Social</skill>
-				<range>10~14</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>8~12</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+		  <!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>10~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>8~12</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Social</skill>
+						<range>10~14</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>8~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	  
 	  
 	  

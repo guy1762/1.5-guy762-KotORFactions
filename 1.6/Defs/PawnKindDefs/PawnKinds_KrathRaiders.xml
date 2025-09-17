@@ -117,12 +117,12 @@
 		
 		<techHediffsChance>0</techHediffsChance>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>4~8</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>4~8</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0.25</skipChance>
 			<subOptionsChooseOne>
@@ -151,12 +151,24 @@
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>4~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	  
 	  
 	  
 	  
-	  <PawnKindDef Name="KotORKrath_raidermelee" ParentName="KotORKrath_Base">
+	<PawnKindDef Name="KotORKrath_raidermelee" ParentName="KotORKrath_Base">
 		<defName>KotORKrath_raidermelee</defName>
 		<label>remnant slasher</label>
 		<combatPower>65</combatPower>
@@ -191,12 +203,12 @@
 		
 		<techHediffsChance>0</techHediffsChance>
 		
-		<skills>
-			<li>
-				<skill>Melee</skill>
-				<range>4~8</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>4~8</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 		  <skipChance>0.1</skipChance>
 		  <subOptionsChooseOne>
@@ -230,13 +242,25 @@
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Melee</skill>
+						<range>4~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
   
   
 	  
 	  
 	  
-	  <PawnKindDef Name="KotORKrath_raiderveteran" ParentName="KotORKrath_Base">
+	<PawnKindDef Name="KotORKrath_raiderveteran" ParentName="KotORKrath_Base">
 		<defName>KotORKrath_raiderveteran</defName>
 		<label>remnant veteran</label>
 		<combatPower>100</combatPower>
@@ -290,16 +314,16 @@
 			<max>2400</max>
 		</techHediffsMoney>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>8~12</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>8~12</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>8~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>8~12</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 		  <skipChance>0.1</skipChance>
 		  <subOptionsChooseOne>
@@ -328,12 +352,28 @@
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>8~12</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>8~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	  
 	  
 	  
 	  
-	  <PawnKindDef Name="KotORKrath_krathmelee" ParentName="KotORKrath_Base">
+	<PawnKindDef Name="KotORKrath_krathmelee" ParentName="KotORKrath_Base">
 		<defName>KotORKrath_krathmelee</defName>
 		<label>Krath marauder</label>
 		<combatPower>150</combatPower>
@@ -367,12 +407,12 @@
 			<max>7500</max>
 		</techHediffsMoney>
 		
-		<skills>
-			<li>
-				<skill>Melee</skill>
-				<range>10~12</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 		  <skipChance>0.1</skipChance>
 		  <subOptionsChooseOne>
@@ -402,12 +442,24 @@
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Melee</skill>
+						<range>10~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	  
 	  
 	  
 	  
-	  <PawnKindDef Name="KotORKrath_krathslaver" ParentName="KotORKrath_Base">
+	<PawnKindDef Name="KotORKrath_krathslaver" ParentName="KotORKrath_Base">
 		<defName>KotORKrath_krathslaver</defName>
 		<label>Krath slaver</label>
 		<combatPower>150</combatPower>
@@ -449,12 +501,12 @@
 			<max>7500</max>
 		</techHediffsMoney>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>10~12</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>10~12</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 		  <skipChance>0.1</skipChance>
 		  <subOptionsChooseOne>
@@ -480,7 +532,19 @@
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>10~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 		
 		
 		
@@ -488,7 +552,7 @@
 	  
 	  
 	  
- <PawnKindDef Name="KotORKrath_raidercmdr" ParentName="KotORKrath_Base">
+	<PawnKindDef Name="KotORKrath_raidercmdr" ParentName="KotORKrath_Base">
 		<defName>KotORKrath_raidercmdr</defName>
 		<label>remnant commander</label>
 		<combatPower>75</combatPower>
@@ -537,16 +601,16 @@
 		  <li>SE_officer</li>
 		</weaponTags>
 		
-		<skills>
-			<li>
-				<skill>Social</skill>
-				<range>5~10</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>5~10</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>5~10</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>5~10</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -578,18 +642,32 @@
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
 		<modExtensions>
 			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
-				  <whitelist>
-					<li>Fat</li>
-				  </whitelist>
-				  <blacklist>
-				  </blacklist>
-				  <priority>
-					<li>Fat</li>
-				  </priority>
-				  <checkGender>False</checkGender>
-				</li>
-		  </modExtensions>
-	  </PawnKindDef> 
+			  <whitelist>
+				<li>Fat</li>
+			  </whitelist>
+			  <blacklist>
+			  </blacklist>
+			  <priority>
+				<li>Fat</li>
+			  </priority>
+			  <checkGender>False</checkGender>
+			</li>
+			
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Social</skill>
+						<range>5~10</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>5~10</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef> 
 	  
 	  
 		

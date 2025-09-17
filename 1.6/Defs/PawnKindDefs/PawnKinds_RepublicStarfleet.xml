@@ -176,20 +176,20 @@
 		  <li>OR_melee</li>
 		</weaponTags>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>4~8</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>4~8</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>4~8</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>4~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>4~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>4~8</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		
 		<inventoryOptions>
 			<skipChance>0.25</skipChance>
@@ -203,11 +203,31 @@
 		
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>4~8</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>4~8</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>4~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	  
 	  
 	  
-	  <PawnKindDef Name="KotORRepub_engineer" ParentName="KotORRepub_Base">
+	<PawnKindDef Name="KotORRepub_engineer" ParentName="KotORRepub_Base">
 		<defName>KotORRepub_engineer</defName>
 		<label>Republic engineer</label>
 		<combatPower>40</combatPower>
@@ -250,24 +270,24 @@
 		  <!--li>OR_melee</li-->
 		</weaponTags>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>4~8</range>
-			</li>
-			<li>
-				<skill>Construction</skill>
-				<range>10~14</range>
-			</li>
-			<li>
-				<skill>Crafting</skill>
-				<range>8~12</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>4~8</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>4~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Construction</skill> -->
+				<!-- <range>10~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Crafting</skill> -->
+				<!-- <range>8~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>4~8</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 		  <skipChance>0.1</skipChance>
 		  <subOptionsChooseOne>
@@ -280,11 +300,35 @@
 
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>4~8</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>10~14</range>
+					</li>
+					<li>
+						<skill>Crafting</skill>
+						<range>8~12</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>4~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	  
 	  
 	  
-	  <PawnKindDef Name="KotORRepub_lieutenant" ParentName="KotORRepub_Base">
+	<PawnKindDef Name="KotORRepub_lieutenant" ParentName="KotORRepub_Base">
 		<defName>KotORRepub_lieutenant</defName>
 		<label>Republic lieutenant</label>
 		<combatPower>65</combatPower>
@@ -328,24 +372,24 @@
 		  <li>OR_lieutenant</li>
 		</weaponTags>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>6~12</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>4~8</range>
-			</li>
-			<li>
-				<skill>Social</skill>
-				<range>8~14</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>6~12</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>6~12</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>4~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>8~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>6~12</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0.25</skipChance>
 			<subOptionsChooseOne>
@@ -361,11 +405,35 @@
 		<abilities>
 			<li>MarksmanCommand</li>
 		</abilities>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>6~12</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>4~8</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>8~14</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>6~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	  
 	  
 	  
-	  <PawnKindDef Name="KotORRepub_captain" ParentName="KotORRepub_Base">
+	<PawnKindDef Name="KotORRepub_captain" ParentName="KotORRepub_Base">
 		<defName>KotORRepub_captain</defName>
 		<label>Republic captain</label>
 		<combatPower>200</combatPower>
@@ -406,24 +474,24 @@
 		  <!-- <li>guy762_ImplantDock_I</li> -->
 		<!-- </techHediffsRequired> -->
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>4~6</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>4~6</range>
-			</li>
-			<li>
-				<skill>Social</skill>
-				<range>12~16</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>12~16</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>4~6</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>4~6</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>12~16</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>12~16</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -441,9 +509,33 @@
 			<!--li>ProductionCommand</li>
 			<li>CombatCommand</li-->
 		</abilities>
-	  </PawnKindDef>
-	  
-	  
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>4~6</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>4~6</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>12~16</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>12~16</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	
 	    <!--troopers-->
 		  
 		  
@@ -490,16 +582,16 @@
 			<max>2400</max>
 		</techHediffsMoney>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>8~14</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>6~8</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>8~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		
 		<inventoryOptions>
 			<skipChance>0.05</skipChance>
@@ -522,12 +614,28 @@
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<isFighter>true</isFighter>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>8~14</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>6~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	  
 	  
 	  
 	  
-	  <PawnKindDef Name="KotORRepub_medic" ParentName="KotORRepub_Base">
+	<PawnKindDef Name="KotORRepub_medic" ParentName="KotORRepub_Base">
 		<defName>KotORRepub_medic</defName>
 		<label>Republic field medic</label>
 		<combatPower>50</combatPower>
@@ -540,13 +648,13 @@
 		<apparelMoney>7500~10000</apparelMoney>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelTags>
-		  <li>KotORShield_basic</li>
-		  <li>KotORUtility_medic</li>
-		  <li>OR_apparel_medic</li>
-		  <li>KotORBelt_medicbelt</li>
-		  <li>SWKotORSpecificApparelItem_MedicOldRepublicTrooperArmor</li>
-		  <li>SWKotORSpecificApparelItem_MedicOldRepublicTrooperHelmet</li>
-		  <li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+			<li>KotORShield_basic</li>
+			<li>KotORUtility_medic</li>
+			<li>OR_apparel_medic</li>
+			<li>KotORBelt_medicbelt</li>
+			<li>SWKotORSpecificApparelItem_MedicOldRepublicTrooperArmor</li>
+			<li>SWKotORSpecificApparelItem_MedicOldRepublicTrooperHelmet</li>
+			<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_RepArmor_medic</li>
@@ -574,20 +682,20 @@
 		  <li>guy762_ImplantDock_I</li>
 		</techHediffsRequired>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>6~8</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>6~8</range>
-			</li>
-			<li>
-				<skill>Medicine</skill>
-				<range>10~14</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Medicine</skill> -->
+				<!-- <range>10~14</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 			<skipChance>0</skipChance>
 			<subOptionsChooseOne>
@@ -616,11 +724,31 @@
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<isFighter>true</isFighter>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Medicine</skill>
+						<range>10~14</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	  
 	  
 	  
-	  <PawnKindDef Name="KotORRepub_hvysoldier" ParentName="KotORRepub_Base">
+	<PawnKindDef Name="KotORRepub_hvysoldier" ParentName="KotORRepub_Base">
 		<defName>KotORRepub_hvysoldier</defName>
 		<label>Republic heavy soldier</label>
 		<combatPower>125</combatPower>
@@ -672,16 +800,16 @@
 			<max>2400</max>
 		</techHediffsMoney>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>12~14</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>6~8</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>12~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		
 		<inventoryOptions>
 			<skipChance>0.05</skipChance>
@@ -718,8 +846,22 @@
 			  <!--Align body gender to pawn's gender (default: True)-->
 			  <checkGender>False</checkGender>
 			</li>
+			
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>12~14</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>6~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
 		</modExtensions>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
 	  
@@ -730,7 +872,7 @@
 	  
 	  
 	  
-	  <PawnKindDef Name="KotORRepub_commando" ParentName="KotORRepub_Base">
+	<PawnKindDef Name="KotORRepub_commando" ParentName="KotORRepub_Base">
 		<defName>KotORRepub_commando</defName>
 		<label>Republic commando</label>
 		<combatPower>200</combatPower>
@@ -796,32 +938,32 @@
 		  <li>guy762_ImplantDock_II</li>
 		</techHediffsRequired>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>14~16</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>12~14</range>
-			</li>
-			<li>
-				<skill>Construction</skill>
-				<range>8~10</range>
-			</li>
-			<li>
-				<skill>Crafting</skill>
-				<range>8~10</range>
-			</li>
-			<li>
-				<skill>Medicine</skill>
-				<range>6~8</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>6~8</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>14~16</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>12~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Construction</skill> -->
+				<!-- <range>8~10</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Crafting</skill> -->
+				<!-- <range>8~10</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Medicine</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		
 		<inventoryOptions>
 			<skipChance>0</skipChance>
@@ -850,30 +992,60 @@
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<modExtensions>
 			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
-				  <whitelist>
-					<li>Male</li>
-					<li>Female</li>
-					<li>Hulk</li>
-					<!-- <li>Thin</li> -->
-				  </whitelist>
-				  <blacklist>
-					<!-- <li>Thin</li> -->
-					<!-- <li>Fat</li> -->
-					<!-- <li>Baby</li> -->
-					<!-- <li>Child</li> -->
-				  </blacklist>
-				  <priority>
-					<!--When violates the black/whitelist, selected from these-->
-				  </priority>
-				  <!--Align body gender to pawn's gender (default: True)-->
-				  <checkGender>True</checkGender>
-				</li>
+			  <whitelist>
+				<li>Male</li>
+				<li>Female</li>
+				<li>Hulk</li>
+				<!-- <li>Thin</li> -->
+			  </whitelist>
+			  <blacklist>
+				<!-- <li>Thin</li> -->
+				<!-- <li>Fat</li> -->
+				<!-- <li>Baby</li> -->
+				<!-- <li>Child</li> -->
+			  </blacklist>
+			  <priority>
+				<!--When violates the black/whitelist, selected from these-->
+			  </priority>
+			  <!--Align body gender to pawn's gender (default: True)-->
+			  <checkGender>True</checkGender>
+			</li>
+			
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>14~16</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>12~14</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>8~10</range>
+					</li>
+					<li>
+						<skill>Crafting</skill>
+						<range>8~10</range>
+					</li>
+					<li>
+						<skill>Medicine</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>6~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
 		</modExtensions>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
 	  
-	  <PawnKindDef Name="KotORRepub_saboteur" ParentName="KotORRepub_Base">
+	<PawnKindDef Name="KotORRepub_saboteur" ParentName="KotORRepub_Base">
 		<defName>KotORRepub_saboteur</defName>
 		<label>Republic saboteur</label>
 		<combatPower>200</combatPower>
@@ -932,32 +1104,32 @@
 		  <li>guy762_ImplantDock_II</li>
 		</techHediffsRequired>
 		
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>14~16</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>12~14</range>
-			</li>
-			<li>
-				<skill>Construction</skill>
-				<range>8~10</range>
-			</li>
-			<li>
-				<skill>Crafting</skill>
-				<range>8~10</range>
-			</li>
-			<li>
-				<skill>Medicine</skill>
-				<range>6~8</range>
-			</li>
-			<li>
-				<skill>Intellectual</skill>
-				<range>6~8</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Shooting</skill> -->
+				<!-- <range>14~16</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Melee</skill> -->
+				<!-- <range>12~14</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Construction</skill> -->
+				<!-- <range>8~10</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Crafting</skill> -->
+				<!-- <range>8~10</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Medicine</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <skill>Intellectual</skill> -->
+				<!-- <range>6~8</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		
 		<inventoryOptions>
 			<skipChance>0</skipChance>
@@ -986,26 +1158,56 @@
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<modExtensions>
 			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
-				  <whitelist>
-					<li>Male</li>
-					<li>Female</li>
-					<li>Hulk</li>
-					<!-- <li>Thin</li> -->
-				  </whitelist>
-				  <blacklist>
-					<li>Thin</li>
-					<li>Fat</li>
-					<li>Baby</li>
-					<li>Child</li>
-				  </blacklist>
-				  <priority>
-					<!--When violates the black/whitelist, selected from these-->
-				  </priority>
-				  <!--Align body gender to pawn's gender (default: True)-->
-				  <checkGender>True</checkGender>
-				</li>
+			  <whitelist>
+				<li>Male</li>
+				<li>Female</li>
+				<li>Hulk</li>
+				<!-- <li>Thin</li> -->
+			  </whitelist>
+			  <blacklist>
+				<!-- <li>Thin</li> -->
+				<!-- <li>Fat</li> -->
+				<!-- <li>Baby</li> -->
+				<!-- <li>Child</li> -->
+			  </blacklist>
+			  <priority>
+				<!--When violates the black/whitelist, selected from these-->
+			  </priority>
+			  <!--Align body gender to pawn's gender (default: True)-->
+			  <checkGender>True</checkGender>
+			</li>
+			
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>14~16</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>12~14</range>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<range>8~10</range>
+					</li>
+					<li>
+						<skill>Crafting</skill>
+						<range>8~10</range>
+					</li>
+					<li>
+						<skill>Medicine</skill>
+						<range>6~8</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>6~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
 		</modExtensions>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
 	  
