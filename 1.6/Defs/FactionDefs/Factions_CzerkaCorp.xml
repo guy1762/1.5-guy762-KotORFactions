@@ -38,55 +38,77 @@
 	
 	<settlementGenerationWeight>5</settlementGenerationWeight>
 	<modExtensions Inherit="False">
-      <li Class="SWCP.Currencies.CurrencyReplacement">
-		<currency>guy762_KotORcredits</currency>
-	  </li>
-	  <li Class="VEF.Factions.FactionDefExtension">
-		<startingGoodwillByFactionDefs>
-			<guy762_KotORFaction_OldRepublic>0</guy762_KotORFaction_OldRepublic>
-			<guy762_KotORFaction_CorruptRepublic>100</guy762_KotORFaction_CorruptRepublic>
-			
-			<guy762_KotORFaction_SithRemnant>25~75</guy762_KotORFaction_SithRemnant>
-			<guy762_KotORFaction_KrathRaiders>0~25</guy762_KotORFaction_KrathRaiders>
-			
-			<guy762_KotORFaction_Militia>50~100</guy762_KotORFaction_Militia>
-			<guy762_KotORFaction_Rebellion>-50~25</guy762_KotORFaction_Rebellion>
-			
-			<guy762_KotORFaction_HuttCartel>-100</guy762_KotORFaction_HuttCartel>
-			<guy762_KotORFaction_ViciousHutts>-100</guy762_KotORFaction_ViciousHutts>
-			
-			<guy762_KotORFaction_MandoClan>-100</guy762_KotORFaction_MandoClan>
-			<guy762_KotORFaction_SavageMandos>-100</guy762_KotORFaction_SavageMandos>
-			
-			<guy762_KotORFaction_Czerka>0</guy762_KotORFaction_Czerka>
-			<guy762_KotORFaction_Exchange>-100</guy762_KotORFaction_Exchange>
-			<guy762_KotORFaction_Civilians>0</guy762_KotORFaction_Civilians>
-			
-			<guy762_KotORFaction_MandoNeoCrusaders>-50</guy762_KotORFaction_MandoNeoCrusaders>
-			<guy762_KotORFaction_SithEmpire>100</guy762_KotORFaction_SithEmpire>
+		<li Class="SWCP.Currencies.CurrencyReplacement">
+			<currency>guy762_KotORcredits</currency>
+		</li>
+		<!-- <li Class="VEF.Factions.FactionDefExtension"> -->
+			<!-- <startingGoodwillByFactionDefs> -->
+				<!-- <guy762_KotORFaction_OldRepublic>0</guy762_KotORFaction_OldRepublic> -->
+				<!-- <guy762_KotORFaction_CorruptRepublic>100</guy762_KotORFaction_CorruptRepublic> -->
 				
-			<guy762_KotORPlayerFaction_RepublicStrikeTeam>0</guy762_KotORPlayerFaction_RepublicStrikeTeam>
-			<guy762_KotORPlayerFaction_SmugglerCrew>-25</guy762_KotORPlayerFaction_SmugglerCrew>
-			<guy762_KotORPlayerFaction_MandalorianTribe>-80</guy762_KotORPlayerFaction_MandalorianTribe>
-			<guy762_KotORPlayerFaction_SithWarlord>50</guy762_KotORPlayerFaction_SithWarlord>
-			<guy762_KotORPlayerFaction_HuttUpstart>-100</guy762_KotORPlayerFaction_HuttUpstart>
-			
-			<!--guy762_KotORFaction_Trandoshans>-100</guy762_KotORFaction_Trandoshans>
-			<guy762_KotORFaction_MercGuild>50~100</guy762_KotORFaction_MercGuild-->
-			
-			<TribeCivil>-100</TribeCivil>
-			<TribeRough>-100</TribeRough>
-			<TribeSavage>-100</TribeSavage>
-			<TribeCannibal>-100</TribeCannibal>
-			<NudistTribe>-100</NudistTribe>
-			<TribeRoughNeanderthal>-100</TribeRoughNeanderthal>
-			<TribeSavageImpid>-100</TribeSavageImpid>
-		</startingGoodwillByFactionDefs>
-		<excludeFromCommConsole>false</excludeFromCommConsole>
-		<hasCities>true</hasCities>
-		<spawnOnCoastalTilesOnly>true</spawnOnCoastalTilesOnly>
-		<minDistanceToOtherSettlements>5</minDistanceToOtherSettlements>
-      </li>
+				<!-- <guy762_KotORFaction_SithRemnant>25~75</guy762_KotORFaction_SithRemnant> -->
+				<!-- <guy762_KotORFaction_KrathRaiders>0~25</guy762_KotORFaction_KrathRaiders> -->
+				
+				<!-- <guy762_KotORFaction_Militia>50~100</guy762_KotORFaction_Militia> -->
+				<!-- <guy762_KotORFaction_Rebellion>-50~25</guy762_KotORFaction_Rebellion> -->
+				
+				<!-- <guy762_KotORFaction_HuttCartel>-100</guy762_KotORFaction_HuttCartel> -->
+				<!-- <guy762_KotORFaction_ViciousHutts>-100</guy762_KotORFaction_ViciousHutts> -->
+				
+				<!-- <guy762_KotORFaction_MandoClan>-100</guy762_KotORFaction_MandoClan> -->
+				<!-- <guy762_KotORFaction_SavageMandos>-100</guy762_KotORFaction_SavageMandos> -->
+				
+				<!-- <guy762_KotORFaction_Czerka>0</guy762_KotORFaction_Czerka> -->
+				<!-- <guy762_KotORFaction_Exchange>-100</guy762_KotORFaction_Exchange> -->
+				<!-- <guy762_KotORFaction_Civilians>0</guy762_KotORFaction_Civilians> -->
+				
+				<!-- <guy762_KotORFaction_MandoNeoCrusaders>-50</guy762_KotORFaction_MandoNeoCrusaders> -->
+				<!-- <guy762_KotORFaction_SithEmpire>100</guy762_KotORFaction_SithEmpire> -->
+					
+				<!-- <guy762_KotORPlayerFaction_RepublicStrikeTeam>0</guy762_KotORPlayerFaction_RepublicStrikeTeam> -->
+				<!-- <guy762_KotORPlayerFaction_SmugglerCrew>-25</guy762_KotORPlayerFaction_SmugglerCrew> -->
+				<!-- <guy762_KotORPlayerFaction_MandalorianTribe>-80</guy762_KotORPlayerFaction_MandalorianTribe> -->
+				<!-- <guy762_KotORPlayerFaction_SithWarlord>50</guy762_KotORPlayerFaction_SithWarlord> -->
+				<!-- <guy762_KotORPlayerFaction_HuttUpstart>-100</guy762_KotORPlayerFaction_HuttUpstart> -->
+				
+				<!-- <TribeCivil>-100</TribeCivil> -->
+				<!-- <TribeRough>-100</TribeRough> -->
+				<!-- <TribeSavage>-100</TribeSavage> -->
+				<!-- <TribeCannibal>-100</TribeCannibal> -->
+				<!-- <NudistTribe>-100</NudistTribe> -->
+				<!-- <TribeRoughNeanderthal>-100</TribeRoughNeanderthal> -->
+				<!-- <TribeSavageImpid>-100</TribeSavageImpid> -->
+			<!-- </startingGoodwillByFactionDefs> -->
+			<!-- <excludeFromCommConsole>false</excludeFromCommConsole> -->
+			<!-- <hasCities>true</hasCities> -->
+			<!-- <spawnOnCoastalTilesOnly>true</spawnOnCoastalTilesOnly> -->
+			<!-- <minDistanceToOtherSettlements>5</minDistanceToOtherSettlements> -->
+		<!-- </li> -->
+		
+		<li Class="SWCP.Core.ModExtension_FactionPermanentlyHostileTo">
+			<hostileFactionDefs>
+				<li>guy762_KotORFaction_Rebellion</li>
+				<li>guy762_KotORFaction_HuttCartel</li>
+				<li>guy762_KotORFaction_ViciousHutts</li>
+				<li>guy762_KotORFaction_MandoClan</li>
+				<li>guy762_KotORFaction_SavageMandos</li>
+				<li>guy762_KotORFaction_Exchange</li>
+				
+				<li>guy762_KotORFaction_MandoNeoCrusaders</li>
+				
+				<li>guy762_KotORPlayerFaction_SmugglerCrew</li>
+				<li>guy762_KotORPlayerFaction_MandalorianTribe</li>
+				<li>guy762_KotORPlayerFaction_HuttUpstart</li>
+				
+				<li>TribeCivil</li>
+				<li>TribeRough</li>
+				<li>TribeSavage</li>
+				<li>TribeCannibal</li>
+				<li>NudistTribe</li>
+				<li>TribeRoughNeanderthal</li>
+				<li>TribeSavageImpid</li>
+			</hostileFactionDefs>
+		</li>
     </modExtensions>
 	
 	<allowedCultures>

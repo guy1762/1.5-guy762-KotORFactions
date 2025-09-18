@@ -40,44 +40,59 @@
 	
 	<settlementGenerationWeight>1</settlementGenerationWeight>
 	<modExtensions Inherit="False">
-      <li Class="VEF.Factions.FactionDefExtension">
-		<startingGoodwillByFactionDefs>
-			<guy762_KotORFaction_OldRepublic>-100</guy762_KotORFaction_OldRepublic>
-			<guy762_KotORFaction_CorruptRepublic>-100</guy762_KotORFaction_CorruptRepublic>
-			
-			<guy762_KotORFaction_SithRemnant>100</guy762_KotORFaction_SithRemnant>
-			<guy762_KotORFaction_KrathRaiders>-25~0</guy762_KotORFaction_KrathRaiders>
-			
-			<guy762_KotORFaction_Militia>-100</guy762_KotORFaction_Militia>
-			<guy762_KotORFaction_Rebellion>-50</guy762_KotORFaction_Rebellion>
-			
-			<guy762_KotORFaction_HuttCartel>-100</guy762_KotORFaction_HuttCartel>
-			<guy762_KotORFaction_ViciousHutts>-100</guy762_KotORFaction_ViciousHutts>
-			
-			<guy762_KotORFaction_MandoClan>-100</guy762_KotORFaction_MandoClan>
-			<guy762_KotORFaction_SavageMandos>-25~0</guy762_KotORFaction_SavageMandos>
-			
-			<guy762_KotORFaction_Czerka>0~25</guy762_KotORFaction_Czerka>
-			<guy762_KotORFaction_Exchange>0~25</guy762_KotORFaction_Exchange>
-			<guy762_KotORFaction_Civilians>-100</guy762_KotORFaction_Civilians>
-			
-			<guy762_KotORFaction_MandoNeoCrusaders>100</guy762_KotORFaction_MandoNeoCrusaders>
-			<guy762_KotORFaction_SithEmpire>100</guy762_KotORFaction_SithEmpire>
-			
-			<guy762_KotORPlayerFaction_RepublicStrikeTeam>-100</guy762_KotORPlayerFaction_RepublicStrikeTeam>
-			<guy762_KotORPlayerFaction_SmugglerCrew>-100</guy762_KotORPlayerFaction_SmugglerCrew>
-			<guy762_KotORPlayerFaction_MandalorianTribe>-80</guy762_KotORPlayerFaction_MandalorianTribe>
-			<guy762_KotORPlayerFaction_SithWarlord>100</guy762_KotORPlayerFaction_SithWarlord>
-			<guy762_KotORPlayerFaction_HuttUpstart>-100</guy762_KotORPlayerFaction_HuttUpstart>
-			
-			<!--guy762_KotORFaction_Trandoshans>25~50</guy762_KotORFaction_Trandoshans>
-			<guy762_KotORFaction_MercGuild>25~50</guy762_KotORFaction_MercGuild-->
-		</startingGoodwillByFactionDefs>
-		<excludeFromCommConsole>true</excludeFromCommConsole>
-		<hasCities>false</hasCities>
-		<neverConnectToRoads>true</neverConnectToRoads>
-		<minDistanceToOtherSettlements>20</minDistanceToOtherSettlements>
-      </li>
+		<!-- <li Class="VEF.Factions.FactionDefExtension"> -->
+			<!-- <startingGoodwillByFactionDefs> -->
+				<!-- <guy762_KotORFaction_OldRepublic>-100</guy762_KotORFaction_OldRepublic> -->
+				<!-- <guy762_KotORFaction_CorruptRepublic>-100</guy762_KotORFaction_CorruptRepublic> -->
+				
+				<!-- <guy762_KotORFaction_SithRemnant>100</guy762_KotORFaction_SithRemnant> -->
+				<!-- <guy762_KotORFaction_KrathRaiders>-25~0</guy762_KotORFaction_KrathRaiders> -->
+				
+				<!-- <guy762_KotORFaction_Militia>-100</guy762_KotORFaction_Militia> -->
+				<!-- <guy762_KotORFaction_Rebellion>-50</guy762_KotORFaction_Rebellion> -->
+				
+				<!-- <guy762_KotORFaction_HuttCartel>-100</guy762_KotORFaction_HuttCartel> -->
+				<!-- <guy762_KotORFaction_ViciousHutts>-100</guy762_KotORFaction_ViciousHutts> -->
+				
+				<!-- <guy762_KotORFaction_MandoClan>-100</guy762_KotORFaction_MandoClan> -->
+				<!-- <guy762_KotORFaction_SavageMandos>-25~0</guy762_KotORFaction_SavageMandos> -->
+				
+				<!-- <guy762_KotORFaction_Czerka>0~25</guy762_KotORFaction_Czerka> -->
+				<!-- <guy762_KotORFaction_Exchange>0~25</guy762_KotORFaction_Exchange> -->
+				<!-- <guy762_KotORFaction_Civilians>-100</guy762_KotORFaction_Civilians> -->
+				
+				<!-- <guy762_KotORFaction_MandoNeoCrusaders>100</guy762_KotORFaction_MandoNeoCrusaders> -->
+				<!-- <guy762_KotORFaction_SithEmpire>100</guy762_KotORFaction_SithEmpire> -->
+				
+				<!-- <guy762_KotORPlayerFaction_RepublicStrikeTeam>-100</guy762_KotORPlayerFaction_RepublicStrikeTeam> -->
+				<!-- <guy762_KotORPlayerFaction_SmugglerCrew>-100</guy762_KotORPlayerFaction_SmugglerCrew> -->
+				<!-- <guy762_KotORPlayerFaction_MandalorianTribe>-80</guy762_KotORPlayerFaction_MandalorianTribe> -->
+				<!-- <guy762_KotORPlayerFaction_SithWarlord>100</guy762_KotORPlayerFaction_SithWarlord> -->
+				<!-- <guy762_KotORPlayerFaction_HuttUpstart>-100</guy762_KotORPlayerFaction_HuttUpstart> -->
+			<!-- </startingGoodwillByFactionDefs> -->
+			<!-- <excludeFromCommConsole>true</excludeFromCommConsole> -->
+			<!-- <hasCities>false</hasCities> -->
+			<!-- <neverConnectToRoads>true</neverConnectToRoads> -->
+			<!-- <minDistanceToOtherSettlements>20</minDistanceToOtherSettlements> -->
+		<!-- </li> -->
+		<li Class="SWCP.Core.ModExtension_FactionPermanentlyHostileTo">
+			<hostileFactionDefs>
+				<li>guy762_KotORFaction_OldRepublic</li>
+				<li>guy762_KotORFaction_CorruptRepublic</li>
+				<li>guy762_KotORFaction_Militia</li>
+				<li>guy762_KotORFaction_Rebellion</li>
+				<li>guy762_KotORFaction_HuttCartel</li>
+				<li>guy762_KotORFaction_ViciousHutts</li>
+				<li>guy762_KotORFaction_MandoClan</li>
+				<li>guy762_KotORFaction_SavageMandos</li>
+				<li>guy762_KotORFaction_Civilians</li>
+				
+				<li>guy762_KotORPlayerFaction_RepublicStrikeTeam</li>
+				<li>guy762_KotORPlayerFaction_SmugglerCrew</li>
+				<li>guy762_KotORPlayerFaction_MandalorianTribe</li>
+				<li>guy762_KotORPlayerFaction_HuttUpstart</li>
+			</hostileFactionDefs>
+		</li>
     </modExtensions>
 	<!--permanentEnemyToEveryoneExcept>
       <li>OutlanderCivil</li>
