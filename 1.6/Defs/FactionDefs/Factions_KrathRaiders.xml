@@ -31,10 +31,10 @@
     <settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
 	
 	<leaderTitle>warlord</leaderTitle>
-	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
-	<fixedLeaderKinds>
-      <li>KotORKrath_raidercmdr</li>
-    </fixedLeaderKinds>
+	<!-- <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn> -->
+	<!-- <fixedLeaderKinds> -->
+      <!-- <li>KotORKrath_raidercmdr</li> -->
+    <!-- </fixedLeaderKinds> -->
 	
 	<permanentEnemy>true</permanentEnemy>
 	

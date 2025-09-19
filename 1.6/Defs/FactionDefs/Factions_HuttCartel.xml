@@ -29,10 +29,10 @@
 	<allowedArrivalTemperatureRange>0~45</allowedArrivalTemperatureRange>
 	
 	<leaderTitle>kajidii</leaderTitle>
-	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
-	<fixedLeaderKinds>
-		<li>KotORHutts_HuttLord</li>
-	</fixedLeaderKinds>
+	<!-- <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn> -->
+	<!-- <fixedLeaderKinds> -->
+		<!-- <li>KotORHutts_HuttLord</li> -->
+	<!-- </fixedLeaderKinds> -->
 	
 	
 	<settlementGenerationWeight>4</settlementGenerationWeight>

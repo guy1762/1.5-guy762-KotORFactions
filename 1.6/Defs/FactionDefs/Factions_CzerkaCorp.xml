@@ -30,10 +30,10 @@
 	<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 	
 	<leaderTitle>director</leaderTitle>
-	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
-	<fixedLeaderKinds>
-      <li>KotORCzrka_officer</li>
-    </fixedLeaderKinds>
+	<!-- <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn> -->
+	<!-- <fixedLeaderKinds> -->
+      <!-- <li>KotORCzrka_officer</li> -->
+    <!-- </fixedLeaderKinds> -->
 	
 	
 	<settlementGenerationWeight>5</settlementGenerationWeight>

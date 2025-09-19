@@ -32,13 +32,13 @@
     <settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
 	
 	<leaderTitle>warlord</leaderTitle>
-	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
-	<fixedLeaderKinds>
-      <li MayRequire="lee.theforce.standalone">KotORSith_warlord_TFS</li>
-      <li MayRequire="guy762.Lee.KotORPotF">KotORSith_warlord_PotF</li>
-      <li MayRequire="lee.theforce.psycast">KotORSith_warlord_VPE</li>
-      <li>KotORSith_governor</li>
-    </fixedLeaderKinds>
+	<!-- <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn> -->
+	<!-- <fixedLeaderKinds> -->
+      <!-- <li MayRequire="lee.theforce.standalone">KotORSith_warlord_TFS</li> -->
+      <!-- <li MayRequire="guy762.Lee.KotORPotF">KotORSith_warlord_PotF</li> -->
+      <!-- <li MayRequire="lee.theforce.psycast">KotORSith_warlord_VPE</li> -->
+      <!-- <li>KotORSith_governor</li> -->
+    <!-- </fixedLeaderKinds> -->
 	
 	
 	<naturalEnemy>true</naturalEnemy>

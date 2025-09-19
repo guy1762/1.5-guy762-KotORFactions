@@ -29,6 +29,14 @@
 	<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
     <hidden>false</hidden> <!-- I guess titles just flat-out don't work with hidden factions :/ -->
 	
+	
+	<!--basicMemberKind>Exchange_soldier</basicMemberKind-->
+	<leaderTitle>crime lord</leaderTitle>
+	<!-- <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn> -->
+	<!-- <fixedLeaderKinds> -->
+		<!-- <li>KotORExchg_vigo</li> -->
+	<!-- </fixedLeaderKinds> -->
+	
 	<!--<naturalEnemy>true</naturalEnemy>-->
 	<settlementGenerationWeight>0</settlementGenerationWeight>
 	<modExtensions Inherit="False">
@@ -107,14 +115,6 @@
       <li>Parent</li>
       <li>UncleOrAunt</li-->
     </royalTitleInheritanceRelations>
-	
-	
-	<!--basicMemberKind>Exchange_soldier</basicMemberKind-->
-	<leaderTitle>crime lord</leaderTitle>
-	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
-	<fixedLeaderKinds>
-		<li>KotORExchg_vigo</li>
-	</fixedLeaderKinds>
 	
     <allowedCultures>
 		<li>guy762_culture_exchange</li>

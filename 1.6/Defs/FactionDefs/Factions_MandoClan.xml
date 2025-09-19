@@ -29,6 +29,15 @@
     <techLevel>Spacer</techLevel>
 	<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
 	
+	
+	
+	<!-- <basicMemberKind>KotORMando_trooper</basicMemberKind> -->
+	<leaderTitle>chieftan</leaderTitle>
+	<!-- <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn> -->
+	<!-- <fixedLeaderKinds> -->
+		<!-- <li>KotORMando_fieldmarshal</li> -->
+	<!-- </fixedLeaderKinds> -->
+	
 	<settlementGenerationWeight>1</settlementGenerationWeight>
 	<modExtensions Inherit="False">
 		<li Class="SWCP.Currencies.CurrencyReplacement">
@@ -216,12 +225,7 @@
 		  </xenotypeChances>
 	</xenotypeSet>
 	
-	<basicMemberKind>KotORMando_trooper</basicMemberKind>
-	<leaderTitle>chieftan</leaderTitle>
-	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
-	<fixedLeaderKinds>
-		<li>KotORMando_fieldmarshal</li>
-	</fixedLeaderKinds>
+	
 	
     <backstoryFilters>
       <li>

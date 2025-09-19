@@ -30,6 +30,13 @@
     <techLevel>Spacer</techLevel>
 	<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
 	
+	<!-- <basicMemberKind>KotORMando_trooper</basicMemberKind> -->
+	<leaderTitle>field marshal</leaderTitle>
+	<!-- <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn> -->
+	<!-- <fixedLeaderKinds> -->
+		<!-- <li>KotORMando_fieldmarshal</li> -->
+	<!-- </fixedLeaderKinds> -->
+	
 	<permanentEnemy>true</permanentEnemy>
 	
 	<modExtensions Inherit="False">
@@ -195,13 +202,6 @@
 			<guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_zeltron>
 		  </xenotypeChances>
 	</xenotypeSet>
-	
-	<basicMemberKind>KotORMando_trooper</basicMemberKind>
-	<leaderTitle>field marshal</leaderTitle>
-	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
-	<fixedLeaderKinds>
-		<li>KotORMando_fieldmarshal</li>
-	</fixedLeaderKinds>
 	
     <backstoryFilters>
       <li>

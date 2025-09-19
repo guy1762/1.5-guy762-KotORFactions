@@ -31,10 +31,10 @@
     <factionNameMaker>guy762_NamerFaction_CorruptRepublic</factionNameMaker>
 	<settlementNameMaker>guy762_NamerSettlement_ORStarfleet</settlementNameMaker>
 	<leaderTitle>admiral</leaderTitle>
-	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
-	<fixedLeaderKinds>
-      <li>KotOREvlRS_captain</li>
-    </fixedLeaderKinds>
+	<!-- <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn> -->
+	<!-- <fixedLeaderKinds> -->
+      <!-- <li>KotOREvlRS_captain</li> -->
+    <!-- </fixedLeaderKinds> -->
 	
 	<royalTitleTags>
       <li>KotORTitleTag_OR_privateer</li>
