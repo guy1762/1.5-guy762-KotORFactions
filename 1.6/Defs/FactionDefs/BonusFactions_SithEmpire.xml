@@ -44,6 +44,7 @@
 	<naturalEnemy>true</naturalEnemy>
 	<settlementGenerationWeight>10</settlementGenerationWeight>
 	<modExtensions Inherit="False">
+<<<<<<< Updated upstream
       <li Class="SWCP.Currencies.CurrencyReplacement">
 		<currency>guy762_KotORcredits</currency>
 	  </li>
@@ -108,6 +109,85 @@
 			</li>
 		</roleOverrides>
 	  </li>
+=======
+		<li Class="SWCP.Currencies.CurrencyReplacement">
+			<currency>guy762_KotORcredits</currency>
+		</li>
+		<li Class="VEF.Factions.FactionDefExtension">
+			<startingGoodwillByFactionDefs>
+				<guy762_KotORFaction_OldRepublic>-100</guy762_KotORFaction_OldRepublic>
+				<guy762_KotORFaction_CorruptRepublic>-50</guy762_KotORFaction_CorruptRepublic>
+				
+				<guy762_KotORFaction_SithRemnant>100</guy762_KotORFaction_SithRemnant>
+				<guy762_KotORFaction_KrathRaiders>100</guy762_KotORFaction_KrathRaiders>
+				
+				<guy762_KotORFaction_Militia>-100</guy762_KotORFaction_Militia>
+				<guy762_KotORFaction_Rebellion>-100</guy762_KotORFaction_Rebellion>
+				
+				<guy762_KotORFaction_HuttCartel>0~50</guy762_KotORFaction_HuttCartel>
+				<guy762_KotORFaction_ViciousHutts>0</guy762_KotORFaction_ViciousHutts>
+				
+				<guy762_KotORFaction_MandoClan>0~50</guy762_KotORFaction_MandoClan>
+				<guy762_KotORFaction_SavageMandos>50~100</guy762_KotORFaction_SavageMandos>
+				
+				<guy762_KotORFaction_Czerka>100</guy762_KotORFaction_Czerka>
+				<guy762_KotORFaction_Exchange>0</guy762_KotORFaction_Exchange>
+				<guy762_KotORFaction_Civilians>-100</guy762_KotORFaction_Civilians>
+				
+				<guy762_KotORFaction_MandoNeoCrusaders>-50</guy762_KotORFaction_MandoNeoCrusaders>
+				<guy762_KotORFaction_SithEmpire>-100</guy762_KotORFaction_SithEmpire>
+				
+				<guy762_KotORPlayerFaction_RepublicStrikeTeam>-100</guy762_KotORPlayerFaction_RepublicStrikeTeam>
+				<guy762_KotORPlayerFaction_SmugglerCrew>-25</guy762_KotORPlayerFaction_SmugglerCrew>
+				<guy762_KotORPlayerFaction_MandalorianTribe>-25</guy762_KotORPlayerFaction_MandalorianTribe>
+				<guy762_KotORPlayerFaction_SithWarlord>100</guy762_KotORPlayerFaction_SithWarlord>
+				<guy762_KotORPlayerFaction_HuttUpstart>-25</guy762_KotORPlayerFaction_HuttUpstart>
+			</startingGoodwillByFactionDefs>
+			<excludeFromCommConsole>false</excludeFromCommConsole>
+			<hasCities>true</hasCities>
+		</li>
+		
+		<!-- <li Class="SWCP.Core.ModExtension_FactionPermanentlyHostileTo"> -->
+			<!-- <hostileFactionDefs> -->
+				<!-- <li>guy762_KotORFaction_OldRepublic</li> -->
+				<!-- <li>guy762_KotORFaction_CorruptRepublic</li> -->
+				<!-- <li>guy762_KotORFaction_Militia</li> -->
+				<!-- <li>guy762_KotORFaction_Rebellion</li> -->
+				<!-- <li>guy762_KotORFaction_Civilians</li> -->
+				
+				<!-- <li>guy762_KotORFaction_MandoNeoCrusaders</li> -->
+				<!-- <li>guy762_KotORFaction_SithEmpire</li> -->
+				
+				<!-- <li>guy762_KotORPlayerFaction_RepublicStrikeTeam</li> -->
+			<!-- </hostileFactionDefs> -->
+		<!-- </li> -->
+		
+		<li Class="SWCP.Core.ModExtension_FixedIdeo">
+			<ideoIconDef>guy762_IdeoIcon_sithC</ideoIconDef>
+			<ideoColorDef>DarkGrey</ideoColorDef>
+			<memberName>Sith</memberName>
+			<adjective>Sith</adjective>
+			<roleOverrides>
+				<li>
+					<preceptDef>IdeoRole_Leader</preceptDef>
+					<newName>Dark Lord</newName>
+					<disableApparelRequirements>true</disableApparelRequirements>
+				</li>
+				<li MayRequire="VanillaExpanded.VMemesE">
+					<preceptDef>guy762_KotORIdeoRole_Inquisitor</preceptDef>
+					<newName>Inquisitor</newName>
+					<disableApparelRequirements>true</disableApparelRequirements>
+					<!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
+				</li>
+				<li>
+					<preceptDef>IdeoRole_MeleeSpecialist</preceptDef>
+					<newName>Marauder</newName>
+					<disableApparelRequirements>true</disableApparelRequirements>
+					<!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
+				</li>
+			</roleOverrides>
+		</li>
+>>>>>>> Stashed changes
     </modExtensions>
 	<!--permanentEnemyToEveryoneExcept>
       <li>OutlanderCivil</li>

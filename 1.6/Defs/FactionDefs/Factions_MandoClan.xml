@@ -29,6 +29,7 @@
     <techLevel>Spacer</techLevel>
 	<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
 	
+<<<<<<< Updated upstream
 	<settlementGenerationWeight>1</settlementGenerationWeight>
 	<modExtensions Inherit="False">
       <li Class="SWCP.Currencies.CurrencyReplacement">
@@ -105,6 +106,106 @@
 			</li>
 		</roleOverrides>
 	  </li>
+=======
+	
+	
+	<!-- <basicMemberKind>KotORMando_trooper</basicMemberKind> -->
+	<leaderTitle>chieftan</leaderTitle>
+	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+	<fixedLeaderKinds>
+		<li>KotORMando_fieldmarshal</li>
+	</fixedLeaderKinds>
+	
+	<settlementGenerationWeight>1</settlementGenerationWeight>
+	<modExtensions Inherit="False">
+		<li Class="SWCP.Currencies.CurrencyReplacement">
+			<currency>Silver</currency>
+		</li>
+		
+		<li Class="SWCP.Core.ModExtension_HiddenFactionHasCaravans" />
+		
+		<li Class="VEF.Factions.FactionDefExtension">
+			<startingGoodwillByFactionDefs>
+				<guy762_KotORFaction_OldRepublic>-50~25</guy762_KotORFaction_OldRepublic>
+				<guy762_KotORFaction_CorruptRepublic>-50~25</guy762_KotORFaction_CorruptRepublic>
+				
+				<guy762_KotORFaction_SithRemnant>-25</guy762_KotORFaction_SithRemnant>
+				<guy762_KotORFaction_KrathRaiders>-100</guy762_KotORFaction_KrathRaiders>
+				
+				<guy762_KotORFaction_Militia>-75~-25</guy762_KotORFaction_Militia>
+				<guy762_KotORFaction_Rebellion>-25~100</guy762_KotORFaction_Rebellion>
+				
+				<guy762_KotORFaction_HuttCartel>0~100</guy762_KotORFaction_HuttCartel>
+				<guy762_KotORFaction_ViciousHutts>-100</guy762_KotORFaction_ViciousHutts>
+				
+				<guy762_KotORFaction_MandoClan>-50~50</guy762_KotORFaction_MandoClan>
+				<guy762_KotORFaction_SavageMandos>-100</guy762_KotORFaction_SavageMandos>
+				
+				<guy762_KotORFaction_Czerka>-100</guy762_KotORFaction_Czerka>
+				<guy762_KotORFaction_Exchange>0~100</guy762_KotORFaction_Exchange>
+				<guy762_KotORFaction_Civilians>-50</guy762_KotORFaction_Civilians>
+				
+				<guy762_KotORFaction_MandoNeoCrusaders>50~100</guy762_KotORFaction_MandoNeoCrusaders>
+				<guy762_KotORFaction_SithEmpire>0~50</guy762_KotORFaction_SithEmpire>
+				
+				<guy762_KotORPlayerFaction_RepublicStrikeTeam>-25</guy762_KotORPlayerFaction_RepublicStrikeTeam>
+				<guy762_KotORPlayerFaction_SmugglerCrew>-25</guy762_KotORPlayerFaction_SmugglerCrew>
+				<guy762_KotORPlayerFaction_MandalorianTribe>0</guy762_KotORPlayerFaction_MandalorianTribe>
+				<guy762_KotORPlayerFaction_SithWarlord>0</guy762_KotORPlayerFaction_SithWarlord>
+				<guy762_KotORPlayerFaction_HuttUpstart>25</guy762_KotORPlayerFaction_HuttUpstart>
+			</startingGoodwillByFactionDefs>
+			<excludeFromCommConsole>true</excludeFromCommConsole>
+			<hasCities>false</hasCities>
+			<neverConnectToRoads>true</neverConnectToRoads>
+			<minDistanceToOtherSettlements>10</minDistanceToOtherSettlements>
+		</li>
+		
+		<!-- <li Class="SWCP.Core.ModExtension_FactionPermanentlyHostileTo"> -->
+			<!-- <hostileFactionDefs> -->
+				<!-- <li>guy762_KotORFaction_OldRepublic</li> -->
+				<!-- <li>guy762_KotORFaction_CorruptRepublic</li> -->
+				<!-- <li>guy762_KotORFaction_SithRemnant</li> -->
+				<!-- <li>guy762_KotORFaction_KrathRaiders</li> -->
+				<!-- <li>guy762_KotORFaction_Militia</li> -->
+				<!-- <li>guy762_KotORFaction_ViciousHutts</li> -->
+				<!-- <li>guy762_KotORFaction_SavageMandos</li> -->
+				<!-- <li>guy762_KotORFaction_Czerka</li> -->
+				<!-- <li>guy762_KotORFaction_Civilians</li> -->
+			<!-- </hostileFactionDefs> -->
+		<!-- </li> -->
+		
+		<li Class="SWCP.Core.ModExtension_FixedIdeo">
+			<ideoIconDef>guy762_IdeoIcon_mandoB</ideoIconDef>
+			<ideoColorDef>guy762_IdeoFactionColor_BeskarSilver</ideoColorDef>
+			<memberName>Mandalorian</memberName>
+			<adjective>Mandalorian</adjective>
+			<roleOverrides>
+				<li>
+					<preceptDef>IdeoRole_Leader</preceptDef>
+					<newName>Chieftan</newName>
+					<disableApparelRequirements>true</disableApparelRequirements>
+				</li>
+				<li>
+					<preceptDef>guy762_KotORIdeoRole_MandoArmorer</preceptDef>
+					<newName>Armorer</newName>
+					<disableApparelRequirements>true</disableApparelRequirements>
+					<!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
+				</li>
+				<li>
+					<preceptDef>IdeoRole_ShootingSpecialist</preceptDef>
+					<newName>Supercommando</newName>
+					<disableApparelRequirements>true</disableApparelRequirements>
+					<!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
+				</li>
+				<li>
+					<preceptDef>IdeoRole_MeleeSpecialist</preceptDef>
+					<newName>Champion</newName>
+					<disableApparelRequirements>true</disableApparelRequirements>
+					<!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
+				</li>
+			</roleOverrides>
+		</li>
+>>>>>>> Stashed changes
     </modExtensions>
 	
     <allowedCultures>
