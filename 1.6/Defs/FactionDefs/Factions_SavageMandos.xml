@@ -30,15 +30,6 @@
     <techLevel>Spacer</techLevel>
 	<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
 	
-<<<<<<< Updated upstream
-	<permanentEnemy>true</permanentEnemy>
-	
-	<modExtensions Inherit="False">
-      <li Class="VEF.Factions.FactionDefExtension">
-		<startingGoodwillByFactionDefs>
-			<guy762_KotORFaction_OldRepublic>-100</guy762_KotORFaction_OldRepublic>
-			<guy762_KotORFaction_CorruptRepublic>-100</guy762_KotORFaction_CorruptRepublic>
-=======
 	<!-- <basicMemberKind>KotORMando_trooper</basicMemberKind> -->
 	<leaderTitle>field marshal</leaderTitle>
 	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
@@ -103,72 +94,38 @@
 				<!-- <li>guy762_KotORPlayerFaction_HuttUpstart</li> -->
 			<!-- </hostileFactionDefs> -->
 		<!-- </li> -->
->>>>>>> Stashed changes
-			
-			<guy762_KotORFaction_SithRemnant>0~50</guy762_KotORFaction_SithRemnant>
-			<guy762_KotORFaction_KrathRaiders>-25~0</guy762_KotORFaction_KrathRaiders>
-			
-			<guy762_KotORFaction_Militia>-100</guy762_KotORFaction_Militia>
-			<guy762_KotORFaction_Rebellion>-100</guy762_KotORFaction_Rebellion>
-			
-			<guy762_KotORFaction_HuttCartel>0</guy762_KotORFaction_HuttCartel>
-			<guy762_KotORFaction_ViciousHutts>0~100</guy762_KotORFaction_ViciousHutts>
-			
-			<guy762_KotORFaction_MandoClan>-100</guy762_KotORFaction_MandoClan>
-			<guy762_KotORFaction_SavageMandos>-50~50</guy762_KotORFaction_SavageMandos>
-			
-			<guy762_KotORFaction_Czerka>-100</guy762_KotORFaction_Czerka>
-			<guy762_KotORFaction_Exchange>-100~0</guy762_KotORFaction_Exchange>
-			<guy762_KotORFaction_Civilians>-100</guy762_KotORFaction_Civilians>
-			
-			<guy762_KotORFaction_MandoNeoCrusaders>100</guy762_KotORFaction_MandoNeoCrusaders>
-			<guy762_KotORFaction_SithEmpire>50~100</guy762_KotORFaction_SithEmpire>
-			
-			<guy762_KotORPlayerFaction_RepublicStrikeTeam>-100</guy762_KotORPlayerFaction_RepublicStrikeTeam>
-			<guy762_KotORPlayerFaction_SmugglerCrew>-100</guy762_KotORPlayerFaction_SmugglerCrew>
-			<guy762_KotORPlayerFaction_MandalorianTribe>-80</guy762_KotORPlayerFaction_MandalorianTribe>
-			<guy762_KotORPlayerFaction_SithWarlord>-25</guy762_KotORPlayerFaction_SithWarlord>
-			<guy762_KotORPlayerFaction_HuttUpstart>-50</guy762_KotORPlayerFaction_HuttUpstart>
-			
-			<!--guy762_KotORFaction_Trandoshans>-25~0</guy762_KotORFaction_Trandoshans>
-			<guy762_KotORFaction_MercGuild>-75~-50</guy762_KotORFaction_MercGuild-->
-		</startingGoodwillByFactionDefs>
-		<excludeFromCommConsole>true</excludeFromCommConsole>
-		<hasCities>false</hasCities>
-		<neverConnectToRoads>true</neverConnectToRoads>
-		<minDistanceToOtherSettlements>50</minDistanceToOtherSettlements>
-      </li>
-	  <li Class="SWCP.Core.ModExtension_FixedIdeo">
-		<ideoIconDef>guy762_IdeoIcon_mandoA</ideoIconDef>
-		<ideoColorDef>DarkRed</ideoColorDef>
-		<memberName>Neo-Crusader</memberName>
-		<adjective>Mandalorian</adjective>
-		<roleOverrides>
-			<li>
-				<preceptDef>IdeoRole_Leader</preceptDef>
-				<newName>Field Marshal</newName>
-				<disableApparelRequirements>true</disableApparelRequirements>
-			</li>
-			<li MayRequire="VanillaExpanded.VMemesE">
-				<preceptDef>guy762_KotORIdeoRole_Inquisitor</preceptDef>
-				<newName>Rally Master</newName>
-				<disableApparelRequirements>true</disableApparelRequirements>
-				<!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
-			</li>
-			<li>
-				<preceptDef>IdeoRole_ShootingSpecialist</preceptDef>
-				<newName>Supercommando</newName>
-				<disableApparelRequirements>true</disableApparelRequirements>
-				<!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
-			</li>
-			<li>
-				<preceptDef>IdeoRole_MeleeSpecialist</preceptDef>
-				<newName>Champion</newName>
-				<disableApparelRequirements>true</disableApparelRequirements>
-				<!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
-			</li>
-		</roleOverrides>
-	  </li>
+		
+		<li Class="SWCP.Core.ModExtension_FixedIdeo">
+			<ideoIconDef>guy762_IdeoIcon_mandoA</ideoIconDef>
+			<ideoColorDef>DarkRed</ideoColorDef>
+			<memberName>Neo-Crusader</memberName>
+			<adjective>Mandalorian</adjective>
+			<roleOverrides>
+				<li>
+					<preceptDef>IdeoRole_Leader</preceptDef>
+					<newName>Field Marshal</newName>
+					<disableApparelRequirements>true</disableApparelRequirements>
+				</li>
+				<li MayRequire="VanillaExpanded.VMemesE">
+					<preceptDef>guy762_KotORIdeoRole_Inquisitor</preceptDef>
+					<newName>Rally Master</newName>
+					<disableApparelRequirements>true</disableApparelRequirements>
+					<!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
+				</li>
+				<li>
+					<preceptDef>IdeoRole_ShootingSpecialist</preceptDef>
+					<newName>Supercommando</newName>
+					<disableApparelRequirements>true</disableApparelRequirements>
+					<!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
+				</li>
+				<li>
+					<preceptDef>IdeoRole_MeleeSpecialist</preceptDef>
+					<newName>Champion</newName>
+					<disableApparelRequirements>true</disableApparelRequirements>
+					<!--<apparelRequirementsOverride></apparelRequirementsOverride>-->
+				</li>
+			</roleOverrides>
+		</li>
     </modExtensions>
 	
     <allowedCultures>
@@ -246,13 +203,6 @@
 			<guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_zeltron>
 		  </xenotypeChances>
 	</xenotypeSet>
-	
-	<basicMemberKind>KotORMando_trooper</basicMemberKind>
-	<leaderTitle>field marshal</leaderTitle>
-	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
-	<fixedLeaderKinds>
-		<li>KotORMando_fieldmarshal</li>
-	</fixedLeaderKinds>
 	
     <backstoryFilters>
       <li>

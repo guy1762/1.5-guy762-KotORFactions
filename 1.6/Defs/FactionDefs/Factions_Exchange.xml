@@ -29,52 +29,6 @@
 	<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
     <hidden>false</hidden> <!-- I guess titles just flat-out don't work with hidden factions :/ -->
 	
-<<<<<<< Updated upstream
-	<!--<naturalEnemy>true</naturalEnemy>-->
-	<settlementGenerationWeight>0</settlementGenerationWeight>
-	<modExtensions Inherit="False">
-      <li Class="SWCP.Currencies.CurrencyReplacement">
-		<currency>guy762_KotORcredits</currency>
-	  </li>
-	  <li Class="VEF.Factions.FactionDefExtension">
-		<startingGoodwillByFactionDefs>
-			<guy762_KotORFaction_OldRepublic>-100</guy762_KotORFaction_OldRepublic>
-			<guy762_KotORFaction_CorruptRepublic>50~100</guy762_KotORFaction_CorruptRepublic>
-			
-			<guy762_KotORFaction_SithRemnant>25~75</guy762_KotORFaction_SithRemnant>
-			<guy762_KotORFaction_KrathRaiders>0~25</guy762_KotORFaction_KrathRaiders>
-			
-			<guy762_KotORFaction_Militia>-25~25</guy762_KotORFaction_Militia>
-			<guy762_KotORFaction_Rebellion>-25~25</guy762_KotORFaction_Rebellion>
-			
-			<guy762_KotORFaction_HuttCartel>-100~0</guy762_KotORFaction_HuttCartel>
-			<guy762_KotORFaction_ViciousHutts>-100</guy762_KotORFaction_ViciousHutts>
-			
-			<guy762_KotORFaction_MandoClan>0~100</guy762_KotORFaction_MandoClan>
-			<guy762_KotORFaction_SavageMandos>-100~0</guy762_KotORFaction_SavageMandos>
-			
-			<guy762_KotORFaction_Czerka>-100</guy762_KotORFaction_Czerka>
-			<guy762_KotORFaction_Exchange>-50~50</guy762_KotORFaction_Exchange>
-			<guy762_KotORFaction_Civilians>-25</guy762_KotORFaction_Civilians>
-			
-			<guy762_KotORFaction_MandoNeoCrusaders>-50~0</guy762_KotORFaction_MandoNeoCrusaders>
-			<guy762_KotORFaction_SithEmpire>0</guy762_KotORFaction_SithEmpire>
-			
-			<guy762_KotORPlayerFaction_RepublicStrikeTeam>-25</guy762_KotORPlayerFaction_RepublicStrikeTeam>
-			<guy762_KotORPlayerFaction_SmugglerCrew>25</guy762_KotORPlayerFaction_SmugglerCrew>
-			<guy762_KotORPlayerFaction_MandalorianTribe>25</guy762_KotORPlayerFaction_MandalorianTribe>
-			<guy762_KotORPlayerFaction_SithWarlord>50</guy762_KotORPlayerFaction_SithWarlord>
-			<guy762_KotORPlayerFaction_HuttUpstart>-100</guy762_KotORPlayerFaction_HuttUpstart>
-			
-			<!--guy762_KotORFaction_Trandoshans>0~50</guy762_KotORFaction_Trandoshans>
-			<guy762_KotORFaction_MercGuild>75~100</guy762_KotORFaction_MercGuild-->
-		</startingGoodwillByFactionDefs>
-		<excludeFromCommConsole>true</excludeFromCommConsole>
-		<hasCities>true</hasCities>
-		<minDistanceToOtherSettlements>50</minDistanceToOtherSettlements>
-      </li>
-=======
-	
 	<!--basicMemberKind>Exchange_soldier</basicMemberKind-->
 	<leaderTitle>crime lord</leaderTitle>
 	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
@@ -138,7 +92,6 @@
 				<!-- <li>guy762_KotORPlayerFaction_HuttUpstart</li> -->
 			<!-- </hostileFactionDefs> -->
 		<!-- </li> -->
->>>>>>> Stashed changes
     </modExtensions>
 	
 	
@@ -161,14 +114,6 @@
       <li>Parent</li>
       <li>UncleOrAunt</li-->
     </royalTitleInheritanceRelations>
-	
-	
-	<!--basicMemberKind>Exchange_soldier</basicMemberKind-->
-	<leaderTitle>crime lord</leaderTitle>
-	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
-	<fixedLeaderKinds>
-		<li>KotORExchg_vigo</li>
-	</fixedLeaderKinds>
 	
     <allowedCultures>
 		<li>guy762_culture_exchange</li>
