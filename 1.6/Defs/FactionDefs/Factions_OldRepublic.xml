@@ -56,6 +56,14 @@
       <li>UncleOrAunt</li-->
     </royalTitleInheritanceRelations>
 	
+	<layerWhitelist>
+		<li>Surface</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+		<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li> -->
+		<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Tatooine</li> -->
+		<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_TatooineOrbit</li> -->
+	</layerWhitelist>
+	
 	<settlementGenerationWeight>2</settlementGenerationWeight>
 	<modExtensions Inherit="False">
 		<li Class="SWCP.Currencies.CurrencyReplacement">

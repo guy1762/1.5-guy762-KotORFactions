@@ -35,6 +35,13 @@
       <li>KotORCzrka_officer</li>
     </fixedLeaderKinds>
 	
+	<layerWhitelist>
+		<li>Surface</li>
+		<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+		<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li> -->
+		<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Tatooine</li>
+		<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_TatooineOrbit</li>
+	</layerWhitelist>
 	
 	<settlementGenerationWeight>5</settlementGenerationWeight>
 	<modExtensions Inherit="False">
@@ -82,7 +89,7 @@
 			<excludeFromCommConsole>false</excludeFromCommConsole>
 			<hasCities>true</hasCities>
 			<spawnOnCoastalTilesOnly>true</spawnOnCoastalTilesOnly>
-			<minDistanceToOtherSettlements>5</minDistanceToOtherSettlements>
+			<!-- <minDistanceToOtherSettlements>5</minDistanceToOtherSettlements> -->
 		</li>
 		
 		<!-- <li Class="SWCP.Core.ModExtension_FactionPermanentlyHostileTo"> -->

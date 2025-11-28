@@ -37,6 +37,14 @@
 		<li>KotORMando_fieldmarshal</li>
 	</fixedLeaderKinds>
 	
+	<layerWhitelist>
+		<li>Surface</li>
+		<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li> -->
+		<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li> -->
+		<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Tatooine</li> -->
+		<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_TatooineOrbit</li> -->
+	</layerWhitelist>
+	
 	<permanentEnemy>true</permanentEnemy>
 	
 	<modExtensions Inherit="False">
