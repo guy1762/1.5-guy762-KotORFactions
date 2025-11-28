@@ -7,7 +7,8 @@
 		<description>The 'legitimate' local government and organized militia of this rim world. Governments like these are typically founded and ran by settlers hailing from the Republic, as those with roots in the outer rim (notably many non-human species) will typically defer to the authority of the local Hutt Kajidic. These governments have many close ties to the Republic, receiving financial support and military protection in exchange for the goods they produce. These governments may or may not be formal members of the Republic, though many that aren't are quickly being integrated by a new wave of fervent Republic colonialism. In previous times of war, such as during the Exar Kun war and the later Mandalorian wars, the militias of these governments were frequently nationalized by Republic military mobilization to help defend against their attackers.</description>
 		<categoryTag>Outlander</categoryTag>
 		<colorSpectrum>
-		  <li>RGB(165,190,160)</li>
+			<li>(180,215,175)</li> <!-- PDF green -->
+			<!-- <li>RGB(165,190,160)</li> -->
 		</colorSpectrum>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<listOrderPriority>764</listOrderPriority>
