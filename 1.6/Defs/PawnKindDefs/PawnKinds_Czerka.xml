@@ -639,16 +639,16 @@
 			<li>SWKotORSpecificApparelItem_CzerkaBodysuit</li>
 		</apparelTags>
 		<apparelRequired>
-		   <li>Apparel_BodyStrap</li>	
-		   <li>Apparel_Collar</li>
+		   <li MayRequire="Ludeon.RimWorld.Ideology">Apparel_BodyStrap</li>	
+		   <li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Collar</li>
 		   <li>guy762_Bodysuit_czerka</li>
 		</apparelRequired>
 		<specificApparelRequirements>
-			<li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<apparelLayer>Shell</apparelLayer>
 				<stuff>Synthread</stuff>
 			</li>
-			<li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<apparelLayer>Overhead</apparelLayer>
 				<stuff>Steel</stuff>
 			</li>

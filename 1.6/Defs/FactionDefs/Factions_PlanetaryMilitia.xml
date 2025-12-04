@@ -36,6 +36,8 @@
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li> -->
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Tatooine</li> -->
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_TatooineOrbit</li> -->
+			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_OrdMantell</li>
+			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_OrdMantellOrbit</li>
 		</layerWhitelist>
 			
 		<settlementGenerationWeight>10</settlementGenerationWeight>
@@ -441,8 +443,8 @@
 		  </li>
 		</pawnGroupMakers>
 		
-	  <raidLootMaker>guy762_RaidLootMaker_KotORMilitia</raidLootMaker>
-  </FactionDef>
+		<raidLootMaker>guy762_RaidLootMaker_KotORMilitia</raidLootMaker>
+	</FactionDef>
   
   
   
