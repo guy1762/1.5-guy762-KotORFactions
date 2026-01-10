@@ -1228,6 +1228,8 @@
 		<combatPower>100</combatPower>
 		<minGenerationAge>18</minGenerationAge>
 		<maxGenerationAge>35</maxGenerationAge>
+		
+		<nameMaker>KoTOR_NamerEchani</nameMaker>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
 				<guy762_xenotype_echani>999</guy762_xenotype_echani>
@@ -1315,6 +1317,8 @@
 		<combatPower>150</combatPower>
 		<minGenerationAge>18</minGenerationAge>
 		<maxGenerationAge>35</maxGenerationAge>
+		
+		<nameMaker>KoTOR_NamerEchani</nameMaker>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
 				<guy762_xenotype_echani>999</guy762_xenotype_echani>
@@ -1404,6 +1408,8 @@
 		<combatPower>250</combatPower>
 		<minGenerationAge>18</minGenerationAge>
 		<maxGenerationAge>35</maxGenerationAge>
+		
+		<nameMaker>KoTOR_NamerEchani</nameMaker>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
 				<guy762_xenotype_echani>999</guy762_xenotype_echani>
