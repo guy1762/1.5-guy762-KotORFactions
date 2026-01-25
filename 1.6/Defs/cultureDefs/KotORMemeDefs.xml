@@ -526,41 +526,41 @@
 	
 	
 	
-	<PreceptDef MayRequire="VanillaExpanded.VMemesE">
-		<defName>guy762_PreceptDef_ExchangeTitles</defName>
-		<issue>VME_Royalty</issue>
-		<label>exalted (Exchange titles)</label>
-		<description>The station one holds in the Exchange is a thing to be revered. Respect for the boss, more often than not, is the only thing that holds this thing of ours together.\n\nDEV'S NOTE: MAY NOT WORK</description>
-		<impact>Medium</impact>
-		<associatedMemes>
-			<li>guy762_MemeDef_exchange</li>
-		</associatedMemes>
-		<displayOrderInIssue>50</displayOrderInIssue>
-		<comps>
-			<li Class="PreceptComp_SituationalThought">
-				<thought>guy762_ThoughtDef_ExchangeTitles</thought>
-			</li>
-		</comps>
-	</PreceptDef>
-	<ThoughtDef MayRequire="VanillaExpanded.VMemesE">
-		<defName>guy762_ThoughtDef_ExchangeTitles</defName>
-		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Royalty</workerClass>
-		<stages>
-			<li>
-				<label>Exchange: made member</label>
-				<baseOpinionOffset>15</baseOpinionOffset>
-			</li>
-			<li>
-				<label>Exchange: capo</label>
-				<baseOpinionOffset>30</baseOpinionOffset>
-			</li>
-			<li>
-				<label>Exchange: vigo</label>
-				<baseOpinionOffset>60</baseOpinionOffset>
-			</li>
-		</stages>
-	</ThoughtDef>
+	<!-- <PreceptDef MayRequire="VanillaExpanded.VMemesE"> -->
+		<!-- <defName>guy762_PreceptDef_ExchangeTitles</defName> -->
+		<!-- <issue>VME_Royalty</issue> -->
+		<!-- <label>exalted (Exchange titles)</label> -->
+		<!-- <description>The station one holds in the Exchange is a thing to be revered. Respect for the boss, more often than not, is the only thing that holds this thing of ours together.\n\nDEV'S NOTE: MAY NOT WORK</description> -->
+		<!-- <impact>Medium</impact> -->
+		<!-- <associatedMemes> -->
+			<!-- <li>guy762_MemeDef_exchange</li> -->
+		<!-- </associatedMemes> -->
+		<!-- <displayOrderInIssue>50</displayOrderInIssue> -->
+		<!-- <comps> -->
+			<!-- <li Class="PreceptComp_SituationalThought"> -->
+				<!-- <thought>guy762_ThoughtDef_ExchangeTitles</thought> -->
+			<!-- </li> -->
+		<!-- </comps> -->
+	<!-- </PreceptDef> -->
+	<!-- <ThoughtDef MayRequire="VanillaExpanded.VMemesE"> -->
+		<!-- <defName>guy762_ThoughtDef_ExchangeTitles</defName> -->
+		<!-- <thoughtClass>Thought_SituationalSocial</thoughtClass> -->
+		<!-- <workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Royalty</workerClass> -->
+		<!-- <stages> -->
+			<!-- <li> -->
+				<!-- <label>Exchange: made member</label> -->
+				<!-- <baseOpinionOffset>15</baseOpinionOffset> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <label>Exchange: capo</label> -->
+				<!-- <baseOpinionOffset>30</baseOpinionOffset> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <label>Exchange: vigo</label> -->
+				<!-- <baseOpinionOffset>60</baseOpinionOffset> -->
+			<!-- </li> -->
+		<!-- </stages> -->
+	<!-- </ThoughtDef> disabled 1/24/26 because these never actually worked -->
 	
 	
 	

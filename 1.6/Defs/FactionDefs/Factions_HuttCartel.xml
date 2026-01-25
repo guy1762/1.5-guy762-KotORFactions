@@ -36,7 +36,7 @@
 		
 		<layerWhitelist>
 			<li>Surface</li>
-			<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">Orbit</li> -->
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li> -->
 			
 			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Tatooine</li>
