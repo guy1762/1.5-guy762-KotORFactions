@@ -1151,7 +1151,7 @@
 			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
 			<li>SWKotORSpecificApparelItem_ColorableSithTrooperHelmet</li>
 			<li>SWKotORSpecificApparelItem_ColorableSithTrooperArmor</li>
-			<li>SWCPSpecificGadgetItem_3MinStealthBelt</li>
+			<li>SWKotORSpecificGadgetItem_3MinStealthBelt</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_SithHelmet_colortrooper</li>

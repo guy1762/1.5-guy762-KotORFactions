@@ -447,7 +447,7 @@
 			<li>KotOREquipment_sith</li>
 			<li>SWKotORSpecificApparelItem_SithAssassinMask</li>
 			<li>SWKotORSpecificApparelItem_SithAssassinTunic</li>
-			<li>SWCPSpecificGadgetItem_3MinStealthBelt</li>
+			<li>SWKotORSpecificGadgetItem_3MinStealthBelt</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_SithMask_assassin</li>
