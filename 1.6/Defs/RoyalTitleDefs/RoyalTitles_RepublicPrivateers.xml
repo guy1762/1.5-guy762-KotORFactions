@@ -12,6 +12,21 @@
     <lostThought>LostTitle</lostThought>
     <canBeInherited>false</canBeInherited>
   </RoyalTitleDef>
+  
+  
+  
+  
+    <!--
+  
+  NOTE TO ANYONE READING THIS: the permit selection screen just DOESN'T FUCKING WORK if you have less than two active royalty title factions active at a time
+  don't ask me why because I don't fucking know but I just spent like two hours trying to debug this shit
+  
+ --> 
+  
+  
+  
+  
+  
 
   <!-- ============== outsider titles ============================= -->
 
