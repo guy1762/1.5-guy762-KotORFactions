@@ -10,13 +10,15 @@
 		<maxGenerationAge>29</maxGenerationAge>
 		<fixedGender>Female</fixedGender>
 		<forcedHair>Fringe</forcedHair>
+		
 		<forcedHairColor>(82,74,69)</forcedHairColor>
 		<skinColorOverride>(255,254,204)</skinColorOverride>
+		<favoriteColor>guy762_StructureColor_VisasBurgundy</favoriteColor>
+		
 		<xenotypeSet>
 			<xenotypeChances>
 				<guy762_xenotype_miraluka>999</guy762_xenotype_miraluka>
 			</xenotypeChances>
-			
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
 		<itemQuality>Legendary</itemQuality>

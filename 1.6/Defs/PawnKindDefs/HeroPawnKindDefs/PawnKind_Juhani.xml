@@ -11,11 +11,13 @@
 		<fixedGender>Female</fixedGender>
 		<forcedHair>guy762_Hair_Juhani</forcedHair>
 		<forcedHairColor>(237,202,156)</forcedHairColor>
+		
+		<favoriteColor>guy762_StructureColor_JuhaniBlue</favoriteColor>
+		
 		<xenotypeSet>
 			<xenotypeChances>
 				<guy762_xenotype_cathar>999</guy762_xenotype_cathar>
 			</xenotypeChances>
-			
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
 		<itemQuality>Legendary</itemQuality>

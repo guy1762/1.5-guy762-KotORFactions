@@ -10,12 +10,13 @@
 		<chronologicalAgeRange>100~300</chronologicalAgeRange>
 		<fixedGender>Male</fixedGender>
 
+		<favoriteColor>guy762_StructureColor_ZaalbarRed</favoriteColor>
+
 		<xenotypeSet>
 			<xenotypeChances>
 				<guy762_xenotype_wookiee>999</guy762_xenotype_wookiee>
 			</xenotypeChances>
 		</xenotypeSet>
-		
 		<useFactionXenotypes>false</useFactionXenotypes>
 		<itemQuality>Legendary</itemQuality>
 		<apparelMoney>49999</apparelMoney>
