@@ -22,7 +22,7 @@
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<allowedArrivalTemperatureRange>-40~65</allowedArrivalTemperatureRange>
 		<colorSpectrum>
-		  <li>RGB(7,172,255)</li>
+		  <li>RGB(50,135,230)</li>
 		</colorSpectrum>
 		<!--permanentEnemy>true</permanentEnemy>
 		<permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer-->
