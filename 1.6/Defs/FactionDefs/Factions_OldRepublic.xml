@@ -58,23 +58,23 @@
 		
 		<layerWhitelist>
 			<li>Surface</li>
-			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">Orbit</li>
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">Orbit</li> -->
 			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li> -->
 			
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Tatooine</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TatooineOrbit</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantell</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_OrdMantellOrbit</li> WILL BE ALLOWED, CURRENTLY DISABLED -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Tatooine</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TatooineOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantell</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_OrdMantellOrbit</li> WILL BE ALLOWED, CURRENTLY DISABLED -->
 			
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVar</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_RhenVarOrbit</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Nevarro</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_NevarroOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVar</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_RhenVarOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Nevarro</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_NevarroOrbit</li> -->
 			
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Baroonda</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_BaroondaOrbit</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_Taloraan</li> -->
-			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPPlanetLayer_TaloraanOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Baroonda</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_BaroondaOrbit</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_Taloraan</li> -->
+			<!-- <li MayRequire="SWCP.guy762.Taran.SWGalaxy.gbp">SWCPPlanetLayer_TaloraanOrbit</li> -->
 		</layerWhitelist>
 		
 		<settlementGenerationWeight>2</settlementGenerationWeight>
