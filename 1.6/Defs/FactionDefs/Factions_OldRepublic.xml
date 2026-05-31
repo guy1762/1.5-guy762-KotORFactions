@@ -31,6 +31,7 @@
 		<settlementNameMaker>guy762_NamerSettlement_ORStarfleet</settlementNameMaker>
 		<leaderTitle>admiral</leaderTitle>
 		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+		<!-- MAKE SURE THAT THE FIXED LEADER PAWNS DO NOT HAVE MODULAR IMPLANT DOCKS SINCE IT BREAKS PAWN GENERATION FOR SOME USERS. YOU HAVE DEBUGGED THIS ISSUE TWICE NOW!!!!! -->
 		<fixedLeaderKinds>
 		  <li>KotORRepub_captain</li>
 		</fixedLeaderKinds>
